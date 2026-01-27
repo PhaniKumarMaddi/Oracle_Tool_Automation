@@ -60,7 +60,16 @@ public class Oracle_HomePage extends WaitsManager {
 	By cartPageItemDesc = By.cssSelector("div.oj-typography-body-md.oj-line-clamp-3 ");
 	By cartPageUOM = By.cssSelector("div.oj-flex.oj-sm-align-items-baseline>div");
 	By cartPagePrice = By.cssSelector("div.oj-flex.oj-sm-align-self-flex-end");
+	By subTotalAmt = By.xpath("//div[text()='Subtotal']/following-sibling::div");
+	By approvalAmt = By.xpath("//div[text()='Approval Amount']/following-sibling::div");
+	By tax = By.xpath("//div[text()='Nonrecoverable Tax']/following-sibling::div");
+	By submitBtn = By.xpath("//button[text()='Submit']");
+	// gt submit details
+	By submitMsgDetails = By.cssSelector("div.oj-message-detail");
 
+	// requisition  page 
+	By requsitionStage = By.xpath("//div[@class='oj-sp-card-common-badge-container oj-sp-card-common-badge-margin-end']");
+	
 	public void clickHomeButton() throws Exception {
 		try {
 			implWait(driver);
@@ -293,10 +302,11 @@ public class Oracle_HomePage extends WaitsManager {
 
 	}
 
-	public void validateCartPageDetails(String expectedTitle, String expectedSubtitle, String expectedDesc,
-			String expectedUOM, String expectedPrice) throws Exception {
+	public void validateCartPageDetails(String expectedTitle, String expectedDesc, String expectedUOM,
+			String expectedPrice) throws Exception {
 		try {
 
+			implWait(driver);
 			// 1. Validate Page Title
 			String actualTitle = driver.findElement(cartPageTitle).getText().trim();
 			System.out.println("INFO: Cart Page Title retrieved: " + actualTitle);
@@ -304,12 +314,12 @@ public class Oracle_HomePage extends WaitsManager {
 			grep.infoTest("Cart Page Title retrieved: " + actualTitle);
 			validAssert.equalsAssert(actualTitle, expectedTitle);
 
-			// 2. Validate Page Subtitle
-			String actualSubtitle = driver.findElement(cartPageSubtitle).getText().trim();
-			System.out.println("Cart Page Subtitle retrieved: " + actualSubtitle);
-			logger.info("Cart Page Subtitle retrieved: " + actualSubtitle);
-			grep.infoTest("Cart Page Subtitle retrieved: " + actualSubtitle);
-			validAssert.equalsAssert(actualSubtitle, expectedSubtitle);
+//			// 2. Validate Page Subtitle
+//			String actualSubtitle = driver.findElement(cartPageSubtitle).getText().trim();
+//			System.out.println("Cart Page Subtitle retrieved: " + actualSubtitle);
+//			logger.info("Cart Page Subtitle retrieved: " + actualSubtitle);
+//			grep.infoTest("Cart Page Subtitle retrieved: " + actualSubtitle);
+//			validAssert.equalsAssert(actualSubtitle, expectedSubtitle);
 
 			// 3. Validate Item Description
 			String actualDesc = driver.findElement(cartPageItemDesc).getText().trim();
@@ -325,26 +335,141 @@ public class Oracle_HomePage extends WaitsManager {
 			grep.infoTest("UOM retrieved: " + actualUOM);
 			validAssert.equalsAssert(actualUOM, expectedUOM);
 
-			// 5. Validate Price (Extracting the numeric value only)
-			WebElement element = driver.findElement(cartPagePrice);
-			String rawPriceText = (String) ((JavascriptExecutor) driver)
-					.executeScript("return arguments[0].childNodes[0].textContent;", element);
+//			waitTime1(driver);
+//			// 5. Validate Price (Extracting the numeric value only)
+//			WebElement element = driver.findElement(cartPagePrice);
+//
+//			String rawPriceText = element.getText();
+//			System.out.println(rawPriceText);
+//
+//			String numericPrice = rawPriceText.replace("$", "").split(",")[0].trim();
+//
+//			// Regex: find the first number before any comma or space
+//			System.out.println("Cleaned Price value: " + numericPrice);
+//
+//			logger.info("Raw Price retrieved: " + numericPrice);
+//			grep.infoTest("Raw Price retrieved: " + numericPrice);
+//			validAssert.equalsAssert(numericPrice, expectedPrice);
 
-//			String numericPrice = rawPriceText.replaceAll("[^0-9].* ", "").trim();
-			String numericPrice = rawPriceText.replace("$", "").split(",")[0].trim();
-			
-
-			// Regex: find the first number before any comma or space
-
-//			System.out.println("Raw Price retrieved: " + rawPriceText.replace("\n", " "));
-			System.out.println("Cleaned Price value: " + numericPrice);
-
-			logger.info("Raw Price retrieved: " + numericPrice);
-			grep.infoTest("Raw Price retrieved: " + numericPrice);
-			validAssert.equalsAssert(numericPrice, expectedPrice);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
+	public String getSubTitleDetails() throws Exception {
+		String getSubTitle = null;
+
+		try {
+
+			waitTime1(driver);
+			getSubTitle = driver.findElement(cartPageSubtitle).getText().trim();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return getSubTitle;
+	}
+
+	public int validatePriceDetails() throws Exception {
+		int numericPrice = 0;
+
+		try {
+
+			waitTime1(driver);
+			// 5. Validate Price (Extracting the numeric value only)
+			WebElement element = driver.findElement(cartPagePrice);
+
+			String rawPriceText = element.getText();
+			System.out.println(rawPriceText);
+
+			numericPrice = Integer.parseInt(rawPriceText.replace("$", "").split(",")[0].trim());
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return numericPrice;
+	}
+
+	public void validateRequisitionSummary(int unitPrice, int quantity) throws Exception {
+		try {
+
+			// 1. Retrieve and Clean Subtotal
+			String rawSubtotal = driver.findElement(subTotalAmt).getText();
+			int subtotal = Integer.parseInt(rawSubtotal.replace("$", "").split(",")[0].trim());
+			System.out.println("Cleaned Subtotal: " + subtotal);
+
+			logger.info("Subtotal :" + subtotal);
+			grep.infoTest("Subtotal :" + subtotal);
+
+			// 2. Retrieve and Clean Tax
+			String rawTax = driver.findElement(tax).getText();
+			int taxVal = Integer.parseInt(rawTax.replace("$", "").split(",")[0].trim());
+			System.out.println("Cleaned Tax: " + taxVal);
+			logger.info("Tax :" + taxVal);
+			grep.infoTest("Tax :" + taxVal);
+
+			// 3. Retrieve and Clean Approval Amount
+			String rawApproval = driver.findElement(approvalAmt).getText();
+			int approval = Integer.parseInt(rawApproval.replace("$", "").split(",")[0].trim());
+			System.out.println("Cleaned Approval Amount: " + approval);
+			logger.info("Approval Amount: " + approval);
+			grep.infoTest("Approval Amount: " + approval);
+
+			// --- CALCULATIONS & ASSERTIONS ---
+
+			// Validation 1: Price * 3 = Subtotal
+			int expectedSubtotal = unitPrice * quantity;
+			logger.info("Validating Subtotal: " + expectedSubtotal);
+			grep.infoTest("Validating Subtotal: " + expectedSubtotal);
+
+			validAssert.equalsAssert_int(subtotal, expectedSubtotal);
+			System.out.println("SUCCESS: Price * 3 matches Subtotal (" + subtotal + ")");
+
+			// Validation 2: Subtotal + Tax = Approval Amount
+			int expectedApproval = subtotal + taxVal;
+			logger.info("Validating Approval Amount:  " + expectedApproval);
+			grep.infoTest("Validating Approval Amount:  " + expectedApproval);
+			validAssert.equalsAssert_int(approval, expectedApproval);
+			System.out.println("SUCCESS: Subtotal + Tax matches Approval Amount (" + approval + ")");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickSubmitCartBtn() {
+		implWait(driver);
+		driver.findElement(submitBtn).click();
+	}
+
+	public void validateSubmitRequisitionPopup() throws Exception {
+
+		try {
+			waitForElement(confirmPopupHeader, 10);
+
+			// 1. Validate the Header Text
+			String actualHeader = waitVisible(confirmPopupHeader).getText();
+			validAssert.equalsAssert(actualHeader, "Confirmation");
+
+			// 2. Validate the Body Text
+			String actualBody = waitVisible(confirmPopupBody).getText();
+			validAssert.equalsAssert(actualBody, "Requisition submitted");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public String getSubmitRequisitionMessage() throws Exception {
+		String getMsg = null;
+
+		try {
+
+			waitTime1(driver);
+			getMsg = driver.findElement(submitMsgDetails).getText().trim();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return getMsg;
+	}
 }

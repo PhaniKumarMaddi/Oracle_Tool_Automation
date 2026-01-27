@@ -22,6 +22,15 @@ public class ValidatingAssertions extends WaitsManager {
 
 	}
 
+	public void equalsAssert_int(int actualResult, int expectedResult) throws Exception {
+		// Validating
+		softAsserts.assertEquals(actualResult, expectedResult);
+		System.out.println("Expected :" + expectedResult + " and Actual :" + actualResult);
+		logger.info("Expected :" + expectedResult + " and Actual :" + actualResult);
+		assertPassOrFail_int(actualResult, expectedResult);
+
+	}
+
 	// Validate Not equal assert
 	public void notEqualsAssert(String actualResult, String expectedResult) throws Exception {
 		// Validating
@@ -69,14 +78,26 @@ public class ValidatingAssertions extends WaitsManager {
 		}
 	}
 
+	public void assertPassOrFail_int(int actualResult, int expectedResult) {
+		if (actualResult == expectedResult) {
+			grep.passTest("Expected :" + expectedResult + " and Actual :" + actualResult + " both are same");
+			logger.info("Expected :" + expectedResult + " and Actual :" + actualResult + " both are same");
+		} else {
+			grep.failTest("Expected and Actual are not same Expected [" + expectedResult + "], but found ["
+					+ actualResult + "]");
+			logger.error("Expected and Actual are not same Expected [" + expectedResult + "], but found ["
+					+ actualResult + "]");
+		}
+	}
+
 	public void assertNotEqualPassOrFail(String actualResult, String expectedResult) {
 		if (!actualResult.equals(expectedResult)) {
 			grep.passTest("Expected :" + expectedResult + " and Actual :" + actualResult + " both are same");
 			logger.info("Expected :" + expectedResult + " and Actual :" + actualResult + " both are same");
 		} else {
-			grep.failTest("Expected and Actual are not same Expected [" + expectedResult + " ], but found ["
+			grep.failTest("Expected and Actual are not same Expected [" + expectedResult + "], but found ["
 					+ actualResult + "]");
-			logger.error("Expected and Actual are not same Expected [" + expectedResult + " ], but found ["
+			logger.error("Expected and Actual are not same Expected [" + expectedResult + "], but found ["
 					+ actualResult + "]");
 		}
 	}

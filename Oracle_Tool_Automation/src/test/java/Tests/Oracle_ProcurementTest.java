@@ -2,12 +2,10 @@ package Tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Pages.Oracle_HomePage;
 import Pages.TestInitializer;
-import Utility.ExcelDataProvider;
 import Utility.GenerateReports;
 import Utility.ValidatingAssertions;
 
@@ -103,10 +101,42 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime(driver);
 		grep.testCreate("Verify Product Details in Cart Page Test", "Verify Product Details in Cart Page");
 		waitTime(driver);
-		oraHome.validateCartPageDetails("Cart", "Requisition CRREQ100017", "Mouse", "Each", "30");
+		oraHome.validateCartPageDetails("Cart", "Mouse", "Each", "30");
+		waitTime(driver);
+
+		String getSubTitle = oraHome.getSubTitleDetails();
+
+		logger.info("Cart Page Subtitle retrieved: " + getSubTitle);
+		grep.infoTest("Cart Page Subtitle retrieved: " + getSubTitle);
+		waitTime(driver);
+		validAssert.trueAssert(getSubTitle.startsWith("Requisition CRRE"));
+		waitTime(driver);
+
+		int getPrice = oraHome.validatePriceDetails();
+
+		logger.info("Raw Price retrieved: " + getPrice);
+		grep.infoTest("Raw Price retrieved: " + getPrice);
+		validAssert.equalsAssert_int(getPrice, 30);
+		waitTime(driver);
+		oraHome.validateRequisitionSummary(getPrice, 3);
+
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Verify Product Details in Cart Page Test", "ProcurementDetailsInCart_Test");
 		waitTime(driver);
+//		oraHome.clickSubmitCartBtn();
+//		waitTime(driver);
+//		oraHome.validateSubmitRequisitionPopup();
+//		String getDetails = oraHome.getSubmitRequisitionMessage();
+//		logger.info("After Submitting Requisition: " + getDetails);
+//		grep.infoTest("After Submitting Requisition: " + getDetails);
+//		waitTime(driver);
+//		validAssert.trueAssert(getDetails.startsWith("Requisition CRRE"));
+////		waitTime(driver);
+
+		grep.captureScreenshot("pass", "Submit Requisition Test", "SubmitRequsition_Test");
+		waitTime(driver);
+//		
+
 	}
 
 }

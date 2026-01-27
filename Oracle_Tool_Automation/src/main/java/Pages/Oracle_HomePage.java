@@ -1,0 +1,219 @@
+package Pages;
+
+import java.util.List;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import Utility.DriverManager;
+import Utility.GenerateReports;
+import Utility.ValidatingAssertions;
+import Utility.WaitsManager;
+
+public class Oracle_HomePage extends WaitsManager {
+	protected WebDriver driver;
+	private static Logger logger = LogManager.getLogger(Oracle_HomePage.class);
+	GenerateReports grep = new GenerateReports();
+	ValidatingAssertions validAssert = new ValidatingAssertions();
+
+	public Oracle_HomePage() {
+		this.driver = DriverManager.getDriver();
+	}
+
+	By homeBtn = By.xpath("//a[@id='pt1:_UIShome']");
+	By homePageMsg = By.xpath("//div[@id='pt1:atkfr1:0:grid:0:pgl1']");
+	By meLink = By.xpath("//a[@id='groupNode_my_information']");
+	By navigator = By.xpath("//a[@id='pt1:_UISmmLink']");
+	By procurementNavigation = By.xpath("//div[@title='Procurement']");
+	By purchaseRequisitions = By.xpath("//a[@title='Purchase Requisitions (New)']");
+	By selfServiceProcurement = By.cssSelector("div.oj-sp-header-general-overview-title-badge-cont");
+	By recentRequisition = By.cssSelector("h2#myRequisitionslabel");
+	By createNonCatalog = By.cssSelector("oj-button#nonCatalogRequestButton");
+	By nonCatalogHeader = By.cssSelector("div#title");
+	By itemDescription = By.xpath("//textarea[@id='ui-id-50|input']");
+	By categoryField = By
+			.xpath("//span[text()='Category']/ancestor::oj-label/parent::div/input[contains(@id,'oj-selectsingle')]");
+//	By quantity = By.xpath("//oj-input-text[@id='ui-id-314']");
+	By quantity = By.xpath(
+			"//div[@class='oj-form oj-enabled oj-form-cols oj-formlayout-form-across']/descendant::span[text()='Quantity']/ancestor::oj-label/following-sibling::input");
+	By uomField = By
+			.xpath("//span[text()='UOM']/ancestor::oj-label/parent::div/input[contains(@id,'oj-selectsingle')]");
+
+	By price = By.xpath("//label[text()='Price']/parent::div/input");
+
+	public void clickHomeButton() throws Exception {
+		try {
+			implWait(driver);
+			boolean elementExists = !driver.findElements(homeBtn).isEmpty();
+			if (elementExists) {
+				waitForElementToBeClickable(homeBtn, 30);
+				driver.findElement(homeBtn).click();
+			} else {
+				logger.error("Home button Not Available ");
+				grep.failTest("Home button Not Available ");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			grep.failTest("Test Failed :" + e.getMessage());
+			logger.error("Test Failed :" + e.getMessage());
+		}
+	}
+
+	public void validateHomePageText() throws Exception {
+
+		try {
+			String actualText = driver.findElement(homePageMsg).getText().trim();
+			validAssert.equalsAssert(actualText, "Good afternoon, Jack CR");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void clickMeLink() {
+		implWait(driver);
+		driver.findElement(meLink).click();
+	}
+
+	public void clickNavigator() {
+		implWait(driver);
+		driver.findElement(navigator).click();
+	}
+
+	public void clickProcurementNavigation() {
+		scrollView(procurementNavigation);
+		driver.findElement(procurementNavigation).click();
+	}
+
+	public void clickPurchaseRequisitions() {
+		implWait(driver);
+		driver.findElement(purchaseRequisitions).click();
+	}
+
+	public void validatePurchaseRequisitionsPage() throws Exception {
+
+		try {
+			implWait(driver);
+			String actualText = driver.findElement(selfServiceProcurement).getText().trim();
+			grep.infoTest("Purchase Requisition Header: " + actualText);
+			validAssert.equalsAssert(actualText, "Self Service Procurement");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void validateMyRecentRequisitionsTitle() throws Exception {
+
+		try {
+			implWait(driver);
+			String actualText = driver.findElement(recentRequisition).getText().trim();
+			grep.infoTest("Recent Requsition Title : " + actualText);
+			validAssert.equalsAssert(actualText, "My recent requisitions");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickCreateNonCatalogBtn() {
+		implWait(driver);
+		driver.findElement(createNonCatalog).click();
+	}
+
+	public void validateNonCatalogHeaderTitle() throws Exception {
+
+		try {
+			implWait(driver);
+			String actualText = driver.findElement(nonCatalogHeader).getText().trim();
+			grep.infoTest("Create Catalog popup header: " + actualText);
+			validAssert.equalsAssert(actualText, "Create Noncatalog Request");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void enterItemDescription(String descValue) {
+		implWait(driver);
+		driver.findElement(itemDescription).sendKeys(descValue);
+	}
+
+	public void enterCategoryField(String categoryVal) throws Exception {
+		try {
+//			By selectCategory = By.xpath("//div[@id='lovDropdown_oj-selectsingle-9_layer']/descendant::li/descendant::span[text()='" + categoryVal + "'][1]");
+			implWait(driver);
+			WebElement catg = driver.findElement(categoryField);
+			waitTime(driver);
+			catg.sendKeys(categoryVal);
+			waitTime(driver);
+			actionEntered();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void enterQuantity(String quantityValue) {
+		try {
+			implWait(driver);
+			WebElement input = driver.findElement(quantity);
+			waitTime(driver);
+
+			input.sendKeys(Keys.CONTROL + "a");
+			input.sendKeys(Keys.DELETE);
+			waitTime2(driver);
+			input.sendKeys(quantityValue);
+			waitTime(driver);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void enterUnitOfMeasureField(String uomValue) throws Exception {
+		try {
+			By unitOfMeasureList = By.xpath("//li[@role='row']//oj-highlight-text//span[1]");
+			implWait(driver);
+//			actionTab();
+			driver.findElement(uomField).sendKeys(uomValue);
+			waitTime(driver);
+			driver.findElement(unitOfMeasureList).click();
+
+			List<WebElement> options = driver.findElements(unitOfMeasureList);
+
+			for (WebElement option : options) {
+				String optionText = option.getText().trim();
+
+				if (optionText.equalsIgnoreCase(uomValue) || optionText.contains("Each")) {
+					option.click();
+					break;
+				}
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void enterPrice(String priceValue) {
+		try {
+			implWait(driver);
+			WebElement input = driver.findElement(price);
+			waitTime(driver);
+
+			input.sendKeys(Keys.CONTROL + "a");
+			input.sendKeys(Keys.DELETE);
+			waitTime2(driver);
+			input.sendKeys(priceValue);
+			waitTime(driver);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

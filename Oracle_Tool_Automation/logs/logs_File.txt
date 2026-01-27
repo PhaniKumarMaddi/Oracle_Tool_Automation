@@ -604,3 +604,455 @@ Session ID: 491a9824db1fee0b00b02023991cab20
 2026-01-27 09:32:15 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
 2026-01-27 09:32:50 [main] INFO : Testing Ended
 2026-01-27 09:32:50 [main] INFO : ***********
+2026-01-27 09:54:15 [main] INFO : Launching Chrome Browser
+2026-01-27 09:54:16 [main] INFO : Report Name :OraclePage.html
+2026-01-27 09:54:21 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 09:54:25 [main] INFO : Logged in to Oracle Application
+2026-01-27 09:54:26 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 09:54:26 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 09:54:30 [main] INFO : Clicking on Home icon
+2026-01-27 09:54:41 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 09:54:41 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 09:54:42 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 09:54:42 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 09:54:44 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 09:54:44 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 09:55:19 [main] INFO : Testing Ended
+2026-01-27 09:55:19 [main] INFO : ***********
+2026-01-27 09:58:09 [main] INFO : Launching Chrome Browser
+2026-01-27 09:58:10 [main] INFO : Report Name :OraclePage.html
+2026-01-27 09:58:15 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 09:58:19 [main] INFO : Logged in to Oracle Application
+2026-01-27 09:58:20 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 09:58:20 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 09:58:23 [main] INFO : Clicking on Home icon
+2026-01-27 09:58:35 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 09:58:35 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 09:58:36 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 09:58:36 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 09:58:38 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 09:58:38 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 09:59:15 [main] INFO : Testing Ended
+2026-01-27 09:59:15 [main] INFO : ***********
+2026-01-27 10:02:28 [main] INFO : Launching Chrome Browser
+2026-01-27 10:02:28 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:02:34 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:02:38 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:02:39 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:02:39 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:02:43 [main] INFO : Clicking on Home icon
+2026-01-27 10:03:00 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 10:03:00 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 10:03:01 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:03:01 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:03:03 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:03:03 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:03:41 [main] INFO : Testing Ended
+2026-01-27 10:03:41 [main] INFO : ***********
+2026-01-27 10:11:32 [main] INFO : Launching Chrome Browser
+2026-01-27 10:11:33 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:11:39 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:11:43 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:11:45 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:11:45 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:11:48 [main] INFO : Clicking on Home icon
+2026-01-27 10:12:03 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 10:12:03 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 10:12:04 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:12:04 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:12:06 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:12:06 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:12:29 [main] INFO : Testing Ended
+2026-01-27 10:12:29 [main] INFO : ***********
+2026-01-27 10:13:16 [main] INFO : Launching Chrome Browser
+2026-01-27 10:13:16 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:13:23 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:13:27 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:13:43 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:13:43 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:13:49 [main] INFO : Clicking on Home icon
+2026-01-27 10:14:02 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 10:14:02 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 10:14:03 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:14:03 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:14:05 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:14:05 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:14:49 [main] INFO : Launching Chrome Browser
+2026-01-27 10:14:49 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:14:56 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:15:00 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:15:11 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:15:11 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:15:14 [main] INFO : Clicking on Home icon
+2026-01-27 10:15:27 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 10:15:27 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 10:15:28 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:15:28 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:15:31 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:15:31 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:15:48 [main] INFO : Testing Ended
+2026-01-27 10:15:48 [main] INFO : ***********
+2026-01-27 10:16:54 [main] INFO : Launching Chrome Browser
+2026-01-27 10:16:54 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:16:59 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:17:03 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:17:05 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:17:05 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:17:08 [main] INFO : Clicking on Home icon
+2026-01-27 10:17:20 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 10:17:20 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 10:17:21 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:17:21 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:17:23 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:17:23 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:17:42 [main] INFO : Testing Ended
+2026-01-27 10:17:42 [main] INFO : ***********
+2026-01-27 10:17:55 [main] INFO : Launching Chrome Browser
+2026-01-27 10:17:56 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:18:02 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:18:06 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:18:08 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:18:08 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:18:12 [main] INFO : Clicking on Home icon
+2026-01-27 10:18:41 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:18:41 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:18:43 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:18:43 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:19:01 [main] INFO : Testing Ended
+2026-01-27 10:19:01 [main] INFO : ***********
+2026-01-27 10:20:46 [main] INFO : Launching Chrome Browser
+2026-01-27 10:20:47 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:20:52 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:20:56 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:20:57 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:20:57 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:21:01 [main] INFO : Clicking on Home icon
+2026-01-27 10:21:13 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 10:21:13 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 10:21:13 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:21:13 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:21:16 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:21:16 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:21:34 [main] INFO : Testing Ended
+2026-01-27 10:21:34 [main] INFO : ***********
+2026-01-27 10:24:58 [main] INFO : Launching Chrome Browser
+2026-01-27 10:24:58 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:25:04 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:25:08 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:25:08 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:25:08 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:25:12 [main] INFO : Clicking on Home icon
+2026-01-27 10:25:24 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 10:25:24 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 10:25:24 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:25:24 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:25:26 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:25:26 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:25:45 [main] INFO : Testing Ended
+2026-01-27 10:25:45 [main] INFO : ***********
+2026-01-27 10:26:19 [main] INFO : Launching Chrome Browser
+2026-01-27 10:26:19 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:26:25 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:26:29 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:26:29 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:26:29 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:26:33 [main] INFO : Clicking on Home icon
+2026-01-27 10:26:44 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 10:26:44 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 10:26:44 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:26:44 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:26:47 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:26:47 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:27:05 [main] INFO : Testing Ended
+2026-01-27 10:27:05 [main] INFO : ***********
+2026-01-27 10:28:07 [main] INFO : Launching Chrome Browser
+2026-01-27 10:28:07 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:28:12 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:28:16 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:28:17 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:28:17 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:28:20 [main] INFO : Clicking on Home icon
+2026-01-27 10:28:33 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 10:28:33 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 10:28:34 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:28:34 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:28:37 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:28:37 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:28:56 [main] INFO : Testing Ended
+2026-01-27 10:28:56 [main] INFO : ***********
+2026-01-27 10:36:10 [main] INFO : Launching Chrome Browser
+2026-01-27 10:36:11 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:36:17 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:36:21 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:36:21 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:36:21 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:36:25 [main] INFO : Clicking on Home icon
+2026-01-27 10:36:36 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 10:36:36 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 10:36:36 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:36:36 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:36:38 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:36:38 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:36:41 [main] INFO : Entering Item Description
+2026-01-27 10:36:42 [main] INFO : Selecting Category
+2026-01-27 10:36:46 [main] INFO : Enter Quantity field
+2026-01-27 10:36:50 [main] INFO : Enter Unit of Measure
+2026-01-27 10:36:53 [main] INFO : Enter Price
+2026-01-27 10:36:56 [main] INFO : Click Add to Cart Button
+2026-01-27 10:36:57 [main] INFO : Testing Ended
+2026-01-27 10:36:57 [main] INFO : ***********
+2026-01-27 10:43:29 [main] INFO : Launching Chrome Browser
+2026-01-27 10:43:29 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:43:34 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:43:38 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:43:46 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:43:46 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:43:51 [main] INFO : Clicking on Home icon
+2026-01-27 10:44:13 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 10:44:13 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 10:44:14 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:44:14 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:44:16 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:44:16 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:44:19 [main] INFO : Entering Item Description
+2026-01-27 10:44:40 [main] INFO : Testing Ended
+2026-01-27 10:44:40 [main] INFO : ***********
+2026-01-27 10:44:53 [main] INFO : Launching Chrome Browser
+2026-01-27 10:44:53 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:45:00 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:45:04 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:45:05 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:45:05 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:45:08 [main] INFO : Clicking on Home icon
+2026-01-27 10:45:20 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 10:45:20 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 10:45:21 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:45:21 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:45:23 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:45:23 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:45:26 [main] INFO : Entering Item Description
+2026-01-27 10:45:47 [main] INFO : Testing Ended
+2026-01-27 10:45:47 [main] INFO : ***********
+2026-01-27 10:47:08 [main] INFO : Launching Chrome Browser
+2026-01-27 10:47:08 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:47:15 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:47:19 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:47:20 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:47:20 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:47:23 [main] INFO : Clicking on Home icon
+2026-01-27 10:47:36 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 10:47:36 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 10:47:37 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:47:37 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:47:39 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:47:39 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:47:42 [main] INFO : Entering Item Description
+2026-01-27 10:48:12 [main] INFO : Testing Ended
+2026-01-27 10:48:12 [main] INFO : ***********
+2026-01-27 10:49:27 [main] INFO : Launching Chrome Browser
+2026-01-27 10:49:27 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:49:33 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:49:37 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:49:37 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:49:37 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:49:41 [main] INFO : Clicking on Home icon
+2026-01-27 10:49:52 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 10:49:52 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 10:49:53 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:49:53 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:49:55 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:49:55 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:49:58 [main] INFO : Entering Item Description
+2026-01-27 10:50:28 [main] INFO : Testing Ended
+2026-01-27 10:50:28 [main] INFO : ***********
+2026-01-27 10:50:59 [main] INFO : Launching Chrome Browser
+2026-01-27 10:50:59 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:51:05 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:51:09 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:51:09 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:51:09 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:51:13 [main] INFO : Clicking on Home icon
+2026-01-27 10:51:24 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 10:51:24 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 10:51:25 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:51:25 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:51:27 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:51:27 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:51:30 [main] INFO : Entering Item Description
+2026-01-27 10:52:01 [main] INFO : Selecting Category
+2026-01-27 10:52:05 [main] INFO : Enter Quantity field
+2026-01-27 10:52:08 [main] INFO : Enter Unit of Measure
+2026-01-27 10:52:11 [main] INFO : Enter Price
+2026-01-27 10:52:14 [main] INFO : Click Add to Cart Button
+2026-01-27 10:52:15 [main] INFO : Testing Ended
+2026-01-27 10:52:15 [main] INFO : ***********
+2026-01-27 10:57:07 [main] INFO : Launching Chrome Browser
+2026-01-27 10:57:08 [main] INFO : Report Name :OraclePage.html
+2026-01-27 10:58:16 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 10:58:21 [main] INFO : Logged in to Oracle Application
+2026-01-27 10:58:21 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 10:58:21 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 10:58:25 [main] INFO : Clicking on Home icon
+2026-01-27 10:58:47 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 10:58:47 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 10:58:48 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 10:58:48 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 10:58:50 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 10:58:50 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 10:58:53 [main] INFO : Entering Item Description
+2026-01-27 10:58:54 [main] INFO : Selecting Category
+2026-01-27 10:58:58 [main] INFO : Enter Quantity field
+2026-01-27 10:59:02 [main] INFO : Enter Unit of Measure
+2026-01-27 10:59:05 [main] INFO : Enter Price
+2026-01-27 10:59:10 [main] INFO : Click Add to Cart Button
+2026-01-27 10:59:11 [main] INFO : Testing Ended
+2026-01-27 10:59:11 [main] INFO : ***********
+2026-01-27 11:01:28 [main] INFO : Launching Chrome Browser
+2026-01-27 11:01:29 [main] INFO : Report Name :OraclePage.html
+2026-01-27 11:01:34 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 11:01:39 [main] INFO : Logged in to Oracle Application
+2026-01-27 11:01:40 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 11:01:40 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 11:01:43 [main] INFO : Clicking on Home icon
+2026-01-27 11:01:56 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 11:01:56 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 11:01:57 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 11:01:57 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 11:01:59 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 11:01:59 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 11:02:02 [main] INFO : Entering Item Description
+2026-01-27 11:02:03 [main] INFO : Selecting Category
+2026-01-27 11:02:07 [main] INFO : Enter Quantity field
+2026-01-27 11:02:11 [main] INFO : Enter Unit of Measure
+2026-01-27 11:02:13 [main] INFO : Enter Price
+2026-01-27 11:02:19 [main] INFO : Click Add to Cart Button
+2026-01-27 11:02:20 [main] INFO : Testing Ended
+2026-01-27 11:02:20 [main] INFO : ***********
+2026-01-27 11:18:56 [main] INFO : Launching Chrome Browser
+2026-01-27 11:18:56 [main] INFO : Report Name :OraclePage.html
+2026-01-27 11:19:02 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 11:19:06 [main] INFO : Logged in to Oracle Application
+2026-01-27 11:19:07 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 11:19:07 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 11:19:10 [main] INFO : Clicking on Home icon
+2026-01-27 11:19:24 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 11:19:24 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 11:19:24 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 11:19:24 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 11:19:27 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 11:19:27 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 11:19:29 [main] INFO : Entering Item Description
+2026-01-27 11:19:31 [main] INFO : Selecting Category
+2026-01-27 11:19:35 [main] INFO : Enter Quantity field
+2026-01-27 11:19:38 [main] INFO : Enter Unit of Measure
+2026-01-27 11:19:41 [main] INFO : Enter Price
+2026-01-27 11:19:47 [main] INFO : Click Add to Cart Button
+2026-01-27 11:19:49 [main] INFO : Verify and Click on view cart Button
+2026-01-27 11:19:49 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-01-27 11:19:49 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-01-27 11:19:49 [main] INFO : Expected :Request added to cart and Actual :Request added to cart
+2026-01-27 11:19:49 [main] INFO : Expected :Request added to cart and Actual :Request added to cart both are same
+2026-01-27 11:19:50 [main] INFO : Testing Ended
+2026-01-27 11:19:50 [main] INFO : ***********
+2026-01-27 11:21:47 [main] INFO : Launching Chrome Browser
+2026-01-27 11:21:47 [main] INFO : Report Name :OraclePage.html
+2026-01-27 11:21:52 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 11:21:56 [main] INFO : Logged in to Oracle Application
+2026-01-27 11:21:57 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 11:21:57 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 11:22:00 [main] INFO : Clicking on Home icon
+2026-01-27 11:22:12 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 11:22:12 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 11:22:13 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 11:22:13 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 11:22:15 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 11:22:15 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 11:22:18 [main] INFO : Entering Item Description
+2026-01-27 11:22:19 [main] INFO : Selecting Category
+2026-01-27 11:22:23 [main] INFO : Enter Quantity field
+2026-01-27 11:22:26 [main] INFO : Enter Unit of Measure
+2026-01-27 11:22:29 [main] INFO : Enter Price
+2026-01-27 11:22:35 [main] INFO : Click Add to Cart Button
+2026-01-27 11:22:36 [main] INFO : Verify and Click on view cart Button
+2026-01-27 11:22:40 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-01-27 11:22:40 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-01-27 11:22:40 [main] INFO : Expected :Request added to cart and Actual :Request added to cart
+2026-01-27 11:22:40 [main] INFO : Expected :Request added to cart and Actual :Request added to cart both are same
+2026-01-27 11:41:51 [main] INFO : Launching Chrome Browser
+2026-01-27 11:41:52 [main] INFO : Report Name :OraclePage.html
+2026-01-27 11:41:59 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 11:42:03 [main] INFO : Logged in to Oracle Application
+2026-01-27 11:42:04 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 11:42:04 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 11:42:08 [main] INFO : Clicking on Home icon
+2026-01-27 11:42:21 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 11:42:21 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 11:42:22 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 11:42:22 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 11:42:25 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 11:42:25 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 11:42:27 [main] INFO : Entering Item Description
+2026-01-27 11:42:29 [main] INFO : Selecting Category
+2026-01-27 11:42:33 [main] INFO : Enter Quantity field
+2026-01-27 11:42:37 [main] INFO : Enter Unit of Measure
+2026-01-27 11:42:39 [main] INFO : Enter Price
+2026-01-27 11:42:46 [main] INFO : Click Add to Cart Button
+2026-01-27 11:42:46 [main] INFO : Verify and Click on view cart Button
+2026-01-27 11:42:50 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-01-27 11:42:50 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-01-27 11:42:50 [main] INFO : Expected :Request added to cart and Actual :Request added to cart
+2026-01-27 11:42:50 [main] INFO : Expected :Request added to cart and Actual :Request added to cart both are same
+2026-01-27 11:43:23 [main] INFO : Testing Ended
+2026-01-27 11:43:23 [main] INFO : ***********
+2026-01-27 12:01:59 [main] INFO : Launching Chrome Browser
+2026-01-27 12:02:00 [main] INFO : Report Name :OraclePage.html
+2026-01-27 12:02:05 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 12:02:10 [main] INFO : Logged in to Oracle Application
+2026-01-27 12:02:11 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 12:02:11 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 12:02:17 [main] INFO : Clicking on Home icon
+2026-01-27 12:02:30 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 12:02:30 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 12:02:31 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 12:02:31 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 12:02:33 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 12:02:33 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 12:02:36 [main] INFO : Entering Item Description
+2026-01-27 12:02:37 [main] INFO : Selecting Category
+2026-01-27 12:02:41 [main] INFO : Enter Quantity field
+2026-01-27 12:02:45 [main] INFO : Enter Unit of Measure
+2026-01-27 12:02:47 [main] INFO : Enter Price
+2026-01-27 12:02:54 [main] INFO : Click Add to Cart Button
+2026-01-27 12:02:55 [main] INFO : Verify and Click on view cart Button
+2026-01-27 12:02:56 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-01-27 12:02:56 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-01-27 12:02:56 [main] INFO : Expected :Request added to cart and Actual :Request added to cart
+2026-01-27 12:02:56 [main] INFO : Expected :Request added to cart and Actual :Request added to cart both are same
+2026-01-27 12:02:59 [main] INFO : Testing Ended
+2026-01-27 12:02:59 [main] INFO : ***********
+2026-01-27 12:11:25 [main] INFO : Launching Chrome Browser
+2026-01-27 12:11:25 [main] INFO : Report Name :OraclePage.html
+2026-01-27 12:11:55 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 12:11:59 [main] INFO : Logged in to Oracle Application
+2026-01-27 12:12:00 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 12:12:00 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 12:12:03 [main] INFO : Clicking on Home icon
+2026-01-27 12:12:17 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 12:12:17 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 12:12:18 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 12:12:18 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 12:12:21 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 12:12:21 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 12:12:23 [main] INFO : Entering Item Description
+2026-01-27 12:12:25 [main] INFO : Selecting Category
+2026-01-27 12:12:29 [main] INFO : Enter Quantity field
+2026-01-27 12:12:33 [main] INFO : Enter Unit of Measure
+2026-01-27 12:12:35 [main] INFO : Enter Price
+2026-01-27 12:12:42 [main] INFO : Click Add to Cart Button
+2026-01-27 12:12:43 [main] INFO : Verify and Click on view cart Button
+2026-01-27 12:12:46 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-01-27 12:12:46 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-01-27 12:12:46 [main] INFO : Expected :Request added to cart and Actual :Request added to cart
+2026-01-27 12:12:46 [main] INFO : Expected :Request added to cart and Actual :Request added to cart both are same
+2026-01-27 12:12:51 [main] INFO : Testing Ended
+2026-01-27 12:12:51 [main] INFO : ***********

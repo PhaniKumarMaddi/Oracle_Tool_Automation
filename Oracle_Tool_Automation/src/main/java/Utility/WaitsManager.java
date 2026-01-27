@@ -158,7 +158,7 @@ public class WaitsManager {
 	}
 
 	public void implWait(WebDriver driver) {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 
 	public void closeCurrentTab() {

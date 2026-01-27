@@ -64,7 +64,6 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime(driver);
 		oraHome.enterPrice("30");
 
-		
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Filling Non Catalog Request Page", "Filling_NonCatalogRequestPage");
 	}

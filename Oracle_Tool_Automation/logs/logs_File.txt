@@ -1056,3 +1056,327 @@ Session ID: 491a9824db1fee0b00b02023991cab20
 2026-01-27 12:12:46 [main] INFO : Expected :Request added to cart and Actual :Request added to cart both are same
 2026-01-27 12:12:51 [main] INFO : Testing Ended
 2026-01-27 12:12:51 [main] INFO : ***********
+2026-01-27 12:31:53 [main] INFO : Launching Chrome Browser
+2026-01-27 12:31:54 [main] INFO : Report Name :OraclePage.html
+2026-01-27 12:32:02 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 12:32:07 [main] INFO : Logged in to Oracle Application
+2026-01-27 12:32:08 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 12:32:08 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 12:32:11 [main] INFO : Testing Ended
+2026-01-27 12:32:11 [main] INFO : ***********
+2026-01-27 12:33:14 [main] INFO : Launching Chrome Browser
+2026-01-27 12:33:14 [main] INFO : Report Name :OraclePage.html
+2026-01-27 12:33:22 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 12:33:26 [main] INFO : Logged in to Oracle Application
+2026-01-27 12:33:26 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 12:33:26 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 12:33:29 [main] INFO : Testing Ended
+2026-01-27 12:33:29 [main] INFO : ***********
+2026-01-27 12:34:24 [main] INFO : Launching Chrome Browser
+2026-01-27 12:34:24 [main] INFO : Report Name :OraclePage.html
+2026-01-27 12:34:32 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 12:34:37 [main] INFO : Logged in to Oracle Application
+2026-01-27 12:34:38 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 12:34:38 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 12:34:40 [main] INFO : Testing Ended
+2026-01-27 12:34:40 [main] INFO : ***********
+2026-01-27 12:36:23 [main] INFO : Launching Chrome Browser
+2026-01-27 12:36:24 [main] INFO : Report Name :OraclePage.html
+2026-01-27 12:36:32 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 12:36:37 [main] INFO : Logged in to Oracle Application
+2026-01-27 12:36:37 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 12:36:37 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 12:36:40 [main] INFO : Testing Ended
+2026-01-27 12:36:40 [main] INFO : ***********
+2026-01-27 12:38:48 [main] INFO : Launching Chrome Browser
+2026-01-27 12:38:49 [main] INFO : Report Name :OraclePage.html
+2026-01-27 12:39:00 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 12:39:04 [main] INFO : Logged in to Oracle Application
+2026-01-27 12:39:05 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 12:39:05 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 12:39:09 [main] INFO : Clicking on Home icon
+2026-01-27 12:39:32 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 12:39:32 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 12:39:33 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 12:39:33 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 12:39:36 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 12:39:36 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 12:39:39 [main] INFO : Entering Item Description
+2026-01-27 12:39:41 [main] INFO : Selecting Category
+2026-01-27 12:39:46 [main] INFO : Enter Quantity field
+2026-01-27 12:39:50 [main] INFO : Enter Unit of Measure
+2026-01-27 12:39:53 [main] INFO : Enter Price
+2026-01-27 12:40:00 [main] INFO : Click Add to Cart Button
+2026-01-27 12:40:01 [main] INFO : Verify and Click on view cart Button
+2026-01-27 12:40:02 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-01-27 12:40:02 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-01-27 12:40:02 [main] INFO : Expected :Request added to cart and Actual :Request added to cart
+2026-01-27 12:40:02 [main] INFO : Expected :Request added to cart and Actual :Request added to cart both are same
+2026-01-27 12:40:07 [main] INFO : Testing Ended
+2026-01-27 12:40:07 [main] INFO : ***********
+2026-01-27 12:44:22 [main] INFO : Launching Chrome Browser
+2026-01-27 12:44:22 [main] INFO : Report Name :OraclePage.html
+2026-01-27 12:44:31 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 12:44:36 [main] INFO : Logged in to Oracle Application
+2026-01-27 12:44:37 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 12:44:37 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 12:44:41 [main] INFO : Clicking on Home icon
+2026-01-27 12:44:54 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 12:44:54 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 12:44:54 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 12:44:54 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 12:44:56 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 12:44:56 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 12:45:00 [main] INFO : Entering Item Description: Mouse
+2026-01-27 12:45:05 [main] INFO : Selecting Category: CR.MISC
+2026-01-27 12:45:08 [main] INFO : Enter Quantity field: 3
+2026-01-27 12:45:11 [main] INFO : Enter Unit of Measure: Each
+2026-01-27 12:45:16 [main] INFO : Enter Price: 30
+2026-01-27 12:45:18 [main] INFO : Click Add to Cart Button
+2026-01-27 12:45:19 [main] INFO : Verify and Click on view cart Button
+2026-01-27 12:45:20 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-01-27 12:45:20 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-01-27 12:45:20 [main] INFO : Expected :Request added to cart and Actual :Request added to cart
+2026-01-27 12:45:20 [main] INFO : Expected :Request added to cart and Actual :Request added to cart both are same
+2026-01-27 12:45:25 [main] INFO : Testing Ended
+2026-01-27 12:45:25 [main] INFO : ***********
+2026-01-27 13:26:13 [main] INFO : Launching Chrome Browser
+2026-01-27 13:26:14 [main] INFO : Report Name :OraclePage.html
+2026-01-27 13:26:54 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 13:27:26 [main] INFO : Launching Chrome Browser
+2026-01-27 13:27:27 [main] INFO : Report Name :OraclePage.html
+2026-01-27 13:27:35 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 13:27:40 [main] INFO : Logged in to Oracle Application
+2026-01-27 13:27:42 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 13:27:42 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 13:27:46 [main] INFO : Clicking on Home icon
+2026-01-27 13:28:01 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 13:28:01 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 13:28:02 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 13:28:02 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 13:28:04 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 13:28:04 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 13:28:08 [main] INFO : Entering Item Description: Mouse
+2026-01-27 13:28:13 [main] INFO : Selecting Category: CR.MISC
+2026-01-27 13:28:16 [main] INFO : Enter Quantity field: 3
+2026-01-27 13:28:19 [main] INFO : Enter Unit of Measure: Each
+2026-01-27 13:28:24 [main] INFO : Enter Price: 30
+2026-01-27 13:28:27 [main] INFO : Click Add to Cart Button
+2026-01-27 13:28:27 [main] INFO : Verify and Click on view cart Button
+2026-01-27 13:28:28 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-01-27 13:28:28 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-01-27 13:28:28 [main] INFO : Expected :Request added to cart and Actual :Request added to cart
+2026-01-27 13:28:28 [main] INFO : Expected :Request added to cart and Actual :Request added to cart both are same
+2026-01-27 13:28:34 [main] INFO : Cart Page Title retrieved: Cart
+2026-01-27 13:28:34 [main] INFO : Expected :Cart and Actual :Cart
+2026-01-27 13:28:34 [main] INFO : Expected :Cart and Actual :Cart both are same
+2026-01-27 13:28:36 [main] INFO : Cart Page Subtitle retrieved: Requisition CRREQ100017
+2026-01-27 13:28:36 [main] INFO : Expected :Requisition CRREQ100017 and Actual :Requisition CRREQ100017
+2026-01-27 13:28:36 [main] INFO : Expected :Requisition CRREQ100017 and Actual :Requisition CRREQ100017 both are same
+2026-01-27 13:28:36 [main] INFO : Item Description retrieved: Mouse
+2026-01-27 13:28:36 [main] INFO : Expected :Mouse and Actual :Mouse
+2026-01-27 13:28:36 [main] INFO : Expected :Mouse and Actual :Mouse both are same
+2026-01-27 13:28:36 [main] INFO : UOM retrieved: Each
+2026-01-27 13:28:36 [main] INFO : Expected :Each and Actual :Each
+2026-01-27 13:28:36 [main] INFO : Expected :Each and Actual :Each both are same
+2026-01-27 13:28:36 [main] INFO : Raw Price retrieved: 
+2026-01-27 13:28:36 [main] INFO : Expected :30 and Actual :
+2026-01-27 13:28:36 [main] ERROR: Expected and Actual are not same Expected [30 ], but found []
+2026-01-27 13:28:38 [main] INFO : Testing Ended
+2026-01-27 13:28:38 [main] INFO : ***********
+2026-01-27 13:30:32 [main] INFO : Launching Chrome Browser
+2026-01-27 13:30:32 [main] INFO : Report Name :OraclePage.html
+2026-01-27 13:31:35 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 13:32:05 [main] INFO : Launching Chrome Browser
+2026-01-27 13:32:06 [main] INFO : Report Name :OraclePage.html
+2026-01-27 13:32:14 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 13:32:19 [main] INFO : Logged in to Oracle Application
+2026-01-27 13:32:20 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 13:32:20 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 13:32:23 [main] INFO : Clicking on Home icon
+2026-01-27 13:32:36 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 13:32:36 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 13:32:37 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 13:32:37 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 13:32:39 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 13:32:39 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 13:32:43 [main] INFO : Entering Item Description: Mouse
+2026-01-27 13:32:47 [main] INFO : Selecting Category: CR.MISC
+2026-01-27 13:32:51 [main] INFO : Enter Quantity field: 3
+2026-01-27 13:32:54 [main] INFO : Enter Unit of Measure: Each
+2026-01-27 13:32:58 [main] INFO : Enter Price: 30
+2026-01-27 13:33:01 [main] INFO : Click Add to Cart Button
+2026-01-27 13:33:02 [main] INFO : Verify and Click on view cart Button
+2026-01-27 13:33:05 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-01-27 13:33:05 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-01-27 13:33:05 [main] INFO : Expected :Request added to cart and Actual :Request added to cart
+2026-01-27 13:33:05 [main] INFO : Expected :Request added to cart and Actual :Request added to cart both are same
+2026-01-27 13:33:11 [main] INFO : Cart Page Title retrieved: Cart
+2026-01-27 13:33:11 [main] INFO : Expected :Cart and Actual :Cart
+2026-01-27 13:33:11 [main] INFO : Expected :Cart and Actual :Cart both are same
+2026-01-27 13:33:13 [main] INFO : Cart Page Subtitle retrieved: Requisition CRREQ100017
+2026-01-27 13:33:13 [main] INFO : Expected :Requisition CRREQ100017 and Actual :Requisition CRREQ100017
+2026-01-27 13:33:13 [main] INFO : Expected :Requisition CRREQ100017 and Actual :Requisition CRREQ100017 both are same
+2026-01-27 13:33:13 [main] INFO : Item Description retrieved: Mouse
+2026-01-27 13:33:13 [main] INFO : Expected :Mouse and Actual :Mouse
+2026-01-27 13:33:13 [main] INFO : Expected :Mouse and Actual :Mouse both are same
+2026-01-27 13:33:13 [main] INFO : UOM retrieved: Each
+2026-01-27 13:33:13 [main] INFO : Expected :Each and Actual :Each
+2026-01-27 13:33:13 [main] INFO : Expected :Each and Actual :Each both are same
+2026-01-27 13:33:13 [main] INFO : Raw Price retrieved: 
+2026-01-27 13:33:13 [main] INFO : Expected :30 and Actual :
+2026-01-27 13:33:13 [main] ERROR: Expected and Actual are not same Expected [30 ], but found []
+2026-01-27 13:33:14 [main] INFO : Testing Ended
+2026-01-27 13:33:14 [main] INFO : ***********
+2026-01-27 13:35:22 [main] INFO : Launching Chrome Browser
+2026-01-27 13:35:22 [main] INFO : Report Name :OraclePage.html
+2026-01-27 13:35:37 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 13:35:42 [main] INFO : Logged in to Oracle Application
+2026-01-27 13:35:42 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 13:35:42 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 13:35:46 [main] INFO : Clicking on Home icon
+2026-01-27 13:35:59 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 13:35:59 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 13:35:59 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 13:35:59 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 13:36:02 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 13:36:02 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 13:36:05 [main] INFO : Entering Item Description: Mouse
+2026-01-27 13:36:10 [main] INFO : Selecting Category: CR.MISC
+2026-01-27 13:36:14 [main] INFO : Enter Quantity field: 3
+2026-01-27 13:36:17 [main] INFO : Enter Unit of Measure: Each
+2026-01-27 13:36:21 [main] INFO : Enter Price: 30
+2026-01-27 13:36:24 [main] INFO : Click Add to Cart Button
+2026-01-27 13:36:25 [main] INFO : Verify and Click on view cart Button
+2026-01-27 13:36:26 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-01-27 13:36:26 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-01-27 13:36:26 [main] INFO : Expected :Request added to cart and Actual :Request added to cart
+2026-01-27 13:36:26 [main] INFO : Expected :Request added to cart and Actual :Request added to cart both are same
+2026-01-27 13:36:32 [main] INFO : Cart Page Title retrieved: Cart
+2026-01-27 13:36:32 [main] INFO : Expected :Cart and Actual :Cart
+2026-01-27 13:36:32 [main] INFO : Expected :Cart and Actual :Cart both are same
+2026-01-27 13:36:34 [main] INFO : Cart Page Subtitle retrieved: Requisition CRREQ100017
+2026-01-27 13:36:34 [main] INFO : Expected :Requisition CRREQ100017 and Actual :Requisition CRREQ100017
+2026-01-27 13:36:34 [main] INFO : Expected :Requisition CRREQ100017 and Actual :Requisition CRREQ100017 both are same
+2026-01-27 13:36:34 [main] INFO : Item Description retrieved: Mouse
+2026-01-27 13:36:34 [main] INFO : Expected :Mouse and Actual :Mouse
+2026-01-27 13:36:34 [main] INFO : Expected :Mouse and Actual :Mouse both are same
+2026-01-27 13:36:34 [main] INFO : UOM retrieved: Each
+2026-01-27 13:36:34 [main] INFO : Expected :Each and Actual :Each
+2026-01-27 13:36:34 [main] INFO : Expected :Each and Actual :Each both are same
+2026-01-27 13:36:34 [main] INFO : Raw Price retrieved: 
+2026-01-27 13:36:34 [main] INFO : Expected :30 and Actual :
+2026-01-27 13:36:34 [main] ERROR: Expected and Actual are not same Expected [30 ], but found []
+2026-01-27 13:36:36 [main] INFO : Testing Ended
+2026-01-27 13:36:36 [main] INFO : ***********
+2026-01-27 13:37:59 [main] INFO : Launching Chrome Browser
+2026-01-27 13:37:59 [main] INFO : Report Name :OraclePage.html
+2026-01-27 13:38:37 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 13:38:40 [main] ERROR: Test Failed :invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=144.0.7559.97)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed8c493b5786cf12fd2a899b93e0f650, findElements {value=//input[@id='idcs-signin-basic-signin-form-username'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.96 (d7b80622cfab..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55546}, goog:processID: 18672, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55546/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed8c493b5786cf12fd2a899b93e0f650
+2026-01-27 13:38:40 [main] ERROR: Test Failed :invalid session id
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed8c493b5786cf12fd2a899b93e0f650, setTimeout {implicit=30000}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.96 (d7b80622cfab..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55546}, goog:processID: 18672, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55546/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed8c493b5786cf12fd2a899b93e0f650
+2026-01-27 13:38:40 [main] ERROR: Test Failed :invalid session id
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed8c493b5786cf12fd2a899b93e0f650, setTimeout {implicit=30000}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.96 (d7b80622cfab..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55546}, goog:processID: 18672, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55546/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed8c493b5786cf12fd2a899b93e0f650
+2026-01-27 13:38:42 [main] INFO : Logged in to Oracle Application
+2026-01-27 13:38:56 [main] INFO : Launching Chrome Browser
+2026-01-27 13:38:56 [main] INFO : Report Name :OraclePage.html
+2026-01-27 13:39:05 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 13:39:09 [main] INFO : Logged in to Oracle Application
+2026-01-27 13:39:10 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 13:39:10 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 13:39:14 [main] INFO : Clicking on Home icon
+2026-01-27 13:39:26 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 13:39:26 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 13:39:27 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 13:39:27 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 13:39:29 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 13:39:29 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 13:39:33 [main] INFO : Entering Item Description: Mouse
+2026-01-27 13:39:37 [main] INFO : Selecting Category: CR.MISC
+2026-01-27 13:39:41 [main] INFO : Enter Quantity field: 3
+2026-01-27 13:39:44 [main] INFO : Enter Unit of Measure: Each
+2026-01-27 13:39:49 [main] INFO : Enter Price: 30
+2026-01-27 13:39:51 [main] INFO : Click Add to Cart Button
+2026-01-27 13:39:52 [main] INFO : Verify and Click on view cart Button
+2026-01-27 13:39:53 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-01-27 13:39:53 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-01-27 13:39:53 [main] INFO : Expected :Request added to cart and Actual :Request added to cart
+2026-01-27 13:39:53 [main] INFO : Expected :Request added to cart and Actual :Request added to cart both are same
+2026-01-27 13:39:58 [main] INFO : Cart Page Title retrieved: Cart
+2026-01-27 13:39:58 [main] INFO : Expected :Cart and Actual :Cart
+2026-01-27 13:39:58 [main] INFO : Expected :Cart and Actual :Cart both are same
+2026-01-27 13:39:59 [main] INFO : Cart Page Subtitle retrieved: Requisition CRREQ100017
+2026-01-27 13:39:59 [main] INFO : Expected :Requisition CRREQ100017 and Actual :Requisition CRREQ100017
+2026-01-27 13:39:59 [main] INFO : Expected :Requisition CRREQ100017 and Actual :Requisition CRREQ100017 both are same
+2026-01-27 13:40:00 [main] INFO : Item Description retrieved: Mouse
+2026-01-27 13:40:00 [main] INFO : Expected :Mouse and Actual :Mouse
+2026-01-27 13:40:00 [main] INFO : Expected :Mouse and Actual :Mouse both are same
+2026-01-27 13:40:00 [main] INFO : UOM retrieved: Each
+2026-01-27 13:40:00 [main] INFO : Expected :Each and Actual :Each
+2026-01-27 13:40:00 [main] INFO : Expected :Each and Actual :Each both are same
+2026-01-27 13:40:02 [main] INFO : Testing Ended
+2026-01-27 13:40:02 [main] INFO : ***********
+2026-01-27 13:46:17 [main] INFO : Launching Chrome Browser
+2026-01-27 13:46:18 [main] INFO : Report Name :OraclePage.html
+2026-01-27 13:46:23 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 13:47:27 [main] ERROR: Username Not Available 
+2026-01-27 13:47:31 [main] INFO : Logged in to Oracle Application
+2026-01-27 13:47:40 [main] INFO : Launching Chrome Browser
+2026-01-27 13:47:40 [main] INFO : Report Name :OraclePage.html
+2026-01-27 13:47:46 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-27 13:47:50 [main] INFO : Logged in to Oracle Application
+2026-01-27 13:47:50 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-27 13:47:50 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-27 13:47:54 [main] INFO : Clicking on Home icon
+2026-01-27 13:48:06 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-01-27 13:48:06 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-01-27 13:48:06 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-01-27 13:48:06 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-01-27 13:48:08 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-01-27 13:48:08 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-01-27 13:48:12 [main] INFO : Entering Item Description: Mouse
+2026-01-27 13:48:16 [main] INFO : Selecting Category: CR.MISC
+2026-01-27 13:48:20 [main] INFO : Enter Quantity field: 3
+2026-01-27 13:48:23 [main] INFO : Enter Unit of Measure: Each
+2026-01-27 13:48:27 [main] INFO : Enter Price: 30
+2026-01-27 13:48:30 [main] INFO : Click Add to Cart Button
+2026-01-27 13:48:30 [main] INFO : Verify and Click on view cart Button
+2026-01-27 13:48:31 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-01-27 13:48:31 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-01-27 13:48:31 [main] INFO : Expected :Request added to cart and Actual :Request added to cart
+2026-01-27 13:48:31 [main] INFO : Expected :Request added to cart and Actual :Request added to cart both are same
+2026-01-27 13:48:36 [main] INFO : Cart Page Title retrieved: Cart
+2026-01-27 13:48:36 [main] INFO : Expected :Cart and Actual :Cart
+2026-01-27 13:48:36 [main] INFO : Expected :Cart and Actual :Cart both are same
+2026-01-27 13:48:37 [main] INFO : Cart Page Subtitle retrieved: Requisition CRREQ100017
+2026-01-27 13:48:37 [main] INFO : Expected :Requisition CRREQ100017 and Actual :Requisition CRREQ100017
+2026-01-27 13:48:37 [main] INFO : Expected :Requisition CRREQ100017 and Actual :Requisition CRREQ100017 both are same
+2026-01-27 13:48:37 [main] INFO : Item Description retrieved: Mouse
+2026-01-27 13:48:37 [main] INFO : Expected :Mouse and Actual :Mouse
+2026-01-27 13:48:37 [main] INFO : Expected :Mouse and Actual :Mouse both are same
+2026-01-27 13:48:38 [main] INFO : UOM retrieved: Each
+2026-01-27 13:48:38 [main] INFO : Expected :Each and Actual :Each
+2026-01-27 13:48:38 [main] INFO : Expected :Each and Actual :Each both are same
+2026-01-27 13:48:38 [main] INFO : Raw Price retrieved: 
+2026-01-27 13:48:38 [main] INFO : Expected :30 and Actual :
+2026-01-27 13:48:38 [main] ERROR: Expected and Actual are not same Expected [30 ], but found []
+2026-01-27 13:48:39 [main] INFO : Testing Ended
+2026-01-27 13:48:39 [main] INFO : ***********

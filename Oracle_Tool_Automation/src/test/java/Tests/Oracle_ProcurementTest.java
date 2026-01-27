@@ -2,19 +2,35 @@ package Tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Pages.Oracle_HomePage;
 import Pages.TestInitializer;
+import Utility.ExcelDataProvider;
 import Utility.GenerateReports;
+import Utility.ValidatingAssertions;
 
 public class Oracle_ProcurementTest extends TestInitializer {
 	private static final Logger logger = LogManager.getLogger(Oracle_ProcurementTest.class);
 	GenerateReports grep = new GenerateReports();
+	ValidatingAssertions validAssert = new ValidatingAssertions();
 
-	@Test
+//	@DataProvider(name = "ProcurementTest")
+//	public Object[][] getData() {
+//		// Get Excel Test Data passing Excel File Name and Sheet Name
+//		Object data[][] = ExcelDataProvider.testData("Oracle_TestData", "Procurement");
+//		return data;
+//	}
+
+//	@Test(dataProvider = "ProcurementTest")
+//	public void oracle_Procurement_Test(String itemDesc, String categoryValue, String quantityValue, String uomValue,
+//			String priceValue) throws Exception {
+//		String quantity_Value = String.valueOf(quantityValue);
+//		String price_Value = String.valueOf(priceValue);
+
+	@Test()
 	public void oracle_Procurement_Test() throws Exception {
-
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		grep.testCreate("Verify Navigate to Procurement Page Functionality Test", "Navigate to Procurement Page");
@@ -48,30 +64,24 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		oraHome.validateNonCatalogHeaderTitle();
 		waitTime2(driver);
 		grep.captureScreenshot("pass", "Inside Non Catalog Request Page", "NonCatalogRequestPage");
-		waitTime(driver);
-		grep.infoTest("Entering Item Description");
-		logger.info("Entering Item Description");
-		waitTime(driver);
-		oraHome.enterItemDescription("Mouse");
-		waitTime(driver);
-		grep.infoTest("Selecting Category");
-		logger.info("Selecting Category");
-		oraHome.enterCategoryField("CR.MISC");
-		waitTime(driver);
-		grep.infoTest("Enter Quantity field");
-		logger.info("Enter Quantity field");
-		oraHome.enterQuantity("3");
-		waitTime(driver);
-		grep.infoTest("Enter Unit of Measure");
-		logger.info("Enter Unit of Measure");
-		oraHome.enterUnitOfMeasureField("Each");
-		waitTime(driver);
-		grep.infoTest("Enter Price");
-		logger.info("Enter Price");
-		oraHome.enterPrice("30");
-		waitTime2(driver);
 
 		waitTime(driver);
+		oraHome.enterItemDescription("Mouse");
+//		oraHome.enterItemDescription(itemDesc);
+		waitTime(driver);
+		oraHome.enterCategoryField("CR.MISC");
+//		oraHome.enterCategoryField(categoryValue);
+		waitTime(driver);
+		oraHome.enterQuantity("3");
+//		oraHome.enterQuantity(quantity_Value);
+		waitTime(driver);
+		oraHome.enterUnitOfMeasureField("Each");
+//		oraHome.enterUnitOfMeasureField(uomValue);
+		waitTime(driver);
+		oraHome.enterPrice("30");
+//		oraHome.enterPrice(price_Value);
+		waitTime2(driver);
+
 		grep.captureScreenshot("pass", "Filling Non Catalog Request Page", "Filling_NonCatalogRequestPage");
 
 		waitTime(driver);
@@ -91,11 +101,12 @@ public class Oracle_ProcurementTest extends TestInitializer {
 
 		oraHome.clickNavigateToCart();
 		waitTime(driver);
-		grep.testCreate("Verify Product Details in Cart Page Test",
-				"Verify Product Details in Cart Page");
+		grep.testCreate("Verify Product Details in Cart Page Test", "Verify Product Details in Cart Page");
 		waitTime(driver);
-		
-
+		oraHome.validateCartPageDetails("Cart", "Requisition CRREQ100017", "Mouse", "Each", "30");
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Verify Product Details in Cart Page Test", "ProcurementDetailsInCart_Test");
+		waitTime(driver);
 	}
 
 }

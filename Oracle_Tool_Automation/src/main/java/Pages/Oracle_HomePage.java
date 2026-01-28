@@ -5,10 +5,10 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import Utility.DriverManager;
 import Utility.GenerateReports;
@@ -28,7 +28,6 @@ public class Oracle_HomePage extends WaitsManager {
 	// navigate to procurement
 	By homeBtn = By.xpath("//a[@id='pt1:_UIShome']");
 	By homePageMsg = By.xpath("//div[@id='pt1:atkfr1:0:grid:0:pgl1']");
-	By meLink = By.xpath("//a[@id='groupNode_my_information']");
 	By navigator = By.xpath("//a[@id='pt1:_UISmmLink']");
 	By procurementNavigation = By.xpath("//div[@title='Procurement']");
 	By purchaseRequisitions = By.xpath("//a[@title='Purchase Requisitions (New)']");
@@ -57,7 +56,8 @@ public class Oracle_HomePage extends WaitsManager {
 	// My Cart page
 	By cartPageTitle = By.xpath("//h1[@id='oj_gop1_h_pageTitle']");
 	By cartPageSubtitle = By.xpath("//div[@id='oj_gop1_h_pageSubtitle']");
-	By cartPageItemDesc = By.cssSelector("div.oj-typography-body-md.oj-line-clamp-3 ");
+	By cartPageItemDesc = By.cssSelector(
+			"div.oj-sm-align-items-center.oj-flex.oj-sm-flex-wrap-nowrap>div.oj-typography-body-md.oj-line-clamp-3 ");
 	By cartPageUOM = By.cssSelector("div.oj-flex.oj-sm-align-items-baseline>div");
 	By cartPagePrice = By.cssSelector("div.oj-flex.oj-sm-align-self-flex-end");
 	By subTotalAmt = By.xpath("//div[text()='Subtotal']/following-sibling::div");
@@ -67,9 +67,16 @@ public class Oracle_HomePage extends WaitsManager {
 	// gt submit details
 	By submitMsgDetails = By.cssSelector("div.oj-message-detail");
 
-	// requisition  page 
-	By requsitionStage = By.xpath("//div[@class='oj-sp-card-common-badge-container oj-sp-card-common-badge-margin-end']");
-	
+	// requisition page
+	By requsitionStage = By
+			.xpath("//div[@class='oj-sp-card-common-badge-container oj-sp-card-common-badge-margin-end']");
+	By backToHome = By.xpath("//a[@on-click='[[onHomeClick]] ']");
+
+	// In Process requisition for Purchase Order
+	By requisitionBU = By.xpath("//label[text()=' Requisitioning BU']/preceding-sibling::select");
+	By buyer = By.xpath("//label[text()=' Buyer']/preceding-sibling::input");
+	By searchBtn = By.xpath("//button[text()='Search']");
+
 	public void clickHomeButton() throws Exception {
 		try {
 			implWait(driver);
@@ -99,9 +106,64 @@ public class Oracle_HomePage extends WaitsManager {
 
 	}
 
-	public void clickMeLink() {
-		implWait(driver);
-		driver.findElement(meLink).click();
+	public void selectTabWithNavigator(String tabName) {
+
+		// Small pause for the sliding animation to complete
+		try {
+			// Locators
+			By tabLocator = By.xpath("//div[starts-with(@class,'flat-tabs-item')]/a[text()='" + tabName + "']");
+			By rightNavBtn = By.id("clusters-right-nav");
+
+			boolean isTabFound = false;
+			int maxClicks = 10; // Prevent infinite loops
+
+			for (int i = 0; i < maxClicks; i++) {
+				List<WebElement> tabs = driver.findElements(tabLocator);
+
+				// Check if element exists AND is displayed to the user
+				if (!tabs.isEmpty() && tabs.get(0).isDisplayed()) {
+					tabs.get(0).click();
+					System.out.println("Clicked on tab: " + tabName);
+					isTabFound = true;
+					break;
+				}
+
+				// If not found or not displayed, click the right navigator
+				WebElement nextButton = driver.findElement(rightNavBtn);
+				if (nextButton.isDisplayed()) {
+					nextButton.click();
+					System.out.println("Tab not visible, clicked Right Navigator (Attempt " + (i + 1) + ")");
+
+					waitTime(driver);
+
+				} else {
+					break; // Navigator button hidden, reached the end
+				}
+			}
+
+			if (!isTabFound) {
+				throw new RuntimeException("Could not find/click the tab: " + tabName);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void selectFromQuickActions(String actionVal) throws Exception {
+		try {
+			By selectQuickAction = By
+					.xpath("//div[@class='flat-quickactions-container']/div/a[text()='" + actionVal + "']");
+			implWait(driver);
+			driver.findElement(selectQuickAction).click();
+			waitTime1(driver);
+			grep.infoTest("Selecting Quick Action: " + actionVal);
+			logger.info("Selecting Quick Action: " + actionVal);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	public void clickNavigator() {
@@ -313,13 +375,15 @@ public class Oracle_HomePage extends WaitsManager {
 			logger.info("Cart Page Title retrieved: " + actualTitle);
 			grep.infoTest("Cart Page Title retrieved: " + actualTitle);
 			validAssert.equalsAssert(actualTitle, expectedTitle);
+			waitTime(driver);
 
-//			// 2. Validate Page Subtitle
-//			String actualSubtitle = driver.findElement(cartPageSubtitle).getText().trim();
-//			System.out.println("Cart Page Subtitle retrieved: " + actualSubtitle);
-//			logger.info("Cart Page Subtitle retrieved: " + actualSubtitle);
-//			grep.infoTest("Cart Page Subtitle retrieved: " + actualSubtitle);
-//			validAssert.equalsAssert(actualSubtitle, expectedSubtitle);
+			// 2. Validate Page Subtitle
+			String actualSubtitle = driver.findElement(cartPageSubtitle).getText().trim();
+			System.out.println("Cart Page Subtitle retrieved: " + actualSubtitle);
+			logger.info("Cart Page Subtitle retrieved: " + actualSubtitle);
+			grep.infoTest("Cart Page Subtitle retrieved: " + actualSubtitle);
+			validAssert.trueAssert(actualSubtitle.startsWith("Requisition CRRE"));
+			waitTime(driver);
 
 			// 3. Validate Item Description
 			String actualDesc = driver.findElement(cartPageItemDesc).getText().trim();
@@ -327,6 +391,7 @@ public class Oracle_HomePage extends WaitsManager {
 			logger.info("Item Description retrieved: " + actualDesc);
 			grep.infoTest("Item Description retrieved: " + actualDesc);
 			validAssert.equalsAssert(actualDesc, expectedDesc);
+			waitTime(driver);
 
 			// 4. Validate Unit of Measure (UOM)
 			String actualUOM = driver.findElement(cartPageUOM).getText().trim();
@@ -334,6 +399,7 @@ public class Oracle_HomePage extends WaitsManager {
 			logger.info("UOM retrieved: " + actualUOM);
 			grep.infoTest("UOM retrieved: " + actualUOM);
 			validAssert.equalsAssert(actualUOM, expectedUOM);
+			waitTime(driver);
 
 //			waitTime1(driver);
 //			// 5. Validate Price (Extracting the numeric value only)
@@ -444,7 +510,7 @@ public class Oracle_HomePage extends WaitsManager {
 	public void validateSubmitRequisitionPopup() throws Exception {
 
 		try {
-			waitForElement(confirmPopupHeader, 10);
+			implWait(driver);
 
 			// 1. Validate the Header Text
 			String actualHeader = waitVisible(confirmPopupHeader).getText();
@@ -472,4 +538,106 @@ public class Oracle_HomePage extends WaitsManager {
 		}
 		return getMsg;
 	}
+
+	public void validateSubmittedRequisitionState(String expectedState) throws Exception {
+
+		try {
+			implWait(driver);
+			List<WebElement> state = driver.findElements(requsitionStage);
+			if (state.size() > 0) {
+				String actualState = state.getFirst().getText().trim();
+				validAssert.equalsAssert(actualState, expectedState);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void verifyRequisitionApproveState(int maxRetries) throws Exception {
+
+		try {
+			implWait(driver);
+
+			boolean success = false;
+			for (int i = 0; i < maxRetries; i++) {
+				refreshPage();
+
+				List<WebElement> state = driver.findElements(requsitionStage);
+				if (!state.isEmpty()) {
+					String currentStatus = state.getFirst().getText().trim();
+
+					if (currentStatus.equalsIgnoreCase("Approved")) {
+						success = true;
+						break;
+					}
+				} else {
+					System.out.println("Attempt " + (i + 1) + ": Status element not found on page.");
+				}
+				waitTime3(driver);
+			}
+			if (!success) {
+				throw new RuntimeException(
+						"Timeout: Status did not reach 'Approved ' after " + maxRetries + " retries.");
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void NavigateBackToHome() throws Exception {
+		try {
+			implWait(driver);
+			boolean elementExists = !driver.findElements(backToHome).isEmpty();
+			if (elementExists) {
+				waitForElementToBeClickable(backToHome, 30);
+				driver.findElement(backToHome).click();
+			} else {
+				logger.error("Home button Not Available ");
+				grep.failTest("Home button Not Available ");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			grep.failTest("Test Failed :" + e.getMessage());
+			logger.error("Test Failed :" + e.getMessage());
+		}
+	}
+
+	// Process Requisition
+	public void selectRequisitionBU(String option) throws Exception {
+		try {
+			waitForElementToBeClickable(requisitionBU, 10);
+			WebElement selectBu = driver.findElement(requisitionBU);
+			Select sel = new Select(selectBu);
+			sel.selectByVisibleText(option);
+			grep.infoTest("Select " + option + " from the drop down under Requisitioning BU");
+			logger.info("Select " + option + " from the drop down under Requisitioning BU");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			grep.failTest("Test Failed :" + e.getMessage());
+			logger.error("Test Failed :" + e.getMessage());
+		}
+
+	}
+
+	public void clearBuyer() throws Exception {
+		try {
+			waitForElementToBeClickable(buyer, 10);
+			WebElement buy = driver.findElement(buyer);
+			buy.sendKeys(Keys.CONTROL + "a" + Keys.DELETE);
+			waitTime(driver);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			grep.failTest("Test Failed :" + e.getMessage());
+			logger.error("Test Failed :" + e.getMessage());
+		}
+
+	}
+	public void clickSearchBtn() {
+		implWait(driver);
+		driver.findElement(searchBtn).click();
+	}
+
 }

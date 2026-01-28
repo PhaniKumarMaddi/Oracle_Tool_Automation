@@ -71,9 +71,9 @@ public class ValidatingAssertions extends WaitsManager {
 			grep.passTest("Expected :" + expectedResult + " and Actual :" + actualResult + " both are same");
 			logger.info("Expected :" + expectedResult + " and Actual :" + actualResult + " both are same");
 		} else {
-			grep.failTest("Expected and Actual are not same Expected [" + expectedResult + " ], but found ["
+			grep.failTest("Expected and Actual are not same Expected [" + expectedResult + "], but found ["
 					+ actualResult + "]");
-			logger.error("Expected and Actual are not same Expected [" + expectedResult + " ], but found ["
+			logger.error("Expected and Actual are not same Expected [" + expectedResult + "], but found ["
 					+ actualResult + "]");
 		}
 	}

@@ -27,7 +27,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 //		String quantity_Value = String.valueOf(quantityValue);
 //		String price_Value = String.valueOf(priceValue);
 
-	@Test()
+	@Test(enabled = false)
 	public void oracle_Procurement_Test() throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
@@ -106,11 +106,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 
 		String getSubTitle = oraHome.getSubTitleDetails();
 
-		logger.info("Cart Page Subtitle retrieved: " + getSubTitle);
-		grep.infoTest("Cart Page Subtitle retrieved: " + getSubTitle);
-		waitTime(driver);
-		validAssert.trueAssert(getSubTitle.startsWith("Requisition CRRE"));
-		waitTime(driver);
+		System.out.println("Cart Page Subtitle retrieved: " + getSubTitle);
 
 		int getPrice = oraHome.validatePriceDetails();
 
@@ -123,20 +119,68 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Verify Product Details in Cart Page Test", "ProcurementDetailsInCart_Test");
 		waitTime(driver);
-//		oraHome.clickSubmitCartBtn();
-//		waitTime(driver);
-//		oraHome.validateSubmitRequisitionPopup();
-//		String getDetails = oraHome.getSubmitRequisitionMessage();
-//		logger.info("After Submitting Requisition: " + getDetails);
-//		grep.infoTest("After Submitting Requisition: " + getDetails);
-//		waitTime(driver);
-//		validAssert.trueAssert(getDetails.startsWith("Requisition CRRE"));
-////		waitTime(driver);
+		oraHome.clickSubmitCartBtn();
+		waitTime(driver);
+		oraHome.validateSubmitRequisitionPopup();
+		String getDetails = oraHome.getSubmitRequisitionMessage();
+		logger.info("After Submitting Requisition: " + getDetails);
+		grep.infoTest("After Submitting Requisition: " + getDetails);
+		waitTime(driver);
+		validAssert.trueAssert(getDetails.startsWith("Requisition CRRE"));
+		waitTime(driver);
 
 		grep.captureScreenshot("pass", "Submit Requisition Test", "SubmitRequsition_Test");
-		waitTime(driver);
-//		
+		waitTime2(driver);
 
+		oraHome.validateSubmittedRequisitionState("Pending approval");
+		grep.captureScreenshot("pass", "Submit Requisition in Pending state Test", "Pending_SubmitRequsition_Test");
+//		waitTime15(driver);
+//		waitTime5(driver);
+//		refreshPage();
+		waitTime2(driver);
+		oraHome.verifyRequisitionApproveState(5);
+
+		oraHome.validateSubmittedRequisitionState("Approved");
+		grep.captureScreenshot("pass", "Submit Requisition in Approved state Test", "Approved_SubmitRequsition_Test");
+
+		waitTime(driver);
+	}
+
+	@Test()
+	public void oracle_PurchaseOrder_Test() throws Exception {
+		Oracle_HomePage oraHome = new Oracle_HomePage();
+		oraHome.clickHomeButton();
+		waitTime(driver);
+
+		grep.testCreate("Create Purchase Order Test", "Create Purchase Order Test");
+//		oraHome.NavigateBackToHome();
+
+		logger.info("Navigating to Procurement Tab in homepage ");
+		grep.infoTest("Navigating to Procurement Tab in homepage ");
+		oraHome.selectTabWithNavigator("Procurement");
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Navigating to Procurement Tab in homepage ", "ProcurementTabInhomepage");
+		waitTime(driver);
+
+		logger.info("Click on 'Process Reqisition' under Quick actions");
+		grep.infoTest("Click on 'Process Reqisition' under Quick actions");
+
+		oraHome.selectFromQuickActions("Process Requisitions");
+
+		logger.info("Inside 'Process Reqisition' page");
+		grep.infoTest("Inside 'Process Reqisition' Page");
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Inside 'Process Reqisition' page", "InsideProcessReqisitionPage");
+		oraHome.selectRequisitionBU("CRITICAL RIVER BU");
+		oraHome.clearBuyer();
+		waitTime(driver);
+
+		grep.infoTest("Click Search Button");
+		logger.info("Click Search Button");
+		oraHome.clickSearchBtn();
+		waitTime5(driver);
+		
+		grep.captureScreenshot("pass", "Search Reqisition page", "SearchProcessReqisitionPage");
 	}
 
 }

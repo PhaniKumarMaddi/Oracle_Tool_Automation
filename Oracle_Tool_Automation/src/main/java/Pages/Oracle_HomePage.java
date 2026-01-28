@@ -76,6 +76,25 @@ public class Oracle_HomePage extends WaitsManager {
 	By requisitionBU = By.xpath("//label[text()=' Requisitioning BU']/preceding-sibling::select");
 	By buyer = By.xpath("//label[text()=' Buyer']/preceding-sibling::input");
 	By searchBtn = By.xpath("//button[text()='Search']");
+	By addToDocBuilderBtn = By.xpath("//button[text()='Add to Document Builder']");
+	// In Document builder
+	By requisitionIdInPopup = By.xpath("//table[@summary='Selected Requisition Lines']/descendant::table[2]");
+	By inputSupplier = By.xpath("//label[text()='Supplier']/parent::td/following-sibling::td/input");
+	By okBtn_inPopup = By.xpath("//button[@accesskey='K']");
+	By createBtn_inProcessRequisition = By.xpath("//button[text()='Create']");
+	By confirmPopup_inProcessRequisition = By.cssSelector("td.x1n1");
+	By okInConfirm_PO = By.xpath("//td[@class='p_AFResizable x1pn']/button[text()='OK']");
+	By savePo = By.xpath("//span[text()='Save']");
+	By getreqId_afterCreate = By.xpath("//label[text()='Requisition']/parent::td/following-sibling::td[1]/a");
+
+	By actionsBtn = By.xpath("//span[text()='Actions']");
+	By validateBtn = By.xpath("//td[text()='Validate']");
+	By submitPoBtn = By.xpath("//div[contains(@class,'callToActionSubmit ')]");
+
+	// tasks
+	By tasks = By.xpath("//div[@title='Tasks']");
+	By manageOrders = By.xpath("//a[text()='Manage Orders']");
+	By procurementBU = By.xpath("//label[text()=' Procurement BU']/preceding-sibling::select");
 
 	public void clickHomeButton() throws Exception {
 		try {
@@ -573,7 +592,7 @@ public class Oracle_HomePage extends WaitsManager {
 				} else {
 					System.out.println("Attempt " + (i + 1) + ": Status element not found on page.");
 				}
-				waitTime3(driver);
+				waitTime10(driver);
 			}
 			if (!success) {
 				throw new RuntimeException(
@@ -635,9 +654,207 @@ public class Oracle_HomePage extends WaitsManager {
 		}
 
 	}
+
 	public void clickSearchBtn() {
 		implWait(driver);
 		driver.findElement(searchBtn).click();
 	}
 
+	public void selectRequisitionFromList(String reqId) throws Exception {
+		try {
+			By selectReq = By.xpath("//a[text()='" + reqId + "']/ancestor::span/parent::td/following-sibling::td[1]");
+			implWait(driver);
+			driver.findElement(selectReq).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			grep.failTest("Test Failed :" + e.getMessage());
+			logger.error("Test Failed :" + e.getMessage());
+		}
+
+	}
+
+	public void clickAddToDocumentBuilderBtn() {
+		implWait(driver);
+		driver.findElement(addToDocBuilderBtn).click();
+	}
+
+	public void getRequisitionIdFromPopup(String reqid) throws Exception {
+		try {
+			String actualText = driver.findElement(requisitionIdInPopup).getText().trim();
+			validAssert.equalsAssert(actualText, reqid);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void searchAndSelectSupplier(String supplierValue) {
+		try {
+			implWait(driver);
+			By selectSupplier = By.xpath("//li[@data-afr-value='" + supplierValue + "']");
+
+			driver.findElement(inputSupplier).click();
+			driver.findElement(inputSupplier).sendKeys(supplierValue);
+			waitTime(driver);
+			grep.infoTest("Entering Supplier: " + supplierValue);
+			logger.info("Entering Supplier: " + supplierValue);
+			waitTime2(driver);
+			driver.findElement(selectSupplier).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickOkBtn_inDocBuilder_Popup() {
+		implWait(driver);
+		driver.findElement(okBtn_inPopup).click();
+	}
+
+	public void clickCreateBtn_inProcessRequsitionPage() {
+		implWait(driver);
+
+		scrollView(createBtn_inProcessRequisition);
+		driver.findElement(createBtn_inProcessRequisition).click();
+	}
+
+	public String validatePurchaseOrderCreationConfirmation() throws Exception {
+
+		String getMsg = null;
+		try {
+			implWait(driver);
+
+			getMsg = driver.findElement(confirmPopup_inProcessRequisition).getText().trim();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return getMsg;
+
+	}
+
+	public void clickOk_inConfirmPO_popup() {
+		implWait(driver);
+
+		driver.findElement(okInConfirm_PO).click();
+	}
+
+	public void validateRequisitionIdAfterCreatingPo(String reqId) throws Exception {
+
+		try {
+			implWait(driver);
+
+			String getId = driver.findElement(getreqId_afterCreate).getText().trim();
+			waitTime(driver);
+			grep.infoTest("Get Requisition Id after creating Purchase Order: " + getId);
+			logger.info("Get Requisition Id after creating Purchase Order: " + getId);
+			validAssert.equalsAssert(getId, reqId);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void clickSavePoBtn() {
+		implWait(driver);
+
+		driver.findElement(savePo).click();
+	}
+
+	public void clickActionAndValidateBtn() throws Exception {
+		try {
+			implWait(driver);
+
+			driver.findElement(actionsBtn).click();
+			waitTime1(driver);
+			driver.findElement(validateBtn).click();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void submitPo_ForApprovalBtn() throws Exception {
+		try {
+			implWait(driver);
+
+			driver.findElement(submitPoBtn).click();
+			waitTime(driver);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void click_Tasks_InPO() throws Exception {
+		try {
+			implWait(driver);
+
+			driver.findElement(tasks).click();
+			waitTime(driver);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void click_ManageOrders_InTask() throws Exception {
+		try {
+			implWait(driver);
+
+			driver.findElement(manageOrders).click();
+			waitTime(driver);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void selectProcurementBU(String option) throws Exception {
+		try {
+			waitForElementToBeClickable(procurementBU, 10);
+			WebElement selectBu = driver.findElement(procurementBU);
+			Select sel = new Select(selectBu);
+			sel.selectByVisibleText(option);
+			grep.infoTest("Select " + option + " from the drop down under Procurement BU");
+			logger.info("Select " + option + " from the drop down under Procurement BU");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			grep.failTest("Test Failed :" + e.getMessage());
+			logger.error("Test Failed :" + e.getMessage());
+		}
+	}
+
+	public void verifyPurchaseOrderState(String poId, int maxRetries) throws Exception {
+
+		try {
+			implWait(driver);
+//			By approvedPOStatus = By.xpath("//a[text()='CRPO500018-2025']/ancestor::table[2]/tbody/tr/td[7]");
+			By approvedPOStatus = By.xpath("//a[text()='" + poId + "']/ancestor::table[2]/tbody/tr/td[7]");
+
+			boolean success = false;
+			for (int i = 0; i < maxRetries; i++) {
+				refreshPage();
+
+				List<WebElement> state = driver.findElements(approvedPOStatus);
+				if (!state.isEmpty()) {
+					String currentStatus = state.getFirst().getText().trim();
+
+					if (currentStatus.equalsIgnoreCase("Open")) {
+						success = true;
+						break;
+					}
+				} else {
+					System.out.println("Attempt " + (i + 1) + ": Status element not found on page.");
+				}
+				waitTime15(driver);
+			}
+			if (!success) {
+				throw new RuntimeException(
+						"Timeout: Status did not reach 'Open ' after " + maxRetries + " retries.");
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }

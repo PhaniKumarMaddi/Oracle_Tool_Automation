@@ -5,7 +5,7 @@
     <classes>
       <class name="Tests.Oracle_ProcurementTest">
         <methods>
-          <include name="oracle_Procurement_Test"/>
+          <include name="oracle_PurchaseOrder_Test"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>

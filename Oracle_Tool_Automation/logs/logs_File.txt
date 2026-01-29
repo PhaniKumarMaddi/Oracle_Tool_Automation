@@ -3651,3 +3651,51 @@ View requisition
 2026-01-29 11:04:30 [main] INFO : Receipt Submitted Confirmation popup: Receipt 12 was created. Number of lines: 1.
 2026-01-29 11:04:38 [main] INFO : Testing Ended
 2026-01-29 11:04:38 [main] INFO : ***********
+2026-01-29 11:26:20 [main] INFO : Launching Chrome Browser
+2026-01-29 11:26:20 [main] INFO : Report Name :OraclePage.html
+2026-01-29 11:26:29 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-29 11:26:34 [main] INFO : Logged in to Oracle Application
+2026-01-29 11:26:36 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-29 11:26:36 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-29 11:26:48 [main] INFO : Select Receipts from the drop down under Procurement BU
+2026-01-29 11:26:50 [main] INFO : Entering Purchase order id: CRPO500022-2025
+2026-01-29 11:26:55 [main] INFO : Select the Purchase Order for which we need to create receipt
+2026-01-29 11:26:56 [main] INFO : Click on Receive
+2026-01-29 11:26:58 [main] INFO : Click on Show Receipt quantity to know quantity details
+2026-01-29 11:27:02 [main] INFO : Click on 'Create Receipt' from right side menu
+2026-01-29 11:27:06 [main] INFO : Click on 'submit' at the top to generate receipt
+2026-01-29 11:27:08 [main] INFO : Receipt Submitted Confirmation popup: Receipt 13 was created. Number of lines: 1.
+2026-01-29 11:27:13 [main] INFO : Click on 'Done' at the top to generate receipt
+2026-01-29 11:27:16 [main] INFO : Testing Ended
+2026-01-29 11:27:16 [main] INFO : ***********
+2026-01-29 11:27:43 [main] INFO : Launching Chrome Browser
+2026-01-29 11:27:43 [main] INFO : Report Name :OraclePage.html
+2026-01-29 11:27:51 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-29 11:27:55 [main] INFO : Logged in to Oracle Application
+2026-01-29 11:27:56 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-29 11:27:56 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-29 11:28:08 [main] INFO : Select Receipts from the drop down under Procurement BU
+2026-01-29 11:28:11 [main] INFO : Entering Purchase order id: CRPO500022-2025
+2026-01-29 11:28:15 [main] INFO : Select the Purchase Order for which we need to create receipt
+2026-01-29 11:29:52 [main] INFO : Launching Chrome Browser
+2026-01-29 11:29:53 [main] INFO : Report Name :OraclePage.html
+2026-01-29 11:29:58 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-01-29 11:30:02 [main] INFO : Logged in to Oracle Application
+2026-01-29 11:30:03 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-01-29 11:30:03 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-01-29 11:30:15 [main] INFO : Select Receipts from the drop down under Procurement BU
+2026-01-29 11:30:19 [main] INFO : Entering Purchase order id: CRPO500020-2025
+2026-01-29 11:30:23 [main] INFO : Select the Purchase Order for which we need to create receipt
+2026-01-29 11:30:23 [main] INFO : Click on Receive
+2026-01-29 11:30:26 [main] INFO : Click on Show Receipt quantity to know quantity details
+2026-01-29 11:30:29 [main] INFO : Click on 'Create Receipt' from right side menu
+2026-01-29 11:30:33 [main] INFO : Click on 'submit' at the top to generate receipt
+2026-01-29 11:30:35 [main] INFO : Receipt Submitted Confirmation popup: Receipt 14 was created. Number of lines: 1.
+2026-01-29 11:30:40 [main] INFO : Click on 'Done' at the top to generate receipt
+2026-01-29 11:30:46 [main] INFO : Entering Purchase order id: CRPO500020-2025
+2026-01-29 11:30:48 [main] INFO : Select the Purchase Order for which we need to create receipt
+2026-01-29 11:30:49 [main] INFO : Click on Put Away
+2026-01-29 11:30:51 [main] INFO : Click on 'submit' at the top to generate  put away
+2026-01-29 11:30:55 [main] INFO : Receipt Submitted Confirmation popup: The put away transaction was created.
+2026-01-29 11:31:00 [main] INFO : Testing Ended
+2026-01-29 11:31:00 [main] INFO : ***********

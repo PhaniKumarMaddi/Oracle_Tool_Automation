@@ -68,8 +68,8 @@ public class Oracle_HomePage extends WaitsManager {
 	By submitMsgDetails = By.cssSelector("div.oj-message-detail");
 
 	// requisition page
-	By requsitionStage = By
-			.xpath("//div[@class='oj-sp-card-common-badge-container oj-sp-card-common-badge-margin-end']");
+//	By requsitionStage = By
+//			.xpath("//div[@class='oj-sp-card-common-badge-container oj-sp-card-common-badge-margin-end']");
 	By backToHome = By.xpath("//a[@on-click='[[onHomeClick]] ']");
 
 	// In Process requisition for Purchase Order
@@ -105,6 +105,9 @@ public class Oracle_HomePage extends WaitsManager {
 	By text_submitConfirmation = By.xpath("//div[@class='AFPopupSelector']/descendant::td[@class='x1o']");
 	By ok_submitConfirmation = By.xpath("//td[@class='x1pn']/button[@accesskey='K']");
 	By doneReceipt = By.xpath("//a[@accesskey='o']");
+
+	// put away
+	By putAwayBtn = By.xpath("//button[text()='Put Away']");
 
 	public void clickHomeButton() throws Exception {
 		try {
@@ -570,9 +573,12 @@ public class Oracle_HomePage extends WaitsManager {
 		return getMsg;
 	}
 
-	public void validateSubmittedRequisitionState(String expectedState) throws Exception {
+	public void validateSubmittedRequisitionState(String reqId, String expectedState) throws Exception {
 
 		try {
+			By requsitionStage = By.xpath("//span[text()='Requisition " + reqId
+					+ "']/parent::div/preceding-sibling::div[@class='oj-sp-card-common-badge-container oj-sp-card-common-badge-margin-end']");
+
 			implWait(driver);
 			List<WebElement> state = driver.findElements(requsitionStage);
 			if (state.size() > 0) {
@@ -584,11 +590,12 @@ public class Oracle_HomePage extends WaitsManager {
 		}
 	}
 
-	public void verifyRequisitionApproveState(int maxRetries) throws Exception {
+	public void verifyRequisitionApproveState(String reqId, int maxRetries, String status) throws Exception {
 
 		try {
 			implWait(driver);
-
+			By requsitionStage = By.xpath("//span[text()='Requisition " + reqId
+					+ "']/parent::div/preceding-sibling::div[@class='oj-sp-card-common-badge-container oj-sp-card-common-badge-margin-end']");
 			boolean success = false;
 			for (int i = 0; i < maxRetries; i++) {
 				refreshPage();
@@ -597,7 +604,7 @@ public class Oracle_HomePage extends WaitsManager {
 				if (!state.isEmpty()) {
 					String currentStatus = state.getFirst().getText().trim();
 
-					if (currentStatus.equalsIgnoreCase("Approved")) {
+					if (currentStatus.equalsIgnoreCase(status)) {
 						success = true;
 						break;
 					}
@@ -611,6 +618,22 @@ public class Oracle_HomePage extends WaitsManager {
 						"Timeout: Status did not reach 'Approved ' after " + maxRetries + " retries.");
 			}
 
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickRequisition(String reqId, String expectedState) throws Exception {
+
+		try {
+			By requsitionStage = By.xpath("//span[text()='Requisition " + reqId + "']");
+
+			implWait(driver);
+			List<WebElement> state = driver.findElements(requsitionStage);
+			if (state.size() > 0) {
+				state.getFirst().click();
+
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -970,6 +993,12 @@ public class Oracle_HomePage extends WaitsManager {
 	public void clickDoneReceiptBtn() {
 		implWait(driver);
 		driver.findElement(doneReceipt).click();
+	}
+
+	// put away
+	public void clickPutAwayBtn() {
+		implWait(driver);
+		driver.findElement(putAwayBtn).click();
 	}
 
 }

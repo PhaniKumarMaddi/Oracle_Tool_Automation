@@ -139,15 +139,16 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		grep.captureScreenshot("pass", "Submit Requisition Test", "SubmitRequsition_Test");
 		waitTime2(driver);
 
-		oraHome.validateSubmittedRequisitionState("Pending approval");
+		oraHome.validateSubmittedRequisitionState(requisitionId, "Pending approval");
 		grep.captureScreenshot("pass", "Submit Requisition in Pending state Test", "Pending_SubmitRequsition_Test");
 //		waitTime15(driver);
 //		waitTime5(driver);
 //		refreshPage();
 		waitTime2(driver);
-		oraHome.verifyRequisitionApproveState(5);
+		oraHome.verifyRequisitionApproveState(requisitionId, 5, "Approved");
+		waitTime(driver);
 
-		oraHome.validateSubmittedRequisitionState("Approved");
+		oraHome.validateSubmittedRequisitionState(requisitionId, "Approved");
 		grep.captureScreenshot("pass", "Submit Requisition in Approved state Test", "Approved_SubmitRequsition_Test");
 
 		waitTime(driver);
@@ -308,7 +309,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		oraHome.selectTasks_InTaskPage("Receive Expected Shipments");
 		waitTime(driver);
 //		oraHome.enterPurchaseOrderId(orderId);
-		oraHome.enterPurchaseOrderId("CRPO500018-2025");
+		oraHome.enterPurchaseOrderId("CRPO500020-2025");
 		waitTime(driver);
 		oraHome.clickSearchBtn();
 		waitTime3(driver);
@@ -320,7 +321,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime(driver);
 
 //		oraHome.selectRequisitionFromList(orderId);
-		oraHome.selectRequisitionFromList("CRPO500018-2025");
+		oraHome.selectRequisitionFromList("CRPO500020-2025");
 		grep.infoTest("Click on Receive");
 		logger.info("Click on Receive");
 		oraHome.clickReceiveBtn();
@@ -348,8 +349,73 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime2(driver);
 		oraHome.clickOk_inSubmitConfirmationPopup();
 		waitTime2(driver);
+
+		grep.infoTest("Click on 'Done' at the top to generate receipt");
+		logger.info("Click on 'Done' at the top to generate receipt");
+		waitTime(driver);
 		oraHome.clickDoneReceiptBtn();
 		waitTime2(driver);
+
+	}
+
+	@Test
+	public void oracle_PutAwayReceipt_Test() throws Exception {
+		waitTime(driver);
+		Oracle_HomePage oraHome = new Oracle_HomePage();
+		oraHome.click_Tasks_InPO();
+		waitTime(driver);
+		oraHome.selectTasks_InTaskPage("Put Away Receipts");
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Inside Put Away Receipts Page", "putAwayreceipts_Page");
+		waitTime(driver);
+//		oraHome.enterPurchaseOrderId(orderId);
+		oraHome.enterPurchaseOrderId("CRPO500020-2025");
+		waitTime(driver);
+		oraHome.clickSearchBtn();
+		grep.captureScreenshot("pass", "Search Order Id in put away page", "SearchOrderId_InPutAwayPage");
+
+		waitTime(driver);
+		waitTime(driver);
+		grep.infoTest("Select the Purchase Order for which we need to create receipt");
+		logger.info("Select the Purchase Order for which we need to create receipt");
+		waitTime(driver);
+
+//		oraHome.selectRequisitionFromList(orderId);
+		oraHome.selectRequisitionFromList("CRPO500020-2025");
+		grep.infoTest("Click on Put Away");
+		logger.info("Click on Put Away");
+		oraHome.clickPutAwayBtn();
+		waitTime2(driver);
+
+		grep.infoTest("Click on 'submit' at the top to generate put away");
+		logger.info("Click on 'submit' at the top to generate  put away");
+		oraHome.clickSubmitReceiptBtn();
+		waitTime2(driver);
+		String submitPutAwayMsg = oraHome.validateReceiptNum_inSubmitConfirmationPopup();
+		grep.infoTest("Receipt Submitted Confirmation Popup: " + submitPutAwayMsg);
+		logger.info("Receipt Submitted Confirmation popup: " + submitPutAwayMsg);
+		waitTime(driver);
+		grep.captureScreenshot("pass", "After Submitting Put Away", "SubmitPutAway_Page");
+		waitTime2(driver);
+		oraHome.clickOk_inSubmitConfirmationPopup();
+		waitTime2(driver);
+
+		oraHome.clickNavigator();
+		waitTime(driver);
+		oraHome.selectNavigationTab("Procurement");
+		waitTime(driver);
+		oraHome.selectSubCategoryInNavigator("Purchase Requisitions (New)");
+		waitTime1(driver);
+		oraHome.validateSubmittedRequisitionState(requisitionId, "Delivered");
+		waitTime(driver);
+
+		grep.captureScreenshot("pass", "Verify Requisition Delivered State", "DeliveredRequsition_Test");
+		waitTime2(driver);
+		oraHome.clickRequisition(requisitionId, "Delivered");
+		waitTime2(driver);
+		grep.captureScreenshot("pass", "Inside requisition page", "Inside_RequisitionPage_Test");
+		waitTime2(driver);
+		oraHome.NavigateBackToHome();
 
 	}
 

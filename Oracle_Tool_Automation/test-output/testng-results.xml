@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-29T13:54:26 IST" name="Default suite" finished-at="2026-01-29T14:00:11 IST" duration-ms="344406">
+  <suite started-at="2026-01-29T16:15:43 IST" name="Default suite" finished-at="2026-01-29T16:20:44 IST" duration-ms="301211">
     <groups>
     </groups>
-    <test started-at="2026-01-29T13:54:26 IST" name="Default test" finished-at="2026-01-29T14:00:11 IST" duration-ms="344406">
+    <test started-at="2026-01-29T16:15:43 IST" name="Default test" finished-at="2026-01-29T16:20:44 IST" duration-ms="301211">
       <class name="Tests.Oracle_ProcurementTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementTest@39a8312f]" started-at="2026-01-29T13:54:26 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-01-29T13:54:43 IST" duration-ms="16828" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementTest@39a8312f]" started-at="2026-01-29T16:15:43 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-01-29T16:15:56 IST" duration-ms="12869" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="oracle_Procurement_Test()[pri:1, instance:Tests.Oracle_ProcurementTest@39a8312f]" started-at="2026-01-29T13:54:43 IST" name="oracle_Procurement_Test" finished-at="2026-01-29T13:56:34 IST" duration-ms="111105" status="PASS">
+        <test-method signature="oracle_Procurement_Test()[pri:1, instance:Tests.Oracle_ProcurementTest@39a8312f]" started-at="2026-01-29T16:15:56 IST" name="oracle_Procurement_Test" finished-at="2026-01-29T16:17:35 IST" duration-ms="98846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oracle_Procurement_Test -->
-        <test-method signature="oracle_PurchaseOrder_Test()[pri:2, instance:Tests.Oracle_ProcurementTest@39a8312f]" started-at="2026-01-29T13:56:34 IST" name="oracle_PurchaseOrder_Test" finished-at="2026-01-29T13:58:50 IST" duration-ms="135820" status="PASS">
+        <test-method signature="oracle_PurchaseOrder_Test()[pri:2, instance:Tests.Oracle_ProcurementTest@39a8312f]" started-at="2026-01-29T16:17:35 IST" name="oracle_PurchaseOrder_Test" finished-at="2026-01-29T16:19:29 IST" duration-ms="114938" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oracle_PurchaseOrder_Test -->
-        <test-method signature="create_Receipt_PurchaseOrder_Test()[pri:3, instance:Tests.Oracle_ProcurementTest@39a8312f]" started-at="2026-01-29T13:58:50 IST" name="create_Receipt_PurchaseOrder_Test" finished-at="2026-01-29T13:59:28 IST" duration-ms="38004" status="PASS">
+        <test-method signature="create_Receipt_PurchaseOrder_Test()[pri:3, instance:Tests.Oracle_ProcurementTest@39a8312f]" started-at="2026-01-29T16:19:29 IST" name="create_Receipt_PurchaseOrder_Test" finished-at="2026-01-29T16:20:04 IST" duration-ms="34804" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create_Receipt_PurchaseOrder_Test -->
-        <test-method signature="oracle_PutAwayReceipt_Test()[pri:4, instance:Tests.Oracle_ProcurementTest@39a8312f]" started-at="2026-01-29T13:59:28 IST" name="oracle_PutAwayReceipt_Test" finished-at="2026-01-29T14:00:10 IST" duration-ms="41722" status="PASS">
+        <test-method signature="oracle_PutAwayReceipt_Test()[pri:4, instance:Tests.Oracle_ProcurementTest@39a8312f]" started-at="2026-01-29T16:20:04 IST" name="oracle_PutAwayReceipt_Test" finished-at="2026-01-29T16:20:43 IST" duration-ms="39172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oracle_PutAwayReceipt_Test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Oracle_ProcurementTest@39a8312f]" started-at="2026-01-29T14:00:10 IST" name="tearDown" description="Quit Browser" finished-at="2026-01-29T14:00:11 IST" duration-ms="829" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Oracle_ProcurementTest@39a8312f]" started-at="2026-01-29T16:20:43 IST" name="tearDown" description="Quit Browser" finished-at="2026-01-29T16:20:44 IST" duration-ms="543" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

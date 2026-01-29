@@ -221,6 +221,8 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		grep.infoTest("Purchase Order Created Confirmation Message Popup: " + orderConfirmMsg);
 		logger.info("Purchase Order Created Confirmation Message Popup: " + orderConfirmMsg);
 		waitTime(driver);
+		validAssert.trueAssert(orderConfirmMsg.startsWith("The document (Purchase Order)"));
+		waitTime(driver);
 		grep.captureScreenshot("pass", "Purchase Order Created Message Popup", "PurchaseOrderCreatedMessage");
 		waitTime(driver);
 		oraHome.clickOk_inConfirmPO_popup();
@@ -239,6 +241,8 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		grep.infoTest("Order Validation Confirmation Message Popup: " + orderValidationMsg);
 		logger.info("Order Validation Confirmation Message Popup: " + orderValidationMsg);
 		waitTime(driver);
+		validAssert.equalsAssert(orderValidationMsg, "No errors or warnings were found.");
+		waitTime(driver);
 		grep.captureScreenshot("pass", "Purchase Order Validation Message Popup", "PurchaseOrder_ValidationMessage");
 		waitTime(driver);
 		oraHome.clickOk_inConfirmPO_popup();
@@ -249,6 +253,8 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		grep.infoTest("Order Submitted for Approval Message Popup: " + submitApprlMsg);
 		logger.info("Order Submitted for Approval Message Popup: " + submitApprlMsg);
 		waitTime(driver);
+		validAssert.trueAssert(submitApprlMsg.startsWith("The document (Purchase Order)"));
+		waitTime(driver);
 		grep.captureScreenshot("pass", "Purchase Order Submitted for Approval Message Popup",
 				"PO_SubmitApprovalMessage");
 		waitTime(driver);
@@ -258,7 +264,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime2(driver);
 		grep.infoTest("Retrieving Order Id :" + orderId);
 		logger.info("Retrieving Order Id :" + orderId);
-		waitTime30(driver);
+		waitTime10(driver);
 
 		grep.infoTest("To check summary details click on Tasks");
 		logger.info("To check summary details click on Tasks");
@@ -402,14 +408,19 @@ public class Oracle_ProcurementTest extends TestInitializer {
 //		oraHome.selectNavigationTab("Procurement");
 		waitTime3(driver);
 		oraHome.selectSubCategoryInNavigator("Purchase Requisitions (New)");
+		waitTime(driver);
+		grep.infoTest("Navigating to Purchase requisitio page to verify status");
+		logger.info("Navigating to Purchase requisitio page to verify status");
 		waitTime1(driver);
 		oraHome.validateSubmittedRequisitionState(requisitionId, "Delivered");
 		waitTime(driver);
-
 		grep.captureScreenshot("pass", "Verify Requisition Delivered State", "DeliveredRequsition_Test");
 		waitTime2(driver);
 		oraHome.clickRequisition(requisitionId, "Delivered");
 		waitTime5(driver);
+		grep.infoTest("Verify Requisition State as Delivered");
+		logger.info("Verify Requisition State as Delivered");
+		waitTime(driver);
 		grep.captureScreenshot("pass", "Inside requisition page after delivered", "Inside_RequisitionPage_Test");
 		waitTime3(driver);
 		oraHome.NavigateBackToHome();

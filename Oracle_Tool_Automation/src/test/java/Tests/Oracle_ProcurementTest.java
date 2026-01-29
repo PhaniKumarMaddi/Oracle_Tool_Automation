@@ -29,7 +29,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 //		String quantity_Value = String.valueOf(quantityValue);
 //		String price_Value = String.valueOf(priceValue);
 
-	@Test(enabled = false)
+	@Test(priority = 1)
 	public void oracle_Procurement_Test() throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
@@ -100,7 +100,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime(driver);
 
 		oraHome.clickNavigateToCart();
-		waitTime(driver);
+		waitTime1(driver);
 		grep.testCreate("Verify Product Details in Cart Page Test", "Verify Product Details in Cart Page");
 		waitTime(driver);
 		oraHome.validateCartPageDetails("Cart", "Mouse", "Each", "30");
@@ -141,9 +141,6 @@ public class Oracle_ProcurementTest extends TestInitializer {
 
 		oraHome.validateSubmittedRequisitionState(requisitionId, "Pending approval");
 		grep.captureScreenshot("pass", "Submit Requisition in Pending state Test", "Pending_SubmitRequsition_Test");
-//		waitTime15(driver);
-//		waitTime5(driver);
-//		refreshPage();
 		waitTime2(driver);
 		oraHome.verifyRequisitionApproveState(requisitionId, 5, "Approved");
 		waitTime(driver);
@@ -154,11 +151,10 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime(driver);
 	}
 
-	@Test(enabled = false)
+	@Test(priority = 2)
 	public void oracle_PurchaseOrder_Test() throws Exception {
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 
-//		oraHome.clickHomeButton(); // should comment
 		waitTime(driver);
 
 		grep.testCreate("Create Purchase Order Test", "Create Purchase Order Test");
@@ -238,7 +234,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		grep.infoTest("Click on Actions and Validate");
 		logger.info("Click on Actions and Validate");
 		oraHome.clickActionAndValidateBtn();
-		waitTime3(driver);
+		waitTime5(driver);
 		String orderValidationMsg = oraHome.validatePurchaseOrderCreationConfirmation();
 		grep.infoTest("Order Validation Confirmation Message Popup: " + orderValidationMsg);
 		logger.info("Order Validation Confirmation Message Popup: " + orderValidationMsg);
@@ -262,21 +258,22 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime2(driver);
 		grep.infoTest("Retrieving Order Id :" + orderId);
 		logger.info("Retrieving Order Id :" + orderId);
-		waitTime(driver);
+		waitTime30(driver);
 
 		grep.infoTest("To check summary details click on Tasks");
 		logger.info("To check summary details click on Tasks");
 		waitTime(driver);
 		oraHome.click_Tasks_InPO();
+		waitTime10(driver);
 		oraHome.selectTasks_InTaskPage("Manage Orders");
 		waitTime2(driver);
 		grep.captureScreenshot("pass", "Inside Manage Orders Page", "ManageOrdersPage");
-		waitTime30(driver);
+		waitTime10(driver);
 		oraHome.clickSearchBtn();
-		waitTime15(driver);
+		waitTime1(driver);
 		grep.captureScreenshot("pass", "Searching Approved PO in manage order Page", "Searching_Approved_PO");
 
-		waitTime(driver);
+		waitTime2(driver);
 		grep.infoTest("Verify the Status is Open means PO is approved");
 		logger.info("Verify the Status is Open means PO is approved");
 		waitTime(driver);
@@ -285,7 +282,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 
 	}
 
-	@Test
+	@Test(priority = 3)
 	public void create_Receipt_PurchaseOrder_Test() throws Exception {
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 
@@ -308,8 +305,8 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime(driver);
 		oraHome.selectTasks_InTaskPage("Receive Expected Shipments");
 		waitTime(driver);
-//		oraHome.enterPurchaseOrderId(orderId);
-		oraHome.enterPurchaseOrderId("CRPO500020-2025");
+		oraHome.enterPurchaseOrderId(orderId);
+//		oraHome.enterPurchaseOrderId("CRPO500020-2025");
 		waitTime(driver);
 		oraHome.clickSearchBtn();
 		waitTime3(driver);
@@ -320,8 +317,8 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		logger.info("Select the Purchase Order for which we need to create receipt");
 		waitTime(driver);
 
-//		oraHome.selectRequisitionFromList(orderId);
-		oraHome.selectRequisitionFromList("CRPO500020-2025");
+		oraHome.selectRequisitionFromList(orderId);
+//		oraHome.selectRequisitionFromList("CRPO500020-2025");
 		grep.infoTest("Click on Receive");
 		logger.info("Click on Receive");
 		oraHome.clickReceiveBtn();
@@ -358,7 +355,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 
 	}
 
-	@Test
+	@Test(priority = 4)
 	public void oracle_PutAwayReceipt_Test() throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
@@ -368,8 +365,8 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Inside Put Away Receipts Page", "putAwayreceipts_Page");
 		waitTime(driver);
-//		oraHome.enterPurchaseOrderId(orderId);
-		oraHome.enterPurchaseOrderId("CRPO500020-2025");
+		oraHome.enterPurchaseOrderId(orderId);
+//		oraHome.enterPurchaseOrderId("CRPO500020-2025");
 		waitTime(driver);
 		oraHome.clickSearchBtn();
 		grep.captureScreenshot("pass", "Search Order Id in put away page", "SearchOrderId_InPutAwayPage");
@@ -380,8 +377,8 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		logger.info("Select the Purchase Order for which we need to create receipt");
 		waitTime(driver);
 
-//		oraHome.selectRequisitionFromList(orderId);
-		oraHome.selectRequisitionFromList("CRPO500020-2025");
+		oraHome.selectRequisitionFromList(orderId);
+//		oraHome.selectRequisitionFromList("CRPO500020-2025");
 		grep.infoTest("Click on Put Away");
 		logger.info("Click on Put Away");
 		oraHome.clickPutAwayBtn();
@@ -400,10 +397,10 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		oraHome.clickOk_inSubmitConfirmationPopup();
 		waitTime2(driver);
 
-		oraHome.clickNavigator();
-		waitTime(driver);
-		oraHome.selectNavigationTab("Procurement");
-		waitTime(driver);
+		oraHome.clickNavigatorFromPutAway();
+		waitTime3(driver);
+//		oraHome.selectNavigationTab("Procurement");
+		waitTime3(driver);
 		oraHome.selectSubCategoryInNavigator("Purchase Requisitions (New)");
 		waitTime1(driver);
 		oraHome.validateSubmittedRequisitionState(requisitionId, "Delivered");
@@ -412,9 +409,9 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		grep.captureScreenshot("pass", "Verify Requisition Delivered State", "DeliveredRequsition_Test");
 		waitTime2(driver);
 		oraHome.clickRequisition(requisitionId, "Delivered");
-		waitTime2(driver);
-		grep.captureScreenshot("pass", "Inside requisition page", "Inside_RequisitionPage_Test");
-		waitTime2(driver);
+		waitTime5(driver);
+		grep.captureScreenshot("pass", "Inside requisition page after delivered", "Inside_RequisitionPage_Test");
+		waitTime3(driver);
 		oraHome.NavigateBackToHome();
 
 	}

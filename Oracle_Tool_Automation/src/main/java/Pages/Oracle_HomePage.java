@@ -75,6 +75,7 @@ public class Oracle_HomePage extends WaitsManager {
 	// In Process requisition for Purchase Order
 	By requisitionBU = By.xpath("//label[text()=' Requisitioning BU']/preceding-sibling::select");
 	By buyer = By.xpath("//label[text()=' Buyer']/preceding-sibling::input");
+	By expandSearch = By.xpath("//a[@title='Expand Search']");
 	By searchBtn = By.xpath("//button[text()='Search']");
 	By addToDocBuilderBtn = By.xpath("//button[text()='Add to Document Builder']");
 	// In Document builder
@@ -108,6 +109,7 @@ public class Oracle_HomePage extends WaitsManager {
 
 	// put away
 	By putAwayBtn = By.xpath("//button[text()='Put Away']");
+	By navigatorFromPutAway = By.xpath("//a[@id='_FOpt1:_UISmmLink']");
 
 	public void clickHomeButton() throws Exception {
 		try {
@@ -907,8 +909,6 @@ public class Oracle_HomePage extends WaitsManager {
 
 			boolean success = false;
 			for (int i = 0; i < maxRetries; i++) {
-//				refreshPage();
-				clickSearchBtn();
 
 				List<WebElement> state = driver.findElements(approvedPOStatus);
 				if (!state.isEmpty()) {
@@ -917,6 +917,8 @@ public class Oracle_HomePage extends WaitsManager {
 					if (currentStatus.equalsIgnoreCase("Open")) {
 						success = true;
 						System.out.println("Current status for " + poId + " is " + currentStatus);
+						grep.infoTest("Current status for " + poId + " is " + currentStatus);
+						logger.info("Current status for " + poId + " is " + currentStatus);
 						break;
 
 					} else {
@@ -925,6 +927,9 @@ public class Oracle_HomePage extends WaitsManager {
 					}
 				}
 				waitTime60(driver);
+				driver.findElement(expandSearch).click();
+				waitTime(driver);
+				clickSearchBtn();
 			}
 			if (!success) {
 				throw new RuntimeException("Timeout: Status did not reach 'Open ' after " + maxRetries + " retries.");
@@ -999,6 +1004,11 @@ public class Oracle_HomePage extends WaitsManager {
 	public void clickPutAwayBtn() {
 		implWait(driver);
 		driver.findElement(putAwayBtn).click();
+	}
+
+	public void clickNavigatorFromPutAway() {
+		implWait(driver);
+		driver.findElement(navigatorFromPutAway).click();
 	}
 
 }

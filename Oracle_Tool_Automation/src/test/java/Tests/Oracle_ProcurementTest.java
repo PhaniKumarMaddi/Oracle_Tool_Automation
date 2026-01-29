@@ -29,8 +29,16 @@ public class Oracle_ProcurementTest extends TestInitializer {
 //		String quantity_Value = String.valueOf(quantityValue);
 //		String price_Value = String.valueOf(priceValue);
 
-	@Test(priority = 1)
-	public void oracle_Procurement_Test() throws Exception {
+	@Test
+	public void oracle_ProcurementWithRequisition_Test() throws Exception {
+		waitTime(driver);
+		oracle_CreatePurchaseRequisition_Test();
+		oracle_PurchaseOrder_Test();
+		create_Receipt_PurchaseOrder_Test();
+		oracle_PutAwayReceipt_Test();
+	}
+
+	public void oracle_CreatePurchaseRequisition_Test() throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		grep.testCreate("Verify Navigate to Procurement Page Functionality Test", "Navigate to Procurement Page");
@@ -151,7 +159,6 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime(driver);
 	}
 
-	@Test(priority = 2)
 	public void oracle_PurchaseOrder_Test() throws Exception {
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 
@@ -288,7 +295,6 @@ public class Oracle_ProcurementTest extends TestInitializer {
 
 	}
 
-	@Test(priority = 3)
 	public void create_Receipt_PurchaseOrder_Test() throws Exception {
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 
@@ -361,7 +367,6 @@ public class Oracle_ProcurementTest extends TestInitializer {
 
 	}
 
-	@Test(priority = 4)
 	public void oracle_PutAwayReceipt_Test() throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();

@@ -214,6 +214,7 @@ public class Oracle_HomePage extends WaitsManager {
 	public void selectSubCategoryInNavigator(String subCatg) {
 		By selectSubCategory = By.xpath("//a[@title='" + subCatg + "']");
 		implWait(driver);
+		
 		driver.findElement(selectSubCategory).click();
 	}
 

@@ -5,8 +5,8 @@
     <classes>
       <class name="Tests.Oracle_ProcurementTest">
         <methods>
-          <include name="oracle_PurchaseOrder_Test"/>
           <include name="tearDown"/>
+          <include name="create_Receipt_PurchaseOrder_Test"/>
           <include name="setup"/>
         </methods>
       </class> <!-- Tests.Oracle_ProcurementTest -->

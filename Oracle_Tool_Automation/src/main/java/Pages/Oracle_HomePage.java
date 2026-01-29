@@ -1,6 +1,8 @@
 package Pages;
 
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -29,8 +31,6 @@ public class Oracle_HomePage extends WaitsManager {
 	By homeBtn = By.xpath("//a[@id='pt1:_UIShome']");
 	By homePageMsg = By.xpath("//div[@id='pt1:atkfr1:0:grid:0:pgl1']");
 	By navigator = By.xpath("//a[@id='pt1:_UISmmLink']");
-	By procurementNavigation = By.xpath("//div[@title='Procurement']");
-	By purchaseRequisitions = By.xpath("//a[@title='Purchase Requisitions (New)']");
 	By selfServiceProcurement = By.cssSelector("div.oj-sp-header-general-overview-title-badge-cont");
 	By recentRequisition = By.cssSelector("h2#myRequisitionslabel");
 	// Non catalog form
@@ -93,8 +93,18 @@ public class Oracle_HomePage extends WaitsManager {
 
 	// tasks
 	By tasks = By.xpath("//div[@title='Tasks']");
-	By manageOrders = By.xpath("//a[text()='Manage Orders']");
+	By selectShowTask = By.xpath("//label[text()='Show Tasks']/parent::td/following-sibling::td/select");
 	By procurementBU = By.xpath("//label[text()=' Procurement BU']/preceding-sibling::select");
+
+	// Receipts
+	By insertPo_Id = By.xpath("//input[@aria-label=' Purchase Order']");
+	By receiveBtn = By.xpath("//button[text()='Receive']");
+	By showReceiptQuantityBtn = By.xpath("//button[text()='Show Receipt Quantity']");
+	By createReceiptBtn = By.xpath("//button[text()='Create Receipt']");
+	By submitReceipt = By.xpath("//div[@class='callToActionSubmit xeq p_AFTextOnly']");
+	By text_submitConfirmation = By.xpath("//div[@class='AFPopupSelector']/descendant::td[@class='x1o']");
+	By ok_submitConfirmation = By.xpath("//td[@class='x1pn']/button[@accesskey='K']");
+	By doneReceipt = By.xpath("//a[@accesskey='o']");
 
 	public void clickHomeButton() throws Exception {
 		try {
@@ -190,14 +200,16 @@ public class Oracle_HomePage extends WaitsManager {
 		driver.findElement(navigator).click();
 	}
 
-	public void clickProcurementNavigation() {
-		scrollView(procurementNavigation);
-		driver.findElement(procurementNavigation).click();
+	public void selectNavigationTab(String value) {
+		By selectInNavigation = By.xpath("//div[@title='" + value + "']");
+		scrollView(selectInNavigation);
+		driver.findElement(selectInNavigation).click();
 	}
 
-	public void clickPurchaseRequisitions() {
+	public void selectSubCategoryInNavigator(String subCatg) {
+		By selectSubCategory = By.xpath("//a[@title='" + subCatg + "']");
 		implWait(driver);
-		driver.findElement(purchaseRequisitions).click();
+		driver.findElement(selectSubCategory).click();
 	}
 
 	public void validatePurchaseRequisitionsPage() throws Exception {
@@ -785,6 +797,27 @@ public class Oracle_HomePage extends WaitsManager {
 		}
 	}
 
+	public String getOrderId(String rawText) throws Exception {
+		String poId = null;
+		try {
+			String regex = "CRPO[A-Z0-9-]*\\d+";
+
+			Pattern pattern = Pattern.compile(regex);
+			Matcher matcher = pattern.matcher(rawText);
+
+			if (matcher.find()) {
+				poId = matcher.group();
+				System.out.println("Extracted PO ID: " + poId);
+
+			} else {
+				System.out.println("Could not find the Purchase Order ID in the text: " + rawText);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return poId;
+	}
+
 	public void click_Tasks_InPO() throws Exception {
 		try {
 			implWait(driver);
@@ -796,12 +829,30 @@ public class Oracle_HomePage extends WaitsManager {
 		}
 	}
 
-	public void click_ManageOrders_InTask() throws Exception {
+	public void selectTasks_InTaskPage(String task) throws Exception {
 		try {
+			By selectTask = By.xpath("//a[text()='" + task + "']");
 			implWait(driver);
 
-			driver.findElement(manageOrders).click();
+			driver.findElement(selectTask).click();
 			waitTime(driver);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void selectShowTasksDropdown(String taskOption) throws Exception {
+		try {
+
+			implWait(driver);
+			waitForElementToBeClickable(selectShowTask, 10);
+			WebElement selectTask = driver.findElement(selectShowTask);
+			Select sel = new Select(selectTask);
+			sel.selectByVisibleText(taskOption);
+			grep.infoTest("Select " + taskOption + " from the drop down under Procurement BU");
+			logger.info("Select " + taskOption + " from the drop down under Procurement BU");
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -833,7 +884,8 @@ public class Oracle_HomePage extends WaitsManager {
 
 			boolean success = false;
 			for (int i = 0; i < maxRetries; i++) {
-				refreshPage();
+//				refreshPage();
+				clickSearchBtn();
 
 				List<WebElement> state = driver.findElements(approvedPOStatus);
 				if (!state.isEmpty()) {
@@ -841,20 +893,83 @@ public class Oracle_HomePage extends WaitsManager {
 
 					if (currentStatus.equalsIgnoreCase("Open")) {
 						success = true;
+						System.out.println("Current status for " + poId + " is " + currentStatus);
 						break;
+
+					} else {
+						System.out.println(
+								"Attempt " + (i + 1) + ": Status not valid for " + poId + " clicking on refresh.");
 					}
-				} else {
-					System.out.println("Attempt " + (i + 1) + ": Status element not found on page.");
 				}
-				waitTime15(driver);
+				waitTime60(driver);
 			}
 			if (!success) {
-				throw new RuntimeException(
-						"Timeout: Status did not reach 'Open ' after " + maxRetries + " retries.");
+				throw new RuntimeException("Timeout: Status did not reach 'Open ' after " + maxRetries + " retries.");
 			}
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
+
+	// receipt
+	public void enterPurchaseOrderId(String orderIdVal) {
+		try {
+			implWait(driver);
+
+			driver.findElement(insertPo_Id).click();
+			driver.findElement(insertPo_Id).sendKeys(orderIdVal);
+			waitTime(driver);
+			grep.infoTest("Entering Purchase order id: " + orderIdVal);
+			logger.info("Entering Purchase order id: " + orderIdVal);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickReceiveBtn() {
+		implWait(driver);
+		driver.findElement(receiveBtn).click();
+	}
+
+	public void clickShowReceiptBtn() {
+		implWait(driver);
+		driver.findElement(showReceiptQuantityBtn).click();
+	}
+
+	public void clickCreateReceiptBtn() {
+		implWait(driver);
+		driver.findElement(createReceiptBtn).click();
+	}
+
+	public void clickSubmitReceiptBtn() {
+		implWait(driver);
+		driver.findElement(submitReceipt).click();
+	}
+
+	public String validateReceiptNum_inSubmitConfirmationPopup() throws Exception {
+
+		String getMsg = null;
+		try {
+			implWait(driver);
+
+			getMsg = driver.findElement(text_submitConfirmation).getText().trim();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return getMsg;
+
+	}
+
+	public void clickOk_inSubmitConfirmationPopup() {
+		implWait(driver);
+		driver.findElement(ok_submitConfirmation).click();
+	}
+
+	public void clickDoneReceiptBtn() {
+		implWait(driver);
+		driver.findElement(doneReceipt).click();
+	}
+
 }

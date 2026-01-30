@@ -107,9 +107,19 @@ public class Oracle_HomePage extends WaitsManager {
 	By ok_submitConfirmation = By.xpath("//td[@class='x1pn']/button[@accesskey='K']");
 	By doneReceipt = By.xpath("//a[@accesskey='o']");
 
-	// put away
+	// put away page
 	By putAwayBtn = By.xpath("//button[text()='Put Away']");
+	By clickSubInventory = By.xpath("//label[text()='Subinventory']/following-sibling::span");
 	By navigatorFromPutAway = By.xpath("//a[@id='_FOpt1:_UISmmLink']");
+	By homeFromPutAway = By.xpath("//a[@id='_FOpt1:_UIShome']");
+
+	// create order page
+	By inputDefaultShipLocation = By
+			.xpath("//label[text()='Default Ship-to Location']/parent::td/following-sibling::td/span/input");
+	By addRowBtn = By.xpath("//div[@title='Add Row']");
+	By inputItem_InRowLine = By.xpath("//label[text()='Item']/preceding-sibling::span/input");
+	By quantity_InRowLine = By.xpath("//label[text()='Quantity']/preceding-sibling::input");
+	By requestDeliveryDate = By.xpath("//label[text()='Requested Delivery Date']/preceding-sibling::input");
 
 	public void clickHomeButton() throws Exception {
 		try {
@@ -214,7 +224,7 @@ public class Oracle_HomePage extends WaitsManager {
 	public void selectSubCategoryInNavigator(String subCatg) {
 		By selectSubCategory = By.xpath("//a[@title='" + subCatg + "']");
 		implWait(driver);
-		
+
 		driver.findElement(selectSubCategory).click();
 	}
 
@@ -876,6 +886,7 @@ public class Oracle_HomePage extends WaitsManager {
 			WebElement selectTask = driver.findElement(selectShowTask);
 			Select sel = new Select(selectTask);
 			sel.selectByVisibleText(taskOption);
+
 			grep.infoTest("Select " + taskOption + " from the drop down under Procurement BU");
 			logger.info("Select " + taskOption + " from the drop down under Procurement BU");
 
@@ -901,7 +912,7 @@ public class Oracle_HomePage extends WaitsManager {
 		}
 	}
 
-	public void verifyPurchaseOrderState(String poId, int maxRetries) throws Exception {
+	public void verifyPurchaseOrderState(String poId, int maxRetries, String statusVal) throws Exception {
 
 		try {
 			implWait(driver);
@@ -915,7 +926,8 @@ public class Oracle_HomePage extends WaitsManager {
 				if (!state.isEmpty()) {
 					String currentStatus = state.getFirst().getText().trim();
 
-					if (currentStatus.equalsIgnoreCase("Open")) {
+//					if (currentStatus.equalsIgnoreCase("Open")) {
+					if (currentStatus.equalsIgnoreCase(statusVal)) {
 						success = true;
 						System.out.println("Current status for " + poId + " is " + currentStatus);
 						grep.infoTest("Current status for " + poId + " is " + currentStatus);
@@ -1011,5 +1023,101 @@ public class Oracle_HomePage extends WaitsManager {
 		implWait(driver);
 		driver.findElement(navigatorFromPutAway).click();
 	}
+	public void clickHomeFromPutAway() {
+		implWait(driver);
+		driver.findElement(homeFromPutAway).click();
+	}
 
+	public void searchAndSelectPutAwaySubInventory(String subInventoryValue) {
+		try {
+			implWait(driver);
+			By selectSubInventory = By.xpath("//span[text()='" + subInventoryValue + "']");
+
+			driver.findElement(clickSubInventory).click();
+//			driver.findElement(clickSubInventory).sendKeys(subInventoryValue);
+			waitTime(driver);
+			grep.infoTest("Selecting Sub Inventory: " + subInventoryValue);
+			logger.info("Selecting Sub Inventory: " + subInventoryValue);
+			waitTime(driver);
+			driver.findElement(selectSubInventory).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void searchAndSelectDefaultShipToLocation(String locationValue) {
+		try {
+			implWait(driver);
+			By selectLocation = By.xpath("//li[@data-afr-value='" + locationValue + "']");
+
+			driver.findElement(inputDefaultShipLocation).click();
+			driver.findElement(inputDefaultShipLocation).sendKeys(locationValue);
+			waitTime(driver);
+			grep.infoTest("Entering default Ship Location: " + locationValue);
+			logger.info("Entering Default Ship Location: " + locationValue);
+			waitTime2(driver);
+			driver.findElement(selectLocation).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickAddRowButton() {
+		implWait(driver);
+		scrollView(addRowBtn);
+		driver.findElement(addRowBtn).click();
+	}
+
+	public void searchAndSelectItemInPO_Line(String itemValue) {
+		try {
+			implWait(driver);
+			By selectItem_inLine = By.xpath("//li[@data-afr-value='" + itemValue + "']");
+
+			scrollView(inputItem_InRowLine);
+			driver.findElement(inputItem_InRowLine).click();
+			driver.findElement(inputItem_InRowLine).sendKeys(itemValue);
+			waitTime(driver);
+			grep.infoTest("Entering Item in Line: " + itemValue);
+			logger.info("Entering Item in Line: " + itemValue);
+			waitTime2(driver);
+			driver.findElement(selectItem_inLine).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void enterQuantity_InRowLine(String quantityval) {
+		try {
+			implWait(driver);
+
+			scrollView(quantity_InRowLine);
+			driver.findElement(quantity_InRowLine).click();
+			driver.findElement(quantity_InRowLine).sendKeys(quantityval);
+			waitTime(driver);
+			grep.infoTest("Entering Quantity in Row Line: " + quantityval);
+			logger.info("Entering Quantity in Row Line: " + quantityval);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void enterRequestDeliveryDate(String date, String month, String year) {
+		try {
+			implWait(driver);
+			scrollView(requestDeliveryDate);
+
+			driver.findElement(requestDeliveryDate).click();
+			String dateVal = date + "-" + month + "-" + year;
+			driver.findElement(requestDeliveryDate).sendKeys(dateVal);
+			waitTime(driver);
+			grep.infoTest("Entering Request Delivery Date: " + dateVal);
+			logger.info("Entering Request Delivery Date: " + dateVal);
+			actionTab();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }

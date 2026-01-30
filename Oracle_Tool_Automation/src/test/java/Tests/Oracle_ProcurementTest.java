@@ -88,7 +88,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime(driver);
 		oraHome.enterPrice("30");
 //		oraHome.enterPrice(price_Value);
-		waitTime2(driver);
+		waitTime1(driver);
 
 		grep.captureScreenshot("pass", "Filling Non Catalog Request Page", "Filling_NonCatalogRequestPage");
 
@@ -190,7 +190,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		grep.infoTest("Click Search Button");
 		logger.info("Click Search Button");
 		oraHome.clickSearchBtn();
-		waitTime15(driver);
+		waitTime10(driver);
 
 		grep.captureScreenshot("pass", "Search Reqisition page", "SearchProcessReqisitionPage");
 
@@ -223,7 +223,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		grep.infoTest("Click on Create");
 		logger.info("Click on Create");
 		oraHome.clickCreateBtn_inProcessRequsitionPage();
-		waitTime(driver);
+		waitTime1(driver);
 		String orderConfirmMsg = oraHome.validatePurchaseOrderCreationConfirmation();
 		grep.infoTest("Purchase Order Created Confirmation Message Popup: " + orderConfirmMsg);
 		logger.info("Purchase Order Created Confirmation Message Popup: " + orderConfirmMsg);
@@ -291,7 +291,8 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		logger.info("Verify the Status is Open means PO is approved");
 		waitTime(driver);
 
-		oraHome.verifyPurchaseOrderState(orderId, 3);
+//		oraHome.verifyPurchaseOrderState(orderId, 3);
+		oraHome.verifyPurchaseOrderState(orderId, 3,"Open");
 
 	}
 

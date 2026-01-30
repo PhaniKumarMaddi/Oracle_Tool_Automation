@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-30T13:44:34 IST" name="Default suite" finished-at="2026-01-30T13:47:39 IST" duration-ms="184278">
+  <suite started-at="2026-01-30T14:42:40 IST" name="Suite" finished-at="2026-01-30T14:51:01 IST" duration-ms="500729">
     <groups>
     </groups>
-    <test started-at="2026-01-30T13:44:34 IST" name="Default test" finished-at="2026-01-30T13:47:39 IST" duration-ms="184278">
+    <test started-at="2026-01-30T14:42:40 IST" name="OracleProcurementTest" finished-at="2026-01-30T14:51:01 IST" duration-ms="500729">
       <class name="Tests.Oracle_ProcurementWithoutRequisition_Test">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementWithoutRequisition_Test@39a8312f]" started-at="2026-01-30T13:44:34 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-01-30T13:44:48 IST" duration-ms="13213" status="PASS">
+        <test-method signature="oracle_ProcurementWithout_Requisition_Test()[pri:0, instance:Tests.Oracle_ProcurementWithoutRequisition_Test@48d5f34e]" started-at="2026-01-30T14:48:10 IST" name="oracle_ProcurementWithout_Requisition_Test" finished-at="2026-01-30T14:51:01 IST" duration-ms="170318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oracle_ProcurementWithout_Requisition_Test -->
+      </class> <!-- Tests.Oracle_ProcurementWithoutRequisition_Test -->
+      <class name="Tests.Oracle_ProcurementTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementTest@1d470d0]" started-at="2026-01-30T14:42:40 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-01-30T14:42:57 IST" duration-ms="16315" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[OraclePage.html]]>
+                <![CDATA[OracleProcurement_Report.html]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="oracle_ProcurementWithout_Requisition_Test()[pri:0, instance:Tests.Oracle_ProcurementWithoutRequisition_Test@39a8312f]" started-at="2026-01-30T13:44:48 IST" name="oracle_ProcurementWithout_Requisition_Test" finished-at="2026-01-30T13:47:38 IST" duration-ms="170578" status="PASS">
+        <test-method signature="oracle_ProcurementWithRequisition_Test()[pri:0, instance:Tests.Oracle_ProcurementTest@1d470d0]" started-at="2026-01-30T14:42:57 IST" name="oracle_ProcurementWithRequisition_Test" finished-at="2026-01-30T14:48:10 IST" duration-ms="313725" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oracle_ProcurementWithout_Requisition_Test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Oracle_ProcurementWithoutRequisition_Test@39a8312f]" started-at="2026-01-30T13:47:38 IST" name="tearDown" description="Quit Browser" finished-at="2026-01-30T13:47:39 IST" duration-ms="455" status="PASS">
+        </test-method> <!-- oracle_ProcurementWithRequisition_Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Oracle_ProcurementTest@1d470d0]" started-at="2026-01-30T14:51:01 IST" name="tearDown" description="Quit Browser" finished-at="2026-01-30T14:51:01 IST" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.Oracle_ProcurementWithoutRequisition_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Tests.Oracle_ProcurementTest -->
+    </test> <!-- OracleProcurementTest -->
+  </suite> <!-- Suite -->
 </testng-results>

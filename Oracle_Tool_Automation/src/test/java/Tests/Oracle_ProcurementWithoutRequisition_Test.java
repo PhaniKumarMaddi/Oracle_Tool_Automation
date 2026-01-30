@@ -35,7 +35,9 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 
 		logger.info("Navigating to Procurement Tab in homepage ");
 		grep.infoTest("Navigating to Procurement Tab in homepage ");
-		oraHome.selectTabWithNavigator("Procurement");
+		waitTime(driver);
+
+//		oraHome.selectTabWithNavigator("Procurement");
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Navigating to Procurement Tab in homepage ", "ProcurementTabInhomepage");
 		waitTime(driver);
@@ -117,7 +119,7 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 				"ManageOrdersPage_WithoutRequisition");
 		waitTime10(driver);
 		oraHome.clickSearchBtn();
-		waitTime1(driver);
+		waitTime2(driver);
 		grep.captureScreenshot("pass", "Searching Approved PO in manage order Page Without Requisition",
 				"Searching_Approved_PO_WithoutRequisition");
 
@@ -140,7 +142,7 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 		waitTime(driver);
 		oraHome.clickNavigator();
 		waitTime(driver);
-		oraHome.selectNavigationTab("Supply Chain Execution");
+//		oraHome.selectNavigationTab("Supply Chain Execution");
 		grep.captureScreenshot("pass", "Expanding Supply Chain Execution in Navigator ",
 				"Expand_SupplyChainExecution_WithoutRequisition");
 		waitTime(driver);
@@ -254,7 +256,7 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 //##############
 		logger.info("Navigating to Procurement Tab in homepage ");
 		grep.infoTest("Navigating to Procurement Tab in homepage ");
-		oraHome.selectTabWithNavigator("Procurement");
+//		oraHome.selectTabWithNavigator("Procurement");
 		waitTime(driver);
 		logger.info("Click on 'Purchase Orders' under Quick actions");
 		grep.infoTest("Click on 'Purchase Orders' under Quick actions");

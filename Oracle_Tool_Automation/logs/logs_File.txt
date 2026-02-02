@@ -5539,3 +5539,61 @@ View requisition
 2026-02-02 18:16:46 [main] INFO : Saving and Validating Invoice
 2026-02-02 18:17:19 [main] INFO : Testing Ended
 2026-02-02 18:17:19 [main] INFO : ***********
+2026-02-02 18:19:41 [main] INFO : Launching Chrome Browser
+2026-02-02 18:19:42 [main] INFO : Report Name :OraclePage.html
+2026-02-02 18:19:57 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-02 18:20:02 [main] INFO : Logged in to Oracle Application
+2026-02-02 18:20:04 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-02 18:20:04 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-02 18:20:08 [main] INFO : Clicking on Home icon
+2026-02-02 18:20:12 [main] INFO : Click on Tasks for Create Invoice
+2026-02-02 18:20:14 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-02 18:20:14 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-02 18:22:05 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-02 18:22:05 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-02 18:22:06 [main] INFO : Filling the Invoice Details
+2026-02-02 18:22:08 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-02 18:22:11 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-02 18:22:15 [main] INFO : Entering Invoice Number: CR_MP_Test_001
+2026-02-02 18:22:16 [main] INFO : Selecting Invoice Currency: USD
+2026-02-02 18:22:46 [main] INFO : Entering Invoice Amount: 1000
+2026-02-02 18:22:48 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-02 18:22:49 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-02 18:22:51 [main] INFO : Entering Invoice Receive Date: 03-01-2026
+2026-02-02 18:22:52 [main] INFO : Enter Details in Lines Section
+2026-02-02 18:22:59 [main] INFO : Entering Line Amount: 1000
+2026-02-02 18:23:06 [main] INFO : Selecting Comapany Value: 101
+2026-02-02 18:23:09 [main] INFO : Selecting Account for Distribution Combinantion: 52110
+2026-02-02 18:23:12 [main] INFO : Retrieving Distibution Combinatio ID: 
+2026-02-02 18:23:13 [main] INFO : Saving and Validating Invoice
+2026-02-02 18:24:06 [main] INFO : Testing Ended
+2026-02-02 18:24:06 [main] INFO : ***********
+2026-02-02 18:24:15 [main] INFO : Launching Chrome Browser
+2026-02-02 18:24:16 [main] INFO : Report Name :OraclePage.html
+2026-02-02 18:24:24 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-02 18:24:29 [main] INFO : Logged in to Oracle Application
+2026-02-02 18:24:30 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-02 18:24:30 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-02 18:24:33 [main] INFO : Clicking on Home icon
+2026-02-02 18:24:37 [main] INFO : Click on Tasks for Create Invoice
+2026-02-02 18:24:39 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-02 18:24:39 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-02 18:26:18 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-02 18:26:18 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-02 18:26:19 [main] INFO : Filling the Invoice Details
+2026-02-02 18:26:20 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-02 18:26:24 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-02 18:26:27 [main] INFO : Entering Invoice Number: CR_MP_Test_002
+2026-02-02 18:26:28 [main] INFO : Selecting Invoice Currency: USD
+2026-02-02 18:26:58 [main] INFO : Entering Invoice Amount: 1000
+2026-02-02 18:27:00 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-02 18:27:01 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-02 18:27:03 [main] INFO : Entering Invoice Receive Date: 03-01-2026
+2026-02-02 18:27:04 [main] INFO : Enter Details in Lines Section
+2026-02-02 18:27:11 [main] INFO : Entering Line Amount: 1000
+2026-02-02 18:27:16 [main] INFO : Selecting Comapany Value: 101
+2026-02-02 18:27:18 [main] INFO : Selecting Account for Distribution Combinantion: 52110
+2026-02-02 18:27:21 [main] INFO : Retrieving Distibution Combinatio ID: 101-000-52110-000
+2026-02-02 18:27:22 [main] INFO : Saving and Validating Invoice
+2026-02-02 18:27:25 [main] INFO : Testing Ended
+2026-02-02 18:27:25 [main] INFO : ***********

@@ -59,7 +59,7 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		waitTime2(driver);
 		oraInv.searchAndSelectSupplier("CR Applied Material");
 		waitTime(driver);
-		oraInv.enterInvoiceNumber("CR_MP_001");
+		oraInv.enterInvoiceNumber("CR_MP_Test_001");
 		waitTime(driver);
 		oraInv.enterInvoiceAmount("USD", "1000");
 		waitTime(driver);
@@ -76,7 +76,7 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		logger.info("Enter Details in Lines Section");
 		waitTime(driver);
 		oraInv.expandLinesSection();
-		waitTime(driver);
+		waitTime2(driver);
 		oraInv.enterAmountInLines("1000");
 		waitTime(driver);
 		oraInv.searchAndSelectDistributionCombination("101", "52110");

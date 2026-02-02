@@ -36,6 +36,7 @@ public class Oracle_InvoicePage extends WaitsManager {
 
 	// lines in invoice
 	By lines = By.xpath("//a[@title='Expand Lines']");
+	By selectLine = By.xpath("//table[@summary='Invoice Lines']/descendant::td[text()='1']");
 	By lineAmount = By.xpath("//td[@title='Amount']/descendant::input");
 	By distributionCombination = By.xpath("//td[@title='Distribution Combination ID']/span/descendant::a");
 	By enterCompany_inDCPopup = By.xpath("//label[text()='COMPANY']/preceding-sibling::input");
@@ -62,7 +63,7 @@ public class Oracle_InvoicePage extends WaitsManager {
 
 		try {
 //			implWait(driver);
-			waitForElement(createInvoicePageTitle, 100);
+			waitForElement(createInvoicePageTitle, 120);
 			String actualText = driver.findElement(createInvoicePageTitle).getText().trim();
 			waitTime(driver);
 
@@ -132,6 +133,8 @@ public class Oracle_InvoicePage extends WaitsManager {
 			Select currencySelect = new Select(currencyDropdown);
 
 			System.out.println("Selecting Invoice Currency: " + currencyCode);
+			grep.infoTest("Selecting Invoice Currency: " + currencyCode);
+			logger.info("Selecting Invoice Currency: " + currencyCode);
 			currencySelect.selectByContainsVisibleText(currencyCode);
 
 			// 2. Handle Amount Input
@@ -140,6 +143,8 @@ public class Oracle_InvoicePage extends WaitsManager {
 			WebElement amountInput = driver.findElement(invoiceAmount);
 
 			System.out.println("Entering Invoice Amount: " + amount);
+			grep.infoTest("Entering Invoice Amount: " + amount);
+			logger.info("Entering Invoice Amount: " + amount);
 			amountInput.clear(); // Clear existing value if any
 			amountInput.sendKeys(amount);
 
@@ -209,16 +214,21 @@ public class Oracle_InvoicePage extends WaitsManager {
 
 	public void enterAmountInLines(String amount) throws Exception {
 		try {
-//			waitForElementToBeClickable(lineAmount, 60);
+//			waitForElement(lineAmount, 60);
 			implWait(driver);
-			scrollView(lines);
-			WebElement amountInput = driver.findElement(lineAmount);
+
+			driver.findElement(selectLine).click();
+			waitTime(driver);
+			actionTab();
+//			WebElement amountInput = driver.findElement(lineAmount);
+			driver.findElement(lineAmount).click();
+			driver.findElement(lineAmount).sendKeys(amount);
 
 			System.out.println("Entering Line Amount: " + amount);
 			grep.infoTest("Entering Line Amount: " + amount);
 			logger.info("Entering Line Amount: " + amount);
-			amountInput.clear(); // Clear existing value if any
-			amountInput.sendKeys(amount);
+//			amountInput.clear(); // Clear existing value if any
+//			amountInput.sendKeys(amount);
 
 		} catch (Exception e) {
 			e.printStackTrace();

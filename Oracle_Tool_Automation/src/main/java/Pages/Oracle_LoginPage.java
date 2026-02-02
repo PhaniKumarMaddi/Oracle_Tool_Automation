@@ -28,7 +28,8 @@ public class Oracle_LoginPage extends WaitsManager {
 
 	public void enterUserName(String usernameValue) throws Exception {
 		try {
-			implWait(driver);
+//			implWait(driver);
+			waitForElement(userName, 60);
 			boolean elementExists = !driver.findElements(userName).isEmpty();
 			if (elementExists) {
 				driver.findElement(userName).sendKeys(usernameValue);

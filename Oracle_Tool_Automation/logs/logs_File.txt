@@ -5229,3 +5229,313 @@ View requisition
 2026-02-02 16:25:30 [main] INFO : Retrieving Distibution Combinatio ID: 
 2026-02-02 16:25:30 [main] INFO : Testing Ended
 2026-02-02 16:25:30 [main] INFO : ***********
+2026-02-02 16:27:34 [main] INFO : Launching Chrome Browser
+2026-02-02 16:27:34 [main] INFO : Report Name :OraclePage.html
+2026-02-02 16:27:50 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-02 16:27:54 [main] INFO : Logged in to Oracle Application
+2026-02-02 16:27:54 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-02 16:27:54 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-02 16:27:58 [main] INFO : Clicking on Home icon
+2026-02-02 16:28:02 [main] INFO : Click on Tasks for Create Invoice
+2026-02-02 16:28:03 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-02 16:28:03 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-02 16:30:11 [main] INFO : Filling the Invoice Details
+2026-02-02 16:30:34 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-02 16:30:37 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-02 16:30:40 [main] INFO : Entering Invoice Number: CR_MP_Test_001
+2026-02-02 16:30:41 [main] INFO : Selecting Invoice Currency: USD
+2026-02-02 16:31:11 [main] INFO : Entering Invoice Amount: 1000
+2026-02-02 16:31:13 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-02 16:31:14 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-02 16:31:16 [main] INFO : Entering Invoice Receive Date: 03-01-2026
+2026-02-02 16:31:16 [main] INFO : Enter Details in Lines Section
+2026-02-02 16:32:21 [main] INFO : Retrieving Distibution Combinatio ID: 
+2026-02-02 16:32:22 [main] INFO : Testing Ended
+2026-02-02 16:32:22 [main] INFO : ***********
+2026-02-02 16:33:53 [main] INFO : Launching Chrome Browser
+2026-02-02 16:33:53 [main] INFO : Report Name :OraclePage.html
+2026-02-02 16:34:04 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-02 16:34:09 [main] INFO : Logged in to Oracle Application
+2026-02-02 16:34:10 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-02 16:34:10 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-02 16:34:13 [main] INFO : Clicking on Home icon
+2026-02-02 16:34:18 [main] INFO : Click on Tasks for Create Invoice
+2026-02-02 16:34:19 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-02 16:34:19 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-02 16:36:27 [main] INFO : Filling the Invoice Details
+2026-02-02 16:37:20 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-02 16:37:23 [main] INFO : Entering Invoice Number: CR_MP_Test_001
+2026-02-02 16:37:24 [main] INFO : Selecting Invoice Currency: USD
+2026-02-02 16:37:54 [main] INFO : Entering Invoice Amount: 1000
+2026-02-02 16:37:55 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-02 16:37:57 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-02 16:37:59 [main] INFO : Entering Invoice Receive Date: 03-01-2026
+2026-02-02 16:37:59 [main] INFO : Enter Details in Lines Section
+2026-02-02 16:38:56 [main] INFO : Selecting Comapany Value: 101
+2026-02-02 16:38:58 [main] INFO : Selecting Account for Distribution Combinantion: 52110
+2026-02-02 16:39:01 [main] INFO : Retrieving Distibution Combinatio ID: 
+2026-02-02 16:39:01 [main] INFO : Testing Ended
+2026-02-02 16:39:01 [main] INFO : ***********
+2026-02-02 16:40:21 [main] INFO : Launching Chrome Browser
+2026-02-02 16:40:22 [main] INFO : Report Name :OraclePage.html
+2026-02-02 16:40:22 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-02 16:40:33 [main] INFO : Launching Chrome Browser
+2026-02-02 16:40:33 [main] INFO : Report Name :OraclePage.html
+2026-02-02 16:40:45 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-02 16:40:49 [main] INFO : Logged in to Oracle Application
+2026-02-02 16:40:50 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-02 16:40:50 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-02 16:40:53 [main] INFO : Clicking on Home icon
+2026-02-02 16:40:57 [main] INFO : Click on Tasks for Create Invoice
+2026-02-02 16:40:59 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-02 16:40:59 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-02 16:42:29 [main] INFO : Launching Chrome Browser
+2026-02-02 16:42:29 [main] INFO : Report Name :OraclePage.html
+2026-02-02 16:42:42 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-02 16:42:46 [main] INFO : Logged in to Oracle Application
+2026-02-02 16:42:47 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-02 16:42:47 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-02 16:42:50 [main] INFO : Clicking on Home icon
+2026-02-02 16:42:54 [main] INFO : Click on Tasks for Create Invoice
+2026-02-02 16:42:56 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-02 16:42:56 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-02 16:45:01 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-02 16:45:01 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-02 16:45:02 [main] INFO : Filling the Invoice Details
+2026-02-02 16:45:03 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-02 16:45:07 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-02 16:45:10 [main] INFO : Entering Invoice Number: CR_MP_Test_001
+2026-02-02 16:45:11 [main] INFO : Selecting Invoice Currency: USD
+2026-02-02 16:45:41 [main] INFO : Entering Invoice Amount: 1000
+2026-02-02 16:45:42 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-02 16:45:43 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-02 16:45:45 [main] INFO : Entering Invoice Receive Date: 03-01-2026
+2026-02-02 16:45:46 [main] INFO : Enter Details in Lines Section
+2026-02-02 16:45:53 [main] INFO : Entering Line Amount: 1000
+2026-02-02 16:46:25 [main] INFO : Retrieving Distibution Combinatio ID: 
+2026-02-02 16:46:26 [main] INFO : Testing Ended
+2026-02-02 16:46:26 [main] INFO : ***********
+2026-02-02 16:56:04 [main] INFO : Launching Chrome Browser
+2026-02-02 16:56:05 [main] INFO : Report Name :OraclePage.html
+2026-02-02 16:56:17 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-02 16:56:22 [main] INFO : Logged in to Oracle Application
+2026-02-02 16:56:22 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-02 16:56:22 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-02 16:56:25 [main] INFO : Clicking on Home icon
+2026-02-02 16:56:29 [main] INFO : Click on Tasks for Create Invoice
+2026-02-02 16:56:31 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-02 16:56:31 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-02 16:58:33 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-02 16:58:33 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-02 16:58:34 [main] INFO : Filling the Invoice Details
+2026-02-02 16:58:36 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-02 16:58:39 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-02 16:58:43 [main] INFO : Entering Invoice Number: CR_MP_Test_001
+2026-02-02 16:58:43 [main] INFO : Selecting Invoice Currency: USD
+2026-02-02 16:59:13 [main] INFO : Entering Invoice Amount: 1000
+2026-02-02 16:59:15 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-02 16:59:16 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-02 16:59:18 [main] INFO : Entering Invoice Receive Date: 03-01-2026
+2026-02-02 16:59:18 [main] INFO : Enter Details in Lines Section
+2026-02-02 16:59:25 [main] INFO : Entering Line Amount: 1000
+2026-02-02 16:59:58 [main] INFO : Retrieving Distibution Combinatio ID: 
+2026-02-02 16:59:59 [main] INFO : Testing Ended
+2026-02-02 16:59:59 [main] INFO : ***********
+2026-02-02 17:00:55 [main] INFO : Launching Chrome Browser
+2026-02-02 17:00:56 [main] INFO : Report Name :OraclePage.html
+2026-02-02 17:01:08 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-02 17:01:12 [main] INFO : Logged in to Oracle Application
+2026-02-02 17:01:12 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-02 17:01:12 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-02 17:01:16 [main] INFO : Clicking on Home icon
+2026-02-02 17:01:20 [main] INFO : Click on Tasks for Create Invoice
+2026-02-02 17:01:22 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-02 17:01:22 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-02 17:03:10 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-02 17:03:10 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-02 17:03:11 [main] INFO : Filling the Invoice Details
+2026-02-02 17:03:13 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-02 17:03:46 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-02 17:03:49 [main] INFO : Entering Invoice Number: CR_MP_Test_001
+2026-02-02 17:03:50 [main] INFO : Selecting Invoice Currency: USD
+2026-02-02 17:03:55 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-02 17:03:56 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-02 17:03:58 [main] INFO : Entering Invoice Receive Date: 03-01-2026
+2026-02-02 17:03:59 [main] INFO : Enter Details in Lines Section
+2026-02-02 17:04:15 [main] INFO : Launching Chrome Browser
+2026-02-02 17:04:16 [main] INFO : Report Name :OraclePage.html
+2026-02-02 17:04:28 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-02 17:04:32 [main] INFO : Logged in to Oracle Application
+2026-02-02 17:04:33 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-02 17:04:33 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-02 17:04:36 [main] INFO : Clicking on Home icon
+2026-02-02 17:04:41 [main] INFO : Click on Tasks for Create Invoice
+2026-02-02 17:04:42 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-02 17:04:42 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-02 17:06:23 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-02 17:06:23 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-02 17:06:24 [main] INFO : Filling the Invoice Details
+2026-02-02 17:06:25 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-02 17:06:29 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-02 17:06:32 [main] INFO : Entering Invoice Number: CR_MP_Test_001
+2026-02-02 17:06:33 [main] INFO : Selecting Invoice Currency: USD
+2026-02-02 17:07:03 [main] INFO : Entering Invoice Amount: 1000
+2026-02-02 17:07:05 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-02 17:07:06 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-02 17:07:08 [main] INFO : Entering Invoice Receive Date: 03-01-2026
+2026-02-02 17:07:09 [main] INFO : Enter Details in Lines Section
+2026-02-02 17:07:16 [main] INFO : Entering Line Amount: 1000
+2026-02-02 17:07:50 [main] INFO : Retrieving Distibution Combinatio ID: 
+2026-02-02 17:07:51 [main] INFO : Testing Ended
+2026-02-02 17:07:51 [main] INFO : ***********
+2026-02-02 17:13:20 [main] INFO : Launching Chrome Browser
+2026-02-02 17:13:20 [main] INFO : Report Name :OraclePage.html
+2026-02-02 17:13:26 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-02 17:13:30 [main] INFO : Logged in to Oracle Application
+2026-02-02 17:13:31 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-02 17:13:31 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-02 17:13:34 [main] INFO : Clicking on Home icon
+2026-02-02 17:13:38 [main] INFO : Click on Tasks for Create Invoice
+2026-02-02 17:13:40 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-02 17:13:40 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-02 17:15:25 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-02 17:15:25 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-02 17:15:27 [main] INFO : Filling the Invoice Details
+2026-02-02 17:15:28 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-02 17:15:32 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-02 17:15:35 [main] INFO : Entering Invoice Number: CR_MP_Test_001
+2026-02-02 17:15:36 [main] INFO : Selecting Invoice Currency: USD
+2026-02-02 17:15:37 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-02 17:15:39 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-02 17:15:41 [main] INFO : Entering Invoice Receive Date: 03-01-2026
+2026-02-02 17:15:41 [main] INFO : Enter Details in Lines Section
+2026-02-02 17:15:52 [main] INFO : Entering Line Amount: 1000
+2026-02-02 17:16:02 [main] INFO : Selecting Comapany Value: 101
+2026-02-02 17:16:04 [main] INFO : Selecting Account for Distribution Combinantion: 52110
+2026-02-02 17:16:08 [main] INFO : Retrieving Distibution Combinatio ID: 101-000-52110-000
+2026-02-02 17:16:09 [main] INFO : Testing Ended
+2026-02-02 17:16:09 [main] INFO : ***********
+2026-02-02 17:17:30 [main] INFO : Launching Chrome Browser
+2026-02-02 17:17:30 [main] INFO : Report Name :OraclePage.html
+2026-02-02 17:17:36 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-02 17:17:41 [main] INFO : Logged in to Oracle Application
+2026-02-02 17:17:42 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-02 17:17:42 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-02 17:17:43 [main] INFO : Clicking on Home icon
+2026-02-02 17:17:51 [main] INFO : Click on Tasks for Create Invoice
+2026-02-02 17:17:52 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-02 17:17:52 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-02 17:19:32 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-02 17:19:32 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-02 17:19:33 [main] INFO : Filling the Invoice Details
+2026-02-02 17:19:34 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-02 17:19:38 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-02 17:19:41 [main] INFO : Entering Invoice Number: CR_MP_Test_001
+2026-02-02 17:19:42 [main] INFO : Selecting Invoice Currency: USD
+2026-02-02 17:20:12 [main] INFO : Entering Invoice Amount: 1000
+2026-02-02 17:20:14 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-02 17:20:15 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-02 17:20:17 [main] INFO : Entering Invoice Receive Date: 03-01-2026
+2026-02-02 17:20:18 [main] INFO : Enter Details in Lines Section
+2026-02-02 17:20:25 [main] INFO : Entering Line Amount: 1000
+2026-02-02 17:20:30 [main] INFO : Selecting Comapany Value: 101
+2026-02-02 17:20:32 [main] INFO : Selecting Account for Distribution Combinantion: 52110
+2026-02-02 17:20:35 [main] INFO : Retrieving Distibution Combinatio ID: 101-000-52110-000
+2026-02-02 17:20:36 [main] INFO : Testing Ended
+2026-02-02 17:20:36 [main] INFO : ***********
+2026-02-02 17:26:53 [main] INFO : Launching Chrome Browser
+2026-02-02 17:26:54 [main] INFO : Report Name :OraclePage.html
+2026-02-02 17:27:05 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-02 17:27:10 [main] INFO : Logged in to Oracle Application
+2026-02-02 17:27:10 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-02 17:27:10 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-02 17:27:16 [main] INFO : Clicking on Home icon
+2026-02-02 17:27:20 [main] INFO : Click on Tasks for Create Invoice
+2026-02-02 17:27:21 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-02 17:27:21 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-02 17:29:05 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-02 17:29:05 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-02 17:29:06 [main] INFO : Filling the Invoice Details
+2026-02-02 17:29:07 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-02 17:29:11 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-02 17:29:15 [main] INFO : Entering Invoice Number: CR_MP_Test_001
+2026-02-02 17:29:15 [main] INFO : Selecting Invoice Currency: USD
+2026-02-02 17:29:45 [main] INFO : Entering Invoice Amount: 1000
+2026-02-02 17:29:47 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-02 17:29:48 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-02 17:29:50 [main] INFO : Entering Invoice Receive Date: 03-01-2026
+2026-02-02 17:29:51 [main] INFO : Enter Details in Lines Section
+2026-02-02 17:29:58 [main] INFO : Entering Line Amount: 1000
+2026-02-02 17:30:03 [main] INFO : Selecting Comapany Value: 101
+2026-02-02 17:30:06 [main] INFO : Selecting Account for Distribution Combinantion: 52110
+2026-02-02 17:30:09 [main] INFO : Retrieving Distibution Combinatio ID: 
+2026-02-02 17:30:10 [main] INFO : Saving and Validating Invoice
+2026-02-02 17:30:12 [main] INFO : Testing Ended
+2026-02-02 17:30:12 [main] INFO : ***********
+2026-02-02 17:41:26 [main] INFO : Launching Chrome Browser
+2026-02-02 17:41:27 [main] INFO : Report Name :OraclePage.html
+2026-02-02 17:41:33 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-02 17:41:38 [main] INFO : Logged in to Oracle Application
+2026-02-02 17:41:39 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-02 17:41:39 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-02 17:41:43 [main] INFO : Clicking on Home icon
+2026-02-02 17:41:49 [main] INFO : Click on Tasks for Create Invoice
+2026-02-02 17:41:51 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-02 17:41:51 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-02 17:43:37 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-02 17:43:37 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-02 17:43:39 [main] INFO : Filling the Invoice Details
+2026-02-02 17:43:40 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-02 17:43:44 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-02 17:44:02 [main] INFO : Entering Invoice Number: CR_MP_Test_001
+2026-02-02 17:44:03 [main] INFO : Selecting Invoice Currency: USD
+2026-02-02 17:44:33 [main] INFO : Entering Invoice Amount: 1000
+2026-02-02 17:44:34 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-02 17:44:36 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-02 17:44:38 [main] INFO : Entering Invoice Receive Date: 03-01-2026
+2026-02-02 17:44:38 [main] INFO : Enter Details in Lines Section
+2026-02-02 17:44:45 [main] INFO : Entering Line Amount: 1000
+2026-02-02 17:44:50 [main] INFO : Selecting Comapany Value: 101
+2026-02-02 17:44:54 [main] INFO : Selecting Account for Distribution Combinantion: 52110
+2026-02-02 17:44:57 [main] INFO : Retrieving Distibution Combinatio ID: 101-000-52110-000
+2026-02-02 17:44:57 [main] INFO : Saving and Validating Invoice
+2026-02-02 17:45:00 [main] INFO : Testing Ended
+2026-02-02 17:45:00 [main] INFO : ***********
+2026-02-02 18:12:48 [main] INFO : Launching Chrome Browser
+2026-02-02 18:12:49 [main] INFO : Report Name :OraclePage.html
+2026-02-02 18:12:58 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-02 18:13:02 [main] INFO : Logged in to Oracle Application
+2026-02-02 18:13:03 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-02 18:13:03 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-02 18:13:07 [main] INFO : Clicking on Home icon
+2026-02-02 18:13:11 [main] INFO : Testing Ended
+2026-02-02 18:13:11 [main] INFO : ***********
+2026-02-02 18:13:25 [main] INFO : Launching Chrome Browser
+2026-02-02 18:13:25 [main] INFO : Report Name :OraclePage.html
+2026-02-02 18:13:31 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-02 18:13:36 [main] INFO : Logged in to Oracle Application
+2026-02-02 18:13:36 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-02 18:13:36 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-02 18:13:40 [main] INFO : Clicking on Home icon
+2026-02-02 18:13:45 [main] INFO : Click on Tasks for Create Invoice
+2026-02-02 18:13:47 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-02 18:13:47 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-02 18:15:37 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-02 18:15:37 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-02 18:15:39 [main] INFO : Filling the Invoice Details
+2026-02-02 18:15:40 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-02 18:15:44 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-02 18:15:47 [main] INFO : Entering Invoice Number: CR_MP_Test_001
+2026-02-02 18:15:48 [main] INFO : Selecting Invoice Currency: USD
+2026-02-02 18:16:18 [main] INFO : Entering Invoice Amount: 1000
+2026-02-02 18:16:19 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-02 18:16:21 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-02 18:16:23 [main] INFO : Entering Invoice Receive Date: 03-01-2026
+2026-02-02 18:16:23 [main] INFO : Enter Details in Lines Section
+2026-02-02 18:16:31 [main] INFO : Entering Line Amount: 1000
+2026-02-02 18:16:39 [main] INFO : Selecting Comapany Value: 101
+2026-02-02 18:16:42 [main] INFO : Selecting Account for Distribution Combinantion: 52110
+2026-02-02 18:16:45 [main] INFO : Retrieving Distibution Combinatio ID: 101-000-52110-000
+2026-02-02 18:16:46 [main] INFO : Saving and Validating Invoice
+2026-02-02 18:17:19 [main] INFO : Testing Ended
+2026-02-02 18:17:19 [main] INFO : ***********

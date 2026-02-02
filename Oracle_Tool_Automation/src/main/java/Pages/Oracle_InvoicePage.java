@@ -37,13 +37,22 @@ public class Oracle_InvoicePage extends WaitsManager {
 	// lines in invoice
 	By lines = By.xpath("//a[@title='Expand Lines']");
 	By selectLine = By.xpath("//table[@summary='Invoice Lines']/descendant::td[text()='1']");
-	By lineAmount = By.xpath("//td[@title='Amount']/descendant::input");
-	By distributionCombination = By.xpath("//td[@title='Distribution Combination ID']/span/descendant::a");
+//	By lineAmount = By.xpath("//td[@title='Amount']/descendant::input");
+//	By lineAmount = By.xpath("//td[@title='Amount']/descendant::label[text()='Amount']/preceding-sibling::input");
+	By lineAmount = By.xpath("//tr[@_afrrk='0']//label[text()='Amount']/preceding-sibling::input");
+
+//	By distributionCombination = By.xpath("//td[@title='Distribution Combination ID']/span/descendant::a[@title='Select: Distribution Combination ID']");
+	By distributionCombination = By.xpath(
+			"//input[@aria-label='Distribution Combination ID']/parent::span/parent::td/following-sibling::td/a");
 	By enterCompany_inDCPopup = By.xpath("//label[text()='COMPANY']/preceding-sibling::input");
 	By searchBtn_inDCPopup = By.xpath("//button[@accesskey='r']");
 	By okBtn_inDCPopup = By.xpath("//button[@accesskey='k']");
 	By getDistributionCombination_ID = By.xpath("//input[@aria-label='Distribution Combination ID']");
-	By saveInvoice = By.xpath("//span[text()='Save']");
+
+	By saveInvoice = By.xpath("//div[@class='xeq p_AFTextOnly']/a/span[text()='Save']");
+	By invoiceActionBtn = By.xpath("//a[text()='Invoice Actions']");
+	By invoiceValidateBtn = By.xpath("//td[text()='Validate']");
+	By validateMsg = By.xpath("//a[@accesskey='Q']");
 
 	public void validateInvoicePageTitle() throws Exception {
 
@@ -214,22 +223,23 @@ public class Oracle_InvoicePage extends WaitsManager {
 
 	public void enterAmountInLines(String amount) throws Exception {
 		try {
-//			waitForElement(lineAmount, 60);
 			implWait(driver);
 
 			driver.findElement(selectLine).click();
-			waitTime(driver);
+			waitTime2(driver);
 			actionTab();
+			waitTime2(driver);
+
 //			WebElement amountInput = driver.findElement(lineAmount);
+//			amountInput.sendKeys(amount);
 			driver.findElement(lineAmount).click();
 			driver.findElement(lineAmount).sendKeys(amount);
 
 			System.out.println("Entering Line Amount: " + amount);
 			grep.infoTest("Entering Line Amount: " + amount);
 			logger.info("Entering Line Amount: " + amount);
-//			amountInput.clear(); // Clear existing value if any
-//			amountInput.sendKeys(amount);
-
+			waitTime(driver);
+			actionTab();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -241,8 +251,8 @@ public class Oracle_InvoicePage extends WaitsManager {
 
 			By selectCompany_inDCPopup = By.xpath("//span[text()='" + companyVal + "']");
 			By selectAcc_inDCPopup = By.xpath("//span[text()='" + accValue + "']");
-			scrollView(distributionCombination);
 
+			waitTime2(driver);
 			driver.findElement(distributionCombination).click();
 			waitForElementToBeClickable(enterCompany_inDCPopup, 20);
 			driver.findElement(enterCompany_inDCPopup).sendKeys(companyVal);
@@ -285,4 +295,30 @@ public class Oracle_InvoicePage extends WaitsManager {
 
 		driver.findElement(saveInvoice).click();
 	}
+
+	public void clickInvoiceActionAndValidateBtn() throws Exception {
+		try {
+			implWait(driver);
+
+			driver.findElement(invoiceActionBtn).click();
+			waitTime1(driver);
+			driver.findElement(invoiceValidateBtn).click();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public String getInvoicevalidation() throws Exception {
+		String invoiceValidation = null;
+
+		try {
+
+			waitTime1(driver);
+			invoiceValidation = driver.findElement(validateMsg).getText();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return invoiceValidation;
+	}
+
 }

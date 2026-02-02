@@ -9,6 +9,7 @@ import Pages.Oracle_InvoicePage;
 import Pages.TestInitializer;
 import Utility.GenerateReports;
 import Utility.ValidatingAssertions;
+import lombok.val;
 
 public class CreateInvoice_withoutPO_Test extends TestInitializer {
 	private static final Logger logger = LogManager.getLogger(CreateInvoice_withoutPO_Test.class);
@@ -80,11 +81,27 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		oraInv.enterAmountInLines("1000");
 		waitTime(driver);
 		oraInv.searchAndSelectDistributionCombination("101", "52110");
-
+		waitTime(driver);
 		String retrieveDC_id = oraInv.retrieveDistributionCombinationID();
 		grep.infoTest("Retrieving Distibution Combinatio ID: " + retrieveDC_id);
 		logger.info("Retrieving Distibution Combinatio ID: " + retrieveDC_id);
-		
+
 		grep.captureScreenshot("pass", "After filling Invoice fields test", "afterFillingInvoiceFields");
+		waitTime(driver);
+		grep.infoTest("Saving and Validating Invoice");
+		logger.info("Saving and Validating Invoice");
+
+		oraInv.clickSaveInvoiceBtn();
+		oraInv.clickInvoiceActionAndValidateBtn();
+		
+		String validMsg = oraInv.getInvoicevalidation();
+		if(validMsg.equals("Needs revalidation")) {
+			grep.infoTest("Needs revalidation");
+			logger.info("Needs revalidation");
+
+		}
+		
+		
+
 	}
 }

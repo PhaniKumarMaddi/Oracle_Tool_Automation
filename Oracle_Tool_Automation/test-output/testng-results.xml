@@ -1,38 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-30T14:42:40 IST" name="Suite" finished-at="2026-01-30T14:51:01 IST" duration-ms="500729">
+  <suite started-at="2026-02-02T09:25:49 IST" name="Default suite" finished-at="2026-02-02T09:28:41 IST" duration-ms="171965">
     <groups>
     </groups>
-    <test started-at="2026-01-30T14:42:40 IST" name="OracleProcurementTest" finished-at="2026-01-30T14:51:01 IST" duration-ms="500729">
+    <test started-at="2026-02-02T09:25:49 IST" name="Default test" finished-at="2026-02-02T09:28:41 IST" duration-ms="171965">
       <class name="Tests.Oracle_ProcurementWithoutRequisition_Test">
-        <test-method signature="oracle_ProcurementWithout_Requisition_Test()[pri:0, instance:Tests.Oracle_ProcurementWithoutRequisition_Test@48d5f34e]" started-at="2026-01-30T14:48:10 IST" name="oracle_ProcurementWithout_Requisition_Test" finished-at="2026-01-30T14:51:01 IST" duration-ms="170318" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- oracle_ProcurementWithout_Requisition_Test -->
-      </class> <!-- Tests.Oracle_ProcurementWithoutRequisition_Test -->
-      <class name="Tests.Oracle_ProcurementTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementTest@1d470d0]" started-at="2026-01-30T14:42:40 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-01-30T14:42:57 IST" duration-ms="16315" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementWithoutRequisition_Test@39a8312f]" started-at="2026-02-02T09:25:49 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-02T09:26:06 IST" duration-ms="16104" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[OracleProcurement_Report.html]]>
+                <![CDATA[OraclePage.html]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="oracle_ProcurementWithRequisition_Test()[pri:0, instance:Tests.Oracle_ProcurementTest@1d470d0]" started-at="2026-01-30T14:42:57 IST" name="oracle_ProcurementWithRequisition_Test" finished-at="2026-01-30T14:48:10 IST" duration-ms="313725" status="PASS">
+        <test-method signature="oracle_ProcurementWithout_Requisition_Test()[pri:0, instance:Tests.Oracle_ProcurementWithoutRequisition_Test@39a8312f]" started-at="2026-02-02T09:26:06 IST" name="oracle_ProcurementWithout_Requisition_Test" finished-at="2026-02-02T09:28:41 IST" duration-ms="155379" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Create']"}
+  (Session info: chrome=144.0.7559.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1d737c3ceed72d5d2a7f11f7076525b3, findElement {value=//button[text()='Create'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55261}, goog:processID: 18960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55261/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d737c3ceed72d5d2a7f11f7076525b3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Create']"}
+  (Session info: chrome=144.0.7559.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1d737c3ceed72d5d2a7f11f7076525b3, findElement {value=//button[text()='Create'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55261}, goog:processID: 18960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55261/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d737c3ceed72d5d2a7f11f7076525b3
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at Utility.WaitsManager.scrollView(WaitsManager.java:256)
+at Pages.Oracle_HomePage.clickCreateBtn_inProcessRequsitionPage(Oracle_HomePage.java:786)
+at Tests.Oracle_ProcurementWithoutRequisition_Test.oracle_PurchaseOrderWithout_Requisition_Test(Oracle_ProcurementWithoutRequisition_Test.java:59)
+at Tests.Oracle_ProcurementWithoutRequisition_Test.oracle_ProcurementWithout_Requisition_Test(Oracle_ProcurementWithoutRequisition_Test.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oracle_ProcurementWithRequisition_Test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Oracle_ProcurementTest@1d470d0]" started-at="2026-01-30T14:51:01 IST" name="tearDown" description="Quit Browser" finished-at="2026-01-30T14:51:01 IST" duration-ms="269" status="PASS">
+        </test-method> <!-- oracle_ProcurementWithout_Requisition_Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Oracle_ProcurementWithoutRequisition_Test@39a8312f]" started-at="2026-02-02T09:28:41 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-02T09:28:41 IST" duration-ms="453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.Oracle_ProcurementTest -->
-    </test> <!-- OracleProcurementTest -->
-  </suite> <!-- Suite -->
+      </class> <!-- Tests.Oracle_ProcurementWithoutRequisition_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

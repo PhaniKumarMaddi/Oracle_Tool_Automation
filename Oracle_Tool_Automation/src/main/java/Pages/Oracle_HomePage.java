@@ -164,12 +164,33 @@ public class Oracle_HomePage extends WaitsManager {
 			for (int i = 0; i < maxClicks; i++) {
 				List<WebElement> tabs = driver.findElements(tabLocator);
 
-				// Check if element exists AND is displayed to the user
-				if (!tabs.isEmpty() && tabs.get(0).isDisplayed()) {
-					tabs.get(0).click();
-					System.out.println("Clicked on tab: " + tabName);
-					isTabFound = true;
-					break;
+//				// Check if element exists AND is displayed to the user
+//				if (!tabs.isEmpty() && tabs.get(0).isDisplayed()) {
+//					tabs.get(0).click();
+//					System.out.println("Clicked on tab: " + tabName);
+//					isTabFound = true;
+//					break;
+//				}
+				if (!tabs.isEmpty()) {
+					WebElement tabContainer = tabs.get(0);
+					String classAttr = tabContainer.getAttribute("class");
+
+					// 1. Verification: If already selected, break immediately
+					if (classAttr != null && classAttr.contains("selected")) {
+						System.out.println("Tab '" + tabName + "' is already selected. No click needed.");
+						isTabFound = true;
+						break;
+					}
+
+					// 2. If not selected but displayed, click it
+					if (tabContainer.isDisplayed()) {
+						tabContainer.click();
+						System.out.println("Clicked on tab: " + tabName);
+
+						// Optional: Wait a moment and re-verify selection to be 100% sure
+						isTabFound = true;
+						break;
+					}
 				}
 
 				// If not found or not displayed, click the right navigator
@@ -1023,6 +1044,7 @@ public class Oracle_HomePage extends WaitsManager {
 		implWait(driver);
 		driver.findElement(navigatorFromPutAway).click();
 	}
+
 	public void clickHomeFromPutAway() {
 		implWait(driver);
 		driver.findElement(homeFromPutAway).click();

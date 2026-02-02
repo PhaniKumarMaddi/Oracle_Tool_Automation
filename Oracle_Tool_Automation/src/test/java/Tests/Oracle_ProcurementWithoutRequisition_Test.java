@@ -37,7 +37,7 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 		grep.infoTest("Navigating to Procurement Tab in homepage ");
 		waitTime(driver);
 
-//		oraHome.selectTabWithNavigator("Procurement");
+		oraHome.selectTabWithNavigator("Procurement");
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Navigating to Procurement Tab in homepage ", "ProcurementTabInhomepage");
 		waitTime(driver);
@@ -65,9 +65,9 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 		oraHome.searchAndSelectItemInPO_Line("CR1002");
 		waitTime(driver);
 		oraHome.enterQuantity_InRowLine("2");
-		waitTime(driver);
+		waitTime1(driver);
 		oraHome.enterRequestDeliveryDate("03", "02", "2026");
-		waitTime(driver);
+		waitTime1(driver);
 		grep.captureScreenshot("pass", "Entering Valid Values in Row Line", "enterValuesInRowLine");
 		waitTime(driver);
 
@@ -253,7 +253,6 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 		waitTime2(driver);
 		oraHome.clickHomeFromPutAway();
 
-//##############
 		logger.info("Navigating to Procurement Tab in homepage ");
 		grep.infoTest("Navigating to Procurement Tab in homepage ");
 //		oraHome.selectTabWithNavigator("Procurement");

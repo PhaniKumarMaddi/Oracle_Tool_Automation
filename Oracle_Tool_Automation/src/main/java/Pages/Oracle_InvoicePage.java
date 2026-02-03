@@ -1,5 +1,7 @@
 package Pages;
 
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -51,8 +53,35 @@ public class Oracle_InvoicePage extends WaitsManager {
 
 	By saveInvoice = By.xpath("//div[@class='xeq p_AFTextOnly']/a/span[text()='Save']");
 	By invoiceActionBtn = By.xpath("//a[text()='Invoice Actions']");
-	By invoiceValidateBtn = By.xpath("//td[text()='Validate']");
+
 	By validateMsg = By.xpath("//a[@accesskey='Q']");
+	By continueWarn = By.xpath("//button[text()='Continue']");
+	// validation
+	By warningImageLocator = By.xpath("//table[@summary='Holds']//img[contains(@src, 'qual_warning_16')]");
+	By associatedLinkLocator = By.xpath(".//following-sibling::a");
+	By selectName = By.xpath("//span[label[text()='Name'] and not(contains(@class, 'p_AFDisabled'))]/select");
+	By saveAndCloseBtn = By.xpath("//button[text()='Save and Close']");
+
+	// Accounting the invoice
+	By viewAccbtn = By.xpath("//button[text()='View Accounting']");
+	By text_AccountingConfirmation = By.xpath("//div[@class='AFPopupSelector']/descendant::td[@class='x1o']");
+
+	By accountinLineHeader = By.xpath("//div[contains(@id, 'ap1:d3::_ttxt')]");
+	By accoutNum = By.xpath("//span[contains(@id, 'kf1CS2::content')]");
+	By debitAmt = By.xpath("//span[contains(@id, 'ATp:t1:0:ot4')]");
+	By creditAmt = By.xpath(
+			"//*[@id=\"pt1:_FOr1:1:_FONSr2:0:MAnt2:1:pm1:r1:0:ap1:r7:1:AT1:_ATp:t1::db\"]/table/tbody/tr[2]/td[8]/span/span");
+
+	By doneBtn = By.xpath("//button[@accesskey='o']");
+
+	// payments for invoice using manage installments
+	By paymentReasonComment = By.xpath("//input[@title='Supplier Expenses Payment']");
+	By paymentMethod = By.xpath("//input[contains(@name,'paymentMethodNameId2')]");
+	
+	By paymentSaveAndCloseBtn = By.xpath("//button[@accesskey='S']");
+
+	// PAY IN FULL
+	By enterBankAccount = By.xpath("//input[contains(@name,'bankAccountNamePIFId')]");
 
 	public void validateInvoicePageTitle() throws Exception {
 
@@ -296,29 +325,260 @@ public class Oracle_InvoicePage extends WaitsManager {
 		driver.findElement(saveInvoice).click();
 	}
 
-	public void clickInvoiceActionAndValidateBtn() throws Exception {
+	public void clickContinueWarnBtn() {
+		try {
+
+			implWait(driver);
+			WebElement continueBtn = driver.findElement(continueWarn);
+			if (continueBtn.isDisplayed()) {
+				continueBtn.click();
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		}
+	}
+
+	public void clickInvoiceActionAndValidateBtn(String actionVal) throws Exception {
 		try {
 			implWait(driver);
+			By invoiceActBtn = By.xpath("//td[text()='" + actionVal + "']");
 
 			driver.findElement(invoiceActionBtn).click();
 			waitTime1(driver);
-			driver.findElement(invoiceValidateBtn).click();
+			driver.findElement(invoiceActBtn).click();
+			waitTime1(driver);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	public String getInvoicevalidation() throws Exception {
+	public String getInvoiceValidation() throws Exception {
 		String invoiceValidation = null;
 
 		try {
 
-			waitTime1(driver);
+			waitForElement(validateMsg, 60);
 			invoiceValidation = driver.findElement(validateMsg).getText();
+			System.out.println("Invoice validation message: " + invoiceValidation);
+			grep.infoTest("Invoice validation message: " + invoiceValidation);
+			logger.info("Invoice validation message: " + invoiceValidation);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return invoiceValidation;
+	}
+
+	public void clickNeedReValidation() throws Exception {
+		try {
+
+			waitForElement(validateMsg, 20);
+			driver.findElement(validateMsg).click();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickHoldWarningLink() throws Exception {
+
+		try {
+			// 1. Check if any warning image exists
+			List<WebElement> warningImages = driver.findElements(warningImageLocator);
+
+			if (!warningImages.isEmpty()) {
+				WebElement warningImg = warningImages.get(0);
+				System.out.println("Warning found! Image source: " + warningImg.getAttribute("src"));
+				grep.infoTest("Warning found! Image source: " + warningImg.getAttribute("src"));
+				logger.info("Warning found! Image source: " + warningImg.getAttribute("src"));
+
+				// 2. Find the link relative to the warning image
+				WebElement countLink = warningImg.findElement(associatedLinkLocator);
+
+				System.out.println("Clicking the hold count link: " + countLink.getText());
+				grep.infoTest("Clicking the hold count link: " + countLink.getText());
+				logger.info("Clicking the hold count link: " + countLink.getText());
+
+				countLink.click();
+			} else {
+				System.out.println("No warnings found in the Holds table. All checks passed.");
+			}
+		} catch (Exception e) {
+			System.out.println("Error while processing Holds table: " + e.getMessage());
+			throw e;
+		}
+	}
+
+	public void selectValidatedReleaseName() throws Exception {
+		try {
+			// 1. Wait until the dropdown is visible and clickable
+			waitForElementToBeClickable(selectName, 60);
+			WebElement dropdownElement = driver.findElement(selectName);
+
+			// 2. Use the Select wrapper
+			Select releaseNameSelect = new Select(dropdownElement);
+
+			// 3. Select 'Validated' by the visible text
+			releaseNameSelect.selectByVisibleText("Validated");
+
+			System.out.println("Successfully selected 'Validated' from the release name dropdown.");
+			grep.infoTest("Successfully selected 'Validated' from the release name dropdown.");
+			logger.info("Successfully selected 'Validated' from the release name dropdown.");
+		} catch (Exception e) {
+			System.err.println("Could not find an enabled 'Name' dropdown. Ensure the row is in edit mode.");
+			e.printStackTrace();
+		}
+	}
+
+	public void clickSaveAndCloseBtn() {
+		implWait(driver);
+
+		driver.findElement(saveAndCloseBtn).click();
+	}
+
+	// Accounting
+	public void validateAccountingConfirmationPopup() throws Exception {
+		try {
+			implWait(driver);
+
+			String getMsg = driver.findElement(text_AccountingConfirmation).getText().trim();
+			validAssert.equalsAssert(getMsg, "The accounting has been completed.");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void clickViewAccountingBtn() {
+		try {
+			waitForElement(viewAccbtn, 30);
+			WebElement accBtn = driver.findElement(viewAccbtn);
+			accBtn.click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		}
+	}
+
+	public void validateAccountingLinesHeader(String expectedInvoiceNum) {
+
+		try {
+			// 1. Wait for the dialog header to be visible
+			waitForElement(accountinLineHeader, 20);
+
+			WebElement header = driver.findElement(accountinLineHeader);
+			String actualHeaderText = header.getText();
+			System.out.println("Retrieved Header: " + actualHeaderText);
+
+			// 2. Perform Validation (Case-insensitive)
+			if (actualHeaderText.toLowerCase().contains(expectedInvoiceNum.toLowerCase())) {
+				logger.info("Validation Passed: Header contains invoice number: " + expectedInvoiceNum);
+				grep.infoTest("Validation Passed: Header contains invoice number: " + expectedInvoiceNum);
+			} else {
+				logger.error("Validation Failed! Expected: " + expectedInvoiceNum + " but found: " + actualHeaderText);
+				grep.failTest("Validation Failed! Expected: " + expectedInvoiceNum + " but found: " + actualHeaderText);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void getAccountCombination(String expectedAccNum) {
+		try {
+			// Wait for the element to be present and visible
+			WebElement accountSpan = driver.findElement(accoutNum);
+
+			String accountValue = accountSpan.getText().trim();
+			validAssert.equalsAssert(accountValue, expectedAccNum);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void verifyAccountingAmounts(String externalExpectedAmt) throws Exception {
+
+		// 1. Retrieve the raw text from the UI
+		String rawDebit = driver.findElement(debitAmt).getText().trim();
+		String rawCredit = driver.findElement(creditAmt).getText().trim();
+
+		// 2. Format conversion logic
+		double cleanDebit = Double.parseDouble(rawDebit.replace(".", "").replace(",", "."));
+		double cleanCredit = Double.parseDouble(rawCredit.replace(".", "").replace(",", "."));
+		double expectedVal = Double.parseDouble(externalExpectedAmt);
+
+		logger.info("Comparing UI Values: Debit[" + cleanDebit + "], Credit[" + cleanCredit + "] against Expected["
+				+ expectedVal + "]");
+		grep.infoTest("Comparing UI Values: Debit[" + cleanDebit + "], Credit[" + cleanCredit + "] against Expected["
+				+ expectedVal + "]");
+
+		// 3. Validation Logic
+		if (cleanDebit == cleanCredit) {
+			if (cleanDebit == expectedVal) {
+				logger.info("Success: Debit, Credit, and Expected amount all match.");
+				grep.infoTest("Validation Passed: " + cleanDebit + " matches expected " + expectedVal);
+				grep.captureScreenshot("pass", "Final Amount Validation", "Amount_Match_Success");
+			} else {
+				logger.error("Data Mismatch: UI shows " + cleanDebit + " but External Data expects " + expectedVal);
+				grep.captureScreenshot("fail", "External Data Mismatch", "Amount_Mismatch_External");
+			}
+		} else {
+			logger.error("Accounting Mismatch: Debit (" + cleanDebit + ") does not equal Credit (" + cleanCredit + ")");
+			grep.captureScreenshot("fail", "Debit Credit Mismatch", "Amount_Mismatch_Internal");
+		}
+	}
+
+	public void clickDoneAccountingBtn() {
+		try {
+			waitForElement(doneBtn, 30);
+			WebElement done = driver.findElement(doneBtn);
+			done.click();
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		}
+	}
+
+	// payment
+	public void enterPaymentReasonComment(String reasonVal) {
+		try {
+			implWait(driver);
+
+			driver.findElement(paymentReasonComment).click();
+			driver.findElement(paymentReasonComment).sendKeys(reasonVal);
+			waitTime(driver);
+			grep.infoTest("Entering Payment reason: " + reasonVal);
+			logger.info("Entering Payment reason:" + reasonVal);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickSaveAndClose_Payment_Btn() {
+		implWait(driver);
+
+		driver.findElement(paymentSaveAndCloseBtn).click();
+	}
+
+	// pay in full
+	public void searchAndSelectBankAccount(String bankAccNum) {
+		try {
+			implWait(driver);
+			By selectBankAcct = By.xpath("//li[starts-with(text(),'" + bankAccNum + "']");
+
+			driver.findElement(enterBankAccount).click();
+			driver.findElement(enterBankAccount).sendKeys(bankAccNum);
+			waitTime(driver);
+			grep.infoTest("Selecting Business Unit: " + bankAccNum);
+			logger.info("Selecting Business Unit: " + bankAccNum);
+			waitForElementToBeClickable(selectBankAcct, 20);
+			driver.findElement(selectBankAcct).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }

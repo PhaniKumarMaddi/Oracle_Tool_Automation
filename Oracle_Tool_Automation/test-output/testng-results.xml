@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-02T18:24:13 IST" name="Default suite" finished-at="2026-02-02T18:27:25 IST" duration-ms="192566">
+  <suite started-at="2026-02-03T12:51:19 IST" name="Default suite" finished-at="2026-02-03T12:53:52 IST" duration-ms="153446">
     <groups>
     </groups>
-    <test started-at="2026-02-02T18:24:13 IST" name="Default test" finished-at="2026-02-02T18:27:25 IST" duration-ms="192566">
+    <test started-at="2026-02-03T12:51:19 IST" name="Default test" finished-at="2026-02-03T12:53:52 IST" duration-ms="153446">
       <class name="Tests.CreateInvoice_withoutPO_Test">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.CreateInvoice_withoutPO_Test@72c28d64]" started-at="2026-02-02T18:24:13 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-02T18:24:30 IST" duration-ms="17184" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.CreateInvoice_withoutPO_Test@72c28d64]" started-at="2026-02-03T12:51:19 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-03T12:51:53 IST" duration-ms="33738" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="oracle_InvoiceCreation_WithoutPO()[pri:0, instance:Tests.CreateInvoice_withoutPO_Test@72c28d64]" started-at="2026-02-02T18:24:30 IST" name="oracle_InvoiceCreation_WithoutPO" finished-at="2026-02-02T18:27:24 IST" duration-ms="174564" status="PASS">
+        <test-method signature="oracle_InvoiceCreation_WithoutPO()[pri:0, instance:Tests.CreateInvoice_withoutPO_Test@72c28d64]" started-at="2026-02-03T12:51:53 IST" name="oracle_InvoiceCreation_WithoutPO" finished-at="2026-02-03T12:53:51 IST" duration-ms="118877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oracle_InvoiceCreation_WithoutPO -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CreateInvoice_withoutPO_Test@72c28d64]" started-at="2026-02-02T18:27:24 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-02T18:27:25 IST" duration-ms="748" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CreateInvoice_withoutPO_Test@72c28d64]" started-at="2026-02-03T12:53:51 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-03T12:53:52 IST" duration-ms="766" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

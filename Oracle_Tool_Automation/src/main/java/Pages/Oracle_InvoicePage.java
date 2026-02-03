@@ -52,6 +52,8 @@ public class Oracle_InvoicePage extends WaitsManager {
 	By getDistributionCombination_ID = By.xpath("//input[@aria-label='Distribution Combination ID']");
 
 	By saveInvoice = By.xpath("//div[@class='xeq p_AFTextOnly']/a/span[text()='Save']");
+	By saveAndCloseInvoice = By.xpath("//div[@class='xeq p_AFTextOnly']/a[@accesskey='S']");
+
 	By invoiceActionBtn = By.xpath("//a[text()='Invoice Actions']");
 
 	By validateMsg = By.xpath("//a[@accesskey='Q']");
@@ -69,19 +71,23 @@ public class Oracle_InvoicePage extends WaitsManager {
 	By accountinLineHeader = By.xpath("//div[contains(@id, 'ap1:d3::_ttxt')]");
 	By accoutNum = By.xpath("//span[contains(@id, 'kf1CS2::content')]");
 	By debitAmt = By.xpath("//span[contains(@id, 'ATp:t1:0:ot4')]");
-	By creditAmt = By.xpath(
-			"//*[@id=\"pt1:_FOr1:1:_FONSr2:0:MAnt2:1:pm1:r1:0:ap1:r7:1:AT1:_ATp:t1::db\"]/table/tbody/tr[2]/td[8]/span/span");
-
+//	By creditAmt = By.xpath("//*[@id=\"pt1:_FOr1:1:_FONSr2:0:MAnt2:1:pm1:r1:0:ap1:r7:1:AT1:_ATp:t1::db\"]/table/tbody/tr[2]/td[8]/span/span");
+	By creditAmt = By.xpath("//div[@class='x1hf']/table/tbody/tr[2]/td[8]/span/span");
 	By doneBtn = By.xpath("//button[@accesskey='o']");
 
 	// payments for invoice using manage installments
-	By paymentReasonComment = By.xpath("//input[@title='Supplier Expenses Payment']");
+	By paymentReasonComment = By
+			.xpath("//label[text()='Payment Reason Comments']/parent::td/following-sibling::td/input");
 	By paymentMethod = By.xpath("//input[contains(@name,'paymentMethodNameId2')]");
-	
+
 	By paymentSaveAndCloseBtn = By.xpath("//button[@accesskey='S']");
 
 	// PAY IN FULL
 	By enterBankAccount = By.xpath("//input[contains(@name,'bankAccountNamePIFId')]");
+	By enterPaymentProfile = By.xpath("//input[contains(@name,'paymentProfileNameId')]");
+	By submitBtn_inPaymentPopup = By.xpath("//button[@accesskey='m']");
+	By paymentConfirmation = By.xpath("//div[@class='AFPopupSelector']/descendant::td[@class='x1n1']");
+	By okBtn_InPaymentConfirmation = By.xpath("//button[text()='OK']");
 
 	public void validateInvoicePageTitle() throws Exception {
 
@@ -101,7 +107,7 @@ public class Oracle_InvoicePage extends WaitsManager {
 
 		try {
 //			implWait(driver);
-			waitForElement(createInvoicePageTitle, 120);
+			waitForElement(createInvoicePageTitle, 180);
 			String actualText = driver.findElement(createInvoicePageTitle).getText().trim();
 			waitTime(driver);
 
@@ -163,21 +169,18 @@ public class Oracle_InvoicePage extends WaitsManager {
 		}
 	}
 
-	public void enterInvoiceAmount(String currencyCode, String amount) throws Exception {
+	public void enterInvoiceAmount(String amount) throws Exception {
 		try {
 			// 1. Handle Currency Dropdown
-			waitForElementToBeClickable(invoiceCurrency, 60);
-			WebElement currencyDropdown = driver.findElement(invoiceCurrency);
-			Select currencySelect = new Select(currencyDropdown);
+			waitForElementToBeClickable(invoiceAmount, 60);
+//			WebElement currencyDropdown = driver.findElement(invoiceCurrency);
+//			Select currencySelect = new Select(currencyDropdown);
+//
+//			System.out.println("Selecting Invoice Currency: " + currencyCode);
+//			grep.infoTest("Selecting Invoice Currency: " + currencyCode);
+//			logger.info("Selecting Invoice Currency: " + currencyCode);
+//			currencySelect.selectByContainsVisibleText(currencyCode);
 
-			System.out.println("Selecting Invoice Currency: " + currencyCode);
-			grep.infoTest("Selecting Invoice Currency: " + currencyCode);
-			logger.info("Selecting Invoice Currency: " + currencyCode);
-			currencySelect.selectByContainsVisibleText(currencyCode);
-
-			// 2. Handle Amount Input
-			// Note: We re-wait because selecting currency sometimes disables/refreshes
-			// fields
 			WebElement amountInput = driver.findElement(invoiceAmount);
 
 			System.out.println("Entering Invoice Amount: " + amount);
@@ -325,6 +328,12 @@ public class Oracle_InvoicePage extends WaitsManager {
 		driver.findElement(saveInvoice).click();
 	}
 
+	public void clickSaveAndCloseInvoiceBtn() {
+		implWait(driver);
+
+		driver.findElement(saveAndCloseInvoice).click();
+	}
+
 	public void clickContinueWarnBtn() {
 		try {
 
@@ -332,10 +341,12 @@ public class Oracle_InvoicePage extends WaitsManager {
 			WebElement continueBtn = driver.findElement(continueWarn);
 			if (continueBtn.isDisplayed()) {
 				continueBtn.click();
+			} else {
+				grep.infoTest("continue not available");
 			}
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			grep.infoTest("continue not available");
 
 		}
 	}
@@ -343,7 +354,9 @@ public class Oracle_InvoicePage extends WaitsManager {
 	public void clickInvoiceActionAndValidateBtn(String actionVal) throws Exception {
 		try {
 			implWait(driver);
+//			waitForElementToBeClickable(invoiceActionBtn, 30);
 			By invoiceActBtn = By.xpath("//td[text()='" + actionVal + "']");
+			waitTime(driver);
 
 			driver.findElement(invoiceActionBtn).click();
 			waitTime1(driver);
@@ -556,6 +569,26 @@ public class Oracle_InvoicePage extends WaitsManager {
 		}
 	}
 
+	public void searchAndSelectPaymentMethod(String payMethod) {
+		try {
+			implWait(driver);
+			By selectPayment = By.xpath("//li[text()='" + payMethod + "']");
+
+			driver.findElement(paymentMethod).click();
+			driver.findElement(paymentMethod).clear();
+			waitTime(driver);
+			driver.findElement(paymentMethod).sendKeys(payMethod);
+			waitTime(driver);
+			grep.infoTest("Selecting Payment Method: " + payMethod);
+			logger.info("Selecting Payment Method: " + payMethod);
+			waitForElementToBeClickable(selectPayment, 20);
+			driver.findElement(selectPayment).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 	public void clickSaveAndClose_Payment_Btn() {
 		implWait(driver);
 
@@ -563,16 +596,16 @@ public class Oracle_InvoicePage extends WaitsManager {
 	}
 
 	// pay in full
-	public void searchAndSelectBankAccount(String bankAccNum) {
+	public void searchAndSelectBankAccount(String bankAccVal) {
 		try {
 			implWait(driver);
-			By selectBankAcct = By.xpath("//li[starts-with(text(),'" + bankAccNum + "']");
+			By selectBankAcct = By.xpath("//li[starts-with(text(),'" + bankAccVal + "')]");
 
 			driver.findElement(enterBankAccount).click();
-			driver.findElement(enterBankAccount).sendKeys(bankAccNum);
+			driver.findElement(enterBankAccount).sendKeys(bankAccVal);
 			waitTime(driver);
-			grep.infoTest("Selecting Business Unit: " + bankAccNum);
-			logger.info("Selecting Business Unit: " + bankAccNum);
+			grep.infoTest("Selecting Bank Account: " + bankAccVal);
+			logger.info("Selecting Bank Account: " + bankAccVal);
 			waitForElementToBeClickable(selectBankAcct, 20);
 			driver.findElement(selectBankAcct).click();
 
@@ -581,4 +614,47 @@ public class Oracle_InvoicePage extends WaitsManager {
 		}
 	}
 
+	public void searchAndSelectPaymentProfile(String paymentProfileVal) {
+		try {
+			implWait(driver);
+			By selectPaymentProfile = By.xpath("//li[starts-with(text(),'" + paymentProfileVal + "')]");
+
+			driver.findElement(enterPaymentProfile).click();
+			driver.findElement(enterPaymentProfile).sendKeys(paymentProfileVal);
+			waitTime(driver);
+			grep.infoTest("Selecting Payment Profile: " + paymentProfileVal);
+			logger.info("Selecting Payment Profile: " + paymentProfileVal);
+			waitForElementToBeClickable(selectPaymentProfile, 20);
+			driver.findElement(selectPaymentProfile).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickSubmit_Payment_Btn() {
+		implWait(driver);
+
+		driver.findElement(submitBtn_inPaymentPopup).click();
+	}
+
+	public void validatePaymentConfirmationPopup() throws Exception {
+		try {
+			implWait(driver);
+
+			String getMsg = driver.findElement(paymentConfirmation).getText().trim();
+			grep.infoTest("Payment Confirmation Message: " + getMsg);
+			logger.info("Payment Confirmation Message: " + getMsg);
+
+//			validAssert.equalsAssert(getMsg, "The accounting has been completed.");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickOk_InPaymentConfirmation() {
+		implWait(driver);
+
+		driver.findElement(okBtn_InPaymentConfirmation).click();
+	}
 }

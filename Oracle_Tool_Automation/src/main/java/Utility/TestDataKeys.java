@@ -9,15 +9,19 @@ public class TestDataKeys {
 
 	public String selectBU = "CRITICAL RIVER BU";
 	public String selectSupplier = "CR Applied Material";
-	public String invoiceNum = "CR_MP_Test_009";
-	public String invoiceAmt = "2000";
+	public String invoiceNum = "CR_MP_Test_0015";
+	public String invoiceAmt = "2200";
 	public String invoiceDesc = "Test Supplier Invoices for Expenses";
 	public String paymentTerms = "IMMEDIATE";
-	public String date = "03";
+	public String date = "06";
 	public String month = "01";
 	public String year = "2026";
 	public String company_DC = "101";
 	public String acc_inDC = "52110";
-	
+
 	public String paymentReasonDesc = "Supplier Expenses Payment";
+	public String paymentMethod = "CR ELECTRONIC";
+	public String bankAccount = "WFB CORPOATE ACC";
+	public String paymentProfile = "WFB EFT PPP";
+
 }

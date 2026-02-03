@@ -836,7 +836,7 @@ public class Oracle_HomePage extends WaitsManager {
 			implWait(driver);
 
 			driver.findElement(actionsBtn).click();
-			waitTime1(driver);
+			waitTime2(driver);
 			driver.findElement(validateBtn).click();
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-03T15:37:33 IST" name="Default suite" finished-at="2026-02-03T15:41:48 IST" duration-ms="254097">
+  <suite started-at="2026-02-03T16:21:09 IST" name="Suite" finished-at="2026-02-03T16:30:57 IST" duration-ms="588231">
     <groups>
     </groups>
-    <test started-at="2026-02-03T15:37:33 IST" name="Default test" finished-at="2026-02-03T15:41:48 IST" duration-ms="254097">
-      <class name="Tests.CreateInvoice_withoutPO_Test">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.CreateInvoice_withoutPO_Test@72c28d64]" started-at="2026-02-03T15:37:33 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-03T15:37:48 IST" duration-ms="14887" status="PASS">
+    <test started-at="2026-02-03T16:21:09 IST" name="OracleProcurementTest" finished-at="2026-02-03T16:30:57 IST" duration-ms="588231">
+      <class name="Tests.Oracle_ProcurementWithoutRequisition_Test">
+        <test-method signature="oracle_ProcurementWithout_Requisition_Test()[pri:0, instance:Tests.Oracle_ProcurementWithoutRequisition_Test@48d5f34e]" started-at="2026-02-03T16:27:54 IST" name="oracle_ProcurementWithout_Requisition_Test" finished-at="2026-02-03T16:30:56 IST" duration-ms="182244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oracle_ProcurementWithout_Requisition_Test -->
+      </class> <!-- Tests.Oracle_ProcurementWithoutRequisition_Test -->
+      <class name="Tests.Oracle_ProcurementTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementTest@1d470d0]" started-at="2026-02-03T16:21:09 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-03T16:21:26 IST" duration-ms="16889" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[OraclePage.html]]>
+                <![CDATA[OracleProcurement_Report.html]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="oracle_InvoiceCreation_WithoutPO()[pri:0, instance:Tests.CreateInvoice_withoutPO_Test@72c28d64]" started-at="2026-02-03T15:37:48 IST" name="oracle_InvoiceCreation_WithoutPO" finished-at="2026-02-03T15:41:47 IST" duration-ms="238723" status="PASS">
+        <test-method signature="oracle_ProcurementWithRequisition_Test()[pri:0, instance:Tests.Oracle_ProcurementTest@1d470d0]" started-at="2026-02-03T16:21:26 IST" name="oracle_ProcurementWithRequisition_Test" finished-at="2026-02-03T16:27:54 IST" duration-ms="388194" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oracle_InvoiceCreation_WithoutPO -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CreateInvoice_withoutPO_Test@72c28d64]" started-at="2026-02-03T15:41:47 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-03T15:41:48 IST" duration-ms="426" status="PASS">
+        </test-method> <!-- oracle_ProcurementWithRequisition_Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Oracle_ProcurementTest@1d470d0]" started-at="2026-02-03T16:30:56 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-03T16:30:57 IST" duration-ms="813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.CreateInvoice_withoutPO_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Tests.Oracle_ProcurementTest -->
+    </test> <!-- OracleProcurementTest -->
+  </suite> <!-- Suite -->
 </testng-results>

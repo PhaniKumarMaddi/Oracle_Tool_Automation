@@ -89,6 +89,13 @@ public class Oracle_InvoicePage extends WaitsManager {
 	By paymentConfirmation = By.xpath("//div[@class='AFPopupSelector']/descendant::td[@class='x1n1']");
 	By okBtn_InPaymentConfirmation = By.xpath("//button[text()='OK']");
 
+	// Invoice With PO
+	By identifyPO = By.xpath("//label[text()='Identifying PO']/parent::td/following-sibling::td/descendant::input");
+	By clickGo = By.xpath("//a[@title='Go']");
+	By selectInvoiceLine = By.xpath("//table[@summary='Search Results']/descendant::input[@type='checkbox']");
+	By okBtn_inMatchInvoicePopup = By.xpath("//button[@accesskey='K']");
+	By applyBtn_inMatchInvoicePopup = By.xpath("//button[@accesskey='l']");
+
 	public void validateInvoicePageTitle() throws Exception {
 
 		try {
@@ -656,5 +663,50 @@ public class Oracle_InvoicePage extends WaitsManager {
 		implWait(driver);
 
 		driver.findElement(okBtn_InPaymentConfirmation).click();
+	}
+
+	// with po
+
+	public void searchAndSelectPO(String poVal) {
+		try {
+			implWait(driver);
+			By selectPo = By.xpath("//li[starts-with(text(),'" + poVal + "')]");
+
+			driver.findElement(identifyPO).click();
+			driver.findElement(identifyPO).sendKeys(poVal);
+			waitTime(driver);
+			grep.infoTest("Selecting PO: " + poVal);
+			logger.info("Selecting Supplier: " + poVal);
+			waitTime2(driver);
+			waitForElementToBeClickable(selectPo, 20);
+			driver.findElement(selectPo).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickGoLinesBtn() {
+		implWait(driver);
+
+		driver.findElement(clickGo).click();
+	}
+
+	public void selectInvoice_InMatchInvoicePopup() {
+		implWait(driver);
+
+		driver.findElement(selectInvoiceLine).click();
+	}
+
+	public void clickApply_InMatchInvoicePopup() {
+		implWait(driver);
+
+		driver.findElement(applyBtn_inMatchInvoicePopup).click();
+	}
+
+	public void clickOk_InMatchInvoicePopup() {
+		implWait(driver);
+
+		driver.findElement(okBtn_inMatchInvoicePopup).click();
 	}
 }

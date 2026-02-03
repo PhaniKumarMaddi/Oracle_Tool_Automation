@@ -11,34 +11,32 @@ import Utility.GenerateReports;
 import Utility.TestDataKeys;
 import Utility.ValidatingAssertions;
 
-public class CreateInvoice_withoutPO_Test extends TestInitializer {
-	private static final Logger logger = LogManager.getLogger(CreateInvoice_withoutPO_Test.class);
+public class CreateInvoice_With_PO_Test extends TestInitializer {
+	private static final Logger logger = LogManager.getLogger(CreateInvoice_With_PO_Test.class);
 	GenerateReports grep = new GenerateReports();
 	ValidatingAssertions validAssert = new ValidatingAssertions();
 	TestDataKeys dataTest = new TestDataKeys();
 	String retrieveDC_id;
 
 	@Test
-	public void oracle_InvoiceCreation_WithoutPO() throws Exception {
+	public void oracle_InvoiceCreation_WithPO() throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_InvoicePage oraInv = new Oracle_InvoicePage();
 
-		grep.testCreate("Verify Navigate to Create Invoice Page Functionality Test", "Navigate to Create Invoice Page");
+		grep.testCreate("Verify Navigate to Create Invoice Page Functionality With PO Test",
+				"Navigate to Create Invoice Page With PO ");
 		oraHome.clickHomeButton();
 		waitTime(driver);
 		grep.infoTest("Clicking on Home icon");
 		logger.info("Clicking on Home icon");
 
-		grep.captureScreenshot("pass", "Inside Home Page ", "Oracle_HomePage_ForInvoice");
 		waitTime(driver);
 		oraHome.clickNavigator();
 		waitTime(driver);
-//		oraHome.selectNavigationTab("Payables");
 		oraHome.selectNavigationTab(dataTest.payableNavTab);
-		grep.captureScreenshot("pass", "Expanding Payables in Navigator ", "Expand_PayablesNavigation");
+		grep.captureScreenshot("pass", "Expanding Payables in Navigator ", "Expand_PayablesNavigation_WithPO");
 		waitTime(driver);
-//		oraHome.selectSubCategoryInNavigator("Invoices");
 		oraHome.selectSubCategoryInNavigator(dataTest.invoiceCatg);
 		waitTime1(driver);
 		grep.infoTest("Click on Tasks for Create Invoice");
@@ -52,12 +50,11 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 
 		oraHome.click_Tasks_InPO();
 		waitTime1(driver);
-//		oraHome.selectTasks_InTaskPage("Create Invoice");
 		oraHome.selectTasks_InTaskPage(dataTest.creteInvoiceBtn);
 		waitTime2(driver);
 		waitTime60(driver);
 		oraInv.validateCreateInvoicePageTitle();
-		grep.captureScreenshot("pass", "Inside Create Invoice Page", "CreateInvoicePage");
+		grep.captureScreenshot("pass", "Inside Create Invoice Page", "CreateInvoicePage_withPO");
 		waitTime(driver);
 
 		grep.testCreate("Filling the Invoice Details Functionality Test", "Filling the Invoice Details");
@@ -66,30 +63,19 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		grep.infoTest("Filling the Invoice Details");
 		logger.info("Filling the Invoice Details");
 		waitTime(driver);
-//		oraInv.searchAndSelectBusinessUnit("CRITICAL RIVER BU");
-//		waitTime2(driver);
-//		oraInv.searchAndSelectSupplier("CR Applied Material");
-//		waitTime(driver);
-//		oraInv.enterInvoiceNumber("CR_MP_Test_008");
-//		waitTime(driver);
-//		oraInv.enterInvoiceAmount("USD", "2000");
 
-		oraInv.searchAndSelectBusinessUnit(dataTest.selectBU);
+		// SELECT PO
+		oraInv.searchAndSelectPO("CRPO500025");
 		waitTime2(driver);
-		oraInv.searchAndSelectSupplier(dataTest.selectSupplier);
-		waitTime(driver);
+
 		oraInv.enterInvoiceNumber(dataTest.invoiceNum);
 		waitTime(driver);
-//		oraInv.enterInvoiceAmount("USD", dataTest.invoiceAmt);
 		oraInv.enterInvoiceAmount(dataTest.invoiceAmt);
 		waitTime(driver);
 
 		oraInv.enterInvoiceDescription("Test Supplier Invoices for Expenses");
 
 		waitTime(driver);
-//		oraInv.searchAndSelectPaymentTerms("IMMEDIATE");
-//		waitTime(driver);
-//		oraInv.enterInvoiceReceiveDate("03", "01", "2026");
 
 		oraInv.searchAndSelectPaymentTerms(dataTest.paymentTerms);
 		waitTime(driver);
@@ -101,20 +87,20 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		waitTime(driver);
 		oraInv.expandLinesSection();
 		waitTime2(driver);
-//		oraInv.enterAmountInLines("1500");
-		oraInv.enterAmountInLines(dataTest.invoiceAmt);
-		waitTime(driver);
-//		oraInv.searchAndSelectDistributionCombination("101", "52110");
-		oraInv.searchAndSelectDistributionCombination(dataTest.company_DC, dataTest.acc_inDC);
-		waitTime2(driver);
-		retrieveDC_id = oraInv.retrieveDistributionCombinationID();
-		grep.infoTest("Retrieving Distibution Combinatio ID: " + retrieveDC_id);
-		logger.info("Retrieving Distibution Combinatio ID: " + retrieveDC_id);
 
-		grep.captureScreenshot("pass", "After filling Invoice fields test", "afterFillingInvoiceFields");
+		// CLICK GO AND SELECT THE LINE
+		oraInv.clickGoLinesBtn();
+		waitTime2(driver);
+		oraInv.selectInvoice_InMatchInvoicePopup();
 		waitTime(driver);
-		grep.infoTest("Saving and Validating Invoice");
-		logger.info("Saving and Validating Invoice");
+		oraInv.clickApply_InMatchInvoicePopup();
+		waitTime(driver);
+		grep.captureScreenshot("pass", "After Selecting the Invoice Line test", "afterSelectingLine_inInvoice");
+		waitTime(driver);
+		grep.infoTest("Applying the Invoice Line");
+		logger.info("Applying the Invoice Line");
+		oraInv.clickOk_InMatchInvoicePopup();
+		waitTime(driver);
 
 		oraInv.clickSaveInvoiceBtn();
 		waitTime2(driver);
@@ -142,36 +128,11 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		if (status.equals("Validated")) {
 			grep.infoTest("Validated");
 			logger.info("Validated");
-			grep.captureScreenshot("pass", "Invoice Validated  test", "InvoiceValidated");
+			grep.captureScreenshot("pass", "Invoice Validated  test", "InvoiceValidated_withPO");
 		} else {
 			grep.failTest("Invoice status is currently: " + status);
 			logger.warn("Invoice status is currently: " + status);
 		}
-
-		waitTime2(driver);
-		grep.testCreate("Accounting the Validated Invoice Test", "Accounting the Validated Invoice");
-		waitTime(driver);
-		grep.infoTest("Clicking on Post to ledger");
-		logger.info("Clicking on Post to ledger");
-		waitTime(driver);
-		oraInv.clickInvoiceActionAndValidateBtn("Post to Ledger");
-		waitTime(driver);
-		oraInv.validateAccountingConfirmationPopup();
-		waitTime(driver);
-		grep.captureScreenshot("pass", "Post to Ledger Accounting confirrmation popup", "accountingConfirmationPopup");
-		oraInv.clickViewAccountingBtn();
-		waitTime5(driver);
-		grep.infoTest("Validating the Accounting Lines");
-		logger.info("Validating the Accounting Lines");
-		waitTime(driver);
-
-		grep.captureScreenshot("pass", "Validating the Accounting Lines Popup test", "accountingLinesPopup");
-
-		waitTime(driver);
-		oraInv.validateAccountingLinesHeader(dataTest.invoiceNum);
-		oraInv.getAccountCombination(retrieveDC_id);
-		oraInv.verifyAccountingAmounts(dataTest.invoiceAmt);
-		oraInv.clickDoneAccountingBtn();
 
 		waitTime2(driver);
 
@@ -189,37 +150,66 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		oraInv.searchAndSelectPaymentMethod(dataTest.paymentMethod);
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Entering Payment reason in manage installments popup",
-				"paymentReason_InManageInstallmentsPopup");
+				"paymentReason_InManageInstallmentsPopup_WithPO");
 
 		oraInv.clickSaveAndClose_Payment_Btn();
 		waitTime5(driver);
 
-		oraInv.clickInvoiceActionAndValidateBtn("Pay in Full");
+		grep.testCreate("Accounting the Validated Invoice Test", "Accounting the Validated Invoice");
 		waitTime(driver);
 
-		grep.infoTest("Entering Payment details in Pay in Full popup");
-		logger.info("Entering Payment details in Pay in Full popup");
+		grep.infoTest("Clicking on Account in Draft");
+		logger.info("Clicking on Account in Draft");
 		waitTime(driver);
-		oraInv.searchAndSelectBankAccount(dataTest.bankAccount);
+		oraInv.clickInvoiceActionAndValidateBtn("Account in Draft");
 		waitTime(driver);
-		oraInv.searchAndSelectPaymentProfile(dataTest.paymentProfile);
+		oraInv.validateAccountingConfirmationPopup();
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Account in Draft Accounting confirrmation popup",
+				"AccountinDraftConfirmationPopup_withPO");
+		oraInv.clickViewAccountingBtn();
+		waitTime5(driver);
+		grep.infoTest("Validating the Accounting Lines");
+		logger.info("Validating the Accounting Lines");
+		waitTime(driver);
+
+		grep.captureScreenshot("pass", "Validating the Account in Draft Accounting Lines Popup test",
+				"AccountinDraftaccountingLinesPopup_withPO");
+
+		waitTime(driver);
+		oraInv.validateAccountingLinesHeader(dataTest.invoiceNum);
+//		oraInv.getAccountCombination(retrieveDC_id);
+		oraInv.verifyAccountingAmounts(dataTest.invoiceAmt);
+		oraInv.clickDoneAccountingBtn();
+
 		waitTime2(driver);
 
-		grep.captureScreenshot("pass", "Entering Payment in Pay in full popup", "paymentDetails_inPayInFullPopup");
-
-		oraInv.clickSubmit_Payment_Btn();
-		waitTime2(driver);
-
-		oraInv.validatePaymentConfirmationPopup();
-		grep.captureScreenshot("pass", "Verifying Payment Confirmation Popup", "paymentConfirmation_inPayInFullPopup");
-		oraInv.clickOk_InPaymentConfirmation();
-		waitTime2(driver);
-		oraInv.clickSaveAndCloseInvoiceBtn();
+		grep.infoTest("Clicking on Post to ledger");
+		logger.info("Clicking on Post to ledger");
+		waitTime(driver);
+		oraInv.clickInvoiceActionAndValidateBtn("Post to Ledger");
+		waitTime(driver);
+		oraInv.validateAccountingConfirmationPopup();
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Post to Ledger Accounting confirrmation popup",
+				"accountingConfirmationPopup_withPO");
+		oraInv.clickViewAccountingBtn();
+		waitTime5(driver);
+		grep.infoTest("Validating the Accounting Lines");
+		logger.info("Validating the Accounting Lines");
 		waitTime(driver);
 
-		grep.infoTest("Save and Close Invoice");
-		logger.info("Save and Close Invoice");
+		grep.captureScreenshot("pass", "Validating the Accounting Lines Popup test", "accountingLinesPopup_withPO");
+
 		waitTime(driver);
+		oraInv.validateAccountingLinesHeader(dataTest.invoiceNum);
+//		oraInv.getAccountCombination(retrieveDC_id);
+		oraInv.verifyAccountingAmounts(dataTest.invoiceAmt);
+		oraInv.clickDoneAccountingBtn();
+
+		waitTime2(driver);
+
+		// payment method
 	}
 
 	private void processRevalidationFlow() throws Exception {

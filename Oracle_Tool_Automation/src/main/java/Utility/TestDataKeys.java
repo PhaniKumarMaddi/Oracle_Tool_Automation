@@ -9,7 +9,7 @@ public class TestDataKeys {
 
 	public String selectBU = "CRITICAL RIVER BU";
 	public String selectSupplier = "CR Applied Material";
-	public String invoiceNum = "CR_MP_Test_0016";
+	public String invoiceNum = "CR_MP_Test_0017";
 	public String invoiceAmt = "2300";
 	public String invoiceDesc = "Test Supplier Invoices for Expenses";
 	public String paymentTerms = "IMMEDIATE";

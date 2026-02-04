@@ -85,6 +85,8 @@ public class Query_Invoice_Payment_Test extends TestInitializer {
 
 		waitTime(driver);
 		oraInv.clickOk_InPaymentPopup();
+		waitTime(driver);
+		oraInv.clickDoneAccountingBtn();
 
 	}
 }

@@ -13,8 +13,8 @@ public class TestDataKeys {
 	
 	public String selectBU = "CRITICAL RIVER BU";
 	public String selectSupplier = "CR Applied Material";
-	public String invoiceNum = "Test_CR_MP_006";
-	public String invoiceAmt = "190";
+	public String invoiceNum = "Test_CR_MP_009";
+	public String invoiceAmt = "180";
 	public String invoiceDesc = "Test Supplier Invoices for Expenses";
 	public String paymentTerms = "IMMEDIATE";
 	public String date = "06";
@@ -32,7 +32,7 @@ public class TestDataKeys {
 	
 
 	// with po
-	public String po_invoiceNum = "CR_PO_Test_008";
-	public String identifyPo = "CRPO500062";
+	public String po_invoiceNum = "CR_PO_Test_0011";
+	public String identifyPo = "CRPO500067"; // 68,69
 
 }

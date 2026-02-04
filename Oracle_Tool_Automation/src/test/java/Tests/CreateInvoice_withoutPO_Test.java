@@ -233,9 +233,9 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		oraInv.clickOk_InCreatePaymentPage();
 		waitTime2(driver);
 		oraInv.searchAndSelectDisbursementBankAccount(dataTest.bankAccount);
-		waitTime(driver);
+		waitTime3(driver);
 		oraInv.searchAndSelectPaymentMethod_inPaymentPage(dataTest.paymentCheckMethod);
-		waitTime(driver);
+		waitTime3(driver);
 		oraInv.searchAndSelectPaymentProcessProfile_inPaymentPage(dataTest.paymentProfile_Check);
 
 		waitTime(driver);

@@ -114,7 +114,7 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 
 		oraInv.clickSaveInvoiceBtn();
 		waitTime2(driver);
-//		oraInv.clickContinueWarnBtn();
+		oraInv.clickContinueWarnBtn();
 		waitTime3(driver);
 		oraInv.clickInvoiceActionAndValidateBtn("Validate");
 		waitTime3(driver);

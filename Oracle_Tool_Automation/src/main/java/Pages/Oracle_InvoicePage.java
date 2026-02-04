@@ -92,9 +92,28 @@ public class Oracle_InvoicePage extends WaitsManager {
 	// Invoice With PO
 	By identifyPO = By.xpath("//label[text()='Identifying PO']/parent::td/following-sibling::td/descendant::input");
 	By clickGo = By.xpath("//a[@title='Go']");
-	By selectInvoiceLine = By.xpath("//table[@summary='Search Results']/descendant::input[@type='checkbox']");
-	By okBtn_inMatchInvoicePopup = By.xpath("//button[@accesskey='K']");
+//	By selectInvoiceLine = By.xpath("//table[@summary='Search Results']/descendant::input[@type='checkbox']");
+//	By selectInvoiceLine = By.xpath("//tr[contains(@class, 'xem p_AFSelected')]//input[contains(@id, 'sb1::content')]");
+	By selectInvoiceLine = By
+			.xpath("//*[@id='_FOpt1:_FOr1:0:_FONSr2:0:MAnt2:1:pm1:r1:0:ap1:r11:1:at1:_ATp:ta1:0:sb1::content']");
+//	By getAmount = By.xpath("//tr[@class='p_AFFocused xem p_AFSelected']/descendant::label[text()='Amount']/preceding-sibling::input");
+	By getAmount = By.xpath("//*[@id='_FOpt1:_FOr1:0:_FONSr2:0:MAnt2:1:pm1:r1:0:ap1:r11:1:at1:_ATp:ta1:o268']");
+	By okWarnBtn_inMatchInvoicePopup = By
+			.xpath("//*[@id='_FOpt1:_FOr1:0:_FONSr2:0:MAnt2:1:pm1:r1:0:ap1:r11:1:at1:_ATp:ta1:0:cb3']");
+	By okBtn_inMatchInvoicePopup = By.xpath("//button[@accesskey='l']/following-sibling::button[@accesskey='K']");
 	By applyBtn_inMatchInvoicePopup = By.xpath("//button[@accesskey='l']");
+	By homeFromInvoice = By.xpath("//a[@id='_FOpt1:_UIShome']");
+
+	// Payment
+	By okWarnBtn_inPaymentPage = By.xpath("//button[@accesskey='K']");
+	By enterDisbursementBankAccount = By.xpath("//input[contains(@name,'bankAccountNamePIFId')]");
+	By paymentMethd_inPayment = By.xpath("//input[contains(@name,'paymentMethodNameUiId')]");
+	By enterPaymentProcessProfile = By.xpath("//input[contains(@name,'paymentProfileUICompId')]");
+	By selectAndAddBtn = By.xpath("//div[@title='Select and Add']/a");
+	By invoiceNum_SelectAndAdd = By.xpath("//input[@aria-label=' Invoice Number']");
+	By okBtn_inSelectAndAdd = By
+			.xpath("//button[@accesskey='l']/parent::span/following-sibling::button[@accesskey='K']");
+	By selectNum = By.xpath("//table[@summary='Search Results']//tr[1]//td[2]//span[starts-with(text(),'CR_MP')]");
 
 	public void validateInvoicePageTitle() throws Exception {
 
@@ -693,9 +712,51 @@ public class Oracle_InvoicePage extends WaitsManager {
 	}
 
 	public void selectInvoice_InMatchInvoicePopup() {
-		implWait(driver);
+//		implWait(driver);
+		try {
+			waitForElement(selectInvoiceLine, 60);
 
-		driver.findElement(selectInvoiceLine).click();
+			driver.findElement(selectInvoiceLine).click();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+
+//		if (!checkbox.isSelected()) {
+//			checkbox.click();
+//			logger.info("Checkbox selected successfully.");
+//		} else {
+//			logger.info("Checkbox was already selected.");
+//		}
+
+//		waitForElement(selectInvoiceLine, 20);
+//		WebElement checkbox = driver.findElement(selectInvoiceLine);
+//
+//		// 2. Use JavaScript to click (ignores overlays/intercepts)
+//		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("arguments[0].scrollIntoView({block: 'center'});", checkbox);
+//		js.executeScript("arguments[0].click();", checkbox);
+//		logger.info("Checkbox clicked via JavaScript.");
+	}
+
+	public String getAmountFromMatchInvoicePopup() throws Exception {
+		try {
+			implWait(driver);
+			// 1. Wait for input and get the 'value' attribute
+//			String rawValue = driver.findElement(getAmount).getAttribute("value").trim();
+			String rawValue = driver.findElement(getAmount).getText();
+			logger.info("Raw UI Value: " + rawValue);
+
+			String cleanedString = rawValue.replace(".", "").split(",")[0];
+
+			logger.info("Cleaned String Value: " + cleanedString);
+
+			return cleanedString; // Returns "90" as a String
+
+		} catch (Exception e) {
+			logger.error("Failed to retrieve amount from input: " + e.getMessage());
+			grep.failTest("Failed to retrieve amount from input: " + e.getMessage());
+			return "";
+		}
 	}
 
 	public void clickApply_InMatchInvoicePopup() {
@@ -704,9 +765,123 @@ public class Oracle_InvoicePage extends WaitsManager {
 		driver.findElement(applyBtn_inMatchInvoicePopup).click();
 	}
 
+	public void clickOk_forWarn_MatchInvoicePopup() {
+		implWait(driver);
+
+		driver.findElement(okWarnBtn_inMatchInvoicePopup).click();
+	}
+
 	public void clickOk_InMatchInvoicePopup() {
 		implWait(driver);
 
 		driver.findElement(okBtn_inMatchInvoicePopup).click();
+	}
+
+	public void clickHomeFromInvoicePage() {
+		implWait(driver);
+		driver.findElement(homeFromInvoice).click();
+	}
+
+	// PAYMENT
+	public void clickOk_InCreatePaymentPage() {
+		implWait(driver);
+
+		driver.findElement(okWarnBtn_inPaymentPage).click();
+	}
+
+	public void searchAndSelectDisbursementBankAccount(String bankAccVal) {
+		try {
+			implWait(driver);
+			By selectBankAcct = By.xpath("//li[starts-with(text(),'" + bankAccVal + "')]");
+
+			driver.findElement(enterDisbursementBankAccount).click();
+			driver.findElement(enterDisbursementBankAccount).sendKeys(bankAccVal);
+			waitTime(driver);
+			grep.infoTest("Selecting Bank Account: " + bankAccVal);
+			logger.info("Selecting Bank Account: " + bankAccVal);
+			waitForElementToBeClickable(selectBankAcct, 20);
+			driver.findElement(selectBankAcct).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void searchAndSelectPaymentMethod_inPaymentPage(String paymentMtdValue) {
+		try {
+			implWait(driver);
+			By selectPaymentMtd = By.xpath("//li[text()='" + paymentMtdValue + "']");
+
+			driver.findElement(paymentMethd_inPayment).click();
+			driver.findElement(paymentMethd_inPayment).sendKeys(paymentMtdValue);
+			waitTime(driver);
+			grep.infoTest("Selecting Payment method: " + paymentMtdValue);
+			logger.info("Selecting Payment method: " + paymentMtdValue);
+			waitForElementToBeClickable(selectPaymentMtd, 20);
+			driver.findElement(selectPaymentMtd).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void searchAndSelectPaymentProcessProfile_inPaymentPage(String paymentProfileVal) {
+		try {
+			implWait(driver);
+			By selectPaymentProfile = By.xpath("//li[starts-with(text(),'" + paymentProfileVal + "')]");
+
+			driver.findElement(enterPaymentProcessProfile).click();
+			driver.findElement(enterPaymentProcessProfile).sendKeys(paymentProfileVal);
+			waitTime(driver);
+			grep.infoTest("Selecting Payment Profile: " + paymentProfileVal);
+			logger.info("Selecting Payment Profile: " + paymentProfileVal);
+			waitForElementToBeClickable(selectPaymentProfile, 20);
+			driver.findElement(selectPaymentProfile).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickSelectAndUseButton() {
+		implWait(driver);
+
+		driver.findElement(selectAndAddBtn).click();
+	}
+
+	public void enterInvoiceNumber_InSelectAndAddPopup(String invoiceVal) {
+		try {
+			implWait(driver);
+
+			driver.findElement(invoiceNum_SelectAndAdd).click();
+			driver.findElement(invoiceNum_SelectAndAdd).sendKeys(invoiceVal);
+			waitTime(driver);
+			grep.infoTest("Entering Invoice Number: " + invoiceVal);
+			logger.info("Entering Invoice Number: " + invoiceVal);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickOk_InSelectAndUsePopup() {
+		implWait(driver);
+
+		driver.findElement(okBtn_inSelectAndAdd).click();
+	}
+
+	public void searchAndSelectInvoice_inSelectAndAddPopup(String invNum) {
+		try {
+			implWait(driver);
+			By selectInvoice = By.xpath(
+					"//table[@summary='Search Results']//tr[1]//td[2]//span[starts-with(text(),'" + invNum + "')]");
+
+			List<WebElement> select = driver.findElements(selectInvoice);
+			if (select.size() > 0) {
+				select.getFirst().click();
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }

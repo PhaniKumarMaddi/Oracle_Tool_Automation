@@ -65,10 +65,10 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 		waitTime(driver);
 
 		// SELECT PO
-		oraInv.searchAndSelectPO("CRPO500025");
-		waitTime2(driver);
+		oraInv.searchAndSelectPO(dataTest.identifyPo);
+		waitTime3(driver);
 
-		oraInv.enterInvoiceNumber(dataTest.invoiceNum);
+		oraInv.enterInvoiceNumber(dataTest.po_invoiceNum);
 		waitTime(driver);
 		oraInv.enterInvoiceAmount(dataTest.invoiceAmt);
 		waitTime(driver);
@@ -90,8 +90,19 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 
 		// CLICK GO AND SELECT THE LINE
 		oraInv.clickGoLinesBtn();
-		waitTime2(driver);
+		waitTime10(driver);
 		oraInv.selectInvoice_InMatchInvoicePopup();
+		waitTime(driver);
+		oraInv.clickOk_forWarn_MatchInvoicePopup();
+		waitTime2(driver);
+		String amount = oraInv.getAmountFromMatchInvoicePopup();
+		System.out.println(amount);
+		waitTime(driver);
+		grep.infoTest("Po Amount: " + amount);
+		logger.info("Po Amount: " + amount);
+		waitTime(driver);
+		grep.infoTest("Click in Apply Match invoice popup");
+		logger.info("Click in Apply Match invoice popup");
 		waitTime(driver);
 		oraInv.clickApply_InMatchInvoicePopup();
 		waitTime(driver);
@@ -100,6 +111,8 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 		grep.infoTest("Applying the Invoice Line");
 		logger.info("Applying the Invoice Line");
 		oraInv.clickOk_InMatchInvoicePopup();
+		waitTime2(driver);
+		oraInv.enterInvoiceAmount(amount);
 		waitTime(driver);
 
 		oraInv.clickSaveInvoiceBtn();
@@ -176,10 +189,9 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 		grep.captureScreenshot("pass", "Validating the Account in Draft Accounting Lines Popup test",
 				"AccountinDraftaccountingLinesPopup_withPO");
 
-		waitTime(driver);
-		oraInv.validateAccountingLinesHeader(dataTest.invoiceNum);
-//		oraInv.getAccountCombination(retrieveDC_id);
-		oraInv.verifyAccountingAmounts(dataTest.invoiceAmt);
+		waitTime2(driver);
+		oraInv.validateAccountingLinesHeader(dataTest.po_invoiceNum);
+		oraInv.verifyAccountingAmounts(amount);
 		oraInv.clickDoneAccountingBtn();
 
 		waitTime2(driver);
@@ -201,15 +213,96 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 
 		grep.captureScreenshot("pass", "Validating the Accounting Lines Popup test", "accountingLinesPopup_withPO");
 
-		waitTime(driver);
-		oraInv.validateAccountingLinesHeader(dataTest.invoiceNum);
-//		oraInv.getAccountCombination(retrieveDC_id);
-		oraInv.verifyAccountingAmounts(dataTest.invoiceAmt);
+		waitTime2(driver);
+		oraInv.validateAccountingLinesHeader(dataTest.po_invoiceNum);
+//		oraInv.verifyAccountingAmounts(amount);
 		oraInv.clickDoneAccountingBtn();
 
 		waitTime2(driver);
 
 		// payment method
+
+		grep.testCreate("Verify the Payment Method from Payments page test",
+				"Verify the Payment Method from Payments page ");
+		waitTime(driver);
+		oraInv.clickHomeFromInvoicePage();
+		waitTime(driver);
+		grep.infoTest("Navigate to Payment Page");
+		logger.info("Navigate to Payment Page");
+		waitTime(driver);
+
+		oraHome.clickNavigator();
+		waitTime(driver);
+		oraHome.selectSubCategoryInNavigator(dataTest.paymentsCatg);
+		waitTime1(driver);
+
+		oraHome.click_Tasks_InPO();
+		waitTime(driver);
+		grep.infoTest("Click Create payment from tasks");
+		logger.info("Click Create payment from tasks");
+		waitTime1(driver);
+		oraHome.selectTasks_InTaskPage(dataTest.cretePaymentBtn);
+		waitTime10(driver);
+		grep.infoTest("Filling the details in Payment Page");
+		logger.info("Filling the details in Payment Page");
+		waitTime(driver);
+		grep.infoTest("Select Business Unit");
+		logger.info("Select Business Unit");
+		waitTime(driver);
+		oraInv.searchAndSelectBusinessUnit(dataTest.selectBU);
+		waitTime(driver);
+		grep.infoTest("Select Supplier");
+		logger.info("Select Supplier");
+		waitTime2(driver);
+		oraInv.searchAndSelectSupplier(dataTest.selectSupplier);
+		waitTime(driver);
+		oraInv.clickOk_InCreatePaymentPage();
+		waitTime(driver);
+		grep.infoTest("Click on Disbursement Bank Account");
+		logger.info("Click on Disbursement Bank Account");
+		waitTime2(driver);
+		oraInv.searchAndSelectDisbursementBankAccount(dataTest.bankAccount);
+		waitTime(driver);
+		grep.infoTest("Select Check Payment Method ");
+		logger.info("Select Check Payment Method ");
+		waitTime(driver);
+		oraInv.searchAndSelectPaymentMethod_inPaymentPage(dataTest.paymentCheckMethod);
+		waitTime(driver);
+		grep.infoTest("Select Payment Process Profile");
+		logger.info("Select Payment Process Profile");
+		waitTime(driver);
+		oraInv.searchAndSelectPaymentProcessProfile_inPaymentPage(dataTest.paymentProfile_Check);
+
+		waitTime(driver);
+		grep.infoTest("Click on 'Select and Add' Under Invoices to Pay at the bottom");
+		logger.info("Click on 'Select and Add' Under Invoices to Pay at the bottom");
+		waitTime(driver);
+		oraInv.clickSelectAndUseButton();
+		waitTime(driver);
+
+		// invoice num
+		oraInv.enterInvoiceNumber_InSelectAndAddPopup(dataTest.invoiceNum);
+		// ok
+		oraHome.clickSearchBtn();
+		waitTime(driver);
+		oraInv.searchAndSelectInvoice_inSelectAndAddPopup(dataTest.invoiceNum);
+		waitTime(driver);
+		oraInv.clickOk_InSelectAndUsePopup();
+		waitTime(driver);
+		oraInv.clickSaveAndClose_Payment_Btn();
+		waitTime3(driver);
+		String paymentConfirmsg = oraHome.validatePurchaseOrderCreationConfirmation();
+		grep.infoTest("Payment Created Message: " + paymentConfirmsg);
+		logger.info("Payment Created Message: " + paymentConfirmsg);
+		waitTime(driver);
+		validAssert.trueAssert(paymentConfirmsg.startsWith("Payment"));
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Payment Created Confirmation Message Popup",
+				"PaymentConfirmationMessage_WithPo");
+		waitTime(driver);
+		oraHome.clickOk_inConfirmPO_popup();
+		waitTime2(driver);
+		
 	}
 
 	private void processRevalidationFlow() throws Exception {
@@ -219,13 +312,13 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 		grep.infoTest("Needs revalidation");
 		logger.info("Processing revalidation flow...");
 
-		grep.captureScreenshot("pass", "Invoice Need Re-Validation", "InvoiceNeed_Revalidation");
+		grep.captureScreenshot("pass", "Invoice Need Re-Validation", "InvoiceNeed_Revalidation_withPO");
 
 		oraInv.clickNeedReValidation();
 		waitTime1(driver);
 		oraInv.clickHoldWarningLink();
 		waitTime1(driver);
-		grep.captureScreenshot("pass", "Clicking on Warning link", "warning_Link_Revalidation");
+		grep.captureScreenshot("pass", "Clicking on Warning link", "warning_Link_Revalidation_withPO");
 
 		oraInv.selectValidatedReleaseName();
 		waitTime2(driver);

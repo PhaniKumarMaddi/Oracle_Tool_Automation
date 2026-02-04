@@ -4,13 +4,15 @@ public class TestDataKeys {
 
 	public String payableNavTab = "Payables";
 	public String invoiceCatg = "Invoices";
+	public String paymentsCatg = "Payments";
 
 	public String creteInvoiceBtn = "Create Invoice";
+	public String cretePaymentBtn = "Create Payment";
 
 	public String selectBU = "CRITICAL RIVER BU";
 	public String selectSupplier = "CR Applied Material";
 	public String invoiceNum = "CR_MP_Test_0017";
-	public String invoiceAmt = "2300";
+	public String invoiceAmt = "100";
 	public String invoiceDesc = "Test Supplier Invoices for Expenses";
 	public String paymentTerms = "IMMEDIATE";
 	public String date = "06";
@@ -23,5 +25,12 @@ public class TestDataKeys {
 	public String paymentMethod = "CR ELECTRONIC";
 	public String bankAccount = "WFB CORPOATE ACC";
 	public String paymentProfile = "WFB EFT PPP";
+	public String paymentCheckMethod = "Check";
+	public String paymentProfile_Check = "WFB CHECK PPP";
+	
+
+	// with po
+	public String po_invoiceNum = "CR_PO_Test_003";
+	public String identifyPo = "CRPO500020";
 
 }

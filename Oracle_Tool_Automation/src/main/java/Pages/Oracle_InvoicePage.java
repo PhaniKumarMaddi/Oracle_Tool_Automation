@@ -105,8 +105,9 @@ public class Oracle_InvoicePage extends WaitsManager {
 	By homeFromInvoice = By.xpath("//a[@id='_FOpt1:_UIShome']");
 
 	// Payment
+	By insertSupplier_inPaymentPage = By.xpath("//label[text()='Supplier or Party']/parent::td/following-sibling::td/input");
 	By okWarnBtn_inPaymentPage = By.xpath("//button[@accesskey='K']");
-	By enterDisbursementBankAccount = By.xpath("//input[contains(@name,'bankAccountNamePIFId')]");
+	By enterDisbursementBankAccount = By.xpath("//input[contains(@name,'bankAccountNameId')]");
 	By paymentMethd_inPayment = By.xpath("//input[contains(@name,'paymentMethodNameUiId')]");
 	By enterPaymentProcessProfile = By.xpath("//input[contains(@name,'paymentProfileUICompId')]");
 	By selectAndAddBtn = By.xpath("//div[@title='Select and Add']/a");
@@ -783,6 +784,25 @@ public class Oracle_InvoicePage extends WaitsManager {
 	}
 
 	// PAYMENT
+	public void searchAndSelectSupplier_inPaymentPage(String supplierVal) {
+		try {
+			implWait(driver);
+			By selectSupplier = By.xpath("//li[starts-with(text(),'" + supplierVal + "')]");
+
+			driver.findElement(insertSupplier_inPaymentPage).click();
+			driver.findElement(insertSupplier_inPaymentPage).sendKeys(supplierVal);
+			waitTime(driver);
+			grep.infoTest("Selecting Supplier: " + supplierVal);
+			logger.info("Selecting Supplier: " + supplierVal);
+			waitTime2(driver);
+			waitForElementToBeClickable(selectSupplier, 20);
+			driver.findElement(selectSupplier).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 	public void clickOk_InCreatePaymentPage() {
 		implWait(driver);
 

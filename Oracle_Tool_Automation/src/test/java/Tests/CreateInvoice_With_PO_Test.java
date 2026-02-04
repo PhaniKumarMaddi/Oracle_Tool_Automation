@@ -44,9 +44,6 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 		oraInv.validateInvoicePageTitle();
 		waitTime(driver);
 
-//		waitTime60(driver);
-//		waitTime60(driver);
-
 		oraHome.click_Tasks_InPO();
 		waitTime1(driver);
 		oraHome.selectTasks_InTaskPage(dataTest.creteInvoiceBtn);
@@ -91,7 +88,7 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 		oraInv.clickGoLinesBtn();
 		waitTime10(driver);
 		oraInv.selectInvoice_InMatchInvoicePopup();
-		waitTime(driver);
+		waitTime1(driver);
 		oraInv.clickOk_forWarn_MatchInvoicePopup();
 		waitTime2(driver);
 		String amount = oraInv.getAmountFromMatchInvoicePopup();
@@ -100,6 +97,7 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 		grep.infoTest("Po Amount: " + amount);
 		logger.info("Po Amount: " + amount);
 		waitTime(driver);
+
 		grep.infoTest("Click in Apply Match invoice popup");
 		logger.info("Click in Apply Match invoice popup");
 		waitTime(driver);
@@ -116,7 +114,7 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 
 		oraInv.clickSaveInvoiceBtn();
 		waitTime2(driver);
-		oraInv.clickContinueWarnBtn();
+//		oraInv.clickContinueWarnBtn();
 		waitTime3(driver);
 		oraInv.clickInvoiceActionAndValidateBtn("Validate");
 		waitTime3(driver);
@@ -167,7 +165,6 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 
 		waitTime(driver);
 		oraInv.validateAccountingLinesHeader(dataTest.po_invoiceNum);
-//		oraInv.getAccountCombination(retrieveDC_id);
 		oraInv.verifyAccountingAmounts(amount);
 		oraInv.clickDoneAccountingBtn();
 

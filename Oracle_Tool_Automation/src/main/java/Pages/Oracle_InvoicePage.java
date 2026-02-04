@@ -92,11 +92,9 @@ public class Oracle_InvoicePage extends WaitsManager {
 	// Invoice With PO
 	By identifyPO = By.xpath("//label[text()='Identifying PO']/parent::td/following-sibling::td/descendant::input");
 	By clickGo = By.xpath("//a[@title='Go']");
-//	By selectInvoiceLine = By.xpath("//table[@summary='Search Results']/descendant::input[@type='checkbox']");
-//	By selectInvoiceLine = By.xpath("//tr[contains(@class, 'xem p_AFSelected')]//input[contains(@id, 'sb1::content')]");
-	By selectInvoiceLine = By
-			.xpath("//*[@id='_FOpt1:_FOr1:0:_FONSr2:0:MAnt2:1:pm1:r1:0:ap1:r11:1:at1:_ATp:ta1:0:sb1::content']");
-//	By getAmount = By.xpath("//tr[@class='p_AFFocused xem p_AFSelected']/descendant::label[text()='Amount']/preceding-sibling::input");
+	By selectInvoiceLine = By.xpath(
+			"//table[@summary='Search Results']/descendant::tr[@_afrrk='0']//descendant::input[@type='checkbox']/following-sibling::label");
+
 	By getAmount = By.xpath("//*[@id='_FOpt1:_FOr1:0:_FONSr2:0:MAnt2:1:pm1:r1:0:ap1:r11:1:at1:_ATp:ta1:o268']");
 	By okWarnBtn_inMatchInvoicePopup = By
 			.xpath("//*[@id='_FOpt1:_FOr1:0:_FONSr2:0:MAnt2:1:pm1:r1:0:ap1:r11:1:at1:_ATp:ta1:0:cb3']");
@@ -105,7 +103,8 @@ public class Oracle_InvoicePage extends WaitsManager {
 	By homeFromInvoice = By.xpath("//a[@id='_FOpt1:_UIShome']");
 
 	// Payment
-	By insertSupplier_inPaymentPage = By.xpath("//label[text()='Supplier or Party']/parent::td/following-sibling::td/input");
+	By insertSupplier_inPaymentPage = By
+			.xpath("//label[text()='Supplier or Party']/parent::td/following-sibling::td/input");
 	By okWarnBtn_inPaymentPage = By.xpath("//button[@accesskey='K']");
 	By enterDisbursementBankAccount = By.xpath("//input[contains(@name,'bankAccountNameId')]");
 	By paymentMethd_inPayment = By.xpath("//input[contains(@name,'paymentMethodNameUiId')]");
@@ -200,16 +199,8 @@ public class Oracle_InvoicePage extends WaitsManager {
 		try {
 			// 1. Handle Currency Dropdown
 			waitForElementToBeClickable(invoiceAmount, 60);
-//			WebElement currencyDropdown = driver.findElement(invoiceCurrency);
-//			Select currencySelect = new Select(currencyDropdown);
-//
-//			System.out.println("Selecting Invoice Currency: " + currencyCode);
-//			grep.infoTest("Selecting Invoice Currency: " + currencyCode);
-//			logger.info("Selecting Invoice Currency: " + currencyCode);
-//			currencySelect.selectByContainsVisibleText(currencyCode);
 
 			WebElement amountInput = driver.findElement(invoiceAmount);
-
 			System.out.println("Entering Invoice Amount: " + amount);
 			grep.infoTest("Entering Invoice Amount: " + amount);
 			logger.info("Entering Invoice Amount: " + amount);
@@ -289,8 +280,6 @@ public class Oracle_InvoicePage extends WaitsManager {
 			actionTab();
 			waitTime2(driver);
 
-//			WebElement amountInput = driver.findElement(lineAmount);
-//			amountInput.sendKeys(amount);
 			driver.findElement(lineAmount).click();
 			driver.findElement(lineAmount).sendKeys(amount);
 
@@ -673,7 +662,6 @@ public class Oracle_InvoicePage extends WaitsManager {
 			grep.infoTest("Payment Confirmation Message: " + getMsg);
 			logger.info("Payment Confirmation Message: " + getMsg);
 
-//			validAssert.equalsAssert(getMsg, "The accounting has been completed.");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -722,28 +710,12 @@ public class Oracle_InvoicePage extends WaitsManager {
 			System.out.println(e.getMessage());
 		}
 
-//		if (!checkbox.isSelected()) {
-//			checkbox.click();
-//			logger.info("Checkbox selected successfully.");
-//		} else {
-//			logger.info("Checkbox was already selected.");
-//		}
-
-//		waitForElement(selectInvoiceLine, 20);
-//		WebElement checkbox = driver.findElement(selectInvoiceLine);
-//
-//		// 2. Use JavaScript to click (ignores overlays/intercepts)
-//		JavascriptExecutor js = (JavascriptExecutor) driver;
-//		js.executeScript("arguments[0].scrollIntoView({block: 'center'});", checkbox);
-//		js.executeScript("arguments[0].click();", checkbox);
-//		logger.info("Checkbox clicked via JavaScript.");
 	}
 
 	public String getAmountFromMatchInvoicePopup() throws Exception {
 		try {
 			implWait(driver);
 			// 1. Wait for input and get the 'value' attribute
-//			String rawValue = driver.findElement(getAmount).getAttribute("value").trim();
 			String rawValue = driver.findElement(getAmount).getText();
 			logger.info("Raw UI Value: " + rawValue);
 

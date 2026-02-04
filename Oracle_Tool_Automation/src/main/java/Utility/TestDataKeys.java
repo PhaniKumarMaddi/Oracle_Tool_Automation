@@ -30,7 +30,7 @@ public class TestDataKeys {
 	
 
 	// with po
-	public String po_invoiceNum = "CR_PO_Test_006";
-	public String identifyPo = "CRPO500012";
+	public String po_invoiceNum = "CR_PO_Test_007";
+	public String identifyPo = "CRPO500060";
 
 }

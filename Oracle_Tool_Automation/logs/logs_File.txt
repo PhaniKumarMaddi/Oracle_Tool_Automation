@@ -8667,3 +8667,111 @@ Session ID: 5a5fff28715f7bbbb9e819aaa54303c8
 2026-02-04 17:19:07 [main] INFO : Expected :Fully paid and Actual :Fully paid both are same
 2026-02-04 17:19:09 [main] INFO : Testing Ended
 2026-02-04 17:19:09 [main] INFO : ***********
+2026-02-04 18:06:33 [main] INFO : Launching Chrome Browser
+2026-02-04 18:06:33 [main] INFO : Report Name :OraclePage.html
+2026-02-04 18:06:39 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-04 18:06:43 [main] INFO : Logged in to Oracle Application
+2026-02-04 18:06:46 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-04 18:06:46 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-04 18:06:51 [main] INFO : Clicking on Home icon
+2026-02-04 18:06:54 [main] INFO : Click on Tasks for Create Invoice
+2026-02-04 18:06:56 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-04 18:06:56 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-04 18:08:47 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-04 18:08:47 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-04 18:08:48 [main] INFO : Filling the Invoice Details
+2026-02-04 18:08:49 [main] INFO : Selecting Supplier: CRPO500067
+2026-02-04 18:08:55 [main] INFO : Entering Invoice Number: CR_PO_Test_0011
+2026-02-04 18:08:55 [main] INFO : Entering Invoice Amount: 180
+2026-02-04 18:08:57 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-04 18:08:58 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-04 18:09:00 [main] INFO : Entering Invoice Receive Date: 06-01-2026
+2026-02-04 18:09:01 [main] INFO : Enter Details in Lines Section
+2026-02-04 18:09:17 [main] INFO : Raw UI Value: 90,00
+2026-02-04 18:09:17 [main] INFO : Cleaned String Value: 90
+2026-02-04 18:09:17 [main] INFO : Po Amount: 90
+2026-02-04 18:09:18 [main] INFO : Click in Apply Match invoice popup
+2026-02-04 18:09:19 [main] INFO : Applying the Invoice Line
+2026-02-04 18:09:22 [main] INFO : Entering Invoice Amount: 90
+2026-02-04 18:09:35 [main] INFO : Invoice validation message: Validated
+2026-02-04 18:09:35 [main] INFO : Current Invoice Status: Validated
+2026-02-04 18:09:35 [main] INFO : Validated
+2026-02-04 18:09:38 [main] INFO : Clicking on Post to ledger
+2026-02-04 18:09:43 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-04 18:09:43 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-04 18:09:49 [main] INFO : Validating the Accounting Lines
+2026-02-04 18:09:50 [main] INFO : Validation Passed: Header contains invoice number: CR_PO_Test_0011
+2026-02-04 18:09:50 [main] INFO : Comparing UI Values: Debit[90.0], Credit[90.0] against Expected[90.0]
+2026-02-04 18:09:50 [main] INFO : Success: Debit, Credit, and Expected amount all match.
+2026-02-04 18:09:56 [main] INFO : Entering Payment reason in manage installments popup
+2026-02-04 18:09:57 [main] INFO : Entering Payment reason:Supplier Expenses Payment
+2026-02-04 18:09:59 [main] INFO : Selecting Payment Method: CR ELECTRONIC
+2026-02-04 18:10:09 [main] INFO : Entering Payment details in Pay in Full popup
+2026-02-04 18:10:11 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-04 18:10:13 [main] INFO : Selecting Payment Profile: WFB EFT PPP
+2026-02-04 18:10:18 [main] INFO : Payment Confirmation Message: Payment 6000010 for 85,50 USD has been created.
+2026-02-04 18:10:21 [main] INFO : Save and Close Invoice
+2026-02-04 18:10:22 [main] INFO : Testing Ended
+2026-02-04 18:10:22 [main] INFO : ***********
+2026-02-04 18:11:15 [main] INFO : Launching Chrome Browser
+2026-02-04 18:11:15 [main] INFO : Report Name :OraclePage.html
+2026-02-04 18:11:21 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-04 18:11:26 [main] INFO : Logged in to Oracle Application
+2026-02-04 18:11:33 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-04 18:11:33 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-04 18:11:42 [main] INFO : Clicking on Home icon
+2026-02-04 18:11:46 [main] INFO : Click on Tasks for Create Invoice
+2026-02-04 18:11:48 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-04 18:11:48 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-04 18:13:24 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-04 18:13:24 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-04 18:13:25 [main] INFO : Filling the Invoice Details
+2026-02-04 18:13:26 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-04 18:13:30 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-04 18:13:33 [main] INFO : Entering Invoice Number: Test_CR_MP_009
+2026-02-04 18:13:35 [main] INFO : Entering Invoice Amount: 180
+2026-02-04 18:13:37 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-04 18:13:38 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-04 18:13:57 [main] INFO : Entering Invoice Receive Date: 06-01-2026
+2026-02-04 18:13:57 [main] INFO : Enter Details in Lines Section
+2026-02-04 18:14:04 [main] INFO : Entering Line Amount: 180
+2026-02-04 18:14:12 [main] INFO : Selecting Comapany Value: 101
+2026-02-04 18:14:15 [main] INFO : Selecting Account for Distribution Combinantion: 52110
+2026-02-04 18:14:20 [main] INFO : Retrieving Distibution Combinatio ID: 101-000-52110-000
+2026-02-04 18:14:20 [main] INFO : Saving and Validating Invoice
+2026-02-04 18:14:31 [main] INFO : Invoice validation message: Needs revalidation
+2026-02-04 18:14:31 [main] INFO : Current Invoice Status: Needs revalidation
+2026-02-04 18:14:32 [main] INFO : Processing revalidation flow...
+2026-02-04 18:14:33 [main] INFO : Warning found! Image source: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/images/qual_warning_16.png
+2026-02-04 18:14:33 [main] INFO : Clicking the hold count link: 1
+2026-02-04 18:14:35 [main] INFO : Successfully selected 'Validated' from the release name dropdown.
+2026-02-04 18:14:40 [main] INFO : Invoice validation message: Validated
+2026-02-04 18:14:40 [main] INFO : Validated
+2026-02-04 18:14:44 [main] INFO : Entering Payment reason in manage installments popup
+2026-02-04 18:14:45 [main] INFO : Entering Payment reason:Supplier Expenses Payment
+2026-02-04 18:14:47 [main] INFO : Selecting Payment Method: CR ELECTRONIC
+2026-02-04 18:14:54 [main] INFO : Clicking on Account in Draft
+2026-02-04 18:14:59 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-04 18:14:59 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-04 18:15:04 [main] INFO : Validating the Accounting Lines
+2026-02-04 18:15:07 [main] INFO : Validation Passed: Header contains invoice number: Test_CR_MP_009
+2026-02-04 18:15:07 [main] INFO : Comparing UI Values: Debit[180.0], Credit[180.0] against Expected[180.0]
+2026-02-04 18:15:07 [main] INFO : Success: Debit, Credit, and Expected amount all match.
+2026-02-04 18:15:09 [main] INFO : Clicking on Post to ledger
+2026-02-04 18:15:14 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-04 18:15:14 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-04 18:15:20 [main] INFO : Validating the Accounting Lines
+2026-02-04 18:15:22 [main] INFO : Validation Passed: Header contains invoice number: Test_CR_MP_009
+2026-02-04 18:15:27 [main] INFO : Navigate to Payment Page
+2026-02-04 18:15:32 [main] INFO : Click Create payment from tasks
+2026-02-04 18:15:43 [main] INFO : Filling the details in Payment Page
+2026-02-04 18:15:45 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-04 18:15:48 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-04 18:15:54 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-04 18:15:59 [main] INFO : Selecting Payment method: Check
+2026-02-04 18:16:04 [main] INFO : Selecting Payment Profile: WFB CHECK PPP
+2026-02-04 18:16:05 [main] INFO : Click on 'Select and Add' Under Invoices to Pay at the bottom
+2026-02-04 18:16:07 [main] INFO : Entering Invoice Number: Test_CR_MP_009
+2026-02-04 18:16:19 [main] INFO : Payment Created Message: Payment 1000017 for 180,00 USD has been created.
+2026-02-04 18:16:24 [main] INFO : Testing Ended
+2026-02-04 18:16:24 [main] INFO : ***********

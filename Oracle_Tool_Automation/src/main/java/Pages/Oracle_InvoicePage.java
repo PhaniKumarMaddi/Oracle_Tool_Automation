@@ -27,6 +27,7 @@ public class Oracle_InvoicePage extends WaitsManager {
 	// Invoice page
 	By invoicePageTitle = By.xpath("//div[@title='Invoices']");
 	By createInvoicePageTitle = By.xpath("//div[@title='Create Invoice: ']");
+	By manageInvoicePageTitle = By.xpath("//div[@title='Manage Invoices']");
 	By insertBusinessUnit = By.xpath("//label[text()='Business Unit']/parent::td/following-sibling::td/span/input");
 	By insertSupplier = By.xpath("//label[text()='Supplier']/parent::td/following-sibling::td/input");
 	By invoiceNumber = By.xpath("//label[text()='Number']/parent::td/following-sibling::td/input");
@@ -39,11 +40,8 @@ public class Oracle_InvoicePage extends WaitsManager {
 	// lines in invoice
 	By lines = By.xpath("//a[@title='Expand Lines']");
 	By selectLine = By.xpath("//table[@summary='Invoice Lines']/descendant::td[text()='1']");
-//	By lineAmount = By.xpath("//td[@title='Amount']/descendant::input");
-//	By lineAmount = By.xpath("//td[@title='Amount']/descendant::label[text()='Amount']/preceding-sibling::input");
 	By lineAmount = By.xpath("//tr[@_afrrk='0']//label[text()='Amount']/preceding-sibling::input");
 
-//	By distributionCombination = By.xpath("//td[@title='Distribution Combination ID']/span/descendant::a[@title='Select: Distribution Combination ID']");
 	By distributionCombination = By.xpath(
 			"//input[@aria-label='Distribution Combination ID']/parent::span/parent::td/following-sibling::td/a");
 	By enterCompany_inDCPopup = By.xpath("//label[text()='COMPANY']/preceding-sibling::input");
@@ -71,7 +69,6 @@ public class Oracle_InvoicePage extends WaitsManager {
 	By accountinLineHeader = By.xpath("//div[contains(@id, 'ap1:d3::_ttxt')]");
 	By accoutNum = By.xpath("//span[contains(@id, 'kf1CS2::content')]");
 	By debitAmt = By.xpath("//span[contains(@id, 'ATp:t1:0:ot4')]");
-//	By creditAmt = By.xpath("//*[@id=\"pt1:_FOr1:1:_FONSr2:0:MAnt2:1:pm1:r1:0:ap1:r7:1:AT1:_ATp:t1::db\"]/table/tbody/tr[2]/td[8]/span/span");
 	By creditAmt = By.xpath("//div[@class='x1hf']/table/tbody/tr[2]/td[8]/span/span");
 	By doneBtn = By.xpath("//button[@accesskey='o']");
 
@@ -113,7 +110,14 @@ public class Oracle_InvoicePage extends WaitsManager {
 	By invoiceNum_SelectAndAdd = By.xpath("//input[@aria-label=' Invoice Number']");
 	By okBtn_inSelectAndAdd = By
 			.xpath("//button[@accesskey='l']/parent::span/following-sibling::button[@accesskey='K']");
-	By selectNum = By.xpath("//table[@summary='Search Results']//tr[1]//td[2]//span[starts-with(text(),'CR_MP')]");
+
+	// QUERY INVOICE NUMBER
+	By paymentsTab = By.xpath("//div[@class='x1gd']/a[text()='Payments']");
+	By paymentNumber_queryInv = By.cssSelector("span.x2ey>a");
+	By invNum_InPaymentPopup = By.xpath("//table[@summary='Paid Invoices']/descendant::table//tr[1]/td[1]//span");
+	By invStatus_InPaymentPopup = By
+			.xpath("//table[@summary='Paid Invoices']/descendant::table//tr[1]/td[last()]//span");
+	By ok_inPaymentPopup = By.xpath("//div[@class='AFPopupSelector']/descendant::button[text()='OK']");
 
 	public void validateInvoicePageTitle() throws Exception {
 
@@ -139,6 +143,21 @@ public class Oracle_InvoicePage extends WaitsManager {
 
 			grep.infoTest("Invoice Page Header: " + actualText);
 			validAssert.equalsAssert(actualText, "Create Invoice:");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void validateManageInvoicePageTitle() throws Exception {
+
+		try {
+//			implWait(driver);
+			waitForElement(manageInvoicePageTitle, 180);
+			String actualText = driver.findElement(manageInvoicePageTitle).getText().trim();
+			waitTime(driver);
+
+			grep.infoTest("Invoice Page Header: " + actualText);
+			validAssert.equalsAssert(actualText, "Manage Invoices");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -875,5 +894,69 @@ public class Oracle_InvoicePage extends WaitsManager {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	// Query Invoice Number
+	public void selectInvoiceNumber_inSearch(String invNum) {
+		try {
+			implWait(driver);
+			By clickInvoiceNumber = By.xpath("//a[text()='" + invNum + "']");
+
+			List<WebElement> select = driver.findElements(clickInvoiceNumber);
+			if (select.size() > 0) {
+				select.getFirst().click();
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickPaymentsTab_QueryInvoice() {
+		implWait(driver);
+
+		driver.findElement(paymentsTab).click();
+	}
+
+	public void clickPaymentNumber_QueryInvoice() {
+		implWait(driver);
+
+		driver.findElement(paymentNumber_queryInv).click();
+	}
+
+	public void validateInvoiceNum_InPaymentPopup(String invNumber) throws Exception {
+
+		try {
+			implWait(driver);
+			String actualText = driver.findElement(invNum_InPaymentPopup).getText().trim();
+			waitTime(driver);
+
+			grep.infoTest("Validating Invoice Number in Payment Popup: " + actualText);
+			logger.info("Validating Invoice Number in Payment Popup: " + actualText);
+			validAssert.equalsAssert(actualText, invNumber);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void validateInvoiceStatus_InPaymentPopup() throws Exception {
+
+		try {
+			implWait(driver);
+			String actualText = driver.findElement(invStatus_InPaymentPopup).getText().trim();
+			waitTime(driver);
+
+			grep.infoTest("Validating Invoice Status in Payment Popup: " + actualText);
+			logger.info("Validating Invoice Status in Payment Popup: " + actualText);
+			validAssert.equalsAssert(actualText, "Fully paid");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickOk_InPaymentPopup() {
+		implWait(driver);
+
+		driver.findElement(ok_inPaymentPopup).click();
 	}
 }

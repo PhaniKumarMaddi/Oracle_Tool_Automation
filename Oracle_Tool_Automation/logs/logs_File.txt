@@ -8426,3 +8426,26 @@ Session ID: 5a5fff28715f7bbbb9e819aaa54303c8
 2026-02-04 15:37:15 [main] INFO : Save and Close Invoice
 2026-02-04 15:37:16 [main] INFO : Testing Ended
 2026-02-04 15:37:16 [main] INFO : ***********
+2026-02-04 16:41:02 [main] INFO : Launching Chrome Browser
+2026-02-04 16:41:02 [main] INFO : Report Name :OraclePage.html
+2026-02-04 16:41:10 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-04 16:41:14 [main] INFO : Logged in to Oracle Application
+2026-02-04 16:41:15 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-04 16:41:15 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-04 16:41:18 [main] INFO : Clicking on Home icon
+2026-02-04 16:41:22 [main] INFO : Click on Tasks for Create Invoice
+2026-02-04 16:41:25 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-04 16:41:25 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-04 16:41:38 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices
+2026-02-04 16:41:38 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices both are same
+2026-02-04 16:41:41 [main] INFO : Entering Invoice Number: CR_PO_Test_008
+2026-02-04 16:41:46 [main] INFO : Clicking on Invoice Number
+2026-02-04 16:41:47 [main] INFO : Clicking on Payments Tab
+2026-02-04 16:41:56 [main] INFO : Validating Invoice Number in Payment Popup: CR_PO_Test_008
+2026-02-04 16:41:56 [main] INFO : Expected :CR_PO_Test_008 and Actual :CR_PO_Test_008
+2026-02-04 16:41:56 [main] INFO : Expected :CR_PO_Test_008 and Actual :CR_PO_Test_008 both are same
+2026-02-04 16:41:56 [main] INFO : Validating Invoice Status in Payment Popup: Fully paid
+2026-02-04 16:41:56 [main] INFO : Expected :Fully paid and Actual :Fully paid
+2026-02-04 16:41:56 [main] INFO : Expected :Fully paid and Actual :Fully paid both are same
+2026-02-04 16:41:58 [main] INFO : Testing Ended
+2026-02-04 16:41:58 [main] INFO : ***********

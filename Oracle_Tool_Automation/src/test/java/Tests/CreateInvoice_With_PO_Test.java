@@ -46,7 +46,7 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 
 		oraHome.click_Tasks_InPO();
 		waitTime1(driver);
-		oraHome.selectTasks_InTaskPage(dataTest.creteInvoiceBtn);
+		oraHome.selectTasks_InTaskPage(dataTest.createInvoiceBtn);
 		waitTime2(driver);
 		waitTime60(driver);
 		oraInv.validateCreateInvoicePageTitle();

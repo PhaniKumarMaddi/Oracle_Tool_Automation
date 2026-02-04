@@ -34,11 +34,9 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		waitTime(driver);
 		oraHome.clickNavigator();
 		waitTime(driver);
-//		oraHome.selectNavigationTab("Payables");
 		oraHome.selectNavigationTab(dataTest.payableNavTab);
 		grep.captureScreenshot("pass", "Expanding Payables in Navigator ", "Expand_PayablesNavigation");
 		waitTime(driver);
-//		oraHome.selectSubCategoryInNavigator("Invoices");
 		oraHome.selectSubCategoryInNavigator(dataTest.invoiceCatg);
 		waitTime1(driver);
 		grep.infoTest("Click on Tasks for Create Invoice");
@@ -47,13 +45,9 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		oraInv.validateInvoicePageTitle();
 		waitTime(driver);
 
-//		waitTime60(driver);
-//		waitTime60(driver);
-
 		oraHome.click_Tasks_InPO();
 		waitTime1(driver);
-//		oraHome.selectTasks_InTaskPage("Create Invoice");
-		oraHome.selectTasks_InTaskPage(dataTest.creteInvoiceBtn);
+		oraHome.selectTasks_InTaskPage(dataTest.createInvoiceBtn);
 		waitTime2(driver);
 		waitTime60(driver);
 		oraInv.validateCreateInvoicePageTitle();
@@ -227,7 +221,7 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		grep.infoTest("Click Create payment from tasks");
 		logger.info("Click Create payment from tasks");
 		waitTime1(driver);
-		oraHome.selectTasks_InTaskPage(dataTest.cretePaymentBtn);
+		oraHome.selectTasks_InTaskPage(dataTest.createPaymentBtn);
 		waitTime10(driver);
 		grep.infoTest("Filling the details in Payment Page");
 		logger.info("Filling the details in Payment Page");

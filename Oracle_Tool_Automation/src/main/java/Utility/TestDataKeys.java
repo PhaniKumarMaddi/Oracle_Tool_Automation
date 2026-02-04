@@ -6,9 +6,11 @@ public class TestDataKeys {
 	public String invoiceCatg = "Invoices";
 	public String paymentsCatg = "Payments";
 
-	public String creteInvoiceBtn = "Create Invoice";
-	public String cretePaymentBtn = "Create Payment";
-
+	public String createInvoiceBtn = "Create Invoice";
+	public String createPaymentBtn = "Create Payment";
+	public String manageInvoiceBtn = "Manage Invoices";
+	
+	
 	public String selectBU = "CRITICAL RIVER BU";
 	public String selectSupplier = "CR Applied Material";
 	public String invoiceNum = "Test_CR_MP_006";
@@ -30,7 +32,7 @@ public class TestDataKeys {
 	
 
 	// with po
-	public String po_invoiceNum = "CR_PO_Test_009";
+	public String po_invoiceNum = "CR_PO_Test_008";
 	public String identifyPo = "CRPO500062";
 
 }

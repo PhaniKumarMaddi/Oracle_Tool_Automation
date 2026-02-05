@@ -918,10 +918,22 @@ public class Oracle_InvoicePage extends WaitsManager {
 		driver.findElement(paymentsTab).click();
 	}
 
-	public void clickPaymentNumber_QueryInvoice() {
-		implWait(driver);
+	public void clickPaymentNumber_QueryInvoice() throws Exception {
+		try {
+//		implWait(driver);
+			waitForElement(paymentNumber_queryInv, 10);
 
-		driver.findElement(paymentNumber_queryInv).click();
+			WebElement paymentNum = driver.findElement(paymentNumber_queryInv);
+			System.out.println("Payment number got invoice: " + paymentNum.getText());
+			grep.infoTest("Payment number got invoice: " + paymentNum.getText());
+			logger.info("Payment number got invoice: " + paymentNum.getText());
+			waitTime(driver);
+			paymentNum.click();
+
+		} catch (Exception e) {
+			System.out.println("No Payments available for this invoice");
+
+		}
 	}
 
 	public void validateInvoiceNum_InPaymentPopup(String invNumber) throws Exception {

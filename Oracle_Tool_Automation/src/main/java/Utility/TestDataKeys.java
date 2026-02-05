@@ -9,6 +9,7 @@ public class TestDataKeys {
 	public String createInvoiceBtn = "Create Invoice";
 	public String createPaymentBtn = "Create Payment";
 	public String manageInvoiceBtn = "Manage Invoices";
+	public String submiPaymentProcessRequestBtn = "Submit Payment Process Request";
 	
 	
 	public String selectBU = "CRITICAL RIVER BU";

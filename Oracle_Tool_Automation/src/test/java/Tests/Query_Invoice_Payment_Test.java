@@ -48,7 +48,6 @@ public class Query_Invoice_Payment_Test extends TestInitializer {
 
 		oraHome.click_Tasks_InPO();
 		waitTime1(driver);
-//		oraHome.selectTasks_InTaskPage("Create Invoice");
 		oraHome.selectTasks_InTaskPage(dataTest.manageInvoiceBtn);
 		waitTime10(driver);
 		oraInv.validateManageInvoicePageTitle();

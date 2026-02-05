@@ -9,12 +9,11 @@ public class TestDataKeys {
 	public String createInvoiceBtn = "Create Invoice";
 	public String createPaymentBtn = "Create Payment";
 	public String manageInvoiceBtn = "Manage Invoices";
-	public String submiPaymentProcessRequestBtn = "Submit Payment Process Request";
-	
-	
+	public String submitPaymentProcessRequestBtn = "Submit Payment Process Request";
+
 	public String selectBU = "CRITICAL RIVER BU";
 	public String selectSupplier = "CR Applied Material";
-	public String invoiceNum = "Test_CR_MP_009";
+	public String invoiceNum = "Test_CR_MP_009"; // change values
 	public String invoiceAmt = "180";
 	public String invoiceDesc = "Test Supplier Invoices for Expenses";
 	public String paymentTerms = "IMMEDIATE";
@@ -30,10 +29,18 @@ public class TestDataKeys {
 	public String paymentProfile = "WFB EFT PPP";
 	public String paymentCheckMethod = "Check";
 	public String paymentProfile_Check = "WFB CHECK PPP";
-	
 
 	// with po
-	public String po_invoiceNum = "CR_PO_Test_0011";
-	public String identifyPo = "CRPO500067"; // 68,69
+	public String po_invoiceNum = "CR_PO_Test_0011"; // change values
+	public String identifyPo = "CRPO500067"; // 68,69 need po existing
 
+	// Batch payment
+	public String batchPaymentNumber = "MP_Check_Payment_0010";
+	public String batchTemplate = "WFB CHECK USD PPR";
+	public String pendingInstallReviewStatus = "Pending installments review";
+	public String pendingPropsedPaymentReviewStatus = "Pending proposed payment review";
+	public String waitingForPaymentFileStatus = "Waiting for payment file processing";
+	public String createAndReadyForPrintingStatus ="Created and ready for printing";
+	public String formattedAndReadyStatus= "Formatted and ready for printing";
+	public String SubmittedPrintingStatus= "Submitted for printing";
 }

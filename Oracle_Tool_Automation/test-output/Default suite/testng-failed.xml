@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.CreateInvoice_With_PO_Test">
+      <class name="Tests.Batch_Payment_Test">
         <methods>
-          <include name="oracle_InvoiceCreation_WithPO"/>
           <include name="tearDown"/>
+          <include name="oracle_Batch_Payment"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Tests.CreateInvoice_With_PO_Test -->
+      </class> <!-- Tests.Batch_Payment_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

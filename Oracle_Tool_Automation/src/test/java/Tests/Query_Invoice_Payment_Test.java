@@ -88,4 +88,5 @@ public class Query_Invoice_Payment_Test extends TestInitializer {
 		oraHome.clickDoneReceiptBtn();
 
 	}
+	
 }

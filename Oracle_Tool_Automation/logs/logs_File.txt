@@ -9300,3 +9300,71 @@ Session ID: 5a5fff28715f7bbbb9e819aaa54303c8
 2026-02-05 18:39:54 [main] INFO : Clicking on Home icon
 2026-02-05 18:40:24 [main] INFO : Testing Ended
 2026-02-05 18:40:24 [main] INFO : ***********
+2026-02-05 18:41:12 [main] INFO : Launching Chrome Browser
+2026-02-05 18:41:13 [main] INFO : Report Name :OraclePage.html
+2026-02-05 18:41:19 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-05 18:41:23 [main] INFO : Logged in to Oracle Application
+2026-02-05 18:41:24 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-05 18:41:24 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-05 18:41:28 [main] INFO : Clicking on Home icon
+2026-02-05 18:41:32 [main] INFO : Click on Tasks for Submit Payment Process Request
+2026-02-05 18:41:42 [main] INFO : Submit Payment Process Request Page Header: Submit Payment Process Request
+2026-02-05 18:41:42 [main] INFO : Expected :Submit Payment Process Request and Actual :Submit Payment Process Request
+2026-02-05 18:41:42 [main] INFO : Expected :Submit Payment Process Request and Actual :Submit Payment Process Request both are same
+2026-02-05 18:41:42 [main] INFO : Entering Batch Number and Batch Template
+2026-02-05 18:41:43 [main] INFO : Entering Payment Process Name: MP_Check_Payment_0010
+2026-02-05 18:41:44 [main] INFO : Selecting Supplier: WFB CHECK USD PPR
+2026-02-05 18:41:49 [main] INFO : Radio Button Checked State: false
+2026-02-05 18:41:50 [main] INFO : Clicking on Payment and Processing Options Tab
+2026-02-05 18:43:07 [main] INFO : Launching Chrome Browser
+2026-02-05 18:43:08 [main] INFO : Report Name :OraclePage.html
+2026-02-05 18:43:14 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-05 18:43:19 [main] INFO : Logged in to Oracle Application
+2026-02-05 18:43:20 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-05 18:43:20 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-05 18:43:26 [main] INFO : Clicking on Home icon
+2026-02-05 18:43:30 [main] INFO : Click on Tasks for Submit Payment Process Request
+2026-02-05 18:43:40 [main] INFO : Submit Payment Process Request Page Header: Submit Payment Process Request
+2026-02-05 18:43:40 [main] INFO : Expected :Submit Payment Process Request and Actual :Submit Payment Process Request
+2026-02-05 18:43:40 [main] INFO : Expected :Submit Payment Process Request and Actual :Submit Payment Process Request both are same
+2026-02-05 18:43:40 [main] INFO : Entering Batch Number and Batch Template
+2026-02-05 18:43:41 [main] INFO : Entering Payment Process Name: MP_Check_Payment_0012
+2026-02-05 18:43:42 [main] INFO : Selecting Supplier: WFB CHECK USD PPR
+2026-02-05 18:43:47 [main] INFO : Radio Button Checked State: false
+2026-02-05 18:43:48 [main] INFO : Clicking on Payment and Processing Options Tab
+2026-02-05 18:45:28 [main] INFO : Launching Chrome Browser
+2026-02-05 18:45:29 [main] INFO : Report Name :OraclePage.html
+2026-02-05 18:45:35 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-05 18:45:40 [main] INFO : Logged in to Oracle Application
+2026-02-05 18:45:41 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-05 18:45:41 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-05 18:45:45 [main] INFO : Clicking on Home icon
+2026-02-05 18:45:49 [main] INFO : Click on Tasks for Submit Payment Process Request
+2026-02-05 18:45:58 [main] INFO : Submit Payment Process Request Page Header: Submit Payment Process Request
+2026-02-05 18:45:58 [main] INFO : Expected :Submit Payment Process Request and Actual :Submit Payment Process Request
+2026-02-05 18:45:58 [main] INFO : Expected :Submit Payment Process Request and Actual :Submit Payment Process Request both are same
+2026-02-05 18:45:59 [main] INFO : Entering Batch Number and Batch Template
+2026-02-05 18:46:00 [main] INFO : Entering Payment Process Name: MP_Check_Payment_0013
+2026-02-05 18:46:00 [main] INFO : Selecting Supplier: WFB CHECK USD PPR
+2026-02-05 18:46:06 [main] INFO : Radio Button Checked State: true
+2026-02-05 18:46:06 [main] INFO : Clicking on Payment and Processing Options Tab
+2026-02-05 18:46:11 [main] INFO : Verification Passed: Value is 'WFB CORPOATE ACC'
+2026-02-05 18:46:14 [main] INFO : Starting poll for record: MP_Check_Payment_0013
+2026-02-05 18:46:45 [main] ERROR: Record not ready. Clicking refresh...
+2026-02-05 18:47:15 [main] INFO : Condition Met! Status: Pending installments review
+2026-02-05 18:47:54 [main] INFO : Starting poll for record: MP_Check_Payment_0013
+2026-02-05 18:48:24 [main] ERROR: Record not ready. Clicking refresh...
+2026-02-05 18:48:54 [main] INFO : Condition Met! Status: Pending proposed payment review
+2026-02-05 18:48:59 [main] INFO : Clicking on Resume Payment Process Button
+2026-02-05 18:49:01 [main] INFO : Starting poll for record: MP_Check_Payment_0013
+2026-02-05 18:49:31 [main] ERROR: Record not ready. Clicking refresh...
+2026-02-05 18:50:02 [main] INFO : Condition Met! Status: Waiting for payment file processing
+2026-02-05 18:50:05 [main] INFO : Payment receipt Number :542062
+2026-02-05 18:50:06 [main] INFO : Starting poll for record: 542062
+2026-02-05 18:50:06 [main] INFO : Condition Met! Status: Formatted and ready for printing
+2026-02-05 18:50:08 [main] INFO : Clicking on Print Button
+2026-02-05 18:50:11 [main] INFO : Starting poll for record: MP_Check_Payment_0013
+2026-02-05 18:50:42 [main] ERROR: Record not ready. Clicking refresh...
+2026-02-05 18:51:42 [main] ERROR: Record not ready. Clicking refresh...
+2026-02-05 18:52:42 [main] INFO : Testing Ended
+2026-02-05 18:52:42 [main] INFO : ***********

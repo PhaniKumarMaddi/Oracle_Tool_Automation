@@ -26,7 +26,7 @@ public class Batch_Payment_Test extends TestInitializer {
 		Oracle_InvoicePage oraInv = new Oracle_InvoicePage();
 		Oracle_BatchPaymentPage oraBpp = new Oracle_BatchPaymentPage();
 
-		createInvoice();
+//		createInvoice();
 		waitTime(driver);
 
 		grep.testCreate("Verify Batch Payment Invoice Test", "Verify Batch Payment Invoice");
@@ -119,7 +119,7 @@ public class Batch_Payment_Test extends TestInitializer {
 		oraBpp.clickPrintButton();
 
 		waitTime(driver);
-		oraBpp.waitForPrintPaymentActionAndStatus(dataTest.batchPaymentNumber, dataTest.SubmittedPrintingStatus, 10);
+		oraBpp.waitForPrintPaymentActionAndStatus(paymentReceiptNum, dataTest.SubmittedPrintingStatus, 10);
 
 		grep.infoTest("Validating the Payment File Details");
 		logger.info("Validating the Payment File Details");

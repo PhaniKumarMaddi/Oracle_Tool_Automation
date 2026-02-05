@@ -37,7 +37,7 @@ public class TestDataKeys {
 	// Batch payment
 	
 //	public String batchPaymentNumber_2 = "MP_Check_Payment_0012";
-	public String batchPaymentNumber = "MP_Check_Payment_0010";
+	public String batchPaymentNumber = "MP_Check_Payment_0013";
 	public String batchTemplate = "WFB CHECK USD PPR";
 	public String pendingInstallReviewStatus = "Pending installments review";
 	public String pendingPropsedPaymentReviewStatus = "Pending proposed payment review";

@@ -83,10 +83,10 @@ public class Query_Invoice_Payment_Test extends TestInitializer {
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Inside Payments Receipt Popup", "InsidePaymentsReceiptPopup_QueryInvoicePage");
 
-		waitTime(driver);
+		waitTime2(driver);
 		oraInv.clickOk_InPaymentPopup();
-		waitTime(driver);
-		oraInv.clickDoneAccountingBtn();
+		waitTime2(driver);
+		oraHome.clickDoneReceiptBtn();
 
 	}
 }

@@ -8775,3 +8775,95 @@ Session ID: 5a5fff28715f7bbbb9e819aaa54303c8
 2026-02-04 18:16:19 [main] INFO : Payment Created Message: Payment 1000017 for 180,00 USD has been created.
 2026-02-04 18:16:24 [main] INFO : Testing Ended
 2026-02-04 18:16:24 [main] INFO : ***********
+2026-02-05 09:01:28 [main] INFO : Launching Chrome Browser
+2026-02-05 09:01:28 [main] INFO : Report Name :OraclePage.html
+2026-02-05 09:01:35 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-05 09:01:40 [main] INFO : Logged in to Oracle Application
+2026-02-05 09:01:43 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-05 09:01:43 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-05 09:01:47 [main] INFO : Clicking on Home icon
+2026-02-05 09:01:51 [main] INFO : Click on Tasks for Create Invoice
+2026-02-05 09:01:54 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-05 09:01:54 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-05 09:02:07 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices
+2026-02-05 09:02:07 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices both are same
+2026-02-05 09:02:10 [main] INFO : Entering Invoice Number: CR_PO_Test_0011
+2026-02-05 09:02:15 [main] INFO : Clicking on Invoice Number
+2026-02-05 09:02:16 [main] INFO : Clicking on Payments Tab
+2026-02-05 09:02:27 [main] INFO : Validating Invoice Number in Payment Popup: CR_PO_Test_0011
+2026-02-05 09:02:27 [main] INFO : Expected :CR_PO_Test_0011 and Actual :CR_PO_Test_0011
+2026-02-05 09:02:27 [main] INFO : Expected :CR_PO_Test_0011 and Actual :CR_PO_Test_0011 both are same
+2026-02-05 09:02:27 [main] INFO : Validating Invoice Status in Payment Popup: Fully paid
+2026-02-05 09:02:27 [main] INFO : Expected :Fully paid and Actual :Fully paid
+2026-02-05 09:02:27 [main] INFO : Expected :Fully paid and Actual :Fully paid both are same
+2026-02-05 09:03:00 [main] INFO : Testing Ended
+2026-02-05 09:03:00 [main] INFO : ***********
+2026-02-05 09:03:54 [main] INFO : Launching Chrome Browser
+2026-02-05 09:03:55 [main] INFO : Report Name :OraclePage.html
+2026-02-05 09:04:06 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-05 09:04:10 [main] INFO : Logged in to Oracle Application
+2026-02-05 09:04:13 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-05 09:04:13 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-05 09:04:17 [main] INFO : Clicking on Home icon
+2026-02-05 09:04:21 [main] INFO : Click on Tasks for Create Invoice
+2026-02-05 09:04:23 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-05 09:04:23 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-05 09:04:36 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices
+2026-02-05 09:04:36 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices both are same
+2026-02-05 09:04:40 [main] INFO : Entering Invoice Number: CR_PO_Test_0011
+2026-02-05 09:04:44 [main] INFO : Clicking on Invoice Number
+2026-02-05 09:04:45 [main] INFO : Clicking on Payments Tab
+2026-02-05 09:04:57 [main] INFO : Validating Invoice Number in Payment Popup: CR_PO_Test_0011
+2026-02-05 09:04:57 [main] INFO : Expected :CR_PO_Test_0011 and Actual :CR_PO_Test_0011
+2026-02-05 09:04:57 [main] INFO : Expected :CR_PO_Test_0011 and Actual :CR_PO_Test_0011 both are same
+2026-02-05 09:04:57 [main] INFO : Validating Invoice Status in Payment Popup: Fully paid
+2026-02-05 09:04:57 [main] INFO : Expected :Fully paid and Actual :Fully paid
+2026-02-05 09:04:57 [main] INFO : Expected :Fully paid and Actual :Fully paid both are same
+2026-02-05 09:05:31 [main] INFO : Testing Ended
+2026-02-05 09:05:31 [main] INFO : ***********
+2026-02-05 09:06:24 [main] INFO : Launching Chrome Browser
+2026-02-05 09:06:25 [main] INFO : Report Name :OraclePage.html
+2026-02-05 09:06:32 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-05 09:06:37 [main] INFO : Logged in to Oracle Application
+2026-02-05 09:06:38 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-05 09:06:38 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-05 09:06:41 [main] INFO : Clicking on Home icon
+2026-02-05 09:06:45 [main] INFO : Click on Tasks for Create Invoice
+2026-02-05 09:06:47 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-05 09:06:47 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-05 09:07:00 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices
+2026-02-05 09:07:00 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices both are same
+2026-02-05 09:07:03 [main] INFO : Entering Invoice Number: CR_PO_Test_0011
+2026-02-05 09:07:08 [main] INFO : Clicking on Invoice Number
+2026-02-05 09:07:09 [main] INFO : Clicking on Payments Tab
+2026-02-05 09:07:16 [main] INFO : Validating Invoice Number in Payment Popup: CR_PO_Test_0011
+2026-02-05 09:07:16 [main] INFO : Expected :CR_PO_Test_0011 and Actual :CR_PO_Test_0011
+2026-02-05 09:07:16 [main] INFO : Expected :CR_PO_Test_0011 and Actual :CR_PO_Test_0011 both are same
+2026-02-05 09:07:17 [main] INFO : Validating Invoice Status in Payment Popup: Fully paid
+2026-02-05 09:07:17 [main] INFO : Expected :Fully paid and Actual :Fully paid
+2026-02-05 09:07:17 [main] INFO : Expected :Fully paid and Actual :Fully paid both are same
+2026-02-05 09:07:52 [main] INFO : Testing Ended
+2026-02-05 09:07:52 [main] INFO : ***********
+2026-02-05 09:10:29 [main] INFO : Launching Chrome Browser
+2026-02-05 09:10:30 [main] INFO : Report Name :OraclePage.html
+2026-02-05 09:10:39 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-05 09:10:44 [main] INFO : Logged in to Oracle Application
+2026-02-05 09:10:45 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-05 09:10:45 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-05 09:10:48 [main] INFO : Clicking on Home icon
+2026-02-05 09:10:53 [main] INFO : Click on Tasks for Create Invoice
+2026-02-05 09:10:55 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-05 09:10:55 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-05 09:11:09 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices
+2026-02-05 09:11:09 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices both are same
+2026-02-05 09:11:12 [main] INFO : Entering Invoice Number: CR_PO_Test_0011
+2026-02-05 09:11:17 [main] INFO : Clicking on Invoice Number
+2026-02-05 09:11:18 [main] INFO : Clicking on Payments Tab
+2026-02-05 09:11:28 [main] INFO : Validating Invoice Number in Payment Popup: CR_PO_Test_0011
+2026-02-05 09:11:28 [main] INFO : Expected :CR_PO_Test_0011 and Actual :CR_PO_Test_0011
+2026-02-05 09:11:28 [main] INFO : Expected :CR_PO_Test_0011 and Actual :CR_PO_Test_0011 both are same
+2026-02-05 09:11:28 [main] INFO : Validating Invoice Status in Payment Popup: Fully paid
+2026-02-05 09:11:28 [main] INFO : Expected :Fully paid and Actual :Fully paid
+2026-02-05 09:11:28 [main] INFO : Expected :Fully paid and Actual :Fully paid both are same
+2026-02-05 09:11:34 [main] INFO : Testing Ended
+2026-02-05 09:11:34 [main] INFO : ***********

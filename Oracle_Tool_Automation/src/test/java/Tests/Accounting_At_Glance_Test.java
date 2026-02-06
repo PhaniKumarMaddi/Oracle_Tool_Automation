@@ -75,7 +75,7 @@ public class Accounting_At_Glance_Test extends TestInitializer {
 		oraAag.clickSelectNameFromList(dataTest.createAccounting);
 		waitTime(driver);
 		oraAag.clickOk_inSelectNamePopup();
-		waitTime(driver);
+		waitTime2(driver);
 		oraAag.clickOk_inScheduleProcessPopup();
 		waitTime(driver);
 		grep.infoTest("Click on Subledger Application and Select Payables");
@@ -119,6 +119,7 @@ public class Accounting_At_Glance_Test extends TestInitializer {
 		logger.info("Check for confirmation and click ok");
 		waitTime(driver);
 		String processId = oraAag.getProcessIdFromPopup();
+		int process_id_int = Integer.parseInt(processId);
 		grep.infoTest("Retrieved Process Id:" + processId);
 		logger.info("Retrieved Process Id:" + processId);
 		waitTime(driver);
@@ -133,9 +134,24 @@ public class Accounting_At_Glance_Test extends TestInitializer {
 		grep.infoTest("Click on refresh button multiple times beside Change Process Priority");
 		logger.info("Click on refresh button multiple times beside Change Process Priority");
 		waitTime(driver);
-		oraAag.waitForProcessSuccess(processId, 10);
+		oraAag.waitForProcessSuccess(process_id_int, 5);
+		waitTime(driver);
+//		int id = process_id_int + 1;
+//		oraAag.verifySubProcessTaskCreated(id, "Create Accounting: Subprocess");
+//		waitTime(driver);
+//		oraAag.waitForProcessSuccess(id, 5);
 
 		grep.captureScreenshot("pass", "Schedule Process Sucess", "ScheduleProcessSucess");
+		waitTime3(driver);
+		grep.infoTest("Click on Create Accounting Execution Report");
+		logger.info("Click on Create Accounting Execution Report");
+		waitTime(driver);
+		oraAag.clickAccountingExecutionReport();
+		waitTime2(driver);
+		grep.captureScreenshot("pass", "Accounting Execution Report", "AccountExecutionReport");
+		waitTime(driver);
+		oraAag.clickXMLDataBtn();
+		waitTime(driver);
 
 	}
 }

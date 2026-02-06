@@ -48,6 +48,8 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 			.xpath("//td[contains(@id,'confirmationPopup:confirmSubmitDialog::contentContainer')]/descendant::label");
 	By ok_inConfirmation_popup = By
 			.xpath("//td[contains(@id,'confirmationPopup:confirmSubmitDialog')]/descendant::button");
+	By accountingExecutionReport = By.xpath("//span[text()='Create Accounting Execution Report']");
+	By xmlBtn = By.xpath("//div[@id='deliveryInfo']/descendant::a[@id='XMLData']");
 
 //Process 4796079 was submitted.
 
@@ -287,7 +289,7 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 		driver.findElement(ok_inConfirmation_popup).click();
 	}
 
-	public void waitForProcessSuccess(String process_id, int timeoutInMinutes) throws Exception {
+	public void waitForProcessSuccess(int process_id, int timeoutInMinutes) throws Exception {
 		By getStatus = By.xpath("//span[text()='" + process_id + "']/parent::td/following-sibling::td[1]");
 
 		// Use the refresh button locator defined previously
@@ -347,6 +349,54 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 			logger.error(
 					"Timeout: Process " + process_id + " did not succeed within " + timeoutInMinutes + " minutes.");
 		}
+	}
+
+	public boolean verifySubProcessTaskCreated(int processId, String expectedTaskName) {
+
+		// Dynamic XPath: Starts at the ID, goes up to the cell, then moves left to the
+		// name cell
+		By taskNameLoc = By.xpath("//span[text()='" + processId + "']/parent::td/preceding-sibling::td");
+
+		try {
+			// 1. Wait for the task name element to be visible
+			WebElement taskNameElement = driver.findElement(taskNameLoc);
+
+			// 2. Retrieve and clean the text
+			String actualTaskName = taskNameElement.getText().trim();
+
+			logger.info("Process ID " + processId + " corresponds to Task: " + actualTaskName);
+			grep.infoTest("Process ID " + processId + " corresponds to Task: " + actualTaskName);
+
+			// 3. Comparison
+			if (actualTaskName.equals(expectedTaskName)) {
+				System.out.println("Verification Passed: Task Name matches.");
+				grep.infoTest("Successfully verified Task Name: " + actualTaskName);
+				return true;
+			} else {
+				System.out.println(
+						"Verification Failed: Expected [" + expectedTaskName + "] but found [" + actualTaskName + "]");
+				grep.failTest("Task Name mismatch for Process ID: " + processId);
+				return false;
+			}
+
+		} catch (Exception e) {
+			logger.error("Could not find Task Name for Process ID " + processId + ": " + e.getMessage());
+			return false;
+		}
+	}
+
+	public void clickAccountingExecutionReport() {
+		implWait(driver);
+		scrollView(accountingExecutionReport);
+		driver.findElement(accountingExecutionReport).click();
+	}
+
+	public void clickXMLDataBtn() {
+//		implWait(driver);
+//		driver.switchTo().frame("xnb p_AFFlow");
+		waitForElement(xmlBtn, 20);
+		scrollView(xmlBtn);
+		driver.findElement(xmlBtn).click();
 	}
 
 }

@@ -10305,3 +10305,223 @@ Session ID: 4c90ca4afc72589e1ac0ead84163be57
 2026-02-06 15:15:38 [main] INFO : Process 4796342 completed successfully.
 2026-02-06 15:15:39 [main] INFO : Testing Ended
 2026-02-06 15:15:39 [main] INFO : ***********
+2026-02-06 15:38:41 [main] INFO : Launching Chrome Browser
+2026-02-06 15:38:41 [main] INFO : Report Name :OraclePage.html
+2026-02-06 15:38:46 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-06 15:38:51 [main] INFO : Logged in to Oracle Application
+2026-02-06 15:38:51 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-06 15:38:51 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-06 15:38:53 [main] INFO : Clicking on Home icon
+2026-02-06 15:38:58 [main] INFO : Navigating Scheduled Processes
+2026-02-06 15:39:00 [main] INFO : Click on Schedule New Process
+2026-02-06 15:39:03 [main] INFO : Click on Name dropdown
+2026-02-06 15:39:04 [main] INFO : Click on search
+2026-02-06 15:39:05 [main] INFO : Click on name and type the name
+2026-02-06 15:39:06 [main] INFO : Entering Name: Create Accounting
+2026-02-06 15:39:07 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-06 15:39:10 [main] INFO : Click on Subledger Application and Select Payables
+2026-02-06 15:39:11 [main] INFO : Select Payables from the drop down under Sub ledger application
+2026-02-06 15:39:11 [main] INFO : Click on ledger or ledger Set dropdown and click Search
+2026-02-06 15:39:12 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-06 15:39:17 [main] INFO : Entering Ledger Or Ledger Set: CR PRIMARY LEDGER
+2026-02-06 15:39:22 [main] INFO : Click on Process category and Select Invoices
+2026-02-06 15:39:23 [main] INFO : Select Invoices from the drop down under Process Category application
+2026-02-06 15:39:25 [main] INFO : Click on Submit at the top
+2026-02-06 15:39:26 [main] INFO : Check for confirmation and click ok
+2026-02-06 15:39:27 [main] INFO : Popup text received: Process 4796421 was submitted.
+2026-02-06 15:39:27 [main] INFO : Extracted Process ID: 4796421
+2026-02-06 15:39:27 [main] INFO : Retrieved Process Id:4796421
+2026-02-06 15:39:29 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-06 15:39:29 [main] INFO : Monitoring status for Process ID: 4796421
+2026-02-06 15:39:31 [main] INFO : Current Status of 4796421: Running
+2026-02-06 15:39:42 [main] INFO : Current Status of 4796421: Running
+2026-02-06 15:39:52 [main] INFO : Current Status of 4796421: Succeeded
+2026-02-06 15:39:52 [main] INFO : Process 4796421 completed successfully.
+2026-02-06 15:40:23 [main] ERROR: Could not find Task Name for Process ID 4796422: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='4796422']/parent::td/preceding-sibling::td"}
+  (Session info: chrome=144.0.7559.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52d2f09b061d74cb2add17ca42fe8197, findElement {value=//span[text()='4796422']/parent::td/preceding-sibling::td, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52584}, goog:processID: 4516, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52584/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52d2f09b061d74cb2add17ca42fe8197
+2026-02-06 15:40:23 [main] INFO : Monitoring status for Process ID: 4796422
+2026-02-06 15:50:52 [main] INFO : Launching Chrome Browser
+2026-02-06 15:50:52 [main] INFO : Report Name :OraclePage.html
+2026-02-06 15:50:58 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-06 15:51:02 [main] INFO : Logged in to Oracle Application
+2026-02-06 15:51:02 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-06 15:51:02 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-06 15:51:06 [main] INFO : Clicking on Home icon
+2026-02-06 15:51:10 [main] INFO : Navigating Scheduled Processes
+2026-02-06 15:51:12 [main] INFO : Click on Schedule New Process
+2026-02-06 15:51:15 [main] INFO : Click on Name dropdown
+2026-02-06 15:51:16 [main] INFO : Click on search
+2026-02-06 15:51:17 [main] INFO : Click on name and type the name
+2026-02-06 15:51:18 [main] INFO : Entering Name: Create Accounting
+2026-02-06 15:51:19 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-06 15:51:21 [main] INFO : Click on Subledger Application and Select Payables
+2026-02-06 15:51:23 [main] INFO : Select Payables from the drop down under Sub ledger application
+2026-02-06 15:51:24 [main] INFO : Click on ledger or ledger Set dropdown and click Search
+2026-02-06 15:51:25 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-06 15:51:29 [main] INFO : Entering Ledger Or Ledger Set: CR PRIMARY LEDGER
+2026-02-06 15:51:34 [main] INFO : Click on Process category and Select Invoices
+2026-02-06 15:51:35 [main] INFO : Select Invoices from the drop down under Process Category application
+2026-02-06 15:51:37 [main] INFO : Click on Submit at the top
+2026-02-06 15:51:38 [main] INFO : Check for confirmation and click ok
+2026-02-06 15:51:39 [main] INFO : Popup text received: Process 4796475 was submitted.
+2026-02-06 15:51:39 [main] INFO : Extracted Process ID: 4796475
+2026-02-06 15:51:39 [main] INFO : Retrieved Process Id:4796475
+2026-02-06 15:51:41 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-06 15:51:41 [main] INFO : Monitoring status for Process ID: 4796475
+2026-02-06 15:51:43 [main] INFO : Current Status of 4796475: Wait
+2026-02-06 15:51:53 [main] INFO : Current Status of 4796475: Ready
+2026-02-06 15:52:04 [main] INFO : Current Status of 4796475: Succeeded
+2026-02-06 15:52:04 [main] INFO : Process 4796475 completed successfully.
+2026-02-06 15:52:35 [main] ERROR: Could not find Task Name for Process ID 4796476: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='4796476']/parent::td/preceding-sibling::td"}
+  (Session info: chrome=144.0.7559.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [96a442edef2f0936c506d743bf91522a, findElement {value=//span[text()='4796476']/parent::td/preceding-sibling::td, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59395}, goog:processID: 21808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59395/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 96a442edef2f0936c506d743bf91522a
+2026-02-06 15:52:35 [main] INFO : Monitoring status for Process ID: 4796476
+2026-02-06 15:53:13 [main] INFO : Launching Chrome Browser
+2026-02-06 15:53:13 [main] INFO : Report Name :OraclePage.html
+2026-02-06 15:53:18 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-06 15:53:22 [main] INFO : Logged in to Oracle Application
+2026-02-06 15:53:23 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-06 15:53:23 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-06 15:53:27 [main] INFO : Clicking on Home icon
+2026-02-06 15:53:31 [main] INFO : Navigating Scheduled Processes
+2026-02-06 15:53:33 [main] INFO : Click on Schedule New Process
+2026-02-06 15:53:36 [main] INFO : Click on Name dropdown
+2026-02-06 15:53:37 [main] INFO : Click on search
+2026-02-06 15:53:38 [main] INFO : Click on name and type the name
+2026-02-06 15:53:39 [main] INFO : Entering Name: Create Accounting
+2026-02-06 15:53:40 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-06 15:53:43 [main] INFO : Testing Ended
+2026-02-06 15:53:43 [main] INFO : ***********
+2026-02-06 15:54:01 [main] INFO : Launching Chrome Browser
+2026-02-06 15:54:01 [main] INFO : Report Name :OraclePage.html
+2026-02-06 15:54:06 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-06 15:54:10 [main] INFO : Logged in to Oracle Application
+2026-02-06 15:54:11 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-06 15:54:11 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-06 15:54:15 [main] INFO : Clicking on Home icon
+2026-02-06 15:54:18 [main] INFO : Navigating Scheduled Processes
+2026-02-06 15:54:20 [main] INFO : Click on Schedule New Process
+2026-02-06 15:54:23 [main] INFO : Click on Name dropdown
+2026-02-06 15:54:24 [main] INFO : Click on search
+2026-02-06 15:54:25 [main] INFO : Click on name and type the name
+2026-02-06 15:54:26 [main] INFO : Entering Name: Create Accounting
+2026-02-06 15:54:27 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-06 15:54:29 [main] INFO : Testing Ended
+2026-02-06 15:54:29 [main] INFO : ***********
+2026-02-06 15:55:24 [main] INFO : Launching Chrome Browser
+2026-02-06 15:55:24 [main] INFO : Report Name :OraclePage.html
+2026-02-06 15:55:29 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-06 15:55:34 [main] INFO : Logged in to Oracle Application
+2026-02-06 15:55:34 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-06 15:55:34 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-06 15:55:38 [main] INFO : Clicking on Home icon
+2026-02-06 15:55:42 [main] INFO : Navigating Scheduled Processes
+2026-02-06 15:55:44 [main] INFO : Click on Schedule New Process
+2026-02-06 15:55:46 [main] INFO : Click on Name dropdown
+2026-02-06 15:55:48 [main] INFO : Click on search
+2026-02-06 15:55:49 [main] INFO : Click on name and type the name
+2026-02-06 15:55:50 [main] INFO : Entering Name: Create Accounting
+2026-02-06 15:55:51 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-06 15:55:55 [main] INFO : Click on Subledger Application and Select Payables
+2026-02-06 15:55:57 [main] INFO : Select Payables from the drop down under Sub ledger application
+2026-02-06 15:55:57 [main] INFO : Click on ledger or ledger Set dropdown and click Search
+2026-02-06 15:55:58 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-06 15:56:03 [main] INFO : Entering Ledger Or Ledger Set: CR PRIMARY LEDGER
+2026-02-06 15:56:08 [main] INFO : Click on Process category and Select Invoices
+2026-02-06 15:56:08 [main] INFO : Select Invoices from the drop down under Process Category application
+2026-02-06 15:56:10 [main] INFO : Click on Submit at the top
+2026-02-06 15:56:11 [main] INFO : Check for confirmation and click ok
+2026-02-06 15:56:12 [main] INFO : Popup text received: Process 4796481 was submitted.
+2026-02-06 15:56:12 [main] INFO : Extracted Process ID: 4796481
+2026-02-06 15:56:12 [main] INFO : Retrieved Process Id:4796481
+2026-02-06 15:56:14 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-06 15:56:15 [main] INFO : Monitoring status for Process ID: 4796481
+2026-02-06 15:56:16 [main] INFO : Current Status of 4796481: Running
+2026-02-06 15:56:27 [main] INFO : Current Status of 4796481: Running
+2026-02-06 15:56:37 [main] INFO : Current Status of 4796481: Succeeded
+2026-02-06 15:56:37 [main] INFO : Process 4796481 completed successfully.
+2026-02-06 15:57:12 [main] INFO : Testing Ended
+2026-02-06 15:57:12 [main] INFO : ***********
+2026-02-06 15:59:11 [main] INFO : Launching Chrome Browser
+2026-02-06 15:59:11 [main] INFO : Report Name :OraclePage.html
+2026-02-06 15:59:18 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-06 15:59:22 [main] INFO : Logged in to Oracle Application
+2026-02-06 15:59:23 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-06 15:59:23 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-06 15:59:27 [main] INFO : Clicking on Home icon
+2026-02-06 15:59:30 [main] INFO : Navigating Scheduled Processes
+2026-02-06 15:59:32 [main] INFO : Click on Schedule New Process
+2026-02-06 15:59:35 [main] INFO : Click on Name dropdown
+2026-02-06 15:59:36 [main] INFO : Click on search
+2026-02-06 15:59:37 [main] INFO : Click on name and type the name
+2026-02-06 15:59:38 [main] INFO : Entering Name: Create Accounting
+2026-02-06 15:59:39 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-06 15:59:43 [main] INFO : Click on Subledger Application and Select Payables
+2026-02-06 15:59:44 [main] INFO : Select Payables from the drop down under Sub ledger application
+2026-02-06 15:59:45 [main] INFO : Click on ledger or ledger Set dropdown and click Search
+2026-02-06 15:59:46 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-06 15:59:51 [main] INFO : Entering Ledger Or Ledger Set: CR PRIMARY LEDGER
+2026-02-06 15:59:56 [main] INFO : Click on Process category and Select Invoices
+2026-02-06 15:59:57 [main] INFO : Select Invoices from the drop down under Process Category application
+2026-02-06 15:59:59 [main] INFO : Click on Submit at the top
+2026-02-06 16:00:00 [main] INFO : Check for confirmation and click ok
+2026-02-06 16:00:00 [main] INFO : Popup text received: Process 4796491 was submitted.
+2026-02-06 16:00:00 [main] INFO : Extracted Process ID: 4796491
+2026-02-06 16:00:00 [main] INFO : Retrieved Process Id:4796491
+2026-02-06 16:00:03 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-06 16:00:03 [main] INFO : Monitoring status for Process ID: 4796491
+2026-02-06 16:00:04 [main] INFO : Current Status of 4796491: Running
+2026-02-06 16:00:15 [main] INFO : Current Status of 4796491: Running
+2026-02-06 16:00:26 [main] INFO : Current Status of 4796491: Succeeded
+2026-02-06 16:00:26 [main] INFO : Process 4796491 completed successfully.
+2026-02-06 16:00:29 [main] INFO : Click on Create Accounting Execution Report
+2026-02-06 16:01:03 [main] INFO : Testing Ended
+2026-02-06 16:01:03 [main] INFO : ***********
+2026-02-06 16:04:55 [main] INFO : Launching Chrome Browser
+2026-02-06 16:04:55 [main] INFO : Report Name :OraclePage.html
+2026-02-06 16:05:00 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-06 16:05:04 [main] INFO : Logged in to Oracle Application
+2026-02-06 16:05:05 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-06 16:05:05 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-06 16:05:09 [main] INFO : Clicking on Home icon
+2026-02-06 16:05:13 [main] INFO : Navigating Scheduled Processes
+2026-02-06 16:05:15 [main] INFO : Click on Schedule New Process
+2026-02-06 16:05:17 [main] INFO : Click on Name dropdown
+2026-02-06 16:05:19 [main] INFO : Click on search
+2026-02-06 16:05:20 [main] INFO : Click on name and type the name
+2026-02-06 16:05:21 [main] INFO : Entering Name: Create Accounting
+2026-02-06 16:05:22 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-06 16:05:26 [main] INFO : Click on Subledger Application and Select Payables
+2026-02-06 16:05:28 [main] INFO : Select Payables from the drop down under Sub ledger application
+2026-02-06 16:05:28 [main] INFO : Click on ledger or ledger Set dropdown and click Search
+2026-02-06 16:05:29 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-06 16:05:33 [main] INFO : Entering Ledger Or Ledger Set: CR PRIMARY LEDGER
+2026-02-06 16:05:38 [main] INFO : Click on Process category and Select Invoices
+2026-02-06 16:05:39 [main] INFO : Select Invoices from the drop down under Process Category application
+2026-02-06 16:05:41 [main] INFO : Click on Submit at the top
+2026-02-06 16:05:42 [main] INFO : Check for confirmation and click ok
+2026-02-06 16:05:43 [main] INFO : Popup text received: Process 4796499 was submitted.
+2026-02-06 16:05:43 [main] INFO : Extracted Process ID: 4796499
+2026-02-06 16:05:43 [main] INFO : Retrieved Process Id:4796499
+2026-02-06 16:05:45 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-06 16:05:46 [main] INFO : Monitoring status for Process ID: 4796499
+2026-02-06 16:05:47 [main] INFO : Current Status of 4796499: Running
+2026-02-06 16:05:58 [main] INFO : Current Status of 4796499: Completed
+2026-02-06 16:06:08 [main] INFO : Current Status of 4796499: Succeeded
+2026-02-06 16:06:08 [main] INFO : Process 4796499 completed successfully.
+2026-02-06 16:06:12 [main] INFO : Click on Create Accounting Execution Report
+2026-02-06 16:07:15 [main] INFO : Testing Ended
+2026-02-06 16:07:15 [main] INFO : ***********

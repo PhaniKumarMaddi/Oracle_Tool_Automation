@@ -23,10 +23,9 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 	public void oracle_Batch_Payment_Electronic() throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
-		Oracle_InvoicePage oraInv = new Oracle_InvoicePage();
 		Oracle_BatchPaymentPage oraBpp = new Oracle_BatchPaymentPage();
 
-//		createInvoice();
+		createInvoice();
 		waitTime(driver);
 
 		grep.testCreate("Verify Batch Payment Invoice Test", "Verify Batch Payment Invoice");
@@ -39,7 +38,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		waitTime(driver);
 		oraHome.clickNavigator();
 		waitTime(driver);
-		oraHome.selectNavigationTab(dataTest.payableNavTab);
+//		oraHome.selectNavigationTab(dataTest.payableNavTab);
 		grep.captureScreenshot("pass", "Expanding Payables in Navigator ", "Expand_PayablesNavigation_BatchPayment");
 		waitTime(driver);
 		oraHome.selectSubCategoryInNavigator(dataTest.paymentsCatg);
@@ -105,13 +104,10 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 
 		waitTime2(driver);
 
-//		oraBpp.keepFirstRowAndRemoveOthersFromSelectInstallemnts();
-//		waitTime(driver);
 		oraBpp.clickSave_inSelectInstallments();
 		waitTime(driver);
 
 		oraBpp.clickSubmitBtn_inSubmitPaymentProcess();
-//		waitTime3(driver);
 		waitTime10(driver);
 		oraBpp.clickRefreshPaymentProcessBtn();
 		waitTime10(driver);
@@ -132,7 +128,6 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		oraBpp.clickRefreshPaymentProcessBtn();
 		waitTime10(driver);
 
-//		oraBpp.waitForPaymentStatusAndExpand(dataTest.batchPaymentNumber, dataTest.pendingPropsedPaymentReviewStatus, 10);
 		oraBpp.waitForPaymentRecordAndStatus(dataTest.batchPaymentNumber, dataTest.pendingPropsedPaymentReviewStatus,
 				10);
 		waitTime2(driver);
@@ -156,12 +151,12 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		oraBpp.clickRecentlyCompletedRefreshButton();
 		waitTime5(driver);
 		oraBpp.verifyPaymentNumber_inCompletedTab(dataTest.batchPaymentNumber);
-		waitTime(driver);
-
-		oraHome.clickHomeButton();
 		waitTime2(driver);
 
-		oracle_Query_InvoicePayment();
+//		oraHome.clickHomeButton();
+//		waitTime2(driver);
+
+//		oracle_Query_InvoicePayment();
 	}
 
 	public void createInvoice() throws Exception {

@@ -5,6 +5,8 @@ public class TestDataKeys {
 	public String payableNavTab = "Payables";
 	public String invoiceCatg = "Invoices";
 	public String paymentsCatg = "Payments";
+	public String toolsNavTab = "Tools";
+	public String scheduledProcessesCatg = "Scheduled Processes";
 
 	public String createInvoiceBtn = "Create Invoice";
 	public String createPaymentBtn = "Create Payment";
@@ -12,8 +14,9 @@ public class TestDataKeys {
 	public String submitPaymentProcessRequestBtn = "Submit Payment Process Request";
 
 	public String selectBU = "CRITICAL RIVER BU";
+	public String selectLegal = "CRITICAL RIVER LE";
 	public String selectSupplier = "CR Applied Material";
-	public String invoiceNum = "Test_CR_MP_14"; // change values
+	public String invoiceNum = "Test_FEB_6_02"; // change values
 	public String invoiceAmt = "300";
 	public String invoiceDesc = "Test Supplier Invoices for Expenses";
 	public String paymentTerms = "IMMEDIATE";
@@ -36,12 +39,14 @@ public class TestDataKeys {
 
 	// Batch payment
 
-	public String batchPaymentNumber = "MP_Check_Payment_0016";
+	public String batchPaymentNumber = "MP_ELE_Payment_04";
 	public String batchTemplate = "WFB CHECK USD PPR";
 	public String pendingInstallReviewStatus = "Pending installments review";
+	public String pendingActionToComplete = "Pending action to complete information required";
 	public String pendingPropsedPaymentReviewStatus = "Pending proposed payment review";
 	public String waitingForPaymentFileStatus = "Waiting for payment file processing";
 	public String createAndReadyForPrintingStatus = "Created and ready for printing";
 	public String formattedAndReadyStatus = "Formatted and ready for printing";
 	public String SubmittedPrintingStatus = "Submitted for printing";
+	public String pendingActionCompleteStatus = "Pending action to complete information required";
 }

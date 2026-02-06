@@ -59,6 +59,41 @@ public class Oracle_BatchPaymentPage extends WaitsManager {
 
 	By completedRefreshBtn = By.xpath("//a[contains(@id, 'RecentlyCompletedPpr:_ATTp:i1') and @title='Refresh']");
 
+	// Electronic Batch payment flow
+
+//	By businessUnitRadioBtn = By.xpath(
+//			"//legend[text()='Business Units']/parent::fieldset/span/label[text()='Payment']/preceding-sibling::input");
+	By businessUnitRadioBtn = By
+			.xpath("//legend[text()='Business Units']/parent::fieldset/span/label[text()='Payment']");
+
+	By businessUnit_AddRowBtn = By.xpath(
+			"//legend[text()='Business Units']/parent::fieldset/ancestor::tr[1]/following-sibling::tr[2]/descendant::div[@title='Add Row']");
+	By businessUnit_Name = By.xpath(
+			"//legend[text()='Business Units']/parent::fieldset/ancestor::tr[1]/following-sibling::tr[2]/td/span/div/div[2]/descendant::input");
+
+//	By legalEntityRadioBtn = By.xpath(
+//			"//legend[text()='Legal Entities']/parent::fieldset/span/label[text()='Specific']/preceding-sibling::input");
+	By legalEntityRadioBtn = By
+			.xpath("//legend[text()='Legal Entities']/parent::fieldset/span/label[text()='Specific']");
+	By legalEntity_AddRowBtn = By.xpath(
+			"//legend[text()='Legal Entities']/parent::fieldset/ancestor::tr[1]/following-sibling::tr[1]/descendant::div[@title='Add Row']");
+	By legalEntityName = By.xpath(
+			"//legend[text()='Legal Entities']/parent::fieldset/ancestor::tr[1]/following-sibling::tr/td/span/div/div[2]/descendant::input");
+
+	By supplierOrParty = By.xpath("//label[text()='Supplier or Party']/parent::td/following-sibling::td/input");
+
+//	By applyCreditCheckbox = By
+//			.xpath("//label[text()='Apply credits up to zero amount payment']/preceding-sibling::input");
+//	By reviewInstallmentsCheckbox = By.xpath("//label[text()='Review installments']/preceding-sibling::input");
+//	By createPaymentsCheckbox = By.xpath("//label[text()='Create payment files immediately']/preceding-sibling::input");
+	By applyCreditCheckbox = By.xpath("//label[text()='Apply credits up to zero amount payment']");
+	By reviewInstallmentsCheckbox = By.xpath("//label[text()='Review installments']");
+	By createPaymentsCheckbox = By.xpath("//label[text()='Create payment files immediately']");
+
+	By paymentProcessProfileInput = By.xpath("//label[text()='Payment Process Profile']/preceding-sibling::input");
+
+	By enterDisbursementBankAccount = By.xpath("//input[contains(@name,'bankAccountNameId')]");
+
 	public void validateSubmitPaymentProcessPageTitle() throws Exception {
 
 		try {
@@ -84,6 +119,8 @@ public class Oracle_BatchPaymentPage extends WaitsManager {
 			waitTime(driver);
 			grep.infoTest("Entering Payment Process Name: " + invoiceVal);
 			logger.info("Entering Payment Process Name: " + invoiceVal);
+			waitTime(driver);
+			actionTab();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -557,6 +594,224 @@ public class Oracle_BatchPaymentPage extends WaitsManager {
 			System.out.println("Record not ready. Clicking refresh...");
 			logger.error("Record not ready. Clicking refresh...");
 			grep.infoTest("Record not ready. Clicking refresh...");
+		}
+	}
+
+	// ELECTRONIC METHOD
+
+	public void selectBusinessUnitPaymentRadio() {
+		try {
+			// 1. Wait for the radio button to be present in the DOM
+			waitForElement(businessUnitRadioBtn, 20);
+			WebElement radioBtn = driver.findElement(businessUnitRadioBtn);
+
+			logger.info("Selecting Business Unit 'Payment' radio button.");
+			grep.infoTest("Selecting Business Unit 'Payment' radio button.");
+			radioBtn.click();
+
+			// 5. Optional: Wait for Partial Page Refresh (PPR) if the UI updates
+			waitTime(driver);
+
+		} catch (Exception e) {
+			logger.error("Failed to select Business Unit radio button: " + e.getMessage());
+			grep.failTest("Radio button selection failed for: Business Unit Payment");
+		}
+	}
+
+	public void clickBusinessUnitAddRow() {
+		try {
+
+			waitForElement(businessUnit_AddRowBtn, 20);
+			WebElement addRowBtn = driver.findElement(businessUnit_AddRowBtn);
+
+			logger.info("Clicking Add Row button for Business Units.");
+			grep.infoTest("Clicking Add Row button for Business Units.");
+
+			addRowBtn.click();
+			waitTime(driver);
+
+		} catch (Exception e) {
+			logger.error("Failed to click Business Unit Add Row button: " + e.getMessage());
+			grep.failTest("Add Row button click failed.");
+		}
+	}
+
+	public void searchAndSelectBusinessUnit(String unitVal) {
+		try {
+			implWait(driver);
+			By selectUnit = By.xpath("//li[starts-with(text(),'" + unitVal + "')]");
+
+			driver.findElement(businessUnit_Name).click();
+			driver.findElement(businessUnit_Name).sendKeys(unitVal);
+			waitTime(driver);
+			grep.infoTest("Selecting Business Unit: " + unitVal);
+			logger.info("Selecting Business Unit: " + unitVal);
+			waitTime2(driver);
+			waitForElementToBeClickable(selectUnit, 20);
+			driver.findElement(selectUnit).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void selectLegalEntitiesRadio() {
+		try {
+			// 1. Wait for the radio button to be present in the DOM
+			waitForElement(legalEntityRadioBtn, 20);
+			WebElement radioBtn = driver.findElement(legalEntityRadioBtn);
+
+			logger.info("Selecting Legal Entities 'Specific' radio button.");
+			grep.infoTest("Selecting Legal Entities 'Specific' radio button.");
+			radioBtn.click();
+
+			// 5. Optional: Wait for Partial Page Refresh (PPR) if the UI updates
+			waitTime(driver);
+
+		} catch (Exception e) {
+			logger.error("Failed to select Legal Entities radio button: " + e.getMessage());
+			grep.failTest("Radio button selection failed for:Legal Entities Specific");
+		}
+	}
+
+	public void clickLegalEntityAddRow() {
+		try {
+
+			waitForElement(legalEntity_AddRowBtn, 20);
+			WebElement addRowBtn = driver.findElement(legalEntity_AddRowBtn);
+
+			logger.info("Clicking Add Row button for Legal Entities.");
+			grep.infoTest("Clicking Add Row button for Legal Entities.");
+
+			addRowBtn.click();
+			waitTime(driver);
+
+		} catch (Exception e) {
+			logger.error("Failed to click  Legal Entities Add Row button: " + e.getMessage());
+			grep.failTest("Add Row button click failed.");
+		}
+	}
+
+	public void searchAndSelectLegalEntities(String legalVal) {
+		try {
+			implWait(driver);
+			By selectEntities = By.xpath("//li[starts-with(text(),'" + legalVal + "')]");
+
+			driver.findElement(legalEntityName).click();
+			driver.findElement(legalEntityName).sendKeys(legalVal);
+			waitTime(driver);
+			grep.infoTest("Selecting Legal entities: " + legalVal);
+			logger.info("Selecting Legal entities: " + legalVal);
+			waitTime2(driver);
+			waitForElementToBeClickable(selectEntities, 20);
+			driver.findElement(selectEntities).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void searchAndSelectSupplierOrParty(String supplyVal) {
+		try {
+			implWait(driver);
+			By selectSupplier = By.xpath("//li[starts-with(text(),'" + supplyVal + "')]");
+
+			driver.findElement(supplierOrParty).click();
+			driver.findElement(supplierOrParty).sendKeys(supplyVal);
+			waitTime(driver);
+			grep.infoTest("Selecting Supplier or Party: " + supplyVal);
+			logger.info("Selecting Supplier or Party: " + supplyVal);
+			waitTime2(driver);
+			waitForElementToBeClickable(selectSupplier, 20);
+			driver.findElement(selectSupplier).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void enableApplyCredits() {
+		implWait(driver);
+
+		WebElement checkbox = driver.findElement(applyCreditCheckbox);
+		// ADF Check: value 't' or property 'checked'
+		boolean isChecked = checkbox.isSelected() || "t".equals(checkbox.getAttribute("value"));
+
+		if (!isChecked) {
+//	        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", checkbox);
+			checkbox.click();
+			logger.info("Applied Credits checkbox enabled.");
+			grep.infoTest("Applied Credits checkbox enabled.");
+		} else {
+			logger.info("Applied Credits checkbox was already enabled.");
+			grep.infoTest("Applied Credits checkbox was already enabled.");
+		}
+	}
+
+	public void enableReviewInstallments() {
+		WebElement checkbox = driver.findElement(reviewInstallmentsCheckbox);
+		boolean isChecked = checkbox.isSelected() || "t".equals(checkbox.getAttribute("value"));
+
+		if (!isChecked) {
+//	        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", checkbox);
+			checkbox.click();
+			logger.info("Review Installments checkbox enabled.");
+			grep.infoTest("Review Installments checkbox enabled.");
+		} else {
+			logger.info("Review Installments checkbox was already enabled.");
+			grep.infoTest("Review Installments checkbox was already enabled.");
+		}
+	}
+
+	public void enableCreatePaymentFiles() {
+		WebElement checkbox = driver.findElement(createPaymentsCheckbox);
+		boolean isChecked = checkbox.isSelected() || "t".equals(checkbox.getAttribute("value"));
+
+		if (!isChecked) {
+//			((JavascriptExecutor) driver).executeScript("arguments[0].click();", checkbox);
+			checkbox.click();
+			logger.info("Create Payment Files checkbox enabled.");
+			grep.infoTest("Create Payment Files checkbox enabled.");
+		} else {
+			logger.info("Create Payment Files checkbox was already enabled.");
+			grep.infoTest("Create Payment Files checkbox was already enabled.");
+		}
+	}
+
+	public void searchAndSelectDisbursementBankAccount(String bankAccVal) {
+		try {
+			implWait(driver);
+			By selectBankAcct = By.xpath("//li[starts-with(text(),'" + bankAccVal + "')]");
+
+			driver.findElement(enterDisbursementBankAccount).click();
+			driver.findElement(enterDisbursementBankAccount).sendKeys(bankAccVal);
+			waitTime(driver);
+			grep.infoTest("Selecting Bank Account: " + bankAccVal);
+			logger.info("Selecting Bank Account: " + bankAccVal);
+			waitForElementToBeClickable(selectBankAcct, 20);
+			driver.findElement(selectBankAcct).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void searchAndSelectPaymentProcess(String profileVal) {
+		try {
+			implWait(driver);
+			By selectProcess = By.xpath("//li[starts-with(text(),'" + profileVal + "')]");
+
+			driver.findElement(paymentProcessProfileInput).click();
+			driver.findElement(paymentProcessProfileInput).sendKeys(profileVal);
+			waitTime(driver);
+			grep.infoTest("Selecting Payment Process Profile: " + profileVal);
+			logger.info("Selecting Payment Process Profile: " + profileVal);
+			waitTime2(driver);
+			waitForElementToBeClickable(selectProcess, 20);
+			driver.findElement(selectProcess).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 

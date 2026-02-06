@@ -12,8 +12,8 @@ import Utility.GenerateReports;
 import Utility.TestDataKeys;
 import Utility.ValidatingAssertions;
 
-public class Batch_Payment_Test extends TestInitializer {
-	private static final Logger logger = LogManager.getLogger(Batch_Payment_Test.class);
+public class Old_Batch_Payment_Test extends TestInitializer {
+	private static final Logger logger = LogManager.getLogger(Old_Batch_Payment_Test.class);
 	GenerateReports grep = new GenerateReports();
 	ValidatingAssertions validAssert = new ValidatingAssertions();
 	TestDataKeys dataTest = new TestDataKeys();
@@ -290,6 +290,7 @@ public class Batch_Payment_Test extends TestInitializer {
 
 		oraInv.enterPaymentReasonComment(dataTest.paymentReasonDesc);
 		waitTime(driver);
+		oraInv.searchAndSelectPaymentMethod(dataTest.paymentMethod);
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Entering Payment reason in manage installments popup",
 				"paymentReason_InManageInstallmentsPopup_Without_PO");

@@ -6,6 +6,7 @@
 			<class name="Tests.CreateInvoice_withoutPO_Test" />
 			<class name="Tests.CreateInvoice_With_PO_Test" />
 			<class name="Tests.Query_Invoice_Payment_Test" />
+			<class name="Tests.Batch_Payment_Test" />
 
 		</classes>
 	</test> <!--

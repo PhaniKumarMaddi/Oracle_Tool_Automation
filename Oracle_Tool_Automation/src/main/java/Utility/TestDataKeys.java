@@ -13,8 +13,8 @@ public class TestDataKeys {
 
 	public String selectBU = "CRITICAL RIVER BU";
 	public String selectSupplier = "CR Applied Material";
-	public String invoiceNum = "Test_CR_MP_009"; // change values
-	public String invoiceAmt = "180";
+	public String invoiceNum = "Test_CR_MP_14"; // change values
+	public String invoiceAmt = "300";
 	public String invoiceDesc = "Test Supplier Invoices for Expenses";
 	public String paymentTerms = "IMMEDIATE";
 	public String date = "06";
@@ -35,14 +35,13 @@ public class TestDataKeys {
 	public String identifyPo = "CRPO500067"; // 68,69 need po existing
 
 	// Batch payment
-	
-//	public String batchPaymentNumber_2 = "MP_Check_Payment_0012";
-	public String batchPaymentNumber = "MP_Check_Payment_0013";
+
+	public String batchPaymentNumber = "MP_Check_Payment_0016";
 	public String batchTemplate = "WFB CHECK USD PPR";
 	public String pendingInstallReviewStatus = "Pending installments review";
 	public String pendingPropsedPaymentReviewStatus = "Pending proposed payment review";
 	public String waitingForPaymentFileStatus = "Waiting for payment file processing";
-	public String createAndReadyForPrintingStatus ="Created and ready for printing";
-	public String formattedAndReadyStatus= "Formatted and ready for printing";
-	public String SubmittedPrintingStatus= "Submitted for printing";
+	public String createAndReadyForPrintingStatus = "Created and ready for printing";
+	public String formattedAndReadyStatus = "Formatted and ready for printing";
+	public String SubmittedPrintingStatus = "Submitted for printing";
 }

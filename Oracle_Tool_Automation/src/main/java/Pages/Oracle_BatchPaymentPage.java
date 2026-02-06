@@ -180,6 +180,13 @@ public class Oracle_BatchPaymentPage extends WaitsManager {
 
 	}
 
+	public void clickRefreshPaymentProcessBtn() {
+		implWait(driver);
+
+		driver.findElement(paymentRefreshBtn).click();
+
+	}
+
 	public void waitForPaymentRecordAndStatus(String targetRecord, String expectedStatus, int timeoutInMinutes) {
 		implWait(driver);
 		// 1. Define local locators to use the parameter

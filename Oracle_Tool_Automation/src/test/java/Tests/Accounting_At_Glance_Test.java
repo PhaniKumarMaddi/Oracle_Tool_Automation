@@ -4,9 +4,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
-import Pages.Oracle_BatchPaymentPage;
+import Pages.Oracle_AccountingAtGlance;
 import Pages.Oracle_HomePage;
-import Pages.Oracle_InvoicePage;
 import Pages.TestInitializer;
 import Utility.GenerateReports;
 import Utility.TestDataKeys;
@@ -23,7 +22,7 @@ public class Accounting_At_Glance_Test extends TestInitializer {
 	public void oracle_Accounting_At_Glance() throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
-		Oracle_InvoicePage oraInv = new Oracle_InvoicePage();
+		Oracle_AccountingAtGlance oraAag = new Oracle_AccountingAtGlance();
 
 		waitTime(driver);
 
@@ -41,5 +40,102 @@ public class Accounting_At_Glance_Test extends TestInitializer {
 		waitTime(driver);
 		oraHome.selectSubCategoryInNavigator(dataTest.scheduledProcessesCatg);
 		waitTime1(driver);
+		grep.infoTest("Navigating Scheduled Processes");
+		logger.info("Navigating Scheduled Processes");
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Navigating Scheduled Processes", "ScheduleProcessPage");
+		waitTime(driver);
+
+		grep.infoTest("Click on Schedule New Process");
+		logger.info("Click on Schedule New Process");
+		waitTime(driver);
+		oraAag.clickScheduleProcessButton();
+		waitTime2(driver);
+
+		grep.infoTest("Click on Name dropdown");
+		logger.info("Click on Name dropdown");
+		waitTime(driver);
+		oraAag.clickNameDropdownButton();
+		waitTime(driver);
+		grep.infoTest("Click on search");
+		logger.info("Click on search");
+		waitTime(driver);
+		oraAag.clickSearch_InDropdown();
+		waitTime(driver);
+		grep.infoTest("Click on name and type the name");
+		logger.info("Click on name and type the name");
+		waitTime(driver);
+		oraAag.enterName(dataTest.createAccounting);
+		waitTime(driver);
+		oraAag.clickSearchBtn();
+		waitTime(driver);
+		grep.infoTest("Select the Create Accounting  Name and click ok");
+		logger.info("Select the Create Accounting  Name and click ok");
+		waitTime(driver);
+		oraAag.clickSelectNameFromList(dataTest.createAccounting);
+		waitTime(driver);
+		oraAag.clickOk_inSelectNamePopup();
+		waitTime(driver);
+		oraAag.clickOk_inScheduleProcessPopup();
+		waitTime(driver);
+		grep.infoTest("Click on Subledger Application and Select Payables");
+		logger.info("Click on Subledger Application and Select Payables");
+		waitTime(driver);
+		oraAag.selectSubledgerApplication(dataTest.payablesSubLedger);
+		waitTime(driver);
+		grep.infoTest("Click on ledger or ledger Set dropdown and click Search");
+		logger.info("Click on ledger or ledger Set dropdown and click Search");
+		waitTime(driver);
+		oraAag.clickLedgerOrLedgerSetDropdownButton();
+		waitTime(driver);
+
+		grep.infoTest("Search and Select CR PRIMARY LEDGER");
+		logger.info("Search and Select CR PRIMARY LEDGER");
+		waitTime(driver);
+		oraAag.clickSearch_InDropdown();
+		waitTime2(driver);
+		oraAag.enterLedgerOr_LedgerSet(dataTest.crPrimaryLedger);
+		waitTime3(driver);
+		oraAag.clickSearchBtn();
+		waitTime(driver);
+		oraAag.clickSelectLedgerFromList(dataTest.crPrimaryLedger);
+		waitTime(driver);
+		oraAag.clickOk_inLedgerPopup();
+		waitTime(driver);
+		grep.infoTest("Click on Process category and Select Invoices");
+		logger.info("Click on Process category and Select Invoices");
+		waitTime(driver);
+		oraAag.selectProcessCategory("Invoices");
+		waitTime2(driver);
+		grep.captureScreenshot("pass", "Creating Schedule Process", "scheduleProcessCreated");
+
+		grep.infoTest("Click on Submit at the top");
+		logger.info("Click on Submit at the top");
+		waitTime(driver);
+		oraAag.clickSubmitBtn_inProcessDetail();
+		waitTime(driver);
+
+		grep.infoTest("Check for confirmation and click ok");
+		logger.info("Check for confirmation and click ok");
+		waitTime(driver);
+		String processId = oraAag.getProcessIdFromPopup();
+		grep.infoTest("Retrieved Process Id:" + processId);
+		logger.info("Retrieved Process Id:" + processId);
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Creating Schedule Process Confirmation popup",
+				"confirmationPopup_ScheduleProcess");
+
+		waitTime(driver);
+		oraAag.clickOk_inConfirmation_popup();
+		waitTime(driver);
+		oraAag.clickRefreshBtn();
+		waitTime(driver);
+		grep.infoTest("Click on refresh button multiple times beside Change Process Priority");
+		logger.info("Click on refresh button multiple times beside Change Process Priority");
+		waitTime(driver);
+		oraAag.waitForProcessSuccess(processId, 10);
+
+		grep.captureScreenshot("pass", "Schedule Process Sucess", "ScheduleProcessSucess");
+
 	}
 }

@@ -588,6 +588,10 @@ public class Oracle_BatchPaymentPage extends WaitsManager {
 			if (statusElement.isDisplayed()) {
 				logger.info("Record is Displayed in Recently Completed tab :" + targetRecord);
 				grep.infoTest("Record is Displayed in Recently Completed tab :" + targetRecord);
+				waitTime2(driver);
+				grep.captureScreenshot("pass", "Record is Displayed in Recently Completed tab",
+						"InsideRecentlyClosedTab");
+				waitTime3(driver);
 			}
 		} catch (Exception e) {
 			// Record or status not found yet, which is expected during polling

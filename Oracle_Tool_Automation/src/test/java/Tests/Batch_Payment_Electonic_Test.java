@@ -26,7 +26,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		Oracle_InvoicePage oraInv = new Oracle_InvoicePage();
 		Oracle_BatchPaymentPage oraBpp = new Oracle_BatchPaymentPage();
 
-		createInvoice();
+//		createInvoice();
 		waitTime(driver);
 
 		grep.testCreate("Verify Batch Payment Invoice Test", "Verify Batch Payment Invoice");
@@ -156,7 +156,12 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		oraBpp.clickRecentlyCompletedRefreshButton();
 		waitTime5(driver);
 		oraBpp.verifyPaymentNumber_inCompletedTab(dataTest.batchPaymentNumber);
+		waitTime(driver);
 
+		oraHome.clickHomeButton();
+		waitTime2(driver);
+
+		oracle_Query_InvoicePayment();
 	}
 
 	public void createInvoice() throws Exception {
@@ -272,7 +277,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		waitTime(driver);
 		grep.testCreate("Payment for invoice using Manage Installments Test",
 				"Payment for invoice using Manage Installments");
-		waitTime(driver);
+		waitTime2(driver);
 		oraInv.clickInvoiceActionAndValidateBtn("Manage Installments");
 		waitTime(driver);
 		grep.infoTest("Entering Payment reason in manage installments popup");
@@ -338,6 +343,74 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		waitTime2(driver);
 		oraInv.clickSaveAndCloseBtn();
 		waitTime3(driver);
+
+	}
+
+	public void oracle_Query_InvoicePayment() throws Exception {
+		waitTime(driver);
+		Oracle_HomePage oraHome = new Oracle_HomePage();
+		Oracle_InvoicePage oraInv = new Oracle_InvoicePage();
+
+		grep.testCreate("Verify Query Invoice Number For Paid Invoice Test",
+				"Verify Query Invoice Number For Paid Invoice");
+		waitTime(driver);
+		grep.infoTest("Clicking on Home icon");
+		logger.info("Clicking on Home icon");
+
+		grep.captureScreenshot("pass", "Inside Home Page ", "Oracle_HomePage_Query_Invoice");
+		waitTime(driver);
+		oraHome.clickNavigator();
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Expanding Payables in Navigator ", "Expand_PayablesNavigation_QueryInvoice");
+		waitTime(driver);
+		oraHome.selectSubCategoryInNavigator(dataTest.invoiceCatg);
+		waitTime1(driver);
+		grep.infoTest("Click on Tasks for Create Invoice");
+		logger.info("Click on Tasks for Create Invoice");
+		waitTime(driver);
+		oraInv.validateInvoicePageTitle();
+		waitTime(driver);
+
+		oraHome.click_Tasks_InPO();
+		waitTime1(driver);
+		oraHome.selectTasks_InTaskPage(dataTest.manageInvoiceBtn);
+		waitTime10(driver);
+		oraInv.validateManageInvoicePageTitle();
+		waitTime2(driver);
+
+		grep.captureScreenshot("pass", "Inside Manage Invoice Page", "ManageInvoicePage");
+		waitTime(driver);
+
+		oraInv.enterInvoiceNumber_InSelectAndAddPopup(dataTest.po_invoiceNum);
+		waitTime2(driver);
+		oraHome.clickSearchBtn();
+		waitTime2(driver);
+		grep.captureScreenshot("pass", "Search Invoice in Query invoice Page", "SearchInvoice_QueryInvoicePage");
+		waitTime(driver);
+
+		grep.infoTest("Clicking on Invoice Number");
+		logger.info("Clicking on Invoice Number");
+		oraInv.selectInvoiceNumber_inSearch(dataTest.po_invoiceNum);
+
+		waitTime(driver);
+		grep.infoTest("Clicking on Payments Tab");
+		logger.info("Clicking on Payments Tab");
+		oraInv.clickPaymentsTab_QueryInvoice();
+		waitTime3(driver);
+		grep.captureScreenshot("pass", "Inside Payments Tab", "InsidePaymentsTab_QueryInvoicePage");
+		waitTime(driver);
+
+		oraInv.clickPaymentNumber_QueryInvoice();
+		waitTime(driver);
+		oraInv.validateInvoiceNum_InPaymentPopup(dataTest.po_invoiceNum);
+		oraInv.validateInvoiceStatus_InPaymentPopup();
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Inside Payments Receipt Popup", "InsidePaymentsReceiptPopup_QueryInvoicePage");
+
+		waitTime2(driver);
+		oraInv.clickOk_InPaymentPopup();
+		waitTime2(driver);
+		oraHome.clickDoneReceiptBtn();
 
 	}
 

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-06T12:21:00 IST" name="Default suite" finished-at="2026-02-06T12:30:05 IST" duration-ms="545196">
+  <suite started-at="2026-02-06T15:14:12 IST" name="Default suite" finished-at="2026-02-06T15:15:39 IST" duration-ms="87256">
     <groups>
     </groups>
-    <test started-at="2026-02-06T12:21:00 IST" name="Default test" finished-at="2026-02-06T12:30:05 IST" duration-ms="545196">
-      <class name="Tests.Batch_Payment_Electonic_Test">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Batch_Payment_Electonic_Test@6492fab5]" started-at="2026-02-06T12:21:00 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-06T12:21:19 IST" duration-ms="19232" status="PASS">
+    <test started-at="2026-02-06T15:14:12 IST" name="Default test" finished-at="2026-02-06T15:15:39 IST" duration-ms="87256">
+      <class name="Tests.Accounting_At_Glance_Test">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Accounting_At_Glance_Test@72c28d64]" started-at="2026-02-06T15:14:12 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-06T15:14:28 IST" duration-ms="15630" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="oracle_Batch_Payment_Electronic()[pri:0, instance:Tests.Batch_Payment_Electonic_Test@6492fab5]" started-at="2026-02-06T12:21:19 IST" name="oracle_Batch_Payment_Electronic" finished-at="2026-02-06T12:30:05 IST" duration-ms="525284" status="PASS">
+        <test-method signature="oracle_Accounting_At_Glance()[pri:0, instance:Tests.Accounting_At_Glance_Test@72c28d64]" started-at="2026-02-06T15:14:28 IST" name="oracle_Accounting_At_Glance" finished-at="2026-02-06T15:15:38 IST" duration-ms="70739" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oracle_Batch_Payment_Electronic -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Batch_Payment_Electonic_Test@6492fab5]" started-at="2026-02-06T12:30:05 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-06T12:30:05 IST" duration-ms="606" status="PASS">
+        </test-method> <!-- oracle_Accounting_At_Glance -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Accounting_At_Glance_Test@72c28d64]" started-at="2026-02-06T15:15:38 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-06T15:15:39 IST" duration-ms="818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.Batch_Payment_Electonic_Test -->
+      </class> <!-- Tests.Accounting_At_Glance_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

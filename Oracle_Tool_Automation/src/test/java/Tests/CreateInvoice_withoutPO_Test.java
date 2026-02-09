@@ -65,7 +65,7 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		waitTime2(driver);
 		oraInv.searchAndSelectSupplier(dataTest.selectSupplier);
 		waitTime(driver);
-		oraInv.enterInvoiceNumber(dataTest.invoiceNum);
+		oraInv.enterInvoiceNumber(dataTest.invoiceNum_withoutPO);
 		waitTime2(driver);
 //		oraInv.enterInvoiceAmount("USD", dataTest.invoiceAmt);
 		oraInv.enterInvoiceAmount(dataTest.invoiceAmt);
@@ -171,7 +171,7 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 				"AccountinDraftaccountingLinesPopup_without_PO");
 
 		waitTime2(driver);
-		oraInv.validateAccountingLinesHeader(dataTest.invoiceNum);
+		oraInv.validateAccountingLinesHeader(dataTest.invoiceNum_withoutPO);
 		oraInv.verifyAccountingAmounts(dataTest.invoiceAmt);
 		oraInv.clickDoneAccountingBtn();
 
@@ -195,7 +195,7 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		grep.captureScreenshot("pass", "Validating the Accounting Lines Popup test", "accountingLinesPopup_withPO");
 
 		waitTime2(driver);
-		oraInv.validateAccountingLinesHeader(dataTest.invoiceNum);
+		oraInv.validateAccountingLinesHeader(dataTest.invoiceNum_withoutPO);
 		oraInv.clickDoneAccountingBtn();
 
 		waitTime2(driver);
@@ -246,12 +246,12 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		waitTime(driver);
 
 		// invoice num
-		oraInv.enterInvoiceNumber_InSelectAndAddPopup(dataTest.invoiceNum);
+		oraInv.enterInvoiceNumber_InSelectAndAddPopup(dataTest.invoiceNum_withoutPO);
 		waitTime2(driver);
 		// ok
 		oraHome.clickSearchBtn();
 		waitTime2(driver);
-		oraInv.searchAndSelectInvoice_inSelectAndAddPopup(dataTest.invoiceNum);
+		oraInv.searchAndSelectInvoice_inSelectAndAddPopup(dataTest.invoiceNum_withoutPO);
 		waitTime2(driver);
 		oraInv.clickOk_InSelectAndUsePopup();
 		waitTime3(driver);
@@ -268,6 +268,7 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		waitTime(driver);
 		oraHome.clickOk_inConfirmPO_popup();
 		waitTime2(driver);
+		oraHome.clickHomeFromPutAway();
 	}
 
 	private void processRevalidationFlow() throws Exception {

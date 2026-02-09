@@ -27,24 +27,24 @@ public class PayableTrialBalanceReport_Test extends TestInitializer {
 		waitTime(driver);
 
 		grep.testCreate("Verify Payable Trial Balance Report Test", "Verify Payable Trial Balance Report");
-		oraHome.clickHomeButton();
-		waitTime(driver);
-		grep.infoTest("Clicking on Home icon");
-		logger.info("Clicking on Home icon");
-
-		waitTime(driver);
-		oraHome.clickNavigator();
-		waitTime(driver);
-		oraHome.selectNavigationTab(dataTest.toolsNavTab);
-		grep.captureScreenshot("pass", "Expanding Tools in Navigator ", "ExpandingToolsNavigator");
-		waitTime(driver);
-		oraHome.selectSubCategoryInNavigator(dataTest.scheduledProcessesCatg);
-		waitTime1(driver);
-		grep.infoTest("Navigating Scheduled Processes");
-		logger.info("Navigating Scheduled Processes");
-		waitTime(driver);
-		grep.captureScreenshot("pass", "Navigating Scheduled Processes", "ScheduleProcessPage");
-		waitTime(driver);
+//		oraHome.clickHomeButton();
+//		waitTime(driver);
+//		grep.infoTest("Clicking on Home icon");
+//		logger.info("Clicking on Home icon");
+//
+//		waitTime(driver);
+//		oraHome.clickNavigator();
+//		waitTime(driver);
+//		oraHome.selectNavigationTab(dataTest.toolsNavTab);
+//		grep.captureScreenshot("pass", "Expanding Tools in Navigator ", "ExpandingToolsNavigator");
+//		waitTime(driver);
+//		oraHome.selectSubCategoryInNavigator(dataTest.scheduledProcessesCatg);
+//		waitTime1(driver);
+//		grep.infoTest("Navigating Scheduled Processes");
+//		logger.info("Navigating Scheduled Processes");
+//		waitTime(driver);
+//		grep.captureScreenshot("pass", "Navigating Scheduled Processes", "ScheduleProcessPage");
+//		waitTime(driver);
 
 		grep.infoTest("Click on Schedule New Process");
 		logger.info("Click on Schedule New Process");
@@ -129,7 +129,8 @@ public class PayableTrialBalanceReport_Test extends TestInitializer {
 		oraAag.waitForProcessSuccess(process_id_int, 5);
 		waitTime(driver);
 
-		grep.captureScreenshot("pass", " Payable Trail Balance Schedule Process Sucess", "PayableTrailBalance_ScheduleProcessSucess");
+		grep.captureScreenshot("pass", " Payable Trail Balance Schedule Process Sucess",
+				"PayableTrailBalance_ScheduleProcessSucess");
 		waitTime3(driver);
 
 	}

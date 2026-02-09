@@ -33,7 +33,7 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 		waitTime(driver);
 		oraHome.clickNavigator();
 		waitTime(driver);
-		oraHome.selectNavigationTab(dataTest.payableNavTab);
+//		oraHome.selectNavigationTab(dataTest.payableNavTab);
 		grep.captureScreenshot("pass", "Expanding Payables in Navigator ", "Expand_PayablesNavigation_WithPO");
 		waitTime(driver);
 		oraHome.selectSubCategoryInNavigator(dataTest.invoiceCatg);

@@ -97,7 +97,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		waitTime10(driver);
 		oraBpp.clickRefreshPaymentProcessBtn();
 		waitTime(driver);
-		oraBpp.waitForPaymentRecordAndStatus(dataTest.batchPaymentNumber, dataTest.pendingInstallReviewStatus, 10);
+		oraBpp.waitForPaymentRecordAndStatus(dataTest.batchPaymentNumber, dataTest.pendingInstallReviewStatus, 2);
 		waitTime2(driver);
 
 		grep.captureScreenshot("pass", "Inside review Installment Page", "InsideReviewInstallmentPage");
@@ -112,7 +112,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		oraBpp.clickRefreshPaymentProcessBtn();
 		waitTime10(driver);
 
-		oraBpp.waitForPaymentRecordAndStatus(dataTest.batchPaymentNumber, dataTest.pendingActionToComplete, 10);
+		oraBpp.waitForPaymentRecordAndStatus(dataTest.batchPaymentNumber, dataTest.pendingActionToComplete, 2);
 		waitTime2(driver);
 
 		grep.captureScreenshot("pass", "Inside Assign Proposed Payment Page", "InsideReviewProposedPaymentPage");

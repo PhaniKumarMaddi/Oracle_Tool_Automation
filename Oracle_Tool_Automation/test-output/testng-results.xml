@@ -1,38 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-09T13:40:57 IST" name="Suite" finished-at="2026-02-09T13:44:24 IST" duration-ms="207180">
+  <suite started-at="2026-02-09T14:18:28 IST" name="Default suite" finished-at="2026-02-09T14:28:23 IST" duration-ms="595222">
     <groups>
     </groups>
-    <test started-at="2026-02-09T13:40:57 IST" name="OracleInvoiceTest" finished-at="2026-02-09T13:44:24 IST" duration-ms="207180">
-      <class name="Tests.Accounting_At_Glance_Test">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Accounting_At_Glance_Test@2c532cd8]" started-at="2026-02-09T13:40:57 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-09T13:41:11 IST" duration-ms="14044" status="PASS">
+    <test started-at="2026-02-09T14:18:28 IST" name="Default test" finished-at="2026-02-09T14:28:23 IST" duration-ms="595222">
+      <class name="Tests.Batch_Payment_Electonic_Test">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Batch_Payment_Electonic_Test@2c5529ab]" started-at="2026-02-09T14:18:28 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-09T14:18:42 IST" duration-ms="14620" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[OracleInvoice_Report.html]]>
+                <![CDATA[OraclePage.html]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="oracle_Accounting_At_Glance()[pri:0, instance:Tests.Accounting_At_Glance_Test@2c532cd8]" started-at="2026-02-09T13:41:11 IST" name="oracle_Accounting_At_Glance" finished-at="2026-02-09T13:43:22 IST" duration-ms="131252" status="PASS">
+        <test-method signature="oracle_Batch_Payment_Electronic()[pri:0, instance:Tests.Batch_Payment_Electonic_Test@2c5529ab]" started-at="2026-02-09T14:18:42 IST" name="oracle_Batch_Payment_Electronic" finished-at="2026-02-09T14:28:22 IST" duration-ms="579713" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oracle_Accounting_At_Glance -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Accounting_At_Glance_Test@2c532cd8]" started-at="2026-02-09T13:44:23 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-09T13:44:24 IST" duration-ms="296" status="PASS">
+        </test-method> <!-- oracle_Batch_Payment_Electronic -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Batch_Payment_Electonic_Test@2c5529ab]" started-at="2026-02-09T14:28:22 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-09T14:28:23 IST" duration-ms="812" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.Accounting_At_Glance_Test -->
-      <class name="Tests.PayableTrialBalanceReport_Test">
-        <test-method signature="oracle_Payable_Trial_Balance_Report()[pri:0, instance:Tests.PayableTrialBalanceReport_Test@31000e60]" started-at="2026-02-09T13:43:22 IST" name="oracle_Payable_Trial_Balance_Report" finished-at="2026-02-09T13:44:23 IST" duration-ms="61527" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- oracle_Payable_Trial_Balance_Report -->
-      </class> <!-- Tests.PayableTrialBalanceReport_Test -->
-    </test> <!-- OracleInvoiceTest -->
-  </suite> <!-- Suite -->
+      </class> <!-- Tests.Batch_Payment_Electonic_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

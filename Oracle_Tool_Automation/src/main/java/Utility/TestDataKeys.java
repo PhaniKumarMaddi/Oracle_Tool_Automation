@@ -37,8 +37,8 @@ public class TestDataKeys {
 	public String identifyPo = "CRPO500071"; // 68,69 70 - 75need po existing
 
 	// Batch payment
-	public String invoiceNum = "Test_Batch_02";
-	public String batchPaymentNumber = "MP_ELE_Payment_17";
+	public String invoiceNum = "Test_Batch_03";
+	public String batchPaymentNumber = "MP_ELE_Payment_18";
 	public String batchTemplate = "WFB CHECK USD PPR";
 	public String pendingInstallReviewStatus = "Pending installments review";
 	public String pendingActionToComplete = "Pending action to complete information required";

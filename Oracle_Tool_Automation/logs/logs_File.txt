@@ -12664,3 +12664,27 @@ Session ID: f4db036e44da9b6139a9c193ca3f10d5
 2026-02-09 14:28:17 [main] INFO : Expected :Fully paid and Actual :Fully paid both are same
 2026-02-09 14:28:23 [main] INFO : Testing Ended
 2026-02-09 14:28:23 [main] INFO : ***********
+2026-02-09 16:25:23 [main] INFO : Launching Chrome Browser
+2026-02-09 16:25:23 [main] INFO : Report Name :OraclePage.html
+2026-02-09 16:25:29 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-09 16:25:33 [main] INFO : Logged in to Oracle Application
+2026-02-09 16:25:34 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-09 16:25:34 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-09 16:25:38 [main] INFO : Clicking on Home icon
+2026-02-09 16:25:41 [main] INFO : Click on Tasks for Create Invoice
+2026-02-09 16:25:44 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-09 16:25:44 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-09 16:25:57 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices
+2026-02-09 16:25:57 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices both are same
+2026-02-09 16:26:00 [main] INFO : Entering Invoice Number: Test_PO_Test_002
+2026-02-09 16:26:05 [main] INFO : Clicking on Invoice Number
+2026-02-09 16:26:06 [main] INFO : Clicking on Payments Tab
+2026-02-09 16:26:14 [main] INFO : Payment number got invoice: 6000027
+2026-02-09 16:26:17 [main] INFO : Validating Invoice Number in Payment Popup: Test_PO_Test_002
+2026-02-09 16:26:17 [main] INFO : Expected :Test_PO_Test_002 and Actual :Test_PO_Test_002
+2026-02-09 16:26:17 [main] INFO : Expected :Test_PO_Test_002 and Actual :Test_PO_Test_002 both are same
+2026-02-09 16:26:18 [main] INFO : Validating Invoice Status in Payment Popup: Fully paid
+2026-02-09 16:26:18 [main] INFO : Expected :Fully paid and Actual :Fully paid
+2026-02-09 16:26:18 [main] INFO : Expected :Fully paid and Actual :Fully paid both are same
+2026-02-09 16:26:23 [main] INFO : Testing Ended
+2026-02-09 16:26:23 [main] INFO : ***********

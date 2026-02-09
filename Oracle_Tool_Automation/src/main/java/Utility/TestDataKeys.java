@@ -7,6 +7,9 @@ public class TestDataKeys {
 	public String paymentsCatg = "Payments";
 	public String toolsNavTab = "Tools";
 	public String scheduledProcessesCatg = "Scheduled Processes";
+	public String receivableNavTab = "Receivables";
+	public String createTransactionAction = "Create Transaction";
+	public String accReceivableCatg = "Accounts Receivable";
 
 	public String createInvoiceBtn = "Create Invoice";
 	public String createPaymentBtn = "Create Payment";
@@ -55,4 +58,12 @@ public class TestDataKeys {
 	public String payablesSubLedger = "Payables";
 	public String crPrimaryLedger = "CR PRIMARY LEDGER";
 
+	// Account receivables
+	public String transactionSource = "CR MANUAL TRANSACTION";
+	public String transactionType = "CR INVOICE";
+	public String customerName = "CR GE";
+	public String net_PaymentTerms = "Net 30";
+	public String receiptMethod = "CR RECEIPT";
+	
+	
 }

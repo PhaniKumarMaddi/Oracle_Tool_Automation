@@ -11,8 +11,8 @@ import Utility.GenerateReports;
 import Utility.TestDataKeys;
 import Utility.ValidatingAssertions;
 
-public class Query_Invoice_Payment_Test extends TestInitializer {
-	private static final Logger logger = LogManager.getLogger(Query_Invoice_Payment_Test.class);
+public class OldQuery_Invoice_Payment_Test extends TestInitializer {
+	private static final Logger logger = LogManager.getLogger(OldQuery_Invoice_Payment_Test.class);
 	GenerateReports grep = new GenerateReports();
 	ValidatingAssertions validAssert = new ValidatingAssertions();
 	TestDataKeys dataTest = new TestDataKeys();

@@ -11,22 +11,22 @@ import Utility.GenerateReports;
 import Utility.TestDataKeys;
 import Utility.ValidatingAssertions;
 
-public class Accounting_At_Glance_Test extends TestInitializer {
-	private static final Logger logger = LogManager.getLogger(Accounting_At_Glance_Test.class);
+public class PayableTrialBalanceReport_Test extends TestInitializer {
+	private static final Logger logger = LogManager.getLogger(PayableTrialBalanceReport_Test.class);
 	GenerateReports grep = new GenerateReports();
 	ValidatingAssertions validAssert = new ValidatingAssertions();
 	TestDataKeys dataTest = new TestDataKeys();
 	String retrieveDC_id;
 
 	@Test
-	public void oracle_Accounting_At_Glance() throws Exception {
+	public void oracle_Payable_Trial_Balance_Report() throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_AccountingAtGlance oraAag = new Oracle_AccountingAtGlance();
 
 		waitTime(driver);
 
-		grep.testCreate("Verify Accounting at Glance Test", "Verify Accounting at Glance");
+		grep.testCreate("Verify Payable Trial Balance Report Test", "Verify Payable Trial Balance Report");
 		oraHome.clickHomeButton();
 		waitTime(driver);
 		grep.infoTest("Clicking on Home icon");
@@ -36,14 +36,14 @@ public class Accounting_At_Glance_Test extends TestInitializer {
 		oraHome.clickNavigator();
 		waitTime(driver);
 		oraHome.selectNavigationTab(dataTest.toolsNavTab);
-		grep.captureScreenshot("pass", "Expanding Tools in Navigator ", "ExpandingToolsNavigator_AccountingGlance");
+		grep.captureScreenshot("pass", "Expanding Tools in Navigator ", "ExpandingToolsNavigator");
 		waitTime(driver);
 		oraHome.selectSubCategoryInNavigator(dataTest.scheduledProcessesCatg);
 		waitTime1(driver);
 		grep.infoTest("Navigating Scheduled Processes");
 		logger.info("Navigating Scheduled Processes");
 		waitTime(driver);
-		grep.captureScreenshot("pass", "Navigating Scheduled Processes", "ScheduleProcessPage_AccountingGlance");
+		grep.captureScreenshot("pass", "Navigating Scheduled Processes", "ScheduleProcessPage");
 		waitTime(driver);
 
 		grep.infoTest("Click on Schedule New Process");
@@ -65,28 +65,20 @@ public class Accounting_At_Glance_Test extends TestInitializer {
 		grep.infoTest("Click on name and type the name");
 		logger.info("Click on name and type the name");
 		waitTime(driver);
-		oraAag.enterName(dataTest.createAccounting);
+		oraAag.enterName(dataTest.payableTrail);
 		waitTime(driver);
 		oraAag.clickSearchBtn();
 		waitTime(driver);
-		grep.infoTest("Select the Create Accounting  Name and click ok");
-		logger.info("Select the Create Accounting  Name and click ok");
+		grep.infoTest("Select the Payables Trial  Name and click ok");
+		logger.info("Select the Payables Trial  Name and click ok");
 		waitTime(driver);
-		oraAag.clickSelectNameFromList(dataTest.createAccounting);
+		oraAag.clickSelectNameFromList(dataTest.payableTrail);
 		waitTime(driver);
 		oraAag.clickOk_inSelectNamePopup();
 		waitTime2(driver);
 		oraAag.clickOk_inScheduleProcessPopup();
 		waitTime(driver);
-		grep.infoTest("Click on Subledger Application and Select Payables");
-		logger.info("Click on Subledger Application and Select Payables");
-		waitTime(driver);
-		oraAag.selectSubledgerApplication(dataTest.payablesSubLedger);
-		waitTime(driver);
-		grep.infoTest("Click on ledger or ledger Set dropdown and click Search");
-		logger.info("Click on ledger or ledger Set dropdown and click Search");
-		waitTime(driver);
-		oraAag.clickLedgerOrLedgerSetDropdownButton();
+		oraAag.clickLedgerDropdownButton();
 		waitTime(driver);
 
 		grep.infoTest("Search and Select CR PRIMARY LEDGER");
@@ -94,20 +86,20 @@ public class Accounting_At_Glance_Test extends TestInitializer {
 		waitTime(driver);
 		oraAag.clickSearch_InDropdown();
 		waitTime2(driver);
-		oraAag.enterLedgerOr_LedgerSet(dataTest.crPrimaryLedger);
+		oraAag.enterName(dataTest.crPrimaryLedger);
 		waitTime3(driver);
 		oraAag.clickSearchBtn();
 		waitTime(driver);
-		oraAag.clickSelectLedger_LedgerSetFromList(dataTest.crPrimaryLedger);
+		oraAag.clickSelectLedgerFromList(dataTest.crPrimaryLedger);
 		waitTime(driver);
-		oraAag.clickOk_inLedgerSetPopup();
+		oraAag.clickOk_inLedgerPopup();
 		waitTime(driver);
-		grep.infoTest("Click on Process category and Select Invoices");
-		logger.info("Click on Process category and Select Invoices");
+		grep.infoTest("Click on Business Unit and Select CRITICAL RIVER BU");
+		logger.info("Click on Business Unit and Select CRITICAL RIVER BU");
 		waitTime(driver);
-		oraAag.selectProcessCategory("Invoices");
+		oraAag.searchAndSelectBusinessUnit_inProcessDetails(dataTest.selectBU);
 		waitTime2(driver);
-		grep.captureScreenshot("pass", "Creating Schedule Process for Accounting at Glance", "AccoutingGlance_ScheduleProcessCreated");
+		grep.captureScreenshot("pass", "Creating Payable Trail Balance report", "payableTrailBalance");
 
 		grep.infoTest("Click on Submit at the top");
 		logger.info("Click on Submit at the top");
@@ -136,22 +128,9 @@ public class Accounting_At_Glance_Test extends TestInitializer {
 		waitTime(driver);
 		oraAag.waitForProcessSuccess(process_id_int, 5);
 		waitTime(driver);
-//		int id = process_id_int + 1;
-//		oraAag.verifySubProcessTaskCreated(id, "Create Accounting: Subprocess");
-//		waitTime(driver);
-//		oraAag.waitForProcessSuccess(id, 5);
 
-		grep.captureScreenshot("pass", "Schedule Process Sucess", "ScheduleProcessSucess");
+		grep.captureScreenshot("pass", " Payable Trail Balance Schedule Process Sucess", "PayableTrailBalance_ScheduleProcessSucess");
 		waitTime3(driver);
-		grep.infoTest("Click on Create Accounting Execution Report");
-		logger.info("Click on Create Accounting Execution Report");
-		waitTime(driver);
-		oraAag.clickAccountingExecutionReport();
-		waitTime2(driver);
-		grep.captureScreenshot("pass", "Accounting Execution Report", "AccountExecutionReport");
-		waitTime(driver);
-		oraAag.clickXMLDataBtn();
-		waitTime(driver);
 
 	}
 }

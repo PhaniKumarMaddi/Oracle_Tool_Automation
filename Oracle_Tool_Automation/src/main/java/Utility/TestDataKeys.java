@@ -51,6 +51,7 @@ public class TestDataKeys {
 
 	// accounting at glance
 	public String createAccounting = "Create Accounting";
+	public String payableTrail = "Payables Trial Balance Report";
 	public String payablesSubLedger = "Payables";
 	public String crPrimaryLedger = "CR PRIMARY LEDGER";
 

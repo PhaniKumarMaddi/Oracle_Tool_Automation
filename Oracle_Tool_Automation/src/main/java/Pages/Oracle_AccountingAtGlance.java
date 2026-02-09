@@ -36,9 +36,11 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 	By subledgerApplication = By
 			.xpath("//label[text()='Subledger Application']/parent::td/following-sibling::td/select");
 	By ledgerOrLedgerSetDropdown = By.xpath("//a[@title='Search: Ledger or Ledger Set']");
+	By ledgerDropdown = By.xpath("//a[@title='Ledger']");
 	By insertLedgerOrLedgerSet = By.xpath("//label[text()=' Ledger or Ledger Set']/preceding-sibling::input");
-	By ok_inledger = By
+	By ok_inledgerSet = By
 			.xpath("//button[contains(@id,'basicReqBody:paramDynForm_LedgerAttr::lovDialogId::ok') and text()='OK']");
+	By ok_inledger = By.xpath("//button[contains(@id,'basicReqBody:dynam1:0:ld::lovDialogId::ok') and text()='OK']");
 
 	By processCatgDropdown = By.xpath("//label[text()='Process Category']/parent::td/following-sibling::td/select");
 	By submitBtn_inProcessDetail = By.xpath("//a[@accesskey='m']");
@@ -50,6 +52,7 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 			.xpath("//td[contains(@id,'confirmationPopup:confirmSubmitDialog')]/descendant::button");
 	By accountingExecutionReport = By.xpath("//span[text()='Create Accounting Execution Report']");
 	By xmlBtn = By.xpath("//div[@id='deliveryInfo']/descendant::a[@id='XMLData']");
+	By businessUnitDropdown = By.xpath("//a[starts-with(@title,'Business Unit')]");
 
 //Process 4796079 was submitted.
 
@@ -189,6 +192,24 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 		}
 	}
 
+	public void clickLedgerDropdownButton() throws Exception {
+		try {
+			implWait(driver);
+			boolean elementExists = !driver.findElements(ledgerDropdown).isEmpty();
+			if (elementExists) {
+				waitForElementToBeClickable(ledgerDropdown, 30);
+				driver.findElement(ledgerDropdown).click();
+			} else {
+				logger.error("Ledger dropdown button Not Available ");
+				grep.failTest("Ledger dropdown button Not Available ");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			grep.failTest("Test Failed :" + e.getMessage());
+			logger.error("Test Failed :" + e.getMessage());
+		}
+	}
+
 	public void enterLedgerOr_LedgerSet(String ledgerVal) {
 		try {
 			implWait(driver);
@@ -203,7 +224,7 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 		}
 	}
 
-	public void clickSelectLedgerFromList(String ledger) throws Exception {
+	public void clickSelectLedger_LedgerSetFromList(String ledger) throws Exception {
 
 		try {
 			By selectLedger = By.xpath(
@@ -219,6 +240,29 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 			e.printStackTrace();
 		}
 
+	}
+
+	public void clickSelectLedgerFromList(String ledger) throws Exception {
+
+		try {
+			By selectLedger = By.xpath(
+					"//div[contains(@id,'basicReqBody:dynam1:0:ld_afrLovInternalTableId::db')]/descendant::span[text()='"
+							+ ledger + "']");
+
+			implWait(driver);
+			List<WebElement> state = driver.findElements(selectLedger);
+			if (state.size() > 0) {
+				state.getFirst().click();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void clickOk_inLedgerSetPopup() {
+		implWait(driver);
+		driver.findElement(ok_inledgerSet).click();
 	}
 
 	public void clickOk_inLedgerPopup() {
@@ -397,6 +441,24 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 		waitForElement(xmlBtn, 20);
 		scrollView(xmlBtn);
 		driver.findElement(xmlBtn).click();
+	}
+
+	public void searchAndSelectBusinessUnit_inProcessDetails(String businessUnitVal) {
+		try {
+			implWait(driver);
+			By selectBusinessUnit = By.xpath("//span[text()='" + businessUnitVal + "']");
+
+			driver.findElement(businessUnitDropdown).click();
+			driver.findElement(businessUnitDropdown).sendKeys(businessUnitVal);
+			waitTime(driver);
+			grep.infoTest("Selecting Business Unit: " + businessUnitVal);
+			logger.info("Selecting Business Unit: " + businessUnitVal);
+			waitForElementToBeClickable(selectBusinessUnit, 20);
+			driver.findElement(selectBusinessUnit).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }

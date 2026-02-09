@@ -1,93 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-09T11:29:28 IST" name="Default suite" finished-at="2026-02-09T11:32:04 IST" duration-ms="156216">
+  <suite started-at="2026-02-09T13:40:57 IST" name="Suite" finished-at="2026-02-09T13:44:24 IST" duration-ms="207180">
     <groups>
     </groups>
-    <test started-at="2026-02-09T11:29:28 IST" name="Default test" finished-at="2026-02-09T11:32:04 IST" duration-ms="156216">
-      <class name="Tests.CreateInvoice_With_PO_Test">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.CreateInvoice_With_PO_Test@72c28d64]" started-at="2026-02-09T11:29:28 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-09T11:29:42 IST" duration-ms="14248" status="PASS">
+    <test started-at="2026-02-09T13:40:57 IST" name="OracleInvoiceTest" finished-at="2026-02-09T13:44:24 IST" duration-ms="207180">
+      <class name="Tests.Accounting_At_Glance_Test">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Accounting_At_Glance_Test@2c532cd8]" started-at="2026-02-09T13:40:57 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-09T13:41:11 IST" duration-ms="14044" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[OraclePage.html]]>
+                <![CDATA[OracleInvoice_Report.html]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="oracle_InvoiceCreation_WithPO()[pri:0, instance:Tests.CreateInvoice_With_PO_Test@72c28d64]" started-at="2026-02-09T11:29:42 IST" name="oracle_InvoiceCreation_WithPO" finished-at="2026-02-09T11:32:03 IST" duration-ms="141210" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [696ea394067f095bb9a7901680482207, setTimeout {implicit=30000}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61481}, goog:processID: 5436, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61481/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 696ea394067f095bb9a7901680482207]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [696ea394067f095bb9a7901680482207, setTimeout {implicit=30000}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61481}, goog:processID: 5436, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61481/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 696ea394067f095bb9a7901680482207
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:964)
-at Utility.WaitsManager.implWait(WaitsManager.java:161)
-at Pages.Oracle_InvoicePage.clickOk_forWarn_MatchInvoicePopup(Oracle_InvoicePage.java:761)
-at Tests.CreateInvoice_With_PO_Test.oracle_InvoiceCreation_WithPO(CreateInvoice_With_PO_Test.java:92)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method signature="oracle_Accounting_At_Glance()[pri:0, instance:Tests.Accounting_At_Glance_Test@2c532cd8]" started-at="2026-02-09T13:41:11 IST" name="oracle_Accounting_At_Glance" finished-at="2026-02-09T13:43:22 IST" duration-ms="131252" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oracle_InvoiceCreation_WithPO -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CreateInvoice_With_PO_Test@72c28d64]" started-at="2026-02-09T11:32:03 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-09T11:32:04 IST" duration-ms="685" status="PASS">
+        </test-method> <!-- oracle_Accounting_At_Glance -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Accounting_At_Glance_Test@2c532cd8]" started-at="2026-02-09T13:44:23 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-09T13:44:24 IST" duration-ms="296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.CreateInvoice_With_PO_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Tests.Accounting_At_Glance_Test -->
+      <class name="Tests.PayableTrialBalanceReport_Test">
+        <test-method signature="oracle_Payable_Trial_Balance_Report()[pri:0, instance:Tests.PayableTrialBalanceReport_Test@31000e60]" started-at="2026-02-09T13:43:22 IST" name="oracle_Payable_Trial_Balance_Report" finished-at="2026-02-09T13:44:23 IST" duration-ms="61527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oracle_Payable_Trial_Balance_Report -->
+      </class> <!-- Tests.PayableTrialBalanceReport_Test -->
+    </test> <!-- OracleInvoiceTest -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -391,10 +391,9 @@ public class Oracle_InvoicePage extends WaitsManager {
 			implWait(driver);
 //			waitForElementToBeClickable(invoiceActionBtn, 30);
 			By invoiceActBtn = By.xpath("//td[text()='" + actionVal + "']");
-			waitTime(driver);
-
+			waitTime2(driver);
 			driver.findElement(invoiceActionBtn).click();
-			waitTime1(driver);
+			waitTime3(driver);
 			driver.findElement(invoiceActBtn).click();
 			waitTime1(driver);
 		} catch (Exception e) {
@@ -513,7 +512,7 @@ public class Oracle_InvoicePage extends WaitsManager {
 
 		try {
 			// 1. Wait for the dialog header to be visible
-			waitForElement(accountinLineHeader, 20);
+			waitForElement(accountinLineHeader, 60);
 
 			WebElement header = driver.findElement(accountinLineHeader);
 			String actualHeaderText = header.getText();
@@ -703,7 +702,7 @@ public class Oracle_InvoicePage extends WaitsManager {
 			driver.findElement(identifyPO).sendKeys(poVal);
 			waitTime(driver);
 			grep.infoTest("Selecting PO: " + poVal);
-			logger.info("Selecting Supplier: " + poVal);
+			logger.info("Selecting PO: " + poVal);
 			waitTime2(driver);
 			waitForElementToBeClickable(selectPo, 20);
 			driver.findElement(selectPo).click();

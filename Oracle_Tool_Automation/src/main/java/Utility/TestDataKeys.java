@@ -16,7 +16,7 @@ public class TestDataKeys {
 	public String selectBU = "CRITICAL RIVER BU";
 	public String selectLegal = "CRITICAL RIVER LE";
 	public String selectSupplier = "CR Applied Material";
-	public String invoiceAmt = "300";
+	public String invoiceAmt = "180";
 	public String invoiceDesc = "Test Supplier Invoices for Expenses";
 	public String paymentTerms = "IMMEDIATE";
 	public String date = "06";
@@ -31,14 +31,14 @@ public class TestDataKeys {
 	public String paymentProfile = "WFB EFT PPP";
 	public String paymentCheckMethod = "Check";
 	public String paymentProfile_Check = "WFB CHECK PPP";
-	public String invoiceNum_withoutPO = "Test_WithoutPO_01"; // change values
+	public String invoiceNum_withoutPO = "Test_WithoutPO_07"; // change values
 	// with po
-	public String po_invoiceNum = "Test_PO_Test_0011"; // change values
-	public String identifyPo = "CRPO500068"; // 68,69  70 - 75need po existing
+	public String po_invoiceNum = "Test_PO_Test_002"; // change values
+	public String identifyPo = "CRPO500071"; // 68,69 70 - 75need po existing
 
 	// Batch payment
-	public String invoiceNum = "Test_Batch_01";
-	public String batchPaymentNumber = "MP_ELE_Payment_15";
+	public String invoiceNum = "Test_Batch_02";
+	public String batchPaymentNumber = "MP_ELE_Payment_17";
 	public String batchTemplate = "WFB CHECK USD PPR";
 	public String pendingInstallReviewStatus = "Pending installments review";
 	public String pendingActionToComplete = "Pending action to complete information required";

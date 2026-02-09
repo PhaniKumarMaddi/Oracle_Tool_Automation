@@ -117,27 +117,29 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		if (status.equals("Needs revalidation")) {
 			processRevalidationFlow();
 			status = oraInv.getInvoiceValidation(); // Refresh status after fix
-		}
+			waitTime2(driver);
+			}
 
 		// 3. Final verification and logging
 		if (status.equals("Validated")) {
 			grep.infoTest("Validated");
 			logger.info("Validated");
 			grep.captureScreenshot("pass", "Invoice Validated  test", "InvoiceValidated");
+			waitTime2(driver);
 		} else {
 			grep.failTest("Invoice status is currently: " + status);
 			logger.warn("Invoice status is currently: " + status);
 		}
 
-		waitTime(driver);
+		waitTime2(driver);
 		grep.testCreate("Payment for invoice using Manage Installments Test",
 				"Payment for invoice using Manage Installments");
-		waitTime(driver);
+		waitTime2(driver);
 		oraInv.clickInvoiceActionAndValidateBtn("Manage Installments");
-		waitTime(driver);
+		waitTime2(driver);
 		grep.infoTest("Entering Payment reason in manage installments popup");
 		logger.info("Entering Payment reason in manage installments popup");
-		waitTime(driver);
+		waitTime2(driver);
 
 		oraInv.enterPaymentReasonComment(dataTest.paymentReasonDesc);
 		waitTime(driver);
@@ -194,7 +196,7 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 
 		grep.captureScreenshot("pass", "Validating the Accounting Lines Popup test", "accountingLinesPopup_withPO");
 
-		waitTime2(driver);
+		waitTime5(driver);
 		oraInv.validateAccountingLinesHeader(dataTest.invoiceNum_withoutPO);
 		oraInv.clickDoneAccountingBtn();
 
@@ -241,9 +243,9 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		waitTime(driver);
 		grep.infoTest("Click on 'Select and Add' Under Invoices to Pay at the bottom");
 		logger.info("Click on 'Select and Add' Under Invoices to Pay at the bottom");
-		waitTime(driver);
+		waitTime2(driver);
 		oraInv.clickSelectAndUseButton();
-		waitTime(driver);
+		waitTime2(driver);
 
 		// invoice num
 		oraInv.enterInvoiceNumber_InSelectAndAddPopup(dataTest.invoiceNum_withoutPO);

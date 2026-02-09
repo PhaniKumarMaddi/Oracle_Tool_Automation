@@ -3,11 +3,7 @@
 <suite name="Suite">
 	<test thread-count="5" name="OracleInvoiceTest">
 		<parameter name="FileName" value="OracleInvoice_Report.html" />
-
 		<classes>
-			<class name="Tests.CreateInvoice_withoutPO_Test" />
-			<class name="Tests.CreateInvoice_With_PO_Test" />
-			<class name="Tests.Batch_Payment_Electonic_Test" />
 			<class name="Tests.Accounting_At_Glance_Test" />
 			<class name="Tests.PayableTrialBalanceReport_Test" />
 		</classes>

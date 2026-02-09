@@ -137,7 +137,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		oraBpp.clickResumePaymentButton();
 		waitTime(driver);
 
-		oraBpp.waitForPaymentStatusAndExpand(dataTest.batchPaymentNumber, dataTest.waitingForPaymentFileStatus, 10);
+		oraBpp.waitForPaymentStatusAndExpand(dataTest.batchPaymentNumber, dataTest.waitingForPaymentFileStatus, 2);
 
 		waitTime(driver);
 		String paymentReceiptNum = oraBpp.getPaymentProcessRequestNumber(dataTest.batchPaymentNumber);

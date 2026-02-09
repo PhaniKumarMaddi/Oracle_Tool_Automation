@@ -38,7 +38,7 @@ public class Oracle_Receivables_Page extends WaitsManager {
 	By unitPrice_inLine = By.xpath("//label[text()='Unit Price']/preceding-sibling::input");
 	By saveBtn = By.xpath("//a/span[text()='Save']");
 	By completeCreateAnother_DropdownBtn = By.xpath("//a[@title='Complete and Create Another']");
-	By completReview = By.xpath("//td[text()='Complete and Review']");
+
 	By actionBtn = By.xpath("//a[text()='Actions]");
 	By accountinLineHeader = By.xpath("//div[contains(@id,':d12::_ttxt')]");
 	By saveDropdownBtn = By.xpath("//a[@title='Save']");
@@ -237,22 +237,31 @@ public class Oracle_Receivables_Page extends WaitsManager {
 		implWait(driver);
 		driver.findElement(saveBtn).click();
 	}
-	
-	public void clickCompleteAndCreateBtn_inTransactionPage() {
+
+	public void clickCompleteAndCreateBtn_inTransactionPage(String selectOpt) throws Exception {
+
 		implWait(driver);
+		By completReviewBtn = By.xpath("//td[text()='" + selectOpt + "']");
+
 		driver.findElement(completeCreateAnother_DropdownBtn).click();
+		driver.findElement(completReviewBtn).click();
+		waitTime(driver);
+		grep.infoTest("Selecting " + selectOpt + " Option");
+		logger.info("Selecting " + selectOpt + " Option");
+		waitTime(driver);
+
 	}
-	
+
 	//
 
-	public void clickInvoiceActionAndValidateBtn(String actionVal) throws Exception {
+	public void clickActionAndValidate_inTransactionBtn(String actionVal) throws Exception {
 		try {
 			implWait(driver);
-			By invoiceActBtn = By.xpath("//td[text()='" + actionVal + "']");
+			By transactionActBtn = By.xpath("//td[text()='" + actionVal + "']");
 			waitTime2(driver);
 			driver.findElement(actionBtn).click();
 			waitTime3(driver);
-			driver.findElement(invoiceActBtn).click();
+			driver.findElement(transactionActBtn).click();
 			waitTime1(driver);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -283,4 +292,17 @@ public class Oracle_Receivables_Page extends WaitsManager {
 			e.printStackTrace();
 		}
 	}
+
+	public void clickSaveAndCloseBtn_inTransactionPage() {
+		try {
+			implWait(driver);
+			driver.findElement(saveDropdownBtn).click();
+			waitTime(driver);
+			driver.findElement(saveAndCloseBtn).click();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Create Receipt 
 }

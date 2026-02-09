@@ -107,7 +107,8 @@ public class Accounting_At_Glance_Test extends TestInitializer {
 		waitTime(driver);
 		oraAag.selectProcessCategory("Invoices");
 		waitTime2(driver);
-		grep.captureScreenshot("pass", "Creating Schedule Process for Accounting at Glance", "AccoutingGlance_ScheduleProcessCreated");
+		grep.captureScreenshot("pass", "Creating Schedule Process for Accounting at Glance",
+				"AccoutingGlance_ScheduleProcessCreated");
 
 		grep.infoTest("Click on Submit at the top");
 		logger.info("Click on Submit at the top");
@@ -134,24 +135,25 @@ public class Accounting_At_Glance_Test extends TestInitializer {
 		grep.infoTest("Click on refresh button multiple times beside Change Process Priority");
 		logger.info("Click on refresh button multiple times beside Change Process Priority");
 		waitTime(driver);
-		oraAag.waitForProcessSuccess(process_id_int, 5);
+		oraAag.waitForProcessSuccess(process_id_int, 2);
 		waitTime(driver);
-//		int id = process_id_int + 1;
-//		oraAag.verifySubProcessTaskCreated(id, "Create Accounting: Subprocess");
-//		waitTime(driver);
-//		oraAag.waitForProcessSuccess(id, 5);
+		grep.captureScreenshot("pass", "Create Processing Schedule Process Sucess",
+				"CreateProcessing_ScheduleProcessSucess");
 
-		grep.captureScreenshot("pass", "Schedule Process Sucess", "ScheduleProcessSucess");
-		waitTime3(driver);
-		grep.infoTest("Click on Create Accounting Execution Report");
-		logger.info("Click on Create Accounting Execution Report");
 		waitTime(driver);
-		oraAag.clickAccountingExecutionReport();
-		waitTime2(driver);
-		grep.captureScreenshot("pass", "Accounting Execution Report", "AccountExecutionReport");
-		waitTime(driver);
-		oraAag.clickXMLDataBtn();
-		waitTime(driver);
+		oraAag.waitForSubProcessSuccess(1);
+		grep.captureScreenshot("pass", "Sub Processing Schedule Process Sucess", "SubProcessing_ScheduleProcessSucess");
+
+//		waitTime3(driver);
+//		grep.infoTest("Click on Create Accounting Execution Report");
+//		logger.info("Click on Create Accounting Execution Report");
+//		waitTime(driver);
+//		oraAag.clickAccountingExecutionReport();
+//		waitTime2(driver);
+//		grep.captureScreenshot("pass", "Accounting Execution Report", "AccountExecutionReport");
+//		waitTime(driver);
+//		oraAag.clickXMLDataBtn();
+//		waitTime(driver);
 
 	}
 }

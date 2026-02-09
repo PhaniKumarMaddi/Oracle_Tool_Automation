@@ -11435,3 +11435,150 @@ Session ID: 96a442edef2f0936c506d743bf91522a
 2026-02-09 10:01:29 [main] INFO : Process 4804677 completed successfully.
 2026-02-09 10:01:33 [main] INFO : Testing Ended
 2026-02-09 10:01:33 [main] INFO : ***********
+2026-02-09 10:15:45 [main] INFO : Launching Chrome Browser
+2026-02-09 10:15:46 [main] INFO : Report Name :OraclePage.html
+2026-02-09 10:15:51 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-09 10:15:55 [main] INFO : Logged in to Oracle Application
+2026-02-09 10:15:56 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-09 10:15:56 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-09 10:16:00 [main] INFO : Clicking on Home icon
+2026-02-09 10:16:03 [main] INFO : Navigating Scheduled Processes
+2026-02-09 10:16:05 [main] INFO : Click on Schedule New Process
+2026-02-09 10:16:08 [main] INFO : Click on Name dropdown
+2026-02-09 10:16:09 [main] INFO : Click on search
+2026-02-09 10:16:10 [main] INFO : Click on name and type the name
+2026-02-09 10:16:12 [main] INFO : Entering Name: Create Accounting
+2026-02-09 10:16:13 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-09 10:16:16 [main] INFO : Click on Subledger Application and Select Payables
+2026-02-09 10:16:18 [main] INFO : Select Payables from the drop down under Sub ledger application
+2026-02-09 10:16:18 [main] INFO : Click on ledger or ledger Set dropdown and click Search
+2026-02-09 10:16:20 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-09 10:16:27 [main] INFO : Entering Ledger Or Ledger Set: CR PRIMARY LEDGER
+2026-02-09 10:16:32 [main] INFO : Click on Process category and Select Invoices
+2026-02-09 10:16:33 [main] INFO : Select Invoices from the drop down under Process Category application
+2026-02-09 10:16:35 [main] INFO : Click on Submit at the top
+2026-02-09 10:16:36 [main] INFO : Check for confirmation and click ok
+2026-02-09 10:16:37 [main] INFO : Popup text received: Process 4804708 was submitted.
+2026-02-09 10:16:37 [main] INFO : Extracted Process ID: 4804708
+2026-02-09 10:16:37 [main] INFO : Retrieved Process Id:4804708
+2026-02-09 10:16:39 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-09 10:16:39 [main] INFO : Monitoring status for Process ID: 4804708
+2026-02-09 10:16:41 [main] INFO : Current Status of 4804708: Wait
+2026-02-09 10:16:51 [main] INFO : Current Status of 4804708: Wait
+2026-02-09 10:17:02 [main] INFO : Current Status of 4804708: Ready
+2026-02-09 10:17:12 [main] INFO : Current Status of 4804708: Running
+2026-02-09 10:17:23 [main] INFO : Current Status of 4804708: Running
+2026-02-09 10:17:34 [main] INFO : Current Status of 4804708: Running
+2026-02-09 10:17:44 [main] INFO : Current Status of 4804708: Running
+2026-02-09 10:17:55 [main] INFO : Current Status of 4804708: Running
+2026-02-09 10:18:06 [main] INFO : Current Status of 4804708: Running
+2026-02-09 10:18:16 [main] INFO : Current Status of 4804708: Succeeded
+2026-02-09 10:18:16 [main] INFO : Process 4804708 completed successfully.
+2026-02-09 10:18:20 [main] INFO : Click on Create Accounting Execution Report
+2026-02-09 10:18:51 [main] INFO : Testing Ended
+2026-02-09 10:18:51 [main] INFO : ***********
+2026-02-09 10:35:58 [main] INFO : Launching Chrome Browser
+2026-02-09 10:35:59 [main] INFO : Report Name :OraclePage.html
+2026-02-09 10:36:04 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-09 10:36:08 [main] INFO : Logged in to Oracle Application
+2026-02-09 10:36:09 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-09 10:36:09 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-09 10:36:13 [main] INFO : Clicking on Home icon
+2026-02-09 10:36:17 [main] INFO : Navigating Scheduled Processes
+2026-02-09 10:36:19 [main] INFO : Click on Schedule New Process
+2026-02-09 10:36:22 [main] INFO : Click on Name dropdown
+2026-02-09 10:36:23 [main] INFO : Click on search
+2026-02-09 10:36:24 [main] INFO : Click on name and type the name
+2026-02-09 10:36:25 [main] INFO : Entering Name: Create Accounting
+2026-02-09 10:36:26 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-09 10:36:30 [main] INFO : Click on Subledger Application and Select Payables
+2026-02-09 10:36:32 [main] INFO : Select Payables from the drop down under Sub ledger application
+2026-02-09 10:36:32 [main] INFO : Click on ledger or ledger Set dropdown and click Search
+2026-02-09 10:36:33 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-09 10:36:41 [main] INFO : Entering Ledger Or Ledger Set: CR PRIMARY LEDGER
+2026-02-09 10:36:46 [main] INFO : Click on Process category and Select Invoices
+2026-02-09 10:36:47 [main] INFO : Select Invoices from the drop down under Process Category application
+2026-02-09 10:36:49 [main] INFO : Click on Submit at the top
+2026-02-09 10:36:50 [main] INFO : Check for confirmation and click ok
+2026-02-09 10:36:51 [main] INFO : Popup text received: Process 4804751 was submitted.
+2026-02-09 10:36:51 [main] INFO : Extracted Process ID: 4804751
+2026-02-09 10:36:51 [main] INFO : Retrieved Process Id:4804751
+2026-02-09 10:36:53 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-09 10:36:54 [main] INFO : Monitoring status for Process ID: 4804751
+2026-02-09 10:36:55 [main] INFO : Current Status of 4804751: Running
+2026-02-09 10:37:05 [main] INFO : Current Status of 4804751: Running
+2026-02-09 10:37:16 [main] INFO : Current Status of 4804751: Succeeded
+2026-02-09 10:37:16 [main] INFO : Process 4804751 completed successfully.
+2026-02-09 10:37:17 [main] INFO : Monitoring status for Sub Process
+2026-02-09 10:37:17 [main] INFO : Current Status of Sub process :Succeeded
+2026-02-09 10:37:17 [main] INFO : Sub Process completed successfully.
+2026-02-09 10:37:18 [main] INFO : Testing Ended
+2026-02-09 10:37:18 [main] INFO : ***********
+2026-02-09 10:39:00 [main] INFO : Launching Chrome Browser
+2026-02-09 10:39:00 [main] INFO : Report Name :OraclePage.html
+2026-02-09 10:39:06 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-09 10:39:10 [main] INFO : Logged in to Oracle Application
+2026-02-09 10:39:11 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-09 10:39:11 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-09 10:39:15 [main] INFO : Clicking on Home icon
+2026-02-09 10:39:18 [main] INFO : Navigating Scheduled Processes
+2026-02-09 10:39:20 [main] INFO : Click on Schedule New Process
+2026-02-09 10:39:23 [main] INFO : Click on Name dropdown
+2026-02-09 10:39:24 [main] INFO : Click on search
+2026-02-09 10:39:25 [main] INFO : Click on name and type the name
+2026-02-09 10:39:26 [main] INFO : Entering Name: Create Accounting
+2026-02-09 10:39:27 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-09 10:39:31 [main] INFO : Click on Subledger Application and Select Payables
+2026-02-09 10:39:33 [main] INFO : Select Payables from the drop down under Sub ledger application
+2026-02-09 10:39:33 [main] INFO : Click on ledger or ledger Set dropdown and click Search
+2026-02-09 10:39:35 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-09 10:39:42 [main] INFO : Entering Ledger Or Ledger Set: CR PRIMARY LEDGER
+2026-02-09 10:39:47 [main] INFO : Click on Process category and Select Invoices
+2026-02-09 10:39:47 [main] INFO : Select Invoices from the drop down under Process Category application
+2026-02-09 10:39:50 [main] INFO : Click on Submit at the top
+2026-02-09 10:39:51 [main] INFO : Check for confirmation and click ok
+2026-02-09 10:39:51 [main] INFO : Popup text received: Process 4804757 was submitted.
+2026-02-09 10:39:51 [main] INFO : Extracted Process ID: 4804757
+2026-02-09 10:39:51 [main] INFO : Retrieved Process Id:4804757
+2026-02-09 10:39:54 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-09 10:39:54 [main] INFO : Monitoring status for Process ID: 4804757
+2026-02-09 10:39:55 [main] INFO : Current Status of 4804757: Running
+2026-02-09 10:40:06 [main] INFO : Current Status of 4804757: Running
+2026-02-09 10:40:16 [main] INFO : Current Status of 4804757: Succeeded
+2026-02-09 10:40:16 [main] INFO : Process 4804757 completed successfully.
+2026-02-09 10:40:18 [main] INFO : Monitoring status for Sub Process
+2026-02-09 10:40:18 [main] INFO : Current Status of Sub process :Succeeded
+2026-02-09 10:40:18 [main] INFO : Sub Process completed successfully.
+2026-02-09 10:40:19 [main] INFO : Testing Ended
+2026-02-09 10:40:19 [main] INFO : ***********
+2026-02-09 10:40:41 [main] INFO : Launching Chrome Browser
+2026-02-09 10:40:41 [main] INFO : Report Name :OraclePage.html
+2026-02-09 10:40:46 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-09 10:40:50 [main] INFO : Logged in to Oracle Application
+2026-02-09 10:40:51 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-09 10:40:51 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-09 10:40:55 [main] INFO : Clicking on Home icon
+2026-02-09 10:40:59 [main] INFO : Navigating Scheduled Processes
+2026-02-09 10:41:01 [main] INFO : Click on Schedule New Process
+2026-02-09 10:41:03 [main] INFO : Click on Name dropdown
+2026-02-09 10:41:05 [main] INFO : Click on search
+2026-02-09 10:41:06 [main] INFO : Click on name and type the name
+2026-02-09 10:41:07 [main] INFO : Entering Name: Payables Trial Balance Report
+2026-02-09 10:41:08 [main] INFO : Select the Payables Trial  Name and click ok
+2026-02-09 10:41:15 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-09 10:41:23 [main] INFO : Entering Name: CR PRIMARY LEDGER
+2026-02-09 10:41:28 [main] INFO : Click on Business Unit and Select CRITICAL RIVER BU
+2026-02-09 10:41:29 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-09 10:41:31 [main] INFO : Click on Submit at the top
+2026-02-09 10:41:32 [main] INFO : Check for confirmation and click ok
+2026-02-09 10:41:33 [main] INFO : Popup text received: Process 4804761 was submitted.
+2026-02-09 10:41:33 [main] INFO : Extracted Process ID: 4804761
+2026-02-09 10:41:33 [main] INFO : Retrieved Process Id:4804761
+2026-02-09 10:41:35 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-09 10:41:36 [main] INFO : Monitoring status for Process ID: 4804761
+2026-02-09 10:41:37 [main] INFO : Current Status of 4804761: Wait
+2026-02-09 10:41:48 [main] INFO : Current Status of 4804761: Ready
+2026-02-09 10:41:58 [main] INFO : Current Status of 4804761: Succeeded
+2026-02-09 10:41:58 [main] INFO : Process 4804761 completed successfully.
+2026-02-09 10:42:02 [main] INFO : Testing Ended
+2026-02-09 10:42:02 [main] INFO : ***********

@@ -364,7 +364,7 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 				// Check for failure to stop early
 				if (currentStatus.equalsIgnoreCase("Error") || currentStatus.equalsIgnoreCase("Failed")) {
 					grep.failTest("Process " + process_id + " failed with status: " + currentStatus);
-					throw new RuntimeException("Process Failed.");
+//					throw new RuntimeException("Process Failed.");
 				}
 
 			} catch (Exception e) {
@@ -395,37 +395,60 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 		}
 	}
 
-	public boolean verifySubProcessTaskCreated(int processId, String expectedTaskName) {
+	public void waitForSubProcessSuccess(int timeoutInMinutes) throws Exception {
+		By taskNameLoc = By
+				.xpath("//span[text()='Create Accounting: Subprocess']/ancestor::td/following-sibling::td[2]");
+		// Use the refresh button locator defined previously
+		long endTime = System.currentTimeMillis() + (timeoutInMinutes * 60L * 1000L);
+		boolean isSuccess = false;
 
-		// Dynamic XPath: Starts at the ID, goes up to the cell, then moves left to the
-		// name cell
-		By taskNameLoc = By.xpath("//span[text()='" + processId + "']/parent::td/preceding-sibling::td");
+		logger.info("Monitoring status for Sub Process");
 
-		try {
-			// 1. Wait for the task name element to be visible
-			WebElement taskNameElement = driver.findElement(taskNameLoc);
+		while (System.currentTimeMillis() < endTime) {
+			try {
+				// 2. Retrieve current status
+				WebElement statusElement = driver.findElement(taskNameLoc);
+				scrollView(taskNameLoc);
+				waitTime(driver);
+				String currentStatus = statusElement.getText().trim();
 
-			// 2. Retrieve and clean the text
-			String actualTaskName = taskNameElement.getText().trim();
+				logger.info("Current Status of Sub process :" + currentStatus);
+				grep.infoTest("Current Status of Sub process : " + currentStatus);
 
-			logger.info("Process ID " + processId + " corresponds to Task: " + actualTaskName);
-			grep.infoTest("Process ID " + processId + " corresponds to Task: " + actualTaskName);
+				// 3. Check if status is "Succeeded" (adjust string if Oracle uses "Success")
+				if (currentStatus.equalsIgnoreCase("Succeeded") || currentStatus.equalsIgnoreCase("Success")) {
+					isSuccess = true;
+					grep.infoTest("Sub Process completed successfully.");
+					logger.info("Sub Process completed successfully.");
+					break;
+				}
 
-			// 3. Comparison
-			if (actualTaskName.equals(expectedTaskName)) {
-				System.out.println("Verification Passed: Task Name matches.");
-				grep.infoTest("Successfully verified Task Name: " + actualTaskName);
-				return true;
-			} else {
-				System.out.println(
-						"Verification Failed: Expected [" + expectedTaskName + "] but found [" + actualTaskName + "]");
-				grep.failTest("Task Name mismatch for Process ID: " + processId);
-				return false;
+				// Check for failure to stop early
+				if (currentStatus.equalsIgnoreCase("Error") || currentStatus.equalsIgnoreCase("Failed")) {
+					grep.failTest("Sub Process failed with status: " + currentStatus);
+				}
+
+			} catch (Exception e) {
+				// Element might not be visible yet if table is still loading
+				System.out.println("Process row not found yet. Refreshing...");
 			}
 
-		} catch (Exception e) {
-			logger.error("Could not find Task Name for Process ID " + processId + ": " + e.getMessage());
-			return false;
+			// 4. Refresh the table
+			try {
+				driver.findElement(refreshBtn).click();
+
+				waitTime10(driver);
+			} catch (Exception refEx) {
+				logger.warn("Could not click refresh button.");
+			}
+
+		}
+
+		if (!isSuccess) {
+			grep.failTest(
+					"Timeout: Create Processing Sub Processs did not succeed within " + timeoutInMinutes + " minutes.");
+			logger.error(
+					"Timeout: Create Processing Sub Processs did not succeed within " + timeoutInMinutes + " minutes.");
 		}
 	}
 

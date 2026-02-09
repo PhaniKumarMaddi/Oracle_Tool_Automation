@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-09T10:00:07 IST" name="Default suite" finished-at="2026-02-09T10:01:33 IST" duration-ms="85617">
+  <suite started-at="2026-02-09T10:40:38 IST" name="Default suite" finished-at="2026-02-09T10:42:02 IST" duration-ms="83984">
     <groups>
     </groups>
-    <test started-at="2026-02-09T10:00:07 IST" name="Default test" finished-at="2026-02-09T10:01:33 IST" duration-ms="85617">
+    <test started-at="2026-02-09T10:40:38 IST" name="Default test" finished-at="2026-02-09T10:42:02 IST" duration-ms="83984">
       <class name="Tests.PayableTrialBalanceReport_Test">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.PayableTrialBalanceReport_Test@72c28d64]" started-at="2026-02-09T10:00:07 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-09T10:00:21 IST" duration-ms="13932" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.PayableTrialBalanceReport_Test@72c28d64]" started-at="2026-02-09T10:40:38 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-09T10:40:52 IST" duration-ms="13424" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="oracle_Payable_Trial_Balance_Report()[pri:0, instance:Tests.PayableTrialBalanceReport_Test@72c28d64]" started-at="2026-02-09T10:00:21 IST" name="oracle_Payable_Trial_Balance_Report" finished-at="2026-02-09T10:01:33 IST" duration-ms="71402" status="PASS">
+        <test-method signature="oracle_Payable_Trial_Balance_Report()[pri:0, instance:Tests.PayableTrialBalanceReport_Test@72c28d64]" started-at="2026-02-09T10:40:52 IST" name="oracle_Payable_Trial_Balance_Report" finished-at="2026-02-09T10:42:02 IST" duration-ms="70280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oracle_Payable_Trial_Balance_Report -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.PayableTrialBalanceReport_Test@72c28d64]" started-at="2026-02-09T10:01:33 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-09T10:01:33 IST" duration-ms="247" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.PayableTrialBalanceReport_Test@72c28d64]" started-at="2026-02-09T10:42:02 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-09T10:42:02 IST" duration-ms="243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

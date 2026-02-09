@@ -64,6 +64,8 @@ public class TestDataKeys {
 	public String customerName = "CR GE";
 	public String net_PaymentTerms = "Net 30";
 	public String receiptMethod = "CR RECEIPT";
+	public String quantity = "2";
+	public String unitPriceAmt = "80";
 	
 	
 }

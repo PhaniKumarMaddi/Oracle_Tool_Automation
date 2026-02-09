@@ -39,10 +39,11 @@ public class Oracle_Receivables_Page extends WaitsManager {
 	By saveBtn = By.xpath("//a/span[text()='Save']");
 	By completeCreateAnother_DropdownBtn = By.xpath("//a[@title='Complete and Create Another']");
 
-	By actionBtn = By.xpath("//a[text()='Actions]");
-	By accountinLineHeader = By.xpath("//div[contains(@id,':d12::_ttxt')]");
+	By actionBtn = By.xpath("//a[text()='Actions']");
 	By saveDropdownBtn = By.xpath("//a[@title='Save']");
 	By saveAndCloseBtn = By.xpath("//tr[@accesskey='S']/td[2]");
+	By transactionConfirmation = By.xpath("//div[@class='AFPopupSelector']/descendant::td[@class='x1n1']");
+	By okBtn_InTransactionConfirmation = By.xpath("//button[text()='OK']");
 
 	// Create Receipt
 	By receiptMethod = By.xpath("//label[text()='Receipt Method']/preceding-sibling::input");
@@ -161,7 +162,7 @@ public class Oracle_Receivables_Page extends WaitsManager {
 	public void searchAndSelectPaymentTerms(String paymentTermsVal) {
 		try {
 			implWait(driver);
-			By selectPaymentTerms = By.xpath("//li[text()='" + paymentTermsVal + "']");
+			By selectPaymentTerms = By.xpath("//li[starts-with(text(),'" + paymentTermsVal + "')]");
 
 			driver.findElement(paymentTerms).click();
 			driver.findElement(paymentTerms).sendKeys(paymentTermsVal);
@@ -269,30 +270,7 @@ public class Oracle_Receivables_Page extends WaitsManager {
 
 	}
 
-	public void validateAccountingLinesHeader(String expectedInvoiceNum) {
-
-		try {
-			// 1. Wait for the dialog header to be visible
-			waitForElement(accountinLineHeader, 60);
-
-			WebElement header = driver.findElement(accountinLineHeader);
-			String actualHeaderText = header.getText();
-			System.out.println("Retrieved Header: " + actualHeaderText);
-
-			// 2. Perform Validation (Case-insensitive)
-			if (actualHeaderText.toLowerCase().contains(expectedInvoiceNum.toLowerCase())) {
-				logger.info("Validation Passed: Header contains invoice number: " + expectedInvoiceNum);
-				grep.infoTest("Validation Passed: Header contains invoice number: " + expectedInvoiceNum);
-			} else {
-				logger.error("Validation Failed! Expected: " + expectedInvoiceNum + " but found: " + actualHeaderText);
-				grep.failTest("Validation Failed! Expected: " + expectedInvoiceNum + " but found: " + actualHeaderText);
-			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
+	
 	public void clickSaveAndCloseBtn_inTransactionPage() {
 		try {
 			implWait(driver);
@@ -304,5 +282,33 @@ public class Oracle_Receivables_Page extends WaitsManager {
 		}
 	}
 
-	// Create Receipt 
+	public String validateTransactionConfirmationPopup() throws Exception {
+		String getMsg = null;
+		try {
+
+			implWait(driver);
+
+			String fullMessage = driver.findElement(transactionConfirmation).getText().trim();
+			getMsg = fullMessage.replaceAll("[^0-9]", "");
+
+			if (getMsg.isEmpty()) {
+				logger.error("No numeric transaction number found in message: " + getMsg);
+				return null;
+			}
+			grep.infoTest("Transaction Confirmation Message: " + fullMessage);
+			logger.info("Transaction Confirmation Message: " + fullMessage);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return getMsg;
+	}
+
+	public void clickOk_InTransactionConfirmation() {
+		implWait(driver);
+
+		driver.findElement(okBtn_InTransactionConfirmation).click();
+	}
+
+	// Create Receipt
 }

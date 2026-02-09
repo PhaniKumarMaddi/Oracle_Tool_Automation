@@ -4,8 +4,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
-import Pages.Oracle_AccountingAtGlance;
 import Pages.Oracle_HomePage;
+import Pages.Oracle_InvoicePage;
+import Pages.Oracle_Receivables_Page;
 import Pages.TestInitializer;
 import Utility.GenerateReports;
 import Utility.TestDataKeys;
@@ -22,7 +23,8 @@ public class AccountReceivables_Test extends TestInitializer {
 	public void oracle_CreateTransaction_Test() throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
-		Oracle_AccountingAtGlance oraAag = new Oracle_AccountingAtGlance();
+		Oracle_Receivables_Page oraAr = new Oracle_Receivables_Page();
+		Oracle_InvoicePage oraInv = new Oracle_InvoicePage();
 
 		waitTime(driver);
 
@@ -32,11 +34,10 @@ public class AccountReceivables_Test extends TestInitializer {
 		grep.infoTest("Clicking on Home icon");
 		logger.info("Clicking on Home icon");
 
-		waitTime(driver);
-		oraHome.clickNavigator();
-		waitTime(driver);
+		waitTime1(driver);
 		oraHome.selectTabWithNavigator(dataTest.receivableNavTab);
-		grep.captureScreenshot("pass", "Expanding Receivables in Navigator ", "ExpandingReceivablesNavigator_CreateTransaction");
+		grep.captureScreenshot("pass", "Expanding Receivables in Navigator ",
+				"ExpandingReceivablesNavigator_CreateTransaction");
 		waitTime(driver);
 		oraHome.selectFromQuickActions(dataTest.createTransactionAction);
 		waitTime1(driver);
@@ -49,7 +50,70 @@ public class AccountReceivables_Test extends TestInitializer {
 		grep.infoTest("Filling Details in Create Transaction Page");
 		logger.info("Filling Details in Create Transaction Page");
 		waitTime(driver);
-		
+		oraAr.searchAndSelectBusinessUnit(dataTest.selectBU);
+		waitTime2(driver);
+		oraAr.searchAndSelectTransactionSource(dataTest.transactionSource);
+		waitTime2(driver);
+		oraAr.searchAndSelectTransactionType(dataTest.transactionType);
+		waitTime2(driver);
+		oraAr.clickBillToNameSearchBtn();
+		oraAr.enterCustomerName(dataTest.customerName);
+		waitTime2(driver);
+		oraAr.clickSearchBtn();
+		waitTime(driver);
+		oraAr.clickSelectCustomerNameFromList(dataTest.customerName);
+		oraAr.clickOk_inBillToNamePopup();
+		waitTime2(driver);
+		oraAr.searchAndSelectPaymentTerms(dataTest.net_PaymentTerms);
+		waitTime2(driver);
+		oraAr.enterDescriptionInLines("Testing");
+		oraAr.enterQuantityInLines(dataTest.quantity);
+		oraAr.enterUnitPriceInLines(dataTest.unitPriceAmt);
+		waitTime2(driver);
+		oraAr.clickSaveBtn_inTransactionPage();
+		waitTime5(driver);
+		grep.captureScreenshot("pass", "Saving Create Transaction test", "SaveCreateTransaction");
+		waitTime(driver);
+		oraAr.clickCompleteAndCreateBtn_inTransactionPage("Complete and Review");
+		waitTime5(driver);
+		grep.infoTest("Clicking on Post to ledger");
+		logger.info("Clicking on Post to ledger");
+		waitTime(driver);
+		oraAr.clickActionAndValidate_inTransactionBtn("Post to Ledger");
+		waitTime(driver);
+		oraInv.validateAccountingConfirmationPopup();
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Post to Ledger Accounting confirrmation popup",
+				"accountingConfirmationPopup_CreateTransaction");
+		oraInv.clickViewAccountingBtn();
+		waitTime10(driver);
+		grep.infoTest("Validating the Accounting Lines");
+		logger.info("Validating the Accounting Lines");
+		waitTime(driver);
+
+		grep.captureScreenshot("pass", "Validating the Accounting Lines Popup test",
+				"accountingLinesPopup_CreateTransaction");
+
+		waitTime(driver);
+//		oraInv.verifyAccountingAmounts(dataTest.unitPriceAmt);
+		oraInv.clickDoneAccountingBtn();
+
+		waitTime2(driver);
+		oraAr.clickSaveAndCloseBtn_inTransactionPage();
+		waitTime5(driver);
+
+		grep.captureScreenshot("pass", "Transaction Confirmation after Saving and closing the transaction",
+				"confirming_CreateTransaction");
+
+		waitTime(driver);
+		String msg = oraAr.validateTransactionConfirmationPopup();
+		System.out.println(msg);
+		waitTime(driver);
+
+		logger.info("Extracted Transaction Number: " + msg);
+		grep.infoTest("Extracted Transaction Number: " + msg);
+		waitTime(driver);
+		oraAr.clickOk_InTransactionConfirmation();
 
 	}
 }

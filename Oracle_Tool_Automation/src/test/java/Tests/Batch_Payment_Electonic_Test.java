@@ -154,9 +154,10 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		waitTime2(driver);
 
 //		oraHome.clickHomeButton();
-//		waitTime2(driver);
+		oraHome.clickHomeFromPutAway();
+		waitTime2(driver);
 
-//		oracle_Query_InvoicePayment();
+		oracle_Query_InvoicePayment();
 	}
 
 	public void createInvoice() throws Exception {
@@ -254,6 +255,11 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		}
 
 		// 2. If it needs revalidation (either initially or after the first attempt)
+		if (status.equalsIgnoreCase("Not validated")) {
+			oraInv.clickInvoiceActionAndValidateBtn("Validate");
+			status = oraInv.getInvoiceValidation(); // Refresh status
+		}
+
 		if (status.equals("Needs revalidation")) {
 			processRevalidationFlow();
 			status = oraInv.getInvoiceValidation(); // Refresh status after fix
@@ -376,7 +382,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		grep.captureScreenshot("pass", "Inside Manage Invoice Page", "ManageInvoicePage");
 		waitTime(driver);
 
-		oraInv.enterInvoiceNumber_InSelectAndAddPopup(dataTest.po_invoiceNum);
+		oraInv.enterInvoiceNumber_InSelectAndAddPopup(dataTest.invoiceNum);
 		waitTime2(driver);
 		oraHome.clickSearchBtn();
 		waitTime2(driver);
@@ -385,7 +391,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 
 		grep.infoTest("Clicking on Invoice Number");
 		logger.info("Clicking on Invoice Number");
-		oraInv.selectInvoiceNumber_inSearch(dataTest.po_invoiceNum);
+		oraInv.selectInvoiceNumber_inSearch(dataTest.invoiceNum);
 
 		waitTime(driver);
 		grep.infoTest("Clicking on Payments Tab");
@@ -397,7 +403,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 
 		oraInv.clickPaymentNumber_QueryInvoice();
 		waitTime(driver);
-		oraInv.validateInvoiceNum_InPaymentPopup(dataTest.po_invoiceNum);
+		oraInv.validateInvoiceNum_InPaymentPopup(dataTest.invoiceNum);
 		oraInv.validateInvoiceStatus_InPaymentPopup();
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Inside Payments Receipt Popup", "InsidePaymentsReceiptPopup_QueryInvoicePage");

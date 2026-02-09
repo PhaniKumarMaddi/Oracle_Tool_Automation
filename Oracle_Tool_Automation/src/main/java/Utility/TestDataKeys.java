@@ -31,14 +31,14 @@ public class TestDataKeys {
 	public String paymentProfile = "WFB EFT PPP";
 	public String paymentCheckMethod = "Check";
 	public String paymentProfile_Check = "WFB CHECK PPP";
-	public String invoiceNum = "Test_FEB_6_011"; // change values
+	public String invoiceNum = "Test_FEB_9_03"; // change values
 	// with po
 	public String po_invoiceNum = "CR_PO_Test_0011"; // change values
 	public String identifyPo = "CRPO500067"; // 68,69 need po existing
 
 	// Batch payment
 
-	public String batchPaymentNumber = "MP_ELE_Payment_13";
+	public String batchPaymentNumber = "MP_ELE_Payment_15";
 	public String batchTemplate = "WFB CHECK USD PPR";
 	public String pendingInstallReviewStatus = "Pending installments review";
 	public String pendingActionToComplete = "Pending action to complete information required";

@@ -11095,3 +11095,280 @@ Session ID: 96a442edef2f0936c506d743bf91522a
 2026-02-06 17:52:37 [main] INFO : Record is Displayed in Recently Completed tab :MP_ELE_Payment_13
 2026-02-06 17:52:45 [main] INFO : Testing Ended
 2026-02-06 17:52:45 [main] INFO : ***********
+2026-02-09 08:37:55 [main] INFO : Launching Chrome Browser
+2026-02-09 08:37:56 [main] INFO : Report Name :OraclePage.html
+2026-02-09 08:38:02 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-09 08:38:07 [main] INFO : Logged in to Oracle Application
+2026-02-09 08:38:09 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-09 08:38:09 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-09 08:38:13 [main] INFO : Clicking on Home icon
+2026-02-09 08:38:17 [main] INFO : Navigating Scheduled Processes
+2026-02-09 08:38:20 [main] INFO : Click on Schedule New Process
+2026-02-09 08:38:23 [main] INFO : Click on Name dropdown
+2026-02-09 08:38:24 [main] INFO : Click on search
+2026-02-09 08:38:26 [main] INFO : Click on name and type the name
+2026-02-09 08:38:27 [main] INFO : Entering Name: Create Accounting
+2026-02-09 08:38:28 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-09 08:38:32 [main] INFO : Click on Subledger Application and Select Payables
+2026-02-09 08:38:34 [main] INFO : Select Payables from the drop down under Sub ledger application
+2026-02-09 08:38:35 [main] INFO : Click on ledger or ledger Set dropdown and click Search
+2026-02-09 08:38:36 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-09 08:38:44 [main] INFO : Entering Ledger Or Ledger Set: CR PRIMARY LEDGER
+2026-02-09 08:38:51 [main] INFO : Click on Process category and Select Invoices
+2026-02-09 08:38:52 [main] INFO : Select Invoices from the drop down under Process Category application
+2026-02-09 08:38:54 [main] INFO : Click on Submit at the top
+2026-02-09 08:38:55 [main] INFO : Check for confirmation and click ok
+2026-02-09 08:38:56 [main] INFO : Popup text received: Process 4804458 was submitted.
+2026-02-09 08:38:56 [main] INFO : Extracted Process ID: 4804458
+2026-02-09 08:38:56 [main] INFO : Retrieved Process Id:4804458
+2026-02-09 08:38:58 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-09 08:38:59 [main] INFO : Monitoring status for Process ID: 4804458
+2026-02-09 08:39:00 [main] INFO : Current Status of 4804458: Wait
+2026-02-09 08:39:11 [main] INFO : Current Status of 4804458: Wait
+2026-02-09 08:39:21 [main] INFO : Current Status of 4804458: Running
+2026-02-09 08:39:32 [main] INFO : Current Status of 4804458: Succeeded
+2026-02-09 08:39:32 [main] INFO : Process 4804458 completed successfully.
+2026-02-09 08:39:36 [main] INFO : Click on Create Accounting Execution Report
+2026-02-09 08:40:07 [main] INFO : Testing Ended
+2026-02-09 08:40:07 [main] INFO : ***********
+2026-02-09 08:40:28 [main] INFO : Launching Chrome Browser
+2026-02-09 08:40:29 [main] INFO : Report Name :OraclePage.html
+2026-02-09 08:40:35 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-09 08:40:40 [main] INFO : Logged in to Oracle Application
+2026-02-09 08:40:42 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-09 08:40:42 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-09 08:40:47 [main] INFO : Clicking on Home icon
+2026-02-09 08:40:52 [main] INFO : Click on Tasks for Create Invoice
+2026-02-09 08:40:57 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-09 08:40:57 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-09 08:43:31 [main] INFO : Launching Chrome Browser
+2026-02-09 08:43:32 [main] INFO : Report Name :OraclePage.html
+2026-02-09 08:43:42 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-09 08:43:46 [main] INFO : Logged in to Oracle Application
+2026-02-09 08:43:48 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-09 08:43:48 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-09 08:43:51 [main] INFO : Clicking on Home icon
+2026-02-09 08:43:55 [main] INFO : Click on Tasks for Create Invoice
+2026-02-09 08:43:58 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-09 08:43:58 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-09 08:45:31 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-09 08:45:31 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-09 08:45:32 [main] INFO : Filling the Invoice Details
+2026-02-09 08:45:33 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-09 08:45:37 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-09 08:45:49 [main] INFO : Entering Invoice Number: Test_FEB_9_01
+2026-02-09 08:45:51 [main] INFO : Entering Invoice Amount: 300
+2026-02-09 08:45:52 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-09 08:45:54 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-09 08:45:56 [main] INFO : Entering Invoice Receive Date: 06-01-2026
+2026-02-09 08:45:56 [main] INFO : Enter Details in Lines Section
+2026-02-09 08:46:03 [main] INFO : Entering Line Amount: 300
+2026-02-09 08:46:12 [main] INFO : Selecting Comapany Value: 101
+2026-02-09 08:46:15 [main] INFO : Selecting Account for Distribution Combinantion: 52110
+2026-02-09 08:46:20 [main] INFO : Retrieving Distibution Combinatio ID: 101-000-52110-000
+2026-02-09 08:46:21 [main] INFO : Saving and Validating Invoice
+2026-02-09 08:47:02 [main] INFO : Invoice validation message: Not validated
+2026-02-09 08:47:02 [main] INFO : Current Invoice Status: Not validated
+2026-02-09 08:47:05 [main] INFO : Invoice validation message: Not validated
+2026-02-09 08:47:05 [main] WARN : Invoice status is currently: Not validated
+2026-02-09 08:47:10 [main] INFO : Entering Payment reason in manage installments popup
+2026-02-09 08:49:22 [main] INFO : Launching Chrome Browser
+2026-02-09 08:49:22 [main] INFO : Report Name :OraclePage.html
+2026-02-09 08:49:29 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-09 08:49:33 [main] INFO : Logged in to Oracle Application
+2026-02-09 08:49:34 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-09 08:49:34 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-09 08:49:38 [main] INFO : Clicking on Home icon
+2026-02-09 08:49:42 [main] INFO : Click on Tasks for Create Invoice
+2026-02-09 08:49:45 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-09 08:49:45 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-09 08:52:00 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-09 08:52:00 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-09 08:52:01 [main] INFO : Filling the Invoice Details
+2026-02-09 08:52:02 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-09 08:52:05 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-09 08:52:09 [main] INFO : Entering Invoice Number: Test_FEB_9_02
+2026-02-09 08:52:11 [main] INFO : Entering Invoice Amount: 300
+2026-02-09 08:52:12 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-09 08:52:13 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-09 08:52:15 [main] INFO : Entering Invoice Receive Date: 06-01-2026
+2026-02-09 08:52:16 [main] INFO : Enter Details in Lines Section
+2026-02-09 08:52:25 [main] INFO : Entering Line Amount: 300
+2026-02-09 08:52:32 [main] INFO : Selecting Comapany Value: 101
+2026-02-09 08:52:35 [main] INFO : Selecting Account for Distribution Combinantion: 52110
+2026-02-09 08:52:39 [main] INFO : Retrieving Distibution Combinatio ID: 101-000-52110-000
+2026-02-09 08:52:40 [main] INFO : Saving and Validating Invoice
+2026-02-09 08:52:57 [main] INFO : Invoice validation message: Needs revalidation
+2026-02-09 08:52:57 [main] INFO : Current Invoice Status: Needs revalidation
+2026-02-09 08:52:57 [main] INFO : Processing revalidation flow...
+2026-02-09 08:52:59 [main] INFO : Warning found! Image source: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/images/qual_warning_16.png
+2026-02-09 08:52:59 [main] INFO : Clicking the hold count link: 1
+2026-02-09 08:53:01 [main] INFO : Successfully selected 'Validated' from the release name dropdown.
+2026-02-09 08:53:06 [main] INFO : Invoice validation message: Validated
+2026-02-09 08:53:06 [main] INFO : Validated
+2026-02-09 08:53:12 [main] INFO : Entering Payment reason in manage installments popup
+2026-02-09 08:53:13 [main] INFO : Entering Payment reason:Supplier Expenses Payment
+2026-02-09 08:53:15 [main] INFO : Selecting Payment Method: CR ELECTRONIC
+2026-02-09 08:53:22 [main] INFO : Clicking on Post to ledger
+2026-02-09 08:53:32 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-09 08:53:32 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-09 08:53:38 [main] INFO : Validating the Accounting Lines
+2026-02-09 08:54:27 [main] INFO : Clicking on Home icon
+2026-02-09 08:54:31 [main] INFO : Click on Tasks for Submit Payment Process Request
+2026-02-09 08:54:41 [main] INFO : Submit Payment Process Request Page Header: Submit Payment Process Request
+2026-02-09 08:54:41 [main] INFO : Expected :Submit Payment Process Request and Actual :Submit Payment Process Request
+2026-02-09 08:54:41 [main] INFO : Expected :Submit Payment Process Request and Actual :Submit Payment Process Request both are same
+2026-02-09 08:54:42 [main] INFO : Entering Batch Number and Batch Template
+2026-02-09 08:54:43 [main] INFO : Entering Payment Process Name: MP_ELE_Payment_14
+2026-02-09 08:54:46 [main] INFO : Selecting Business Unit 'Payment' radio button.
+2026-02-09 08:54:49 [main] INFO : Clicking Add Row button for Business Units.
+2026-02-09 08:54:52 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-09 08:54:57 [main] INFO : Selecting Legal Entities 'Specific' radio button.
+2026-02-09 08:55:00 [main] INFO : Clicking Add Row button for Legal Entities.
+2026-02-09 08:55:03 [main] INFO : Selecting Legal entities: CRITICAL RIVER LE
+2026-02-09 08:55:09 [main] INFO : Selecting Supplier or Party: CR Applied Material
+2026-02-09 08:55:15 [main] INFO : Clicking on Payment and Processing Options Tab
+2026-02-09 08:55:20 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-09 08:55:22 [main] INFO : Applied Credits checkbox enabled.
+2026-02-09 08:55:24 [main] INFO : Review Installments checkbox enabled.
+2026-02-09 08:55:26 [main] INFO : Create Payment Files checkbox enabled.
+2026-02-09 08:55:40 [main] INFO : Starting poll for record: MP_ELE_Payment_14
+2026-02-09 08:56:10 [main] ERROR: Record not ready. Clicking refresh...
+2026-02-09 08:56:41 [main] INFO : Condition Met! Status: Pending installments review
+2026-02-09 08:57:08 [main] INFO : Starting poll for record: MP_ELE_Payment_14
+2026-02-09 08:57:38 [main] ERROR: Record not ready. Clicking refresh...
+2026-02-09 08:58:08 [main] INFO : Condition Met! Status: Pending action to complete information required
+2026-02-09 08:58:15 [main] INFO : Selecting Payment Process Profile: WFB EFT PPP
+2026-02-09 08:58:19 [main] INFO : Clicking on Resume Payment Process Button
+2026-02-09 08:58:41 [main] INFO : Starting poll for record: MP_ELE_Payment_14
+2026-02-09 08:58:46 [main] INFO : Condition Met! Status: Pending proposed payment review
+2026-02-09 08:58:49 [main] INFO : Clicking on Resume Payment Process Button
+2026-02-09 08:58:52 [main] INFO : Starting poll for record: MP_ELE_Payment_14
+2026-02-09 08:59:22 [main] ERROR: Record not ready. Clicking refresh...
+2026-02-09 08:59:52 [main] INFO : Condition Met! Status: Waiting for payment file processing
+2026-02-09 08:59:56 [main] INFO : Payment receipt Number :543026
+2026-02-09 09:00:04 [main] INFO : Record is Displayed in Recently Completed tab :MP_ELE_Payment_14
+2026-02-09 09:00:41 [main] ERROR: Home button Not Available 
+2026-02-09 09:00:44 [main] INFO : Clicking on Home icon
+2026-02-09 09:01:15 [main] INFO : Testing Ended
+2026-02-09 09:01:15 [main] INFO : ***********
+2026-02-09 09:02:49 [main] INFO : Launching Chrome Browser
+2026-02-09 09:02:49 [main] INFO : Report Name :OraclePage.html
+2026-02-09 09:02:54 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-09 09:02:58 [main] INFO : Logged in to Oracle Application
+2026-02-09 09:02:59 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-09 09:02:59 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-09 09:03:03 [main] INFO : Clicking on Home icon
+2026-02-09 09:03:07 [main] INFO : Click on Tasks for Create Invoice
+2026-02-09 09:03:08 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-09 09:03:08 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-09 09:03:21 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices
+2026-02-09 09:03:21 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices both are same
+2026-02-09 09:03:25 [main] INFO : Entering Invoice Number: CR_PO_Test_0011
+2026-02-09 09:03:29 [main] INFO : Clicking on Invoice Number
+2026-02-09 09:03:30 [main] INFO : Clicking on Payments Tab
+2026-02-09 09:03:40 [main] INFO : Payment number got invoice: 6000010
+2026-02-09 09:03:43 [main] INFO : Validating Invoice Number in Payment Popup: CR_PO_Test_0011
+2026-02-09 09:03:43 [main] INFO : Expected :CR_PO_Test_0011 and Actual :CR_PO_Test_0011
+2026-02-09 09:03:43 [main] INFO : Expected :CR_PO_Test_0011 and Actual :CR_PO_Test_0011 both are same
+2026-02-09 09:03:44 [main] INFO : Validating Invoice Status in Payment Popup: Fully paid
+2026-02-09 09:03:44 [main] INFO : Expected :Fully paid and Actual :Fully paid
+2026-02-09 09:03:44 [main] INFO : Expected :Fully paid and Actual :Fully paid both are same
+2026-02-09 09:03:49 [main] INFO : Testing Ended
+2026-02-09 09:03:49 [main] INFO : ***********
+2026-02-09 09:04:33 [main] INFO : Launching Chrome Browser
+2026-02-09 09:04:33 [main] INFO : Report Name :OraclePage.html
+2026-02-09 09:04:39 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-09 09:04:43 [main] INFO : Logged in to Oracle Application
+2026-02-09 09:04:44 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-09 09:04:44 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-09 09:04:47 [main] INFO : Clicking on Home icon
+2026-02-09 09:04:51 [main] INFO : Click on Tasks for Create Invoice
+2026-02-09 09:04:52 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-09 09:04:52 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-09 09:06:16 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-09 09:06:16 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-09 09:06:17 [main] INFO : Filling the Invoice Details
+2026-02-09 09:06:18 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-09 09:06:22 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-09 09:06:25 [main] INFO : Entering Invoice Number: Test_FEB_9_03
+2026-02-09 09:06:27 [main] INFO : Entering Invoice Amount: 300
+2026-02-09 09:06:28 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-09 09:06:30 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-09 09:06:32 [main] INFO : Entering Invoice Receive Date: 06-01-2026
+2026-02-09 09:06:32 [main] INFO : Enter Details in Lines Section
+2026-02-09 09:06:39 [main] INFO : Entering Line Amount: 300
+2026-02-09 09:06:44 [main] INFO : Selecting Comapany Value: 101
+2026-02-09 09:06:46 [main] INFO : Selecting Account for Distribution Combinantion: 52110
+2026-02-09 09:06:51 [main] INFO : Retrieving Distibution Combinatio ID: 101-000-52110-000
+2026-02-09 09:06:52 [main] INFO : Saving and Validating Invoice
+2026-02-09 09:07:03 [main] INFO : Invoice validation message: Needs revalidation
+2026-02-09 09:07:03 [main] INFO : Current Invoice Status: Needs revalidation
+2026-02-09 09:07:03 [main] INFO : Processing revalidation flow...
+2026-02-09 09:07:04 [main] INFO : Warning found! Image source: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/images/qual_warning_16.png
+2026-02-09 09:07:05 [main] INFO : Clicking the hold count link: 1
+2026-02-09 09:07:06 [main] INFO : Successfully selected 'Validated' from the release name dropdown.
+2026-02-09 09:07:11 [main] INFO : Invoice validation message: Validated
+2026-02-09 09:07:11 [main] INFO : Validated
+2026-02-09 09:07:17 [main] INFO : Entering Payment reason in manage installments popup
+2026-02-09 09:07:18 [main] INFO : Entering Payment reason:Supplier Expenses Payment
+2026-02-09 09:07:20 [main] INFO : Selecting Payment Method: CR ELECTRONIC
+2026-02-09 09:07:28 [main] INFO : Clicking on Post to ledger
+2026-02-09 09:07:32 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-09 09:07:32 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-09 09:07:38 [main] INFO : Validating the Accounting Lines
+2026-02-09 09:07:41 [main] INFO : Validation Passed: Header contains invoice number: Test_FEB_9_03
+2026-02-09 09:07:46 [main] INFO : Clicking on Home icon
+2026-02-09 09:07:51 [main] INFO : Click on Tasks for Submit Payment Process Request
+2026-02-09 09:08:01 [main] INFO : Submit Payment Process Request Page Header: Submit Payment Process Request
+2026-02-09 09:08:01 [main] INFO : Expected :Submit Payment Process Request and Actual :Submit Payment Process Request
+2026-02-09 09:08:01 [main] INFO : Expected :Submit Payment Process Request and Actual :Submit Payment Process Request both are same
+2026-02-09 09:08:01 [main] INFO : Entering Batch Number and Batch Template
+2026-02-09 09:08:02 [main] INFO : Entering Payment Process Name: MP_ELE_Payment_15
+2026-02-09 09:08:06 [main] INFO : Selecting Business Unit 'Payment' radio button.
+2026-02-09 09:08:08 [main] INFO : Clicking Add Row button for Business Units.
+2026-02-09 09:08:12 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-09 09:08:17 [main] INFO : Selecting Legal Entities 'Specific' radio button.
+2026-02-09 09:08:19 [main] INFO : Clicking Add Row button for Legal Entities.
+2026-02-09 09:08:23 [main] INFO : Selecting Legal entities: CRITICAL RIVER LE
+2026-02-09 09:08:28 [main] INFO : Selecting Supplier or Party: CR Applied Material
+2026-02-09 09:08:35 [main] INFO : Clicking on Payment and Processing Options Tab
+2026-02-09 09:08:40 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-09 09:08:41 [main] INFO : Applied Credits checkbox enabled.
+2026-02-09 09:08:44 [main] INFO : Review Installments checkbox enabled.
+2026-02-09 09:08:46 [main] INFO : Create Payment Files checkbox enabled.
+2026-02-09 09:09:00 [main] INFO : Starting poll for record: MP_ELE_Payment_15
+2026-02-09 09:09:30 [main] ERROR: Record not ready. Clicking refresh...
+2026-02-09 09:10:00 [main] INFO : Condition Met! Status: Pending installments review
+2026-02-09 09:10:27 [main] INFO : Starting poll for record: MP_ELE_Payment_15
+2026-02-09 09:10:57 [main] ERROR: Record not ready. Clicking refresh...
+2026-02-09 09:11:27 [main] INFO : Condition Met! Status: Pending action to complete information required
+2026-02-09 09:11:34 [main] INFO : Selecting Payment Process Profile: WFB EFT PPP
+2026-02-09 09:11:38 [main] INFO : Clicking on Resume Payment Process Button
+2026-02-09 09:12:00 [main] INFO : Starting poll for record: MP_ELE_Payment_15
+2026-02-09 09:12:30 [main] ERROR: Record not ready. Clicking refresh...
+2026-02-09 09:13:00 [main] INFO : Condition Met! Status: Pending proposed payment review
+2026-02-09 09:13:04 [main] INFO : Clicking on Resume Payment Process Button
+2026-02-09 09:13:07 [main] INFO : Starting poll for record: MP_ELE_Payment_15
+2026-02-09 09:13:37 [main] ERROR: Record not ready. Clicking refresh...
+2026-02-09 09:14:07 [main] INFO : Condition Met! Status: Waiting for payment file processing
+2026-02-09 09:14:10 [main] INFO : Payment receipt Number :543027
+2026-02-09 09:14:18 [main] INFO : Record is Displayed in Recently Completed tab :MP_ELE_Payment_15
+2026-02-09 09:14:31 [main] INFO : Clicking on Home icon
+2026-02-09 09:14:34 [main] INFO : Click on Tasks for Create Invoice
+2026-02-09 09:14:35 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-09 09:14:35 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-09 09:14:48 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices
+2026-02-09 09:14:48 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices both are same
+2026-02-09 09:14:52 [main] INFO : Entering Invoice Number: CR_PO_Test_0011
+2026-02-09 09:14:57 [main] INFO : Clicking on Invoice Number
+2026-02-09 09:14:57 [main] INFO : Clicking on Payments Tab
+2026-02-09 09:15:06 [main] INFO : Payment number got invoice: 6000010
+2026-02-09 09:15:08 [main] INFO : Validating Invoice Number in Payment Popup: CR_PO_Test_0011
+2026-02-09 09:15:08 [main] INFO : Expected :CR_PO_Test_0011 and Actual :CR_PO_Test_0011
+2026-02-09 09:15:08 [main] INFO : Expected :CR_PO_Test_0011 and Actual :CR_PO_Test_0011 both are same
+2026-02-09 09:15:09 [main] INFO : Validating Invoice Status in Payment Popup: Fully paid
+2026-02-09 09:15:09 [main] INFO : Expected :Fully paid and Actual :Fully paid
+2026-02-09 09:15:09 [main] INFO : Expected :Fully paid and Actual :Fully paid both are same
+2026-02-09 09:15:14 [main] INFO : Testing Ended
+2026-02-09 09:15:14 [main] INFO : ***********

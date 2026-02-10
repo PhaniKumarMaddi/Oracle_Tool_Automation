@@ -5,7 +5,6 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -53,9 +52,6 @@ public class Oracle_Receivables_Page extends WaitsManager {
 	By receiptMethod = By.xpath("//label[text()='Receipt Method']/preceding-sibling::input");
 	By receiptNumber = By.xpath("//label[text()='Receipt Number']/preceding-sibling::input");
 	By enteredAmount = By.xpath("//label[text()='Entered Amount']/preceding-sibling::input");
-//	By bankName = By.xpath("//label[text()='Name']/preceding-sibling::input");
-//	By bankBranch = By.xpath("//label[text()='Branch']/preceding-sibling::input");
-//	By bankAccount = By.xpath("//label[text()='Account']/preceding-sibling::input");
 	By bankName = By.xpath("//label[text()='Name']/following-sibling::span/span/a");
 	By bankBranch = By.xpath("//label[text()='Branch']/following-sibling::span/span/a");
 	By bankAccount = By.xpath("//label[text()='Account']/following-sibling::span/span/a");
@@ -547,7 +543,6 @@ public class Oracle_Receivables_Page extends WaitsManager {
 	}
 
 	public void scrollToLastVisibleRow() {
-//		By lastRowLoc = By.xpath("//table[@summary='Search Results']/tbody/tr[last()]");
 		By descending = By.xpath(
 				"//span[text()='Receipt Reference Number']/parent::div/preceding-sibling::div/descendant::a[@title='Sort Descending']");
 		By hoveEle = By.xpath("//span[text()='Receipt Reference Number']");
@@ -557,9 +552,6 @@ public class Oracle_Receivables_Page extends WaitsManager {
 			Actions actions = new Actions(driver);
 			actions.moveToElement(lastRow).build().perform();
 
-//	        ((JavascriptExecutor) driver)
-//					.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", lastRow);
-//			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", lastRow);
 			driver.findElement(descending).click();
 
 			logger.info("Scrolled to the last visible record in the table.");

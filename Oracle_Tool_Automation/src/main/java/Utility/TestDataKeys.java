@@ -74,5 +74,14 @@ public class TestDataKeys {
 	public String bankName = "Well Forgo Bank";
 	public String bankBranch = "WFG HOUSTON";
 	public String submitApplyManually = "Submit and Apply Manually";
+	public String createCustomerTask = "Create Customer";
+
+	// CREATE CUSTOMER
+	public String custname = "CR Test_01";
+	public String accDescription = "CR Test";
+	public String accAddressSet = "COMMONSET";
+	public String billTo_purpose="Bill to";
+	public String shipTo_Purpose="Ship to";
+	public String arState="AR";
 
 }

@@ -271,7 +271,7 @@ public class AccountReceivables_Test extends TestInitializer {
 		waitTime(driver);
 
 		grep.infoTest("Clicking on View Balance Details");
-		logger.info("Clicking on View Balance Details'");
+		logger.info("Clicking on View Balance Details");
 		waitTime(driver);
 		oraAr.clickActionAndValidate_inTransactionBtn("View Balance Details");
 		waitTime2(driver);

@@ -13768,3 +13768,158 @@ Session ID: f4db036e44da9b6139a9c193ca3f10d5
 2026-02-10 14:34:41 [main] INFO : Expected :101023 and Actual :101023 both are same
 2026-02-10 14:34:44 [main] INFO : Testing Ended
 2026-02-10 14:34:44 [main] INFO : ***********
+2026-02-10 14:39:07 [main] INFO : Launching Chrome Browser
+2026-02-10 14:39:08 [main] INFO : Report Name :OraclePage.html
+2026-02-10 14:39:14 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-10 14:39:19 [main] INFO : Logged in to Oracle Application
+2026-02-10 14:39:20 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-10 14:39:20 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-10 14:39:24 [main] INFO : Clicking on Home icon
+2026-02-10 14:39:29 [main] INFO : Selecting Quick Action: Create Transaction
+2026-02-10 14:39:30 [main] INFO : Navigating Create Transaction
+2026-02-10 14:39:31 [main] INFO : Filling Details in Create Transaction Page
+2026-02-10 14:39:32 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-10 14:39:35 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-10 14:39:40 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-10 14:39:46 [main] INFO : Entering Name: CR GE
+2026-02-10 14:39:52 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-10 14:39:55 [main] INFO : Entering Line Description: Testing
+2026-02-10 14:39:56 [main] INFO : Entering Line Quantity: 2
+2026-02-10 14:39:56 [main] INFO : Entering Line Unit Price: 50
+2026-02-10 14:40:04 [main] INFO : Extended Amount: 100,00
+2026-02-10 14:40:06 [main] INFO : Selecting Complete and Review Option
+2026-02-10 14:40:11 [main] INFO : Clicking on Post to ledger
+2026-02-10 14:40:19 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-10 14:40:19 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-10 14:40:29 [main] INFO : Validating the Accounting Lines
+2026-02-10 14:40:39 [main] INFO : Transaction Confirmation Message: Transaction 101024 has been saved.
+2026-02-10 14:40:40 [main] INFO : Extracted Transaction Number: 101024
+2026-02-10 14:40:45 [main] INFO : Navigating to Acoount Receivables
+2026-02-10 14:40:48 [main] INFO : Click on Create Receipt
+2026-02-10 14:40:50 [main] INFO : Filling the Details in Receipt Page
+2026-02-10 14:40:51 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-10 14:40:54 [main] INFO : Selecting Receipt Method: CR RECEIPT
+2026-02-10 14:40:57 [main] INFO : Entering Receipt Number: TestReceipt_03
+2026-02-10 14:41:00 [main] INFO : Entering Amount: 50
+2026-02-10 14:41:00 [main] INFO : Selecting Bank Name: Well Forgo Bank
+2026-02-10 14:41:05 [main] INFO : Selecting Bank branch: WFG HOUSTON
+2026-02-10 14:41:10 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-10 14:41:13 [main] INFO : Click on Submit Apply Manually
+2026-02-10 14:41:20 [main] INFO : Click on Application tab under Receipt Details Section
+2026-02-10 14:41:21 [main] INFO : Click on Add open Receivables
+2026-02-10 14:41:26 [main] INFO : Entering Transaction Customer Name: CR GE
+2026-02-10 14:41:29 [main] INFO : Scrolled to the last visible record in the table.
+2026-02-10 14:41:31 [main] INFO : Selecting receipt :101024
+2026-02-10 14:41:36 [main] INFO : Clicking on Post to ledger
+2026-02-10 14:41:44 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-10 14:41:44 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-10 14:41:54 [main] INFO : Validating the Accounting Lines
+2026-02-10 14:42:04 [main] INFO : Navigating to Billing page from Receivables
+2026-02-10 14:42:09 [main] INFO : Inside Manage Transactions Page
+2026-02-10 14:42:18 [main] INFO : Entering Business Unit: CRITICAL RIVER BU
+2026-02-10 14:42:27 [main] INFO : Entering Transaction Source name: CR MANUAL TRANSACTION
+2026-02-10 14:42:37 [main] INFO : Clicking on View Balance Details'
+2026-02-10 14:42:54 [main] INFO : Transaction Confirmation Message: Transaction 101024 has been saved.
+2026-02-10 14:42:55 [main] INFO : Extracted Transaction Number: 101024
+2026-02-10 14:42:55 [main] INFO : Expected :101024 and Actual :101024
+2026-02-10 14:42:55 [main] INFO : Expected :101024 and Actual :101024 both are same
+2026-02-10 14:42:58 [main] INFO : Testing Ended
+2026-02-10 14:42:58 [main] INFO : ***********
+2026-02-10 15:51:27 [main] INFO : Launching Chrome Browser
+2026-02-10 15:51:28 [main] INFO : Report Name :OraclePage.html
+2026-02-10 15:51:33 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-10 15:51:37 [main] INFO : Logged in to Oracle Application
+2026-02-10 15:51:38 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-10 15:51:38 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-10 15:51:46 [main] INFO : Navigating to Create Customer page from Billing
+2026-02-10 15:51:52 [main] INFO : Navigating Create Customer
+2026-02-10 15:51:54 [main] INFO : Filling Details
+2026-02-10 15:51:55 [main] INFO : Entering Customer Name: CR Test
+2026-02-10 15:52:00 [main] INFO : Testing Ended
+2026-02-10 15:52:00 [main] INFO : ***********
+2026-02-10 15:53:37 [main] INFO : Launching Chrome Browser
+2026-02-10 15:53:38 [main] INFO : Report Name :OraclePage.html
+2026-02-10 15:53:44 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-10 15:53:49 [main] INFO : Logged in to Oracle Application
+2026-02-10 15:53:50 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-10 15:53:50 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-10 15:53:56 [main] INFO : Navigating to Create Customer page from Billing
+2026-02-10 15:54:02 [main] INFO : Navigating Create Customer
+2026-02-10 15:54:03 [main] INFO : Filling Details
+2026-02-10 15:54:04 [main] INFO : Entering Customer Name: CR Test
+2026-02-10 15:54:06 [main] INFO : Entering Account Description: CR Test
+2026-02-10 15:54:08 [main] INFO : Selecting COMMONSET Option in Account Address 
+2026-02-10 15:54:10 [main] INFO : Entering Site Name: CR Test
+2026-02-10 15:54:12 [main] INFO : Selecting AR Option in State
+2026-02-10 15:54:13 [main] INFO : Clicking Add Row button for Address Purpose.
+2026-02-10 15:54:14 [main] INFO : Select Bill to from the purpose drop down under address Purpose
+2026-02-10 15:54:15 [main] INFO : Clicking Add Row button for Address Purpose.
+2026-02-10 15:54:16 [main] INFO : Select Ship to from the purpose drop down under address Purpose
+2026-02-10 15:54:18 [main] INFO : Testing Ended
+2026-02-10 15:54:18 [main] INFO : ***********
+2026-02-10 15:55:48 [main] INFO : Launching Chrome Browser
+2026-02-10 15:55:49 [main] INFO : Report Name :OraclePage.html
+2026-02-10 15:56:01 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-10 15:56:05 [main] INFO : Logged in to Oracle Application
+2026-02-10 15:56:06 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-10 15:56:06 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-10 15:56:13 [main] INFO : Navigating to Create Customer page from Billing
+2026-02-10 15:56:19 [main] INFO : Navigating Create Customer
+2026-02-10 15:56:20 [main] INFO : Filling Details
+2026-02-10 15:56:21 [main] INFO : Entering Customer Name: CR Test
+2026-02-10 15:56:23 [main] INFO : Entering Account Description: CR Test
+2026-02-10 15:56:25 [main] INFO : Selecting COMMONSET Option in Account Address 
+2026-02-10 15:56:27 [main] INFO : Entering Site Name: CR Test
+2026-02-10 15:56:29 [main] INFO : Selecting AR Option in State
+2026-02-10 15:56:30 [main] INFO : Clicking Add Row button for Address Purpose.
+2026-02-10 15:56:32 [main] INFO : Select Bill to from the purpose drop down under address Purpose
+2026-02-10 15:56:32 [main] INFO : Clicking Add Row button for Address Purpose.
+2026-02-10 15:56:34 [main] INFO : Select Ship to from the purpose drop down under address Purpose
+2026-02-10 15:56:35 [main] INFO : Testing Ended
+2026-02-10 15:56:35 [main] INFO : ***********
+2026-02-10 16:00:22 [main] INFO : Launching Chrome Browser
+2026-02-10 16:00:23 [main] INFO : Report Name :OraclePage.html
+2026-02-10 16:00:33 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-10 16:00:38 [main] INFO : Logged in to Oracle Application
+2026-02-10 16:00:39 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-10 16:00:39 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-10 16:00:45 [main] INFO : Navigating to Create Customer page from Billing
+2026-02-10 16:00:52 [main] INFO : Navigating Create Customer
+2026-02-10 16:00:53 [main] INFO : Filling Details
+2026-02-10 16:00:54 [main] INFO : Entering Customer Name: CR Test
+2026-02-10 16:00:56 [main] INFO : Entering Account Description: CR Test
+2026-02-10 16:00:58 [main] INFO : Selecting COMMONSET Option in Account Address 
+2026-02-10 16:01:00 [main] INFO : Entering Site Name: CR Test
+2026-02-10 16:01:02 [main] INFO : Selecting AR Option in State
+2026-02-10 16:01:03 [main] INFO : Clicking Add Row button for Address Purpose.
+2026-02-10 16:01:05 [main] INFO : Select Bill to from the purpose drop down under address Purpose
+2026-02-10 16:01:05 [main] INFO : Clicking Add Row button for Address Purpose.
+2026-02-10 16:01:07 [main] INFO : Select Ship to from the purpose drop down under address Purpose
+2026-02-10 16:01:12 [main] INFO : Selecting AR Option for Bill to Site under Account Address 
+2026-02-10 16:01:13 [main] INFO : Clicking Set Primary button for Address Purpose.
+2026-02-10 16:01:15 [main] INFO : Testing Ended
+2026-02-10 16:01:15 [main] INFO : ***********
+2026-02-10 16:17:26 [main] INFO : Launching Chrome Browser
+2026-02-10 16:17:27 [main] INFO : Report Name :OraclePage.html
+2026-02-10 16:17:34 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-10 16:17:38 [main] INFO : Logged in to Oracle Application
+2026-02-10 16:17:39 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-10 16:17:39 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-10 16:17:45 [main] INFO : Navigating to Create Customer page from Billing
+2026-02-10 16:17:51 [main] INFO : Navigating Create Customer
+2026-02-10 16:17:52 [main] INFO : Filling Details
+2026-02-10 16:17:54 [main] INFO : Entering Customer Name: CR Test_01
+2026-02-10 16:17:56 [main] INFO : Entering Account Description: CR Test
+2026-02-10 16:17:58 [main] INFO : Selecting COMMONSET Option in Account Address 
+2026-02-10 16:18:00 [main] INFO : Entering Site Name: CR Test_01
+2026-02-10 16:18:02 [main] INFO : Selecting AR Option in State
+2026-02-10 16:18:03 [main] INFO : Clicking Add Row button for Address Purpose.
+2026-02-10 16:18:05 [main] INFO : Select Bill to from the purpose drop down under address Purpose
+2026-02-10 16:18:05 [main] INFO : Clicking Add Row button for Address Purpose.
+2026-02-10 16:18:07 [main] INFO : Select Ship to from the purpose drop down under address Purpose
+2026-02-10 16:18:12 [main] INFO : Selecting AR Option for Bill to Site under Account Address 
+2026-02-10 16:18:13 [main] INFO : Clicking Set Primary button for Address Purpose.
+2026-02-10 16:18:17 [main] INFO : Found 1 organizations in the table. Searching for: CR Test_01
+2026-02-10 16:18:17 [main] INFO : Record Found: CR Test_01
+2026-02-10 16:18:18 [main] INFO : Testing Ended
+2026-02-10 16:18:18 [main] INFO : ***********

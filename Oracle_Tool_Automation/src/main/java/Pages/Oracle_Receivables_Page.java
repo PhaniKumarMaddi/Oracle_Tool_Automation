@@ -43,6 +43,7 @@ public class Oracle_Receivables_Page extends WaitsManager {
 	By completeCreateAnother_DropdownBtn = By.xpath("//a[@title='Complete and Create Another']");
 
 	By actionBtn = By.xpath("//a[text()='Actions']");
+	By ok_ActionConfirm = By.xpath("//button[@accesskey='K']");
 	By saveDropdownBtn = By.xpath("//a[@title='Save']");
 	By saveAndCloseBtn = By.xpath("//tr[@accesskey='S']/td[2]");
 	By transactionConfirmation = By.xpath("//div[@class='AFPopupSelector']/descendant::td[@class='x1n1']");
@@ -319,6 +320,17 @@ public class Oracle_Receivables_Page extends WaitsManager {
 
 	}
 
+	public void clickOk_inActionConfirmation() {
+		try {
+//			implWait(driver);
+			waitForElement(ok_ActionConfirm, 20);
+			driver.findElement(ok_ActionConfirm).click();
+			waitTime(driver);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
 	public void clickSaveAndCloseBtn_inTransactionPage() {
 		try {
 			implWait(driver);
@@ -551,6 +563,7 @@ public class Oracle_Receivables_Page extends WaitsManager {
 			WebElement lastRow = driver.findElement(hoveEle);
 			Actions actions = new Actions(driver);
 			actions.moveToElement(lastRow).build().perform();
+			waitTime(driver);
 
 			driver.findElement(descending).click();
 

@@ -20,9 +20,11 @@ public class Oracle_LoginPage extends WaitsManager {
 		this.driver = DriverManager.getDriver();
 	}
 
-	By userName = By.xpath("//input[@id='idcs-signin-basic-signin-form-username']");
+//	By userName = By.xpath("//input[@id='idcs-signin-basic-signin-form-username']");
+	By userName = By.xpath("//input[@id='idcs-signin-basic-signin-form-username|input']");
 	By password = By.xpath("//input[@id='idcs-signin-basic-signin-form-password|input']");
-	By signInBtn = By.xpath("//button[@class='oj-button-button']/descendant::span[text()='Sign In']");
+//	By signInBtn = By.xpath("//button[@class='oj-button-button']/descendant::span[text()='Sign In']");
+	By signInBtn = By.xpath("//button[@class='oj-button-button']/descendant::span[text()='Next']");
 	By homePageText = By.xpath("//a[@id='pt1:commandLink1']");
 	By welcomeText = By.xpath("//td[@id='pt1:atkph1::_afrTtxt']");
 

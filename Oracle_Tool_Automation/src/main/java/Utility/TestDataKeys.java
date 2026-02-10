@@ -66,11 +66,11 @@ public class TestDataKeys {
 	public String net_PaymentTerms = "Net 30";
 	public String receiptMethod = "CR RECEIPT";
 	public String quantity = "2";
-	public String unitPriceAmt = "80";
+	public String unitPriceAmt = "50";
 	// receipt
 	public String createReceiptTask = "Create Receipt";
 	public String manageTransactionTask = "Manage Transactions";
-	public String receiptNum = "TestReceipt_02"; // change values
+	public String receiptNum = "TestReceipt_03"; // change values
 	public String bankName = "Well Forgo Bank";
 	public String bankBranch = "WFG HOUSTON";
 	public String submitApplyManually = "Submit and Apply Manually";

@@ -163,7 +163,7 @@ public class AccountReceivables_Test extends TestInitializer {
 		oraAr.searchAndSelectBankName(dataTest.bankName);
 		waitTime2(driver);
 		oraAr.searchAndSelectBankBranch(dataTest.bankBranch);
-		waitTime(driver);
+		waitTime2(driver);
 		oraAr.searchAndSelectBankAccount(dataTest.bankAccount);
 		waitTime(driver);
 		grep.infoTest("Click on Submit Apply Manually");
@@ -185,7 +185,9 @@ public class AccountReceivables_Test extends TestInitializer {
 		grep.captureScreenshot("pass", "Inside Open Receivables popup", "openReceivablesPopup");
 		waitTime(driver);
 		oraAr.enterTransactionCustomerName_Receipt(dataTest.customerName);
-		waitTime(driver);
+		waitTime2(driver);
+		oraAr.scrollToLastVisibleRow();
+		waitTime2(driver);
 //		oraAr.clickSelectReceiptFromList("101013");
 		oraAr.clickSelectReceiptFromList(transactionNum);
 		waitTime(driver);
@@ -233,7 +235,9 @@ public class AccountReceivables_Test extends TestInitializer {
 		waitTime(driver);
 		grep.infoTest("Inside Manage Transactions Page");
 		logger.info("Inside Manage Transactions Page");
-		waitTime(driver);
+		waitTime2(driver);
+		oraAr.selectTransactionDate();
+		waitTime2(driver);
 		oraAr.clickBUDropdownButton();
 		oraAr.clickSearch_InDropdown();
 		waitTime2(driver);
@@ -262,7 +266,6 @@ public class AccountReceivables_Test extends TestInitializer {
 				"searchingTransaction_inManageTransaction");
 
 		waitTime(driver);
-		oraAr.scrollToLastVisibleRow();
 //		oraAr.clickSelect_TransactionNumber("101013");
 		oraAr.clickSelect_TransactionNumber(transactionNum);
 		waitTime(driver);
@@ -292,6 +295,8 @@ public class AccountReceivables_Test extends TestInitializer {
 
 		logger.info("Extracted Transaction Number: " + msgId);
 		grep.infoTest("Extracted Transaction Number: " + msgId);
+		waitTime(driver);
+		validAssert.equalsAssert(msgId, transactionNum);
 		waitTime(driver);
 		oraAr.clickOk_InManageTransactionConfirmation();
 		waitTime(driver);

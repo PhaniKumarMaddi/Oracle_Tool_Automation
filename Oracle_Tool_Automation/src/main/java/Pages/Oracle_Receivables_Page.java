@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import Utility.DriverManager;
 import Utility.GenerateReports;
@@ -545,6 +546,28 @@ public class Oracle_Receivables_Page extends WaitsManager {
 
 	}
 
+	public void scrollToLastVisibleRow() {
+//		By lastRowLoc = By.xpath("//table[@summary='Search Results']/tbody/tr[last()]");
+		By descending = By.xpath(
+				"//span[text()='Receipt Reference Number']/parent::div/preceding-sibling::div/descendant::a[@title='Sort Descending']");
+		By hoveEle = By.xpath("//span[text()='Receipt Reference Number']");
+
+		try {
+			WebElement lastRow = driver.findElement(hoveEle);
+			Actions actions = new Actions(driver);
+			actions.moveToElement(lastRow).build().perform();
+
+//	        ((JavascriptExecutor) driver)
+//					.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", lastRow);
+//			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", lastRow);
+			driver.findElement(descending).click();
+
+			logger.info("Scrolled to the last visible record in the table.");
+		} catch (Exception e) {
+			logger.error("Could not find the last row to scroll: " + e.getMessage());
+		}
+	}
+
 	public void clickSelectReceiptFromList(String receiptVal) throws Exception {
 
 		try {
@@ -582,6 +605,19 @@ public class Oracle_Receivables_Page extends WaitsManager {
 	}
 
 //	MANAGE TRANSACTIONS
+
+	public void selectTransactionDate() throws Exception {
+		try {
+			implWait(driver);
+			driver.findElement(transactionDate).click();
+			waitTime(driver);
+			driver.findElement(selectDate).click();
+			waitTime(driver);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+
+		}
+	}
 
 	public void clickBUDropdownButton() throws Exception {
 		try {
@@ -689,22 +725,6 @@ public class Oracle_Receivables_Page extends WaitsManager {
 			logger.info("Entering Transaction Source name: " + nameVal);
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
-	}
-
-	public void scrollToLastVisibleRow() {
-		By lastRowLoc = By.xpath("//table[@summary='Search Results']/tbody/tr[last()]");
-
-		try {
-			WebElement lastRow = driver.findElement(lastRowLoc);
-
-			// Use JavaScript to scroll the row into the center of the screen
-			((JavascriptExecutor) driver)
-					.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", lastRow);
-
-			logger.info("Scrolled to the last visible record in the table.");
-		} catch (Exception e) {
-			logger.error("Could not find the last row to scroll: " + e.getMessage());
 		}
 	}
 

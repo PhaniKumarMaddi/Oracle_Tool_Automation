@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.CreateCustomer_Test">
+      <class name="Tests.Oracle_AR_CreateAccountingTest">
         <methods>
           <include name="tearDown"/>
+          <include name="oracle_AR_CreateAccounting"/>
           <include name="setup"/>
-          <include name="oracle_CreateCustomer_Test"/>
         </methods>
-      </class> <!-- Tests.CreateCustomer_Test -->
+      </class> <!-- Tests.Oracle_AR_CreateAccountingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

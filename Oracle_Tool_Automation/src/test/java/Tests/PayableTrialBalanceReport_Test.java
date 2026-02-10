@@ -21,7 +21,6 @@ public class PayableTrialBalanceReport_Test extends TestInitializer {
 	@Test
 	public void oracle_Payable_Trial_Balance_Report() throws Exception {
 		waitTime(driver);
-		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_AccountingAtGlance oraAag = new Oracle_AccountingAtGlance();
 
 		waitTime(driver);

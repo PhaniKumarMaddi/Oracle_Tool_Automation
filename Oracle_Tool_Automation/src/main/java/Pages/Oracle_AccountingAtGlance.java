@@ -43,6 +43,7 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 	By ok_inledger = By.xpath("//button[contains(@id,'basicReqBody:dynam1:0:ld::lovDialogId::ok') and text()='OK']");
 
 	By processCatgDropdown = By.xpath("//label[text()='Process Category']/parent::td/following-sibling::td/select");
+	By reportStyle = By.xpath("//label[text()='Report Style']/parent::td/following-sibling::td/select");
 	By submitBtn_inProcessDetail = By.xpath("//a[@accesskey='m']");
 
 	By refreshBtn = By.xpath("//img[@alt='Refresh']");
@@ -53,6 +54,8 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 	By accountingExecutionReport = By.xpath("//span[text()='Create Accounting Execution Report']");
 	By xmlBtn = By.xpath("//div[@id='deliveryInfo']/descendant::a[@id='XMLData']");
 	By businessUnitDropdown = By.xpath("//a[starts-with(@title,'Business Unit')]");
+	By defaultDocument = By.xpath("//span[text()='Default Document']");
+	
 
 //Process 4796079 was submitted.
 
@@ -165,6 +168,23 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 			sel.selectByVisibleText(option);
 			grep.infoTest("Select " + option + " from the drop down under Sub ledger application");
 			logger.info("Select " + option + " from the drop down under Sub ledger application");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			grep.failTest("Test Failed :" + e.getMessage());
+			logger.error("Test Failed :" + e.getMessage());
+		}
+
+	}
+
+	public void selectReportStyle(String option) throws Exception {
+		try {
+			waitForElementToBeClickable(reportStyle, 10);
+			WebElement selectStyle = driver.findElement(reportStyle);
+			Select sel = new Select(selectStyle);
+			sel.selectByVisibleText(option);
+			grep.infoTest("Select " + option + " from the drop down under Report Style");
+			logger.info("Select " + option + " from the drop down under Report Style");
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -464,6 +484,12 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 		waitForElement(xmlBtn, 20);
 		scrollView(xmlBtn);
 		driver.findElement(xmlBtn).click();
+	}
+	
+	public void clickDefaultDocumentBtn() {
+		waitForElement(defaultDocument, 20);
+		scrollView(defaultDocument);
+		driver.findElement(defaultDocument).click();
 	}
 
 	public void searchAndSelectBusinessUnit_inProcessDetails(String businessUnitVal) {

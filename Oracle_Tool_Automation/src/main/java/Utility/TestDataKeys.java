@@ -59,7 +59,8 @@ public class TestDataKeys {
 	public String payablesSubLedger = "Payables";
 	public String receivablesSubLedger = "Receivables";
 	public String crPrimaryLedger = "CR PRIMARY LEDGER";
-
+	public String detail_reportStyle = "Detail";
+	
 	// Account receivables
 	public String transactionSource = "CR MANUAL TRANSACTION";
 	public String transactionType = "CR INVOICE";

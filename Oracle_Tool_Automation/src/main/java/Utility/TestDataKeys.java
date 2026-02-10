@@ -10,6 +10,7 @@ public class TestDataKeys {
 	public String receivableNavTab = "Receivables";
 	public String createTransactionAction = "Create Transaction";
 	public String accReceivableCatg = "Accounts Receivable";
+	public String billingCatg = "Billing";
 
 	public String createInvoiceBtn = "Create Invoice";
 	public String createPaymentBtn = "Create Payment";
@@ -68,6 +69,8 @@ public class TestDataKeys {
 	public String unitPriceAmt = "80";
 	// receipt
 	public String createReceiptTask = "Create Receipt";
+	public String manageTransactionTask = "Manage Transactions";
+	public String receiptNum = "TestReceipt_02"; // change values
 	public String bankName = "Well Forgo Bank";
 	public String bankBranch = "WFG HOUSTON";
 	public String submitApplyManually = "Submit and Apply Manually";

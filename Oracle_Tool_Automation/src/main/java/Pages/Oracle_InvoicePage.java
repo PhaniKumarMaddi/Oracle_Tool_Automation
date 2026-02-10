@@ -486,7 +486,8 @@ public class Oracle_InvoicePage extends WaitsManager {
 	// Accounting
 	public void validateAccountingConfirmationPopup() throws Exception {
 		try {
-			implWait(driver);
+//			implWait(driver);
+			waitForElement(text_AccountingConfirmation,30);
 
 			String getMsg = driver.findElement(text_AccountingConfirmation).getText().trim();
 			validAssert.equalsAssert(getMsg, "The accounting has been completed.");

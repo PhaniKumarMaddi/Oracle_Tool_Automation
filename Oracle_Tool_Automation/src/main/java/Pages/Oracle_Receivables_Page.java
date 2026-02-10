@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -51,9 +52,10 @@ public class Oracle_Receivables_Page extends WaitsManager {
 	By receiptMethod = By.xpath("//label[text()='Receipt Method']/preceding-sibling::input");
 	By receiptNumber = By.xpath("//label[text()='Receipt Number']/preceding-sibling::input");
 	By enteredAmount = By.xpath("//label[text()='Entered Amount']/preceding-sibling::input");
-	By bankName = By.xpath("//label[text()='Name']/preceding-sibling::input");
+//	By bankName = By.xpath("//label[text()='Name']/preceding-sibling::input");
 //	By bankBranch = By.xpath("//label[text()='Branch']/preceding-sibling::input");
 //	By bankAccount = By.xpath("//label[text()='Account']/preceding-sibling::input");
+	By bankName = By.xpath("//label[text()='Name']/following-sibling::span/span/a");
 	By bankBranch = By.xpath("//label[text()='Branch']/following-sibling::span/span/a");
 	By bankAccount = By.xpath("//label[text()='Account']/following-sibling::span/span/a");
 	By submitAndCreateAnotherBtn = By.xpath("//a[@title='Submit and Create Another']");
@@ -62,6 +64,25 @@ public class Oracle_Receivables_Page extends WaitsManager {
 	By transactionCustomerName = By.xpath("//label[text()=' Transaction Customer Name']/preceding-sibling::input");
 	By transactionCustNameSearch = By.xpath("//label[text()=' Transaction Customer Name']/following-sibling::a");
 	By doneOpenReceivable = By.xpath("//button[@accesskey='o']");
+	By save_ReceiptBtn = By.xpath("//button[text()='Save']");
+
+	// Manage Transactions
+	By transactionDate = By.xpath("//label[text()=' Transaction Date']/following-sibling::a");
+	By selectDate = By.xpath("//td[@class='x120 p_AFSelected']");
+	By businessUnitDropdown = By.xpath("//a[@title='Search:  Business Unit']");
+	By searchInDropdwon = By.xpath("//a[text()='Search...']");
+	By insertBu_inPopup = By.xpath(
+			"//label[text()=' Business Unit']/preceding-sibling::input[contains(@name,'afrLovInternalQueryId:')]");
+
+	By search_inSelectPopup = By.xpath("//button[contains(@id,'_afrLovInternalQueryId::search') and text()='Search']");
+	By ok_inSelectPopup = By.xpath("//button[contains(@id,'lovDialogId::ok') and text()='OK']");
+
+	By transactionSourceDropdown = By.xpath("//a[@title='Search:  Transaction Source']");
+	By insertName_inPopup = By
+			.xpath("//label[text()=' Name']/preceding-sibling::input[contains(@name,'afrLovInternalQueryId:')]");
+
+	By okBtn_InManageTransaction = By
+			.xpath("//div[@class='AFPopupSelector']/descendant::td[@class='p_AFResizable x1pn']/button");
 
 	// CREATE TRANSACTIONS
 
@@ -361,15 +382,15 @@ public class Oracle_Receivables_Page extends WaitsManager {
 		}
 	}
 
-	public void enterReceiptName(String nameVal) {
+	public void enterReceiptNumber(String numVal) {
 		try {
 			implWait(driver);
 
 			driver.findElement(receiptNumber).click();
-			driver.findElement(receiptNumber).sendKeys(nameVal);
+			driver.findElement(receiptNumber).sendKeys(numVal);
 			waitTime(driver);
-			grep.infoTest("Entering Receipt Number: " + nameVal);
-			logger.info("Entering Receipt Number: " + nameVal);
+			grep.infoTest("Entering Receipt Number: " + numVal);
+			logger.info("Entering Receipt Number: " + numVal);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -392,10 +413,10 @@ public class Oracle_Receivables_Page extends WaitsManager {
 	public void searchAndSelectBankName(String bankVal) {
 		try {
 			implWait(driver);
-			By selectBankName = By.xpath("//li[starts-with(text(),'" + bankVal + "')]");
+			By selectBankName = By.xpath("//span[starts-with(text(),'" + bankVal + "')]");
 
 			driver.findElement(bankName).click();
-			driver.findElement(bankName).sendKeys(bankVal);
+//			driver.findElement(bankName).sendKeys(bankVal);
 			waitTime(driver);
 			grep.infoTest("Selecting Bank Name: " + bankVal);
 			logger.info("Selecting Bank Name: " + bankVal);
@@ -462,7 +483,7 @@ public class Oracle_Receivables_Page extends WaitsManager {
 
 	public void clickApplicationTab_inReceiptDetails() {
 		try {
-			waitForElement(application_ReceiptDetails, 0);
+			waitForElement(application_ReceiptDetails, 20);
 			driver.findElement(application_ReceiptDetails).click();
 			waitTime(driver);
 		} catch (Exception e) {
@@ -472,7 +493,7 @@ public class Oracle_Receivables_Page extends WaitsManager {
 
 	public void clickAddOpenReceivablesBtn_inReceiptDetails() {
 		try {
-			waitForElement(openReceivablesBtn, 0);
+			waitForElement(openReceivablesBtn, 20);
 			driver.findElement(openReceivablesBtn).click();
 			waitTime(driver);
 		} catch (Exception e) {
@@ -482,8 +503,8 @@ public class Oracle_Receivables_Page extends WaitsManager {
 
 	public void enterTransactionCustomerName_Receipt(String nameVal) {
 		try {
-			implWait(driver);
-
+//			implWait(driver);
+			waitForElement(transactionCustomerName, 20);
 			driver.findElement(transactionCustomerName).click();
 			driver.findElement(transactionCustomerName).sendKeys(nameVal);
 			waitTime(driver);
@@ -529,7 +550,9 @@ public class Oracle_Receivables_Page extends WaitsManager {
 		try {
 			By selectReceipt = By.xpath("//span[text()='" + receiptVal + "']");
 
-			implWait(driver);
+//			implWait(driver);
+			waitForElement(selectReceipt, 30);
+			scrollView(selectReceipt);
 			List<WebElement> receipt = driver.findElements(selectReceipt);
 			if (receipt.size() > 0) {
 				receipt.getFirst().click();
@@ -550,5 +573,162 @@ public class Oracle_Receivables_Page extends WaitsManager {
 			e.printStackTrace();
 		}
 
+	}
+
+	public void clickSaveReceiptBtn() {
+		implWait(driver);
+
+		driver.findElement(save_ReceiptBtn).click();
+	}
+
+//	MANAGE TRANSACTIONS
+
+	public void clickBUDropdownButton() throws Exception {
+		try {
+			implWait(driver);
+			boolean elementExists = !driver.findElements(businessUnitDropdown).isEmpty();
+			if (elementExists) {
+				waitForElementToBeClickable(businessUnitDropdown, 30);
+				driver.findElement(businessUnitDropdown).click();
+			} else {
+				logger.error("Business unit dropdown button Not Available ");
+				grep.failTest("Business unit dropdown button Not Available ");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			grep.failTest("Test Failed :" + e.getMessage());
+			logger.error("Test Failed :" + e.getMessage());
+		}
+	}
+
+	public void clickSearch_InDropdown() throws Exception {
+		try {
+			implWait(driver);
+			boolean elementExists = !driver.findElements(searchInDropdwon).isEmpty();
+			if (elementExists) {
+				waitForElementToBeClickable(searchInDropdwon, 30);
+				driver.findElement(searchInDropdwon).click();
+			} else {
+				logger.error("Search in dropdown Not Available ");
+				grep.failTest("Search in dropdown Not Available ");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			grep.failTest("Test Failed :" + e.getMessage());
+			logger.error("Test Failed :" + e.getMessage());
+		}
+	}
+
+	public void enterBU(String nameVal) {
+		try {
+			implWait(driver);
+
+			driver.findElement(insertBu_inPopup).click();
+			driver.findElement(insertBu_inPopup).sendKeys(nameVal);
+			waitTime(driver);
+			grep.infoTest("Entering Business Unit: " + nameVal);
+			logger.info("Entering Business Unit: " + nameVal);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickSelect_NameFromList(String name) throws Exception {
+
+		try {
+			By selectName = By
+					.xpath("//div[contains(@id,'afrLovInternalTableId::db')]/descendant::span[text()='" + name + "']");
+
+			implWait(driver);
+			List<WebElement> state = driver.findElements(selectName);
+			if (state.size() > 0) {
+				state.getFirst().click();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void clickSearch_inSelect_Popup() {
+		implWait(driver);
+		driver.findElement(search_inSelectPopup).click();
+	}
+
+	public void clickOk_inSelect_Popup() {
+		implWait(driver);
+		driver.findElement(ok_inSelectPopup).click();
+	}
+
+	public void clickTransactionSourceDropdownButton() throws Exception {
+		try {
+			implWait(driver);
+			boolean elementExists = !driver.findElements(transactionSourceDropdown).isEmpty();
+			if (elementExists) {
+				waitForElementToBeClickable(transactionSourceDropdown, 30);
+				driver.findElement(transactionSourceDropdown).click();
+			} else {
+				logger.error("Transaction Source dropdown button Not Available ");
+				grep.failTest("Transaction Source dropdown button Not Available ");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			grep.failTest("Test Failed :" + e.getMessage());
+			logger.error("Test Failed :" + e.getMessage());
+		}
+	}
+
+	public void enterTransactionSourceName_inpopup(String nameVal) {
+		try {
+			implWait(driver);
+
+			driver.findElement(insertName_inPopup).click();
+			driver.findElement(insertName_inPopup).sendKeys(nameVal);
+			waitTime(driver);
+			grep.infoTest("Entering Transaction Source name: " + nameVal);
+			logger.info("Entering Transaction Source name: " + nameVal);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void scrollToLastVisibleRow() {
+		By lastRowLoc = By.xpath("//table[@summary='Search Results']/tbody/tr[last()]");
+
+		try {
+			WebElement lastRow = driver.findElement(lastRowLoc);
+
+			// Use JavaScript to scroll the row into the center of the screen
+			((JavascriptExecutor) driver)
+					.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", lastRow);
+
+			logger.info("Scrolled to the last visible record in the table.");
+		} catch (Exception e) {
+			logger.error("Could not find the last row to scroll: " + e.getMessage());
+		}
+	}
+
+	public void clickSelect_TransactionNumber(String number) throws Exception {
+
+		try {
+			By selectTransactionNumber = By.xpath("//a[text()='" + number + "']");
+
+//			implWait(driver);
+			waitForElement(selectTransactionNumber, 30);
+			scrollView(selectTransactionNumber);
+			List<WebElement> state = driver.findElements(selectTransactionNumber);
+			if (state.size() > 0) {
+				state.getFirst().click();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void clickOk_InManageTransactionConfirmation() {
+		implWait(driver);
+
+		driver.findElement(okBtn_InManageTransaction).click();
 	}
 }

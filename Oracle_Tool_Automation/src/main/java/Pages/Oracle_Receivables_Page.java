@@ -36,6 +36,8 @@ public class Oracle_Receivables_Page extends WaitsManager {
 	By description_InLine = By.xpath("//label[text()='Description']/preceding-sibling::input");
 	By quantity_inLine = By.xpath("//label[text()='Quantity']/preceding-sibling::input");
 	By unitPrice_inLine = By.xpath("//label[text()='Unit Price']/preceding-sibling::input");
+	By extendedAmt = By.xpath("//span[contains(@id,'extendedAmt')]");
+
 	By saveBtn = By.xpath("//a/span[text()='Save']");
 	By completeCreateAnother_DropdownBtn = By.xpath("//a[@title='Complete and Create Another']");
 
@@ -50,9 +52,16 @@ public class Oracle_Receivables_Page extends WaitsManager {
 	By receiptNumber = By.xpath("//label[text()='Receipt Number']/preceding-sibling::input");
 	By enteredAmount = By.xpath("//label[text()='Entered Amount']/preceding-sibling::input");
 	By bankName = By.xpath("//label[text()='Name']/preceding-sibling::input");
-	By bankBranch = By.xpath("//label[text()='Branch']/preceding-sibling::input");
-	By bankAccount = By.xpath("//label[text()='Account']/preceding-sibling::input");
+//	By bankBranch = By.xpath("//label[text()='Branch']/preceding-sibling::input");
+//	By bankAccount = By.xpath("//label[text()='Account']/preceding-sibling::input");
+	By bankBranch = By.xpath("//label[text()='Branch']/following-sibling::span/span/a");
+	By bankAccount = By.xpath("//label[text()='Account']/following-sibling::span/span/a");
 	By submitAndCreateAnotherBtn = By.xpath("//a[@title='Submit and Create Another']");
+	By application_ReceiptDetails = By.xpath("//div[contains(@id,':showDetailItem2')]/div/a[text()='Application']");
+	By openReceivablesBtn = By.xpath("//button[text()='Add Open Receivables']");
+	By transactionCustomerName = By.xpath("//label[text()=' Transaction Customer Name']/preceding-sibling::input");
+	By transactionCustNameSearch = By.xpath("//label[text()=' Transaction Customer Name']/following-sibling::a");
+	By doneOpenReceivable = By.xpath("//button[@accesskey='o']");
 
 	// CREATE TRANSACTIONS
 
@@ -234,6 +243,28 @@ public class Oracle_Receivables_Page extends WaitsManager {
 		}
 	}
 
+	public String getExtendedAmount() throws Exception {
+		String getAmt = null;
+		try {
+
+			implWait(driver);
+
+			getAmt = driver.findElement(extendedAmt).getText().trim();
+//			getMsg = fullMessage.replaceAll("[^0-9]", "");
+
+			if (getAmt.isEmpty()) {
+				logger.error("No numeric transaction number found in message: " + getAmt);
+				return getAmt;
+			}
+			grep.infoTest("Extended Amount: " + getAmt);
+			logger.info("Extended Amount: " + getAmt);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return getAmt;
+	}
+
 	public void clickSaveBtn_inTransactionPage() {
 		implWait(driver);
 		driver.findElement(saveBtn).click();
@@ -253,7 +284,7 @@ public class Oracle_Receivables_Page extends WaitsManager {
 
 	}
 
-	//
+	// actions
 
 	public void clickActionAndValidate_inTransactionBtn(String actionVal) throws Exception {
 		try {
@@ -270,7 +301,6 @@ public class Oracle_Receivables_Page extends WaitsManager {
 
 	}
 
-	
 	public void clickSaveAndCloseBtn_inTransactionPage() {
 		try {
 			implWait(driver);
@@ -310,5 +340,215 @@ public class Oracle_Receivables_Page extends WaitsManager {
 		driver.findElement(okBtn_InTransactionConfirmation).click();
 	}
 
-	// Create Receipt
+	// CREATE RECEIPT
+
+	public void searchAndSelectReceiptMethod(String receiptVal) {
+		try {
+			implWait(driver);
+			By selectReceiptMethod = By.xpath("//li[starts-with(text(),'" + receiptVal + "')]");
+
+			driver.findElement(receiptMethod).click();
+			driver.findElement(receiptMethod).sendKeys(receiptVal);
+			waitTime(driver);
+			grep.infoTest("Selecting Receipt Method: " + receiptVal);
+			logger.info("Selecting Receipt Method: " + receiptVal);
+			waitTime2(driver);
+			waitForElementToBeClickable(selectReceiptMethod, 20);
+			driver.findElement(selectReceiptMethod).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void enterReceiptName(String nameVal) {
+		try {
+			implWait(driver);
+
+			driver.findElement(receiptNumber).click();
+			driver.findElement(receiptNumber).sendKeys(nameVal);
+			waitTime(driver);
+			grep.infoTest("Entering Receipt Number: " + nameVal);
+			logger.info("Entering Receipt Number: " + nameVal);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void enterAmount_inReceipt(String nameVal) {
+		try {
+			implWait(driver);
+
+			driver.findElement(enteredAmount).click();
+			driver.findElement(enteredAmount).sendKeys(nameVal);
+			waitTime(driver);
+			grep.infoTest("Entering Amount: " + nameVal);
+			logger.info("Entering Amount: " + nameVal);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void searchAndSelectBankName(String bankVal) {
+		try {
+			implWait(driver);
+			By selectBankName = By.xpath("//li[starts-with(text(),'" + bankVal + "')]");
+
+			driver.findElement(bankName).click();
+			driver.findElement(bankName).sendKeys(bankVal);
+			waitTime(driver);
+			grep.infoTest("Selecting Bank Name: " + bankVal);
+			logger.info("Selecting Bank Name: " + bankVal);
+			waitTime2(driver);
+			waitForElementToBeClickable(selectBankName, 20);
+			driver.findElement(selectBankName).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void searchAndSelectBankBranch(String bankVal) {
+		try {
+			implWait(driver);
+			By selectBankBranch = By.xpath("//span[starts-with(text(),'" + bankVal + "')]");
+
+			driver.findElement(bankBranch).click();
+//			driver.findElement(bankBranch).sendKeys(bankVal);
+			waitTime(driver);
+			grep.infoTest("Selecting Bank branch: " + bankVal);
+			logger.info("Selecting Bank branch: " + bankVal);
+			waitTime2(driver);
+			waitForElementToBeClickable(selectBankBranch, 20);
+			driver.findElement(selectBankBranch).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void searchAndSelectBankAccount(String bankAccVal) {
+		try {
+			implWait(driver);
+			By selectBankAccount = By.xpath("//span[starts-with(text(),'" + bankAccVal + "')]");
+
+			driver.findElement(bankAccount).click();
+//			driver.findElement(bankAccount).sendKeys(bankAccVal);
+			waitTime(driver);
+			grep.infoTest("Selecting Bank Account:a " + bankAccVal);
+			logger.info("Selecting Bank Account: " + bankAccVal);
+			waitTime2(driver);
+			waitForElementToBeClickable(selectBankAccount, 20);
+			driver.findElement(selectBankAccount).click();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickSubmitCreateAnotherBtn_inReceiptPage(String submitVal) {
+		try {
+			By selectSubmitOption = By.xpath("//td[text()='" + submitVal + "']");
+
+			implWait(driver);
+			driver.findElement(submitAndCreateAnotherBtn).click();
+			waitTime(driver);
+			driver.findElement(selectSubmitOption).click();
+			waitTime(driver);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+	public void clickApplicationTab_inReceiptDetails() {
+		try {
+			waitForElement(application_ReceiptDetails, 0);
+			driver.findElement(application_ReceiptDetails).click();
+			waitTime(driver);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+	public void clickAddOpenReceivablesBtn_inReceiptDetails() {
+		try {
+			waitForElement(openReceivablesBtn, 0);
+			driver.findElement(openReceivablesBtn).click();
+			waitTime(driver);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+	public void enterTransactionCustomerName_Receipt(String nameVal) {
+		try {
+			implWait(driver);
+
+			driver.findElement(transactionCustomerName).click();
+			driver.findElement(transactionCustomerName).sendKeys(nameVal);
+			waitTime(driver);
+			grep.infoTest("Entering Transaction Customer Name: " + nameVal);
+			logger.info("Entering Transaction Customer Name: " + nameVal);
+			actionEntered();
+			waitTime(driver);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickTransactionCustomerNameSearch_Receipt(String nameVal) {
+		try {
+			implWait(driver);
+
+			driver.findElement(transactionCustNameSearch).click();
+			waitTime(driver);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickSelectTransactionCustomerNameFromList(String name) throws Exception {
+
+		try {
+			By selectName = By
+					.xpath("//div[contains(@id,'frLovInternalTableId::db')]/descendant::span[text()='" + name + "']");
+
+			implWait(driver);
+			List<WebElement> state = driver.findElements(selectName);
+			if (state.size() > 0) {
+				state.getFirst().click();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void clickSelectReceiptFromList(String receiptVal) throws Exception {
+
+		try {
+			By selectReceipt = By.xpath("//span[text()='" + receiptVal + "']");
+
+			implWait(driver);
+			List<WebElement> receipt = driver.findElements(selectReceipt);
+			if (receipt.size() > 0) {
+				receipt.getFirst().click();
+				grep.infoTest("Selecting receipt :" + receiptVal);
+				logger.info("Selecting receipt :" + receiptVal);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void clickDoneBtn_inOpenReceivables() throws Exception {
+		try {
+			implWait(driver);
+			driver.findElement(doneOpenReceivable).click();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
 }

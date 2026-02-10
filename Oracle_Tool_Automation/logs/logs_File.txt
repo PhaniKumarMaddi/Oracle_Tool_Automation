@@ -12898,3 +12898,113 @@ Session ID: f4db036e44da9b6139a9c193ca3f10d5
 2026-02-09 19:06:57 [main] INFO : Extracted Transaction Number: 101007
 2026-02-09 19:06:58 [main] INFO : Testing Ended
 2026-02-09 19:06:58 [main] INFO : ***********
+2026-02-09 20:04:18 [main] INFO : Launching Chrome Browser
+2026-02-09 20:04:19 [main] INFO : Report Name :OraclePage.html
+2026-02-09 20:04:26 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-09 20:04:30 [main] INFO : Logged in to Oracle Application
+2026-02-09 20:04:32 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-09 20:04:32 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-09 20:04:40 [main] INFO : Clicking on Home icon
+2026-02-09 20:04:44 [main] INFO : Selecting Quick Action: Create Transaction
+2026-02-09 20:04:45 [main] INFO : Navigating Create Transaction
+2026-02-09 20:04:47 [main] INFO : Filling Details in Create Transaction Page
+2026-02-09 20:04:48 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-09 20:04:51 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-09 20:04:56 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-09 20:05:02 [main] INFO : Entering Name: CR GE
+2026-02-09 20:05:08 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-09 20:05:11 [main] INFO : Entering Line Description: Testing
+2026-02-09 20:05:12 [main] INFO : Entering Line Quantity: 2
+2026-02-09 20:05:13 [main] INFO : Entering Line Unit Price: 80
+2026-02-09 20:05:22 [main] INFO : Selecting Complete and Review Option
+2026-02-09 20:05:27 [main] INFO : Clicking on Post to ledger
+2026-02-09 20:05:35 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-09 20:05:35 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-09 20:05:46 [main] INFO : Validating the Accounting Lines
+2026-02-09 20:05:56 [main] INFO : Transaction Confirmation Message: Transaction 101008 has been saved.
+2026-02-09 20:05:56 [main] INFO : Extracted Transaction Number: 101008
+2026-02-09 20:05:58 [main] INFO : Testing Ended
+2026-02-09 20:05:58 [main] INFO : ***********
+2026-02-10 08:38:11 [main] INFO : Launching Chrome Browser
+2026-02-10 08:38:11 [main] INFO : Report Name :OraclePage.html
+2026-02-10 08:38:18 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-10 08:38:23 [main] INFO : Logged in to Oracle Application
+2026-02-10 08:38:24 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-10 08:38:24 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-10 08:38:29 [main] INFO : Clicking on Home icon
+2026-02-10 08:38:33 [main] INFO : Selecting Quick Action: Create Transaction
+2026-02-10 08:38:34 [main] INFO : Navigating Create Transaction
+2026-02-10 08:38:36 [main] INFO : Filling Details in Create Transaction Page
+2026-02-10 08:38:37 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-10 08:38:41 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-10 08:38:46 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-10 08:38:52 [main] INFO : Entering Name: CR GE
+2026-02-10 08:38:57 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-10 08:39:00 [main] INFO : Entering Line Description: Testing
+2026-02-10 08:39:01 [main] INFO : Entering Line Quantity: 2
+2026-02-10 08:39:02 [main] INFO : Entering Line Unit Price: 80
+2026-02-10 08:39:11 [main] INFO : Selecting Complete and Review Option
+2026-02-10 08:39:16 [main] INFO : Clicking on Post to ledger
+2026-02-10 08:39:24 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-10 08:39:24 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-10 08:39:35 [main] INFO : Validating the Accounting Lines
+2026-02-10 08:39:45 [main] INFO : Transaction Confirmation Message: Transaction 101009 has been saved.
+2026-02-10 08:39:45 [main] INFO : Extracted Transaction Number: 101009
+2026-02-10 08:39:47 [main] INFO : Testing Ended
+2026-02-10 08:39:47 [main] INFO : ***********
+2026-02-10 08:53:26 [main] INFO : Launching Chrome Browser
+2026-02-10 08:53:27 [main] INFO : Report Name :OraclePage.html
+2026-02-10 08:53:33 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-10 08:53:38 [main] INFO : Logged in to Oracle Application
+2026-02-10 08:53:39 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-10 08:53:39 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-10 08:53:44 [main] INFO : Clicking on Home icon
+2026-02-10 08:53:50 [main] INFO : Selecting Quick Action: Create Transaction
+2026-02-10 08:53:51 [main] INFO : Navigating Create Transaction
+2026-02-10 08:53:52 [main] INFO : Filling Details in Create Transaction Page
+2026-02-10 08:53:54 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-10 08:53:57 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-10 08:54:02 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-10 08:54:08 [main] INFO : Entering Name: CR GE
+2026-02-10 08:54:14 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-10 08:54:17 [main] INFO : Entering Line Description: Testing
+2026-02-10 08:54:17 [main] INFO : Entering Line Quantity: 2
+2026-02-10 08:54:18 [main] INFO : Entering Line Unit Price: 80
+2026-02-10 08:54:26 [main] INFO : Extended Amount: 160,00
+2026-02-10 08:54:27 [main] INFO : Selecting Complete and Review Option
+2026-02-10 08:54:33 [main] INFO : Clicking on Post to ledger
+2026-02-10 08:54:42 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-10 08:54:42 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-10 08:54:53 [main] INFO : Validating the Accounting Lines
+2026-02-10 08:54:55 [main] INFO : Testing Ended
+2026-02-10 08:54:55 [main] INFO : ***********
+2026-02-10 08:59:43 [main] INFO : Launching Chrome Browser
+2026-02-10 08:59:44 [main] INFO : Report Name :OraclePage.html
+2026-02-10 08:59:51 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-10 08:59:56 [main] INFO : Logged in to Oracle Application
+2026-02-10 08:59:57 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-10 08:59:57 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-10 09:00:01 [main] INFO : Clicking on Home icon
+2026-02-10 09:00:06 [main] INFO : Selecting Quick Action: Create Transaction
+2026-02-10 09:00:07 [main] INFO : Navigating Create Transaction
+2026-02-10 09:00:08 [main] INFO : Filling Details in Create Transaction Page
+2026-02-10 09:00:09 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-10 09:00:12 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-10 09:00:17 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-10 09:00:23 [main] INFO : Entering Name: CR GE
+2026-02-10 09:00:29 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-10 09:00:32 [main] INFO : Entering Line Description: Testing
+2026-02-10 09:00:33 [main] INFO : Entering Line Quantity: 2
+2026-02-10 09:00:33 [main] INFO : Entering Line Unit Price: 80
+2026-02-10 09:00:41 [main] INFO : Extended Amount: 160,00
+2026-02-10 09:00:43 [main] INFO : Selecting Complete and Review Option
+2026-02-10 09:00:48 [main] INFO : Clicking on Post to ledger
+2026-02-10 09:00:56 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-10 09:00:56 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-10 09:01:07 [main] INFO : Validating the Accounting Lines
+2026-02-10 09:01:09 [main] INFO : Comparing UI Values: Debit[160,00], Credit[160,00] against Expected[160,00]
+2026-02-10 09:01:09 [main] ERROR: Accounting Mismatch: Debit (160,00) does not equal Credit (160,00)
+2026-02-10 09:01:18 [main] INFO : Transaction Confirmation Message: Transaction 101012 has been saved.
+2026-02-10 09:01:18 [main] INFO : Extracted Transaction Number: 101012
+2026-02-10 09:01:19 [main] INFO : Testing Ended
+2026-02-10 09:01:19 [main] INFO : ***********

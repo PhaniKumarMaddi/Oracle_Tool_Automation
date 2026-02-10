@@ -66,6 +66,10 @@ public class TestDataKeys {
 	public String receiptMethod = "CR RECEIPT";
 	public String quantity = "2";
 	public String unitPriceAmt = "80";
-	
-	
+	// receipt
+	public String createReceiptTask = "Create Receipt";
+	public String bankName = "Well Forgo Bank";
+	public String bankBranch = "WFG HOUSTON";
+	public String submitApplyManually = "Submit and Apply Manually";
+
 }

@@ -21,6 +21,13 @@ public class AccountReceivables_Test extends TestInitializer {
 
 	@Test
 	public void oracle_CreateTransaction_Test() throws Exception {
+
+		createTransactionMethod();
+		createReceiptMethod();
+
+	}
+
+	public void createTransactionMethod() throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_Receivables_Page oraAr = new Oracle_Receivables_Page();
@@ -72,6 +79,8 @@ public class AccountReceivables_Test extends TestInitializer {
 		waitTime2(driver);
 		oraAr.clickSaveBtn_inTransactionPage();
 		waitTime5(driver);
+		String amount = oraAr.getExtendedAmount();
+
 		grep.captureScreenshot("pass", "Saving Create Transaction test", "SaveCreateTransaction");
 		waitTime(driver);
 		oraAr.clickCompleteAndCreateBtn_inTransactionPage("Complete and Review");
@@ -95,7 +104,7 @@ public class AccountReceivables_Test extends TestInitializer {
 				"accountingLinesPopup_CreateTransaction");
 
 		waitTime(driver);
-//		oraInv.verifyAccountingAmounts(dataTest.unitPriceAmt);
+//		oraAr.verifyAccountingAmounts(amount);
 		oraInv.clickDoneAccountingBtn();
 
 		waitTime2(driver);
@@ -114,6 +123,27 @@ public class AccountReceivables_Test extends TestInitializer {
 		grep.infoTest("Extracted Transaction Number: " + msg);
 		waitTime(driver);
 		oraAr.clickOk_InTransactionConfirmation();
+		waitTime(driver);
+
+		oraHome.clickHomeButton();
+	}
+
+	public void createReceiptMethod() throws Exception {
+		waitTime(driver);
+		Oracle_HomePage oraHome = new Oracle_HomePage();
+		Oracle_Receivables_Page oraAr = new Oracle_Receivables_Page();
+
+		grep.testCreate("Verify Create Receipt Test", "Verify Create Receipt");
+		waitTime(driver);
+		oraHome.clickNavigator();
+		oraHome.selectNavigationTab(dataTest.receivableNavTab);
+		oraHome.selectSubCategoryInNavigator(dataTest.accReceivableCatg);
+		waitTime(driver);
+		oraHome.click_Tasks_InPO();
+		oraHome.selectTasks_InTaskPage(dataTest.createReceiptTask);
+		waitTime(driver);
+		
+		
 
 	}
 }

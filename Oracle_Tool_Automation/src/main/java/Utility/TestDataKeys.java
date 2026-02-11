@@ -12,6 +12,8 @@ public class TestDataKeys {
 	public String accReceivableCatg = "Accounts Receivable";
 	public String billingCatg = "Billing";
 	public String prepareReceivablesReconcilCatg = "Prepare Receivables to General Ledger Reconciliation";
+	public String cashManagementTab = "Cash Management";
+	public String bankStmtAnd_ReconciCatg = "Bank Statements and Reconciliation";
 
 	public String createInvoiceBtn = "Create Invoice";
 	public String createPaymentBtn = "Create Payment";
@@ -61,7 +63,7 @@ public class TestDataKeys {
 	public String receivablesSubLedger = "Receivables";
 	public String crPrimaryLedger = "CR PRIMARY LEDGER";
 	public String detail_reportStyle = "Detail";
-	
+
 	// Account receivables
 	public String transactionSource = "CR MANUAL TRANSACTION";
 	public String transactionType = "CR INVOICE";
@@ -87,11 +89,15 @@ public class TestDataKeys {
 	public String billTo_purpose = "Bill to";
 	public String shipTo_Purpose = "Ship to";
 	public String arState = "AR";
-	
+
 	// AR STANDARD REPORT
 	public String accountPeriod = "Feb-26";
-	
-	
-	
+
+	// BANK STATMENT
+	public String createBankStmtBtn = "Create Bank Statement";
+	public String manageBankStmtBtn = "Manage Bank Statements";
+	public String statementId = "Test_StatementID_01";
+	public String transactionCode_101 = "101";
+	public String debitFlowIndicator = "Debit";
 
 }

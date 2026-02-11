@@ -14902,3 +14902,95 @@ Session ID: eca347ef4bf7f68eb854a00e2c3ef4b0
 2026-02-11 12:43:46 [main] INFO : Expected :103004 and Actual :103004 both are same
 2026-02-11 12:43:48 [main] INFO : Testing Ended
 2026-02-11 12:43:48 [main] INFO : ***********
+2026-02-11 14:45:08 [main] INFO : Launching Chrome Browser
+2026-02-11 14:45:08 [main] INFO : Report Name :OraclePage.html
+2026-02-11 14:45:15 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-11 14:45:19 [main] INFO : Logged in to Oracle Application
+2026-02-11 14:45:21 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-11 14:45:21 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-11 14:45:27 [main] INFO : Clicking on Home icon
+2026-02-11 14:46:00 [main] INFO : Navigating Create Transaction
+2026-02-11 14:46:01 [main] INFO : Filling Details in Create Transaction Page
+2026-02-11 14:48:08 [main] INFO : Testing Ended
+2026-02-11 14:48:08 [main] INFO : ***********
+2026-02-11 17:50:40 [main] INFO : Launching Chrome Browser
+2026-02-11 17:50:41 [main] INFO : Report Name :OraclePage.html
+2026-02-11 17:50:47 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-11 17:50:52 [main] INFO : Logged in to Oracle Application
+2026-02-11 17:50:53 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-11 17:50:53 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-11 17:51:02 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-11 17:51:13 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-11 17:51:13 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-11 17:51:13 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-11 17:51:14 [main] INFO : Filling Bank Statement Details
+2026-02-11 17:51:14 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-11 17:51:46 [main] ERROR: Failed to select date from calendar: element click intercepted: Element <a tabindex="-1" class="xwh" id="_FOpt1:_FOr1:0:_FONSr2:0:MAnt2:1:cbsap1:periodStartDateId::glyph" title="Select Date"></a> is not clickable at point (418, 187). Other element would receive the click: <li role="option" id="_FOpt1:_FOr1:0:_FONSr2:0:MAnt2:1:cbsap1:bankaccountnameId::su0" data-afr-value="WFB CORPOATE ACC" data-afr-label="..." class="AFAutoSuggestItem">WFB CORPOATE ACC 567812347890</li>
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2453f9a3d381249c0af9ca718e0caae, clickElement {id=f.75DE679F05702A99E96DD1D5B585264E.d.881BF3A66E142D562EE1D3E7C4EF984C.e.273}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60219}, goog:processID: 22588, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60219/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f2453f9a3d381249c0af9ca718e0caae)] -> xpath: //a[contains(@id,':periodStartDateId:')]]
+Session ID: f2453f9a3d381249c0af9ca718e0caae
+2026-02-11 17:51:48 [main] ERROR: Failed to select date from calendar: element click intercepted: Element <a tabindex="-1" class="xwh" id="_FOpt1:_FOr1:0:_FONSr2:0:MAnt2:1:cbsap1:periodEndDateId::glyph" title="Select Date"></a> is not clickable at point (418, 223). Other element would receive the click: <li>...</li>
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2453f9a3d381249c0af9ca718e0caae, clickElement {id=f.75DE679F05702A99E96DD1D5B585264E.d.881BF3A66E142D562EE1D3E7C4EF984C.e.274}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60219}, goog:processID: 22588, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60219/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f2453f9a3d381249c0af9ca718e0caae)] -> xpath: //a[contains(@id,':periodEndDateId:')]]
+Session ID: f2453f9a3d381249c0af9ca718e0caae
+2026-02-11 17:51:49 [main] INFO : Entering Statement Id: Test_StatementID_01
+2026-02-11 17:52:00 [main] ERROR: Failed to select date from calendar: Error communicating with the remote browser. It may have died.
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2453f9a3d381249c0af9ca718e0caae, findElement [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60219}, goog:processID: 22588, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60219/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f2453f9a3d381249c0af9ca718e0caae
+2026-02-11 17:52:00 [main] ERROR: Test Failed :Error communicating with the remote browser. It may have died.
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2453f9a3d381249c0af9ca718e0caae, setTimeout [implicit]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60219}, goog:processID: 22588, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60219/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f2453f9a3d381249c0af9ca718e0caae
+2026-02-11 17:52:00 [main] ERROR: Test Failed :Error communicating with the remote browser. It may have died.
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2453f9a3d381249c0af9ca718e0caae, findElement [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60219}, goog:processID: 22588, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60219/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f2453f9a3d381249c0af9ca718e0caae
+2026-02-11 17:52:01 [main] INFO : Testing Ended
+2026-02-11 17:52:01 [main] INFO : ***********
+2026-02-11 17:53:21 [main] INFO : Launching Chrome Browser
+2026-02-11 17:53:21 [main] INFO : Report Name :OraclePage.html
+2026-02-11 17:53:45 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-11 17:54:03 [main] INFO : Logged in to Oracle Application
+2026-02-11 17:54:04 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-11 17:54:04 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-11 17:54:12 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-11 17:54:24 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-11 17:54:24 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-11 17:54:24 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-11 17:54:24 [main] INFO : Filling Bank Statement Details
+2026-02-11 17:54:25 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-11 17:54:27 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-11 17:54:27 [main] INFO : Successfully selected the start date.
+2026-02-11 17:54:27 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-11 17:54:28 [main] INFO : Successfully selected the Enddate.
+2026-02-11 17:54:29 [main] INFO : Entering Statement Id: Test_StatementID_01
+2026-02-11 17:54:32 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-11 17:54:32 [main] INFO : Successfully selected the Booking date.
+2026-02-11 17:54:35 [main] INFO : Select Debit from the drop down under Flow Indicator
+2026-02-11 17:54:35 [main] INFO : Entering Statement Amount: 10
+2026-02-11 17:54:40 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-11 17:54:40 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-11 17:54:58 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-11 17:54:58 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-11 17:54:59 [main] INFO : Testing Ended
+2026-02-11 17:54:59 [main] INFO : ***********

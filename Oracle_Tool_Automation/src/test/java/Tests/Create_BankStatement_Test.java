@@ -99,6 +99,8 @@ public class Create_BankStatement_Test extends TestInitializer {
 		oraHome.click_Tasks_InPO();
 		waitTime(driver);
 		oraHome.selectTasks_InTaskPage(dataTest.manageBankStmtBtn);
+		waitTime(driver);
+		
 		
 	}
 

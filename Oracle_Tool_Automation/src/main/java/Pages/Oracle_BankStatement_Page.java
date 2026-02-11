@@ -56,6 +56,13 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 	By ok_inWarnPopup = By
 			.xpath("//div[@class='AFPopupSelector']/descendant::button[contains(@id,'MAnt2:1:cbsap1:cb5')]");
 
+	// validation bank statement
+	By expandSearch= By.xpath("//a[@title='Expand Search']");
+	By bankAccountDropdown = By.xpath("//a[@title='Search:  Bank Account']");
+	By searchBankAccountPopup= By.xpath("//input[contains(@id,'frLovInternalQueryId:value00::content')]");
+	
+	
+	
 	public void validateCreateBankStatementPageTitle() throws Exception {
 
 		try {

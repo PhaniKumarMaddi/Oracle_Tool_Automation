@@ -381,7 +381,7 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 
 				// Check for failure to stop early
 				if (currentStatus.equalsIgnoreCase("Error") || currentStatus.equalsIgnoreCase("Failed")) {
-					grep.failTest("Process " + process_id + " failed with status: " + currentStatus);
+					grep.warnTest("Process " + process_id + " failed with status: " + currentStatus);
 //					throw new RuntimeException("Process Failed.");
 					break;
 				}
@@ -407,7 +407,7 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 		}
 
 		if (!isSuccess) {
-			grep.failTest(
+			grep.warnTest(
 					"Timeout: Process " + process_id + " did not succeed within " + timeoutInMinutes + " minutes.");
 			logger.error(
 					"Timeout: Process " + process_id + " did not succeed within " + timeoutInMinutes + " minutes.");

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-11T11:34:00 IST" name="Default suite" finished-at="2026-02-11T11:35:12 IST" duration-ms="72153">
+  <suite started-at="2026-02-11T12:40:00 IST" name="Default suite" finished-at="2026-02-11T12:43:48 IST" duration-ms="228178">
     <groups>
     </groups>
-    <test started-at="2026-02-11T11:34:00 IST" name="Default test" finished-at="2026-02-11T11:35:12 IST" duration-ms="72153">
-      <class name="Tests.Oracle_AR_StandardReportTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Oracle_AR_StandardReportTest@72c28d64]" started-at="2026-02-11T11:34:00 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-11T11:34:16 IST" duration-ms="15896" status="PASS">
+    <test started-at="2026-02-11T12:40:00 IST" name="Default test" finished-at="2026-02-11T12:43:48 IST" duration-ms="228178">
+      <class name="Tests.AccountReceivables_Test">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.AccountReceivables_Test@2c5529ab]" started-at="2026-02-11T12:40:00 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-11T12:40:13 IST" duration-ms="13267" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="oracle_AR_StandardReport()[pri:0, instance:Tests.Oracle_AR_StandardReportTest@72c28d64]" started-at="2026-02-11T11:34:16 IST" name="oracle_AR_StandardReport" finished-at="2026-02-11T11:35:11 IST" duration-ms="55390" status="PASS">
+        <test-method signature="oracle_CreateTransaction_Test()[pri:0, instance:Tests.AccountReceivables_Test@2c5529ab]" started-at="2026-02-11T12:40:13 IST" name="oracle_CreateTransaction_Test" finished-at="2026-02-11T12:43:48 IST" duration-ms="214391" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oracle_AR_StandardReport -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Oracle_AR_StandardReportTest@72c28d64]" started-at="2026-02-11T11:35:11 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-11T11:35:12 IST" duration-ms="788" status="PASS">
+        </test-method> <!-- oracle_CreateTransaction_Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AccountReceivables_Test@2c5529ab]" started-at="2026-02-11T12:43:48 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-11T12:43:48 IST" duration-ms="463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.Oracle_AR_StandardReportTest -->
+      </class> <!-- Tests.AccountReceivables_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -73,7 +73,7 @@ public class AccountReceivables_Test extends TestInitializer {
 		waitTime2(driver);
 		oraAr.searchAndSelectPaymentTerms(dataTest.net_PaymentTerms);
 		waitTime2(driver);
-		oraAr.enterDescriptionInLines("Testing");
+		oraAr.enterDescriptionInLines("Testing 2");
 		oraAr.enterQuantityInLines(dataTest.quantity);
 		oraAr.enterUnitPriceInLines(dataTest.unitPriceAmt);
 		waitTime2(driver);

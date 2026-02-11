@@ -69,19 +69,19 @@ public class TestDataKeys {
 	public String net_PaymentTerms = "Net 30";
 	public String receiptMethod = "CR RECEIPT";
 	public String quantity = "2";
-	public String unitPriceAmt = "50";
+	public String unitPriceAmt = "70";
 	// receipt
 	public String createReceiptTask = "Create Receipt";
 	public String manageTransactionTask = "Manage Transactions";
 	public String createTransactionTask = "Create Transaction";
-	public String receiptNum = "TestReceipt_05"; // change values
+	public String receiptNum = "TestReceipt_07"; // change values
 	public String bankName = "Well Forgo Bank";
 	public String bankBranch = "WFG HOUSTON";
 	public String submitApplyManually = "Submit and Apply Manually";
 	public String createCustomerTask = "Create Customer";
 
 	// CREATE CUSTOMER
-	public String custname = "CR Test_04"; // change values
+	public String custname = "CR Test_05"; // change values
 	public String accDescription = "CR Test";
 	public String accAddressSet = "COMMONSET";
 	public String billTo_purpose = "Bill to";

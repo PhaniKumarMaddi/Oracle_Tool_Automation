@@ -14393,3 +14393,221 @@ Session ID: f4db036e44da9b6139a9c193ca3f10d5
 2026-02-11 09:27:57 [main] INFO : Switched to Process Details iframe.
 2026-02-11 09:28:06 [main] INFO : Testing Ended
 2026-02-11 09:28:06 [main] INFO : ***********
+2026-02-11 09:55:35 [main] INFO : Launching Chrome Browser
+2026-02-11 09:55:35 [main] INFO : Report Name :OraclePage.html
+2026-02-11 09:55:42 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-11 09:55:46 [main] INFO : Logged in to Oracle Application
+2026-02-11 09:55:47 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-11 09:55:47 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-11 09:56:35 [main] INFO : Selecting Quick Action: Prepare Receivables to General Ledger Reconciliation
+2026-02-11 09:56:36 [main] INFO : Testing Ended
+2026-02-11 09:56:36 [main] INFO : ***********
+2026-02-11 09:57:54 [main] INFO : Launching Chrome Browser
+2026-02-11 09:57:54 [main] INFO : Report Name :OraclePage.html
+2026-02-11 09:58:00 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-11 09:58:05 [main] INFO : Logged in to Oracle Application
+2026-02-11 09:58:06 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-11 09:58:06 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-11 09:58:13 [main] INFO : Clicking on Show More Action in Receivables category
+2026-02-11 09:58:47 [main] INFO : Testing Ended
+2026-02-11 09:58:47 [main] INFO : ***********
+2026-02-11 10:03:17 [main] INFO : Launching Chrome Browser
+2026-02-11 10:03:18 [main] INFO : Report Name :OraclePage.html
+2026-02-11 10:03:24 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-11 10:03:28 [main] INFO : Logged in to Oracle Application
+2026-02-11 10:03:30 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-11 10:03:30 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-11 10:03:38 [main] INFO : Clicking on Show More Action in Receivables category
+2026-02-11 10:03:40 [main] INFO : Selecting Quick Action: Prepare Receivables to General Ledger Reconciliation
+2026-02-11 10:03:43 [main] INFO : Testing Ended
+2026-02-11 10:03:43 [main] INFO : ***********
+2026-02-11 10:03:57 [main] INFO : Launching Chrome Browser
+2026-02-11 10:03:57 [main] INFO : Report Name :OraclePage.html
+2026-02-11 10:04:03 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-11 10:04:07 [main] INFO : Logged in to Oracle Application
+2026-02-11 10:04:08 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-11 10:04:08 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-11 10:04:15 [main] INFO : Clicking on Show More Action in Receivables category
+2026-02-11 10:04:17 [main] INFO : Selecting Quick Action: Prepare Receivables to General Ledger Reconciliation
+2026-02-11 10:04:20 [main] INFO : Testing Ended
+2026-02-11 10:04:20 [main] INFO : ***********
+2026-02-11 10:23:45 [main] INFO : Launching Chrome Browser
+2026-02-11 10:23:46 [main] INFO : Report Name :OraclePage.html
+2026-02-11 10:23:52 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-11 10:23:57 [main] INFO : Logged in to Oracle Application
+2026-02-11 10:23:58 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-11 10:23:58 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-11 10:24:05 [main] INFO : Navigating to Create Customer page from Billing
+2026-02-11 10:24:11 [main] INFO : Navigating Create Customer
+2026-02-11 10:24:12 [main] INFO : Filling Details
+2026-02-11 10:24:14 [main] INFO : Entering Customer Name: CR Test_04
+2026-02-11 10:24:16 [main] INFO : Entering Account Description: CR Test
+2026-02-11 10:24:18 [main] INFO : Selecting COMMONSET Option in Account Address 
+2026-02-11 10:24:20 [main] INFO : Entering Site Name: CR Test_04
+2026-02-11 10:24:23 [main] INFO : Selecting AR Option in State
+2026-02-11 10:24:24 [main] INFO : Clicking Add Row button for Address Purpose.
+2026-02-11 10:24:25 [main] INFO : Select Bill to from the purpose drop down under address Purpose
+2026-02-11 10:24:26 [main] INFO : Clicking Add Row button for Address Purpose.
+2026-02-11 10:24:27 [main] INFO : Select Ship to from the purpose drop down under address Purpose
+2026-02-11 10:24:33 [main] INFO : Selecting AR Option for Bill to Site under Account Address 
+2026-02-11 10:24:34 [main] INFO : Clicking Set Primary button for Address Purpose.
+2026-02-11 10:24:43 [main] INFO : Found 1 organizations in the table. Searching for: CR Test_04
+2026-02-11 10:24:43 [main] INFO : Record Found: CR Test_04
+2026-02-11 10:24:50 [main] INFO : Navigating to Billing page from Receivables
+2026-02-11 10:24:56 [main] INFO : Inside Create Transactions Page
+2026-02-11 10:24:59 [main] INFO : Filling Details in Create Transaction Page
+2026-02-11 10:25:01 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-11 10:25:04 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-11 10:25:09 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-11 10:25:15 [main] INFO : Entering Name: CR Test_04
+2026-02-11 10:25:18 [main] INFO : Verify Newly Created Customer is Visible
+2026-02-11 10:25:21 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-11 10:25:25 [main] INFO : Entering Line Description: Newly Created Customer
+2026-02-11 10:25:25 [main] INFO : Entering Line Quantity: 2
+2026-02-11 10:25:26 [main] INFO : Entering Line Unit Price: 50
+2026-02-11 10:25:34 [main] INFO : Extended Amount: 100,00
+2026-02-11 10:25:35 [main] INFO : Selecting Complete and Review Option
+2026-02-11 10:25:41 [main] INFO : Clicking on Post to ledger
+2026-02-11 10:26:10 [main] INFO : Transaction Confirmation Message: Transaction 103000 has been saved.
+2026-02-11 10:26:11 [main] INFO : Extracted Transaction Number: 103000
+2026-02-11 10:26:15 [main] INFO : Testing Ended
+2026-02-11 10:26:15 [main] INFO : ***********
+2026-02-11 11:11:36 [main] INFO : Launching Chrome Browser
+2026-02-11 11:11:36 [main] INFO : Report Name :OraclePage.html
+2026-02-11 11:11:42 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-11 11:11:47 [main] INFO : Logged in to Oracle Application
+2026-02-11 11:11:49 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-11 11:11:49 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-11 11:11:56 [main] INFO : Clicking on Show More Action in Receivables category
+2026-02-11 11:11:58 [main] INFO : Selecting Quick Action: Prepare Receivables to General Ledger Reconciliation
+2026-02-11 11:12:00 [main] INFO : Filling details
+2026-02-11 11:12:03 [main] INFO : Entering Request Name: Testing
+2026-02-11 11:12:05 [main] INFO : Selecting CRITICAL RIVER BU Option in Business Unit 
+2026-02-11 11:12:07 [main] INFO : Testing Ended
+2026-02-11 11:12:07 [main] INFO : ***********
+2026-02-11 11:13:10 [main] INFO : Launching Chrome Browser
+2026-02-11 11:13:10 [main] INFO : Report Name :OraclePage.html
+2026-02-11 11:13:16 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-11 11:13:21 [main] INFO : Logged in to Oracle Application
+2026-02-11 11:13:22 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-11 11:13:22 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-11 11:13:30 [main] INFO : Clicking on Show More Action in Receivables category
+2026-02-11 11:13:32 [main] INFO : Selecting Quick Action: Prepare Receivables to General Ledger Reconciliation
+2026-02-11 11:13:34 [main] INFO : Filling details
+2026-02-11 11:13:36 [main] INFO : Entering Request Name: Testing
+2026-02-11 11:13:38 [main] INFO : Selecting CRITICAL RIVER BU Option in Business Unit 
+2026-02-11 11:13:40 [main] INFO : Testing Ended
+2026-02-11 11:13:40 [main] INFO : ***********
+2026-02-11 11:14:33 [main] INFO : Launching Chrome Browser
+2026-02-11 11:14:33 [main] INFO : Report Name :OraclePage.html
+2026-02-11 11:14:41 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-11 11:14:45 [main] INFO : Logged in to Oracle Application
+2026-02-11 11:14:46 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-11 11:14:46 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-11 11:14:54 [main] INFO : Clicking on Show More Action in Receivables category
+2026-02-11 11:14:56 [main] INFO : Selecting Quick Action: Prepare Receivables to General Ledger Reconciliation
+2026-02-11 11:14:58 [main] INFO : Filling details
+2026-02-11 11:15:01 [main] INFO : Entering Request Name: Testing
+2026-02-11 11:15:03 [main] INFO : Selecting CRITICAL RIVER BU Option in Business Unit 
+2026-02-11 11:15:42 [main] INFO : Launching Chrome Browser
+2026-02-11 11:15:43 [main] INFO : Report Name :OraclePage.html
+2026-02-11 11:15:48 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-11 11:15:53 [main] INFO : Logged in to Oracle Application
+2026-02-11 11:15:54 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-11 11:15:54 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-11 11:16:02 [main] INFO : Clicking on Show More Action in Receivables category
+2026-02-11 11:16:04 [main] INFO : Selecting Quick Action: Prepare Receivables to General Ledger Reconciliation
+2026-02-11 11:16:06 [main] INFO : Filling details
+2026-02-11 11:16:08 [main] INFO : Entering Request Name: Testing
+2026-02-11 11:16:10 [main] INFO : Selecting CRITICAL RIVER BU Option in Business Unit 
+2026-02-11 11:16:13 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-11 11:16:14 [main] ERROR: No numeric found in message: 
+2026-02-11 11:16:15 [main] INFO : Testing Ended
+2026-02-11 11:16:15 [main] INFO : ***********
+2026-02-11 11:25:17 [main] INFO : Launching Chrome Browser
+2026-02-11 11:25:18 [main] INFO : Report Name :OraclePage.html
+2026-02-11 11:25:31 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-11 11:25:36 [main] INFO : Logged in to Oracle Application
+2026-02-11 11:25:37 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-11 11:25:37 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-11 11:25:45 [main] INFO : Clicking on Show More Action in Receivables category
+2026-02-11 11:25:47 [main] INFO : Selecting Quick Action: Prepare Receivables to General Ledger Reconciliation
+2026-02-11 11:25:49 [main] INFO : Filling details
+2026-02-11 11:25:52 [main] INFO : Entering Request Name: Testing
+2026-02-11 11:25:54 [main] INFO : Selecting CRITICAL RIVER BU Option in Business Unit 
+2026-02-11 11:26:20 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-11 11:26:26 [main] INFO : submit Confirmation Message: Process 4812277 was submitted.
+2026-02-11 11:26:26 [main] INFO : Extracted Transaction Number: 4812277
+2026-02-11 11:26:29 [main] ERROR: Test Failed :element click intercepted: Element <a id="pt1:_UISfavIconu" title="Favorites and Recent Items" class="svg-glob xko p_AFIconOnly" onclick="this.focus();return false;" href="#">...</a> is not clickable at point (1734, 24). Other element would receive the click: <div align="center" id="pt1:_UISpgl55u" class="x16y x1a">...</div>
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eca347ef4bf7f68eb854a00e2c3ef4b0, clickElement {id=f.A4548EDEB615EA4671672FA082A3C2A2.d.C0700142D86CA0A7327A999641A98B4B.e.214}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54557}, goog:processID: 13772, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54557/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (eca347ef4bf7f68eb854a00e2c3ef4b0)] -> xpath: //a[@id='pt1:_UISfavIconu']]
+Session ID: eca347ef4bf7f68eb854a00e2c3ef4b0
+2026-02-11 11:27:52 [main] INFO : Launching Chrome Browser
+2026-02-11 11:27:52 [main] INFO : Report Name :OraclePage.html
+2026-02-11 11:27:59 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-11 11:28:04 [main] INFO : Logged in to Oracle Application
+2026-02-11 11:28:05 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-11 11:28:05 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-11 11:28:13 [main] INFO : Clicking on Show More Action in Receivables category
+2026-02-11 11:28:15 [main] INFO : Selecting Quick Action: Prepare Receivables to General Ledger Reconciliation
+2026-02-11 11:28:17 [main] INFO : Filling details
+2026-02-11 11:28:20 [main] INFO : Entering Request Name: Testing
+2026-02-11 11:28:22 [main] INFO : Selecting CRITICAL RIVER BU Option in Business Unit 
+2026-02-11 11:28:24 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-11 11:28:31 [main] INFO : submit Confirmation Message: Process 4812283 was submitted.
+2026-02-11 11:28:31 [main] INFO : Extracted Transaction Number: 4812283
+2026-02-11 11:28:42 [main] INFO : Selecting Monitor Processes from recent items
+2026-02-11 11:28:43 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-11 11:28:44 [main] INFO : Monitoring status for Process ID: 4812283
+2026-02-11 11:28:44 [main] INFO : Current Status of 4812283: Error
+2026-02-11 11:28:55 [main] INFO : Current Status of 4812283: Error
+2026-02-11 11:29:06 [main] INFO : Current Status of 4812283: Error
+2026-02-11 11:29:17 [main] INFO : Current Status of 4812283: Error
+2026-02-11 11:29:27 [main] INFO : Current Status of 4812283: Error
+2026-02-11 11:29:38 [main] INFO : Current Status of 4812283: Error
+2026-02-11 11:29:49 [main] INFO : Current Status of 4812283: Error
+2026-02-11 11:29:59 [main] INFO : Current Status of 4812283: Error
+2026-02-11 11:30:10 [main] INFO : Current Status of 4812283: Error
+2026-02-11 11:30:21 [main] INFO : Current Status of 4812283: Error
+2026-02-11 11:30:31 [main] INFO : Current Status of 4812283: Error
+2026-02-11 11:30:42 [main] INFO : Current Status of 4812283: Error
+2026-02-11 11:30:52 [main] ERROR: Timeout: Process 4812283 did not succeed within 2 minutes.
+2026-02-11 11:30:56 [main] INFO : Testing Ended
+2026-02-11 11:30:56 [main] INFO : ***********
+2026-02-11 11:32:49 [main] INFO : Launching Chrome Browser
+2026-02-11 11:32:50 [main] INFO : Report Name :OraclePage.html
+2026-02-11 11:32:58 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-11 11:33:03 [main] INFO : Logged in to Oracle Application
+2026-02-11 11:33:05 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-11 11:33:05 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-11 11:33:13 [main] INFO : Clicking on Show More Action in Receivables category
+2026-02-11 11:33:15 [main] INFO : Selecting Quick Action: Prepare Receivables to General Ledger Reconciliation
+2026-02-11 11:33:17 [main] INFO : Filling details
+2026-02-11 11:33:20 [main] INFO : Entering Request Name: Testing
+2026-02-11 11:33:22 [main] INFO : Selecting CRITICAL RIVER BU Option in Business Unit 
+2026-02-11 11:34:02 [main] INFO : Launching Chrome Browser
+2026-02-11 11:34:02 [main] INFO : Report Name :OraclePage.html
+2026-02-11 11:34:10 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-11 11:34:14 [main] INFO : Logged in to Oracle Application
+2026-02-11 11:34:15 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-11 11:34:15 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-11 11:34:23 [main] INFO : Clicking on Show More Action in Receivables category
+2026-02-11 11:34:25 [main] INFO : Selecting Quick Action: Prepare Receivables to General Ledger Reconciliation
+2026-02-11 11:34:27 [main] INFO : Filling details
+2026-02-11 11:34:30 [main] INFO : Entering Request Name: Testing
+2026-02-11 11:34:32 [main] INFO : Selecting CRITICAL RIVER BU Option in Business Unit 
+2026-02-11 11:34:36 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-11 11:34:42 [main] INFO : submit Confirmation Message: Process 4812300 was submitted.
+2026-02-11 11:34:43 [main] INFO : Extracted Transaction Number: 4812300
+2026-02-11 11:34:53 [main] INFO : Selecting Monitor Processes from recent items
+2026-02-11 11:34:56 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-11 11:34:56 [main] INFO : Monitoring status for Process ID: 4812300
+2026-02-11 11:35:07 [main] INFO : Current Status of 4812300: Error
+2026-02-11 11:35:07 [main] ERROR: Timeout: Process 4812300 did not succeed within 1 minutes.
+2026-02-11 11:35:12 [main] INFO : Testing Ended
+2026-02-11 11:35:12 [main] INFO : ***********

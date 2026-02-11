@@ -14,14 +14,14 @@ import Utility.GenerateReports;
 import Utility.ValidatingAssertions;
 import Utility.WaitsManager;
 
-public class Oracle_CreateCustomer_Page extends WaitsManager {
+public class Oracle_Customer_StandardReport_Page extends WaitsManager {
 
 	protected WebDriver driver;
-	private static Logger logger = LogManager.getLogger(Oracle_CreateCustomer_Page.class);
+	private static Logger logger = LogManager.getLogger(Oracle_Customer_StandardReport_Page.class);
 	GenerateReports grep = new GenerateReports();
 	ValidatingAssertions validAssert = new ValidatingAssertions();
 
-	public Oracle_CreateCustomer_Page() {
+	public Oracle_Customer_StandardReport_Page() {
 		this.driver = DriverManager.getDriver();
 	}
 
@@ -38,8 +38,15 @@ public class Oracle_CreateCustomer_Page extends WaitsManager {
 	By saveCloseBtn = By.xpath("//button[@accesskey='S']");
 	By verifyOrgRecord = By.xpath("//table[@summary='Organizations']/tbody/tr/td[4]/span/span/a");
 
-	// CREATE CUSTOMER
+	// AR STANDARD REPORT
+	By insertRequestName = By.xpath("//label[text()='Request Name']/parent::td/following-sibling::td/input");
+	By businessUnitDropdown = By.xpath("//a[@title='Search: Business Unit']");
+	By accountingPeriodDropdown = By.xpath("//a[@title='Search: Accounting Period']");
+	By arSubmitBtn = By.xpath("//a[@accesskey='m']");
+	By submitConfirmation = By.xpath("//span[contains(@id,':requestBtns:confirmationPopup')]");
+	By okBtn_InSubmitConfirmation = By.xpath("//button[text()='OK']");
 
+	// CREATE CUSTOMER
 	public void enterCustomerName(String nameVal) {
 		try {
 			implWait(driver);
@@ -230,4 +237,84 @@ public class Oracle_CreateCustomer_Page extends WaitsManager {
 		return false;
 	}
 
+	// AR STANDARD REPORT
+	public void enterRequestName(String nameVal) {
+		try {
+			implWait(driver);
+
+			driver.findElement(insertRequestName).click();
+			driver.findElement(insertRequestName).sendKeys(nameVal);
+			waitTime(driver);
+			grep.infoTest("Entering Request Name: " + nameVal);
+			logger.info("Entering Request Name: " + nameVal);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickBusinessUnit(String selectOpt) throws Exception {
+
+		implWait(driver);
+		By select_BU = By.xpath("//span[text()='" + selectOpt + "']");
+
+		driver.findElement(businessUnitDropdown).click();
+		waitTime(driver);
+		driver.findElement(select_BU).click();
+		waitTime(driver);
+		grep.infoTest("Selecting " + selectOpt + " Option in Business Unit ");
+		logger.info("Selecting " + selectOpt + " Option in Business Unit ");
+		waitTime(driver);
+
+	}
+
+	public void clickAccountingPeriod(String selectAcc) throws Exception {
+
+		implWait(driver);
+		By select_AccPeriod = By.xpath("//span[text()='" + selectAcc + "']");
+
+		driver.findElement(accountingPeriodDropdown).click();
+		waitTime2(driver);
+		scrollView(select_AccPeriod);
+		driver.findElement(select_AccPeriod).click();
+		waitTime(driver);
+		grep.infoTest("Selecting " + selectAcc + " Option in Accounting Period");
+		logger.info("Selecting " + selectAcc + " Option in Accounting Period");
+		waitTime(driver);
+
+	}
+
+	public void clickSumbit_Reconciliation_Btn() {
+		implWait(driver);
+
+		driver.findElement(arSubmitBtn).click();
+	}
+
+	public String validateSubmitConfirmationPopup() throws Exception {
+		String getMsg = null;
+		try {
+
+//			implWait(driver);
+			waitForElement(submitConfirmation, 20);
+
+			String fullMessage = driver.findElement(submitConfirmation).getText().trim();
+			getMsg = fullMessage.replaceAll("[^0-9]", "");
+
+			if (getMsg.isEmpty()) {
+				logger.error("No numeric found in message: " + getMsg);
+				return null;
+			}
+			grep.infoTest("submit Confirmation Message: " + fullMessage);
+			logger.info("submit Confirmation Message: " + fullMessage);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return getMsg;
+	}
+
+	public void clickOk_InSubmitConfirmation() {
+		implWait(driver);
+
+		driver.findElement(okBtn_InSubmitConfirmation).click();
+	}
 }

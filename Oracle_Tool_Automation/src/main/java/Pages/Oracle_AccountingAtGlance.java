@@ -57,8 +57,6 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 //	By defaultDocument = By.xpath("//span[text()='Default Document']");
 	By defaultDocument = By.xpath("//*[@id='templateTableBody']/tr[2]/td[1]/span");
 
-//Process 4796079 was submitted.
-
 	public void clickScheduleProcessButton() throws Exception {
 		try {
 			implWait(driver);
@@ -385,6 +383,7 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 				if (currentStatus.equalsIgnoreCase("Error") || currentStatus.equalsIgnoreCase("Failed")) {
 					grep.failTest("Process " + process_id + " failed with status: " + currentStatus);
 //					throw new RuntimeException("Process Failed.");
+					break;
 				}
 
 			} catch (Exception e) {

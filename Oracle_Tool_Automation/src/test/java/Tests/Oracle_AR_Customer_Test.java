@@ -4,7 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
-import Pages.Oracle_CreateCustomer_Page;
+import Pages.Oracle_Customer_StandardReport_Page;
 import Pages.Oracle_HomePage;
 import Pages.Oracle_Receivables_Page;
 import Pages.TestInitializer;
@@ -28,7 +28,7 @@ public class Oracle_AR_Customer_Test extends TestInitializer {
 	public void createCustomerTest() throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
-		Oracle_CreateCustomer_Page oraCc = new Oracle_CreateCustomer_Page();
+		Oracle_Customer_StandardReport_Page oraCc = new Oracle_Customer_StandardReport_Page();
 
 		waitTime(driver);
 
@@ -89,7 +89,6 @@ public class Oracle_AR_Customer_Test extends TestInitializer {
 	public void customerVerificationTest() throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
-		Oracle_CreateCustomer_Page oraCc = new Oracle_CreateCustomer_Page();
 		Oracle_Receivables_Page oraAr = new Oracle_Receivables_Page();
 		waitTime(driver);
 		grep.testCreate("Verify Customer Verification Test", "Verify Customer Verification");

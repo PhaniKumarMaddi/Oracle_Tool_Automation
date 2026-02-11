@@ -16,6 +16,7 @@ import Utility.DriverManager;
 import Utility.GenerateReports;
 import Utility.ValidatingAssertions;
 import Utility.WaitsManager;
+import net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size;
 
 public class Oracle_HomePage extends WaitsManager {
 	protected WebDriver driver;
@@ -29,6 +30,8 @@ public class Oracle_HomePage extends WaitsManager {
 
 	// navigate to procurement
 	By homeBtn = By.xpath("//a[@id='pt1:_UIShome']");
+	By favouriteBtn = By.xpath("//a[@id='pt1:_UISfavIconu']");
+
 	By homePageMsg = By.xpath("//div[@id='pt1:atkfr1:0:grid:0:pgl1']");
 	By navigator = By.xpath("//a[@id='pt1:_UISmmLink']");
 	By selfServiceProcurement = By.cssSelector("div.oj-sp-header-general-overview-title-badge-cont");
@@ -139,11 +142,44 @@ public class Oracle_HomePage extends WaitsManager {
 		}
 	}
 
+	public void clickFavouriteButton() throws Exception {
+		try {
+			implWait(driver);
+			boolean elementExists = !driver.findElements(favouriteBtn).isEmpty();
+			if (elementExists) {
+				waitForElementToBeClickable(favouriteBtn, 30);
+				driver.findElement(favouriteBtn).click();
+			} else {
+				logger.error("favourite button Not Available ");
+				grep.failTest("favourite button Not Available ");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			grep.failTest("Test Failed :" + e.getMessage());
+			logger.error("Test Failed :" + e.getMessage());
+		}
+	}
+
 	public void validateHomePageText() throws Exception {
 
 		try {
 			String actualText = driver.findElement(homePageMsg).getText().trim();
 			validAssert.equalsAssert(actualText, "Good afternoon, Jack CR");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void selectRecentItems(String itemVal) throws Exception {
+		try {
+			By selectItems = By.xpath("//a[@title='" + itemVal + "']");
+			implWait(driver);
+			driver.findElement(selectItems).click();
+			waitTime1(driver);
+			grep.infoTest("Selecting " + itemVal + " from recent items");
+			logger.info("Selecting " + itemVal + " from recent items");
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -222,6 +258,43 @@ public class Oracle_HomePage extends WaitsManager {
 			implWait(driver);
 			driver.findElement(selectQuickAction).click();
 			waitTime1(driver);
+			grep.infoTest("Selecting Quick Action: " + actionVal);
+			logger.info("Selecting Quick Action: " + actionVal);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void selectShowMore_UnderQuickActions(String categoryVal) throws Exception {
+		try {
+
+			By selectQuickAction = By
+					.xpath("//div[@type='showmore_container']/a[contains(@id,'" + categoryVal.toLowerCase() + "')]");
+			implWait(driver);
+			driver.findElement(selectQuickAction).click();
+			waitTime1(driver);
+			grep.infoTest("Clicking on Show More Action in " + categoryVal + " category");
+			logger.info("Clicking on Show More Action in " + categoryVal + " category");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void selectQuickActions_inShowMore(String actionVal) throws Exception {
+		try {
+			By selectQuickAction = By
+					.xpath("//div[@class='flat-quickactions-container']/div/a[text()='" + actionVal + "']");
+			implWait(driver);
+			List<WebElement> element = driver.findElements(selectQuickAction);
+			if (element.size() > 0) {
+				element.getLast().click();
+				waitTime1(driver);
+
+			}
 			grep.infoTest("Selecting Quick Action: " + actionVal);
 			logger.info("Selecting Quick Action: " + actionVal);
 

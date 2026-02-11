@@ -11,6 +11,7 @@ public class TestDataKeys {
 	public String createTransactionAction = "Create Transaction";
 	public String accReceivableCatg = "Accounts Receivable";
 	public String billingCatg = "Billing";
+	public String prepareReceivablesReconcilCatg = "Prepare Receivables to General Ledger Reconciliation";
 
 	public String createInvoiceBtn = "Create Invoice";
 	public String createPaymentBtn = "Create Payment";
@@ -86,5 +87,11 @@ public class TestDataKeys {
 	public String billTo_purpose = "Bill to";
 	public String shipTo_Purpose = "Ship to";
 	public String arState = "AR";
+	
+	// AR STANDARD REPORT
+	public String accountPeriod = "Feb-26";
+	
+	
+	
 
 }

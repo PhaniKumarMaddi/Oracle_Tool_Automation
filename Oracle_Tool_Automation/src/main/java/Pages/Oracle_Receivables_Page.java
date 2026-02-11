@@ -83,7 +83,6 @@ public class Oracle_Receivables_Page extends WaitsManager {
 			.xpath("//div[@class='AFPopupSelector']/descendant::td[@class='p_AFResizable x1pn']/button");
 
 	// CREATE TRANSACTIONS
-
 	public void searchAndSelectBusinessUnit(String businessUnitVal) {
 		try {
 			implWait(driver);
@@ -295,6 +294,7 @@ public class Oracle_Receivables_Page extends WaitsManager {
 		By completReviewBtn = By.xpath("//td[text()='" + selectOpt + "']");
 
 		driver.findElement(completeCreateAnother_DropdownBtn).click();
+		waitTime2(driver);
 		driver.findElement(completReviewBtn).click();
 		waitTime(driver);
 		grep.infoTest("Selecting " + selectOpt + " Option");
@@ -756,4 +756,5 @@ public class Oracle_Receivables_Page extends WaitsManager {
 
 		driver.findElement(okBtn_InManageTransaction).click();
 	}
+
 }

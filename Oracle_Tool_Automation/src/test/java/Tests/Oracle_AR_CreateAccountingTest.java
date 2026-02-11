@@ -137,7 +137,7 @@ public class Oracle_AR_CreateAccountingTest extends TestInitializer {
 		logger.info("Click on Create Accounting Execution Report");
 		waitTime(driver);
 		oraAag.clickAccountingExecutionReport();
-		waitTime2(driver);
+		waitTime5(driver);
 		grep.captureScreenshot("pass", "Accounting Execution Report for Create AR Accounting",
 				"AccountExecutionReport_CreateAccounting");
 		waitTime5(driver);

@@ -54,8 +54,8 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 	By accountingExecutionReport = By.xpath("//span[text()='Create Accounting Execution Report']");
 	By xmlBtn = By.xpath("//div[@id='deliveryInfo']/descendant::a[@id='XMLData']");
 	By businessUnitDropdown = By.xpath("//a[starts-with(@title,'Business Unit')]");
-	By defaultDocument = By.xpath("//span[text()='Default Document']");
-	
+//	By defaultDocument = By.xpath("//span[text()='Default Document']");
+	By defaultDocument = By.xpath("//*[@id='templateTableBody']/tr[2]/td[1]/span");
 
 //Process 4796079 was submitted.
 
@@ -485,11 +485,25 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 		scrollView(xmlBtn);
 		driver.findElement(xmlBtn).click();
 	}
-	
+
 	public void clickDefaultDocumentBtn() {
-		waitForElement(defaultDocument, 20);
-		scrollView(defaultDocument);
-		driver.findElement(defaultDocument).click();
+		By iframeLoc = By.xpath("//iframe[contains(@id, 'processDetails') and contains(@id, 'if1')]");
+		try {
+			waitForElement(iframeLoc, 30);
+
+			WebElement iframe = driver.findElement(iframeLoc);
+			// 2. Switch context to the iframe
+			driver.switchTo().frame(iframe);
+			logger.info("Switched to Process Details iframe.");
+
+			waitForElement(defaultDocument, 20);
+			scrollView(defaultDocument);
+			driver.findElement(defaultDocument).click();
+			waitTime(driver);
+			driver.switchTo().defaultContent();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
 	public void searchAndSelectBusinessUnit_inProcessDetails(String businessUnitVal) {

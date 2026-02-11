@@ -1047,6 +1047,7 @@ public class Oracle_HomePage extends WaitsManager {
 
 	public void clickHomeFromPutAway() {
 		implWait(driver);
+		scrollView(homeFromPutAway);
 		driver.findElement(homeFromPutAway).click();
 	}
 
@@ -1142,6 +1143,5 @@ public class Oracle_HomePage extends WaitsManager {
 			e.printStackTrace();
 		}
 	}
-	
 
 }

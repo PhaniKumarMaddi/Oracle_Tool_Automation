@@ -15710,3 +15710,125 @@ Session ID: d60064c699517ec2499196c2a9a0a321
 2026-02-12 12:29:07 [main] INFO : Successfully selected the TO date.
 2026-02-12 12:29:09 [main] INFO : Testing Ended
 2026-02-12 12:29:09 [main] INFO : ***********
+2026-02-12 12:52:53 [main] INFO : Launching Chrome Browser
+2026-02-12 12:52:54 [main] INFO : Report Name :OraclePage.html
+2026-02-12 12:52:59 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 12:53:03 [main] INFO : Logged in to Oracle Application
+2026-02-12 12:53:04 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 12:53:04 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 12:53:11 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-12 12:53:22 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-12 12:53:22 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-12 12:53:22 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-12 12:53:23 [main] INFO : Filling Bank Statement Details
+2026-02-12 12:53:23 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-12 12:53:25 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-12 12:53:25 [main] INFO : Successfully selected the start date.
+2026-02-12 12:53:26 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-12 12:53:26 [main] INFO : Successfully selected the Enddate.
+2026-02-12 12:53:27 [main] INFO : Entering Statement Id: Test_StatementID_06
+2026-02-12 12:53:30 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-12 12:53:30 [main] INFO : Successfully selected the Booking date.
+2026-02-12 12:53:33 [main] INFO : Select Credit from the drop down under Flow Indicator
+2026-02-12 12:53:33 [main] INFO : Entering Statement Amount: 70
+2026-02-12 12:53:38 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-12 12:53:38 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-12 12:53:42 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-12 12:53:42 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-12 12:53:46 [main] INFO : Selecting Bank Account
+2026-02-12 12:53:58 [main] INFO : Select Week to date from the drop down under Statement End Date
+2026-02-12 12:54:00 [main] INFO : Statement ID: Test_StatementID_06 | Actual Reconciliation Status: Incomplete
+2026-02-12 12:54:00 [main] INFO : Verification Passed: Status is Incomplete
+2026-02-12 12:54:03 [main] INFO : Testing Ended
+2026-02-12 12:54:03 [main] INFO : ***********
+2026-02-12 12:55:02 [main] INFO : Launching Chrome Browser
+2026-02-12 12:55:02 [main] INFO : Report Name :OraclePage.html
+2026-02-12 12:55:07 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 12:55:11 [main] INFO : Logged in to Oracle Application
+2026-02-12 12:55:12 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 12:55:12 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 12:55:19 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-12 12:55:30 [main] INFO : Filling Details in Reconcilation Tab
+2026-02-12 12:55:31 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-12 12:55:33 [main] INFO : Clicked on From Date picker icon.
+2026-02-12 12:55:33 [main] INFO : Successfully selected the From date.
+2026-02-12 12:55:33 [main] INFO : Clicked on TO Date picker icon.
+2026-02-12 12:55:34 [main] INFO : Successfully selected the TO date.
+2026-02-12 12:55:37 [main] INFO : Testing Ended
+2026-02-12 12:55:37 [main] INFO : ***********
+2026-02-12 13:25:01 [main] INFO : Launching Chrome Browser
+2026-02-12 13:25:02 [main] INFO : Report Name :OraclePage.html
+2026-02-12 13:25:10 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 13:25:15 [main] INFO : Logged in to Oracle Application
+2026-02-12 13:25:15 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 13:25:15 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 13:25:23 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-12 13:25:34 [main] INFO : Filling Details in Reconcilation Tab
+2026-02-12 13:25:35 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-12 13:25:37 [main] INFO : Clicked on From Date picker icon.
+2026-02-12 13:25:37 [main] INFO : Successfully selected the From date.
+2026-02-12 13:25:37 [main] INFO : Clicked on TO Date picker icon.
+2026-02-12 13:25:38 [main] INFO : Successfully selected the TO date.
+2026-02-12 13:25:39 [main] INFO : Retrieved text for ID Test_StatementID_06: 70,00
+2026-02-12 13:25:40 [main] INFO : Checked the box for Statement ID: Test_StatementID_06
+2026-02-12 13:25:40 [main] INFO : Selected transaction checkbox for amount: 70,00
+2026-02-12 13:25:42 [main] INFO : Testing Ended
+2026-02-12 13:25:42 [main] INFO : ***********
+2026-02-12 13:26:36 [main] INFO : Launching Chrome Browser
+2026-02-12 13:26:36 [main] INFO : Report Name :OraclePage.html
+2026-02-12 13:26:42 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 13:26:47 [main] INFO : Logged in to Oracle Application
+2026-02-12 13:26:48 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 13:26:48 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 13:26:55 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-12 13:27:06 [main] INFO : Filling Details in Reconcilation Tab
+2026-02-12 13:27:07 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-12 13:27:09 [main] INFO : Clicked on From Date picker icon.
+2026-02-12 13:27:09 [main] INFO : Successfully selected the From date.
+2026-02-12 13:27:10 [main] INFO : Clicked on TO Date picker icon.
+2026-02-12 13:27:10 [main] INFO : Successfully selected the TO date.
+2026-02-12 13:27:11 [main] INFO : Retrieved text for ID Test_StatementID_06: 70,00
+2026-02-12 13:27:12 [main] INFO : Checked the box for Statement ID: Test_StatementID_06
+2026-02-12 13:27:12 [main] INFO : Selected transaction checkbox for amount: 70,00
+2026-02-12 13:27:23 [main] INFO : Testing Ended
+2026-02-12 13:27:23 [main] INFO : ***********
+2026-02-12 13:31:41 [main] INFO : Launching Chrome Browser
+2026-02-12 13:31:42 [main] INFO : Report Name :OraclePage.html
+2026-02-12 13:31:49 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 13:31:53 [main] INFO : Logged in to Oracle Application
+2026-02-12 13:31:55 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 13:31:55 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 13:32:02 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-12 13:32:13 [main] INFO : Filling Details in Reconcilation Tab
+2026-02-12 13:32:14 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-12 13:32:16 [main] INFO : Clicked on From Date picker icon.
+2026-02-12 13:32:16 [main] INFO : Successfully selected the From date.
+2026-02-12 13:32:17 [main] INFO : Clicked on TO Date picker icon.
+2026-02-12 13:32:17 [main] INFO : Successfully selected the TO date.
+2026-02-12 13:32:19 [main] INFO : Retrieved text for ID Test_StatementID_06: 70,00
+2026-02-12 13:32:20 [main] INFO : Checked the box for Statement ID: Test_StatementID_06
+2026-02-12 13:32:20 [main] INFO : Selected transaction checkbox for amount: 70,00
+2026-02-12 13:32:37 [main] INFO : Testing Ended
+2026-02-12 13:32:37 [main] INFO : ***********
+2026-02-12 13:56:56 [main] INFO : Launching Chrome Browser
+2026-02-12 13:56:57 [main] INFO : Report Name :OraclePage.html
+2026-02-12 13:57:04 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 13:57:08 [main] INFO : Logged in to Oracle Application
+2026-02-12 13:57:19 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 13:57:19 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 13:57:28 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-12 13:57:39 [main] INFO : Filling Details in Reconcilation Tab
+2026-02-12 13:57:40 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-12 13:57:42 [main] INFO : Clicked on From Date picker icon.
+2026-02-12 13:57:42 [main] INFO : Successfully selected the From date.
+2026-02-12 13:57:43 [main] INFO : Clicked on TO Date picker icon.
+2026-02-12 13:57:43 [main] INFO : Successfully selected the TO date.
+2026-02-12 13:57:45 [main] INFO : Retrieved text for ID Test_StatementID_02: 270,00
+2026-02-12 13:57:45 [main] INFO : Checked the box for Statement ID: Test_StatementID_02
+2026-02-12 13:57:46 [main] INFO : Retrieved Reference ID 270,00: TestReceipt_09
+2026-02-12 13:57:48 [main] INFO : Selected transaction checkbox for amount: 270,00
+2026-02-12 13:57:54 [main] INFO : Clicking Reconciled Tab
+2026-02-12 13:58:01 [main] INFO : Clicking Search in Reconciled Tab
+2026-02-12 13:58:04 [main] INFO : Receipt found: TestReceipt_09
+2026-02-12 13:58:06 [main] INFO : Testing Ended
+2026-02-12 13:58:06 [main] INFO : ***********

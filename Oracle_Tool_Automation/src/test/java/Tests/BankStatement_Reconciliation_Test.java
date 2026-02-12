@@ -61,13 +61,35 @@ public class BankStatement_Reconciliation_Test extends TestInitializer {
 
 		grep.captureScreenshot("pass", "Searching for UNReconcilation for Bank account",
 				"SearchUnreconciliationRecord_BankReconciliation");
-		// select transaction steps
-		// line 19 to 22 
-		
-		oraBsp.clickReconciledTab();
 		waitTime(driver);
+		String amount = oraBsp.getBankStatementLineText(dataTest.statementId);
+		waitTime(driver);
+		oraBsp.clickBankStatementLineCheckbox(dataTest.statementId);
+		waitTime(driver);
+		String refId = oraBsp.getSystemTransactionLineText(amount);
+		waitTime2(driver);
+		oraBsp.selectSystemTransactionByAmount(amount);
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Seleting bank statement and system transaction lines",
+				"SelectingBankStmt_SystemReceipt_BankReconciliation");
+		waitTime(driver);
+		oraBsp.clickReconciledButton();
+		waitTime5(driver);
+		grep.infoTest("Clicking Reconciled Tab");
+		logger.info("Clicking Reconciled Tab");
+		waitTime(driver);
+
+		oraBsp.clickReconciledTab();
+		waitTime5(driver);
 		oraBsp.clickReconciled_SearchBtn();
 		waitTime(driver);
+
+		grep.infoTest("Clicking Search in Reconciled Tab");
+		logger.info("Clicking Search in Reconciled Tab");
+		waitTime3(driver);
+		oraBsp.isReceiptPresentInReconcileTab(refId);
+		waitTime(driver);
+
 		grep.captureScreenshot("pass", "Searching for Reconcilation for Bank account",
 				"SearchReconciliationRecord_BankReconciliation");
 		waitTime(driver);

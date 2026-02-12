@@ -32,7 +32,7 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 	By periodEndDate = By.xpath("//a[contains(@id,':periodEndDateId:')]");
 	By selectEndDate = By
 			.xpath("//table[contains(@id,':periodEndDateId:')]/descendant::td[@class='x120 p_AFSelected']");
-	By statementId = By.xpath("//label[text()='Statement ID']/parent::td/following-sibling::td/input");
+	By insertStatementId = By.xpath("//label[text()='Statement ID']/parent::td/following-sibling::td/input");
 	// Statement Lines
 	By statementLines = By.xpath("//a[text()='Statement Lines']");
 	By addLine = By.xpath("//img[@title='Create']");
@@ -70,7 +70,7 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 
 	By toDate = By.xpath("//a[contains(@id,'mrtoDate::glyph')]");
 	By selectToDate = By.xpath("//table[contains(@id,'mrtoDate:')]/descendant::td[@class='x120 p_AFSelected']");
-	By searchUnReconciledBtn = By.xpath("//a[@accesskey='r']");
+	By search_ReconciledBtn = By.xpath("//a[@accesskey='r']");
 	By reconcileBtn = By.xpath("//button[text()='Reconcile']");
 	By doneReconciliationBtn = By.xpath("//button[@accesskey='o']");
 
@@ -152,8 +152,8 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 		try {
 			implWait(driver);
 
-			driver.findElement(statementId).click();
-			driver.findElement(statementId).sendKeys(idVal);
+			driver.findElement(insertStatementId).click();
+			driver.findElement(insertStatementId).sendKeys(idVal);
 			waitTime(driver);
 			grep.infoTest("Entering Statement Id: " + idVal);
 			logger.info("Entering Statement Id: " + idVal);
@@ -441,9 +441,9 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 		}
 	}
 
-	public void verifyStatementStatus_bankStatus(String statementId) {
+	public void verifyStatementStatus_bankStatus(String statementIdVal) {
 
-		By statusLoc = By.xpath("//a[text()=' " + statementId + "']/ancestor::td[1]/following-sibling::td[5]");
+		By statusLoc = By.xpath("//a[text()=' " + statementIdVal + "']/ancestor::td[1]/following-sibling::td[5]");
 
 		try {
 			waitForElement(statusLoc, 20);
@@ -451,20 +451,20 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 
 			String actualStatus = statusElement.getText().trim();
 
-			logger.info("Statement ID: " + statementId + " | Actual Reconciliation Status: " + actualStatus);
-			grep.infoTest("Statement ID: " + statementId + " | Actual Reconciliation Status: " + actualStatus);
+			logger.info("Statement ID: " + statementIdVal + " | Actual Reconciliation Status: " + actualStatus);
+			grep.infoTest("Statement ID: " + statementIdVal + " | Actual Reconciliation Status: " + actualStatus);
 
 			if (actualStatus.equalsIgnoreCase("Incomplete")) {
 				logger.info("Verification Passed: Status is " + actualStatus);
-				grep.infoTest("Status verification successful for " + statementId);
+				grep.infoTest("Status verification successful for " + statementIdVal);
 			} else {
 				logger.error("Verification Failed! Expected:Incomplete but found: " + actualStatus);
 				grep.failTest("Status mismatch: Expected: Incomplete but found " + actualStatus);
 			}
 
 		} catch (Exception e) {
-			logger.error("Could not find status for Statement ID: " + statementId + ": " + e.getMessage());
-			grep.failTest("Failed to locate status cell using XPath: " + statementId);
+			logger.error("Could not find status for Statement ID: " + statementIdVal + ": " + e.getMessage());
+			grep.failTest("Failed to locate status cell using XPath: " + statementIdVal);
 		}
 	}
 
@@ -532,7 +532,7 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 
 	public void clickReconciled_SearchBtn() {
 		implWait(driver);
-		driver.findElement(searchUnReconciledBtn).click();
+		driver.findElement(search_ReconciledBtn).click();
 	}
 
 	public void clickReconciledButton() {
@@ -551,4 +551,96 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 		}
 	}
 
+	// Select Transactions
+	public String getBankStatementLineText(String statementIdVal) throws Exception {
+		By bankStatementLines = By
+				.xpath("//span[contains(text(),'" + statementIdVal + "')]/ancestor::td[1]/preceding-sibling::td[2]");
+
+		try {
+			waitForElement(bankStatementLines, 30);
+			WebElement element = driver.findElement(bankStatementLines);
+			String retrievedText = element.getText().trim();
+			logger.info("Retrieved text for ID " + statementIdVal + ": " + retrievedText);
+			grep.infoTest("Retrieved text for ID " + statementIdVal + ": " + retrievedText);
+			return retrievedText;
+
+		} catch (Exception e) {
+			logger.error("Failed to retrieve text for Statement ID: " + statementIdVal + " - " + e.getMessage());
+			return null;
+		}
+	}
+
+	public void clickBankStatementLineCheckbox(String statementId) throws Exception {
+
+		By stmt_checkbox = By.xpath("//span[contains(text(),'" + statementId
+				+ "')]/ancestor::td[1]/preceding-sibling::td[5]/descendant::label");
+
+		try {
+			waitForElement(stmt_checkbox, 30);
+			driver.findElement(stmt_checkbox).click();
+
+			logger.info("Checked the box for Statement ID: " + statementId);
+			grep.infoTest("Successfully selected checkbox for: " + statementId);
+
+		} catch (Exception e) {
+			logger.error("Failed to click checkbox for " + statementId + ": " + e.getMessage());
+			grep.failTest("Checkbox interaction failed for Statement ID: " + statementId);
+		}
+	}
+
+	public String getSystemTransactionLineText(String amount) throws Exception {
+		By systemTransLineReference = By.xpath("//a[contains(@id,'mrapplicationsTable2') and text()='" + amount
+				+ "']/ancestor::td[1]/preceding-sibling::td[2]");
+
+		try {
+			waitForElement(systemTransLineReference, 30);
+			WebElement element = driver.findElement(systemTransLineReference);
+			String retrievedText = element.getText().trim();
+			logger.info("Retrieved Reference ID " + amount + ": " + retrievedText);
+			grep.infoTest("Retrieved Reference for ID " + amount + ": " + retrievedText);
+			return retrievedText;
+
+		} catch (Exception e) {
+			logger.error("Failed to retrieve Reference ID: " + amount + " - " + e.getMessage());
+			return null;
+		}
+	}
+
+	public void selectSystemTransactionByAmount(String amount) {
+		By systemTrans = By.xpath("//a[contains(@id,'mrapplicationsTable2') and text()='" + amount
+				+ "']/ancestor::td[1]/preceding-sibling::td[3]/descendant::label");
+
+		try {
+			waitForElement(systemTrans, 30);
+			driver.findElement(systemTrans).click();
+
+			logger.info("Selected transaction checkbox for amount: " + amount);
+			grep.infoTest("Successfully selected system transaction with amount: " + amount);
+		} catch (Exception e) {
+			logger.error("Failed to retrieve text for Statement ID: " + amount + " - " + e.getMessage());
+		}
+	}
+
+	public boolean isReceiptPresentInReconcileTab(String receiptName) {
+		// 1. Create a dynamic locator for the specific receipt span
+		By receiptLoc = By.xpath("//span[text()='" + receiptName + "']");
+
+		try {
+			waitForElement(receiptLoc, 20);
+			WebElement receiptElement = driver.findElement(receiptLoc);
+
+			if (receiptElement.isDisplayed()) {
+				logger.info("Receipt found: " + receiptName);
+				grep.infoTest("Receipt found: " + receiptName);
+				return true;
+			}
+		} catch (Exception e) {
+			// If the element isn't found or times out, we catch the exception and return
+			// false
+			logger.warn("Receipt not found on current page: " + receiptName);
+			grep.warnTest("Receipt not found on current page: " + receiptName);
+		}
+
+		return false;
+	}
 }

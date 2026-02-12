@@ -159,7 +159,7 @@ public class AccountReceivables_Test extends TestInitializer {
 		oraAr.searchAndSelectReceiptMethod(dataTest.receiptMethod);
 		oraAr.enterReceiptNumber(dataTest.receiptNum);
 		waitTime2(driver);
-		oraAr.enterAmount_inReceipt(dataTest.unitPriceAmt);
+		oraAr.enterAmount_inReceipt(dataTest.receiptPriceAmt);
 		oraAr.searchAndSelectBankName(dataTest.bankName);
 		waitTime2(driver);
 		oraAr.searchAndSelectBankBranch(dataTest.bankBranch);

@@ -29,7 +29,7 @@ public class Create_BankStatement_Test extends TestInitializer {
 		oraHome.clickHomeButton();
 		waitTime(driver);
 
-		grep.captureScreenshot("pass", "Inside Home Page ", "Oracle_HomePage_BatchPayment");
+		grep.captureScreenshot("pass", "Inside Home Page ", "Oracle_HomePage_BankStatement");
 		waitTime(driver);
 		oraHome.clickNavigator();
 		waitTime(driver);
@@ -75,7 +75,7 @@ public class Create_BankStatement_Test extends TestInitializer {
 		waitTime(driver);
 		oraBsp.clickOk_inSelectTransactionPopup();
 		oraBsp.selectFlowIndicator(dataTest.debitFlowIndicator);
-		oraBsp.enterStatementLine_Amount("10");
+		oraBsp.enterStatementLine_Amount(dataTest.unitPriceAmt);
 		waitTime(driver);
 		grep.captureScreenshot("pass", "After Filling Statement Line", "fillingStatementLine_InBankStatment");
 		waitTime(driver);
@@ -119,7 +119,7 @@ public class Create_BankStatement_Test extends TestInitializer {
 		grep.captureScreenshot("pass", "Selecting Bank Account in Manage Statement Page",
 				"selectingAcc_inManageStatement");
 		oraBsp.clickSearchBtn();
-		waitTime(driver);
+		waitTime2(driver);
 		oraBsp.selectingStatementEndDate(dataTest.statement_EndDate);
 		waitTime(driver);
 		oraBsp.expandBankAccount(dataTest.bankAccount);

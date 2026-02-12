@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-12T10:49:50 IST" name="Default suite" finished-at="2026-02-12T10:51:33 IST" duration-ms="103126">
+  <suite started-at="2026-02-12T12:27:34 IST" name="Default suite" finished-at="2026-02-12T12:29:09 IST" duration-ms="94714">
     <groups>
     </groups>
-    <test started-at="2026-02-12T10:49:50 IST" name="Default test" finished-at="2026-02-12T10:51:33 IST" duration-ms="103126">
-      <class name="Tests.Create_BankStatement_Test">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Create_BankStatement_Test@72c28d64]" started-at="2026-02-12T10:49:50 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-12T10:50:31 IST" duration-ms="41138" status="PASS">
+    <test started-at="2026-02-12T12:27:34 IST" name="Default test" finished-at="2026-02-12T12:29:09 IST" duration-ms="94714">
+      <class name="Tests.BankStatement_Reconciliation_Test">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.BankStatement_Reconciliation_Test@72c28d64]" started-at="2026-02-12T12:27:34 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-12T12:28:45 IST" duration-ms="71546" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="OracleCreate_BankStatement()[pri:0, instance:Tests.Create_BankStatement_Test@72c28d64]" started-at="2026-02-12T10:50:31 IST" name="OracleCreate_BankStatement" finished-at="2026-02-12T10:51:32 IST" duration-ms="61198" status="PASS">
+        <test-method signature="OracleReconciliation_BankStatement()[pri:0, instance:Tests.BankStatement_Reconciliation_Test@72c28d64]" started-at="2026-02-12T12:28:45 IST" name="OracleReconciliation_BankStatement" finished-at="2026-02-12T12:29:08 IST" duration-ms="22729" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OracleCreate_BankStatement -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Create_BankStatement_Test@72c28d64]" started-at="2026-02-12T10:51:32 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-12T10:51:33 IST" duration-ms="715" status="PASS">
+        </test-method> <!-- OracleReconciliation_BankStatement -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.BankStatement_Reconciliation_Test@72c28d64]" started-at="2026-02-12T12:29:08 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-12T12:29:09 IST" duration-ms="396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.Create_BankStatement_Test -->
+      </class> <!-- Tests.BankStatement_Reconciliation_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

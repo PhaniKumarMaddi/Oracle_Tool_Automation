@@ -72,18 +72,19 @@ public class TestDataKeys {
 	public String receiptMethod = "CR RECEIPT";
 	public String quantity = "2";
 	public String unitPriceAmt = "70";
+	public String receiptPriceAmt = "270";
 	// receipt
 	public String createReceiptTask = "Create Receipt";
 	public String manageTransactionTask = "Manage Transactions";
 	public String createTransactionTask = "Create Transaction";
-	public String receiptNum = "TestReceipt_09"; // change values
+	public String receiptNum = "TestReceipt_10"; // change values
 	public String bankName = "Well Forgo Bank";
 	public String bankBranch = "WFG HOUSTON";
 	public String submitApplyManually = "Submit and Apply Manually";
 	public String createCustomerTask = "Create Customer";
 
 	// CREATE CUSTOMER
-	public String custname = "CR Test_07"; // change values
+	public String custname = "CR Test_08"; // change values
 	public String accDescription = "CR Test";
 	public String accAddressSet = "COMMONSET";
 	public String billTo_purpose = "Bill to";
@@ -96,7 +97,8 @@ public class TestDataKeys {
 	// BANK STATMENT
 	public String createBankStmtBtn = "Create Bank Statement";
 	public String manageBankStmtBtn = "Manage Bank Statements";
-	public String statementId = "Test_StatementID_04";
+	public String manualReconciliationBtn = "Manual Reconciliation";
+	public String statementId = "Test_StatementID_05";
 	public String transactionCode_101 = "101";
 	public String debitFlowIndicator = "Debit";
 	public String statement_EndDate = "Week to date";

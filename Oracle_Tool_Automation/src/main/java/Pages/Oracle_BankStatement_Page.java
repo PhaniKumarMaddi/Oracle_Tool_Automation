@@ -62,6 +62,18 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 	By selectStmt_EndDate = By.xpath("//select[contains(@id,'dateModeId::content')]");
 	By doneBtn = By.xpath("//a[@accesskey='o']");
 
+	// Manual Reconciliation
+	By unreconcilTab = By.xpath("//a[text()='Unreconciled']");
+	By reconcilTab = By.xpath("//a[text()='Reconciled']");
+	By fromDate = By.xpath("//a[contains(@id,'mrfromDate::glyph')]");
+	By selectFromDate = By.xpath("//table[contains(@id,'mrfromDate:')]/descendant::td[@class='x120 p_AFSelected']");
+
+	By toDate = By.xpath("//a[contains(@id,'mrtoDate::glyph')]");
+	By selectToDate = By.xpath("//table[contains(@id,'mrtoDate:')]/descendant::td[@class='x120 p_AFSelected']");
+	By searchUnReconciledBtn = By.xpath("//a[@accesskey='r']");
+	By reconcileBtn = By.xpath("//button[text()='Reconcile']");
+	By doneReconciliationBtn = By.xpath("//button[@accesskey='o']");
+
 	public void validateCreateBankStatementPageTitle() throws Exception {
 
 		try {
@@ -466,4 +478,77 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 
 		}
 	}
+
+	// MANUAL RECONCILIATION
+	public void clickUnreconciledTab() {
+		waitForElementToBeClickable(unreconcilTab, 30);
+		driver.findElement(unreconcilTab).click();
+	}
+
+	public void clickReconciledTab() {
+		waitForElementToBeClickable(reconcilTab, 30);
+		driver.findElement(reconcilTab).click();
+	}
+
+	public void selectFromDate_Reconciled() throws Exception {
+		try {
+			waitForElementToBeClickable(fromDate, 20);
+			WebElement datePickerIcon = driver.findElement(fromDate);
+			datePickerIcon.click();
+			logger.info("Clicked on From Date picker icon.");
+			grep.infoTest("Clicked on From End Date picker icon.");
+
+			waitForElementToBeClickable(selectFromDate, 30);
+			driver.findElement(selectFromDate).click();
+
+			logger.info("Successfully selected the From date.");
+			grep.infoTest("Successfully selected the From date.");
+
+		} catch (Exception e) {
+			logger.error("Failed to select date from calendar: " + e.getMessage());
+			grep.failTest("Date selection failed for Period End Date." + e.getMessage());
+		}
+	}
+
+	public void selectToDate_Reconciled() throws Exception {
+		try {
+			waitForElementToBeClickable(toDate, 20);
+			WebElement datePickerIcon = driver.findElement(toDate);
+			datePickerIcon.click();
+			logger.info("Clicked on TO Date picker icon.");
+			grep.infoTest("Clicked on TO End Date picker icon.");
+
+			waitForElementToBeClickable(selectToDate, 30);
+			driver.findElement(selectToDate).click();
+
+			logger.info("Successfully selected the TO date.");
+			grep.infoTest("Successfully selected the TO date.");
+
+		} catch (Exception e) {
+			logger.error("Failed to select date from calendar: " + e.getMessage());
+			grep.failTest("Date selection failed for Period End Date." + e.getMessage());
+		}
+	}
+
+	public void clickReconciled_SearchBtn() {
+		implWait(driver);
+		driver.findElement(searchUnReconciledBtn).click();
+	}
+
+	public void clickReconciledButton() {
+		waitForElementToBeClickable(reconcileBtn, 30);
+		driver.findElement(reconcileBtn).click();
+	}
+
+	public void clickDoneReconciliationBtn() {
+		try {
+			waitForElementToBeClickable(doneReconciliationBtn, 60);
+			WebElement done = driver.findElement(doneReconciliationBtn);
+			done.click();
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		}
+	}
+
 }

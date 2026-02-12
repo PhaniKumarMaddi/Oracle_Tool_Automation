@@ -15316,3 +15316,397 @@ Session ID: f2453f9a3d381249c0af9ca718e0caae
 2026-02-12 10:51:30 [main] INFO : Verification Passed: Status is Incomplete
 2026-02-12 10:51:33 [main] INFO : Testing Ended
 2026-02-12 10:51:33 [main] INFO : ***********
+2026-02-12 11:33:58 [main] INFO : Launching Chrome Browser
+2026-02-12 11:33:58 [main] INFO : Report Name :OraclePage.html
+2026-02-12 11:34:05 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 11:34:09 [main] INFO : Logged in to Oracle Application
+2026-02-12 11:34:10 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 11:34:10 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 11:34:18 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-12 11:34:29 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-12 11:34:29 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-12 11:34:29 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-12 11:34:30 [main] INFO : Filling Bank Statement Details
+2026-02-12 11:34:30 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-12 11:34:32 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-12 11:34:32 [main] INFO : Successfully selected the start date.
+2026-02-12 11:34:33 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-12 11:34:33 [main] INFO : Successfully selected the Enddate.
+2026-02-12 11:34:34 [main] INFO : Entering Statement Id: Test_StatementID_04
+2026-02-12 11:34:37 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-12 11:34:37 [main] INFO : Successfully selected the Booking date.
+2026-02-12 11:34:41 [main] INFO : Select Debit from the drop down under Flow Indicator
+2026-02-12 11:34:41 [main] INFO : Entering Statement Amount: 70
+2026-02-12 11:35:02 [main] INFO : Launching Chrome Browser
+2026-02-12 11:35:03 [main] INFO : Report Name :OraclePage.html
+2026-02-12 11:35:09 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 11:35:13 [main] INFO : Logged in to Oracle Application
+2026-02-12 11:35:14 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 11:35:14 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 11:35:22 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-12 11:35:34 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-12 11:35:34 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-12 11:35:34 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-12 11:35:34 [main] INFO : Filling Bank Statement Details
+2026-02-12 11:35:35 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-12 11:35:37 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-12 11:35:37 [main] INFO : Successfully selected the start date.
+2026-02-12 11:35:38 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-12 11:35:38 [main] INFO : Successfully selected the Enddate.
+2026-02-12 11:35:39 [main] INFO : Entering Statement Id: Test_StatementID_05
+2026-02-12 11:35:43 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-12 11:35:43 [main] INFO : Successfully selected the Booking date.
+2026-02-12 11:35:46 [main] INFO : Select Debit from the drop down under Flow Indicator
+2026-02-12 11:35:46 [main] INFO : Entering Statement Amount: 70
+2026-02-12 11:35:51 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-12 11:35:51 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-12 11:35:54 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-12 11:35:54 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-12 11:35:58 [main] INFO : Selecting Bank Account
+2026-02-12 11:36:10 [main] ERROR: Test Failed :stale element reference: stale element not found in the current frame
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d60064c699517ec2499196c2a9a0a321, clickElement {id=f.32FB6DFA894E941A6A59AC86A7AFCFD4.d.BAE278378E78119488ECF53C1A480642.e.521}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50627}, goog:processID: 23308, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50627/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (d60064c699517ec2499196c2a9a0a321)] -> xpath: //select[contains(@id,'dateModeId::content')]]] -> xpath: .//option[normalize-space(.) = "Week to date"]]
+Session ID: d60064c699517ec2499196c2a9a0a321
+2026-02-12 11:36:12 [main] INFO : Statement ID: Test_StatementID_05 | Actual Reconciliation Status: Incomplete
+2026-02-12 11:36:12 [main] INFO : Verification Passed: Status is Incomplete
+2026-02-12 11:36:15 [main] INFO : Testing Ended
+2026-02-12 11:36:15 [main] INFO : ***********
+2026-02-12 11:48:15 [main] INFO : Launching Chrome Browser
+2026-02-12 11:48:15 [main] INFO : Report Name :OraclePage.html
+2026-02-12 11:48:22 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 11:48:27 [main] INFO : Logged in to Oracle Application
+2026-02-12 11:48:28 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 11:48:28 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 11:48:33 [main] INFO : Clicking on Home icon
+2026-02-12 11:48:38 [main] INFO : Selecting Quick Action: Create Transaction
+2026-02-12 11:48:39 [main] INFO : Navigating Create Transaction
+2026-02-12 11:48:41 [main] INFO : Filling Details in Create Transaction Page
+2026-02-12 11:48:43 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-12 11:48:46 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-12 11:48:51 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-12 11:48:58 [main] INFO : Entering Name: CR GE
+2026-02-12 11:49:04 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-12 11:49:07 [main] INFO : Entering Line Description: Testing 2
+2026-02-12 11:49:08 [main] INFO : Entering Line Quantity: 2
+2026-02-12 11:49:09 [main] INFO : Entering Line Unit Price: 70
+2026-02-12 11:49:17 [main] INFO : Extended Amount: 140,00
+2026-02-12 11:49:20 [main] INFO : Selecting Complete and Review Option
+2026-02-12 11:49:26 [main] INFO : Clicking on Post to ledger
+2026-02-12 11:49:39 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-12 11:49:39 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-12 11:49:49 [main] INFO : Validating the Accounting Lines
+2026-02-12 11:50:00 [main] INFO : Transaction Confirmation Message: Transaction 103009 has been saved.
+2026-02-12 11:50:00 [main] INFO : Extracted Transaction Number: 103009
+2026-02-12 11:50:07 [main] INFO : Navigating to Acoount Receivables
+2026-02-12 11:50:10 [main] INFO : Click on Create Receipt
+2026-02-12 11:50:12 [main] INFO : Filling the Details in Receipt Page
+2026-02-12 11:50:13 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-12 11:50:16 [main] INFO : Selecting Receipt Method: CR RECEIPT
+2026-02-12 11:50:19 [main] INFO : Entering Receipt Number: TestReceipt_09
+2026-02-12 11:50:22 [main] INFO : Entering Amount: 270
+2026-02-12 11:50:23 [main] INFO : Selecting Bank Name: Well Forgo Bank
+2026-02-12 11:50:28 [main] INFO : Selecting Bank branch: WFG HOUSTON
+2026-02-12 11:50:32 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-12 11:50:35 [main] INFO : Click on Submit Apply Manually
+2026-02-12 11:50:43 [main] INFO : Click on Application tab under Receipt Details Section
+2026-02-12 11:50:44 [main] INFO : Click on Add open Receivables
+2026-02-12 11:50:48 [main] INFO : Entering Transaction Customer Name: CR GE
+2026-02-12 11:50:52 [main] INFO : Scrolled to the last visible record in the table.
+2026-02-12 11:50:54 [main] INFO : Selecting receipt :103009
+2026-02-12 11:50:59 [main] INFO : Clicking on Post to ledger
+2026-02-12 11:51:07 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-12 11:51:07 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-12 11:51:17 [main] INFO : Validating the Accounting Lines
+2026-02-12 11:51:27 [main] INFO : Navigating to Billing page from Receivables
+2026-02-12 11:51:34 [main] INFO : Inside Manage Transactions Page
+2026-02-12 11:51:44 [main] INFO : Entering Business Unit: CRITICAL RIVER BU
+2026-02-12 11:51:52 [main] INFO : Entering Transaction Source name: CR MANUAL TRANSACTION
+2026-02-12 11:52:03 [main] INFO : Clicking on View Balance Details
+2026-02-12 11:52:20 [main] INFO : Transaction Confirmation Message: Transaction 103009 has been saved.
+2026-02-12 11:52:20 [main] INFO : Extracted Transaction Number: 103009
+2026-02-12 11:52:21 [main] INFO : Expected :103009 and Actual :103009
+2026-02-12 11:52:21 [main] INFO : Expected :103009 and Actual :103009 both are same
+2026-02-12 11:52:23 [main] INFO : Testing Ended
+2026-02-12 11:52:23 [main] INFO : ***********
+2026-02-12 12:02:31 [main] INFO : Launching Chrome Browser
+2026-02-12 12:02:31 [main] INFO : Report Name :OracleAccountReceivables_Report.html
+2026-02-12 12:02:36 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 12:02:41 [main] INFO : Logged in to Oracle Application
+2026-02-12 12:02:42 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 12:02:42 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 12:02:46 [main] INFO : Clicking on Home icon
+2026-02-12 12:02:50 [main] INFO : Selecting Quick Action: Create Transaction
+2026-02-12 12:02:51 [main] INFO : Navigating Create Transaction
+2026-02-12 12:02:53 [main] INFO : Filling Details in Create Transaction Page
+2026-02-12 12:02:54 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-12 12:02:57 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-12 12:03:02 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-12 12:03:07 [main] INFO : Entering Name: CR GE
+2026-02-12 12:03:13 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-12 12:03:16 [main] INFO : Entering Line Description: Testing 2
+2026-02-12 12:03:17 [main] INFO : Entering Line Quantity: 2
+2026-02-12 12:03:17 [main] INFO : Entering Line Unit Price: 70
+2026-02-12 12:03:25 [main] INFO : Extended Amount: 140,00
+2026-02-12 12:03:29 [main] INFO : Selecting Complete and Review Option
+2026-02-12 12:03:34 [main] INFO : Clicking on Post to ledger
+2026-02-12 12:03:42 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-12 12:03:42 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-12 12:03:53 [main] INFO : Validating the Accounting Lines
+2026-02-12 12:04:03 [main] INFO : Transaction Confirmation Message: Transaction 103010 has been saved.
+2026-02-12 12:04:03 [main] INFO : Extracted Transaction Number: 103010
+2026-02-12 12:04:09 [main] INFO : Navigating to Acoount Receivables
+2026-02-12 12:04:12 [main] INFO : Click on Create Receipt
+2026-02-12 12:04:13 [main] INFO : Filling the Details in Receipt Page
+2026-02-12 12:04:14 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-12 12:04:18 [main] INFO : Selecting Receipt Method: CR RECEIPT
+2026-02-12 12:04:20 [main] INFO : Entering Receipt Number: TestReceipt_09
+2026-02-12 12:04:23 [main] INFO : Entering Amount: 270
+2026-02-12 12:04:24 [main] INFO : Selecting Bank Name: Well Forgo Bank
+2026-02-12 12:04:29 [main] INFO : Selecting Bank branch: WFG HOUSTON
+2026-02-12 12:04:33 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-12 12:04:36 [main] INFO : Click on Submit Apply Manually
+2026-02-12 12:04:43 [main] INFO : Click on Application tab under Receipt Details Section
+2026-02-12 12:04:44 [main] INFO : Click on Add open Receivables
+2026-02-12 12:04:49 [main] INFO : Entering Transaction Customer Name: CR GE
+2026-02-12 12:04:52 [main] INFO : Scrolled to the last visible record in the table.
+2026-02-12 12:04:54 [main] INFO : Selecting receipt :103010
+2026-02-12 12:04:59 [main] INFO : Clicking on Post to ledger
+2026-02-12 12:05:07 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-12 12:05:07 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-12 12:05:18 [main] INFO : Validating the Accounting Lines
+2026-02-12 12:05:27 [main] INFO : Navigating to Billing page from Receivables
+2026-02-12 12:05:34 [main] INFO : Inside Manage Transactions Page
+2026-02-12 12:05:44 [main] INFO : Entering Business Unit: CRITICAL RIVER BU
+2026-02-12 12:05:53 [main] INFO : Entering Transaction Source name: CR MANUAL TRANSACTION
+2026-02-12 12:06:03 [main] INFO : Clicking on View Balance Details
+2026-02-12 12:06:20 [main] INFO : Transaction Confirmation Message: Transaction 103010 has been saved.
+2026-02-12 12:06:20 [main] INFO : Extracted Transaction Number: 103010
+2026-02-12 12:06:21 [main] INFO : Expected :103010 and Actual :103010
+2026-02-12 12:06:21 [main] INFO : Expected :103010 and Actual :103010 both are same
+2026-02-12 12:06:31 [main] INFO : Navigating to Create Customer page from Billing
+2026-02-12 12:06:38 [main] INFO : Navigating Create Customer
+2026-02-12 12:06:39 [main] INFO : Filling Details
+2026-02-12 12:06:40 [main] INFO : Entering Customer Name: CR Test_07
+2026-02-12 12:06:42 [main] INFO : Entering Account Description: CR Test
+2026-02-12 12:06:44 [main] INFO : Selecting COMMONSET Option in Account Address 
+2026-02-12 12:06:46 [main] INFO : Entering Site Name: CR Test_07
+2026-02-12 12:06:48 [main] INFO : Selecting AR Option in State
+2026-02-12 12:06:49 [main] INFO : Clicking Add Row button for Address Purpose.
+2026-02-12 12:06:51 [main] INFO : Select Bill to from the purpose drop down under address Purpose
+2026-02-12 12:06:51 [main] INFO : Clicking Add Row button for Address Purpose.
+2026-02-12 12:06:52 [main] INFO : Select Ship to from the purpose drop down under address Purpose
+2026-02-12 12:06:57 [main] INFO : Selecting AR Option for Bill to Site under Account Address 
+2026-02-12 12:06:58 [main] INFO : Clicking Set Primary button for Address Purpose.
+2026-02-12 12:07:03 [main] INFO : Found 1 organizations in the table. Searching for: CR Test_07
+2026-02-12 12:07:03 [main] INFO : Record Found: CR Test_07
+2026-02-12 12:07:09 [main] INFO : Navigating to Billing page from Receivables
+2026-02-12 12:07:14 [main] INFO : Inside Create Transactions Page
+2026-02-12 12:07:17 [main] INFO : Filling Details in Create Transaction Page
+2026-02-12 12:07:18 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-12 12:07:22 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-12 12:07:26 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-12 12:07:32 [main] INFO : Entering Name: CR Test_07
+2026-02-12 12:07:35 [main] INFO : Verify Newly Created Customer is Visible
+2026-02-12 12:07:41 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-12 12:07:44 [main] INFO : Entering Line Description: Newly Created Customer
+2026-02-12 12:07:45 [main] INFO : Entering Line Quantity: 2
+2026-02-12 12:07:45 [main] INFO : Entering Line Unit Price: 70
+2026-02-12 12:07:53 [main] INFO : Extended Amount: 140,00
+2026-02-12 12:07:53 [main] INFO : Amount :140,00
+2026-02-12 12:07:57 [main] INFO : Selecting Complete and Review Option
+2026-02-12 12:08:02 [main] INFO : Clicking on Post to ledger
+2026-02-12 12:08:21 [main] INFO : Transaction Confirmation Message: Transaction 103011 has been saved.
+2026-02-12 12:08:21 [main] INFO : Extracted Transaction Number: 103011
+2026-02-12 12:08:32 [main] INFO : Navigating Scheduled Processes
+2026-02-12 12:08:34 [main] INFO : Click on Schedule New Process
+2026-02-12 12:08:37 [main] INFO : Click on Name dropdown
+2026-02-12 12:08:38 [main] INFO : Click on search
+2026-02-12 12:08:39 [main] INFO : Click on name and type the name
+2026-02-12 12:08:40 [main] INFO : Entering Name: Create Accounting
+2026-02-12 12:08:42 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-12 12:08:45 [main] INFO : Click on Subledger Application and Select Receivables
+2026-02-12 12:08:47 [main] INFO : Select Receivables from the drop down under Sub ledger application
+2026-02-12 12:08:47 [main] INFO : Click on ledger or ledger Set dropdown and click Search
+2026-02-12 12:08:49 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-12 12:08:56 [main] INFO : Entering Ledger Or Ledger Set: CR PRIMARY LEDGER
+2026-02-12 12:09:04 [main] INFO : Select Detail from the drop down under Report Style
+2026-02-12 12:09:06 [main] INFO : Click on Submit at the top
+2026-02-12 12:09:07 [main] INFO : Check for confirmation and click ok
+2026-02-12 12:09:08 [main] INFO : Popup text received: Process 4815974 was submitted.
+2026-02-12 12:09:08 [main] INFO : Extracted Process ID: 4815974
+2026-02-12 12:09:08 [main] INFO : Retrieved Process Id:4815974
+2026-02-12 12:09:10 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-12 12:09:11 [main] INFO : Monitoring status for Process ID: 4815974
+2026-02-12 12:09:12 [main] INFO : Current Status of 4815974: Wait
+2026-02-12 12:09:23 [main] INFO : Current Status of 4815974: Wait
+2026-02-12 12:09:33 [main] INFO : Current Status of 4815974: Completed
+2026-02-12 12:09:44 [main] INFO : Current Status of 4815974: Succeeded
+2026-02-12 12:09:44 [main] INFO : Process 4815974 completed successfully.
+2026-02-12 12:09:48 [main] INFO : Click on Create Accounting Execution Report
+2026-02-12 12:09:58 [main] INFO : Switched to Process Details iframe.
+2026-02-12 12:10:12 [main] INFO : Clicking on Show More Action in Receivables category
+2026-02-12 12:10:14 [main] INFO : Selecting Quick Action: Prepare Receivables to General Ledger Reconciliation
+2026-02-12 12:10:16 [main] INFO : Filling details
+2026-02-12 12:10:18 [main] INFO : Entering Request Name: Testing
+2026-02-12 12:10:20 [main] INFO : Selecting CRITICAL RIVER BU Option in Business Unit 
+2026-02-12 12:10:23 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-12 12:10:30 [main] INFO : submit Confirmation Message: Process 4815985 was submitted.
+2026-02-12 12:10:30 [main] INFO : Extracted Transaction Number: 4815985
+2026-02-12 12:10:41 [main] INFO : Selecting Monitor Processes from recent items
+2026-02-12 12:10:42 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-12 12:10:43 [main] INFO : Monitoring status for Process ID: 4815985
+2026-02-12 12:10:44 [main] INFO : Current Status of 4815985: Error
+2026-02-12 12:10:44 [main] ERROR: Timeout: Process 4815985 did not succeed within 1 minutes.
+2026-02-12 12:10:50 [main] INFO : Testing Ended
+2026-02-12 12:10:50 [main] INFO : ***********
+2026-02-12 12:12:04 [main] INFO : Launching Chrome Browser
+2026-02-12 12:12:05 [main] INFO : Report Name :OracleAccountReceivables_Report.html
+2026-02-12 12:12:10 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 12:12:14 [main] INFO : Logged in to Oracle Application
+2026-02-12 12:12:15 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 12:12:15 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 12:12:19 [main] INFO : Clicking on Home icon
+2026-02-12 12:12:24 [main] INFO : Selecting Quick Action: Create Transaction
+2026-02-12 12:12:25 [main] INFO : Navigating Create Transaction
+2026-02-12 12:12:26 [main] INFO : Filling Details in Create Transaction Page
+2026-02-12 12:12:27 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-12 12:12:30 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-12 12:12:35 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-12 12:12:41 [main] INFO : Entering Name: CR GE
+2026-02-12 12:12:46 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-12 12:12:49 [main] INFO : Entering Line Description: Testing 2
+2026-02-12 12:12:50 [main] INFO : Entering Line Quantity: 2
+2026-02-12 12:12:50 [main] INFO : Entering Line Unit Price: 70
+2026-02-12 12:12:58 [main] INFO : Extended Amount: 140,00
+2026-02-12 12:13:01 [main] INFO : Selecting Complete and Review Option
+2026-02-12 12:13:07 [main] INFO : Clicking on Post to ledger
+2026-02-12 12:13:14 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-12 12:13:14 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-12 12:13:25 [main] INFO : Validating the Accounting Lines
+2026-02-12 12:13:35 [main] INFO : Transaction Confirmation Message: Transaction 103012 has been saved.
+2026-02-12 12:13:35 [main] INFO : Extracted Transaction Number: 103012
+2026-02-12 12:13:40 [main] INFO : Navigating to Acoount Receivables
+2026-02-12 12:13:43 [main] INFO : Click on Create Receipt
+2026-02-12 12:13:45 [main] INFO : Filling the Details in Receipt Page
+2026-02-12 12:13:45 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-12 12:13:48 [main] INFO : Selecting Receipt Method: CR RECEIPT
+2026-02-12 12:13:51 [main] INFO : Entering Receipt Number: TestReceipt_10
+2026-02-12 12:13:54 [main] INFO : Entering Amount: 270
+2026-02-12 12:13:55 [main] INFO : Selecting Bank Name: Well Forgo Bank
+2026-02-12 12:13:59 [main] INFO : Selecting Bank branch: WFG HOUSTON
+2026-02-12 12:14:04 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-12 12:14:07 [main] INFO : Click on Submit Apply Manually
+2026-02-12 12:14:14 [main] INFO : Click on Application tab under Receipt Details Section
+2026-02-12 12:14:15 [main] INFO : Click on Add open Receivables
+2026-02-12 12:14:20 [main] INFO : Entering Transaction Customer Name: CR GE
+2026-02-12 12:14:23 [main] INFO : Scrolled to the last visible record in the table.
+2026-02-12 12:14:25 [main] INFO : Selecting receipt :103012
+2026-02-12 12:14:30 [main] INFO : Clicking on Post to ledger
+2026-02-12 12:14:42 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-12 12:14:42 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-12 12:14:52 [main] INFO : Validating the Accounting Lines
+2026-02-12 12:15:02 [main] INFO : Navigating to Billing page from Receivables
+2026-02-12 12:15:09 [main] INFO : Inside Manage Transactions Page
+2026-02-12 12:15:18 [main] INFO : Entering Business Unit: CRITICAL RIVER BU
+2026-02-12 12:15:26 [main] INFO : Entering Transaction Source name: CR MANUAL TRANSACTION
+2026-02-12 12:15:37 [main] INFO : Clicking on View Balance Details
+2026-02-12 12:15:53 [main] INFO : Transaction Confirmation Message: Transaction 103012 has been saved.
+2026-02-12 12:15:54 [main] INFO : Extracted Transaction Number: 103012
+2026-02-12 12:15:54 [main] INFO : Expected :103012 and Actual :103012
+2026-02-12 12:15:54 [main] INFO : Expected :103012 and Actual :103012 both are same
+2026-02-12 12:16:04 [main] INFO : Navigating to Create Customer page from Billing
+2026-02-12 12:16:11 [main] INFO : Navigating Create Customer
+2026-02-12 12:16:12 [main] INFO : Filling Details
+2026-02-12 12:16:13 [main] INFO : Entering Customer Name: CR Test_08
+2026-02-12 12:16:15 [main] INFO : Entering Account Description: CR Test
+2026-02-12 12:16:17 [main] INFO : Selecting COMMONSET Option in Account Address 
+2026-02-12 12:16:19 [main] INFO : Entering Site Name: CR Test_08
+2026-02-12 12:16:21 [main] INFO : Selecting AR Option in State
+2026-02-12 12:16:22 [main] INFO : Clicking Add Row button for Address Purpose.
+2026-02-12 12:16:23 [main] INFO : Select Bill to from the purpose drop down under address Purpose
+2026-02-12 12:16:24 [main] INFO : Clicking Add Row button for Address Purpose.
+2026-02-12 12:16:25 [main] INFO : Select Ship to from the purpose drop down under address Purpose
+2026-02-12 12:16:30 [main] INFO : Selecting AR Option for Bill to Site under Account Address 
+2026-02-12 12:16:31 [main] INFO : Clicking Set Primary button for Address Purpose.
+2026-02-12 12:16:37 [main] INFO : Found 1 organizations in the table. Searching for: CR Test_08
+2026-02-12 12:16:37 [main] INFO : Record Found: CR Test_08
+2026-02-12 12:16:42 [main] INFO : Navigating to Billing page from Receivables
+2026-02-12 12:16:48 [main] INFO : Inside Create Transactions Page
+2026-02-12 12:16:51 [main] INFO : Filling Details in Create Transaction Page
+2026-02-12 12:16:52 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-12 12:16:55 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-12 12:17:00 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-12 12:17:06 [main] INFO : Entering Name: CR Test_08
+2026-02-12 12:17:08 [main] INFO : Verify Newly Created Customer is Visible
+2026-02-12 12:17:15 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-12 12:17:18 [main] INFO : Entering Line Description: Newly Created Customer
+2026-02-12 12:17:18 [main] INFO : Entering Line Quantity: 2
+2026-02-12 12:17:19 [main] INFO : Entering Line Unit Price: 70
+2026-02-12 12:17:27 [main] INFO : Extended Amount: 140,00
+2026-02-12 12:17:27 [main] INFO : Amount :140,00
+2026-02-12 12:17:31 [main] INFO : Selecting Complete and Review Option
+2026-02-12 12:17:36 [main] INFO : Clicking on Post to ledger
+2026-02-12 12:17:54 [main] INFO : Transaction Confirmation Message: Transaction 103013 has been saved.
+2026-02-12 12:17:55 [main] INFO : Extracted Transaction Number: 103013
+2026-02-12 12:18:05 [main] INFO : Navigating Scheduled Processes
+2026-02-12 12:18:07 [main] INFO : Click on Schedule New Process
+2026-02-12 12:18:10 [main] INFO : Click on Name dropdown
+2026-02-12 12:18:12 [main] INFO : Click on search
+2026-02-12 12:18:13 [main] INFO : Click on name and type the name
+2026-02-12 12:18:14 [main] INFO : Entering Name: Create Accounting
+2026-02-12 12:18:15 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-12 12:18:19 [main] INFO : Click on Subledger Application and Select Receivables
+2026-02-12 12:18:21 [main] INFO : Select Receivables from the drop down under Sub ledger application
+2026-02-12 12:18:21 [main] INFO : Click on ledger or ledger Set dropdown and click Search
+2026-02-12 12:18:23 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-12 12:18:30 [main] INFO : Entering Ledger Or Ledger Set: CR PRIMARY LEDGER
+2026-02-12 12:18:35 [main] INFO : Select Detail from the drop down under Report Style
+2026-02-12 12:18:37 [main] INFO : Click on Submit at the top
+2026-02-12 12:18:38 [main] INFO : Check for confirmation and click ok
+2026-02-12 12:18:39 [main] INFO : Popup text received: Process 4816035 was submitted.
+2026-02-12 12:18:39 [main] INFO : Extracted Process ID: 4816035
+2026-02-12 12:18:39 [main] INFO : Retrieved Process Id:4816035
+2026-02-12 12:18:41 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-12 12:18:41 [main] INFO : Monitoring status for Process ID: 4816035
+2026-02-12 12:18:43 [main] INFO : Current Status of 4816035: Wait
+2026-02-12 12:18:53 [main] INFO : Current Status of 4816035: Wait
+2026-02-12 12:19:04 [main] INFO : Current Status of 4816035: Succeeded
+2026-02-12 12:19:04 [main] INFO : Process 4816035 completed successfully.
+2026-02-12 12:19:08 [main] INFO : Click on Create Accounting Execution Report
+2026-02-12 12:19:19 [main] INFO : Switched to Process Details iframe.
+2026-02-12 12:19:33 [main] INFO : Clicking on Show More Action in Receivables category
+2026-02-12 12:19:35 [main] INFO : Selecting Quick Action: Prepare Receivables to General Ledger Reconciliation
+2026-02-12 12:19:37 [main] INFO : Filling details
+2026-02-12 12:19:40 [main] INFO : Entering Request Name: Testing
+2026-02-12 12:19:42 [main] INFO : Selecting CRITICAL RIVER BU Option in Business Unit 
+2026-02-12 12:19:45 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-12 12:19:51 [main] INFO : submit Confirmation Message: Process 4816038 was submitted.
+2026-02-12 12:19:52 [main] INFO : Extracted Transaction Number: 4816038
+2026-02-12 12:20:02 [main] INFO : Selecting Monitor Processes from recent items
+2026-02-12 12:20:04 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-12 12:20:05 [main] INFO : Monitoring status for Process ID: 4816038
+2026-02-12 12:20:05 [main] INFO : Current Status of 4816038: Error
+2026-02-12 12:20:05 [main] ERROR: Timeout: Process 4816038 did not succeed within 1 minutes.
+2026-02-12 12:20:12 [main] INFO : Testing Ended
+2026-02-12 12:20:12 [main] INFO : ***********
+2026-02-12 12:27:36 [main] INFO : Launching Chrome Browser
+2026-02-12 12:27:37 [main] INFO : Report Name :OraclePage.html
+2026-02-12 12:27:43 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 12:28:45 [main] INFO : Logged in to Oracle Application
+2026-02-12 12:28:45 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 12:28:45 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 12:28:52 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-12 12:29:03 [main] INFO : Filling Details in Reconcilation Tab
+2026-02-12 12:29:04 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-12 12:29:06 [main] INFO : Clicked on From Date picker icon.
+2026-02-12 12:29:06 [main] INFO : Successfully selected the From date.
+2026-02-12 12:29:07 [main] INFO : Clicked on TO Date picker icon.
+2026-02-12 12:29:07 [main] INFO : Successfully selected the TO date.
+2026-02-12 12:29:09 [main] INFO : Testing Ended
+2026-02-12 12:29:09 [main] INFO : ***********

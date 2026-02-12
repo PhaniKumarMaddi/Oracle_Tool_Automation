@@ -141,7 +141,7 @@ public class Accounting_At_Glance_Test extends TestInitializer {
 				"CreateProcessing_ScheduleProcessSucess");
 
 		waitTime(driver);
-		oraAag.waitForSubProcessSuccess(1);
+		oraAag.waitForSubProcessSuccess(2);
 		grep.captureScreenshot("pass", "Sub Processing Schedule Process Sucess", "SubProcessing_ScheduleProcessSucess");
 
 //		waitTime3(driver);

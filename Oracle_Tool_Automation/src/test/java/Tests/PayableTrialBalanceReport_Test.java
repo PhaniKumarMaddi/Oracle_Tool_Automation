@@ -60,10 +60,10 @@ public class PayableTrialBalanceReport_Test extends TestInitializer {
 		logger.info("Click on search");
 		waitTime(driver);
 		oraAag.clickSearch_InDropdown();
-		waitTime(driver);
+		waitTime3(driver);
 		grep.infoTest("Click on name and type the name");
 		logger.info("Click on name and type the name");
-		waitTime(driver);
+		waitTime3(driver);
 		oraAag.enterName(dataTest.payableTrail);
 		waitTime(driver);
 		oraAag.clickSearchBtn();

@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<test thread-count="5" name="OracleInvoiceTest">
-		<parameter name="FileName" value="OracleInvoice_Report.html" />
+	<test thread-count="5" name="Oracle_AccountPayablesTest">
+		<parameter name="FileName" value="OraclePayables_Report.html" />
 		<classes>
 			<class name="Tests.CreateInvoice_withoutPO_Test" />
 			<class name="Tests.CreateInvoice_With_PO_Test" />
-			<class name="Tests.Batch_Payment_Electonic_Test" />
 			<class name="Tests.Accounting_At_Glance_Test" />
 			<class name="Tests.PayableTrialBalanceReport_Test" />
+			<class name="Tests.Batch_Payment_Electonic_Test" />
+			<class name="Tests.Query_Invoice_Payment_Test" />
+			
 		</classes>
 	</test> <!--
 	Test -->

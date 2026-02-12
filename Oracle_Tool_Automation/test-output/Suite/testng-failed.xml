@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="OracleInvoiceTest(failed)">
-    <parameter name="FileName" value="OracleInvoice_Report.html"/>
+  <test thread-count="5" name="Oracle_AccountPayablesTest(failed)">
+    <parameter name="FileName" value="OraclePayables_Report.html"/>
     <classes>
-      <class name="Tests.Batch_Payment_Electonic_Test">
+      <class name="Tests.PayableTrialBalanceReport_Test">
         <methods>
-          <include name="oracle_Batch_Payment_Electronic"/>
+          <include name="oracle_Payable_Trial_Balance_Report"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Tests.Batch_Payment_Electonic_Test -->
+      </class> <!-- Tests.PayableTrialBalanceReport_Test -->
     </classes>
-  </test> <!-- OracleInvoiceTest(failed) -->
+  </test> <!-- Oracle_AccountPayablesTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

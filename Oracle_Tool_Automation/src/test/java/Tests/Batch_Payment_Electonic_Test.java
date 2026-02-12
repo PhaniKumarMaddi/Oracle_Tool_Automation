@@ -25,7 +25,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_BatchPaymentPage oraBpp = new Oracle_BatchPaymentPage();
 
-		createInvoice();
+//		createInvoice();
 		waitTime(driver);
 
 		grep.testCreate("Verify Batch Payment Invoice Test", "Verify Batch Payment Invoice");
@@ -157,7 +157,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		oraHome.clickHomeFromPutAway();
 		waitTime2(driver);
 
-		oracle_Query_InvoicePayment();
+//		oracle_Query_InvoicePayment();
 	}
 
 	public void createInvoice() throws Exception {

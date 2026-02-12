@@ -1,32 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-12T13:56:52 IST" name="Default suite" finished-at="2026-02-12T13:58:06 IST" duration-ms="73777">
+  <suite started-at="2026-02-12T15:48:01 IST" name="Suite" finished-at="2026-02-12T16:03:46 IST" duration-ms="944724">
     <groups>
     </groups>
-    <test started-at="2026-02-12T13:56:52 IST" name="Default test" finished-at="2026-02-12T13:58:06 IST" duration-ms="73777">
-      <class name="Tests.BankStatement_Reconciliation_Test">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.BankStatement_Reconciliation_Test@72c28d64]" started-at="2026-02-12T13:56:52 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-12T13:57:19 IST" duration-ms="26823" status="PASS">
+    <test started-at="2026-02-12T15:48:01 IST" name="OracleInvoiceTest" finished-at="2026-02-12T16:03:46 IST" duration-ms="944724">
+      <class name="Tests.Accounting_At_Glance_Test">
+        <test-method signature="oracle_Accounting_At_Glance()[pri:0, instance:Tests.Accounting_At_Glance_Test@2dd80673]" started-at="2026-02-12T15:59:38 IST" name="oracle_Accounting_At_Glance" finished-at="2026-02-12T16:02:41 IST" duration-ms="183495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oracle_Accounting_At_Glance -->
+      </class> <!-- Tests.Accounting_At_Glance_Test -->
+      <class name="Tests.Batch_Payment_Electonic_Test">
+        <test-method signature="oracle_Batch_Payment_Electronic()[pri:0, instance:Tests.Batch_Payment_Electonic_Test@6ff65192]" started-at="2026-02-12T15:57:01 IST" name="oracle_Batch_Payment_Electronic" finished-at="2026-02-12T15:59:38 IST" duration-ms="157322" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a id="_FOpt1:_UIShome" title="Home" class="svg-glob xko p_AFIconOnly" onclick="this.focus();return false;" href="#">...</a> is not clickable at point (1668, 7). Other element would receive the click: <div class="AFModalGlassPane" style="width: 1897px; height: 887px; user-select: none; z-index: 128;"></div>
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [264b1d94a7b259cb7f0119588e30cf09, clickElement {id=f.A1D384643ABBFDDA6A1330FA489134D6.d.8521F06B901F888A64C0805879E0AB05.e.3634}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50318}, goog:processID: 22952, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50318/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (264b1d94a7b259cb7f0119588e30cf09)] -> xpath: //a[@id='_FOpt1:_UIShome']]
+Session ID: 264b1d94a7b259cb7f0119588e30cf09]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a id="_FOpt1:_UIShome" title="Home" class="svg-glob xko p_AFIconOnly" onclick="this.focus();return false;" href="#">...</a> is not clickable at point (1668, 7). Other element would receive the click: <div class="AFModalGlassPane" style="width: 1897px; height: 887px; user-select: none; z-index: 128;"></div>
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [264b1d94a7b259cb7f0119588e30cf09, clickElement {id=f.A1D384643ABBFDDA6A1330FA489134D6.d.8521F06B901F888A64C0805879E0AB05.e.3634}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50318}, goog:processID: 22952, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50318/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (264b1d94a7b259cb7f0119588e30cf09)] -> xpath: //a[@id='_FOpt1:_UIShome']]
+Session ID: 264b1d94a7b259cb7f0119588e30cf09
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at Pages.Oracle_InvoicePage.clickHomeFromInvoicePage(Oracle_InvoicePage.java:774)
+at Tests.Batch_Payment_Electonic_Test.createInvoice(Batch_Payment_Electonic_Test.java:324)
+at Tests.Batch_Payment_Electonic_Test.oracle_Batch_Payment_Electronic(Batch_Payment_Electonic_Test.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oracle_Batch_Payment_Electronic -->
+      </class> <!-- Tests.Batch_Payment_Electonic_Test -->
+      <class name="Tests.PayableTrialBalanceReport_Test">
+        <test-method signature="oracle_Payable_Trial_Balance_Report()[pri:0, instance:Tests.PayableTrialBalanceReport_Test@4af0df05]" started-at="2026-02-12T16:02:41 IST" name="oracle_Payable_Trial_Balance_Report" finished-at="2026-02-12T16:03:46 IST" duration-ms="64234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oracle_Payable_Trial_Balance_Report -->
+      </class> <!-- Tests.PayableTrialBalanceReport_Test -->
+      <class name="Tests.CreateInvoice_With_PO_Test">
+        <test-method signature="oracle_InvoiceCreation_WithPO()[pri:0, instance:Tests.CreateInvoice_With_PO_Test@fc258b1]" started-at="2026-02-12T15:53:28 IST" name="oracle_InvoiceCreation_WithPO" finished-at="2026-02-12T15:57:01 IST" duration-ms="212422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oracle_InvoiceCreation_WithPO -->
+      </class> <!-- Tests.CreateInvoice_With_PO_Test -->
+      <class name="Tests.CreateInvoice_withoutPO_Test">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.CreateInvoice_withoutPO_Test@24d09c1]" started-at="2026-02-12T15:48:01 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-12T15:48:17 IST" duration-ms="15441" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[OraclePage.html]]>
+                <![CDATA[OracleInvoice_Report.html]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="OracleReconciliation_BankStatement()[pri:0, instance:Tests.BankStatement_Reconciliation_Test@72c28d64]" started-at="2026-02-12T13:57:19 IST" name="OracleReconciliation_BankStatement" finished-at="2026-02-12T13:58:05 IST" duration-ms="46059" status="PASS">
+        <test-method signature="oracle_InvoiceCreation_WithoutPO()[pri:0, instance:Tests.CreateInvoice_withoutPO_Test@24d09c1]" started-at="2026-02-12T15:48:17 IST" name="oracle_InvoiceCreation_WithoutPO" finished-at="2026-02-12T15:53:28 IST" duration-ms="311197" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OracleReconciliation_BankStatement -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.BankStatement_Reconciliation_Test@72c28d64]" started-at="2026-02-12T13:58:05 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-12T13:58:06 IST" duration-ms="829" status="PASS">
+        </test-method> <!-- oracle_InvoiceCreation_WithoutPO -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CreateInvoice_withoutPO_Test@24d09c1]" started-at="2026-02-12T16:03:46 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-12T16:03:46 IST" duration-ms="539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.BankStatement_Reconciliation_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Tests.CreateInvoice_withoutPO_Test -->
+    </test> <!-- OracleInvoiceTest -->
+  </suite> <!-- Suite -->
 </testng-results>

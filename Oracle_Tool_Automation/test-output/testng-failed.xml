@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="OracleAccountReceivablesTest(failed)">
-    <parameter name="FileName" value="OracleAccountReceivables_Report.html"/>
+  <test thread-count="5" name="OracleInvoiceTest(failed)">
+    <parameter name="FileName" value="OracleInvoice_Report.html"/>
     <classes>
-      <class name="Tests.Oracle_AR_Customer_Test">
+      <class name="Tests.Batch_Payment_Electonic_Test">
         <methods>
-          <include name="oracle_Customer_Test"/>
+          <include name="oracle_Batch_Payment_Electronic"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Tests.Oracle_AR_Customer_Test -->
-      <class name="Tests.Oracle_AR_CreateAccountingTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="oracle_AR_CreateAccounting"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- Tests.Oracle_AR_CreateAccountingTest -->
+      </class> <!-- Tests.Batch_Payment_Electonic_Test -->
     </classes>
-  </test> <!-- OracleAccountReceivablesTest(failed) -->
+  </test> <!-- OracleInvoiceTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

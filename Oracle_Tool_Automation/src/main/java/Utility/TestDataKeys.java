@@ -14,6 +14,8 @@ public class TestDataKeys {
 	public String prepareReceivablesReconcilCatg = "Prepare Receivables to General Ledger Reconciliation";
 	public String cashManagementTab = "Cash Management";
 	public String bankStmtAnd_ReconciCatg = "Bank Statements and Reconciliation";
+	public String generalAcct_NavTab = "General Accounting";
+	public String createJournalCatg = "Create Journal";
 
 	public String createInvoiceBtn = "Create Invoice";
 	public String createPaymentBtn = "Create Payment";
@@ -38,14 +40,14 @@ public class TestDataKeys {
 	public String paymentProfile = "WFB EFT PPP";
 	public String paymentCheckMethod = "Check";
 	public String paymentProfile_Check = "WFB CHECK PPP";
-	public String invoiceNum_withoutPO = "Test_WithoutPO_07"; // change values
+	public String invoiceNum_withoutPO = "Test_WithoutPO_12_1"; // change values
 	// with po
-	public String po_invoiceNum = "Test_PO_Test_002"; // change values
-	public String identifyPo = "CRPO500071"; // 68,69 70 - 75need po existing
+	public String po_invoiceNum = "Test_PO_12_02"; // change values
+	public String identifyPo = "CRPO500074"; // 72 - 75need po existing
 
 	// Batch payment
-	public String invoiceNum = "Test_Batch_03";
-	public String batchPaymentNumber = "MP_ELE_Payment_18";
+	public String invoiceNum = "Test_Batch_05";
+	public String batchPaymentNumber = "MP_ELE_Payment_12_2";
 	public String batchTemplate = "WFB CHECK USD PPR";
 	public String pendingInstallReviewStatus = "Pending installments review";
 	public String pendingActionToComplete = "Pending action to complete information required";

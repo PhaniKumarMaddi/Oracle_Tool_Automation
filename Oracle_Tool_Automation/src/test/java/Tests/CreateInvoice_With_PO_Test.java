@@ -207,16 +207,21 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 		waitTime2(driver);
 
 		oraInv.validatePaymentConfirmationPopup();
+		waitTime2(driver);
 		grep.captureScreenshot("pass", "Verifying Payment Confirmation Popup",
 				"paymentConfirmation_inPayInFullPopup_withPO");
 		oraInv.clickOk_InPaymentConfirmation();
 		waitTime2(driver);
 		oraInv.clickSaveAndCloseInvoiceBtn();
-		waitTime(driver);
+		waitTime2(driver);
 
 		grep.infoTest("Save and Close Invoice");
 		logger.info("Save and Close Invoice");
 		waitTime(driver);
+		
+		oraHome.clickHomeButton();
+		waitTime(driver);
+
 	}
 
 	private void processRevalidationFlow() throws Exception {

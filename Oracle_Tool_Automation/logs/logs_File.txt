@@ -16525,3 +16525,18 @@ Session ID: d60064c699517ec2499196c2a9a0a321
 2026-02-12 16:31:24 [main] INFO : Expected :Fully paid and Actual :Fully paid both are same
 2026-02-12 16:31:30 [main] INFO : Testing Ended
 2026-02-12 16:31:30 [main] INFO : ***********
+2026-02-12 17:01:28 [main] INFO : Launching Chrome Browser
+2026-02-12 17:01:29 [main] INFO : Report Name :OraclePage.html
+2026-02-12 17:01:35 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 17:01:40 [main] INFO : Logged in to Oracle Application
+2026-02-12 17:01:41 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 17:01:41 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 17:01:48 [main] INFO : Navigating Scheduled Processes
+2026-02-12 17:01:51 [main] INFO : Click on Schedule New Process
+2026-02-12 17:01:53 [main] INFO : Click on Name dropdown
+2026-02-12 17:01:55 [main] INFO : Click on search
+2026-02-12 17:01:56 [main] INFO : Click on name and type the name
+2026-02-12 17:01:58 [main] INFO : Entering Name: Create Accounting
+2026-02-12 17:01:59 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-12 17:02:04 [main] INFO : Testing Ended
+2026-02-12 17:02:04 [main] INFO : ***********

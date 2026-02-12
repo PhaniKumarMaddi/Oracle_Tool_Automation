@@ -7,10 +7,9 @@
 			<class name="Tests.CreateInvoice_withoutPO_Test" />
 			<class name="Tests.CreateInvoice_With_PO_Test" />
 			<class name="Tests.Accounting_At_Glance_Test" />
-			<class name="Tests.PayableTrialBalanceReport_Test" />
 			<class name="Tests.Batch_Payment_Electonic_Test" />
 			<class name="Tests.Query_Invoice_Payment_Test" />
-			
+			<class name="Tests.PayableTrialBalanceReport_Test" />
 		</classes>
 	</test> <!--
 	Test -->

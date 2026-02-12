@@ -154,7 +154,8 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 	}
 
 	public void clickOk_inScheduleProcessPopup() {
-		implWait(driver);
+//		implWait(driver);
+		waitForElementToBeClickable(ok_inScheduleProcess, 30);
 		driver.findElement(ok_inScheduleProcess).click();
 	}
 

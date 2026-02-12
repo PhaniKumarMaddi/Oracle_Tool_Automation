@@ -1,47 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-12T16:14:12 IST" name="Suite" finished-at="2026-02-12T16:31:30 IST" duration-ms="1038132">
+  <suite started-at="2026-02-12T17:01:25 IST" name="Default suite" finished-at="2026-02-12T17:02:04 IST" duration-ms="38486">
     <groups>
     </groups>
-    <test started-at="2026-02-12T16:14:12 IST" name="Oracle_AccountPayablesTest" finished-at="2026-02-12T16:31:30 IST" duration-ms="1038132">
-      <class name="Tests.Accounting_At_Glance_Test">
-        <test-method signature="oracle_Accounting_At_Glance()[pri:0, instance:Tests.Accounting_At_Glance_Test@2dd80673]" started-at="2026-02-12T16:22:28 IST" name="oracle_Accounting_At_Glance" finished-at="2026-02-12T16:25:39 IST" duration-ms="191470" status="PASS">
+    <test started-at="2026-02-12T17:01:25 IST" name="Default test" finished-at="2026-02-12T17:02:04 IST" duration-ms="38486">
+      <class name="Tests.Accounting_Journal_Test">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Accounting_Journal_Test@72c28d64]" started-at="2026-02-12T17:01:25 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-12T17:01:41 IST" duration-ms="15985" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OraclePage.html]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oracle_Accounting_At_Glance -->
-      </class> <!-- Tests.Accounting_At_Glance_Test -->
-      <class name="Tests.OldQuery_Invoice_Payment_Test">
-        <test-method signature="oracle_Query_InvoicePayment()[pri:0, instance:Tests.OldQuery_Invoice_Payment_Test@acdb094]" started-at="2026-02-12T16:30:36 IST" name="oracle_Query_InvoicePayment" finished-at="2026-02-12T16:31:30 IST" duration-ms="53658" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- oracle_Query_InvoicePayment -->
-      </class> <!-- Tests.OldQuery_Invoice_Payment_Test -->
-      <class name="Tests.PayableTrialBalanceReport_Test">
-        <test-method signature="oracle_Payable_Trial_Balance_Report()[pri:0, instance:Tests.PayableTrialBalanceReport_Test@4af0df05]" started-at="2026-02-12T16:25:39 IST" name="oracle_Payable_Trial_Balance_Report" finished-at="2026-02-12T16:26:46 IST" duration-ms="67074" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        </test-method> <!-- setup -->
+        <test-method signature="oracle_Accounting_Journal_Test()[pri:0, instance:Tests.Accounting_Journal_Test@72c28d64]" started-at="2026-02-12T17:01:41 IST" name="oracle_Accounting_Journal_Test" finished-at="2026-02-12T17:02:03 IST" duration-ms="21792" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[element not interactable
+              <![CDATA[stale element reference: stale element not found in the current frame
   (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.34.0', revision: '707dcb4246*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f733f1e1efb8df66e0ad55a0c670f1bd, clickElement {id=f.2759AC397F5D5BC64B598A0C719D179F.d.0A5B14550AB8B6054F4F61124688F57B.e.3107}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, goog:processID: 7184, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f733f1e1efb8df66e0ad55a0c670f1bd)] -> xpath: //button[text()='Search']]
-Session ID: f733f1e1efb8df66e0ad55a0c670f1bd]]>
+Command: [7ebaf035bf700d8e5500670c4ab31255, clickElement {id=f.C750F02ED52AA6707804C8E76D661946.d.FD0502DADB74177E4F9AC9E6334BE61C.e.244}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53547}, goog:processID: 19444, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53547/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7ebaf035bf700d8e5500670c4ab31255)] -> xpath: //button[contains(@id,':snpokbtnid') and text()='OK']]
+Session ID: 7ebaf035bf700d8e5500670c4ab31255]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.34.0', revision: '707dcb4246*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f733f1e1efb8df66e0ad55a0c670f1bd, clickElement {id=f.2759AC397F5D5BC64B598A0C719D179F.d.0A5B14550AB8B6054F4F61124688F57B.e.3107}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, goog:processID: 7184, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f733f1e1efb8df66e0ad55a0c670f1bd)] -> xpath: //button[text()='Search']]
-Session ID: f733f1e1efb8df66e0ad55a0c670f1bd
+Command: [7ebaf035bf700d8e5500670c4ab31255, clickElement {id=f.C750F02ED52AA6707804C8E76D661946.d.FD0502DADB74177E4F9AC9E6334BE61C.e.244}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53547}, goog:processID: 19444, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53547/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7ebaf035bf700d8e5500670c4ab31255)] -> xpath: //button[contains(@id,':snpokbtnid') and text()='OK']]
+Session ID: 7ebaf035bf700d8e5500670c4ab31255
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -54,8 +55,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at Pages.Oracle_AccountingAtGlance.clickSearchBtn(Oracle_AccountingAtGlance.java:130)
-at Tests.PayableTrialBalanceReport_Test.oracle_Payable_Trial_Balance_Report(PayableTrialBalanceReport_Test.java:69)
+at Pages.Oracle_AccountingAtGlance.clickOk_inScheduleProcessPopup(Oracle_AccountingAtGlance.java:158)
+at Tests.Accounting_Journal_Test.oracle_Accounting_Journal_Test(Accounting_Journal_Test.java:74)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -84,44 +85,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oracle_Payable_Trial_Balance_Report -->
-      </class> <!-- Tests.PayableTrialBalanceReport_Test -->
-      <class name="Tests.Batch_Payment_Electonic_Test">
-        <test-method signature="oracle_Batch_Payment_Electronic()[pri:0, instance:Tests.Batch_Payment_Electonic_Test@57ea113a]" started-at="2026-02-12T16:26:46 IST" name="oracle_Batch_Payment_Electronic" finished-at="2026-02-12T16:30:36 IST" duration-ms="229764" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- oracle_Batch_Payment_Electronic -->
-      </class> <!-- Tests.Batch_Payment_Electonic_Test -->
-      <class name="Tests.CreateInvoice_With_PO_Test">
-        <test-method signature="oracle_InvoiceCreation_WithPO()[pri:0, instance:Tests.CreateInvoice_With_PO_Test@6ff65192]" started-at="2026-02-12T16:19:47 IST" name="oracle_InvoiceCreation_WithPO" finished-at="2026-02-12T16:22:28 IST" duration-ms="160809" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- oracle_InvoiceCreation_WithPO -->
-      </class> <!-- Tests.CreateInvoice_With_PO_Test -->
-      <class name="Tests.CreateInvoice_withoutPO_Test">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.CreateInvoice_withoutPO_Test@54c62d71]" started-at="2026-02-12T16:14:12 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-12T16:14:26 IST" duration-ms="14234" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[OraclePayables_Report.html]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="oracle_InvoiceCreation_WithoutPO()[pri:0, instance:Tests.CreateInvoice_withoutPO_Test@54c62d71]" started-at="2026-02-12T16:14:26 IST" name="oracle_InvoiceCreation_WithoutPO" finished-at="2026-02-12T16:19:47 IST" duration-ms="320718" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- oracle_InvoiceCreation_WithoutPO -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CreateInvoice_withoutPO_Test@54c62d71]" started-at="2026-02-12T16:31:30 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-12T16:31:30 IST" duration-ms="351" status="PASS">
+        </test-method> <!-- oracle_Accounting_Journal_Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Accounting_Journal_Test@72c28d64]" started-at="2026-02-12T17:02:03 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-12T17:02:04 IST" duration-ms="618" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.CreateInvoice_withoutPO_Test -->
-    </test> <!-- Oracle_AccountPayablesTest -->
-  </suite> <!-- Suite -->
+      </class> <!-- Tests.Accounting_Journal_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

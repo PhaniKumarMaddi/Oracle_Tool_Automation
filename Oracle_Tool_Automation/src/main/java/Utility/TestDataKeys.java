@@ -76,14 +76,14 @@ public class TestDataKeys {
 	public String createReceiptTask = "Create Receipt";
 	public String manageTransactionTask = "Manage Transactions";
 	public String createTransactionTask = "Create Transaction";
-	public String receiptNum = "TestReceipt_07"; // change values
+	public String receiptNum = "TestReceipt_09"; // change values
 	public String bankName = "Well Forgo Bank";
 	public String bankBranch = "WFG HOUSTON";
 	public String submitApplyManually = "Submit and Apply Manually";
 	public String createCustomerTask = "Create Customer";
 
 	// CREATE CUSTOMER
-	public String custname = "CR Test_05"; // change values
+	public String custname = "CR Test_07"; // change values
 	public String accDescription = "CR Test";
 	public String accAddressSet = "COMMONSET";
 	public String billTo_purpose = "Bill to";

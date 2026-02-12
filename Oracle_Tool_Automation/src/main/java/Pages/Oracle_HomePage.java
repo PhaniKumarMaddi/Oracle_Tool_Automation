@@ -309,10 +309,22 @@ public class Oracle_HomePage extends WaitsManager {
 		driver.findElement(navigator).click();
 	}
 
+//	public void selectNavigationTab(String value) {
+//		By selectInNavigation = By.xpath("//div[@title='" + value + "']");
+//		scrollView(selectInNavigation);
+//		driver.findElement(selectInNavigation).click();
+//	}
+
 	public void selectNavigationTab(String value) {
 		By selectInNavigation = By.xpath("//div[@title='" + value + "']");
+		By verifyExpand = By.xpath("//div[@title='" + value + "']/div/a");
 		scrollView(selectInNavigation);
-		driver.findElement(selectInNavigation).click();
+		String expand = driver.findElement(verifyExpand).getAttribute("title");
+		if (expand.startsWith("Expand")) {
+			driver.findElement(selectInNavigation).click();
+		} else {
+			System.out.println("Already Expanded");
+		}
 	}
 
 	public void selectSubCategoryInNavigator(String subCatg) {
@@ -950,7 +962,8 @@ public class Oracle_HomePage extends WaitsManager {
 
 	public void click_Tasks_InPO() throws Exception {
 		try {
-			implWait(driver);
+//			implWait(driver);
+			waitForElementToBeClickable(tasks, 60);
 
 			driver.findElement(tasks).click();
 			waitTime(driver);

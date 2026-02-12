@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="OracleProcurementTest(failed)">
-    <parameter name="FileName" value="OracleProcurement_Report.html"/>
+  <test thread-count="5" name="OracleAccountReceivablesTest(failed)">
+    <parameter name="FileName" value="OracleAccountReceivables_Report.html"/>
     <classes>
-      <class name="Tests.Oracle_ProcurementWithoutRequisition_Test">
+      <class name="Tests.Oracle_AR_Customer_Test">
         <methods>
+          <include name="oracle_Customer_Test"/>
           <include name="tearDown"/>
-          <include name="oracle_ProcurementWithout_Requisition_Test"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Tests.Oracle_ProcurementWithoutRequisition_Test -->
+      </class> <!-- Tests.Oracle_AR_Customer_Test -->
+      <class name="Tests.Oracle_AR_CreateAccountingTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="oracle_AR_CreateAccounting"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Tests.Oracle_AR_CreateAccountingTest -->
     </classes>
-  </test> <!-- OracleProcurementTest(failed) -->
+  </test> <!-- OracleAccountReceivablesTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

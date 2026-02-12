@@ -1,0 +1,1505 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>OracleAccountReceivables_Report.html</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Web Automation Results</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 12, 2026 09:30:20 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="warning" href="#"><span>Warning</span><span class="status warning"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Page</p>
+            <p class="text-sm">
+              <span>9:30:20 am</span> / <span>00:00:10:560</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Page</h5>
+<span class='badge badge-success'>02.12.2026 9:30:20 am</span>
+<span class='badge badge-danger'>02.12.2026 9:30:30 am</span>
+<span class='badge badge-default'>00:00:10:560</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Login test</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:20 am</td>
+        <td>
+          Report Name :OracleAccountReceivables_Report.html
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:21 am</td>
+        <td>
+          Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:25 am</td>
+        <td>
+          Inside Login Page  Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//Oracle_Loginpage.png' src=".//Screenshots//Oracle_Loginpage.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:29 am</td>
+        <td>
+          Logged in to Oracle Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:30 am</td>
+        <td>
+          Expected :You have a new home page! and Actual :You have a new home page! both are same
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:30 am</td>
+        <td>
+          Inside Landing Page  Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//Oracle_LandingPage.png' src=".//Screenshots//Oracle_LandingPage.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify Create Transactions Test</p>
+            <p class="text-sm">
+              <span>9:30:31 am</span> / <span>00:01:21:352</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify Create Transactions Test</h5>
+<span class='badge badge-success'>02.12.2026 9:30:31 am</span>
+<span class='badge badge-danger'>02.12.2026 9:31:53 am</span>
+<span class='badge badge-default'>00:01:21:352</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify Create Transactions</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:34 am</td>
+        <td>
+          Clicking on Home icon
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:37 am</td>
+        <td>
+          Expanding Receivables in Navigator  Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//ExpandingReceivablesNavigator_CreateTransaction.png' src=".//Screenshots//ExpandingReceivablesNavigator_CreateTransaction.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:39 am</td>
+        <td>
+          Selecting Quick Action: Create Transaction
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:40 am</td>
+        <td>
+          Navigating Create Transaction
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:42 am</td>
+        <td>
+          Navigating Create Transaction Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//CreateTransactionPage.png' src=".//Screenshots//CreateTransactionPage.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:42 am</td>
+        <td>
+          Filling Details in Create Transaction Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:44 am</td>
+        <td>
+          Selecting Business Unit: CRITICAL RIVER BU
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:47 am</td>
+        <td>
+          Selecting Transaction Source: CR MANUAL TRANSACTION
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:52 am</td>
+        <td>
+          Selecting Transaction Type: CR INVOICE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:57 am</td>
+        <td>
+          Entering Name: CR GE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:31:03 am</td>
+        <td>
+          Selecting Invoice Payment terms: Net 30
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:31:06 am</td>
+        <td>
+          Entering Line Description: Testing 2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:31:07 am</td>
+        <td>
+          Entering Line Quantity: 2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:31:08 am</td>
+        <td>
+          Entering Line Unit Price: 70
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:31:15 am</td>
+        <td>
+          Extended Amount: 140,00
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:31:15 am</td>
+        <td>
+          Saving Create Transaction test Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//SaveCreateTransaction.png' src=".//Screenshots//SaveCreateTransaction.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:31:19 am</td>
+        <td>
+          Selecting Complete and Review Option
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:31:24 am</td>
+        <td>
+          Clicking on Post to ledger
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:31:32 am</td>
+        <td>
+          Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:31:32 am</td>
+        <td>
+          Post to Ledger Accounting confirrmation popup Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//accountingConfirmationPopup_CreateTransaction.png' src=".//Screenshots//accountingConfirmationPopup_CreateTransaction.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:31:43 am</td>
+        <td>
+          Validating the Accounting Lines
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:31:43 am</td>
+        <td>
+          Validating the Accounting Lines Popup test Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//accountingLinesPopup_CreateTransaction.png' src=".//Screenshots//accountingLinesPopup_CreateTransaction.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:31:52 am</td>
+        <td>
+          Transaction Confirmation after Saving and closing the transaction Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//confirming_CreateTransaction.png' src=".//Screenshots//confirming_CreateTransaction.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:31:52 am</td>
+        <td>
+          Transaction Confirmation Message: Transaction 103007 has been saved.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:31:53 am</td>
+        <td>
+          Extracted Transaction Number: 103007
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify Create Receipt Test</p>
+            <p class="text-sm">
+              <span>9:31:56 am</span> / <span>00:02:12:307</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify Create Receipt Test</h5>
+<span class='badge badge-success'>02.12.2026 9:31:56 am</span>
+<span class='badge badge-danger'>02.12.2026 9:34:08 am</span>
+<span class='badge badge-default'>00:02:12:307</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify Create Receipt</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:31:58 am</td>
+        <td>
+          Navigating to Acoount Receivables
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:01 am</td>
+        <td>
+          Click on Create Receipt
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:03 am</td>
+        <td>
+          Filling the Details in Receipt Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:03 am</td>
+        <td>
+          Selecting Business Unit: CRITICAL RIVER BU
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:06 am</td>
+        <td>
+          Selecting Receipt Method: CR RECEIPT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:09 am</td>
+        <td>
+          Entering Receipt Number: TestReceipt_08
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:12 am</td>
+        <td>
+          Entering Amount: 70
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:12 am</td>
+        <td>
+          Selecting Bank Name: Well Forgo Bank
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:17 am</td>
+        <td>
+          Selecting Bank branch: WFG HOUSTON
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:22 am</td>
+        <td>
+          Selecting Bank Account:a WFB CORPOATE ACC
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:25 am</td>
+        <td>
+          Click on Submit Apply Manually
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:32:29 am</td>
+        <td>
+          Submitting the Receipt Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//afterSubmittingReceipt.png' src=".//Screenshots//afterSubmittingReceipt.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:32 am</td>
+        <td>
+          Click on Application tab under Receipt Details Section
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:33 am</td>
+        <td>
+          Click on Add open Receivables
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:32:36 am</td>
+        <td>
+          Inside Open Receivables popup Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//openReceivablesPopup.png' src=".//Screenshots//openReceivablesPopup.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:38 am</td>
+        <td>
+          Entering Transaction Customer Name: CR GE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:43 am</td>
+        <td>
+          Selecting receipt :103007
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:32:47 am</td>
+        <td>
+          After Selecting Transaction Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//afterSelectingTransaction.png' src=".//Screenshots//afterSelectingTransaction.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:48 am</td>
+        <td>
+          Clicking on Post to ledger
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:32:56 am</td>
+        <td>
+          Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:32:56 am</td>
+        <td>
+          Post to Ledger Accounting confirrmation popup Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//accountingConfirmationPopup_CreateReceipt.png' src=".//Screenshots//accountingConfirmationPopup_CreateReceipt.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:33:06 am</td>
+        <td>
+          Validating the Accounting Lines
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:33:07 am</td>
+        <td>
+          Validating the Accounting Lines Popup test Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//accountingLinesPopup_CreateReceipt.png' src=".//Screenshots//accountingLinesPopup_CreateReceipt.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:33:16 am</td>
+        <td>
+          Navigating to Billing page from Receivables
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:33:23 am</td>
+        <td>
+          Inside Manage Transactions Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:33:32 am</td>
+        <td>
+          Entering Business Unit: CRITICAL RIVER BU
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:33:40 am</td>
+        <td>
+          Entering Transaction Source name: CR MANUAL TRANSACTION
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:33:49 am</td>
+        <td>
+          Searching transaction based on BU and Source Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//searchingTransaction_inManageTransaction.png' src=".//Screenshots//searchingTransaction_inManageTransaction.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:33:50 am</td>
+        <td>
+          Clicking on View Balance Details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:33:59 am</td>
+        <td>
+          Inside View Balance Details Page Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//ViewBalanceDetailsPage_inManageTransaction.png' src=".//Screenshots//ViewBalanceDetailsPage_inManageTransaction.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:34:06 am</td>
+        <td>
+          Transaction Confirmation after Saving and closing the transaction Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//confirming_ManageTransaction.png' src=".//Screenshots//confirming_ManageTransaction.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:07 am</td>
+        <td>
+          Transaction Confirmation Message: Transaction 103007 has been saved.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:07 am</td>
+        <td>
+          Extracted Transaction Number: 103007
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:34:08 am</td>
+        <td>
+          Expected :103007 and Actual :103007 both are same
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify Create Customer Test</p>
+            <p class="text-sm">
+              <span>9:34:11 am</span> / <span>00:00:41:075</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify Create Customer Test</h5>
+<span class='badge badge-success'>02.12.2026 9:34:11 am</span>
+<span class='badge badge-danger'>02.12.2026 9:34:52 am</span>
+<span class='badge badge-default'>00:00:41:075</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify Create Customer</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:18 am</td>
+        <td>
+          Navigating to Create Customer page from Billing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:25 am</td>
+        <td>
+          Navigating Create Customer
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:34:26 am</td>
+        <td>
+          Inside Create Customer Page Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//Inside_CreateCustomer.png' src=".//Screenshots//Inside_CreateCustomer.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:26 am</td>
+        <td>
+          Filling Details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:27 am</td>
+        <td>
+          Entering Customer Name: CR Test_06
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:29 am</td>
+        <td>
+          Entering Account Description: CR Test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:31 am</td>
+        <td>
+          Selecting COMMONSET Option in Account Address 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:33 am</td>
+        <td>
+          Entering Site Name: CR Test_06
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:35 am</td>
+        <td>
+          Selecting AR Option in State
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:36 am</td>
+        <td>
+          Clicking Add Row button for Address Purpose.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:38 am</td>
+        <td>
+          Select Bill to from the purpose drop down under address Purpose
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:38 am</td>
+        <td>
+          Clicking Add Row button for Address Purpose.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:39 am</td>
+        <td>
+          Select Ship to from the purpose drop down under address Purpose
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:44 am</td>
+        <td>
+          Selecting AR Option for Bill to Site under Account Address
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:45 am</td>
+        <td>
+          Clicking Set Primary button for Address Purpose.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:34:46 am</td>
+        <td>
+          After Filling Create Customer Page Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//Saving_CreateCustomer.png' src=".//Screenshots//Saving_CreateCustomer.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:51 am</td>
+        <td>
+          Record Found: CR Test_06
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:34:52 am</td>
+        <td>
+          Verify Customer in Manage Customers page Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//VerifyCustomer.png' src=".//Screenshots//VerifyCustomer.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify Customer Verification Test</p>
+            <p class="text-sm">
+              <span>9:34:55 am</span> / <span>00:00:43:322</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify Customer Verification Test</h5>
+<span class='badge badge-success'>02.12.2026 9:34:55 am</span>
+<span class='badge badge-danger'>02.12.2026 9:35:38 am</span>
+<span class='badge badge-default'>00:00:43:322</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify Customer Verification</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:57 am</td>
+        <td>
+          Navigating to Billing page from Receivables
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:35:03 am</td>
+        <td>
+          Inside Create Transactions Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:05 am</td>
+        <td>
+          Navigating Create Transaction for Customer verification Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//CreateTransactionPage_customerVerification.png' src=".//Screenshots//CreateTransactionPage_customerVerification.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:35:06 am</td>
+        <td>
+          Filling Details in Create Transaction Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:35:07 am</td>
+        <td>
+          Selecting Business Unit: CRITICAL RIVER BU
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:35:10 am</td>
+        <td>
+          Selecting Transaction Source: CR MANUAL TRANSACTION
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:35:15 am</td>
+        <td>
+          Selecting Transaction Type: CR INVOICE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:35:21 am</td>
+        <td>
+          Entering Name: CR Test_06
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:35:23 am</td>
+        <td>
+          Verify Newly Created Customer is Visible
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:24 am</td>
+        <td>
+          Verify Newly Created Customer is Visible Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//NewlyCreatedCustomerVisible.png' src=".//Screenshots//NewlyCreatedCustomerVisible.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:35:28 am</td>
+        <td>
+          Entering Line Description: Newly Created Customer
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:35:29 am</td>
+        <td>
+          Entering Line Quantity: 2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:35:30 am</td>
+        <td>
+          Entering Line Unit Price: 70
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:35:37 am</td>
+        <td>
+          Extended Amount: 140,00
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:35:37 am</td>
+        <td>
+          Amount :140,00
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:38 am</td>
+        <td>
+          Saving Create Transaction in Customer Verification Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//SaveCreateTransaction_CustomerVerification.png' src=".//Screenshots//SaveCreateTransaction_CustomerVerification.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify Create Accounting for AR Test</p>
+            <p class="text-sm">
+              <span>9:35:45 am</span> / <span>00:00:30:034</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Verify Create Accounting for AR Test</h5>
+<span class='badge badge-success'>02.12.2026 9:35:45 am</span>
+<span class='badge badge-danger'>02.12.2026 9:36:15 am</span>
+<span class='badge badge-default'>00:00:30:034</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify Create Accounting for AR</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>9:36:15 am</td>
+        <td>
+          Home button Not Available 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify AR STandard Report Test</p>
+            <p class="text-sm">
+              <span>9:36:46 am</span> / <span>00:01:18:401</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Verify AR STandard Report Test</h5>
+<span class='badge badge-success'>02.12.2026 9:36:46 am</span>
+<span class='badge badge-danger'>02.12.2026 9:38:04 am</span>
+<span class='badge badge-default'>00:01:18:401</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">Verify AR STandard Report</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:37:19 am</td>
+        <td>
+          Expanding Receivables in Navigator  Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//ExpandingReceivablesNavigator_StandardReport.png' src=".//Screenshots//ExpandingReceivablesNavigator_StandardReport.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:37:21 am</td>
+        <td>
+          Clicking on Show More Action in Receivables category
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:37:23 am</td>
+        <td>
+          Selecting Quick Action: Prepare Receivables to General Ledger Reconciliation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:37:24 am</td>
+        <td>
+          Navigating Prepare Receivables to General Ledger Reconciliation Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//PrepareReceivableGeneralLedgerReconciliation_page.png' src=".//Screenshots//PrepareReceivableGeneralLedgerReconciliation_page.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:37:25 am</td>
+        <td>
+          Filling details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:37:27 am</td>
+        <td>
+          Entering Request Name: Testing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:37:29 am</td>
+        <td>
+          Selecting CRITICAL RIVER BU Option in Business Unit 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:37:33 am</td>
+        <td>
+          Selecting Feb-26 Option in Accounting Period
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:37:39 am</td>
+        <td>
+          submit Confirmation Message: Process 4815619 was submitted.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:37:39 am</td>
+        <td>
+          Extracted Transaction Number: 4815619
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:37:40 am</td>
+        <td>
+          Submitting Prepare Receivables to General Ledger Reconciliation Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//Submitting_PrepareReceivableGeneralLedgerReconciliation.png' src=".//Screenshots//Submitting_PrepareReceivableGeneralLedgerReconciliation.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:37:50 am</td>
+        <td>
+          Selecting Monitor Processes from recent items
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:37:52 am</td>
+        <td>
+          Click on refresh button multiple times beside Change Process Priority
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:38:04 am</td>
+        <td>
+          Current Status of 4815619: Error
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>9:38:04 am</td>
+        <td>
+          Process 4815619 failed with status: Error
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>9:38:04 am</td>
+        <td>
+          Timeout: Process 4815619 did not succeed within 1 minutes.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:38:04 am</td>
+        <td>
+          Prepare Receivables to General Ledger in Monitor Process Passed
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='.//Screenshots//PrepareReceivablesGeneralLedger_MonitorProcess.png' src=".//Screenshots//PrepareReceivablesGeneralLedger_MonitorProcess.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 12, 2026 09:30:20 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 12, 2026 09:38:09 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>5</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='71%'>
+<b>5</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='14%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='14%'>1</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='25%'><b>30</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>1</b> events failed,
+<b data-tooltip='%'>86</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Login Page":10.56,"Verify Create Transactions Test":81.352,"Verify Create Receipt Test":132.307,"Verify Create Customer Test":41.075,"Verify Customer Verification Test":43.322,"Verify Create Accounting for AR Test":30.034,"Verify AR STandard Report Test":78.401
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>User</td>
+<td>PhaniKumarMaddi</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>Windows 11</td>
+</tr>
+<tr>
+<td>Java Version</td>
+<td>23.0.2</td>
+</tr>
+<tr>
+<td>Time Zone</td>
+<td>Asia/Calcutta</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 5,
+failParent: 1,
+warningParent: 1,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 30,
+failEvents: 1,
+warningEvents: 2,
+skipEvents: 0,
+infoEvents: 84
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

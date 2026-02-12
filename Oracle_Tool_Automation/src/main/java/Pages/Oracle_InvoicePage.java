@@ -580,7 +580,7 @@ public class Oracle_InvoicePage extends WaitsManager {
 
 	public void clickDoneAccountingBtn() {
 		try {
-			waitForElement(doneBtn, 30);
+			waitForElement(doneBtn, 60);
 			WebElement done = driver.findElement(doneBtn);
 			done.click();
 		} catch (Exception e) {

@@ -228,7 +228,7 @@ public class AccountReceivables_Test extends TestInitializer {
 		waitTime(driver);
 		grep.infoTest("Navigating to Billing page from Receivables");
 		logger.info("Navigating to Billing page from Receivables");
-		waitTime3(driver);
+		waitTime5(driver);
 		oraHome.click_Tasks_InPO();
 		waitTime(driver);
 		oraHome.selectTasks_InTaskPage(dataTest.manageTransactionTask);

@@ -41,7 +41,7 @@ public class Oracle_AR_Customer_Test extends TestInitializer {
 		waitTime(driver);
 		grep.infoTest("Navigating to Create Customer page from Billing");
 		logger.info("Navigating to Create Customer page from Billing");
-		waitTime3(driver);
+		waitTime5(driver);
 		oraHome.click_Tasks_InPO();
 		waitTime(driver);
 		oraHome.selectTasks_InTaskPage(dataTest.createCustomerTask);
@@ -130,7 +130,7 @@ public class Oracle_AR_Customer_Test extends TestInitializer {
 		grep.captureScreenshot("pass", "Verify Newly Created Customer is Visible", "NewlyCreatedCustomerVisible");
 		waitTime(driver);
 		oraAr.clickOk_inBillToNamePopup();
-		waitTime2(driver);
+		waitTime5(driver);
 		oraAr.searchAndSelectPaymentTerms(dataTest.net_PaymentTerms);
 		waitTime2(driver);
 		oraAr.enterDescriptionInLines("Newly Created Customer");
@@ -140,6 +140,9 @@ public class Oracle_AR_Customer_Test extends TestInitializer {
 		oraAr.clickSaveBtn_inTransactionPage();
 		waitTime5(driver);
 		String amount = oraAr.getExtendedAmount();
+		grep.infoTest("Amount :" + amount);
+		logger.info("Amount :" + amount);
+		waitTime(driver);
 
 		grep.captureScreenshot("pass", "Saving Create Transaction in Customer Verification",
 				"SaveCreateTransaction_CustomerVerification");

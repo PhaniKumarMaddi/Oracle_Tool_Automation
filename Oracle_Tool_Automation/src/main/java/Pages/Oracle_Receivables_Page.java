@@ -188,7 +188,8 @@ public class Oracle_Receivables_Page extends WaitsManager {
 
 	public void searchAndSelectPaymentTerms(String paymentTermsVal) {
 		try {
-			implWait(driver);
+//			implWait(driver);
+			waitForElementToBeClickable(paymentTerms, 40);
 			By selectPaymentTerms = By.xpath("//li[starts-with(text(),'" + paymentTermsVal + "')]");
 
 			driver.findElement(paymentTerms).click();

@@ -16,7 +16,6 @@ import Utility.DriverManager;
 import Utility.GenerateReports;
 import Utility.ValidatingAssertions;
 import Utility.WaitsManager;
-import net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size;
 
 public class Oracle_HomePage extends WaitsManager {
 	protected WebDriver driver;

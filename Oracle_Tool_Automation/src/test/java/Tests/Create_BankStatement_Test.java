@@ -68,12 +68,12 @@ public class Create_BankStatement_Test extends TestInitializer {
 		oraBsp.selectBookingDate_inStatementLine();
 		waitTime(driver);
 		oraBsp.clickTransactionDropdownButton();
-		oraBsp.clickSearch_InTransactionDropdown();
+		oraBsp.clickSearch_InDropdown();
 		waitTime(driver);
 		oraBsp.clickSearchBtn();
 		oraBsp.clickSelectTransaction_FromList(dataTest.transactionCode_101);
 		waitTime(driver);
-		oraBsp.clickOk_inSelectTransactionopup();
+		oraBsp.clickOk_inSelectTransactionPopup();
 		oraBsp.selectFlowIndicator(dataTest.debitFlowIndicator);
 		oraBsp.enterStatementLine_Amount("10");
 		waitTime(driver);
@@ -100,8 +100,38 @@ public class Create_BankStatement_Test extends TestInitializer {
 		waitTime(driver);
 		oraHome.selectTasks_InTaskPage(dataTest.manageBankStmtBtn);
 		waitTime(driver);
-		
-		
+		oraBsp.clickExpandSearchBtn();
+		waitTime(driver);
+		grep.infoTest("Selecting Bank Account");
+		logger.info("Selecting Bank Account");
+		waitTime2(driver);
+		oraBsp.clickBankAccountDropdownButton();
+		oraBsp.clickSearch_InDropdown();
+		waitTime(driver);
+		oraBsp.enterBankAccount_InPopup(dataTest.bankAccount);
+		waitTime(driver);
+		oraBsp.clickSearchBtn_BankAccPopup();
+		waitTime(driver);
+		oraBsp.clickSelectBankAccount_FromList(dataTest.bankAccount);
+		waitTime(driver);
+		oraBsp.clickOk_inSelectBankAccountPopup();
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Selecting Bank Account in Manage Statement Page",
+				"selectingAcc_inManageStatement");
+		oraBsp.clickSearchBtn();
+		waitTime(driver);
+		oraBsp.selectingStatementEndDate(dataTest.statement_EndDate);
+		waitTime(driver);
+		oraBsp.expandBankAccount(dataTest.bankAccount);
+		waitTime(driver);
+		oraBsp.verifyStatementStatus_bankStatus(dataTest.statementId);
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Verify Bank Statement Reconciliation Status", "bankStatement_Reconciliation");
+		waitTime(driver);
+		oraBsp.clickDoneStatementBtn();
+		waitTime(driver);
+		oraHome.clickHomeFromPutAway();
+
 	}
 
 }

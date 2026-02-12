@@ -42,7 +42,7 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 	By bookingDate = By.xpath("//a[contains(@id,':inputDate1')]");
 	By selectBookingDate = By.xpath("//table[contains(@id,':inputDate1')]/descendant::td[@class='x120 p_AFSelected']");
 	By transactionDropdown = By.xpath("//a[contains(@id,':transactioncodedispId')]");
-	By searchInTransactionDropdown = By.xpath("//a[text()='Search...']");
+	By searchInDropdown = By.xpath("//a[text()='Search...']");
 	By searchBtn = By.xpath("//button[text()='Search']");
 	By ok_inSelectTransaction = By
 			.xpath("//button[contains(@id,'transactioncodedispId::lovDialogId::ok') and text()='OK']");
@@ -57,12 +57,14 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 			.xpath("//div[@class='AFPopupSelector']/descendant::button[contains(@id,'MAnt2:1:cbsap1:cb5')]");
 
 	// validation bank statement
-	By expandSearch= By.xpath("//a[@title='Expand Search']");
+	By expandSearch = By.xpath("//a[@title='Expand Search']");
 	By bankAccountDropdown = By.xpath("//a[@title='Search:  Bank Account']");
-	By searchBankAccountPopup= By.xpath("//input[contains(@id,'frLovInternalQueryId:value00::content')]");
-	
-	
-	
+	By searchBankAccountPopup = By.xpath("//input[contains(@id,'frLovInternalQueryId:value00::content')]");
+	By searchBtn_bankAccPopup = By.xpath("//button[contains(@id,'afrLovInternalQueryId::search')]");
+	By ok_inBankAccPopup = By.xpath("//button[contains(@id,'lovDialogId::ok')]");
+	By selectStmt_EndDate = By.xpath("//select[contains(@id,'dateModeId::content')]");
+	By doneBtn = By.xpath("//button[@accesskey='o']");
+
 	public void validateCreateBankStatementPageTitle() throws Exception {
 
 		try {
@@ -201,17 +203,17 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 		}
 	}
 
-	public void clickSearch_InTransactionDropdown() throws Exception {
+	public void clickSearch_InDropdown() throws Exception {
 		try {
 //			implWait(driver);
-			waitForElementToBeClickable(searchInTransactionDropdown, 20);
-			boolean elementExists = !driver.findElements(searchInTransactionDropdown).isEmpty();
+			waitForElementToBeClickable(searchInDropdown, 20);
+			boolean elementExists = !driver.findElements(searchInDropdown).isEmpty();
 			if (elementExists) {
-				waitForElementToBeClickable(searchInTransactionDropdown, 30);
-				driver.findElement(searchInTransactionDropdown).click();
+				waitForElementToBeClickable(searchInDropdown, 30);
+				driver.findElement(searchInDropdown).click();
 			} else {
-				logger.error("Search in Transaction dropdown Not Available ");
-				grep.failTest("Search in Transaction dropdown Not Available ");
+				logger.error("Search in dropdown Not Available ");
+				grep.failTest("Search in dropdown Not Available ");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -243,7 +245,7 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 
 	}
 
-	public void clickOk_inSelectTransactionopup() {
+	public void clickOk_inSelectTransactionPopup() {
 		implWait(driver);
 		driver.findElement(ok_inSelectTransaction).click();
 	}
@@ -336,4 +338,136 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 		driver.findElement(ok_inConfirmPopup).click();
 	}
 
+	// Manage Bank statements
+	public void clickExpandSearchBtn() {
+		waitForElementToBeClickable(expandSearch, 30);
+		driver.findElement(expandSearch).click();
+	}
+
+	public void clickBankAccountDropdownButton() throws Exception {
+		try {
+			implWait(driver);
+			boolean elementExists = !driver.findElements(bankAccountDropdown).isEmpty();
+			if (elementExists) {
+				waitForElementToBeClickable(bankAccountDropdown, 30);
+				driver.findElement(bankAccountDropdown).click();
+			} else {
+				logger.error("Bank Account dropdown button Not Available ");
+				grep.failTest("Bank Account dropdown button Not Available ");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			grep.failTest("Test Failed :" + e.getMessage());
+			logger.error("Test Failed :" + e.getMessage());
+		}
+	}
+
+	public void enterBankAccount_InPopup(String bankAccVal) {
+		try {
+			implWait(driver);
+			driver.findElement(searchBankAccountPopup).click();
+			driver.findElement(searchBankAccountPopup).sendKeys(bankAccVal);
+			waitTime(driver);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickSearchBtn_BankAccPopup() {
+		implWait(driver);
+		driver.findElement(searchBtn_bankAccPopup).click();
+	}
+
+	public void clickSelectBankAccount_FromList(String bankAccVal) throws Exception {
+
+		try {
+			By selectAcc = By.xpath(
+					"//div[contains(@id,'ovInternalTableId::db')]/descendant::span[text()='" + bankAccVal + "']");
+
+			waitForElementToBeClickable(selectAcc, 30);
+			List<WebElement> state = driver.findElements(selectAcc);
+			if (state.size() > 0) {
+				state.getFirst().click();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void clickOk_inSelectBankAccountPopup() {
+		implWait(driver);
+		driver.findElement(ok_inBankAccPopup).click();
+	}
+
+	public void selectingStatementEndDate(String option) throws Exception {
+		try {
+			waitForElementToBeClickable(selectStmt_EndDate, 10);
+			WebElement selectDate = driver.findElement(selectStmt_EndDate);
+			Select sel = new Select(selectDate);
+			sel.selectByVisibleText(option);
+			grep.infoTest("Select " + option + " from the drop down under Statement End Date");
+			logger.info("Select " + option + " from the drop down under Statement End Date");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			grep.failTest("Test Failed :" + e.getMessage());
+			logger.error("Test Failed :" + e.getMessage());
+		}
+
+	}
+
+	public void expandBankAccount(String accVal) throws Exception {
+		try {
+			By expandAcc = By
+					.xpath("//span[text()=' " + accVal + "']/parent::span/preceding-sibling::span/a[@title='Expand']");
+			waitTime(driver);
+			driver.findElement(expandAcc).click();
+			waitTime(driver);
+
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+
+		}
+	}
+
+	public void verifyStatementStatus_bankStatus(String statementId) {
+
+		String stmtStatus = "//a[text()='" + statementId + "']/ancestor::td[1]/following-sibling::td[5]";
+		By statusLoc = By.xpath(stmtStatus);
+
+		try {
+			waitForElement(statusLoc, 20);
+			WebElement statusElement = driver.findElement(statusLoc);
+
+			String actualStatus = statusElement.getText().trim();
+
+			logger.info("Statement ID: " + statementId + " | Actual Reconciliation Status: " + actualStatus);
+			grep.infoTest("Statement ID: " + statementId + " | Actual Reconciliation Status: " + actualStatus);
+
+			if (actualStatus.equalsIgnoreCase("Incomplete")) {
+				logger.info("Verification Passed: Status is " + actualStatus);
+				grep.infoTest("Status verification successful for " + statementId);
+			} else {
+				logger.error("Verification Failed! Expected:Incomplete but found: " + actualStatus);
+				grep.failTest("Status mismatch: Expected: Incomplete but found " + actualStatus);
+			}
+
+		} catch (Exception e) {
+			logger.error("Could not find status for Statement ID: " + statementId + ": " + e.getMessage());
+			grep.failTest("Failed to locate status cell using XPath: " + statementId);
+		}
+	}
+
+	public void clickDoneStatementBtn() {
+		try {
+			waitForElement(doneBtn, 60);
+			WebElement done = driver.findElement(doneBtn);
+			done.click();
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		}
+	}
 }

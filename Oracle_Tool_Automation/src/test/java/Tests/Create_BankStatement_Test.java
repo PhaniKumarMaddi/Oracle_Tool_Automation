@@ -75,6 +75,7 @@ public class Create_BankStatement_Test extends TestInitializer {
 		waitTime(driver);
 		oraBsp.clickOk_inSelectTransactionPopup();
 		oraBsp.selectFlowIndicator(dataTest.debitFlowIndicator);
+//		oraBsp.selectFlowIndicator(dataTest.creditFlowIndicator);
 		oraBsp.enterStatementLine_Amount(dataTest.unitPriceAmt);
 		waitTime(driver);
 		grep.captureScreenshot("pass", "After Filling Statement Line", "fillingStatementLine_InBankStatment");

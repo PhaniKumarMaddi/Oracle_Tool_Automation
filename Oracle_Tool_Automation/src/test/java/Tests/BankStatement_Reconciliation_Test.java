@@ -77,7 +77,7 @@ public class BankStatement_Reconciliation_Test extends TestInitializer {
 		waitTime5(driver);
 		grep.infoTest("Clicking Reconciled Tab");
 		logger.info("Clicking Reconciled Tab");
-		waitTime(driver);
+		waitTime1(driver);
 
 		oraBsp.clickReconciledTab();
 		waitTime5(driver);

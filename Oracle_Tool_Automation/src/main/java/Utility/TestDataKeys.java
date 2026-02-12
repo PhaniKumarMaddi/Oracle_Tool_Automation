@@ -73,7 +73,7 @@ public class TestDataKeys {
 	public String net_PaymentTerms = "Net 30";
 	public String receiptMethod = "CR RECEIPT";
 	public String quantity = "2";
-	public String unitPriceAmt = "70";
+	public String unitPriceAmt = "370";
 //	public String receiptPriceAmt = "270";
 	// receipt
 	public String createReceiptTask = "Create Receipt";
@@ -100,9 +100,10 @@ public class TestDataKeys {
 	public String createBankStmtBtn = "Create Bank Statement";
 	public String manageBankStmtBtn = "Manage Bank Statements";
 	public String manualReconciliationBtn = "Manual Reconciliation";
-	public String statementId = "Test_StatementID_07";
+	public String statementId = "Test_StatementID_011"; // change value
 	public String transactionCode_101 = "101";
-	public String debitFlowIndicator = "Credit";
+	public String debitFlowIndicator = "Debit";
+	public String creditFlowIndicator = "Credit";
 	public String statement_EndDate = "Week to date";
 
 }

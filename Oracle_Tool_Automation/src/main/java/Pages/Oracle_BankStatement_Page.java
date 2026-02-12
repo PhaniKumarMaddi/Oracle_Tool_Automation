@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -486,6 +487,10 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 	}
 
 	public void clickReconciledTab() {
+
+//		scrollView(reconcilTab);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollTo(0, 0);");
 		waitForElementToBeClickable(reconcilTab, 30);
 		driver.findElement(reconcilTab).click();
 	}
@@ -537,6 +542,7 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 
 	public void clickReconciledButton() {
 		waitForElementToBeClickable(reconcileBtn, 30);
+		scrollView(reconcileBtn);
 		driver.findElement(reconcileBtn).click();
 	}
 
@@ -624,9 +630,11 @@ public class Oracle_BankStatement_Page extends WaitsManager {
 	public boolean isReceiptPresentInReconcileTab(String receiptName) {
 		// 1. Create a dynamic locator for the specific receipt span
 		By receiptLoc = By.xpath("//span[text()='" + receiptName + "']");
+		By scroll = By.xpath("//div[contains(@id,'1:Manua1:0:mrpanel1:')]/div[2]/table[@summary='Search Results']");
 
 		try {
 			waitForElement(receiptLoc, 20);
+			scrollView(scroll);
 			WebElement receiptElement = driver.findElement(receiptLoc);
 
 			if (receiptElement.isDisplayed()) {

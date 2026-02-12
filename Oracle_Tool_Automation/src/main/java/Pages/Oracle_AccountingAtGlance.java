@@ -57,6 +57,14 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 //	By defaultDocument = By.xpath("//span[text()='Default Document']");
 	By defaultDocument = By.xpath("//*[@id='templateTableBody']/tr[2]/td[1]/span");
 
+	// JOURNALS 
+	By journalName = By.xpath("//label[text()='Journal Batch']/parent::td/following-sibling::td/input");
+	By accountingPeriod= By.xpath("//label[text()='Accounting Period']/following-sibling::a");
+	By journal = By.xpath("//label[text()='Journal']/parent::td/following-sibling::td/input");
+	By category = By.xpath("//label[text()='Category']/preceding-sibling::input[1]");
+	By journalLines_Account= By.xpath("//input[@aria-label='Account']");
+	
+	
 	public void clickScheduleProcessButton() throws Exception {
 		try {
 			implWait(driver);
@@ -524,4 +532,6 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 		}
 	}
 
+	
+	// JOURNALS
 }

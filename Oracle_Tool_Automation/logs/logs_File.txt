@@ -15203,3 +15203,116 @@ Session ID: f2453f9a3d381249c0af9ca718e0caae
 2026-02-12 09:38:04 [main] ERROR: Timeout: Process 4815619 did not succeed within 1 minutes.
 2026-02-12 09:38:10 [main] INFO : Testing Ended
 2026-02-12 09:38:10 [main] INFO : ***********
+2026-02-12 10:37:31 [main] INFO : Launching Chrome Browser
+2026-02-12 10:37:31 [main] INFO : Report Name :OraclePage.html
+2026-02-12 10:37:37 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 10:37:41 [main] INFO : Logged in to Oracle Application
+2026-02-12 10:37:42 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 10:37:42 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 10:37:50 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-12 10:38:03 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-12 10:38:03 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-12 10:38:03 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-12 10:38:03 [main] INFO : Filling Bank Statement Details
+2026-02-12 10:38:04 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-12 10:38:05 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-12 10:38:06 [main] INFO : Successfully selected the start date.
+2026-02-12 10:38:06 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-12 10:38:07 [main] INFO : Successfully selected the Enddate.
+2026-02-12 10:38:08 [main] INFO : Entering Statement Id: Test_StatementID_02
+2026-02-12 10:38:11 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-12 10:38:11 [main] INFO : Successfully selected the Booking date.
+2026-02-12 10:38:16 [main] INFO : Select Debit from the drop down under Flow Indicator
+2026-02-12 10:38:17 [main] INFO : Entering Statement Amount: 10
+2026-02-12 10:38:21 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-12 10:38:21 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-12 10:38:24 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-12 10:38:24 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-12 10:38:28 [main] INFO : Selecting Bank Account
+2026-02-12 10:38:40 [main] INFO : Select Week to date from the drop down under Statement End Date
+2026-02-12 10:39:12 [main] ERROR: Could not find status for Statement ID: Test_StatementID_02: Expected condition failed: waiting for presence of element located by: By.xpath: //a[text()='Test_StatementID_02']/ancestor::td[1]/following-sibling::td[5] (tried for 20 second(s) with 500 milliseconds interval)
+2026-02-12 10:40:18 [main] INFO : Testing Ended
+2026-02-12 10:40:18 [main] INFO : ***********
+2026-02-12 10:45:06 [main] INFO : Launching Chrome Browser
+2026-02-12 10:45:06 [main] INFO : Report Name :OraclePage.html
+2026-02-12 10:45:12 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 10:45:16 [main] INFO : Logged in to Oracle Application
+2026-02-12 10:45:17 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 10:45:17 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 10:45:27 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-12 10:45:39 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-12 10:45:39 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-12 10:45:39 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-12 10:45:39 [main] INFO : Filling Bank Statement Details
+2026-02-12 10:45:40 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-12 10:45:42 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-12 10:45:42 [main] INFO : Successfully selected the start date.
+2026-02-12 10:45:43 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-12 10:45:43 [main] INFO : Successfully selected the Enddate.
+2026-02-12 10:45:44 [main] INFO : Entering Statement Id: Test_StatementID_03
+2026-02-12 10:45:47 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-12 10:45:47 [main] INFO : Successfully selected the Booking date.
+2026-02-12 10:45:51 [main] INFO : Select Debit from the drop down under Flow Indicator
+2026-02-12 10:45:51 [main] INFO : Entering Statement Amount: 10
+2026-02-12 10:45:56 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-12 10:45:56 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-12 10:45:59 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-12 10:45:59 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-12 10:46:03 [main] INFO : Selecting Bank Account
+2026-02-12 10:46:15 [main] INFO : Select Week to date from the drop down under Statement End Date
+2026-02-12 10:46:17 [main] INFO : Statement ID: Test_StatementID_03 | Actual Reconciliation Status: Incomplete
+2026-02-12 10:46:17 [main] INFO : Verification Passed: Status is Incomplete
+2026-02-12 10:47:22 [main] INFO : Testing Ended
+2026-02-12 10:47:22 [main] INFO : ***********
+2026-02-12 10:48:37 [main] INFO : Launching Chrome Browser
+2026-02-12 10:48:38 [main] INFO : Report Name :OraclePage.html
+2026-02-12 10:48:43 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 10:48:48 [main] INFO : Logged in to Oracle Application
+2026-02-12 10:48:48 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 10:48:48 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 10:48:57 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-12 10:49:09 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-12 10:49:09 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-12 10:49:09 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-12 10:49:09 [main] INFO : Filling Bank Statement Details
+2026-02-12 10:49:10 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-12 10:49:12 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-12 10:49:12 [main] INFO : Successfully selected the start date.
+2026-02-12 10:49:13 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-12 10:49:13 [main] INFO : Successfully selected the Enddate.
+2026-02-12 10:49:14 [main] INFO : Entering Statement Id: Test_StatementID_03
+2026-02-12 10:49:17 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-12 10:49:17 [main] INFO : Successfully selected the Booking date.
+2026-02-12 10:49:21 [main] INFO : Select Debit from the drop down under Flow Indicator
+2026-02-12 10:49:21 [main] INFO : Entering Statement Amount: 10
+2026-02-12 10:49:53 [main] INFO : Launching Chrome Browser
+2026-02-12 10:49:53 [main] INFO : Report Name :OraclePage.html
+2026-02-12 10:50:04 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-12 10:50:30 [main] INFO : Logged in to Oracle Application
+2026-02-12 10:50:31 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-12 10:50:31 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-12 10:50:39 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-12 10:50:49 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-12 10:50:49 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-12 10:50:49 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-12 10:50:50 [main] INFO : Filling Bank Statement Details
+2026-02-12 10:50:50 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-12 10:50:52 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-12 10:50:52 [main] INFO : Successfully selected the start date.
+2026-02-12 10:50:53 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-12 10:50:53 [main] INFO : Successfully selected the Enddate.
+2026-02-12 10:50:55 [main] INFO : Entering Statement Id: Test_StatementID_04
+2026-02-12 10:50:57 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-12 10:50:58 [main] INFO : Successfully selected the Booking date.
+2026-02-12 10:51:01 [main] INFO : Select Debit from the drop down under Flow Indicator
+2026-02-12 10:51:01 [main] INFO : Entering Statement Amount: 10
+2026-02-12 10:51:08 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-12 10:51:08 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-12 10:51:11 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-12 10:51:11 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-12 10:51:15 [main] INFO : Selecting Bank Account
+2026-02-12 10:51:27 [main] INFO : Select Week to date from the drop down under Statement End Date
+2026-02-12 10:51:30 [main] INFO : Statement ID: Test_StatementID_04 | Actual Reconciliation Status: Incomplete
+2026-02-12 10:51:30 [main] INFO : Verification Passed: Status is Incomplete
+2026-02-12 10:51:33 [main] INFO : Testing Ended
+2026-02-12 10:51:33 [main] INFO : ***********

@@ -96,7 +96,7 @@ public class TestDataKeys {
 	// BANK STATMENT
 	public String createBankStmtBtn = "Create Bank Statement";
 	public String manageBankStmtBtn = "Manage Bank Statements";
-	public String statementId = "Test_StatementID_02";
+	public String statementId = "Test_StatementID_04";
 	public String transactionCode_101 = "101";
 	public String debitFlowIndicator = "Debit";
 	public String statement_EndDate = "Week to date";

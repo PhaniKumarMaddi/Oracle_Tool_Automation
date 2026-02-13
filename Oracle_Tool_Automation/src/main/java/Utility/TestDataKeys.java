@@ -2,6 +2,7 @@ package Utility;
 
 public class TestDataKeys {
 
+	// Navigation Tabs
 	public String payableNavTab = "Payables";
 	public String invoiceCatg = "Invoices";
 	public String paymentsCatg = "Payments";
@@ -17,7 +18,8 @@ public class TestDataKeys {
 	public String generalAcct_NavTab = "General Accounting";
 	public String createJournalCatg = "Create Journal";
 	public String manageJournalsCatg = "Manage Journals";
-	
+	public String fixedAssetsNavTab = "Fixed Assets";
+	public String assetsCatg = "Assets";
 
 	public String createInvoiceBtn = "Create Invoice";
 	public String createPaymentBtn = "Create Payment";
@@ -108,19 +110,31 @@ public class TestDataKeys {
 	public String creditFlowIndicator = "Credit";
 	public String statement_EndDate = "Week to date";
 
-	// Journal 
-	public String journalName= "Test9"; // change values
-	public String journalCategory="Manual";
-	public String journalLine_company= "101";
-	public String journalLine_dept= "000";
-	public String journalLine_acc= "11200";
-	public String journalLine_future= "000";
-	public String journalLine_debit= "100";
-	public String journalLine_credit= "100";
-//	public String journalLine_company_2= "101";
-	public String journalLine_dept_2= "202";
-	public String journalLine_acc_2= "11300";
-//	public String journalLine_future_2= "000";
+	// Journal
+	public String journalName = "Test9"; // change values
+	public String journalCategory = "Manual";
+	public String journalLine_company = "101";
+	public String journalLine_dept = "000";
+	public String journalLine_acc = "11200";
+	public String journalLine_future = "000";
+	public String journalLine_debit = "100";
+	public String journalLine_credit = "100";
+	public String journalLine_dept_2 = "202";
+	public String journalLine_acc_2 = "11300";
+
+	// Assets
+	public String addAssetTask = "Add Asset";
+	public String inquireAssetTask = "Inquire Assets";
+	public String majorCategory = "CR COMPUTER";
+	public String minorCategory = "CR PC";
+	public String assetDescription = "Testing Asset";
+	public String assetCost = "10000";
+	public String assetCountry = "US";
+	public String assetState = "CA";
+	public String assetCity = "San Francisco";
+	public String assetBuilding = "595 Market St";
+	public String assetFuture = "88";
 	
-	
+	public String assetNumber="Testing Asset 4"; // Change value
+	public String assetKey="0000";
 }

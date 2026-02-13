@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-13T11:50:06 IST" name="Default suite" finished-at="2026-02-13T11:53:37 IST" duration-ms="210300">
+  <suite started-at="2026-02-13T17:58:25 IST" name="Default suite" finished-at="2026-02-13T18:00:10 IST" duration-ms="104233">
     <groups>
     </groups>
-    <test started-at="2026-02-13T11:50:06 IST" name="Default test" finished-at="2026-02-13T11:53:37 IST" duration-ms="210300">
-      <class name="Tests.Accounting_Journal_Test">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Accounting_Journal_Test@72c28d64]" started-at="2026-02-13T11:50:06 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-13T11:50:24 IST" duration-ms="17474" status="PASS">
+    <test started-at="2026-02-13T17:58:25 IST" name="Default test" finished-at="2026-02-13T18:00:10 IST" duration-ms="104233">
+      <class name="Tests.Fixed_Assets_Test">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Fixed_Assets_Test@72c28d64]" started-at="2026-02-13T17:58:25 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-13T17:58:40 IST" duration-ms="14748" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="oracle_Accounting_Journal_Test()[pri:0, instance:Tests.Accounting_Journal_Test@72c28d64]" started-at="2026-02-13T11:50:24 IST" name="oracle_Accounting_Journal_Test" finished-at="2026-02-13T11:53:36 IST" duration-ms="192127" status="PASS">
+        <test-method signature="oracle_Fixed_Assets_Test()[pri:0, instance:Tests.Fixed_Assets_Test@72c28d64]" started-at="2026-02-13T17:58:40 IST" name="oracle_Fixed_Assets_Test" finished-at="2026-02-13T18:00:09 IST" duration-ms="88931" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oracle_Accounting_Journal_Test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Accounting_Journal_Test@72c28d64]" started-at="2026-02-13T11:53:36 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-13T11:53:37 IST" duration-ms="623" status="PASS">
+        </test-method> <!-- oracle_Fixed_Assets_Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Fixed_Assets_Test@72c28d64]" started-at="2026-02-13T18:00:09 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-13T18:00:10 IST" duration-ms="511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.Accounting_Journal_Test -->
+      </class> <!-- Tests.Fixed_Assets_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

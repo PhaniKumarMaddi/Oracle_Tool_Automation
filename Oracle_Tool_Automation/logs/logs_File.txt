@@ -17288,3 +17288,565 @@ Session ID: d60064c699517ec2499196c2a9a0a321
 2026-02-13 11:53:33 [main] INFO : Test9 Journal Status is Posted
 2026-02-13 11:53:37 [main] INFO : Testing Ended
 2026-02-13 11:53:37 [main] INFO : ***********
+2026-02-13 14:41:43 [main] INFO : Launching Chrome Browser
+2026-02-13 14:41:44 [main] INFO : Report Name :OraclePage.html
+2026-02-13 14:41:50 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 14:41:55 [main] INFO : Logged in to Oracle Application
+2026-02-13 14:41:58 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 14:41:58 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 14:42:08 [main] INFO : Navigating to Assets
+2026-02-13 14:42:21 [main] INFO : Selecting Major Category
+2026-02-13 14:42:36 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 14:42:38 [main] INFO : Selecting Minor Category
+2026-02-13 14:42:42 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 14:43:21 [main] INFO : Launching Chrome Browser
+2026-02-13 14:43:22 [main] INFO : Report Name :OraclePage.html
+2026-02-13 14:43:29 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 14:43:33 [main] INFO : Logged in to Oracle Application
+2026-02-13 14:43:34 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 14:43:34 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 14:43:43 [main] INFO : Navigating to Assets
+2026-02-13 14:43:48 [main] INFO : Selecting Major Category
+2026-02-13 14:44:20 [main] ERROR: Test Failed :Expected condition failed: waiting for element to be clickable: By.xpath: //a[text()='Search...'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56332}, goog:processID: 21936, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56332/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f0cfca47ed44db164c9a3e84e9b5d445
+2026-02-13 14:45:22 [main] INFO : Testing Ended
+2026-02-13 14:45:22 [main] INFO : ***********
+2026-02-13 15:13:54 [main] INFO : Launching Chrome Browser
+2026-02-13 15:13:55 [main] INFO : Report Name :OraclePage.html
+2026-02-13 15:14:00 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 15:14:05 [main] INFO : Logged in to Oracle Application
+2026-02-13 15:14:06 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 15:14:06 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 15:14:15 [main] INFO : Navigating to Assets
+2026-02-13 15:14:20 [main] INFO : Selecting Major Category
+2026-02-13 15:14:52 [main] ERROR: Test Failed :Expected condition failed: waiting for element to be clickable: By.xpath: //a[text()='Search...'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59523}, goog:processID: 5144, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59523/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5370a47886be41318bd05898792aef4b
+2026-02-13 15:15:53 [main] INFO : Testing Ended
+2026-02-13 15:15:53 [main] INFO : ***********
+2026-02-13 15:20:17 [main] INFO : Launching Chrome Browser
+2026-02-13 15:20:18 [main] INFO : Report Name :OraclePage.html
+2026-02-13 15:20:23 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 15:20:27 [main] INFO : Logged in to Oracle Application
+2026-02-13 15:20:28 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 15:20:28 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 15:20:37 [main] INFO : Navigating to Assets
+2026-02-13 15:20:42 [main] INFO : Selecting Major Category
+2026-02-13 15:20:57 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 15:20:59 [main] INFO : Testing Ended
+2026-02-13 15:20:59 [main] INFO : ***********
+2026-02-13 15:21:08 [main] INFO : Launching Chrome Browser
+2026-02-13 15:21:08 [main] INFO : Report Name :OraclePage.html
+2026-02-13 15:21:13 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 15:21:17 [main] INFO : Logged in to Oracle Application
+2026-02-13 15:21:18 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 15:21:18 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 15:21:26 [main] INFO : Navigating to Assets
+2026-02-13 15:21:31 [main] INFO : Selecting Major Category
+2026-02-13 15:21:55 [main] INFO : Launching Chrome Browser
+2026-02-13 15:21:56 [main] INFO : Report Name :OraclePage.html
+2026-02-13 15:22:01 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 15:22:05 [main] INFO : Logged in to Oracle Application
+2026-02-13 15:22:06 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 15:22:06 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 15:22:15 [main] INFO : Navigating to Assets
+2026-02-13 15:22:20 [main] INFO : Selecting Major Category
+2026-02-13 15:22:44 [main] INFO : Launching Chrome Browser
+2026-02-13 15:22:44 [main] INFO : Report Name :OraclePage.html
+2026-02-13 15:22:50 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 15:22:54 [main] INFO : Logged in to Oracle Application
+2026-02-13 15:22:54 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 15:22:54 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 15:23:03 [main] INFO : Navigating to Assets
+2026-02-13 15:23:08 [main] INFO : Selecting Major Category
+2026-02-13 15:23:13 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 15:23:15 [main] INFO : Selecting Minor Category
+2026-02-13 15:23:19 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 15:23:24 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 15:23:24 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 15:23:33 [main] INFO : Selecting Company Value: 101
+2026-02-13 15:24:06 [main] INFO : Launching Chrome Browser
+2026-02-13 15:24:06 [main] INFO : Report Name :OraclePage.html
+2026-02-13 15:24:12 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 15:24:16 [main] INFO : Logged in to Oracle Application
+2026-02-13 15:24:16 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 15:24:16 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 15:24:27 [main] INFO : Navigating to Assets
+2026-02-13 15:24:36 [main] INFO : Selecting Major Category
+2026-02-13 15:24:40 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 15:24:43 [main] INFO : Selecting Minor Category
+2026-02-13 15:24:47 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 15:24:53 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 15:24:53 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 15:25:07 [main] INFO : Selecting Company Value: 101
+2026-02-13 15:25:38 [main] INFO : Selecting Asset Location
+2026-02-13 15:25:39 [main] ERROR: Test Failed :element click intercepted: Element <img id="_FOpt1:_FOr1:0:_FONSr2:0:_FOTRaT:0:dynam1:0:kf3KBIMG::icon" src="/fscmUI/images/applcore/flex/func_fieldssearch_16_act.png" title="Select: Location" alt="Select: Location" class="xi6"> is not clickable at point (1130, 516). Other element would receive the click: <span class="xvc">...</span>
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2377bc4b5f14654f6013479f3c682e0a, clickElement {id=f.741B12D7CDB957F884AFC22DF676B2AB.d.F15C8D6C0627A5E093AB1CC4A167DACB.e.358}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61485}, goog:processID: 6308, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61485/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2377bc4b5f14654f6013479f3c682e0a)] -> xpath: //a/img[@alt='Select: Location']]
+Session ID: 2377bc4b5f14654f6013479f3c682e0a
+2026-02-13 15:25:53 [main] ERROR: Test Failed :Error communicating with the remote browser. It may have died.
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2377bc4b5f14654f6013479f3c682e0a, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61485}, goog:processID: 6308, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61485/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2377bc4b5f14654f6013479f3c682e0a
+2026-02-13 15:27:42 [main] INFO : Launching Chrome Browser
+2026-02-13 15:27:42 [main] INFO : Report Name :OraclePage.html
+2026-02-13 15:27:47 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 15:27:52 [main] INFO : Logged in to Oracle Application
+2026-02-13 15:27:53 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 15:27:53 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 15:28:02 [main] INFO : Navigating to Assets
+2026-02-13 15:28:08 [main] INFO : Selecting Major Category
+2026-02-13 15:28:13 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 15:28:16 [main] INFO : Selecting Minor Category
+2026-02-13 15:28:19 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 15:28:26 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 15:28:27 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 15:28:28 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 15:29:00 [main] INFO : Selecting Asset Location
+2026-02-13 15:29:34 [main] INFO : Entering Value for Major: US
+2026-02-13 15:29:37 [main] INFO : Testing Ended
+2026-02-13 15:29:37 [main] INFO : ***********
+2026-02-13 15:30:06 [main] INFO : Launching Chrome Browser
+2026-02-13 15:30:07 [main] INFO : Report Name :OraclePage.html
+2026-02-13 15:30:12 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 15:30:16 [main] INFO : Logged in to Oracle Application
+2026-02-13 15:30:17 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 15:30:17 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 15:30:27 [main] INFO : Navigating to Assets
+2026-02-13 15:30:33 [main] INFO : Selecting Major Category
+2026-02-13 15:30:37 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 15:30:40 [main] INFO : Selecting Minor Category
+2026-02-13 15:30:43 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 15:30:50 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 15:30:51 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 15:30:52 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 15:31:54 [main] INFO : Selecting Asset Location
+2026-02-13 15:32:01 [main] INFO : Entering Value for Major: US
+2026-02-13 15:32:04 [main] INFO : Testing Ended
+2026-02-13 15:32:04 [main] INFO : ***********
+2026-02-13 15:41:23 [main] INFO : Launching Chrome Browser
+2026-02-13 15:41:24 [main] INFO : Report Name :OraclePage.html
+2026-02-13 15:41:29 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 15:41:33 [main] INFO : Logged in to Oracle Application
+2026-02-13 15:41:34 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 15:41:34 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 15:41:43 [main] INFO : Navigating to Assets
+2026-02-13 15:41:48 [main] INFO : Selecting Major Category
+2026-02-13 15:41:52 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 15:41:55 [main] INFO : Selecting Minor Category
+2026-02-13 15:41:58 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 15:42:05 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 15:42:06 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 15:42:06 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 15:42:15 [main] INFO : Selecting Company Value: 101
+2026-02-13 15:42:46 [main] INFO : Selecting Asset Location
+2026-02-13 15:42:47 [main] ERROR: Test Failed :element click intercepted: Element <img id="_FOpt1:_FOr1:0:_FONSr2:0:_FOTRaT:0:dynam1:0:kf3KBIMG::icon" src="/fscmUI/images/applcore/flex/func_fieldssearch_16_act.png" title="Select: Location" alt="Select: Location" class="xi6"> is not clickable at point (713, 516). Other element would receive the click: <span class="xvc">...</span>
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3e0d33709c2b4a2ce55010f5c9eb507e, clickElement {id=f.1CBD8E6FB8B7C37A5DCB063FC36CB121.d.7FF4DBCA68EE4A3C67CB94C69A01B6B8.e.3746}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52083}, goog:processID: 2528, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52083/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3e0d33709c2b4a2ce55010f5c9eb507e)] -> xpath: //a/img[@alt='Select: Location']]
+Session ID: 3e0d33709c2b4a2ce55010f5c9eb507e
+2026-02-13 15:43:18 [main] ERROR: Test Failed :Expected condition failed: waiting for element to be clickable: By.xpath: //label[text()='Country']/preceding-sibling::input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52083}, goog:processID: 2528, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52083/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e0d33709c2b4a2ce55010f5c9eb507e
+2026-02-13 15:43:18 [main] INFO : Testing Ended
+2026-02-13 15:43:18 [main] INFO : ***********
+2026-02-13 15:45:32 [main] INFO : Launching Chrome Browser
+2026-02-13 15:45:33 [main] INFO : Report Name :OraclePage.html
+2026-02-13 15:45:38 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 15:45:42 [main] INFO : Logged in to Oracle Application
+2026-02-13 15:45:44 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 15:45:44 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 15:45:55 [main] INFO : Navigating to Assets
+2026-02-13 15:46:00 [main] INFO : Selecting Major Category
+2026-02-13 15:46:05 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 15:46:07 [main] INFO : Selecting Minor Category
+2026-02-13 15:46:11 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 15:46:18 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 15:46:19 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 15:46:20 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 15:46:25 [main] INFO : Selecting Company Value: 101
+2026-02-13 15:46:27 [main] INFO : Selecting Department Value: 202
+2026-02-13 15:46:28 [main] INFO : Selecting Future Value: 000
+2026-02-13 15:46:32 [main] INFO : Selecting Asset Location
+2026-02-13 15:46:35 [main] ERROR: Test Failed :element click intercepted: Element <div aria-hidden="true" title="US">...</div> is not clickable at point (1051, 389). Other element would receive the click: <div class="AFBlockingGlassPane" style="position: absolute; left: 0px; top: 0px; z-index: 2147483647; visibility: visible; user-select: none; opacity: 0; height: 799px; width: 1921px; cursor: auto;"></div>
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a217f6628ba487973ffabf3cff69c3d3, clickElement {id=f.F2256FD6C77D325FCAB546B529E8CB9D.d.43E030A00AA5BECE96D39EA883139D03.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53444}, goog:processID: 5496, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53444/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a217f6628ba487973ffabf3cff69c3d3)] -> xpath: //div[@title='US']]
+Session ID: a217f6628ba487973ffabf3cff69c3d3
+2026-02-13 15:46:36 [main] INFO : Testing Ended
+2026-02-13 15:46:36 [main] INFO : ***********
+2026-02-13 16:04:30 [main] INFO : Launching Chrome Browser
+2026-02-13 16:04:31 [main] INFO : Report Name :OraclePage.html
+2026-02-13 16:04:36 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 16:04:40 [main] INFO : Logged in to Oracle Application
+2026-02-13 16:04:45 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 16:04:45 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 16:04:54 [main] INFO : Navigating to Assets
+2026-02-13 16:04:59 [main] INFO : Selecting Major Category
+2026-02-13 16:05:04 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 16:05:07 [main] INFO : Selecting Minor Category
+2026-02-13 16:05:11 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 16:05:18 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 16:05:19 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 16:05:19 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 16:05:25 [main] INFO : Selecting Company Value: 101
+2026-02-13 16:05:27 [main] INFO : Selecting Department Value: 202
+2026-02-13 16:05:28 [main] INFO : Selecting Future Value: 000
+2026-02-13 16:05:32 [main] INFO : Selecting Asset Location
+2026-02-13 16:05:35 [main] ERROR: Test Failed :stale element reference: stale element not found in the current frame
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a771b62d9f8e536fcf9b724cb001fc40, clickElement {id=f.BB37B2EA91F937F33E24B2D52311DB80.d.CE6292F254F852DC82007DB1FB9A0D2D.e.798}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55178}, goog:processID: 10528, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55178/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a771b62d9f8e536fcf9b724cb001fc40)] -> xpath: //div[@title='US']]
+Session ID: a771b62d9f8e536fcf9b724cb001fc40
+2026-02-13 16:05:45 [main] INFO : Testing Ended
+2026-02-13 16:05:45 [main] INFO : ***********
+2026-02-13 16:10:38 [main] INFO : Launching Chrome Browser
+2026-02-13 16:10:38 [main] INFO : Report Name :OraclePage.html
+2026-02-13 16:10:39 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 16:10:48 [main] INFO : Logged in to Oracle Application
+2026-02-13 16:10:48 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 16:10:48 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 16:10:58 [main] INFO : Navigating to Assets
+2026-02-13 16:11:03 [main] INFO : Selecting Major Category
+2026-02-13 16:11:08 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 16:11:11 [main] INFO : Selecting Minor Category
+2026-02-13 16:11:15 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 16:11:23 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 16:11:24 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 16:11:24 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 16:11:30 [main] INFO : Selecting Company Value: 101
+2026-02-13 16:11:32 [main] INFO : Selecting Department Value: 202
+2026-02-13 16:11:34 [main] INFO : Selecting Future Value: 000
+2026-02-13 16:11:37 [main] INFO : Selecting Asset Location
+2026-02-13 16:12:10 [main] ERROR: Test Failed :no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title='US']"}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03b1b670ef4dbbaff2fd187ff573ced2, findElement {using=xpath, value=//div[@title='US']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56724}, goog:processID: 10940, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56724/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 03b1b670ef4dbbaff2fd187ff573ced2
+2026-02-13 16:12:26 [main] INFO : Testing Ended
+2026-02-13 16:12:26 [main] INFO : ***********
+2026-02-13 16:13:12 [main] INFO : Launching Chrome Browser
+2026-02-13 16:13:12 [main] INFO : Report Name :OraclePage.html
+2026-02-13 16:13:18 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 16:13:22 [main] INFO : Logged in to Oracle Application
+2026-02-13 16:13:23 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 16:13:23 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 16:13:33 [main] INFO : Navigating to Assets
+2026-02-13 16:13:38 [main] INFO : Selecting Major Category
+2026-02-13 16:13:43 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 16:13:46 [main] INFO : Selecting Minor Category
+2026-02-13 16:13:50 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 16:13:57 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 16:13:58 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 16:13:59 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 16:14:04 [main] INFO : Selecting Company Value: 101
+2026-02-13 16:14:06 [main] INFO : Selecting Department Value: 202
+2026-02-13 16:14:08 [main] INFO : Selecting Future Value: 000
+2026-02-13 16:14:12 [main] INFO : Selecting Asset Location
+2026-02-13 16:14:31 [main] INFO : Testing Ended
+2026-02-13 16:14:31 [main] INFO : ***********
+2026-02-13 16:35:23 [main] INFO : Launching Chrome Browser
+2026-02-13 16:35:24 [main] INFO : Report Name :OraclePage.html
+2026-02-13 16:35:32 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 16:35:36 [main] INFO : Logged in to Oracle Application
+2026-02-13 16:35:37 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 16:35:37 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 16:35:47 [main] INFO : Navigating to Assets
+2026-02-13 16:35:52 [main] INFO : Selecting Major Category
+2026-02-13 16:35:57 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 16:36:00 [main] INFO : Selecting Minor Category
+2026-02-13 16:36:04 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 16:36:11 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 16:36:12 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 16:36:13 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 16:36:19 [main] INFO : Selecting Company Value: 101
+2026-02-13 16:36:21 [main] INFO : Selecting Department Value: 202
+2026-02-13 16:36:23 [main] INFO : Selecting Future Value: 000
+2026-02-13 16:36:26 [main] INFO : Selecting Asset Location
+2026-02-13 16:36:59 [main] ERROR: Test Failed :no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title='US']"}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9302995a0f0a711b20f4acccf7b3d6a2, findElement {value=//div[@title='US'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50443}, goog:processID: 20232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50443/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9302995a0f0a711b20f4acccf7b3d6a2
+2026-02-13 16:37:19 [main] INFO : Entering Asset Number: Testing Asset 1
+2026-02-13 16:37:49 [main] INFO : Testing Ended
+2026-02-13 16:37:49 [main] INFO : ***********
+2026-02-13 16:38:41 [main] INFO : Launching Chrome Browser
+2026-02-13 16:38:41 [main] INFO : Report Name :OraclePage.html
+2026-02-13 16:38:47 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 16:38:52 [main] INFO : Logged in to Oracle Application
+2026-02-13 16:38:54 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 16:38:54 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 16:39:03 [main] INFO : Navigating to Assets
+2026-02-13 16:39:08 [main] INFO : Selecting Major Category
+2026-02-13 16:39:14 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 16:39:17 [main] INFO : Selecting Minor Category
+2026-02-13 16:39:21 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 16:39:29 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 16:39:30 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 16:39:30 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 16:39:36 [main] INFO : Selecting Company Value: 101
+2026-02-13 16:39:38 [main] INFO : Selecting Department Value: 202
+2026-02-13 16:39:40 [main] INFO : Selecting Future Value: 000
+2026-02-13 16:39:43 [main] INFO : Selecting Asset Location
+2026-02-13 16:40:16 [main] ERROR: Test Failed :no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title='US']"}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2bbb33876492dc4d8e927c275f2670f, findElement {value=//div[@title='US'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52338}, goog:processID: 19880, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52338/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2bbb33876492dc4d8e927c275f2670f
+2026-02-13 16:40:35 [main] INFO : Entering Asset Number: Testing Asset 1
+2026-02-13 16:40:54 [main] INFO : Testing Ended
+2026-02-13 16:40:54 [main] INFO : ***********
+2026-02-13 16:43:36 [main] INFO : Launching Chrome Browser
+2026-02-13 16:43:36 [main] INFO : Report Name :OraclePage.html
+2026-02-13 16:43:45 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 16:43:49 [main] INFO : Logged in to Oracle Application
+2026-02-13 16:43:50 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 16:43:50 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 16:44:02 [main] INFO : Navigating to Assets
+2026-02-13 16:44:12 [main] INFO : Selecting Major Category
+2026-02-13 16:44:17 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 16:44:20 [main] INFO : Selecting Minor Category
+2026-02-13 16:44:24 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 16:44:31 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 16:44:32 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 16:44:33 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 16:44:43 [main] INFO : Selecting Company Value: 101
+2026-02-13 16:44:44 [main] INFO : Selecting Department Value: 202
+2026-02-13 16:44:46 [main] INFO : Selecting Future Value: 000
+2026-02-13 16:44:50 [main] INFO : Selecting Asset Location
+2026-02-13 16:45:07 [main] INFO : Selecting  Country: US
+2026-02-13 16:45:10 [main] INFO : Selecting  State Value: CA
+2026-02-13 16:45:13 [main] INFO : Selecting  City Value: San Francisco
+2026-02-13 16:45:16 [main] INFO : Selecting  Building Value: 595 Market St
+2026-02-13 16:45:19 [main] INFO : Selecting Future Value: 88
+2026-02-13 16:45:30 [main] INFO : Entering Asset Number: Testing Asset 1
+2026-02-13 16:45:51 [main] INFO : Testing Ended
+2026-02-13 16:45:51 [main] INFO : ***********
+2026-02-13 16:45:58 [main] INFO : Launching Chrome Browser
+2026-02-13 16:45:59 [main] INFO : Report Name :OraclePage.html
+2026-02-13 16:46:06 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 16:46:11 [main] INFO : Logged in to Oracle Application
+2026-02-13 16:46:13 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 16:46:13 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 16:46:25 [main] INFO : Navigating to Assets
+2026-02-13 16:46:30 [main] INFO : Selecting Major Category
+2026-02-13 16:46:35 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 16:46:38 [main] INFO : Selecting Minor Category
+2026-02-13 16:46:41 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 16:46:49 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 16:46:50 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 16:46:50 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 16:47:53 [main] INFO : Selecting Asset Location
+2026-02-13 16:47:56 [main] INFO : Selecting  Country: US
+2026-02-13 16:48:07 [main] INFO : Launching Chrome Browser
+2026-02-13 16:48:07 [main] INFO : Report Name :OraclePage.html
+2026-02-13 16:48:14 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 16:48:19 [main] INFO : Logged in to Oracle Application
+2026-02-13 16:48:20 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 16:48:20 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 16:48:33 [main] INFO : Navigating to Assets
+2026-02-13 16:48:38 [main] INFO : Selecting Major Category
+2026-02-13 16:48:45 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 16:48:48 [main] INFO : Selecting Minor Category
+2026-02-13 16:48:52 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 16:48:59 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 16:49:00 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 16:49:01 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 16:49:07 [main] INFO : Selecting Company Value: 101
+2026-02-13 16:49:08 [main] INFO : Selecting Department Value: 202
+2026-02-13 16:49:10 [main] INFO : Selecting Future Value: 000
+2026-02-13 16:49:14 [main] INFO : Selecting Asset Location
+2026-02-13 16:49:16 [main] INFO : Selecting  Country: US
+2026-02-13 16:49:19 [main] INFO : Selecting  State Value: CA
+2026-02-13 16:49:22 [main] INFO : Selecting  City Value: San Francisco
+2026-02-13 16:49:25 [main] INFO : Selecting  Building Value: 595 Market St
+2026-02-13 16:49:28 [main] INFO : Selecting Future Value: 88
+2026-02-13 16:49:37 [main] INFO : Entering Asset Number: Testing Asset 1
+2026-02-13 16:49:43 [main] INFO : Testing Ended
+2026-02-13 16:49:43 [main] INFO : ***********
+2026-02-13 17:07:15 [main] INFO : Launching Chrome Browser
+2026-02-13 17:07:16 [main] INFO : Report Name :OraclePage.html
+2026-02-13 17:07:22 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 17:07:26 [main] INFO : Logged in to Oracle Application
+2026-02-13 17:07:27 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 17:07:27 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 17:07:36 [main] INFO : Navigating to Assets
+2026-02-13 17:07:41 [main] INFO : Selecting Major Category
+2026-02-13 17:07:46 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 17:07:49 [main] INFO : Selecting Minor Category
+2026-02-13 17:07:53 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 17:08:00 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 17:08:02 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 17:08:02 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 17:08:08 [main] INFO : Selecting Company Value: 101
+2026-02-13 17:08:09 [main] INFO : Selecting Department Value: 202
+2026-02-13 17:08:11 [main] INFO : Selecting Future Value: 000
+2026-02-13 17:08:15 [main] INFO : Selecting Asset Location
+2026-02-13 17:08:18 [main] INFO : Selecting  Country: US
+2026-02-13 17:08:21 [main] INFO : Selecting  State Value: CA
+2026-02-13 17:08:24 [main] INFO : Selecting  City Value: San Francisco
+2026-02-13 17:08:27 [main] INFO : Selecting  Building Value: 595 Market St
+2026-02-13 17:08:30 [main] INFO : Selecting Future Value: 88
+2026-02-13 17:08:40 [main] INFO : Entering Asset Number: Testing Asset 1
+2026-02-13 17:08:47 [main] INFO : Testing Ended
+2026-02-13 17:08:47 [main] INFO : ***********
+2026-02-13 17:11:19 [main] INFO : Launching Chrome Browser
+2026-02-13 17:11:20 [main] INFO : Report Name :OraclePage.html
+2026-02-13 17:11:25 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 17:11:30 [main] INFO : Logged in to Oracle Application
+2026-02-13 17:11:30 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 17:11:30 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 17:11:40 [main] INFO : Navigating to Assets
+2026-02-13 17:11:45 [main] INFO : Selecting Major Category
+2026-02-13 17:11:49 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 17:11:52 [main] INFO : Selecting Minor Category
+2026-02-13 17:11:55 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 17:12:02 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 17:12:03 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 17:12:04 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 17:12:10 [main] INFO : Selecting Company Value: 101
+2026-02-13 17:12:11 [main] INFO : Selecting Department Value: 202
+2026-02-13 17:12:13 [main] INFO : Selecting Future Value: 000
+2026-02-13 17:12:16 [main] INFO : Selecting Asset Location
+2026-02-13 17:12:19 [main] INFO : Selecting  Country: US
+2026-02-13 17:12:27 [main] INFO : Selecting  State Value: CA
+2026-02-13 17:12:30 [main] INFO : Selecting  City Value: San Francisco
+2026-02-13 17:12:33 [main] INFO : Selecting  Building Value: 595 Market St
+2026-02-13 17:12:36 [main] INFO : Selecting Future Value: 88
+2026-02-13 17:12:44 [main] INFO : Entering Asset Number: Testing Asset 1
+2026-02-13 17:12:52 [main] INFO : Asset Saved Confirmation Message: 
+2026-02-13 17:12:52 [main] INFO : Expected :Your changes were saved. and Actual :
+2026-02-13 17:12:52 [main] ERROR: Expected and Actual are not same Expected [Your changes were saved.], but found []
+2026-02-13 17:12:54 [main] INFO : Testing Ended
+2026-02-13 17:12:54 [main] INFO : ***********
+2026-02-13 17:19:08 [main] INFO : Launching Chrome Browser
+2026-02-13 17:19:08 [main] INFO : Report Name :OraclePage.html
+2026-02-13 17:19:13 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 17:19:17 [main] INFO : Logged in to Oracle Application
+2026-02-13 17:19:18 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 17:19:18 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 17:19:27 [main] INFO : Navigating to Assets
+2026-02-13 17:19:32 [main] INFO : Selecting Major Category
+2026-02-13 17:19:36 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 17:19:38 [main] INFO : Selecting Minor Category
+2026-02-13 17:19:42 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 17:19:49 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 17:19:50 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 17:19:50 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 17:19:56 [main] INFO : Selecting Company Value: 101
+2026-02-13 17:19:57 [main] INFO : Selecting Department Value: 202
+2026-02-13 17:19:59 [main] INFO : Selecting Future Value: 000
+2026-02-13 17:20:03 [main] INFO : Selecting Asset Location
+2026-02-13 17:20:05 [main] INFO : Selecting  Country: US
+2026-02-13 17:20:11 [main] INFO : Selecting  State Value: CA
+2026-02-13 17:20:14 [main] INFO : Selecting  City Value: San Francisco
+2026-02-13 17:20:17 [main] INFO : Selecting  Building Value: 595 Market St
+2026-02-13 17:20:19 [main] INFO : Selecting Future Value: 88
+2026-02-13 17:20:28 [main] INFO : Entering Asset Number: Testing Asset 2
+2026-02-13 17:20:36 [main] INFO : Asset Saved Confirmation Message: Your changes were saved.
+2026-02-13 17:20:36 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-13 17:20:36 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-13 17:20:40 [main] INFO : Testing Ended
+2026-02-13 17:20:40 [main] INFO : ***********
+2026-02-13 17:33:12 [main] INFO : Launching Chrome Browser
+2026-02-13 17:33:13 [main] INFO : Report Name :OraclePage.html
+2026-02-13 17:33:18 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 17:33:22 [main] INFO : Logged in to Oracle Application
+2026-02-13 17:33:23 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 17:33:23 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 17:33:31 [main] INFO : Navigating to Assets
+2026-02-13 17:33:36 [main] INFO : Selecting Major Category
+2026-02-13 17:33:41 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 17:33:43 [main] INFO : Selecting Minor Category
+2026-02-13 17:33:47 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 17:33:54 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 17:33:55 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 17:33:55 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 17:34:01 [main] INFO : Selecting Company Value: 101
+2026-02-13 17:34:03 [main] INFO : Selecting Department Value: 202
+2026-02-13 17:34:04 [main] INFO : Selecting Future Value: 000
+2026-02-13 17:34:08 [main] INFO : Selecting Asset Location
+2026-02-13 17:34:11 [main] INFO : Selecting  Country: US
+2026-02-13 17:34:24 [main] INFO : Selecting  State Value: CA
+2026-02-13 17:34:27 [main] INFO : Selecting  City Value: San Francisco
+2026-02-13 17:34:29 [main] INFO : Selecting  Building Value: 595 Market St
+2026-02-13 17:34:32 [main] INFO : Selecting Future Value: 88
+2026-02-13 17:34:41 [main] INFO : Entering Asset Number: Testing Asset 3
+2026-02-13 17:34:49 [main] INFO : Asset Saved Confirmation Message: Your changes were saved.
+2026-02-13 17:34:49 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-13 17:34:49 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-13 17:34:57 [main] INFO : Testing Ended
+2026-02-13 17:34:57 [main] INFO : ***********
+2026-02-13 17:58:28 [main] INFO : Launching Chrome Browser
+2026-02-13 17:58:29 [main] INFO : Report Name :OraclePage.html
+2026-02-13 17:58:34 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 17:58:39 [main] INFO : Logged in to Oracle Application
+2026-02-13 17:58:40 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 17:58:40 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 17:58:49 [main] INFO : Navigating to Assets
+2026-02-13 17:58:53 [main] INFO : Selecting Major Category
+2026-02-13 17:58:58 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-13 17:59:01 [main] INFO : Selecting Minor Category
+2026-02-13 17:59:05 [main] INFO : Entering Value for Major: CR PC
+2026-02-13 17:59:11 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-13 17:59:13 [main] INFO : Entering Asset Cost: 10000
+2026-02-13 17:59:13 [main] INFO : Selecting Asset Expenses Account
+2026-02-13 17:59:20 [main] INFO : Selecting Company Value: 101
+2026-02-13 17:59:22 [main] INFO : Selecting Department Value: 202
+2026-02-13 17:59:23 [main] INFO : Selecting Future Value: 000
+2026-02-13 17:59:27 [main] INFO : Selecting Asset Location
+2026-02-13 17:59:29 [main] INFO : Selecting  Country: US
+2026-02-13 17:59:35 [main] INFO : Selecting  State Value: CA
+2026-02-13 17:59:38 [main] INFO : Selecting  City Value: San Francisco
+2026-02-13 17:59:41 [main] INFO : Selecting  Building Value: 595 Market St
+2026-02-13 17:59:44 [main] INFO : Selecting Future Value: 88
+2026-02-13 17:59:52 [main] INFO : Entering Asset Number: Testing Asset 4
+2026-02-13 18:00:01 [main] INFO : Asset Saved Confirmation Message: Your changes were saved.
+2026-02-13 18:00:01 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-13 18:00:01 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-13 18:00:10 [main] INFO : Testing Ended
+2026-02-13 18:00:10 [main] INFO : ***********

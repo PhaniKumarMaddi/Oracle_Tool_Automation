@@ -135,6 +135,6 @@ public class TestDataKeys {
 	public String assetBuilding = "595 Market St";
 	public String assetFuture = "88";
 	
-	public String assetNumber="Testing Asset 4"; // Change value
+	public String assetNumber="Testing Asset 5"; // Change value
 	public String assetKey="0000";
 }

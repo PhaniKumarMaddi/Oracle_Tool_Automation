@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.devtools.v136.autofill.model.CreditCard;
 import org.openqa.selenium.support.ui.Select;
 
 import Utility.DriverManager;
@@ -57,14 +58,35 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 //	By defaultDocument = By.xpath("//span[text()='Default Document']");
 	By defaultDocument = By.xpath("//*[@id='templateTableBody']/tr[2]/td[1]/span");
 
-	// JOURNALS 
-	By journalName = By.xpath("//label[text()='Journal Batch']/parent::td/following-sibling::td/input");
-	By accountingPeriod= By.xpath("//label[text()='Accounting Period']/following-sibling::a");
+	// JOURNALS
+//	By journalBatchName = By.xpath("//label[text()='Journal Batch']/parent::td/following-sibling::td/input");
+	By journalBatchName = By
+			.xpath("//label[text()='Journal Batch']/parent::td/following-sibling::td/descendant::input");
+//	By accountingPeriod = By.xpath("//label[text()='Accounting Period']/following-sibling::a");
+	By accountingPeriod = By.xpath("//label[text()='Accounting Period']/preceding-sibling::input[1]");
 	By journal = By.xpath("//label[text()='Journal']/parent::td/following-sibling::td/input");
 	By category = By.xpath("//label[text()='Category']/preceding-sibling::input[1]");
-	By journalLines_Account= By.xpath("//input[@aria-label='Account']");
-	
-	
+	By journalLines_Account = By.xpath("//input[@aria-label='Account']");
+	// Account popup
+	By enterCompany_inAccPopup = By.xpath("//label[text()='COMPANY']/preceding-sibling::input");
+	By enterDepartment_inAccPopup = By.xpath("//label[text()='DEPTARTMENT']/preceding-sibling::input");
+	By enterAccount_inAccPopup = By.xpath("//label[text()='ACCOUNT']/preceding-sibling::input");
+	By enterFuture_inAccPopup = By.xpath("//label[text()='FUTURE']/preceding-sibling::input");
+	By okBtn_inAccPopup = By.xpath("//button[@accesskey='k']");
+//	By resetBtn_inAccPopup = By.xpath("//button[text()='Reset']");
+//	By yesResetBtn_inAccPopup = By.xpath("//button[@accesskey='Y']");
+
+	By debit_inJournalLines = By.xpath("//label[text()='Entered Debit']/preceding-sibling::input");
+	By credit_inJournalLines = By.xpath("//label[text()='Entered Credit']/preceding-sibling::input");
+	By newJournalLine = By.xpath("//span[text()='2']");
+
+	By saveJournal = By.xpath("//span[text()='Save']");
+	By completeJournal = By.xpath("//span[text()='Complete']");
+	By postJournal = By.xpath("//span[text()='Post']");
+	By postConfirmMsg = By.xpath(
+			"//td[contains(@id,'contentContainer')]/div[contains(@id,'pt1:_FOr1:1:_FONSr2:0:MAnt2:0:pt1:ap1:userRes')]");
+	By postConfirm_OkBtn = By.xpath("//button[@accesskey='K']");
+
 	public void clickScheduleProcessButton() throws Exception {
 		try {
 			implWait(driver);
@@ -532,6 +554,250 @@ public class Oracle_AccountingAtGlance extends WaitsManager {
 		}
 	}
 
-	
 	// JOURNALS
+
+	public void enterJournalBatchName(String nameVal) {
+		try {
+//			implWait(driver);
+			waitForElementToBeClickable(journalBatchName, 40);
+
+			driver.findElement(journalBatchName).click();
+			driver.findElement(journalBatchName).sendKeys(nameVal);
+			waitTime(driver);
+			grep.infoTest("Entering Journal Name: " + nameVal);
+			logger.info("Entering Journal Name: " + nameVal);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickJournalAccountingPeriod(String selectAcc) throws Exception {
+
+//		implWait(driver);
+		By select_AccPeriod = By.xpath("//td[text()='" + selectAcc + "']");
+
+		waitForElementToBeClickable(accountingPeriod, 30);
+		driver.findElement(accountingPeriod).click();
+		waitTime2(driver);
+		scrollView(select_AccPeriod);
+		driver.findElement(select_AccPeriod).click();
+		waitTime(driver);
+		grep.infoTest("Selecting " + selectAcc + " Option in Accounting Period");
+		logger.info("Selecting " + selectAcc + " Option in Accounting Period");
+		waitTime(driver);
+
+	}
+
+	public void enterJournal(String nameVal) {
+		try {
+			implWait(driver);
+
+			driver.findElement(journal).click();
+			driver.findElement(journal).sendKeys(nameVal);
+			waitTime(driver);
+			grep.infoTest("Entering Journal: " + nameVal);
+			logger.info("Entering Journal: " + nameVal);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickJournalCategory(String catgVal) throws Exception {
+
+		implWait(driver);
+		By select_Catg = By.xpath("//span[text()='" + catgVal + "']");
+
+		driver.findElement(category).click();
+		driver.findElement(category).sendKeys(catgVal);
+		waitTime2(driver);
+		driver.findElement(select_Catg).click();
+		waitTime(driver);
+		grep.infoTest("Selecting " + catgVal + " Option in Journal Category");
+		logger.info("Selecting " + catgVal + " Option in Journal Category");
+		waitTime(driver);
+
+	}
+
+	public void searchAccount_inJournalLines() throws Exception {
+
+		implWait(driver);
+
+		driver.findElement(journalLines_Account).click();
+		waitTime2(driver);
+		actionTab();
+		waitTime(driver);
+		actionEntered();
+		waitTime(driver);
+
+	}
+
+	public void searchAndSelectAccountJournalLines(String companyVal, String deptVal, String accVal, String futureVal) {
+		try {
+			implWait(driver);
+
+			By selectCompanyVal_inAccPopup = By.xpath("//span[text()='" + companyVal + "']");
+			By selectDeptVal_inAccPopup = By.xpath("//span[text()='" + deptVal + "']");
+			By selectFutureValue_inAccPopup = By.xpath("//span[text()='" + futureVal + "']");
+			By selectAcct_inAccPopup = By.xpath("//span[text()='" + accVal + "']");
+
+			waitTime5(driver);
+			boolean elementExists = driver.findElements(enterCompany_inAccPopup).isEmpty();
+			if (elementExists) {
+				searchAccount_inJournalLines();
+			} else {
+				waitForElementToBeClickable(enterCompany_inAccPopup, 20);
+//				driver.findElement(resetBtn_inAccPopup).click();
+//				driver.findElement(yesResetBtn_inAccPopup).click();
+				waitTime2(driver);
+				driver.findElement(enterCompany_inAccPopup).sendKeys(companyVal);
+				waitTime(driver);
+				grep.infoTest("Selecting Company Value: " + companyVal);
+				logger.info("Selecting Company Value: " + companyVal);
+				waitTime(driver);
+				driver.findElement(selectCompanyVal_inAccPopup).click();
+				waitTime(driver);
+				waitForElementToBeClickable(enterDepartment_inAccPopup, 20);
+				driver.findElement(enterDepartment_inAccPopup).sendKeys(deptVal);
+				waitTime(driver);
+				grep.infoTest("Selecting Department Value: " + deptVal);
+				logger.info("Selecting Department Value: " + deptVal);
+				waitTime(driver);
+				driver.findElement(selectDeptVal_inAccPopup).click();
+				waitTime(driver);
+				waitForElementToBeClickable(enterAccount_inAccPopup, 20);
+				driver.findElement(enterAccount_inAccPopup).sendKeys(accVal);
+				waitTime(driver);
+				grep.infoTest("Selecting Account Value: " + accVal);
+				logger.info("Selecting Account Value: " + accVal);
+				waitTime(driver);
+				driver.findElement(selectAcct_inAccPopup).click();
+				waitTime(driver);
+				waitForElementToBeClickable(enterFuture_inAccPopup, 20);
+				driver.findElement(enterFuture_inAccPopup).sendKeys(futureVal);
+				waitTime(driver);
+				grep.infoTest("Selecting Future Value: " + futureVal);
+				logger.info("Selecting Future Value: " + futureVal);
+				waitTime(driver);
+				driver.findElement(selectFutureValue_inAccPopup).click();
+				waitTime2(driver);
+				driver.findElement(okBtn_inAccPopup).click();
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void enterDebit_inJournalLines(String debitVal) {
+		try {
+			implWait(driver);
+
+			scrollView(debit_inJournalLines);
+			driver.findElement(debit_inJournalLines).click();
+			driver.findElement(debit_inJournalLines).sendKeys(debitVal);
+			waitTime(driver);
+			grep.infoTest("Entering Debit Amount: " + debitVal);
+			logger.info("Entering Debit Amount: " + debitVal);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void enterCredit_inJournalLines(String creditVal) {
+		try {
+			implWait(driver);
+
+			scrollView(credit_inJournalLines);
+			driver.findElement(credit_inJournalLines).click();
+			driver.findElement(credit_inJournalLines).sendKeys(creditVal);
+			waitTime(driver);
+			grep.infoTest("Entering Credit Amount: " + creditVal);
+			logger.info("Entering Credit Amount: " + creditVal);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickNewJournalLineBtn() {
+		implWait(driver);
+		scrollView(newJournalLine);
+		driver.findElement(newJournalLine).click();
+	}
+
+	public void clickSaveJournalBtn() {
+		waitForElementToBeClickable(saveJournal, 30);
+		scrollView(saveJournal);
+		driver.findElement(saveJournal).click();
+	}
+
+	public void clickCompleteJournalBtn() {
+		waitForElementToBeClickable(completeJournal, 30);
+//		scrollView(completeJournal);
+		driver.findElement(completeJournal).click();
+	}
+
+	public void clickPostJournalBtn() {
+		waitForElementToBeClickable(postJournal, 30);
+		scrollView(postJournal);
+		driver.findElement(postJournal).click();
+	}
+
+	public void clickOk_inPostConfirmBtn() {
+
+		implWait(driver);
+		List<WebElement> ok = driver.findElements(postConfirm_OkBtn);
+		ok.getLast().click();
+	}
+
+	public String retrievePostConfirmMessage() throws Exception {
+		String getMsg = null;
+		try {
+			waitForElement(postConfirmMsg, 30);
+			WebElement popupElement = driver.findElement(postConfirmMsg);
+			String fullText = popupElement.getText().trim(); // Example: "Process 4796079 was submitted."
+
+			logger.info("Post Journal Confirmation text received: " + fullText);
+			grep.infoTest("Post Journal Confirmation text received: " + fullText);
+
+			// 2. Use Regex to extract digits (\d+)
+			// This finds the first sequence of numbers in the string
+			getMsg = fullText.replaceAll("[^0-9]", "");
+
+			if (getMsg.isEmpty()) {
+				logger.error("Could not find a numeric Journal ID in the text: " + fullText);
+				grep.failTest("Could not find a numeric Journal ID in the text: " + fullText);
+				return null;
+			}
+
+			return getMsg;
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return getMsg;
+	}
+
+	public void verifyJournalStatus(String journalVal) throws Exception {
+
+		implWait(driver);
+		By manage_JournalStatus = By
+				.xpath("//a[text()='" + journalVal + "']/ancestor::td[1]/following-sibling::td[7]/span");
+
+		String status = driver.findElement(manage_JournalStatus).getText().trim();
+
+		if (status.equals("Posted")) {
+			grep.infoTest(journalVal + " Journal Status is Posted");
+			logger.info(journalVal + " Journal Status is Posted");
+			waitTime(driver);
+			grep.captureScreenshot("pass", "Journal Status is Posted", "JournalStatusPosted");
+			waitTime(driver);
+		} else {
+			grep.warnTest(journalVal + " Journal Status is not Posted");
+			logger.error(journalVal + " Journal Status is not Posted");
+			waitTime(driver);
+			grep.captureScreenshot("warn", "Journal Status is not Posted", "JournalStatus_NotPosted");
+		}
+
+	}
+
 }

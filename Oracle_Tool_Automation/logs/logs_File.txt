@@ -16779,3 +16779,512 @@ Session ID: d60064c699517ec2499196c2a9a0a321
 2026-02-12 17:51:15 [main] INFO : Receipt found: 6000035
 2026-02-12 17:51:17 [main] INFO : Testing Ended
 2026-02-12 17:51:17 [main] INFO : ***********
+2026-02-13 09:07:18 [main] INFO : Launching Chrome Browser
+2026-02-13 09:07:18 [main] INFO : Report Name :OraclePage.html
+2026-02-13 09:07:23 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 09:07:29 [main] INFO : Logged in to Oracle Application
+2026-02-13 09:07:32 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 09:07:32 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 09:07:41 [main] INFO : Navigating Scheduled Processes
+2026-02-13 09:07:42 [main] INFO : Click on Schedule New Process
+2026-02-13 09:07:46 [main] INFO : Click on Name dropdown
+2026-02-13 09:07:49 [main] INFO : Click on search
+2026-02-13 09:07:50 [main] INFO : Click on name and type the name
+2026-02-13 09:07:51 [main] INFO : Entering Name: Create Accounting
+2026-02-13 09:07:53 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-13 09:08:01 [main] INFO : Click on Subledger Application and Select Receivables
+2026-02-13 09:08:03 [main] INFO : Select Cash Management from the drop down under Sub ledger application
+2026-02-13 09:08:04 [main] INFO : Click on ledger or ledger Set dropdown and click Search
+2026-02-13 09:08:05 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-13 09:08:14 [main] INFO : Entering Ledger Or Ledger Set: CR PRIMARY LEDGER
+2026-02-13 09:08:21 [main] INFO : Select Detail from the drop down under Report Style
+2026-02-13 09:08:24 [main] INFO : Click on Submit at the top
+2026-02-13 09:08:25 [main] INFO : Check for confirmation and click ok
+2026-02-13 09:08:25 [main] INFO : Popup text received: Process 4819550 was submitted.
+2026-02-13 09:08:25 [main] INFO : Extracted Process ID: 4819550
+2026-02-13 09:08:25 [main] INFO : Retrieved Process Id:4819550
+2026-02-13 09:08:28 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-13 09:08:28 [main] INFO : Monitoring status for Process ID: 4819550
+2026-02-13 09:08:30 [main] INFO : Current Status of 4819550: Wait
+2026-02-13 09:08:40 [main] INFO : Current Status of 4819550: Wait
+2026-02-13 09:08:51 [main] INFO : Current Status of 4819550: Running
+2026-02-13 09:09:02 [main] INFO : Current Status of 4819550: Succeeded
+2026-02-13 09:09:02 [main] INFO : Process 4819550 completed successfully.
+2026-02-13 09:09:14 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 09:09:14 [main] INFO : Testing Ended
+2026-02-13 09:09:14 [main] INFO : ***********
+2026-02-13 09:55:23 [main] INFO : Launching Chrome Browser
+2026-02-13 09:55:23 [main] INFO : Report Name :OraclePage.html
+2026-02-13 09:55:29 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 09:55:33 [main] INFO : Logged in to Oracle Application
+2026-02-13 09:55:35 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 09:55:35 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 09:56:14 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 09:56:20 [main] INFO : Entering Journal Name: Test
+2026-02-13 09:56:53 [main] INFO : Testing Ended
+2026-02-13 09:56:53 [main] INFO : ***********
+2026-02-13 09:58:24 [main] INFO : Launching Chrome Browser
+2026-02-13 09:58:24 [main] INFO : Report Name :OraclePage.html
+2026-02-13 09:58:29 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 09:58:34 [main] INFO : Logged in to Oracle Application
+2026-02-13 09:58:37 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 09:58:37 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 09:58:50 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 09:59:15 [main] INFO : Entering Journal Name: Test
+2026-02-13 09:59:47 [main] INFO : Testing Ended
+2026-02-13 09:59:47 [main] INFO : ***********
+2026-02-13 10:00:51 [main] INFO : Launching Chrome Browser
+2026-02-13 10:00:52 [main] INFO : Report Name :OraclePage.html
+2026-02-13 10:00:57 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 10:01:01 [main] INFO : Logged in to Oracle Application
+2026-02-13 10:01:01 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 10:01:01 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 10:01:09 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 10:01:14 [main] INFO : Entering Journal Name: Test
+2026-02-13 10:01:46 [main] INFO : Testing Ended
+2026-02-13 10:01:46 [main] INFO : ***********
+2026-02-13 10:03:02 [main] INFO : Launching Chrome Browser
+2026-02-13 10:03:02 [main] INFO : Report Name :OraclePage.html
+2026-02-13 10:03:07 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 10:03:11 [main] INFO : Logged in to Oracle Application
+2026-02-13 10:03:12 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 10:03:12 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 10:03:20 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 10:03:29 [main] INFO : Entering Journal Name: Test
+2026-02-13 10:03:32 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 10:03:34 [main] INFO : Entering Journal: Test
+2026-02-13 10:04:02 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 10:04:29 [main] INFO : Selecting Company Value: 101
+2026-02-13 10:04:31 [main] INFO : Selecting Department Value: 000
+2026-02-13 10:05:02 [main] INFO : Testing Ended
+2026-02-13 10:05:02 [main] INFO : ***********
+2026-02-13 10:06:25 [main] INFO : Launching Chrome Browser
+2026-02-13 10:06:25 [main] INFO : Report Name :OraclePage.html
+2026-02-13 10:06:30 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 10:06:34 [main] INFO : Logged in to Oracle Application
+2026-02-13 10:06:35 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 10:06:35 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 10:06:43 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 10:06:50 [main] INFO : Entering Journal Name: Test
+2026-02-13 10:06:53 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 10:06:55 [main] INFO : Entering Journal: Test
+2026-02-13 10:06:59 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 10:07:09 [main] INFO : Selecting Company Value: 101
+2026-02-13 10:07:11 [main] INFO : Selecting Department Value: 000
+2026-02-13 10:07:13 [main] INFO : Selecting Account Value: 11200
+2026-02-13 10:07:16 [main] INFO : Selecting Future Value: 000
+2026-02-13 10:07:18 [main] INFO : Testing Ended
+2026-02-13 10:07:18 [main] INFO : ***********
+2026-02-13 10:18:35 [main] INFO : Launching Chrome Browser
+2026-02-13 10:18:35 [main] INFO : Report Name :OraclePage.html
+2026-02-13 10:18:41 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 10:18:45 [main] INFO : Logged in to Oracle Application
+2026-02-13 10:18:46 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 10:18:46 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 10:18:53 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 10:19:01 [main] INFO : Entering Journal Name: Test
+2026-02-13 10:19:04 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 10:19:06 [main] INFO : Entering Journal: Test
+2026-02-13 10:19:09 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 10:19:22 [main] INFO : Selecting Company Value: 101
+2026-02-13 10:19:24 [main] INFO : Selecting Department Value: 000
+2026-02-13 10:19:27 [main] INFO : Selecting Account Value: 11200
+2026-02-13 10:19:29 [main] INFO : Selecting Future Value: 000
+2026-02-13 10:19:32 [main] INFO : Account id :101-000-11200-000
+2026-02-13 10:19:35 [main] INFO : Entering Debit Amount: 100
+2026-02-13 10:19:38 [main] INFO : Testing Ended
+2026-02-13 10:19:38 [main] INFO : ***********
+2026-02-13 10:22:58 [main] INFO : Launching Chrome Browser
+2026-02-13 10:22:58 [main] INFO : Report Name :OraclePage.html
+2026-02-13 10:23:04 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 10:23:08 [main] INFO : Logged in to Oracle Application
+2026-02-13 10:23:10 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 10:23:10 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 10:23:18 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 10:23:34 [main] INFO : Entering Journal Name: Test
+2026-02-13 10:23:38 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 10:23:39 [main] INFO : Entering Journal: Test
+2026-02-13 10:23:43 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 10:23:53 [main] INFO : Selecting Company Value: 101
+2026-02-13 10:23:56 [main] INFO : Selecting Department Value: 000
+2026-02-13 10:23:58 [main] INFO : Selecting Account Value: 11200
+2026-02-13 10:24:01 [main] INFO : Selecting Future Value: 000
+2026-02-13 10:24:04 [main] INFO : Account id :101-000-11200-000
+2026-02-13 10:24:07 [main] INFO : Entering Debit Amount: 100
+2026-02-13 10:24:10 [main] INFO : Testing Ended
+2026-02-13 10:24:10 [main] INFO : ***********
+2026-02-13 10:29:44 [main] INFO : Launching Chrome Browser
+2026-02-13 10:29:45 [main] INFO : Report Name :OraclePage.html
+2026-02-13 10:29:50 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 10:29:54 [main] INFO : Logged in to Oracle Application
+2026-02-13 10:29:55 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 10:29:55 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 10:30:02 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 10:30:08 [main] INFO : Entering Journal Name: Test
+2026-02-13 10:30:11 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 10:30:13 [main] INFO : Entering Journal: Test
+2026-02-13 10:30:16 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 10:30:27 [main] INFO : Selecting Company Value: 101
+2026-02-13 10:30:29 [main] INFO : Selecting Department Value: 000
+2026-02-13 10:30:31 [main] INFO : Selecting Account Value: 11200
+2026-02-13 10:30:34 [main] INFO : Selecting Future Value: 000
+2026-02-13 10:30:37 [main] INFO : Account id :101-000-11200-000
+2026-02-13 10:30:40 [main] INFO : Entering Debit Amount: 100
+2026-02-13 10:30:52 [main] INFO : Selecting Company Value: 101
+2026-02-13 10:31:03 [main] INFO : Account id :null
+2026-02-13 10:34:12 [main] INFO : Launching Chrome Browser
+2026-02-13 10:34:12 [main] INFO : Report Name :OraclePage.html
+2026-02-13 10:34:18 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 10:34:22 [main] INFO : Logged in to Oracle Application
+2026-02-13 10:34:24 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 10:34:24 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 10:34:32 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 10:34:38 [main] INFO : Entering Journal Name: Test
+2026-02-13 10:34:41 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 10:34:43 [main] INFO : Entering Journal: Test
+2026-02-13 10:34:46 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 10:34:59 [main] INFO : Selecting Company Value: 101
+2026-02-13 10:35:01 [main] INFO : Selecting Department Value: 000
+2026-02-13 10:35:03 [main] INFO : Selecting Account Value: 11200
+2026-02-13 10:35:05 [main] INFO : Selecting Future Value: 000
+2026-02-13 10:35:11 [main] INFO : Account id :null
+2026-02-13 10:35:58 [main] INFO : Launching Chrome Browser
+2026-02-13 10:35:58 [main] INFO : Report Name :OraclePage.html
+2026-02-13 10:36:04 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 10:36:08 [main] INFO : Logged in to Oracle Application
+2026-02-13 10:36:09 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 10:36:09 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 10:36:16 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 10:36:22 [main] INFO : Entering Journal Name: Test
+2026-02-13 10:36:25 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 10:36:27 [main] INFO : Entering Journal: Test
+2026-02-13 10:36:30 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 10:36:44 [main] INFO : Selecting Company Value: 101
+2026-02-13 10:36:46 [main] INFO : Selecting Department Value: 000
+2026-02-13 10:36:48 [main] INFO : Selecting Account Value: 11200
+2026-02-13 10:36:50 [main] INFO : Selecting Future Value: 000
+2026-02-13 10:36:53 [main] INFO : Account id :101-000-11200-000
+2026-02-13 10:36:56 [main] INFO : Entering Debit Amount: 100
+2026-02-13 10:37:16 [main] INFO : Selecting Company Value: 101
+2026-02-13 10:37:18 [main] INFO : Selecting Department Value: 202
+2026-02-13 10:37:19 [main] INFO : Selecting Account Value: 11300
+2026-02-13 10:37:21 [main] INFO : Selecting Future Value: 000
+2026-02-13 10:37:24 [main] INFO : Account id :101-202-11300-000
+2026-02-13 10:37:26 [main] INFO : Entering Debit Amount: 100
+2026-02-13 10:37:29 [main] INFO : Entering Credit Amount: 100
+2026-02-13 10:37:30 [main] INFO : Testing Ended
+2026-02-13 10:37:30 [main] INFO : ***********
+2026-02-13 10:56:06 [main] INFO : Launching Chrome Browser
+2026-02-13 10:56:07 [main] INFO : Report Name :OraclePage.html
+2026-02-13 10:56:14 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 10:56:18 [main] INFO : Logged in to Oracle Application
+2026-02-13 10:56:19 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 10:56:19 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 10:56:27 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 10:56:33 [main] INFO : Entering Journal Name: Test
+2026-02-13 10:56:36 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 10:56:38 [main] INFO : Entering Journal: Test
+2026-02-13 10:56:41 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 10:56:55 [main] INFO : Selecting Company Value: 101
+2026-02-13 10:56:57 [main] INFO : Selecting Department Value: 000
+2026-02-13 10:56:59 [main] INFO : Selecting Account Value: 11200
+2026-02-13 10:57:02 [main] INFO : Selecting Future Value: 000
+2026-02-13 10:57:05 [main] INFO : Account id :101-000-11200-000
+2026-02-13 10:57:08 [main] INFO : Entering Debit Amount: 100
+2026-02-13 10:57:27 [main] INFO : Selecting Company Value: 101
+2026-02-13 10:57:31 [main] INFO : Selecting Department Value: 202
+2026-02-13 10:57:33 [main] INFO : Selecting Account Value: 11300
+2026-02-13 10:57:35 [main] INFO : Selecting Future Value: 000
+2026-02-13 10:57:37 [main] INFO : Account id :101-202-11300-000
+2026-02-13 10:57:40 [main] INFO : Entering Credit Amount: 100
+2026-02-13 10:57:46 [main] INFO : Post Journal Confirmation text received: 
+2026-02-13 10:57:46 [main] ERROR: Could not find a numeric Journal ID in the text: 
+2026-02-13 10:57:46 [main] INFO : Extracted Journal ID: null
+2026-02-13 10:58:17 [main] INFO : Testing Ended
+2026-02-13 10:58:17 [main] INFO : ***********
+2026-02-13 10:59:26 [main] INFO : Launching Chrome Browser
+2026-02-13 10:59:26 [main] INFO : Report Name :OraclePage.html
+2026-02-13 10:59:33 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 10:59:37 [main] INFO : Logged in to Oracle Application
+2026-02-13 10:59:38 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 10:59:38 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 10:59:46 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 10:59:52 [main] INFO : Entering Journal Name: Test2
+2026-02-13 10:59:55 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 10:59:57 [main] INFO : Entering Journal: Test2
+2026-02-13 11:00:00 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 11:00:14 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:00:16 [main] INFO : Selecting Department Value: 000
+2026-02-13 11:00:18 [main] INFO : Selecting Account Value: 11200
+2026-02-13 11:00:21 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:00:25 [main] INFO : Account id :101-000-11200-000
+2026-02-13 11:00:27 [main] INFO : Entering Debit Amount: 100
+2026-02-13 11:00:47 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:00:49 [main] INFO : Selecting Department Value: 202
+2026-02-13 11:00:51 [main] INFO : Selecting Account Value: 11300
+2026-02-13 11:00:52 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:00:55 [main] INFO : Account id :101-202-11300-000
+2026-02-13 11:00:58 [main] INFO : Entering Credit Amount: 100
+2026-02-13 11:01:04 [main] INFO : Post Journal Confirmation text received: 
+2026-02-13 11:01:04 [main] ERROR: Could not find a numeric Journal ID in the text: 
+2026-02-13 11:01:04 [main] INFO : Extracted Journal ID: null
+2026-02-13 11:01:08 [main] INFO : Testing Ended
+2026-02-13 11:01:08 [main] INFO : ***********
+2026-02-13 11:03:13 [main] INFO : Launching Chrome Browser
+2026-02-13 11:03:13 [main] INFO : Report Name :OraclePage.html
+2026-02-13 11:03:18 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 11:03:23 [main] INFO : Logged in to Oracle Application
+2026-02-13 11:03:24 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 11:03:24 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 11:03:32 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 11:03:43 [main] INFO : Entering Journal Name: Test3
+2026-02-13 11:03:46 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 11:03:48 [main] INFO : Entering Journal: Test3
+2026-02-13 11:03:51 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 11:04:04 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:04:06 [main] INFO : Selecting Department Value: 000
+2026-02-13 11:04:09 [main] INFO : Selecting Account Value: 11200
+2026-02-13 11:04:11 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:04:15 [main] INFO : Account id :
+2026-02-13 11:04:18 [main] INFO : Entering Debit Amount: 100
+2026-02-13 11:04:37 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:04:39 [main] INFO : Selecting Department Value: 202
+2026-02-13 11:04:41 [main] INFO : Selecting Account Value: 11300
+2026-02-13 11:04:43 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:04:45 [main] INFO : Account id :
+2026-02-13 11:04:51 [main] INFO : Testing Ended
+2026-02-13 11:04:51 [main] INFO : ***********
+2026-02-13 11:06:36 [main] INFO : Launching Chrome Browser
+2026-02-13 11:06:36 [main] INFO : Report Name :OraclePage.html
+2026-02-13 11:06:48 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 11:06:53 [main] INFO : Logged in to Oracle Application
+2026-02-13 11:06:54 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 11:06:54 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 11:07:02 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 11:07:08 [main] INFO : Entering Journal Name: Test3
+2026-02-13 11:07:11 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 11:07:13 [main] INFO : Entering Journal: Test3
+2026-02-13 11:07:17 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 11:07:29 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:07:31 [main] INFO : Selecting Department Value: 000
+2026-02-13 11:07:33 [main] INFO : Selecting Account Value: 11200
+2026-02-13 11:07:36 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:07:40 [main] INFO : Account id :
+2026-02-13 11:07:42 [main] INFO : Entering Debit Amount: 100
+2026-02-13 11:08:01 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:08:03 [main] INFO : Selecting Department Value: 202
+2026-02-13 11:08:05 [main] INFO : Selecting Account Value: 11300
+2026-02-13 11:08:07 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:08:10 [main] INFO : Account id :
+2026-02-13 11:08:13 [main] INFO : Entering Credit Amount: 100
+2026-02-13 11:08:18 [main] INFO : Post Journal Confirmation text received: 
+2026-02-13 11:08:18 [main] ERROR: Could not find a numeric Journal ID in the text: 
+2026-02-13 11:08:18 [main] INFO : Extracted Journal ID: null
+2026-02-13 11:08:21 [main] INFO : Testing Ended
+2026-02-13 11:08:21 [main] INFO : ***********
+2026-02-13 11:11:45 [main] INFO : Launching Chrome Browser
+2026-02-13 11:11:46 [main] INFO : Report Name :OraclePage.html
+2026-02-13 11:11:55 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 11:12:00 [main] INFO : Logged in to Oracle Application
+2026-02-13 11:12:01 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 11:12:01 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 11:12:09 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 11:12:14 [main] INFO : Entering Journal Name: Test4
+2026-02-13 11:12:18 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 11:12:20 [main] INFO : Entering Journal: Test4
+2026-02-13 11:12:24 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 11:12:36 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:12:39 [main] INFO : Selecting Department Value: 000
+2026-02-13 11:12:41 [main] INFO : Selecting Account Value: 11200
+2026-02-13 11:12:43 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:12:49 [main] INFO : Entering Debit Amount: 100
+2026-02-13 11:13:08 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:13:10 [main] INFO : Selecting Department Value: 202
+2026-02-13 11:13:12 [main] INFO : Selecting Account Value: 11300
+2026-02-13 11:13:13 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:13:19 [main] INFO : Entering Credit Amount: 100
+2026-02-13 11:13:26 [main] INFO : Testing Ended
+2026-02-13 11:13:26 [main] INFO : ***********
+2026-02-13 11:15:01 [main] INFO : Launching Chrome Browser
+2026-02-13 11:15:01 [main] INFO : Report Name :OraclePage.html
+2026-02-13 11:15:11 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 11:15:16 [main] INFO : Logged in to Oracle Application
+2026-02-13 11:15:17 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 11:15:17 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 11:15:29 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 11:15:35 [main] INFO : Entering Journal Name: Test5
+2026-02-13 11:15:39 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 11:15:41 [main] INFO : Entering Journal: Test5
+2026-02-13 11:15:44 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 11:15:57 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:15:59 [main] INFO : Selecting Department Value: 000
+2026-02-13 11:16:01 [main] INFO : Selecting Account Value: 11200
+2026-02-13 11:16:04 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:16:10 [main] INFO : Entering Debit Amount: 100
+2026-02-13 11:16:28 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:16:30 [main] INFO : Selecting Department Value: 202
+2026-02-13 11:16:32 [main] INFO : Selecting Account Value: 11300
+2026-02-13 11:16:33 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:16:39 [main] INFO : Entering Credit Amount: 100
+2026-02-13 11:16:47 [main] INFO : Post Journal Confirmation text received: 
+2026-02-13 11:16:47 [main] ERROR: Could not find a numeric Journal ID in the text: 
+2026-02-13 11:16:47 [main] INFO : Extracted Journal ID: null
+2026-02-13 11:16:48 [main] INFO : Testing Ended
+2026-02-13 11:16:48 [main] INFO : ***********
+2026-02-13 11:35:01 [main] INFO : Launching Chrome Browser
+2026-02-13 11:35:02 [main] INFO : Report Name :OraclePage.html
+2026-02-13 11:35:12 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 11:35:16 [main] INFO : Logged in to Oracle Application
+2026-02-13 11:35:17 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 11:35:17 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 11:35:29 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 11:35:34 [main] INFO : Entering Journal Name: Test6
+2026-02-13 11:35:39 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 11:35:40 [main] INFO : Entering Journal: Test6
+2026-02-13 11:35:44 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 11:35:56 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:35:58 [main] INFO : Selecting Department Value: 000
+2026-02-13 11:36:01 [main] INFO : Selecting Account Value: 11200
+2026-02-13 11:36:03 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:36:09 [main] INFO : Entering Debit Amount: 100
+2026-02-13 11:36:28 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:36:30 [main] INFO : Selecting Department Value: 202
+2026-02-13 11:36:32 [main] INFO : Selecting Account Value: 11300
+2026-02-13 11:36:33 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:36:39 [main] INFO : Entering Credit Amount: 100
+2026-02-13 11:36:43 [main] INFO : Testing Ended
+2026-02-13 11:36:43 [main] INFO : ***********
+2026-02-13 11:38:27 [main] INFO : Launching Chrome Browser
+2026-02-13 11:38:28 [main] INFO : Report Name :OraclePage.html
+2026-02-13 11:38:36 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 11:38:40 [main] INFO : Logged in to Oracle Application
+2026-02-13 11:38:41 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 11:38:41 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 11:38:49 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 11:38:55 [main] INFO : Entering Journal Name: Test7
+2026-02-13 11:38:59 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 11:39:01 [main] INFO : Entering Journal: Test7
+2026-02-13 11:39:04 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 11:39:17 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:39:19 [main] INFO : Selecting Department Value: 000
+2026-02-13 11:39:22 [main] INFO : Selecting Account Value: 11200
+2026-02-13 11:39:24 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:39:31 [main] INFO : Entering Debit Amount: 100
+2026-02-13 11:39:49 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:39:51 [main] INFO : Selecting Department Value: 202
+2026-02-13 11:39:53 [main] INFO : Selecting Account Value: 11300
+2026-02-13 11:39:55 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:40:00 [main] INFO : Entering Credit Amount: 100
+2026-02-13 11:40:10 [main] INFO : Post Journal Confirmation text received: Your process 4819966 has been submitted.
+2026-02-13 11:40:10 [main] INFO : Extracted Journal ID: 4819966
+2026-02-13 11:40:16 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 11:40:37 [main] INFO : Entering Journal Name: Test7
+2026-02-13 11:40:40 [main] INFO : Test7 Journal Status is Posted
+2026-02-13 11:40:42 [main] INFO : Testing Ended
+2026-02-13 11:40:42 [main] INFO : ***********
+2026-02-13 11:43:28 [main] INFO : Launching Chrome Browser
+2026-02-13 11:43:29 [main] INFO : Report Name :OraclePage.html
+2026-02-13 11:43:35 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 11:43:40 [main] INFO : Logged in to Oracle Application
+2026-02-13 11:43:41 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 11:43:41 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 11:43:48 [main] INFO : Navigating Scheduled Processes
+2026-02-13 11:43:52 [main] INFO : Click on Schedule New Process
+2026-02-13 11:43:54 [main] INFO : Click on Name dropdown
+2026-02-13 11:43:58 [main] INFO : Click on search
+2026-02-13 11:43:59 [main] INFO : Click on name and type the name
+2026-02-13 11:44:01 [main] INFO : Entering Name: Create Accounting
+2026-02-13 11:44:02 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-13 11:44:09 [main] INFO : Click on Subledger Application and Select Receivables
+2026-02-13 11:44:12 [main] INFO : Select Cash Management from the drop down under Sub ledger application
+2026-02-13 11:44:12 [main] INFO : Click on ledger or ledger Set dropdown and click Search
+2026-02-13 11:44:14 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-13 11:44:22 [main] INFO : Entering Ledger Or Ledger Set: CR PRIMARY LEDGER
+2026-02-13 11:44:30 [main] INFO : Select Detail from the drop down under Report Style
+2026-02-13 11:44:32 [main] INFO : Click on Submit at the top
+2026-02-13 11:44:33 [main] INFO : Check for confirmation and click ok
+2026-02-13 11:44:34 [main] INFO : Popup text received: Process 4819977 was submitted.
+2026-02-13 11:44:34 [main] INFO : Extracted Process ID: 4819977
+2026-02-13 11:44:34 [main] INFO : Retrieved Process Id:4819977
+2026-02-13 11:44:36 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-13 11:44:37 [main] INFO : Monitoring status for Process ID: 4819977
+2026-02-13 11:44:38 [main] INFO : Current Status of 4819977: Wait
+2026-02-13 11:44:49 [main] INFO : Current Status of 4819977: Wait
+2026-02-13 11:44:59 [main] INFO : Current Status of 4819977: Running
+2026-02-13 11:45:10 [main] INFO : Current Status of 4819977: Succeeded
+2026-02-13 11:45:10 [main] INFO : Process 4819977 completed successfully.
+2026-02-13 11:45:21 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 11:45:28 [main] INFO : Entering Journal Name: Test8
+2026-02-13 11:45:32 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 11:45:34 [main] INFO : Entering Journal: Test8
+2026-02-13 11:45:38 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 11:45:50 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:45:52 [main] INFO : Selecting Department Value: 000
+2026-02-13 11:45:54 [main] INFO : Selecting Account Value: 11200
+2026-02-13 11:45:57 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:46:03 [main] INFO : Entering Debit Amount: 100
+2026-02-13 11:46:22 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:46:23 [main] INFO : Selecting Department Value: 202
+2026-02-13 11:46:25 [main] INFO : Selecting Account Value: 11300
+2026-02-13 11:46:27 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:46:32 [main] INFO : Entering Credit Amount: 100
+2026-02-13 11:46:42 [main] INFO : Post Journal Confirmation text received: Your process 4820003 has been submitted.
+2026-02-13 11:46:42 [main] INFO : Extracted Journal ID: 4820003
+2026-02-13 11:46:48 [main] INFO : Selecting Quick Action: Manage Journals
+2026-02-13 11:46:54 [main] INFO : Entering Journal Name: Test8
+2026-02-13 11:46:55 [main] INFO : Test8 Journal Status is Posted
+2026-02-13 11:46:58 [main] INFO : Testing Ended
+2026-02-13 11:46:58 [main] INFO : ***********
+2026-02-13 11:50:09 [main] INFO : Launching Chrome Browser
+2026-02-13 11:50:10 [main] INFO : Report Name :OraclePage.html
+2026-02-13 11:50:18 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-13 11:50:23 [main] INFO : Logged in to Oracle Application
+2026-02-13 11:50:24 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-13 11:50:24 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-13 11:50:31 [main] INFO : Navigating Scheduled Processes
+2026-02-13 11:50:34 [main] INFO : Click on Schedule New Process
+2026-02-13 11:50:36 [main] INFO : Click on Name dropdown
+2026-02-13 11:50:40 [main] INFO : Click on search
+2026-02-13 11:50:41 [main] INFO : Click on name and type the name
+2026-02-13 11:50:43 [main] INFO : Entering Name: Create Accounting
+2026-02-13 11:50:44 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-13 11:50:51 [main] INFO : Click on Subledger Application and Select Receivables
+2026-02-13 11:50:53 [main] INFO : Select Cash Management from the drop down under Sub ledger application
+2026-02-13 11:50:54 [main] INFO : Click on ledger or ledger Set dropdown and click Search
+2026-02-13 11:50:55 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-13 11:51:04 [main] INFO : Entering Ledger Or Ledger Set: CR PRIMARY LEDGER
+2026-02-13 11:51:09 [main] INFO : Select Detail from the drop down under Report Style
+2026-02-13 11:51:11 [main] INFO : Click on Submit at the top
+2026-02-13 11:51:12 [main] INFO : Check for confirmation and click ok
+2026-02-13 11:51:12 [main] INFO : Popup text received: Process 4820015 was submitted.
+2026-02-13 11:51:12 [main] INFO : Extracted Process ID: 4820015
+2026-02-13 11:51:12 [main] INFO : Retrieved Process Id:4820015
+2026-02-13 11:51:15 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-13 11:51:15 [main] INFO : Monitoring status for Process ID: 4820015
+2026-02-13 11:51:17 [main] INFO : Current Status of 4820015: Wait
+2026-02-13 11:51:28 [main] INFO : Current Status of 4820015: Wait
+2026-02-13 11:51:38 [main] INFO : Current Status of 4820015: Running
+2026-02-13 11:51:49 [main] INFO : Current Status of 4820015: Succeeded
+2026-02-13 11:51:49 [main] INFO : Process 4820015 completed successfully.
+2026-02-13 11:52:00 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-13 11:52:06 [main] INFO : Entering Journal Name: Test9
+2026-02-13 11:52:10 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-13 11:52:12 [main] INFO : Entering Journal: Test9
+2026-02-13 11:52:15 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-13 11:52:27 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:52:30 [main] INFO : Selecting Department Value: 000
+2026-02-13 11:52:32 [main] INFO : Selecting Account Value: 11200
+2026-02-13 11:52:34 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:52:40 [main] INFO : Entering Debit Amount: 100
+2026-02-13 11:52:59 [main] INFO : Selecting Company Value: 101
+2026-02-13 11:53:01 [main] INFO : Selecting Department Value: 202
+2026-02-13 11:53:02 [main] INFO : Selecting Account Value: 11300
+2026-02-13 11:53:04 [main] INFO : Selecting Future Value: 000
+2026-02-13 11:53:10 [main] INFO : Entering Credit Amount: 100
+2026-02-13 11:53:20 [main] INFO : Post Journal Confirmation text received: Your process 4820022 has been submitted.
+2026-02-13 11:53:20 [main] INFO : Extracted Journal ID: 4820022
+2026-02-13 11:53:26 [main] INFO : Selecting Quick Action: Manage Journals
+2026-02-13 11:53:32 [main] INFO : Entering Journal Name: Test9
+2026-02-13 11:53:33 [main] INFO : Test9 Journal Status is Posted
+2026-02-13 11:53:37 [main] INFO : Testing Ended
+2026-02-13 11:53:37 [main] INFO : ***********

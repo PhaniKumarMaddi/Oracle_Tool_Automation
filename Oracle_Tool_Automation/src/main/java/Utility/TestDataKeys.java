@@ -16,6 +16,8 @@ public class TestDataKeys {
 	public String bankStmtAnd_ReconciCatg = "Bank Statements and Reconciliation";
 	public String generalAcct_NavTab = "General Accounting";
 	public String createJournalCatg = "Create Journal";
+	public String manageJournalsCatg = "Manage Journals";
+	
 
 	public String createInvoiceBtn = "Create Invoice";
 	public String createPaymentBtn = "Create Payment";
@@ -106,4 +108,19 @@ public class TestDataKeys {
 	public String creditFlowIndicator = "Credit";
 	public String statement_EndDate = "Week to date";
 
+	// Journal 
+	public String journalName= "Test9"; // change values
+	public String journalCategory="Manual";
+	public String journalLine_company= "101";
+	public String journalLine_dept= "000";
+	public String journalLine_acc= "11200";
+	public String journalLine_future= "000";
+	public String journalLine_debit= "100";
+	public String journalLine_credit= "100";
+//	public String journalLine_company_2= "101";
+	public String journalLine_dept_2= "202";
+	public String journalLine_acc_2= "11300";
+//	public String journalLine_future_2= "000";
+	
+	
 }

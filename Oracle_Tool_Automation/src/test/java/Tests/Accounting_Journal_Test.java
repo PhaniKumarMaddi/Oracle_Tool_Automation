@@ -141,21 +141,65 @@ public class Accounting_Journal_Test extends TestInitializer {
 		oraHome.selectTabWithNavigator(dataTest.generalAcct_NavTab);
 		waitTime(driver);
 		oraHome.selectFromQuickActions(dataTest.createJournalCatg);
-		waitTime(driver);
-		
+		waitTime5(driver);
 
-//		grep.infoTest("Click on Create Accounting Execution Report");
-//		logger.info("Click on Create Accounting Execution Report");
-//		waitTime(driver);
-//		oraAag.clickAccountingExecutionReport();
-//		waitTime5(driver);
-//		grep.captureScreenshot("pass", "Accounting Execution Report for Create AR Accounting",
-//				"AccountExecutionReport_CreateAccounting");
-//		waitTime5(driver);
-//		oraAag.clickDefaultDocumentBtn();
-//		waitTime5(driver);
-//		grep.captureScreenshot("pass", "Default Document for Create AR Accounting", "DefaultDocument_CreateAccounting");
-//		waitTime(driver);
+		oraAag.enterJournalBatchName(dataTest.journalName);
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Inside My journal Page", "MyJournalPage");
+		waitTime(driver);
+		oraAag.clickJournalAccountingPeriod(dataTest.accountPeriod);
+		waitTime(driver);
+		oraAag.enterJournal(dataTest.journalName);
+		waitTime(driver);
+		oraAag.clickJournalCategory(dataTest.journalCategory);
+		waitTime(driver);
+		oraAag.searchAccount_inJournalLines();
+		waitTime(driver);
+		oraAag.searchAndSelectAccountJournalLines(dataTest.journalLine_company, dataTest.journalLine_dept,
+				dataTest.journalLine_acc, dataTest.journalLine_future);
+		waitTime2(driver);
+		oraAag.enterDebit_inJournalLines(dataTest.journalLine_debit);
+		waitTime2(driver);
+		oraAag.clickNewJournalLineBtn();
+		waitTime5(driver);
+		oraAag.searchAccount_inJournalLines();
+		waitTime(driver);
+		oraAag.searchAndSelectAccountJournalLines(dataTest.journalLine_company, dataTest.journalLine_dept_2,
+				dataTest.journalLine_acc_2, dataTest.journalLine_future);
+		waitTime2(driver);
+		oraAag.enterCredit_inJournalLines(dataTest.journalLine_credit);
+		waitTime(driver);
+		oraAag.clickSaveJournalBtn();
+		waitTime2(driver);
+		oraAag.clickCompleteJournalBtn();
+		waitTime2(driver);
+		oraAag.clickPostJournalBtn();
+		waitTime5(driver);
+		String getMsg = oraAag.retrievePostConfirmMessage();
+		logger.info("Extracted Journal ID: " + getMsg);
+		grep.infoTest("Extracted journal ID: " + getMsg);
+		waitTime(driver);
+		grep.captureScreenshot("pass", "After Posting Journal", "Posting_JournalStatus");
+		waitTime(driver);
+		oraAag.clickOk_inPostConfirmBtn();
+		waitTime(driver);
+		oraHome.clickHomeButton();
+		waitTime(driver);
+
+		grep.testCreate("Approval of Journal Test", "Approval of Journal");
+		waitTime(driver);
+		oraHome.selectTabWithNavigator(dataTest.generalAcct_NavTab);
+		waitTime(driver);
+		oraHome.selectFromQuickActions(dataTest.manageJournalsCatg);
+		waitTime5(driver);
+		oraAag.enterJournalBatchName(dataTest.journalName);
+		waitTime(driver);
+		oraAag.clickSearchBtn();
+		waitTime(driver);
+		oraAag.verifyJournalStatus(dataTest.journalName);
+		waitTime(driver);
+
+		oraHome.clickHomeButton();
 
 	}
 

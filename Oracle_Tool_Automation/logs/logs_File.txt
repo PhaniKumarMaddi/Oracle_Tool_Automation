@@ -18341,3 +18341,56 @@ Session ID: 3cb4dc3b2698684f0e2bc5c2af34e916
 2026-02-16 11:21:37 [main] INFO : Receipt found: TestReceipt_16_01
 2026-02-16 11:21:44 [main] INFO : Testing Ended
 2026-02-16 11:21:44 [main] INFO : ***********
+2026-02-16 11:32:27 [main] INFO : Launching Chrome Browser
+2026-02-16 11:32:27 [main] INFO : Report Name :OraclePage.html
+2026-02-16 11:32:37 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-16 11:32:41 [main] INFO : Logged in to Oracle Application
+2026-02-16 11:32:42 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-16 11:32:42 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-16 11:32:49 [main] INFO : Navigating Scheduled Processes
+2026-02-16 11:32:51 [main] INFO : Click on Schedule New Process
+2026-02-16 11:32:54 [main] INFO : Click on Name dropdown
+2026-02-16 11:32:57 [main] INFO : Click on search
+2026-02-16 11:32:58 [main] INFO : Click on name and type the name
+2026-02-16 11:32:59 [main] INFO : Entering Name: Create Accounting
+2026-02-16 11:33:00 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-16 11:33:06 [main] INFO : Click on Subledger Application and Select Receivables
+2026-02-16 11:33:08 [main] INFO : Select Cash Management from the drop down under Sub ledger application
+2026-02-16 11:33:08 [main] INFO : Click on ledger or ledger Set dropdown and click Search
+2026-02-16 11:33:10 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-16 11:33:17 [main] INFO : Entering Ledger Or Ledger Set: CR PRIMARY LEDGER
+2026-02-16 11:33:25 [main] INFO : Select Detail from the drop down under Report Style
+2026-02-16 11:33:27 [main] INFO : Click on Submit at the top
+2026-02-16 11:33:28 [main] INFO : Check for confirmation and click ok
+2026-02-16 11:33:29 [main] INFO : Popup text received: Process 4829446 was submitted.
+2026-02-16 11:33:29 [main] INFO : Extracted Process ID: 4829446
+2026-02-16 11:33:29 [main] INFO : Retrieved Process Id:4829446
+2026-02-16 11:33:31 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-16 11:33:32 [main] INFO : Monitoring status for Process ID: 4829446
+2026-02-16 11:33:33 [main] INFO : Current Status of 4829446: Wait
+2026-02-16 11:33:44 [main] INFO : Current Status of 4829446: Ready
+2026-02-16 11:33:54 [main] INFO : Current Status of 4829446: Completed
+2026-02-16 11:34:05 [main] INFO : Current Status of 4829446: Succeeded
+2026-02-16 11:34:05 [main] INFO : Process 4829446 completed successfully.
+2026-02-16 11:34:16 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-16 11:34:28 [main] INFO : Entering Journal Name: Test_16_01
+2026-02-16 11:34:32 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-16 11:34:34 [main] INFO : Entering Journal: Test_16_01
+2026-02-16 11:34:37 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-16 11:34:49 [main] INFO : Selecting Company Value: 101
+2026-02-16 11:34:51 [main] INFO : Selecting Department Value: 000
+2026-02-16 11:34:54 [main] INFO : Selecting Account Value: 11200
+2026-02-16 11:34:56 [main] INFO : Selecting Future Value: 000
+2026-02-16 11:35:02 [main] INFO : Entering Debit Amount: 100
+2026-02-16 11:35:20 [main] INFO : Selecting Company Value: 101
+2026-02-16 11:35:22 [main] INFO : Selecting Department Value: 202
+2026-02-16 11:35:24 [main] INFO : Selecting Account Value: 11300
+2026-02-16 11:35:25 [main] INFO : Selecting Future Value: 000
+2026-02-16 11:35:31 [main] INFO : Entering Credit Amount: 100
+2026-02-16 11:35:41 [main] INFO : Post Journal Confirmation text received: Your process 4829456 has been submitted.
+2026-02-16 11:35:41 [main] INFO : Extracted Journal ID: 4829456
+2026-02-16 11:35:47 [main] INFO : Selecting Quick Action: Manage Journals
+2026-02-16 11:35:52 [main] INFO : Entering Journal Name: Test_16_01
+2026-02-16 11:35:55 [main] INFO : Test_16_01 Journal Status is Posted
+2026-02-16 11:36:00 [main] INFO : Testing Ended
+2026-02-16 11:36:00 [main] INFO : ***********

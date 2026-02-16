@@ -111,7 +111,7 @@ public class TestDataKeys {
 	public String statement_EndDate = "Week to date";
 
 	// Journal
-	public String journalName = "Test9"; // change values
+	public String journalName = "Test_16_01"; // change values
 	public String journalCategory = "Manual";
 	public String journalLine_company = "101";
 	public String journalLine_dept = "000";

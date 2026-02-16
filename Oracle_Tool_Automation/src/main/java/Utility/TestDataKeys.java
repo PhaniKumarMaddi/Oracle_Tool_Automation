@@ -128,13 +128,13 @@ public class TestDataKeys {
 	public String majorCategory = "CR COMPUTER";
 	public String minorCategory = "CR PC";
 	public String assetDescription = "Testing Asset";
-	public String assetCost = "10000";
+	public String assetCost = "500";
 	public String assetCountry = "US";
 	public String assetState = "CA";
 	public String assetCity = "San Francisco";
 	public String assetBuilding = "595 Market St";
 	public String assetFuture = "88";
 	
-	public String assetNumber="Testing Asset 9"; // Change value
+	public String assetNumber="Testing Asset 16"; // Change value
 	public String assetKey="0000";
 }

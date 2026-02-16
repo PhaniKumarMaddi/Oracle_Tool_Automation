@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
+import Pages.Oracle_AccountingAtGlance;
 import Pages.Oracle_Assets_Page;
 import Pages.Oracle_HomePage;
 import Pages.TestInitializer;
@@ -130,20 +131,52 @@ public class Fixed_Assets_Test extends TestInitializer {
 		waitTime(driver);
 		oraAp.clickSubmitBtn_inAsset();
 		waitTime(driver);
-//		oraAp.clickReadyToPostBtn_inAsset();
-//		waitTime(driver);
-//		oraAp.selectExistingAsset(dataTest.assetNumber);
-//		waitTime(driver);
-//		oraAp.clickPostAllBtn_inAsset();
-//		waitTime(driver);
-//		grep.captureScreenshot("pass", "Asset Posted Successfully", "psotinngAssetSuccesful");
-//		waitTime(driver);
-//
-//		oraHome.click_Tasks_InPO();
-//		waitTime(driver);
-//		oraHome.selectTasks_InTaskPage(dataTest.inquireAssetTask);
-//		waitTime(driver);
-		
+		oraAp.clickReadyToPostBtn_inAsset();
+		waitTime5(driver);
+		oraAp.selectExistingAsset(dataTest.assetNumber);
+		waitTime2(driver);
+		oraAp.clickPostAllBtn_inAsset();
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Asset Posted Successfully", "postinngAssetSuccesful");
+		waitTime5(driver);
+		oraAp.clickRefreshBtn_inAsset();
+		waitTime(driver);
+		oraHome.click_Tasks_InPO();
+		waitTime(driver);
+		oraHome.selectTasks_InTaskPage(dataTest.inquireAssetTask);
+		waitTime(driver);
+		oraAp.enterAssetNumber_inInquireAsset(dataTest.assetNumber);
+		waitTime(driver);
+		oraAp.clickSearchBtn();
+		waitTime3(driver);
+		grep.captureScreenshot("pass", "Searched Inquire Asset Posted Successfully", "inquireAsset");
+		waitTime3(driver);
+		oraAp.clickDone_inInquireAssetPage();
+		waitTime(driver);
+		oraAp.clickDepricationArrowBtn_inAssets();
+		waitTime(driver);
+		oraAp.clickCalculateDepricationBtn_inAssets();
+		waitTime2(driver);
+		grep.captureScreenshot("pass", "Calculated Deprication Test", "calculateDeprication_inAsset");
+		waitTime2(driver);
+		oraHome.clickHomeFromPutAway();
+		waitTime(driver);
+
+		oraHome.clickFavouriteButton();
+		waitTime(driver);
+		oraHome.selectRecentItems("Monitor Processes");
+		waitTime(driver);
+
+		oraAp.clickRefreshBtn_inAsset();
+		waitTime(driver);
+		oraAp.waitForProcessSuccess(2);
+		waitTime(driver);
+		grep.captureScreenshot("pass", "Verify Create Accounting for Assets process Sucess",
+				"AssetsAccounting_ProcessSucess_inAsset");
+		waitTime2(driver);
+		oraHome.clickHomeFromPutAway();
+		waitTime(driver);
+
 	}
 
 }

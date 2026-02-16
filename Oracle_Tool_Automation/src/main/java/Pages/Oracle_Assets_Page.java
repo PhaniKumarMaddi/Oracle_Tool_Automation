@@ -71,6 +71,9 @@ public class Oracle_Assets_Page extends WaitsManager {
 
 	// inquire asset
 	By inquireAssetNum = By.xpath("//input[@aria-label=' Asset Number']");
+	By done_inInquireAsset = By.xpath("//button[@accesskey='o']");
+	By depricationBtn = By.xpath("//img[@alt='Select : Depreciation']");
+	By calculateDepricationBtn = By.xpath("//span[text()='Calculate Depreciation']/parent::a");
 
 	public void clickSearchAssetCategoryBtn() throws Exception {
 		try {
@@ -305,6 +308,37 @@ public class Oracle_Assets_Page extends WaitsManager {
 		}
 	}
 
+//	public void enterCountry_inLocationPopup(String countryVal) throws Exception {
+//		try {
+//			By selectCountry = By.xpath("//div[@title='" + countryVal + "']");
+////				implWait(driver);
+//			waitForElementToBeClickable(country_inLocationPopup, 20);
+//			boolean elementExists = !driver.findElements(country_inLocationPopup).isEmpty();
+//			if (elementExists) {
+//				WebElement country = driver.findElement(country_inLocationPopup);
+//				WebElement select_Country = driver.findElement(selectCountry);
+//
+//				country.sendKeys(countryVal);
+//				waitTime(driver);
+//				if (select_Country.isDisplayed()) {
+//					select_Country.click();
+//				} else {
+//					country.clear();
+//					country.sendKeys(countryVal);
+//					select_Country.click();
+//				}
+//
+//				waitTime(driver);
+//				grep.infoTest("Selecting Country Value: " + countryVal);
+//				logger.info("Selecting  Country: " + countryVal);
+//				waitTime2(driver);
+//			}
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//			grep.failTest("Test Failed :" + e.getMessage());
+//			logger.error("Test Failed :" + e.getMessage());
+//		}
+//	}
 	public void enterCountry_inLocationPopup(String countryVal) throws Exception {
 		try {
 			By selectCountry = By.xpath("//div[@title='" + countryVal + "']");
@@ -313,13 +347,12 @@ public class Oracle_Assets_Page extends WaitsManager {
 			boolean elementExists = !driver.findElements(country_inLocationPopup).isEmpty();
 			if (elementExists) {
 				driver.findElement(country_inLocationPopup).sendKeys(countryVal);
-				waitTime(driver);
-//				driver.findElement(country_inLocationPopup).click();
+				waitTime2(driver);
+				driver.findElement(country_inLocationPopup).click();
 				driver.findElement(selectCountry).click();
 				waitTime(driver);
 				grep.infoTest("Selecting Country Value: " + countryVal);
-				logger.info("Selecting  Country: " + countryVal);
-				waitTime2(driver);
+				logger.info("Selecting  Country Value: " + countryVal);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -507,7 +540,7 @@ public class Oracle_Assets_Page extends WaitsManager {
 	public void selectExistingAsset(String assetVal) throws Exception {
 		try {
 			By selectAsset = By.xpath("//span[text()='" + assetVal + "']");
-			waitForElement(selectAsset, 20);
+			waitForElementToBeClickable(selectAsset, 20);
 			driver.findElement(selectAsset).click();
 
 		} catch (Exception e) {
@@ -527,4 +560,81 @@ public class Oracle_Assets_Page extends WaitsManager {
 		driver.findElement(refreshBtn).click();
 	}
 
+	public void enterAssetNumber_inInquireAsset(String assetVal) {
+		try {
+			implWait(driver);
+
+			driver.findElement(inquireAssetNum).click();
+			driver.findElement(inquireAssetNum).sendKeys(assetVal.toUpperCase());
+			waitTime(driver);
+			grep.infoTest("Entering Value for Asset Number: " + assetVal);
+			logger.info("Entering Value for Asset Number: " + assetVal);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickDone_inInquireAssetPage() {
+		implWait(driver);
+		driver.findElement(done_inInquireAsset).click();
+	}
+
+	public void clickDepricationArrowBtn_inAssets() {
+		waitForElementToBeClickable(depricationBtn, 30);
+		driver.findElement(depricationBtn).click();
+	}
+
+	public void clickCalculateDepricationBtn_inAssets() {
+		waitForElementToBeClickable(calculateDepricationBtn, 30);
+		driver.findElement(calculateDepricationBtn).click();
+	}
+
+	public void waitForProcessSuccess(int timeoutInMinutes) throws Exception {
+		By taskNameLoc = By
+				.xpath("//span[text()='Create Accounting for Assets']/ancestor::td/following-sibling::td[2]");
+		long endTime = System.currentTimeMillis() + (timeoutInMinutes * 60L * 1000L);
+		boolean isSuccess = false;
+
+		logger.info("Monitoring status for Asset Process");
+
+		while (System.currentTimeMillis() < endTime) {
+			try {
+				WebElement statusElement = driver.findElement(taskNameLoc);
+				scrollView(taskNameLoc);
+				waitTime(driver);
+				String currentStatus = statusElement.getText().trim();
+
+				logger.info("Current Status of Asset process :" + currentStatus);
+				grep.infoTest("Current Status of Asset process : " + currentStatus);
+
+				if (currentStatus.equalsIgnoreCase("Succeeded") || currentStatus.equalsIgnoreCase("Success")) {
+					isSuccess = true;
+					grep.infoTest("Sub Process completed successfully.");
+					logger.info("Sub Process completed successfully.");
+					break;
+				}
+				if (currentStatus.equalsIgnoreCase("Error") || currentStatus.equalsIgnoreCase("Failed")) {
+					grep.warnTest("Sub Process failed with status: " + currentStatus);
+				}
+
+			} catch (Exception e) {
+				System.out.println("Process row not found yet. Refreshing...");
+			}
+			try {
+				driver.findElement(refreshBtn).click();
+
+				waitTime10(driver);
+			} catch (Exception refEx) {
+				logger.warn("Could not click refresh button.");
+			}
+
+		}
+
+		if (!isSuccess) {
+			grep.warnTest("Timeout: Create Processing For Asset Processs did not succeed within " + timeoutInMinutes
+					+ " minutes.");
+			logger.error("Timeout: Create Processing For Asset Processs did not succeed within " + timeoutInMinutes
+					+ " minutes.");
+		}
+	}
 }

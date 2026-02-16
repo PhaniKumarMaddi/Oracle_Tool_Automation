@@ -70,7 +70,7 @@ public class AccountReceivables_Test extends TestInitializer {
 		waitTime(driver);
 		oraAr.clickSelectCustomerNameFromList(dataTest.customerName);
 		oraAr.clickOk_inBillToNamePopup();
-		waitTime2(driver);
+		waitTime5(driver);
 		oraAr.searchAndSelectPaymentTerms(dataTest.net_PaymentTerms);
 		waitTime2(driver);
 		oraAr.enterDescriptionInLines("Testing 2");

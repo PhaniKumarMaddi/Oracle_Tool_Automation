@@ -194,7 +194,7 @@ public class Oracle_Receivables_Page extends WaitsManager {
 
 			driver.findElement(paymentTerms).click();
 			driver.findElement(paymentTerms).sendKeys(paymentTermsVal);
-			waitTime(driver);
+			waitTime2(driver);
 			grep.infoTest("Selecting Invoice Payment terms: " + paymentTermsVal);
 			logger.info("Selecting Invoice Payment terms: " + paymentTermsVal);
 			waitTime(driver);

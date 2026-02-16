@@ -83,7 +83,7 @@ public class TestDataKeys {
 	public String createReceiptTask = "Create Receipt";
 	public String manageTransactionTask = "Manage Transactions";
 	public String createTransactionTask = "Create Transaction";
-	public String receiptNum = "TestReceipt_10"; // change values
+	public String receiptNum = "TestReceipt_16_01"; // change values
 	public String bankName = "Well Forgo Bank";
 	public String bankBranch = "WFG HOUSTON";
 	public String submitApplyManually = "Submit and Apply Manually";
@@ -104,7 +104,7 @@ public class TestDataKeys {
 	public String createBankStmtBtn = "Create Bank Statement";
 	public String manageBankStmtBtn = "Manage Bank Statements";
 	public String manualReconciliationBtn = "Manual Reconciliation";
-	public String statementId = "Test_StatementID_013"; // change value
+	public String statementId = "Test_StatementID_014"; // change value
 	public String transactionCode_101 = "101";
 	public String debitFlowIndicator = "Debit";
 	public String creditFlowIndicator = "Credit";

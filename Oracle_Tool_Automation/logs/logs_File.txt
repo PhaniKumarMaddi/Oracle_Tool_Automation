@@ -18223,3 +18223,121 @@ Session ID: 3cb4dc3b2698684f0e2bc5c2af34e916
 2026-02-16 11:07:44 [main] INFO : Receipt found: Test_001
 2026-02-16 11:07:46 [main] INFO : Testing Ended
 2026-02-16 11:07:46 [main] INFO : ***********
+2026-02-16 11:09:47 [main] INFO : Launching Chrome Browser
+2026-02-16 11:09:47 [main] INFO : Report Name :OraclePage.html
+2026-02-16 11:09:57 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-16 11:10:01 [main] INFO : Logged in to Oracle Application
+2026-02-16 11:10:02 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-16 11:10:02 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-16 11:10:06 [main] INFO : Clicking on Home icon
+2026-02-16 11:10:11 [main] INFO : Selecting Quick Action: Create Transaction
+2026-02-16 11:10:12 [main] INFO : Navigating Create Transaction
+2026-02-16 11:10:13 [main] INFO : Filling Details in Create Transaction Page
+2026-02-16 11:10:16 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-16 11:10:19 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-16 11:10:29 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-16 11:10:35 [main] INFO : Entering Name: CR GE
+2026-02-16 11:10:42 [main] INFO : Entering Line Description: Testing 2
+2026-02-16 11:10:43 [main] INFO : Entering Line Quantity: 2
+2026-02-16 11:10:44 [main] INFO : Entering Line Unit Price: 370
+2026-02-16 11:10:51 [main] INFO : Extended Amount: 740,00
+2026-02-16 11:11:39 [main] INFO : Launching Chrome Browser
+2026-02-16 11:11:40 [main] INFO : Report Name :OraclePage.html
+2026-02-16 11:11:45 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-16 11:11:49 [main] INFO : Logged in to Oracle Application
+2026-02-16 11:11:50 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-16 11:11:50 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-16 11:11:54 [main] INFO : Clicking on Home icon
+2026-02-16 11:11:58 [main] INFO : Selecting Quick Action: Create Transaction
+2026-02-16 11:11:59 [main] INFO : Navigating Create Transaction
+2026-02-16 11:12:01 [main] INFO : Filling Details in Create Transaction Page
+2026-02-16 11:12:02 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-16 11:12:05 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-16 11:12:10 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-16 11:12:16 [main] INFO : Entering Name: CR GE
+2026-02-16 11:12:26 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-16 11:12:29 [main] INFO : Entering Line Description: Testing 2
+2026-02-16 11:12:30 [main] INFO : Entering Line Quantity: 2
+2026-02-16 11:12:30 [main] INFO : Entering Line Unit Price: 370
+2026-02-16 11:12:38 [main] INFO : Extended Amount: 740,00
+2026-02-16 11:12:46 [main] INFO : Selecting Complete and Review Option
+2026-02-16 11:12:52 [main] INFO : Clicking on Post to ledger
+2026-02-16 11:13:01 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-16 11:13:01 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-16 11:13:12 [main] INFO : Validating the Accounting Lines
+2026-02-16 11:13:22 [main] INFO : Transaction Confirmation Message: Transaction 105000 has been saved.
+2026-02-16 11:13:22 [main] INFO : Extracted Transaction Number: 105000
+2026-02-16 11:13:27 [main] INFO : Navigating to Acoount Receivables
+2026-02-16 11:13:30 [main] INFO : Click on Create Receipt
+2026-02-16 11:13:32 [main] INFO : Filling the Details in Receipt Page
+2026-02-16 11:13:33 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-16 11:13:38 [main] INFO : Entering Amount: 370
+2026-02-16 11:13:39 [main] INFO : Selecting Bank Name: Well Forgo Bank
+2026-02-16 11:14:14 [main] INFO : Selecting Bank branch: WFG HOUSTON
+2026-02-16 11:14:18 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-16 11:14:21 [main] INFO : Click on Submit Apply Manually
+2026-02-16 11:14:28 [main] INFO : Click on Application tab under Receipt Details Section
+2026-02-16 11:14:29 [main] INFO : Click on Add open Receivables
+2026-02-16 11:14:34 [main] INFO : Entering Transaction Customer Name: CR GE
+2026-02-16 11:14:37 [main] INFO : Scrolled to the last visible record in the table.
+2026-02-16 11:14:52 [main] INFO : Selecting receipt :105000
+2026-02-16 11:14:57 [main] INFO : Clicking on Post to ledger
+2026-02-16 11:15:14 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-16 11:15:14 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-16 11:15:25 [main] INFO : Validating the Accounting Lines
+2026-02-16 11:15:34 [main] INFO : Navigating to Billing page from Receivables
+2026-02-16 11:15:42 [main] INFO : Inside Manage Transactions Page
+2026-02-16 11:15:51 [main] INFO : Entering Business Unit: CRITICAL RIVER BU
+2026-02-16 11:15:59 [main] INFO : Entering Transaction Source name: CR MANUAL TRANSACTION
+2026-02-16 11:16:10 [main] INFO : Clicking on View Balance Details
+2026-02-16 11:16:26 [main] INFO : Transaction Confirmation Message: Transaction 105000 has been saved.
+2026-02-16 11:16:27 [main] INFO : Extracted Transaction Number: 105000
+2026-02-16 11:16:27 [main] INFO : Expected :105000 and Actual :105000
+2026-02-16 11:16:27 [main] INFO : Expected :105000 and Actual :105000 both are same
+2026-02-16 11:16:30 [main] INFO : Testing Ended
+2026-02-16 11:16:30 [main] INFO : ***********
+2026-02-16 11:19:49 [main] INFO : Launching Chrome Browser
+2026-02-16 11:19:49 [main] INFO : Report Name :OracleBankStatement_Assets_Report.html
+2026-02-16 11:19:54 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-16 11:19:59 [main] INFO : Logged in to Oracle Application
+2026-02-16 11:19:59 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-16 11:19:59 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-16 11:20:07 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-16 11:20:16 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-16 11:20:16 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-16 11:20:16 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-16 11:20:17 [main] INFO : Filling Bank Statement Details
+2026-02-16 11:20:17 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-16 11:20:19 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-16 11:20:19 [main] INFO : Successfully selected the start date.
+2026-02-16 11:20:19 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-16 11:20:20 [main] INFO : Successfully selected the Enddate.
+2026-02-16 11:20:21 [main] INFO : Entering Statement Id: Test_StatementID_014
+2026-02-16 11:20:24 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-16 11:20:24 [main] INFO : Successfully selected the Booking date.
+2026-02-16 11:20:26 [main] INFO : Select Credit from the drop down under Flow Indicator
+2026-02-16 11:20:27 [main] INFO : Entering Statement Amount: 370
+2026-02-16 11:20:31 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-16 11:20:31 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-16 11:20:34 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-16 11:20:34 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-16 11:20:39 [main] INFO : Selecting Bank Account
+2026-02-16 11:20:51 [main] INFO : Select Week to date from the drop down under Statement End Date
+2026-02-16 11:20:53 [main] INFO : Statement ID: Test_StatementID_014 | Actual Reconciliation Status: Incomplete
+2026-02-16 11:20:53 [main] INFO : Verification Passed: Status is Incomplete
+2026-02-16 11:21:03 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-16 11:21:11 [main] INFO : Filling Details in Reconcilation Tab
+2026-02-16 11:21:12 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-16 11:21:14 [main] INFO : Clicked on From Date picker icon.
+2026-02-16 11:21:14 [main] INFO : Successfully selected the From date.
+2026-02-16 11:21:15 [main] INFO : Clicked on TO Date picker icon.
+2026-02-16 11:21:15 [main] INFO : Successfully selected the TO date.
+2026-02-16 11:21:18 [main] INFO : Retrieved text for ID Test_StatementID_014: 370,00
+2026-02-16 11:21:18 [main] INFO : Checked the box for Statement ID: Test_StatementID_014
+2026-02-16 11:21:19 [main] INFO : Retrieved Reference ID 370,00: TestReceipt_16_01
+2026-02-16 11:21:21 [main] INFO : Selected transaction checkbox for amount: 370,00
+2026-02-16 11:21:27 [main] INFO : Clicking Reconciled Tab
+2026-02-16 11:21:34 [main] INFO : Clicking Search in Reconciled Tab
+2026-02-16 11:21:37 [main] INFO : Receipt found: TestReceipt_16_01
+2026-02-16 11:21:44 [main] INFO : Testing Ended
+2026-02-16 11:21:44 [main] INFO : ***********

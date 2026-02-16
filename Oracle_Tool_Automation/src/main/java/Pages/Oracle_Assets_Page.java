@@ -67,10 +67,10 @@ public class Oracle_Assets_Page extends WaitsManager {
 	By submitBtn_inAsset = By.xpath("//a[@accesskey='m']");
 	By readyToPost = By.xpath("//span[text()='Ready to Post']");
 	By postAllBtn = By.xpath("//button[text()='Post All']");
-	
-	// inquire asset 
+	By refreshBtn = By.xpath("//img[@alt='Refresh']");
+
+	// inquire asset
 	By inquireAssetNum = By.xpath("//input[@aria-label=' Asset Number']");
-	
 
 	public void clickSearchAssetCategoryBtn() throws Exception {
 		try {
@@ -315,7 +315,7 @@ public class Oracle_Assets_Page extends WaitsManager {
 				driver.findElement(country_inLocationPopup).sendKeys(countryVal);
 				waitTime(driver);
 //				driver.findElement(country_inLocationPopup).click();
-//				driver.findElement(selectCountry).click();
+				driver.findElement(selectCountry).click();
 				waitTime(driver);
 				grep.infoTest("Selecting Country Value: " + countryVal);
 				logger.info("Selecting  Country: " + countryVal);
@@ -520,6 +520,11 @@ public class Oracle_Assets_Page extends WaitsManager {
 	public void clickPostAllBtn_inAsset() {
 		waitForElementToBeClickable(postAllBtn, 30);
 		driver.findElement(postAllBtn).click();
+	}
+
+	public void clickRefreshBtn_inAsset() {
+		waitForElementToBeClickable(refreshBtn, 30);
+		driver.findElement(refreshBtn).click();
 	}
 
 }

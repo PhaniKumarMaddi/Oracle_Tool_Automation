@@ -17912,3 +17912,78 @@ Session ID: 9ac3ec87f00f651496002a07bf158494
 2026-02-13 18:09:37 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
 2026-02-13 18:09:42 [main] INFO : Testing Ended
 2026-02-13 18:09:42 [main] INFO : ***********
+2026-02-16 08:49:15 [main] INFO : Launching Chrome Browser
+2026-02-16 08:49:15 [main] INFO : Report Name :OraclePage.html
+2026-02-16 08:49:16 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-16 08:49:27 [main] INFO : Logged in to Oracle Application
+2026-02-16 08:49:30 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-16 08:49:30 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-16 08:49:41 [main] INFO : Navigating to Assets
+2026-02-16 08:49:48 [main] INFO : Selecting Major Category
+2026-02-16 08:49:53 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-16 08:49:56 [main] INFO : Selecting Minor Category
+2026-02-16 08:50:00 [main] INFO : Entering Value for Major: CR PC
+2026-02-16 08:50:08 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-16 08:50:09 [main] INFO : Entering Asset Cost: 10000
+2026-02-16 08:50:10 [main] INFO : Selecting Asset Expenses Account
+2026-02-16 08:50:29 [main] INFO : Selecting Company Value: 101
+2026-02-16 08:50:31 [main] INFO : Selecting Department Value: 202
+2026-02-16 08:50:33 [main] INFO : Selecting Future Value: 000
+2026-02-16 08:50:37 [main] INFO : Selecting Asset Location
+2026-02-16 08:50:40 [main] INFO : Selecting  Country: US
+2026-02-16 08:50:46 [main] INFO : Selecting  State Value: CA
+2026-02-16 08:50:49 [main] ERROR: Test Failed :stale element reference: stale element not found in the current frame
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a58897c4ef26327e72ada4bb28596174, clickElement {id=f.011F7F08B3A2B7C0ECD3E2100E88E4AE.d.C660934B65696BFC6183A13E4BBFC434.e.469}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51895}, goog:processID: 21216, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51895/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a58897c4ef26327e72ada4bb28596174)] -> xpath: //div[@title='San Francisco']]
+Session ID: a58897c4ef26327e72ada4bb28596174
+2026-02-16 08:50:52 [main] INFO : Selecting  Building Value: 595 Market St
+2026-02-16 08:50:55 [main] INFO : Selecting Future Value: 88
+2026-02-16 08:51:06 [main] INFO : Entering Asset Number: Testing Asset 5
+2026-02-16 08:51:16 [main] INFO : Asset Saved Confirmation Message: Your changes were saved.
+2026-02-16 08:51:16 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-16 08:51:16 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-16 08:51:22 [main] INFO : Testing Ended
+2026-02-16 08:51:22 [main] INFO : ***********
+2026-02-16 09:30:25 [main] INFO : Launching Chrome Browser
+2026-02-16 09:30:25 [main] INFO : Report Name :OraclePage.html
+2026-02-16 09:30:31 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-16 09:30:35 [main] INFO : Logged in to Oracle Application
+2026-02-16 09:30:38 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-16 09:30:38 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-16 09:30:46 [main] INFO : Navigating to Assets
+2026-02-16 09:30:53 [main] INFO : Selecting Major Category
+2026-02-16 09:30:58 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-16 09:31:00 [main] INFO : Selecting Minor Category
+2026-02-16 09:31:04 [main] INFO : Entering Value for Major: CR PC
+2026-02-16 09:31:11 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-16 09:31:12 [main] INFO : Entering Asset Cost: 10000
+2026-02-16 09:31:12 [main] INFO : Selecting Asset Expenses Account
+2026-02-16 09:31:28 [main] INFO : Selecting Company Value: 101
+2026-02-16 09:31:30 [main] INFO : Selecting Department Value: 202
+2026-02-16 09:31:31 [main] INFO : Selecting Future Value: 000
+2026-02-16 09:31:35 [main] INFO : Selecting Asset Location
+2026-02-16 09:31:38 [main] ERROR: Test Failed :element click intercepted: Element <input id="_FOpt1:_FOr1:0:_FONSr2:0:_FOTRaT:0:dynam1:0:kf3SPOP_query:value00::content" name="_FOpt1:_FOr1:0:_FONSr2:0:_FOTRaT:0:dynam1:0:kf3SPOP_query:value00" class="xpj" size="30" type="text" role="combobox" aria-describedby="_FOpt1:_FOr1:0:_FONSr2:0:_FOTRaT:0:dynam1:0:kf3SPOP_query:value00::desc" aria-expanded="true" aria-live="off" aria-label="Country" aria-autocomplete="list" aria-owns="_FOpt1:_FOr1:0:_FONSr2:0:_FOTRaT:0:dynam1:0:kf3SPOP_query:value00::_fndSuggestPopup" autocomplete="off" title="US"> is not clickable at point (1037, 360). Other element would receive the click: <div class="AFBlockingGlassPane" style="position: absolute; left: 0px; top: 0px; z-index: 2147483647; visibility: visible; user-select: none; opacity: 0; height: 799px; width: 1921px; cursor: auto;"></div>
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [70b15554254dc341c5012d0d257d7109, clickElement {id=f.2D00A278CD3294E7FEBCDCB61CB22E13.d.22BCFFEF96B789EB9944C70F2C007415.e.409}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50497}, goog:processID: 1524, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50497/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (70b15554254dc341c5012d0d257d7109)] -> xpath: //label[text()='Country']/preceding-sibling::input]
+Session ID: 70b15554254dc341c5012d0d257d7109
+2026-02-16 09:31:42 [main] INFO : Selecting  State Value: CA
+2026-02-16 09:31:45 [main] INFO : Selecting  City Value: San Francisco
+2026-02-16 09:31:47 [main] INFO : Selecting  Building Value: 595 Market St
+2026-02-16 09:31:50 [main] INFO : Selecting Future Value: 88
+2026-02-16 09:31:59 [main] INFO : Entering Asset Number: Testing Asset 7
+2026-02-16 09:32:07 [main] INFO : Asset Saved Confirmation Message: Your changes were saved.
+2026-02-16 09:32:08 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-16 09:32:08 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-16 09:32:10 [main] INFO : Testing Ended
+2026-02-16 09:32:10 [main] INFO : ***********

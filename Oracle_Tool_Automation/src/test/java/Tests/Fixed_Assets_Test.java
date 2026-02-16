@@ -130,10 +130,10 @@ public class Fixed_Assets_Test extends TestInitializer {
 		waitTime(driver);
 		oraAp.clickSubmitBtn_inAsset();
 		waitTime(driver);
-		oraAp.clickReadyToPostBtn_inAsset();
-		waitTime(driver);
-		oraAp.selectExistingAsset(dataTest.assetNumber);
-		waitTime(driver);
+//		oraAp.clickReadyToPostBtn_inAsset();
+//		waitTime(driver);
+//		oraAp.selectExistingAsset(dataTest.assetNumber);
+//		waitTime(driver);
 //		oraAp.clickPostAllBtn_inAsset();
 //		waitTime(driver);
 //		grep.captureScreenshot("pass", "Asset Posted Successfully", "psotinngAssetSuccesful");

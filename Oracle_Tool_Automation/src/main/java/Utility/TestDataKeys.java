@@ -83,7 +83,7 @@ public class TestDataKeys {
 	public String createReceiptTask = "Create Receipt";
 	public String manageTransactionTask = "Manage Transactions";
 	public String createTransactionTask = "Create Transaction";
-	public String receiptNum = "TestReceipt_16_01"; // change values
+	public String receiptNum = "TestReceipt_16_03"; // change values
 	public String bankName = "Well Forgo Bank";
 	public String bankBranch = "WFG HOUSTON";
 	public String submitApplyManually = "Submit and Apply Manually";
@@ -104,14 +104,14 @@ public class TestDataKeys {
 	public String createBankStmtBtn = "Create Bank Statement";
 	public String manageBankStmtBtn = "Manage Bank Statements";
 	public String manualReconciliationBtn = "Manual Reconciliation";
-	public String statementId = "Test_StatementID_014"; // change value
+	public String statementId = "Test_StatementID_017"; // change value
 	public String transactionCode_101 = "101";
 	public String debitFlowIndicator = "Debit";
 	public String creditFlowIndicator = "Credit";
 	public String statement_EndDate = "Week to date";
 
 	// Journal
-	public String journalName = "Test_16_01"; // change values
+	public String journalName = "Test_16_03"; // change values
 	public String journalCategory = "Manual";
 	public String journalLine_company = "101";
 	public String journalLine_dept = "000";
@@ -135,6 +135,6 @@ public class TestDataKeys {
 	public String assetBuilding = "595 Market St";
 	public String assetFuture = "88";
 	
-	public String assetNumber="Testing Asset 16"; // Change value
+	public String assetNumber="Testing Asset 18"; // Change value
 	public String assetKey="0000";
 }

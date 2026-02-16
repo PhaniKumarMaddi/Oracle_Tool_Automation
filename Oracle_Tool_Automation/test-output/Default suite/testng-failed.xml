@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.Fixed_Assets_Test">
+      <class name="Tests.AccountReceivables_Test">
         <methods>
           <include name="tearDown"/>
+          <include name="oracle_CreateTransaction_Test"/>
           <include name="setup"/>
-          <include name="oracle_Fixed_Assets_Test"/>
         </methods>
-      </class> <!-- Tests.Fixed_Assets_Test -->
+      </class> <!-- Tests.AccountReceivables_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

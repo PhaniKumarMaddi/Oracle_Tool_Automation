@@ -347,12 +347,13 @@ public class Oracle_Assets_Page extends WaitsManager {
 			boolean elementExists = !driver.findElements(country_inLocationPopup).isEmpty();
 			if (elementExists) {
 				driver.findElement(country_inLocationPopup).sendKeys(countryVal);
-				waitTime2(driver);
+				waitTime(driver);
 				driver.findElement(country_inLocationPopup).click();
 				driver.findElement(selectCountry).click();
 				waitTime(driver);
 				grep.infoTest("Selecting Country Value: " + countryVal);
-				logger.info("Selecting  Country Value: " + countryVal);
+				logger.info("Selecting  Country: " + countryVal);
+				waitTime2(driver);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -360,7 +361,7 @@ public class Oracle_Assets_Page extends WaitsManager {
 			logger.error("Test Failed :" + e.getMessage());
 		}
 	}
-
+	
 	public void enterState_inLocationPopup(String stateVal) throws Exception {
 		try {
 			By selectState = By.xpath("//div[@title='" + stateVal + "']");

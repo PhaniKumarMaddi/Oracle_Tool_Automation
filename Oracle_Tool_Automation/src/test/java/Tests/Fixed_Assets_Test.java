@@ -4,7 +4,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
-import Pages.Oracle_AccountingAtGlance;
 import Pages.Oracle_Assets_Page;
 import Pages.Oracle_HomePage;
 import Pages.TestInitializer;

@@ -17987,3 +17987,239 @@ Session ID: 70b15554254dc341c5012d0d257d7109
 2026-02-16 09:32:08 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
 2026-02-16 09:32:10 [main] INFO : Testing Ended
 2026-02-16 09:32:10 [main] INFO : ***********
+2026-02-16 10:18:34 [main] INFO : Launching Chrome Browser
+2026-02-16 10:18:34 [main] INFO : Report Name :OraclePage.html
+2026-02-16 10:18:42 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-16 10:18:45 [main] INFO : Logged in to Oracle Application
+2026-02-16 10:18:47 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-16 10:18:47 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-16 10:18:56 [main] INFO : Navigating to Assets
+2026-02-16 10:19:01 [main] INFO : Selecting Major Category
+2026-02-16 10:19:06 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-16 10:19:08 [main] INFO : Selecting Minor Category
+2026-02-16 10:19:12 [main] INFO : Entering Value for Major: CR PC
+2026-02-16 10:19:19 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-16 10:19:20 [main] INFO : Entering Asset Cost: 10000
+2026-02-16 10:19:21 [main] INFO : Selecting Asset Expenses Account
+2026-02-16 10:20:23 [main] INFO : Selecting Asset Location
+2026-02-16 10:20:30 [main] INFO : Selecting  Country: US
+2026-02-16 10:20:35 [main] INFO : Selecting  State Value: CA
+2026-02-16 10:20:38 [main] INFO : Selecting  City Value: San Francisco
+2026-02-16 10:20:41 [main] INFO : Selecting  Building Value: 595 Market St
+2026-02-16 10:20:44 [main] INFO : Selecting Future Value: 88
+2026-02-16 10:20:46 [main] INFO : Testing Ended
+2026-02-16 10:20:46 [main] INFO : ***********
+2026-02-16 10:30:40 [main] INFO : Launching Chrome Browser
+2026-02-16 10:30:41 [main] INFO : Report Name :OraclePage.html
+2026-02-16 10:30:46 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-16 10:30:50 [main] INFO : Logged in to Oracle Application
+2026-02-16 10:30:52 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-16 10:30:52 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-16 10:31:00 [main] INFO : Navigating to Assets
+2026-02-16 10:31:05 [main] INFO : Selecting Major Category
+2026-02-16 10:31:09 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-16 10:31:12 [main] INFO : Selecting Minor Category
+2026-02-16 10:31:15 [main] INFO : Entering Value for Major: CR PC
+2026-02-16 10:31:22 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-16 10:31:23 [main] INFO : Entering Asset Cost: 10000
+2026-02-16 10:31:24 [main] INFO : Selecting Asset Expenses Account
+2026-02-16 10:31:29 [main] INFO : Selecting Company Value: 101
+2026-02-16 10:31:31 [main] INFO : Selecting Department Value: 202
+2026-02-16 10:31:33 [main] INFO : Selecting Future Value: 000
+2026-02-16 10:31:36 [main] INFO : Selecting Asset Location
+2026-02-16 10:32:09 [main] ERROR: Test Failed :no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title='US']"}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3cb4dc3b2698684f0e2bc5c2af34e916, findElement {using=xpath, value=//div[@title='US']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49882}, goog:processID: 10552, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49882/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3cb4dc3b2698684f0e2bc5c2af34e916
+2026-02-16 10:32:12 [main] INFO : Selecting  State Value: CA
+2026-02-16 10:32:15 [main] INFO : Selecting  City Value: San Francisco
+2026-02-16 10:32:18 [main] INFO : Selecting  Building Value: 595 Market St
+2026-02-16 10:32:20 [main] INFO : Selecting Future Value: 88
+2026-02-16 10:32:29 [main] INFO : Entering Asset Number: Testing Asset 8
+2026-02-16 10:32:38 [main] INFO : Asset Saved Confirmation Message: Your changes were saved.
+2026-02-16 10:32:38 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-16 10:32:38 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-16 10:32:40 [main] INFO : Testing Ended
+2026-02-16 10:32:40 [main] INFO : ***********
+2026-02-16 10:43:57 [main] INFO : Launching Chrome Browser
+2026-02-16 10:43:57 [main] INFO : Report Name :OraclePage.html
+2026-02-16 10:44:03 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-16 10:44:07 [main] INFO : Logged in to Oracle Application
+2026-02-16 10:44:08 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-16 10:44:08 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-16 10:44:16 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-16 10:44:28 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-16 10:44:28 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-16 10:44:28 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-16 10:44:29 [main] INFO : Filling Bank Statement Details
+2026-02-16 10:44:30 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-16 10:44:31 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-16 10:44:31 [main] INFO : Successfully selected the start date.
+2026-02-16 10:44:32 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-16 10:44:32 [main] INFO : Successfully selected the Enddate.
+2026-02-16 10:44:33 [main] INFO : Entering Statement Id: Test_StatementID_012
+2026-02-16 10:44:37 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-16 10:44:37 [main] INFO : Successfully selected the Booking date.
+2026-02-16 10:44:40 [main] INFO : Select Debit from the drop down under Flow Indicator
+2026-02-16 10:44:40 [main] INFO : Entering Statement Amount: 370
+2026-02-16 10:44:45 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-16 10:44:45 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-16 10:44:48 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-16 10:44:48 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-16 10:44:52 [main] INFO : Selecting Bank Account
+2026-02-16 10:45:24 [main] ERROR: Bank Account dropdown button Not Available 
+2026-02-16 10:47:13 [main] INFO : Launching Chrome Browser
+2026-02-16 10:47:14 [main] INFO : Report Name :OraclePage.html
+2026-02-16 10:47:20 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-16 10:47:24 [main] INFO : Logged in to Oracle Application
+2026-02-16 10:47:25 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-16 10:47:25 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-16 10:47:32 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-16 10:47:42 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-16 10:47:42 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-16 10:47:42 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-16 10:47:43 [main] INFO : Filling Bank Statement Details
+2026-02-16 10:47:43 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-16 10:47:45 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-16 10:47:45 [main] INFO : Successfully selected the start date.
+2026-02-16 10:47:46 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-16 10:47:46 [main] INFO : Successfully selected the Enddate.
+2026-02-16 10:47:47 [main] INFO : Entering Statement Id: Test_StatementID_013
+2026-02-16 10:47:51 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-16 10:47:51 [main] INFO : Successfully selected the Booking date.
+2026-02-16 10:47:54 [main] INFO : Select Debit from the drop down under Flow Indicator
+2026-02-16 10:47:54 [main] INFO : Entering Statement Amount: 370
+2026-02-16 10:47:58 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-16 10:47:58 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-16 10:48:01 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-16 10:48:01 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-16 10:48:07 [main] INFO : Selecting Bank Account
+2026-02-16 10:48:19 [main] INFO : Select Week to date from the drop down under Statement End Date
+2026-02-16 10:48:21 [main] INFO : Statement ID: Test_StatementID_013 | Actual Reconciliation Status: Incomplete
+2026-02-16 10:48:21 [main] INFO : Verification Passed: Status is Incomplete
+2026-02-16 10:48:24 [main] INFO : Testing Ended
+2026-02-16 10:48:24 [main] INFO : ***********
+2026-02-16 10:49:08 [main] INFO : Launching Chrome Browser
+2026-02-16 10:49:08 [main] INFO : Report Name :OraclePage.html
+2026-02-16 10:49:19 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-16 10:49:23 [main] INFO : Logged in to Oracle Application
+2026-02-16 10:49:25 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-16 10:49:25 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-16 10:49:34 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-16 10:49:46 [main] INFO : Filling Details in Reconcilation Tab
+2026-02-16 10:49:47 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-16 10:49:48 [main] INFO : Clicked on From Date picker icon.
+2026-02-16 10:49:48 [main] INFO : Successfully selected the From date.
+2026-02-16 10:49:49 [main] INFO : Clicked on TO Date picker icon.
+2026-02-16 10:49:49 [main] INFO : Successfully selected the TO date.
+2026-02-16 10:49:53 [main] INFO : Retrieved text for ID Test_StatementID_013: -370,00
+2026-02-16 10:49:54 [main] INFO : Checked the box for Statement ID: Test_StatementID_013
+2026-02-16 10:51:10 [main] INFO : Launching Chrome Browser
+2026-02-16 10:51:10 [main] INFO : Report Name :OraclePage.html
+2026-02-16 10:51:20 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-16 10:51:24 [main] INFO : Logged in to Oracle Application
+2026-02-16 10:51:25 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-16 10:51:25 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-16 10:51:29 [main] INFO : Clicking on Home icon
+2026-02-16 10:51:34 [main] INFO : Selecting Quick Action: Create Transaction
+2026-02-16 10:51:35 [main] INFO : Navigating Create Transaction
+2026-02-16 10:51:36 [main] INFO : Filling Details in Create Transaction Page
+2026-02-16 10:51:40 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-16 10:51:44 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-16 10:51:55 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-16 10:52:00 [main] INFO : Entering Name: CR GE
+2026-02-16 10:52:06 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-16 10:52:09 [main] INFO : Entering Line Description: Testing 2
+2026-02-16 10:52:10 [main] INFO : Entering Line Quantity: 2
+2026-02-16 10:52:10 [main] INFO : Entering Line Unit Price: 370
+2026-02-16 10:52:18 [main] INFO : Extended Amount: 740,00
+2026-02-16 10:52:21 [main] INFO : Selecting Complete and Review Option
+2026-02-16 10:52:27 [main] INFO : Clicking on Post to ledger
+2026-02-16 10:53:00 [main] INFO : Launching Chrome Browser
+2026-02-16 10:53:01 [main] INFO : Report Name :OraclePage.html
+2026-02-16 10:53:06 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-16 10:53:10 [main] INFO : Logged in to Oracle Application
+2026-02-16 10:53:11 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-16 10:53:11 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-16 10:53:14 [main] INFO : Clicking on Home icon
+2026-02-16 10:53:19 [main] INFO : Selecting Quick Action: Create Transaction
+2026-02-16 10:53:20 [main] INFO : Navigating Create Transaction
+2026-02-16 10:53:22 [main] INFO : Filling Details in Create Transaction Page
+2026-02-16 10:53:23 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-16 10:53:26 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-16 10:53:31 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-16 10:53:37 [main] INFO : Entering Name: CR GE
+2026-02-16 10:53:43 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-16 10:53:45 [main] INFO : Entering Line Description: Testing 2
+2026-02-16 10:53:46 [main] INFO : Entering Line Quantity: 2
+2026-02-16 10:53:47 [main] INFO : Entering Line Unit Price: 370
+2026-02-16 10:53:54 [main] INFO : Extended Amount: 740,00
+2026-02-16 10:53:58 [main] INFO : Selecting Complete and Review Option
+2026-02-16 10:54:03 [main] INFO : Clicking on Post to ledger
+2026-02-16 10:54:30 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-16 10:54:30 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-16 10:54:41 [main] INFO : Validating the Accounting Lines
+2026-02-16 10:54:51 [main] INFO : Transaction Confirmation Message: Transaction 104001 has been saved.
+2026-02-16 10:54:51 [main] INFO : Extracted Transaction Number: 104001
+2026-02-16 10:54:57 [main] INFO : Navigating to Acoount Receivables
+2026-02-16 10:55:01 [main] INFO : Click on Create Receipt
+2026-02-16 10:55:03 [main] INFO : Filling the Details in Receipt Page
+2026-02-16 10:55:03 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-16 10:55:09 [main] INFO : Entering Amount: 370
+2026-02-16 10:55:10 [main] INFO : Selecting Bank Name: Well Forgo Bank
+2026-02-16 10:55:44 [main] INFO : Selecting Bank branch: WFG HOUSTON
+2026-02-16 10:55:49 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-16 10:55:52 [main] INFO : Click on Submit Apply Manually
+2026-02-16 10:55:59 [main] INFO : Click on Application tab under Receipt Details Section
+2026-02-16 10:56:12 [main] INFO : Click on Add open Receivables
+2026-02-16 10:56:17 [main] INFO : Entering Transaction Customer Name: CR GE
+2026-02-16 10:56:20 [main] INFO : Scrolled to the last visible record in the table.
+2026-02-16 10:56:23 [main] INFO : Selecting receipt :104001
+2026-02-16 10:56:28 [main] INFO : Testing Ended
+2026-02-16 10:56:28 [main] INFO : ***********
+2026-02-16 11:02:07 [main] INFO : Launching Chrome Browser
+2026-02-16 11:02:07 [main] INFO : Report Name :OraclePage.html
+2026-02-16 11:02:17 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-16 11:02:21 [main] INFO : Logged in to Oracle Application
+2026-02-16 11:02:23 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-16 11:02:23 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-16 11:02:30 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-16 11:02:40 [main] INFO : Filling Details in Reconcilation Tab
+2026-02-16 11:02:42 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-16 11:02:43 [main] INFO : Clicked on From Date picker icon.
+2026-02-16 11:02:43 [main] INFO : Successfully selected the From date.
+2026-02-16 11:02:44 [main] INFO : Clicked on TO Date picker icon.
+2026-02-16 11:02:44 [main] INFO : Successfully selected the TO date.
+2026-02-16 11:02:47 [main] INFO : Retrieved text for ID Test_StatementID_013: -370,00
+2026-02-16 11:02:48 [main] INFO : Checked the box for Statement ID: Test_StatementID_013
+2026-02-16 11:03:18 [main] ERROR: Failed to retrieve Reference ID: -370,00 - Expected condition failed: waiting for presence of element located by: By.xpath: //a[contains(@id,'mrapplicationsTable2') and text()='-370,00']/ancestor::td[1]/preceding-sibling::td[2] (tried for 30 second(s) with 500 milliseconds interval)
+2026-02-16 11:03:50 [main] ERROR: Failed to retrieve text for Statement ID: -370,00 - Expected condition failed: waiting for presence of element located by: By.xpath: //a[contains(@id,'mrapplicationsTable2') and text()='-370,00']/ancestor::td[1]/preceding-sibling::td[3]/descendant::label (tried for 30 second(s) with 500 milliseconds interval)
+2026-02-16 11:04:22 [main] INFO : Testing Ended
+2026-02-16 11:04:22 [main] INFO : ***********
+2026-02-16 11:06:52 [main] INFO : Launching Chrome Browser
+2026-02-16 11:06:52 [main] INFO : Report Name :OraclePage.html
+2026-02-16 11:06:57 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-16 11:07:01 [main] INFO : Logged in to Oracle Application
+2026-02-16 11:07:02 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-16 11:07:02 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-16 11:07:10 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-16 11:07:18 [main] INFO : Filling Details in Reconcilation Tab
+2026-02-16 11:07:20 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-16 11:07:21 [main] INFO : Clicked on From Date picker icon.
+2026-02-16 11:07:21 [main] INFO : Successfully selected the From date.
+2026-02-16 11:07:22 [main] INFO : Clicked on TO Date picker icon.
+2026-02-16 11:07:22 [main] INFO : Successfully selected the TO date.
+2026-02-16 11:07:25 [main] INFO : Retrieved text for ID Test_StatementID_013: 370,00
+2026-02-16 11:07:25 [main] INFO : Checked the box for Statement ID: Test_StatementID_013
+2026-02-16 11:07:26 [main] INFO : Retrieved Reference ID 370,00: Test_001
+2026-02-16 11:07:28 [main] INFO : Selected transaction checkbox for amount: 370,00
+2026-02-16 11:07:34 [main] INFO : Clicking Reconciled Tab
+2026-02-16 11:07:41 [main] INFO : Clicking Search in Reconciled Tab
+2026-02-16 11:07:44 [main] INFO : Receipt found: Test_001
+2026-02-16 11:07:46 [main] INFO : Testing Ended
+2026-02-16 11:07:46 [main] INFO : ***********

@@ -104,7 +104,7 @@ public class TestDataKeys {
 	public String createBankStmtBtn = "Create Bank Statement";
 	public String manageBankStmtBtn = "Manage Bank Statements";
 	public String manualReconciliationBtn = "Manual Reconciliation";
-	public String statementId = "Test_StatementID_011"; // change value
+	public String statementId = "Test_StatementID_013"; // change value
 	public String transactionCode_101 = "101";
 	public String debitFlowIndicator = "Debit";
 	public String creditFlowIndicator = "Credit";
@@ -135,6 +135,6 @@ public class TestDataKeys {
 	public String assetBuilding = "595 Market St";
 	public String assetFuture = "88";
 	
-	public String assetNumber="Testing Asset 7"; // Change value
+	public String assetNumber="Testing Asset 9"; // Change value
 	public String assetKey="0000";
 }

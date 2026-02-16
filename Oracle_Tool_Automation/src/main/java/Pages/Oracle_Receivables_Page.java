@@ -291,9 +291,10 @@ public class Oracle_Receivables_Page extends WaitsManager {
 
 	public void clickCompleteAndCreateBtn_inTransactionPage(String selectOpt) throws Exception {
 
-		implWait(driver);
+//		implWait(driver);
 		By completReviewBtn = By.xpath("//td[text()='" + selectOpt + "']");
 
+		waitForElementToBeClickable(completeCreateAnother_DropdownBtn, 20);
 		driver.findElement(completeCreateAnother_DropdownBtn).click();
 		waitTime2(driver);
 		driver.findElement(completReviewBtn).click();

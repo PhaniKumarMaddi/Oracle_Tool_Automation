@@ -74,8 +74,8 @@ public class Create_BankStatement_Test extends TestInitializer {
 		oraBsp.clickSelectTransaction_FromList(dataTest.transactionCode_101);
 		waitTime(driver);
 		oraBsp.clickOk_inSelectTransactionPopup();
-		oraBsp.selectFlowIndicator(dataTest.debitFlowIndicator);
-//		oraBsp.selectFlowIndicator(dataTest.creditFlowIndicator);
+//		oraBsp.selectFlowIndicator(dataTest.debitFlowIndicator);
+		oraBsp.selectFlowIndicator(dataTest.creditFlowIndicator);
 		oraBsp.enterStatementLine_Amount(dataTest.unitPriceAmt);
 		waitTime(driver);
 		grep.captureScreenshot("pass", "After Filling Statement Line", "fillingStatementLine_InBankStatment");
@@ -100,7 +100,7 @@ public class Create_BankStatement_Test extends TestInitializer {
 		oraHome.click_Tasks_InPO();
 		waitTime(driver);
 		oraHome.selectTasks_InTaskPage(dataTest.manageBankStmtBtn);
-		waitTime(driver);
+		waitTime2(driver);
 		oraBsp.clickExpandSearchBtn();
 		waitTime(driver);
 		grep.infoTest("Selecting Bank Account");

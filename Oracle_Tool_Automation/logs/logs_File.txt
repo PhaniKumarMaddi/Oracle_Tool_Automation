@@ -19125,3 +19125,396 @@ Session ID: 06f9d7021786cd7fb945ef00edbaea67
 2026-02-16 15:28:56 [main] INFO : Sub Process completed successfully.
 2026-02-16 15:29:01 [main] INFO : Testing Ended
 2026-02-16 15:29:01 [main] INFO : ***********
+2026-02-17 09:33:33 [main] INFO : Launching Chrome Browser
+2026-02-17 09:33:34 [main] INFO : Report Name :OraclePage.html
+2026-02-17 09:33:43 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 09:33:47 [main] INFO : Logged in to Oracle Application
+2026-02-17 09:33:51 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 09:33:51 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 09:33:53 [main] INFO : Testing Ended
+2026-02-17 09:33:53 [main] INFO : ***********
+2026-02-17 09:37:01 [main] INFO : Launching Chrome Browser
+2026-02-17 09:37:01 [main] INFO : Report Name :OraclePage.html
+2026-02-17 09:37:08 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 09:37:13 [main] INFO : Logged in to Oracle Application
+2026-02-17 09:37:14 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 09:37:14 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 09:37:20 [main] INFO : Clicking on Home icon
+2026-02-17 09:37:46 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-02-17 09:37:46 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-02-17 09:37:48 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-02-17 09:37:48 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-02-17 09:37:51 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-02-17 09:37:51 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-02-17 09:39:21 [main] INFO : Launching Chrome Browser
+2026-02-17 09:39:22 [main] INFO : Report Name :OraclePage.html
+2026-02-17 09:39:30 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 09:39:35 [main] INFO : Logged in to Oracle Application
+2026-02-17 09:39:36 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 09:39:36 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 09:39:42 [main] INFO : Clicking on Home icon
+2026-02-17 09:39:57 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-02-17 09:39:57 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-02-17 09:39:58 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-02-17 09:39:58 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-02-17 09:40:01 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-02-17 09:40:01 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-02-17 09:40:04 [main] INFO : Entering Item Description: Mouse
+2026-02-17 09:47:28 [main] INFO : Launching Chrome Browser
+2026-02-17 09:47:29 [main] INFO : Report Name :OraclePage.html
+2026-02-17 09:47:35 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 09:47:40 [main] INFO : Logged in to Oracle Application
+2026-02-17 09:47:41 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 09:47:41 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 09:47:47 [main] INFO : Clicking on Home icon
+2026-02-17 09:48:00 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-02-17 09:48:00 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-02-17 09:48:00 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-02-17 09:48:00 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-02-17 09:48:03 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-02-17 09:48:03 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-02-17 09:48:07 [main] INFO : Entering Item Description: Mouse
+2026-02-17 09:48:11 [main] INFO : Selecting Category: CR.MISC
+2026-02-17 09:48:15 [main] INFO : Enter Quantity field: 3
+2026-02-17 09:48:18 [main] INFO : Enter Unit of Measure: Each
+2026-02-17 09:48:22 [main] INFO : Enter Price: 30
+2026-02-17 09:48:24 [main] INFO : Click Add to Cart Button
+2026-02-17 09:48:25 [main] INFO : Verify and Click on view cart Button
+2026-02-17 09:48:36 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-02-17 09:48:36 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-02-17 09:48:36 [main] INFO : Expected :Request added to cart and Actual :Request added to cart
+2026-02-17 09:48:36 [main] INFO : Expected :Request added to cart and Actual :Request added to cart both are same
+2026-02-17 09:48:44 [main] INFO : Cart Page Title retrieved: Cart
+2026-02-17 09:48:44 [main] INFO : Expected :Cart and Actual :Cart
+2026-02-17 09:48:44 [main] INFO : Expected :Cart and Actual :Cart both are same
+2026-02-17 09:48:52 [main] INFO : Cart Page Subtitle retrieved: Requisition CRREQ100064
+2026-02-17 09:48:53 [main] INFO : Item Description retrieved: Mouse
+2026-02-17 09:48:53 [main] INFO : Expected :Mouse and Actual :Mouse
+2026-02-17 09:48:53 [main] INFO : Expected :Mouse and Actual :Mouse both are same
+2026-02-17 09:48:53 [main] INFO : UOM retrieved: Each
+2026-02-17 09:48:53 [main] INFO : Expected :Each and Actual :Each
+2026-02-17 09:48:53 [main] INFO : Expected :Each and Actual :Each both are same
+2026-02-17 09:48:55 [main] INFO : Requisition Id retrieved: CRREQ100064
+2026-02-17 09:48:56 [main] INFO : Raw Price retrieved: 30
+2026-02-17 09:48:56 [main] INFO : Expected :30 and Actual :30
+2026-02-17 09:48:56 [main] INFO : Expected :30 and Actual :30 both are same
+2026-02-17 09:48:57 [main] INFO : Subtotal :90
+2026-02-17 09:48:57 [main] INFO : Tax :0
+2026-02-17 09:48:57 [main] INFO : Approval Amount: 90
+2026-02-17 09:48:57 [main] INFO : Validating Subtotal: 90
+2026-02-17 09:48:57 [main] INFO : Expected :90 and Actual :90
+2026-02-17 09:48:57 [main] INFO : Expected :90 and Actual :90 both are same
+2026-02-17 09:48:57 [main] INFO : Validating Approval Amount:  90
+2026-02-17 09:48:57 [main] INFO : Expected :90 and Actual :90
+2026-02-17 09:48:57 [main] INFO : Expected :90 and Actual :90 both are same
+2026-02-17 09:49:08 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-02-17 09:49:08 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-02-17 09:49:08 [main] INFO : Expected :Requisition submitted and Actual :Requisition submitted
+2026-02-17 09:49:08 [main] INFO : Expected :Requisition submitted and Actual :Requisition submitted both are same
+2026-02-17 09:49:09 [main] INFO : After Submitting Requisition: Requisition CRREQ100064 was submitted for approval.
+View requisition
+2026-02-17 09:49:12 [main] INFO : Expected :Pending approval and Actual :Pending approval
+2026-02-17 09:49:12 [main] INFO : Expected :Pending approval and Actual :Pending approval both are same
+2026-02-17 09:50:38 [main] INFO : Expected :Approved and Actual :Pending approval
+2026-02-17 09:50:38 [main] ERROR: Expected and Actual are not same Expected [Approved], but found [Pending approval]
+2026-02-17 09:50:39 [main] INFO : Navigating to Procurement Tab in homepage 
+2026-02-17 09:50:45 [main] INFO : Click on 'Process Reqisition' under Quick actions
+2026-02-17 09:50:46 [main] INFO : Selecting Quick Action: Process Requisitions
+2026-02-17 09:50:46 [main] INFO : Inside 'Process Reqisition' page
+2026-02-17 09:50:55 [main] INFO : Select CRITICAL RIVER BU from the drop down under Requisitioning BU
+2026-02-17 09:50:56 [main] INFO : Click Search Button
+2026-02-17 09:51:07 [main] INFO : Select the Requisition for which you have to create a Purchase Order
+2026-02-17 10:08:25 [main] INFO : Launching Chrome Browser
+2026-02-17 10:08:25 [main] INFO : Report Name :OraclePage.html
+2026-02-17 10:08:31 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 10:08:35 [main] INFO : Logged in to Oracle Application
+2026-02-17 10:08:40 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 10:08:40 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 10:08:46 [main] INFO : Navigating to Procurement Tab in homepage 
+2026-02-17 10:08:51 [main] INFO : Click on 'Purchase Orders' under Quick actions
+2026-02-17 10:08:52 [main] INFO : Selecting Quick Action: Purchase Orders
+2026-02-17 10:08:52 [main] INFO : Inside 'Purchase Orders' page
+2026-02-17 10:09:04 [main] INFO : Entering Supplier: CR Dell
+2026-02-17 10:09:36 [main] INFO : Entering Default Ship Location: CRITICAL RIVER LOCATION
+2026-02-17 10:09:58 [main] INFO : Entering Item in Line: CR1002
+2026-02-17 10:10:01 [main] INFO : Entering Quantity in Row Line: 2
+2026-02-17 10:10:03 [main] INFO : Entering Request Delivery Date: 04-01-2026
+2026-02-17 10:10:10 [main] INFO : Click on Actions and Validate
+2026-02-17 10:10:17 [main] INFO : Order Validation Confirmation Message Popup: 
+2026-02-17 10:10:18 [main] INFO : Expected :No errors or warnings were found. and Actual :
+2026-02-17 10:10:18 [main] ERROR: Expected and Actual are not same Expected [No errors or warnings were found.], but found []
+2026-02-17 10:17:21 [main] INFO : Launching Chrome Browser
+2026-02-17 10:17:21 [main] INFO : Report Name :OraclePage.html
+2026-02-17 10:17:26 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 10:17:31 [main] INFO : Logged in to Oracle Application
+2026-02-17 10:17:33 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 10:17:33 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 10:17:39 [main] INFO : Clicking on Home icon
+2026-02-17 10:17:51 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-02-17 10:17:51 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-02-17 10:17:51 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-02-17 10:17:51 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-02-17 10:17:54 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-02-17 10:17:54 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-02-17 10:17:57 [main] INFO : Entering Item Description: Mouse
+2026-02-17 10:18:02 [main] INFO : Selecting Category: CR.MISC
+2026-02-17 10:18:06 [main] INFO : Enter Quantity field: 3
+2026-02-17 10:18:09 [main] INFO : Enter Unit of Measure: Each
+2026-02-17 10:18:13 [main] INFO : Enter Price: 30
+2026-02-17 10:18:14 [main] INFO : Click Add to Cart Button
+2026-02-17 10:18:15 [main] INFO : Verify and Click on view cart Button
+2026-02-17 10:18:20 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-02-17 10:18:20 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-02-17 10:18:20 [main] INFO : Expected :Request added to cart and Actual :Request added to cart
+2026-02-17 10:18:20 [main] INFO : Expected :Request added to cart and Actual :Request added to cart both are same
+2026-02-17 10:18:26 [main] INFO : Cart Page Title retrieved: Cart
+2026-02-17 10:18:26 [main] INFO : Expected :Cart and Actual :Cart
+2026-02-17 10:18:26 [main] INFO : Expected :Cart and Actual :Cart both are same
+2026-02-17 10:18:28 [main] INFO : Cart Page Subtitle retrieved: Requisition CRREQ100065
+2026-02-17 10:18:30 [main] INFO : Item Description retrieved: 
+2026-02-17 10:18:30 [main] INFO : Expected :Mouse and Actual :
+2026-02-17 10:18:30 [main] ERROR: Expected and Actual are not same Expected [Mouse], but found []
+2026-02-17 10:18:31 [main] INFO : UOM retrieved: Each
+2026-02-17 10:18:31 [main] INFO : Expected :Each and Actual :Each
+2026-02-17 10:18:31 [main] INFO : Expected :Each and Actual :Each both are same
+2026-02-17 10:18:33 [main] INFO : Requisition Id retrieved: CRREQ100065
+2026-02-17 10:18:34 [main] INFO : Raw Price retrieved: 30
+2026-02-17 10:18:34 [main] INFO : Expected :30 and Actual :30
+2026-02-17 10:18:34 [main] INFO : Expected :30 and Actual :30 both are same
+2026-02-17 10:18:34 [main] INFO : Subtotal :90
+2026-02-17 10:18:34 [main] INFO : Tax :0
+2026-02-17 10:18:34 [main] INFO : Approval Amount: 90
+2026-02-17 10:18:34 [main] INFO : Validating Subtotal: 90
+2026-02-17 10:18:34 [main] INFO : Expected :90 and Actual :90
+2026-02-17 10:18:34 [main] INFO : Expected :90 and Actual :90 both are same
+2026-02-17 10:18:34 [main] INFO : Validating Approval Amount:  90
+2026-02-17 10:18:34 [main] INFO : Expected :90 and Actual :90
+2026-02-17 10:18:34 [main] INFO : Expected :90 and Actual :90 both are same
+2026-02-17 10:18:46 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-02-17 10:18:46 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-02-17 10:18:47 [main] INFO : Expected :Requisition submitted and Actual :Requisition submitted
+2026-02-17 10:18:47 [main] INFO : Expected :Requisition submitted and Actual :Requisition submitted both are same
+2026-02-17 10:18:48 [main] INFO : After Submitting Requisition: Requisition CRREQ100065 was submitted for approval.
+View requisition
+2026-02-17 10:18:51 [main] INFO : Expected :Pending approval and Actual :Pending approval
+2026-02-17 10:18:51 [main] INFO : Expected :Pending approval and Actual :Pending approval both are same
+2026-02-17 10:20:03 [main] INFO : Expected :Approved and Actual :Approved
+2026-02-17 10:20:03 [main] INFO : Expected :Approved and Actual :Approved both are same
+2026-02-17 10:20:04 [main] INFO : Navigating to Procurement Tab in homepage 
+2026-02-17 10:20:10 [main] INFO : Click on 'Process Reqisition' under Quick actions
+2026-02-17 10:20:11 [main] INFO : Selecting Quick Action: Process Requisitions
+2026-02-17 10:20:11 [main] INFO : Inside 'Process Reqisition' page
+2026-02-17 10:20:12 [main] INFO : Select CRITICAL RIVER BU from the drop down under Requisitioning BU
+2026-02-17 10:20:13 [main] INFO : Click Search Button
+2026-02-17 10:20:24 [main] INFO : Select the Requisition for which you have to create a Purchase Order
+2026-02-17 10:20:27 [main] INFO : Click on 'Add to Document Builder'
+2026-02-17 10:20:30 [main] INFO : Validate requisition id from Document builder popup
+2026-02-17 10:20:32 [main] INFO : Expected :CRREQ100065 and Actual :CRREQ100065
+2026-02-17 10:20:32 [main] INFO : Expected :CRREQ100065 and Actual :CRREQ100065 both are same
+2026-02-17 10:20:33 [main] INFO : Entering Supplier: CR Dell
+2026-02-17 10:20:41 [main] INFO : Click on Create
+2026-02-17 10:21:06 [main] INFO : Purchase Order Created Confirmation Message Popup: The document (Purchase Order) CRPO500102-2025 was created.
+2026-02-17 10:21:08 [main] INFO : Get Requisition Id after creating Purchase Order: CRREQ100065
+2026-02-17 10:21:08 [main] INFO : Expected :CRREQ100065 and Actual :CRREQ100065
+2026-02-17 10:21:08 [main] INFO : Expected :CRREQ100065 and Actual :CRREQ100065 both are same
+2026-02-17 10:21:14 [main] INFO : Click on Actions and Validate
+2026-02-17 10:21:47 [main] INFO : Order Validation Confirmation Message Popup: 
+2026-02-17 10:21:47 [main] INFO : Expected :No errors or warnings were found. and Actual :
+2026-02-17 10:21:47 [main] ERROR: Expected and Actual are not same Expected [No errors or warnings were found.], but found []
+2026-02-17 10:21:57 [main] INFO : Order Submitted for Approval Message Popup: The document (Purchase Order) CRPO500102-2025 was submitted for approval.
+2026-02-17 10:22:06 [main] INFO : Retrieving Order Id :CRPO500102-2025
+2026-02-17 10:22:16 [main] INFO : To check summary details click on Tasks
+2026-02-17 10:22:44 [main] INFO : Verify the Status is Open means PO is approved
+2026-02-17 10:23:56 [main] INFO : Select Receipts from the drop down under Procurement BU
+2026-02-17 10:23:59 [main] INFO : Entering Purchase order id: CRPO500102-2025
+2026-02-17 10:24:04 [main] INFO : Select the Purchase Order for which we need to create receipt
+2026-02-17 10:24:34 [main] ERROR: Test Failed :no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='CRPO500102-2025']/ancestor::span/parent::td/following-sibling::td[1]"}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d5768a6c850a42ceaa2e921091f40934, findElement {value=//a[text()='CRPO500102-2025']/ancestor::span/parent::td/following-sibling::td[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51591}, goog:processID: 208, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51591/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d5768a6c850a42ceaa2e921091f40934
+2026-02-17 10:24:34 [main] INFO : Click on Receive
+2026-02-17 10:24:36 [main] INFO : Click on Show Receipt quantity to know quantity details
+2026-02-17 10:25:07 [main] INFO : Testing Ended
+2026-02-17 10:25:07 [main] INFO : ***********
+2026-02-17 10:28:58 [main] INFO : Launching Chrome Browser
+2026-02-17 10:28:58 [main] INFO : Report Name :OraclePage.html
+2026-02-17 10:29:03 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 10:29:07 [main] INFO : Logged in to Oracle Application
+2026-02-17 10:29:09 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 10:29:09 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 10:29:13 [main] INFO : Clicking on Home icon
+2026-02-17 10:29:28 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement
+2026-02-17 10:29:28 [main] INFO : Expected :Self Service Procurement and Actual :Self Service Procurement both are same
+2026-02-17 10:29:29 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions
+2026-02-17 10:29:29 [main] INFO : Expected :My recent requisitions and Actual :My recent requisitions both are same
+2026-02-17 10:29:31 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request
+2026-02-17 10:29:31 [main] INFO : Expected :Create Noncatalog Request and Actual :Create Noncatalog Request both are same
+2026-02-17 10:29:35 [main] INFO : Entering Item Description: Mouse
+2026-02-17 10:29:40 [main] INFO : Selecting Category: CR.MISC
+2026-02-17 10:29:43 [main] INFO : Enter Quantity field: 3
+2026-02-17 10:29:47 [main] INFO : Enter Unit of Measure: Each
+2026-02-17 10:29:51 [main] INFO : Enter Price: 30
+2026-02-17 10:29:53 [main] INFO : Click Add to Cart Button
+2026-02-17 10:29:54 [main] INFO : Verify and Click on view cart Button
+2026-02-17 10:29:55 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-02-17 10:29:55 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-02-17 10:29:55 [main] INFO : Expected :Request added to cart and Actual :Request added to cart
+2026-02-17 10:29:55 [main] INFO : Expected :Request added to cart and Actual :Request added to cart both are same
+2026-02-17 10:30:01 [main] INFO : Cart Page Title retrieved: Cart
+2026-02-17 10:30:01 [main] INFO : Expected :Cart and Actual :Cart
+2026-02-17 10:30:01 [main] INFO : Expected :Cart and Actual :Cart both are same
+2026-02-17 10:30:03 [main] INFO : Cart Page Subtitle retrieved: Requisition CRREQ100066
+2026-02-17 10:30:03 [main] INFO : Item Description retrieved: 
+2026-02-17 10:30:03 [main] INFO : Expected :Mouse and Actual :
+2026-02-17 10:30:03 [main] ERROR: Expected and Actual are not same Expected [Mouse], but found []
+2026-02-17 10:30:04 [main] INFO : UOM retrieved: Each
+2026-02-17 10:30:04 [main] INFO : Expected :Each and Actual :Each
+2026-02-17 10:30:04 [main] INFO : Expected :Each and Actual :Each both are same
+2026-02-17 10:30:06 [main] INFO : Requisition Id retrieved: CRREQ100066
+2026-02-17 10:30:07 [main] INFO : Raw Price retrieved: 30
+2026-02-17 10:30:07 [main] INFO : Expected :30 and Actual :30
+2026-02-17 10:30:07 [main] INFO : Expected :30 and Actual :30 both are same
+2026-02-17 10:30:08 [main] INFO : Subtotal :90
+2026-02-17 10:30:08 [main] INFO : Tax :0
+2026-02-17 10:30:08 [main] INFO : Approval Amount: 90
+2026-02-17 10:30:08 [main] INFO : Validating Subtotal: 90
+2026-02-17 10:30:08 [main] INFO : Expected :90 and Actual :90
+2026-02-17 10:30:08 [main] INFO : Expected :90 and Actual :90 both are same
+2026-02-17 10:30:08 [main] INFO : Validating Approval Amount:  90
+2026-02-17 10:30:08 [main] INFO : Expected :90 and Actual :90
+2026-02-17 10:30:08 [main] INFO : Expected :90 and Actual :90 both are same
+2026-02-17 10:30:14 [main] INFO : Expected :Confirmation and Actual :Confirmation
+2026-02-17 10:30:14 [main] INFO : Expected :Confirmation and Actual :Confirmation both are same
+2026-02-17 10:30:15 [main] INFO : Expected :Requisition submitted and Actual :Requisition submitted
+2026-02-17 10:30:15 [main] INFO : Expected :Requisition submitted and Actual :Requisition submitted both are same
+2026-02-17 10:30:16 [main] INFO : After Submitting Requisition: Requisition CRREQ100066 was submitted for approval.
+View requisition
+2026-02-17 10:30:19 [main] INFO : Expected :Pending approval and Actual :Pending approval
+2026-02-17 10:30:19 [main] INFO : Expected :Pending approval and Actual :Pending approval both are same
+2026-02-17 10:31:59 [main] INFO : Expected :Approved and Actual :Approved
+2026-02-17 10:31:59 [main] INFO : Expected :Approved and Actual :Approved both are same
+2026-02-17 10:32:00 [main] INFO : Navigating to Procurement Tab in homepage 
+2026-02-17 10:32:06 [main] INFO : Click on 'Process Reqisition' under Quick actions
+2026-02-17 10:32:07 [main] INFO : Selecting Quick Action: Process Requisitions
+2026-02-17 10:32:07 [main] INFO : Inside 'Process Reqisition' page
+2026-02-17 10:32:09 [main] INFO : Select CRITICAL RIVER BU from the drop down under Requisitioning BU
+2026-02-17 10:32:10 [main] INFO : Click Search Button
+2026-02-17 10:32:21 [main] INFO : Select the Requisition for which you have to create a Purchase Order
+2026-02-17 10:32:24 [main] INFO : Click on 'Add to Document Builder'
+2026-02-17 10:32:28 [main] INFO : Validate requisition id from Document builder popup
+2026-02-17 10:32:28 [main] INFO : Expected :CRREQ100066 and Actual :CRREQ100066
+2026-02-17 10:32:28 [main] INFO : Expected :CRREQ100066 and Actual :CRREQ100066 both are same
+2026-02-17 10:32:29 [main] INFO : Entering Supplier: CR Dell
+2026-02-17 10:32:37 [main] INFO : Click on Create
+2026-02-17 10:32:49 [main] INFO : Purchase Order Created Confirmation Message Popup: The document (Purchase Order) CRPO500103-2025 was created.
+2026-02-17 10:32:52 [main] INFO : Get Requisition Id after creating Purchase Order: CRREQ100066
+2026-02-17 10:32:52 [main] INFO : Expected :CRREQ100066 and Actual :CRREQ100066
+2026-02-17 10:32:52 [main] INFO : Expected :CRREQ100066 and Actual :CRREQ100066 both are same
+2026-02-17 10:32:57 [main] INFO : Click on Actions and Validate
+2026-02-17 10:33:05 [main] INFO : Order Validation Confirmation Message Popup: No errors or warnings were found.
+2026-02-17 10:33:05 [main] INFO : Expected :No errors or warnings were found. and Actual :No errors or warnings were found.
+2026-02-17 10:33:05 [main] INFO : Expected :No errors or warnings were found. and Actual :No errors or warnings were found. both are same
+2026-02-17 10:33:13 [main] INFO : Order Submitted for Approval Message Popup: The document (Purchase Order) CRPO500103-2025 was submitted for approval.
+2026-02-17 10:33:22 [main] INFO : Retrieving Order Id :CRPO500103-2025
+2026-02-17 10:33:32 [main] INFO : To check summary details click on Tasks
+2026-02-17 10:33:59 [main] INFO : Verify the Status is Open means PO is approved
+2026-02-17 10:34:00 [main] INFO : Current status for CRPO500103-2025 is Open
+2026-02-17 10:34:18 [main] INFO : Select Receipts from the drop down under Procurement BU
+2026-02-17 10:34:21 [main] INFO : Entering Purchase order id: CRPO500103-2025
+2026-02-17 10:34:25 [main] INFO : Select the Purchase Order for which we need to create receipt
+2026-02-17 10:34:25 [main] INFO : Click on Receive
+2026-02-17 10:34:28 [main] INFO : Click on Show Receipt quantity to know quantity details
+2026-02-17 10:34:34 [main] INFO : Click on 'Create Receipt' from right side menu
+2026-02-17 10:34:38 [main] INFO : Click on 'submit' at the top to generate receipt
+2026-02-17 10:34:45 [main] INFO : Receipt Submitted Confirmation popup: Receipt 51 was created. Number of lines: 1.
+2026-02-17 10:34:49 [main] INFO : Click on 'Done' at the top to generate receipt
+2026-02-17 10:34:56 [main] INFO : Entering Purchase order id: CRPO500103-2025
+2026-02-17 10:34:58 [main] INFO : Select the Purchase Order for which we need to create receipt
+2026-02-17 10:34:59 [main] INFO : Click on Put Away
+2026-02-17 10:35:01 [main] INFO : Click on 'submit' at the top to generate  put away
+2026-02-17 10:35:04 [main] INFO : Receipt Submitted Confirmation popup: The put away transaction was created.
+2026-02-17 10:35:15 [main] INFO : Navigating to Purchase requisitio page to verify status
+2026-02-17 10:35:23 [main] INFO : Expected :Delivered and Actual :Delivered
+2026-02-17 10:35:23 [main] INFO : Expected :Delivered and Actual :Delivered both are same
+2026-02-17 10:35:31 [main] INFO : Verify Requisition State as Delivered
+2026-02-17 10:35:36 [main] INFO : Testing Ended
+2026-02-17 10:35:36 [main] INFO : ***********
+2026-02-17 10:35:50 [main] INFO : Launching Chrome Browser
+2026-02-17 10:35:50 [main] INFO : Report Name :OraclePage.html
+2026-02-17 10:35:55 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 10:36:00 [main] INFO : Logged in to Oracle Application
+2026-02-17 10:36:01 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 10:36:01 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 10:36:06 [main] INFO : Navigating to Procurement Tab in homepage 
+2026-02-17 10:36:10 [main] INFO : Click on 'Purchase Orders' under Quick actions
+2026-02-17 10:36:11 [main] INFO : Selecting Quick Action: Purchase Orders
+2026-02-17 10:36:11 [main] INFO : Inside 'Purchase Orders' page
+2026-02-17 10:36:17 [main] INFO : Entering Supplier: CR Dell
+2026-02-17 10:36:25 [main] INFO : Entering Default Ship Location: CRITICAL RIVER LOCATION
+2026-02-17 10:36:31 [main] INFO : Entering Item in Line: CR1002
+2026-02-17 10:36:35 [main] INFO : Entering Quantity in Row Line: 2
+2026-02-17 10:36:36 [main] INFO : Entering Request Delivery Date: 04-01-2026
+2026-02-17 10:36:43 [main] INFO : Click on Actions and Validate
+2026-02-17 10:36:51 [main] INFO : Order Validation Confirmation Message Popup: 
+2026-02-17 10:36:51 [main] INFO : Expected :No errors or warnings were found. and Actual :
+2026-02-17 10:36:51 [main] ERROR: Expected and Actual are not same Expected [No errors or warnings were found.], but found []
+2026-02-17 10:37:00 [main] INFO : Order Submitted for Approval Message Popup: The document (Purchase Order) CRPO500104-2025 was submitted for approval.
+2026-02-17 10:37:09 [main] INFO : Retrieving Order Id :CRPO500104-2025
+2026-02-17 10:37:19 [main] INFO : To check summary details click on Tasks
+2026-02-17 10:37:47 [main] INFO : Verify the Status is Open means PO is approved
+2026-02-17 10:37:48 [main] INFO : Current status for CRPO500104-2025 is Open
+2026-02-17 10:38:22 [main] INFO : Testing Ended
+2026-02-17 10:38:22 [main] INFO : ***********
+2026-02-17 10:40:32 [main] INFO : Launching Chrome Browser
+2026-02-17 10:40:32 [main] INFO : Report Name :OraclePage.html
+2026-02-17 10:40:37 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 10:40:42 [main] INFO : Logged in to Oracle Application
+2026-02-17 10:40:47 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 10:40:47 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 10:40:54 [main] INFO : Navigating to Procurement Tab in homepage 
+2026-02-17 10:40:59 [main] INFO : Click on 'Purchase Orders' under Quick actions
+2026-02-17 10:41:00 [main] INFO : Selecting Quick Action: Purchase Orders
+2026-02-17 10:41:00 [main] INFO : Inside 'Purchase Orders' page
+2026-02-17 10:41:09 [main] INFO : Entering Supplier: CR Dell
+2026-02-17 10:41:35 [main] INFO : Entering Default Ship Location: CRITICAL RIVER LOCATION
+2026-02-17 10:41:50 [main] INFO : Entering Item in Line: CR1002
+2026-02-17 10:41:53 [main] INFO : Entering Quantity in Row Line: 2
+2026-02-17 10:41:55 [main] INFO : Entering Request Delivery Date: 04-01-2026
+2026-02-17 10:42:02 [main] INFO : Click on Actions and Validate
+2026-02-17 10:42:09 [main] INFO : Order Validation Confirmation Message Popup: 
+2026-02-17 10:42:10 [main] INFO : Expected :No errors or warnings were found. and Actual :
+2026-02-17 10:42:10 [main] ERROR: Expected and Actual are not same Expected [No errors or warnings were found.], but found []
+2026-02-17 10:42:29 [main] INFO : Order Submitted for Approval Message Popup: The document (Purchase Order) CRPO500105-2025 was submitted for approval.
+2026-02-17 10:42:38 [main] INFO : Retrieving Order Id :CRPO500105-2025
+2026-02-17 10:42:48 [main] INFO : To check summary details click on Tasks
+2026-02-17 10:43:16 [main] INFO : Verify the Status is Open means PO is approved
+2026-02-17 10:43:17 [main] INFO : Current status for CRPO500105-2025 is Open
+2026-02-17 10:43:36 [main] INFO : Select Receipts from the drop down under Procurement BU
+2026-02-17 10:43:39 [main] INFO : Entering Purchase order id: CRPO500105-2025
+2026-02-17 10:43:44 [main] INFO : Select the Purchase Order for which we need to create receipt
+2026-02-17 10:43:44 [main] INFO : Click on Receive
+2026-02-17 10:43:46 [main] INFO : Click on Show Receipt quantity to know quantity details
+2026-02-17 10:43:54 [main] INFO : Click on 'Create Receipt' from right side menu
+2026-02-17 10:43:58 [main] INFO : Click on 'submit' at the top to generate receipt
+2026-02-17 10:44:08 [main] INFO : Receipt Submitted Confirmation popup: Receipt 52 was created. Number of lines: 1.
+2026-02-17 10:44:13 [main] INFO : Click on 'Done' at the top to generate receipt
+2026-02-17 10:44:20 [main] INFO : Entering Purchase order id: CRPO500105-2025
+2026-02-17 10:44:22 [main] INFO : Select the Purchase Order for which we need to create receipt
+2026-02-17 10:44:22 [main] INFO : Click on Put Away
+2026-02-17 10:44:24 [main] INFO : Click on 'Sub Inventory' and select the CR STORE option
+2026-02-17 10:44:25 [main] INFO : Selecting Sub Inventory: CRSTORE
+2026-02-17 10:44:27 [main] INFO : Click on 'submit' at the top to generate  put away
+2026-02-17 10:44:31 [main] INFO : Receipt Submitted Confirmation popup: The put away transaction was created.
+2026-02-17 10:44:37 [main] INFO : Navigating to Procurement Tab in homepage 
+2026-02-17 10:44:38 [main] INFO : Click on 'Purchase Orders' under Quick actions
+2026-02-17 10:44:39 [main] INFO : Selecting Quick Action: Purchase Orders
+2026-02-17 10:44:39 [main] INFO : Inside 'Purchase Orders' page
+2026-02-17 10:44:54 [main] INFO : Verify the Status is Open means PO is approved
+2026-02-17 10:44:54 [main] INFO : Current status for CRPO500105-2025 is Closed for Receiving
+2026-02-17 10:44:55 [main] INFO : Testing Ended
+2026-02-17 10:44:55 [main] INFO : ***********

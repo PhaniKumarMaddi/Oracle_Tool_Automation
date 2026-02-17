@@ -2,28 +2,45 @@ package Tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Pages.Oracle_HomePage;
 import Pages.TestInitializer;
+import Utility.ExcelDataProvider;
 import Utility.GenerateReports;
+import Utility.TestDataKeys;
 import Utility.ValidatingAssertions;
 
 public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 	private static final Logger logger = LogManager.getLogger(Oracle_ProcurementWithoutRequisition_Test.class);
 	GenerateReports grep = new GenerateReports();
 	ValidatingAssertions validAssert = new ValidatingAssertions();
+	TestDataKeys dataTest = new TestDataKeys();
 	String orderId;
 
-	@Test
-	public void oracle_ProcurementWithout_Requisition_Test() throws Exception {
+	@DataProvider(name = "ProcurementTest")
+	public Object[][] getData() {
+		// Get Excel Test Data passing Excel File Name and Sheet Name
+		Object data[][] = ExcelDataProvider.testData("Oracle_TestData", "Procuremen_WithoutRequisition");
+		return data;
+	}
+
+//	@Test
+//	public void oracle_ProcurementWithout_Requisition_Test() throws Exception {
+	@Test(dataProvider = "ProcurementTest")
+	public void oracle_ProcurementWithout_Requisition_Test(String shipTo, String itemLineInPO, String quantityValue,
+			String dateValue, String monthValue, String yearValue) throws Exception {
+
 		waitTime(driver);
-		oracle_PurchaseOrderWithout_Requisition_Test();
+		oracle_PurchaseOrderWithout_Requisition_Test(shipTo, itemLineInPO, quantityValue, dateValue, monthValue,
+				yearValue);
 		create_Receipt_PurchaseOrder_WithoutRequisition_Test();
 		oracle_PutAwayReceipt_WithoutRequisition_Test();
 	}
 
-	public void oracle_PurchaseOrderWithout_Requisition_Test() throws Exception {
+	public void oracle_PurchaseOrderWithout_Requisition_Test(String shipToVal, String itemLineInPOVal,
+			String quantityVal, String dateVal, String monthVal, String yearVal) throws Exception {
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 
 		waitTime(driver);
@@ -37,7 +54,7 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 		grep.infoTest("Navigating to Procurement Tab in homepage ");
 		waitTime(driver);
 
-		oraHome.selectTabWithNavigator("Procurement");
+		oraHome.selectTabWithNavigator(dataTest.procurementNavTab);
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Navigating to Procurement Tab in homepage ", "ProcurementTabInhomepage");
 		waitTime(driver);
@@ -45,7 +62,7 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 		logger.info("Click on 'Purchase Orders' under Quick actions");
 		grep.infoTest("Click on 'Purchase Orders' under Quick actions");
 
-		oraHome.selectFromQuickActions("Purchase Orders");
+		oraHome.selectFromQuickActions(dataTest.purchaseOrderAction);
 
 		logger.info("Inside 'Purchase Orders' page");
 		grep.infoTest("Inside 'Purchase Orders' Page");
@@ -53,20 +70,26 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 		grep.captureScreenshot("pass", "Inside 'Purchase Orders' page", "InsidePurchaseOrdersPage");
 		waitTime(driver);
 		oraHome.click_Tasks_InPO();
-		oraHome.selectTasks_InTaskPage("Create Order");
-		oraHome.searchAndSelectSupplier("CR Dell");
+		oraHome.selectTasks_InTaskPage(dataTest.createOrderTask);
+		oraHome.searchAndSelectSupplier(dataTest.selectDellSupplier);
 		waitTime(driver);
 		oraHome.clickCreateBtn_inProcessRequsitionPage();
 		waitTime2(driver);
-		oraHome.searchAndSelectDefaultShipToLocation("CRITICAL RIVER LOCATION");
+//		oraHome.searchAndSelectDefaultShipToLocation("CRITICAL RIVER LOCATION");
+		oraHome.searchAndSelectDefaultShipToLocation(shipToVal);
 		waitTime(driver);
 		oraHome.clickAddRowButton();
 		waitTime2(driver);
-		oraHome.searchAndSelectItemInPO_Line("CR1002");
+//		oraHome.searchAndSelectItemInPO_Line("CR1002");
+//		waitTime(driver);
+//		oraHome.enterQuantity_InRowLine("2");
+//		waitTime1(driver);
+//		oraHome.enterRequestDeliveryDate("03", "02", "2026");
+		oraHome.searchAndSelectItemInPO_Line(itemLineInPOVal);
 		waitTime(driver);
-		oraHome.enterQuantity_InRowLine("2");
+		oraHome.enterQuantity_InRowLine(quantityVal);
 		waitTime1(driver);
-		oraHome.enterRequestDeliveryDate("03", "02", "2026");
+		oraHome.enterRequestDeliveryDate(dateVal, monthVal, yearVal);
 		waitTime1(driver);
 		grep.captureScreenshot("pass", "Entering Valid Values in Row Line", "enterValuesInRowLine");
 		waitTime(driver);
@@ -113,7 +136,7 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 		waitTime(driver);
 		oraHome.click_Tasks_InPO();
 		waitTime10(driver);
-		oraHome.selectTasks_InTaskPage("Manage Orders");
+		oraHome.selectTasks_InTaskPage(dataTest.manageOrderTask);
 		waitTime2(driver);
 		grep.captureScreenshot("pass", "Inside Manage Orders Page Without Requisition",
 				"ManageOrdersPage_WithoutRequisition");
@@ -129,6 +152,7 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 		waitTime(driver);
 
 		oraHome.verifyPurchaseOrderState(orderId, 3, "Open");
+		waitTime2(driver);
 	}
 
 	public void create_Receipt_PurchaseOrder_WithoutRequisition_Test() throws Exception {
@@ -142,17 +166,17 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 		waitTime(driver);
 		oraHome.clickNavigator();
 		waitTime(driver);
-//		oraHome.selectNavigationTab("Supply Chain Execution");
+		oraHome.selectNavigationTab(dataTest.supplyChainNavTab);
 		grep.captureScreenshot("pass", "Expanding Supply Chain Execution in Navigator ",
 				"Expand_SupplyChainExecution_WithoutRequisition");
 		waitTime(driver);
-		oraHome.selectSubCategoryInNavigator("Inventory Management (Classic)");
+		oraHome.selectSubCategoryInNavigator(dataTest.inventoryMgmtCatg);
 		waitTime1(driver);
 		oraHome.click_Tasks_InPO();
 		waitTime(driver);
 		oraHome.selectShowTasksDropdown("Receipts");
 		waitTime(driver);
-		oraHome.selectTasks_InTaskPage("Receive Expected Shipments");
+		oraHome.selectTasks_InTaskPage(dataTest.receiveExptdShipmentsTask);
 		waitTime(driver);
 		oraHome.enterPurchaseOrderId(orderId);
 //		oraHome.enterPurchaseOrderId("CRPO500046-2025");
@@ -210,7 +234,7 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		oraHome.click_Tasks_InPO();
 		waitTime(driver);
-		oraHome.selectTasks_InTaskPage("Put Away Receipts");
+		oraHome.selectTasks_InTaskPage(dataTest.putAwayReceipsTask);
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Inside Put Away Receipts Page", "putAwayreceipts_Page_WithoutRequisition");
 		waitTime(driver);
@@ -221,8 +245,7 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 		grep.captureScreenshot("pass", "Search Order Id in put away page",
 				"SearchOrderId_InPutAwayPage_WithoutRequisition");
 
-		waitTime(driver);
-		waitTime(driver);
+		waitTime1(driver);
 		grep.infoTest("Select the Purchase Order for which we need to create receipt");
 		logger.info("Select the Purchase Order for which we need to create receipt");
 		waitTime(driver);
@@ -265,7 +288,7 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 		waitTime(driver);
 		oraHome.click_Tasks_InPO();
 		waitTime1(driver);
-		oraHome.selectTasks_InTaskPage("Manage Orders");
+		oraHome.selectTasks_InTaskPage(dataTest.manageOrderTask);
 		waitTime10(driver);
 		oraHome.clickSearchBtn();
 		waitTime2(driver);

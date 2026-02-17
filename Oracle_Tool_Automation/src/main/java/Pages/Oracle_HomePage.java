@@ -41,7 +41,7 @@ public class Oracle_HomePage extends WaitsManager {
 	By itemDescription = By
 			.xpath("//span[text()='Item Description']/ancestor::oj-label[1]/following-sibling::textarea");
 	By categoryField = By
-			.xpath("//span[text()='Category']/ancestor::oj-label/parent::div/input[contains(@id,'oj-selectsingle')]");
+			.xpath("//span[text()='Category']/ancestor::oj-label/parent::div/input[contains(@id,'categoryLOV|input')]");
 	By quantity = By.xpath(
 			"//div[@class='oj-form oj-enabled oj-form-cols oj-formlayout-form-across']/descendant::span[text()='Quantity']/ancestor::oj-label/following-sibling::input");
 	By uomField = By

@@ -2,43 +2,46 @@ package Tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Pages.Oracle_HomePage;
 import Pages.TestInitializer;
+import Utility.ExcelDataProvider;
 import Utility.GenerateReports;
+import Utility.TestDataKeys;
 import Utility.ValidatingAssertions;
 
 public class Oracle_ProcurementTest extends TestInitializer {
 	private static final Logger logger = LogManager.getLogger(Oracle_ProcurementTest.class);
 	GenerateReports grep = new GenerateReports();
 	ValidatingAssertions validAssert = new ValidatingAssertions();
+	TestDataKeys dataTest = new TestDataKeys();
 	String requisitionId;
 	String orderId;
 
-//	@DataProvider(name = "ProcurementTest")
-//	public Object[][] getData() {
-//		// Get Excel Test Data passing Excel File Name and Sheet Name
-//		Object data[][] = ExcelDataProvider.testData("Oracle_TestData", "Procurement");
-//		return data;
-//	}
+	@DataProvider(name = "ProcurementTest")
+	public Object[][] getData() {
+		// Get Excel Test Data passing Excel File Name and Sheet Name
+		Object data[][] = ExcelDataProvider.testData("Oracle_TestData", "Procurement");
+		return data;
+	}
 
-//	@Test(dataProvider = "ProcurementTest")
-//	public void oracle_Procurement_Test(String itemDesc, String categoryValue, String quantityValue, String uomValue,
-//			String priceValue) throws Exception {
-//		String quantity_Value = String.valueOf(quantityValue);
-//		String price_Value = String.valueOf(priceValue);
+//	@Test
+//	public void oracle_ProcurementWithRequisition_Test() throws Exception {
 
-	@Test
-	public void oracle_ProcurementWithRequisition_Test() throws Exception {
+	@Test(dataProvider = "ProcurementTest")
+	public void oracle_Procurement_Test(String itemDesc, String categoryValue, String quantityValue, String uomValue,
+			String priceValue) throws Exception {
 		waitTime(driver);
-		oracle_CreatePurchaseRequisition_Test();
+		oracle_CreatePurchaseRequisition_Test(itemDesc, categoryValue, quantityValue, uomValue, priceValue);
 		oracle_PurchaseOrder_Test();
 		create_Receipt_PurchaseOrder_Test();
 		oracle_PutAwayReceipt_Test();
 	}
 
-	public void oracle_CreatePurchaseRequisition_Test() throws Exception {
+	public void oracle_CreatePurchaseRequisition_Test(String itemDescVal, String categoryVal, String quantityVal,
+			String uomVal, String priceVal) throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		grep.testCreate("Verify Navigate to Procurement Page Functionality Test", "Navigate to Procurement Page");
@@ -52,10 +55,10 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime(driver);
 		oraHome.clickNavigator();
 		waitTime(driver);
-		oraHome.selectNavigationTab("Procurement");
+		oraHome.selectNavigationTab(dataTest.procurementNavTab);
 		grep.captureScreenshot("pass", "Expanding procurement in Navigator ", "Expand_ProcurementNavigation");
 		waitTime(driver);
-		oraHome.selectSubCategoryInNavigator("Purchase Requisitions (New)");
+		oraHome.selectSubCategoryInNavigator(dataTest.purchaseRequAction);
 		waitTime1(driver);
 		oraHome.validatePurchaseRequisitionsPage();
 		oraHome.validateMyRecentRequisitionsTitle();
@@ -74,20 +77,20 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		grep.captureScreenshot("pass", "Inside Non Catalog Request Page", "NonCatalogRequestPage");
 
 		waitTime(driver);
-		oraHome.enterItemDescription("Mouse");
-//		oraHome.enterItemDescription(itemDesc);
+//		oraHome.enterItemDescription("Mouse");
+		oraHome.enterItemDescription(itemDescVal);
 		waitTime(driver);
-		oraHome.enterCategoryField("CR.MISC");
-//		oraHome.enterCategoryField(categoryValue);
+//		oraHome.enterCategoryField("CR.MISC");
+		oraHome.enterCategoryField(categoryVal);
 		waitTime(driver);
-		oraHome.enterQuantity("3");
-//		oraHome.enterQuantity(quantity_Value);
+//		oraHome.enterQuantity("3");
+		oraHome.enterQuantity(quantityVal);
 		waitTime(driver);
-		oraHome.enterUnitOfMeasureField("Each");
-//		oraHome.enterUnitOfMeasureField(uomValue);
+//		oraHome.enterUnitOfMeasureField("Each");
+		oraHome.enterUnitOfMeasureField(uomVal);
 		waitTime(driver);
-		oraHome.enterPrice("30");
-//		oraHome.enterPrice(price_Value);
+//		oraHome.enterPrice("30");
+		oraHome.enterPrice(priceVal);
 		waitTime1(driver);
 
 		grep.captureScreenshot("pass", "Filling Non Catalog Request Page", "Filling_NonCatalogRequestPage");
@@ -150,7 +153,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		oraHome.validateSubmittedRequisitionState(requisitionId, "Pending approval");
 		grep.captureScreenshot("pass", "Submit Requisition in Pending state Test", "Pending_SubmitRequsition_Test");
 		waitTime2(driver);
-		oraHome.verifyRequisitionApproveState(requisitionId, 5, "Approved");
+		oraHome.verifyRequisitionApproveState(requisitionId, 10, "Approved");
 		waitTime(driver);
 
 		oraHome.validateSubmittedRequisitionState(requisitionId, "Approved");
@@ -169,7 +172,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 
 		logger.info("Navigating to Procurement Tab in homepage ");
 		grep.infoTest("Navigating to Procurement Tab in homepage ");
-		oraHome.selectTabWithNavigator("Procurement");
+		oraHome.selectTabWithNavigator(dataTest.procurementNavTab);
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Navigating to Procurement Tab in homepage ", "ProcurementTabInhomepage");
 		waitTime(driver);
@@ -177,13 +180,13 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		logger.info("Click on 'Process Reqisition' under Quick actions");
 		grep.infoTest("Click on 'Process Reqisition' under Quick actions");
 
-		oraHome.selectFromQuickActions("Process Requisitions");
+		oraHome.selectFromQuickActions(dataTest.processReqAction);
 
 		logger.info("Inside 'Process Reqisition' page");
 		grep.infoTest("Inside 'Process Reqisition' Page");
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Inside 'Process Reqisition' page", "InsideProcessReqisitionPage");
-		oraHome.selectRequisitionBU("CRITICAL RIVER BU");
+		oraHome.selectRequisitionBU(dataTest.selectBU);
 		oraHome.clearBuyer();
 		waitTime(driver);
 
@@ -212,7 +215,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		oraHome.getRequisitionIdFromPopup(requisitionId);
 //		oraHome.getRequisitionIdFromPopup("CRREQ100022");
 		waitTime(driver);
-		oraHome.searchAndSelectSupplier("CR Dell");
+		oraHome.searchAndSelectSupplier(dataTest.selectDellSupplier);
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Filling details in Document Builder Popup",
 				"AfterFilling_DocumentBuilderFields");
@@ -278,7 +281,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime(driver);
 		oraHome.click_Tasks_InPO();
 		waitTime10(driver);
-		oraHome.selectTasks_InTaskPage("Manage Orders");
+		oraHome.selectTasks_InTaskPage(dataTest.manageOrderTask);
 		waitTime2(driver);
 		grep.captureScreenshot("pass", "Inside Manage Orders Page", "ManageOrdersPage");
 		waitTime10(driver);
@@ -292,7 +295,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime(driver);
 
 //		oraHome.verifyPurchaseOrderState(orderId, 3);
-		oraHome.verifyPurchaseOrderState(orderId, 3,"Open");
+		oraHome.verifyPurchaseOrderState(orderId, 7, "Open");
 
 	}
 
@@ -307,16 +310,16 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime(driver);
 		oraHome.clickNavigator();
 		waitTime(driver);
-		oraHome.selectNavigationTab("Supply Chain Execution");
+		oraHome.selectNavigationTab(dataTest.supplyChainNavTab);
 		grep.captureScreenshot("pass", "Expanding Supply Chain Execution in Navigator ", "Expand_SupplyChainExecution");
 		waitTime(driver);
-		oraHome.selectSubCategoryInNavigator("Inventory Management (Classic)");
+		oraHome.selectSubCategoryInNavigator(dataTest.inventoryMgmtCatg);
 		waitTime1(driver);
 		oraHome.click_Tasks_InPO();
 		waitTime(driver);
 		oraHome.selectShowTasksDropdown("Receipts");
 		waitTime(driver);
-		oraHome.selectTasks_InTaskPage("Receive Expected Shipments");
+		oraHome.selectTasks_InTaskPage(dataTest.receiveExptdShipmentsTask);
 		waitTime(driver);
 		oraHome.enterPurchaseOrderId(orderId);
 //		oraHome.enterPurchaseOrderId("CRPO500020-2025");
@@ -373,7 +376,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		oraHome.click_Tasks_InPO();
 		waitTime(driver);
-		oraHome.selectTasks_InTaskPage("Put Away Receipts");
+		oraHome.selectTasks_InTaskPage(dataTest.putAwayReceipsTask);
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Inside Put Away Receipts Page", "putAwayreceipts_Page");
 		waitTime(driver);
@@ -413,7 +416,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime3(driver);
 //		oraHome.selectNavigationTab("Procurement");
 		waitTime3(driver);
-		oraHome.selectSubCategoryInNavigator("Purchase Requisitions (New)");
+		oraHome.selectSubCategoryInNavigator(dataTest.purchaseRequAction);
 		waitTime(driver);
 		grep.infoTest("Navigating to Purchase requisitio page to verify status");
 		logger.info("Navigating to Purchase requisitio page to verify status");

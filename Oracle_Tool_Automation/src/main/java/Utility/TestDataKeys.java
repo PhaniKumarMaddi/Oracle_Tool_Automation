@@ -3,6 +3,12 @@ package Utility;
 public class TestDataKeys {
 
 	// Navigation Tabs
+	public String procurementNavTab = "Procurement";
+	public String supplyChainNavTab = "Supply Chain Execution";
+	public String inventoryMgmtCatg = "Inventory Management (Classic)";
+	public String purchaseRequAction = "Purchase Requisitions (New)";
+	public String processReqAction = "Process Requisitions";
+	public String purchaseOrderAction = "Purchase Orders";
 	public String payableNavTab = "Payables";
 	public String invoiceCatg = "Invoices";
 	public String paymentsCatg = "Payments";
@@ -26,7 +32,13 @@ public class TestDataKeys {
 	public String manageInvoiceBtn = "Manage Invoices";
 	public String submitPaymentProcessRequestBtn = "Submit Payment Process Request";
 
+	public String manageOrderTask = "Manage Orders";
+	public String createOrderTask = "Create Order";
+	public String receiveExptdShipmentsTask = "Receive Expected Shipments";
+	public String putAwayReceipsTask = "Put Away Receipts";
 	public String selectBU = "CRITICAL RIVER BU";
+	public String selectDellSupplier = "CR Dell";
+	
 	public String selectLegal = "CRITICAL RIVER LE";
 	public String selectSupplier = "CR Applied Material";
 	public String invoiceAmt = "190";
@@ -47,7 +59,7 @@ public class TestDataKeys {
 	public String invoiceNum_withoutPO = "Test_WithoutPO_12_2"; // change values
 	// with po
 	public String po_invoiceNum = "Test_PO_12_03"; // change values
-	public String identifyPo = "CRPO500075"; // 72 - 75need po existing
+	public String identifyPo = "CRPO500075"; // 72 - 75 need po existing
 
 	// Batch payment
 	public String invoiceNum = "Test_Batch_06";
@@ -134,7 +146,7 @@ public class TestDataKeys {
 	public String assetCity = "San Francisco";
 	public String assetBuilding = "595 Market St";
 	public String assetFuture = "88";
-	
-	public String assetNumber="Testing Asset 18"; // Change value
-	public String assetKey="0000";
+
+	public String assetNumber = "Testing Asset 18"; // Change value
+	public String assetKey = "0000";
 }

@@ -51,7 +51,7 @@ public class TestDataKeys {
 
 	// Batch payment
 	public String invoiceNum = "Test_Batch_06";
-	public String batchPaymentNumber = "MP_ELE_Payment_12_2";
+	public String batchPaymentNumber = "MP_ELE_Payment_12"; // change values
 	public String batchTemplate = "WFB CHECK USD PPR";
 	public String pendingInstallReviewStatus = "Pending installments review";
 	public String pendingActionToComplete = "Pending action to complete information required";
@@ -77,7 +77,7 @@ public class TestDataKeys {
 	public String net_PaymentTerms = "Net 30";
 	public String receiptMethod = "CR RECEIPT";
 	public String quantity = "2";
-	public String unitPriceAmt = "370";
+	public String unitPriceAmt = "70";
 //	public String receiptPriceAmt = "270";
 	// receipt
 	public String createReceiptTask = "Create Receipt";

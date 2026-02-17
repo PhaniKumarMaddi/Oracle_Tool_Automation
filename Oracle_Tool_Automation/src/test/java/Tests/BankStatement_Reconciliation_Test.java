@@ -23,8 +23,7 @@ public class BankStatement_Reconciliation_Test extends TestInitializer {
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_BankStatement_Page oraBsp = new Oracle_BankStatement_Page();
 
-		waitTime(driver);
-
+		waitTime(driver); 
 		grep.testCreate("Verify Reconciliation Bank Statement Test", "Verify Reconciliation Bank Statement");
 		oraHome.clickHomeButton();
 		waitTime(driver);

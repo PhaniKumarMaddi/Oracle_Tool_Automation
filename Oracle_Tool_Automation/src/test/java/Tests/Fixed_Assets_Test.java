@@ -139,7 +139,10 @@ public class Fixed_Assets_Test extends TestInitializer {
 		grep.captureScreenshot("pass", "Asset Posted Successfully", "postinngAssetSuccesful");
 		waitTime5(driver);
 		oraAp.clickRefreshBtn_inAsset();
-		waitTime(driver);
+		
+//		waitTime(driver);
+//		grep.testCreate("Verify Assert in Inquire Asset Page Test", "Verify Assert in Inquire Asset Page");
+		waitTime2(driver);
 		oraHome.click_Tasks_InPO();
 		waitTime(driver);
 		oraHome.selectTasks_InTaskPage(dataTest.inquireAssetTask);

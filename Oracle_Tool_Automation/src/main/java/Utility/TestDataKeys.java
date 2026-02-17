@@ -140,7 +140,7 @@ public class TestDataKeys {
 	public String majorCategory = "CR COMPUTER";
 	public String minorCategory = "CR PC";
 	public String assetDescription = "Testing Asset";
-	public String assetCost = "500";
+	public String assetCost = "400";
 	public String assetCountry = "US";
 	public String assetState = "CA";
 	public String assetCity = "San Francisco";

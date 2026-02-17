@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="OracleBankStatement_AssetsTest(failed)">
+    <parameter name="FileName" value="OracleBankStatement_Assets_Report.html"/>
     <classes>
       <class name="Tests.Accounting_Journal_Test">
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="oracle_Accounting_Journal_Test"/>
+          <include name="oracle_Accounting_Journal_Test" invocation-numbers="0"/>
         </methods>
       </class> <!-- Tests.Accounting_Journal_Test -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- OracleBankStatement_AssetsTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

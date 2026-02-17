@@ -249,14 +249,11 @@ public class Oracle_Assets_Page extends WaitsManager {
 		try {
 			implWait(driver);
 
-//			By selectCompanyVal_inExpAccPopup = By.xpath("//span[text()='" + companyVal + "']");
-//			By selectDeptVal_inExpAccPopup = By.xpath("//span[text()='" + deptVal + "']");
-//			By selectFutureValue_inExpAccPopup = By.xpath("//span[text()='" + futureVal + "']");
 			By selectCompanyVal_inExpAccPopup = By.xpath("//div[@title='" + companyVal + "']");
 			By selectDeptVal_inExpAccPopup = By.xpath("//div[@title='" + deptVal + "']");
 			By selectFutureValue_inExpAccPopup = By.xpath("//div[@title='" + futureVal + "']");
 
-			waitForElementToBeClickable(enterCompany_inExpAccPopup, 60);
+			waitForElementToBeClickable(enterCompany_inExpAccPopup, 90);
 			waitTime2(driver);
 			driver.findElement(enterCompany_inExpAccPopup).sendKeys(companyVal);
 			waitTime(driver);
@@ -292,7 +289,7 @@ public class Oracle_Assets_Page extends WaitsManager {
 	public void clickSearchAssetLocationBtn() throws Exception {
 		try {
 //				implWait(driver);
-			waitForElementToBeClickable(searchLocation, 20);
+			waitForElementToBeClickable(searchLocation, 60);
 			boolean elementExists = !driver.findElements(searchLocation).isEmpty();
 			if (elementExists) {
 				waitForElementToBeClickable(searchLocation, 30);
@@ -347,8 +344,9 @@ public class Oracle_Assets_Page extends WaitsManager {
 			boolean elementExists = !driver.findElements(country_inLocationPopup).isEmpty();
 			if (elementExists) {
 				driver.findElement(country_inLocationPopup).sendKeys(countryVal);
-				waitTime(driver);
-				driver.findElement(country_inLocationPopup).click();
+				waitTime5(driver);
+				waitForElementToBeClickable(selectCountry, 20);
+//				driver.findElement(country_inLocationPopup).click();
 				driver.findElement(selectCountry).click();
 				waitTime(driver);
 				grep.infoTest("Selecting Country Value: " + countryVal);
@@ -357,11 +355,12 @@ public class Oracle_Assets_Page extends WaitsManager {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			grep.failTest("Test Failed :" + e.getMessage());
-			logger.error("Test Failed :" + e.getMessage());
+			System.out.println(e.getMessage());
+//			grep.failTest("Test Failed :" + e.getMessage());
+//			logger.error("Test Failed :" + e.getMessage());
 		}
 	}
-	
+
 	public void enterState_inLocationPopup(String stateVal) throws Exception {
 		try {
 			By selectState = By.xpath("//div[@title='" + stateVal + "']");

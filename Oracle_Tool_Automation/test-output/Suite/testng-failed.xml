@@ -8,7 +8,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="oracle_Accounting_Journal_Test"/>
+          <include name="oracle_Accounting_Journal_Test" invocation-numbers="0"/>
         </methods>
       </class> <!-- Tests.Accounting_Journal_Test -->
     </classes>

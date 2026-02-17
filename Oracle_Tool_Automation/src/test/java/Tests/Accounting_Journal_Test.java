@@ -193,7 +193,7 @@ public class Accounting_Journal_Test extends TestInitializer {
 		oraAag.clickOk_inPostConfirmBtn();
 		waitTime(driver);
 		oraHome.clickHomeButton();
-		waitTime(driver);
+		waitTime2(driver);
 
 		grep.testCreate("Approval of Journal Test", "Approval of Journal");
 		waitTime(driver);

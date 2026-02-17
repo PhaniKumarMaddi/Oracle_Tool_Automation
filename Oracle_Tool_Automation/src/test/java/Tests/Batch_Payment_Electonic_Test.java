@@ -2,12 +2,14 @@ package Tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Pages.Oracle_BatchPaymentPage;
 import Pages.Oracle_HomePage;
 import Pages.Oracle_InvoicePage;
 import Pages.TestInitializer;
+import Utility.ExcelDataProvider;
 import Utility.GenerateReports;
 import Utility.TestDataKeys;
 import Utility.ValidatingAssertions;
@@ -19,13 +21,24 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 	TestDataKeys dataTest = new TestDataKeys();
 	String retrieveDC_id;
 
-	@Test
-	public void oracle_Batch_Payment_Electronic() throws Exception {
+	@DataProvider(name = "BatchPaymentTest")
+	public Object[][] getData() {
+		// Get Excel Test Data passing Excel File Name and Sheet Name
+		Object data[][] = ExcelDataProvider.testData("Oracle_TestData", "Batch Payment");
+		return data;
+	}
+
+//	@Test
+//	public void oracle_Batch_Payment_Electronic() throws Exception {
+
+	@Test(dataProvider = "BatchPaymentTest")
+	public void oracle_Batch_Payment_Electronic(String invoiceNumVal, String batchPaymentNumVal) throws Exception {
+
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_BatchPaymentPage oraBpp = new Oracle_BatchPaymentPage();
 
-//		createInvoice();
+//		createInvoice(invoiceNumVal);
 		waitTime(driver);
 
 		grep.testCreate("Verify Batch Payment Invoice Test", "Verify Batch Payment Invoice");
@@ -38,7 +51,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		waitTime(driver);
 		oraHome.clickNavigator();
 		waitTime(driver);
-//		oraHome.selectNavigationTab(dataTest.payableNavTab);
+		oraHome.selectNavigationTab(dataTest.payableNavTab);
 		grep.captureScreenshot("pass", "Expanding Payables in Navigator ", "Expand_PayablesNavigation_BatchPayment");
 		waitTime(driver);
 		oraHome.selectSubCategoryInNavigator(dataTest.paymentsCatg);
@@ -56,7 +69,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		grep.infoTest("Entering Batch Number and Batch Template");
 		logger.info("Entering Batch Number and Batch Template");
 
-		oraBpp.enterInvoiceNumber_InSubmitPaymentProcessPage(dataTest.batchPaymentNumber);
+		oraBpp.enterInvoiceNumber_InSubmitPaymentProcessPage(batchPaymentNumVal);
 		waitTime3(driver);
 		// For electronic flow
 		oraBpp.selectBusinessUnitPaymentRadio();
@@ -97,7 +110,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		waitTime10(driver);
 		oraBpp.clickRefreshPaymentProcessBtn();
 		waitTime(driver);
-		oraBpp.waitForPaymentRecordAndStatus(dataTest.batchPaymentNumber, dataTest.pendingInstallReviewStatus, 2);
+		oraBpp.waitForPaymentRecordAndStatus(batchPaymentNumVal, dataTest.pendingInstallReviewStatus, 2);
 		waitTime2(driver);
 
 		grep.captureScreenshot("pass", "Inside review Installment Page", "InsideReviewInstallmentPage");
@@ -112,7 +125,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		oraBpp.clickRefreshPaymentProcessBtn();
 		waitTime10(driver);
 
-		oraBpp.waitForPaymentRecordAndStatus(dataTest.batchPaymentNumber, dataTest.pendingActionToComplete, 2);
+		oraBpp.waitForPaymentRecordAndStatus(batchPaymentNumVal, dataTest.pendingActionToComplete, 2);
 		waitTime2(driver);
 
 		grep.captureScreenshot("pass", "Inside Assign Proposed Payment Page", "InsideReviewProposedPaymentPage");
@@ -128,8 +141,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		oraBpp.clickRefreshPaymentProcessBtn();
 		waitTime10(driver);
 
-		oraBpp.waitForPaymentRecordAndStatus(dataTest.batchPaymentNumber, dataTest.pendingPropsedPaymentReviewStatus,
-				10);
+		oraBpp.waitForPaymentRecordAndStatus(batchPaymentNumVal, dataTest.pendingPropsedPaymentReviewStatus, 10);
 		waitTime2(driver);
 		grep.infoTest("Clicking on Resume Payment Process Button");
 		logger.info("Clicking on Resume Payment Process Button");
@@ -137,10 +149,10 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		oraBpp.clickResumePaymentButton();
 		waitTime(driver);
 
-		oraBpp.waitForPaymentStatusAndExpand(dataTest.batchPaymentNumber, dataTest.waitingForPaymentFileStatus, 2);
+		oraBpp.waitForPaymentStatusAndExpand(batchPaymentNumVal, dataTest.waitingForPaymentFileStatus, 2);
 
 		waitTime(driver);
-		String paymentReceiptNum = oraBpp.getPaymentProcessRequestNumber(dataTest.batchPaymentNumber);
+		String paymentReceiptNum = oraBpp.getPaymentProcessRequestNumber(batchPaymentNumVal);
 		waitTime2(driver);
 		grep.infoTest("Payment receipt Number :" + paymentReceiptNum);
 		logger.info("Payment receipt Number :" + paymentReceiptNum);
@@ -150,17 +162,17 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		waitTime(driver);
 		oraBpp.clickRecentlyCompletedRefreshButton();
 		waitTime5(driver);
-		oraBpp.verifyPaymentNumber_inCompletedTab(dataTest.batchPaymentNumber);
+		oraBpp.verifyPaymentNumber_inCompletedTab(batchPaymentNumVal);
 		waitTime2(driver);
 
 //		oraHome.clickHomeButton();
 		oraHome.clickHomeFromPutAway();
 		waitTime2(driver);
 
-//		oracle_Query_InvoicePayment();
+		oracle_Query_InvoicePayment(invoiceNumVal);
 	}
 
-	public void createInvoice() throws Exception {
+	public void createInvoice(String invNumVal) throws Exception {
 
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_InvoicePage oraInv = new Oracle_InvoicePage();
@@ -206,7 +218,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		waitTime2(driver);
 		oraInv.searchAndSelectSupplier(dataTest.selectSupplier);
 		waitTime(driver);
-		oraInv.enterInvoiceNumber(dataTest.invoiceNum);
+		oraInv.enterInvoiceNumber(invNumVal);
 		waitTime2(driver);
 //		oraInv.enterInvoiceAmount("USD", dataTest.invoiceAmt);
 		oraInv.enterInvoiceAmount(dataTest.invoiceAmt);
@@ -316,7 +328,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		grep.captureScreenshot("pass", "Validating the Accounting Lines Popup test", "accountingLinesPopup_withPO");
 
 		waitTime2(driver);
-		oraInv.validateAccountingLinesHeader(dataTest.invoiceNum);
+		oraInv.validateAccountingLinesHeader(invNumVal);
 		oraInv.clickDoneAccountingBtn();
 
 		waitTime2(driver);
@@ -347,7 +359,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 
 	}
 
-	public void oracle_Query_InvoicePayment() throws Exception {
+	public void oracle_Query_InvoicePayment(String invNumVal) throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_InvoicePage oraInv = new Oracle_InvoicePage();
@@ -382,7 +394,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		grep.captureScreenshot("pass", "Inside Manage Invoice Page", "ManageInvoicePage");
 		waitTime(driver);
 
-		oraInv.enterInvoiceNumber_InSelectAndAddPopup(dataTest.invoiceNum);
+		oraInv.enterInvoiceNumber_InSelectAndAddPopup(invNumVal);
 		waitTime2(driver);
 		oraHome.clickSearchBtn();
 		waitTime2(driver);
@@ -391,7 +403,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 
 		grep.infoTest("Clicking on Invoice Number");
 		logger.info("Clicking on Invoice Number");
-		oraInv.selectInvoiceNumber_inSearch(dataTest.invoiceNum);
+		oraInv.selectInvoiceNumber_inSearch(invNumVal);
 
 		waitTime(driver);
 		grep.infoTest("Clicking on Payments Tab");
@@ -403,7 +415,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 
 		oraInv.clickPaymentNumber_QueryInvoice();
 		waitTime(driver);
-		oraInv.validateInvoiceNum_InPaymentPopup(dataTest.invoiceNum);
+		oraInv.validateInvoiceNum_InPaymentPopup(invNumVal);
 		oraInv.validateInvoiceStatus_InPaymentPopup();
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Inside Payments Receipt Popup", "InsidePaymentsReceiptPopup_QueryInvoicePage");

@@ -2,11 +2,13 @@ package Tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Pages.Oracle_HomePage;
 import Pages.Oracle_InvoicePage;
 import Pages.TestInitializer;
+import Utility.ExcelDataProvider;
 import Utility.GenerateReports;
 import Utility.TestDataKeys;
 import Utility.ValidatingAssertions;
@@ -16,10 +18,16 @@ public class Query_Invoice_Payment_Test extends TestInitializer {
 	GenerateReports grep = new GenerateReports();
 	ValidatingAssertions validAssert = new ValidatingAssertions();
 	TestDataKeys dataTest = new TestDataKeys();
-	String retrieveDC_id;
 
-	@Test
-	public void oracle_Query_InvoicePayment() throws Exception {
+	@DataProvider(name = "QueryInvoiceTest")
+	public Object[][] getData() {
+		// Get Excel Test Data passing Excel File Name and Sheet Name
+		Object data[][] = ExcelDataProvider.testData("Oracle_TestData", "Query Invoice");
+		return data;
+	}
+
+	@Test(dataProvider = "QueryInvoiceTest")
+	public void oracle_Query_InvoicePayment(String invNumVal) throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_InvoicePage oraInv = new Oracle_InvoicePage();
@@ -56,7 +64,7 @@ public class Query_Invoice_Payment_Test extends TestInitializer {
 		grep.captureScreenshot("pass", "Inside Manage Invoice Page", "ManageInvoicePage");
 		waitTime(driver);
 
-		oraInv.enterInvoiceNumber_InSelectAndAddPopup(dataTest.po_invoiceNum);
+		oraInv.enterInvoiceNumber_InSelectAndAddPopup(invNumVal);
 		waitTime2(driver);
 		oraHome.clickSearchBtn();
 		waitTime2(driver);
@@ -65,7 +73,7 @@ public class Query_Invoice_Payment_Test extends TestInitializer {
 
 		grep.infoTest("Clicking on Invoice Number");
 		logger.info("Clicking on Invoice Number");
-		oraInv.selectInvoiceNumber_inSearch(dataTest.po_invoiceNum);
+		oraInv.selectInvoiceNumber_inSearch(invNumVal);
 
 		waitTime(driver);
 		grep.infoTest("Clicking on Payments Tab");
@@ -77,7 +85,7 @@ public class Query_Invoice_Payment_Test extends TestInitializer {
 
 		oraInv.clickPaymentNumber_QueryInvoice();
 		waitTime(driver);
-		oraInv.validateInvoiceNum_InPaymentPopup(dataTest.po_invoiceNum);
+		oraInv.validateInvoiceNum_InPaymentPopup(invNumVal);
 		oraInv.validateInvoiceStatus_InPaymentPopup();
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Inside Payments Receipt Popup", "InsidePaymentsReceiptPopup_QueryInvoicePage");

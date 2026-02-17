@@ -2,11 +2,13 @@ package Tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Pages.Oracle_BankStatement_Page;
 import Pages.Oracle_HomePage;
 import Pages.TestInitializer;
+import Utility.ExcelDataProvider;
 import Utility.GenerateReports;
 import Utility.TestDataKeys;
 import Utility.ValidatingAssertions;
@@ -17,13 +19,20 @@ public class BankStatement_Reconciliation_Test extends TestInitializer {
 	ValidatingAssertions validAssert = new ValidatingAssertions();
 	TestDataKeys dataTest = new TestDataKeys();
 
-	@Test
-	public void OracleReconciliation_BankStatement() throws Exception {
+	@DataProvider(name = "BankStatementTest")
+	public Object[][] getData() {
+		// Get Excel Test Data passing Excel File Name and Sheet Name
+		Object data[][] = ExcelDataProvider.testData("Oracle_TestData", "BankStatement Reconciliation");
+		return data;
+	}
+
+	@Test(dataProvider = "BankStatementTest")
+	public void OracleReconciliation_BankStatement(String stmtId) throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_BankStatement_Page oraBsp = new Oracle_BankStatement_Page();
 
-		waitTime(driver); 
+		waitTime(driver);
 		grep.testCreate("Verify Reconciliation Bank Statement Test", "Verify Reconciliation Bank Statement");
 		oraHome.clickHomeButton();
 		waitTime(driver);
@@ -61,9 +70,9 @@ public class BankStatement_Reconciliation_Test extends TestInitializer {
 		grep.captureScreenshot("pass", "Searching for UNReconcilation for Bank account",
 				"SearchUnreconciliationRecord_BankReconciliation");
 		waitTime(driver);
-		String amount = oraBsp.getBankStatementLineText(dataTest.statementId);
+		String amount = oraBsp.getBankStatementLineText(stmtId);
 		waitTime(driver);
-		oraBsp.clickBankStatementLineCheckbox(dataTest.statementId);
+		oraBsp.clickBankStatementLineCheckbox(stmtId);
 		waitTime(driver);
 		String refId = oraBsp.getSystemTransactionLineText(amount);
 		waitTime2(driver);

@@ -56,14 +56,14 @@ public class TestDataKeys {
 	public String paymentProfile = "WFB EFT PPP";
 	public String paymentCheckMethod = "Check";
 	public String paymentProfile_Check = "WFB CHECK PPP";
-	public String invoiceNum_withoutPO = "Test_WithoutPO_12_2"; // change values
+//	public String invoiceNum_withoutPO = "Test_WithoutPO_12_2"; // change values
 	// with po
-	public String po_invoiceNum = "Test_PO_12_03"; // change values
-	public String identifyPo = "CRPO500075"; // 72 - 75 need po existing
+//	public String po_invoiceNum = "Test_PO_12_03"; // change values
+//	public String identifyPo = "CRPO500075"; // 72 - 75 need po existing
 
 	// Batch payment
-	public String invoiceNum = "Test_Batch_06";
-	public String batchPaymentNumber = "MP_ELE_Payment_12"; // change values
+//	public String invoiceNum = "Test_Batch_06";
+//	public String batchPaymentNumber = "MP_ELE_Payment_12"; // change values
 	public String batchTemplate = "WFB CHECK USD PPR";
 	public String pendingInstallReviewStatus = "Pending installments review";
 	public String pendingActionToComplete = "Pending action to complete information required";
@@ -95,15 +95,15 @@ public class TestDataKeys {
 	public String createReceiptTask = "Create Receipt";
 	public String manageTransactionTask = "Manage Transactions";
 	public String createTransactionTask = "Create Transaction";
-	public String receiptNum = "TestReceipt_16_03"; // change values
+//	public String receiptNum = "TestReceipt_16_03"; // change values
 	public String bankName = "Well Forgo Bank";
 	public String bankBranch = "WFG HOUSTON";
 	public String submitApplyManually = "Submit and Apply Manually";
 	public String createCustomerTask = "Create Customer";
 
 	// CREATE CUSTOMER
-	public String custname = "CR Test_08"; // change values
-	public String accDescription = "CR Test";
+//	public String custname = "CR Test_08"; // change values
+//	public String accDescription = "CR Test";
 	public String accAddressSet = "COMMONSET";
 	public String billTo_purpose = "Bill to";
 	public String shipTo_Purpose = "Ship to";
@@ -116,14 +116,14 @@ public class TestDataKeys {
 	public String createBankStmtBtn = "Create Bank Statement";
 	public String manageBankStmtBtn = "Manage Bank Statements";
 	public String manualReconciliationBtn = "Manual Reconciliation";
-	public String statementId = "Test_StatementID_017"; // change value
+//	public String statementId = "Test_StatementID_017"; // change value
 	public String transactionCode_101 = "101";
 	public String debitFlowIndicator = "Debit";
 	public String creditFlowIndicator = "Credit";
 	public String statement_EndDate = "Week to date";
 
 	// Journal
-	public String journalName = "Test_16_03"; // change values
+//	public String journalName = "Test_16_03"; // change values
 	public String journalCategory = "Manual";
 	public String journalLine_company = "101";
 	public String journalLine_dept = "000";
@@ -147,6 +147,6 @@ public class TestDataKeys {
 	public String assetBuilding = "595 Market St";
 	public String assetFuture = "88";
 
-	public String assetNumber = "Testing Asset 18"; // Change value
-	public String assetKey = "0000";
+//	public String assetNumber = "Testing Asset 18"; // Change value
+//	public String assetKey = "0000";
 }

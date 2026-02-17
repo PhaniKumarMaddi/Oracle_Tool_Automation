@@ -2,11 +2,13 @@ package Tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Pages.Oracle_HomePage;
 import Pages.Oracle_InvoicePage;
 import Pages.TestInitializer;
+import Utility.ExcelDataProvider;
 import Utility.GenerateReports;
 import Utility.TestDataKeys;
 import Utility.ValidatingAssertions;
@@ -17,8 +19,19 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 	ValidatingAssertions validAssert = new ValidatingAssertions();
 	TestDataKeys dataTest = new TestDataKeys();
 
-	@Test
-	public void oracle_InvoiceCreation_WithPO() throws Exception {
+	@DataProvider(name = "InvoiceTest")
+	public Object[][] getData() {
+		// Get Excel Test Data passing Excel File Name and Sheet Name
+		Object data[][] = ExcelDataProvider.testData("Oracle_TestData", "Invoice With PO");
+		return data;
+	}
+
+//	@Test
+//	public void oracle_InvoiceCreation_WithPO() throws Exception {
+	@Test(dataProvider = "InvoiceTest")
+	public void oracle_InvoiceCreation_WithPO(String poNumVal, String invoiceNumVal, String amountVal, String dateVal,
+			String monthVal, String yearVal, String payReason, String payMethod) throws Exception {
+
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_InvoicePage oraInv = new Oracle_InvoicePage();
@@ -61,12 +74,14 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 		waitTime(driver);
 
 		// SELECT PO
-		oraInv.searchAndSelectPO(dataTest.identifyPo);
+//		oraInv.searchAndSelectPO(dataTest.identifyPo);
+//		waitTime3(driver);
+//		oraInv.enterInvoiceNumber(dataTest.po_invoiceNum);
+		oraInv.searchAndSelectPO(poNumVal);
 		waitTime3(driver);
-
-		oraInv.enterInvoiceNumber(dataTest.po_invoiceNum);
+		oraInv.enterInvoiceNumber(invoiceNumVal);
 		waitTime(driver);
-		oraInv.enterInvoiceAmount(dataTest.invoiceAmt);
+		oraInv.enterInvoiceAmount(amountVal);
 		waitTime(driver);
 
 		oraInv.enterInvoiceDescription("Test Supplier Invoices for Expenses");
@@ -75,7 +90,7 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 
 		oraInv.searchAndSelectPaymentTerms(dataTest.paymentTerms);
 		waitTime(driver);
-		oraInv.enterInvoiceReceiveDate(dataTest.date, dataTest.month, dataTest.year);
+		oraInv.enterInvoiceReceiveDate(dateVal, monthVal, yearVal);
 
 		waitTime(driver);
 		grep.infoTest("Enter Details in Lines Section");
@@ -164,7 +179,7 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 		grep.captureScreenshot("pass", "Validating the Accounting Lines Popup test", "accountingLinesPopup_withPO");
 
 		waitTime(driver);
-		oraInv.validateAccountingLinesHeader(dataTest.po_invoiceNum);
+		oraInv.validateAccountingLinesHeader(invoiceNumVal);
 		oraInv.verifyAccountingAmounts(amount);
 		oraInv.clickDoneAccountingBtn();
 
@@ -179,9 +194,9 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 		logger.info("Entering Payment reason in manage installments popup");
 		waitTime(driver);
 
-		oraInv.enterPaymentReasonComment(dataTest.paymentReasonDesc);
+		oraInv.enterPaymentReasonComment(payReason);
 		waitTime(driver);
-		oraInv.searchAndSelectPaymentMethod(dataTest.paymentMethod);
+		oraInv.searchAndSelectPaymentMethod(payMethod);
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Entering Payment reason in manage installments popup",
 				"paymentReason_InManageInstallmentsPopup_withPO");
@@ -218,7 +233,7 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 		grep.infoTest("Save and Close Invoice");
 		logger.info("Save and Close Invoice");
 		waitTime(driver);
-		
+
 		oraHome.clickHomeButton();
 		waitTime(driver);
 

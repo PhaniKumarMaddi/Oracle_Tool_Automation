@@ -2,12 +2,14 @@ package Tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Pages.Oracle_HomePage;
 import Pages.Oracle_InvoicePage;
 import Pages.Oracle_Receivables_Page;
 import Pages.TestInitializer;
+import Utility.ExcelDataProvider;
 import Utility.GenerateReports;
 import Utility.TestDataKeys;
 import Utility.ValidatingAssertions;
@@ -19,11 +21,18 @@ public class AccountReceivables_Test extends TestInitializer {
 	TestDataKeys dataTest = new TestDataKeys();
 	String transactionNum;
 
-	@Test
-	public void oracle_CreateTransaction_Test() throws Exception {
+	@DataProvider(name = "AccountReceivablesTest")
+	public Object[][] getData() {
+		// Get Excel Test Data passing Excel File Name and Sheet Name
+		Object data[][] = ExcelDataProvider.testData("Oracle_TestData", "Account Receivables");
+		return data;
+	}
+
+	@Test(dataProvider = "AccountReceivablesTest")
+	public void oracle_CreateTransaction_Test(String receiptNumVal) throws Exception {
 
 		createTransactionMethod();
-		createReceiptMethod();
+		createReceiptMethod(receiptNumVal);
 
 	}
 
@@ -73,13 +82,13 @@ public class AccountReceivables_Test extends TestInitializer {
 		waitTime5(driver);
 		oraAr.searchAndSelectPaymentTerms(dataTest.net_PaymentTerms);
 		waitTime2(driver);
-		oraAr.enterDescriptionInLines("Testing 2");
+		oraAr.enterDescriptionInLines("Testing AR");
 		oraAr.enterQuantityInLines(dataTest.quantity);
 		oraAr.enterUnitPriceInLines(dataTest.unitPriceAmt);
 		waitTime2(driver);
 		oraAr.clickSaveBtn_inTransactionPage();
-		waitTime5(driver);
-		String amount = oraAr.getExtendedAmount();
+		waitTime10(driver);
+//		String amount = oraAr.getExtendedAmount();
 
 		grep.captureScreenshot("pass", "Saving Create Transaction test", "SaveCreateTransaction");
 		waitTime(driver);
@@ -128,7 +137,7 @@ public class AccountReceivables_Test extends TestInitializer {
 		oraHome.clickHomeButton();
 	}
 
-	public void createReceiptMethod() throws Exception {
+	public void createReceiptMethod(String receiptNum) throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_Receivables_Page oraAr = new Oracle_Receivables_Page();
@@ -157,7 +166,7 @@ public class AccountReceivables_Test extends TestInitializer {
 		oraAr.searchAndSelectBusinessUnit(dataTest.selectBU);
 		waitTime2(driver);
 		oraAr.searchAndSelectReceiptMethod(dataTest.receiptMethod);
-		oraAr.enterReceiptNumber(dataTest.receiptNum);
+		oraAr.enterReceiptNumber(receiptNum);
 		waitTime2(driver);
 		oraAr.enterAmount_inReceipt(dataTest.unitPriceAmt);
 		oraAr.searchAndSelectBankName(dataTest.bankName);

@@ -2,11 +2,13 @@ package Tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Pages.Oracle_BankStatement_Page;
 import Pages.Oracle_HomePage;
 import Pages.TestInitializer;
+import Utility.ExcelDataProvider;
 import Utility.GenerateReports;
 import Utility.TestDataKeys;
 import Utility.ValidatingAssertions;
@@ -17,8 +19,14 @@ public class Create_BankStatement_Test extends TestInitializer {
 	ValidatingAssertions validAssert = new ValidatingAssertions();
 	TestDataKeys dataTest = new TestDataKeys();
 
-	@Test
-	public void OracleCreate_BankStatement() throws Exception {
+	@DataProvider(name = "BankStatementTest")
+	public Object[][] getData() {
+		// Get Excel Test Data passing Excel File Name and Sheet Name
+		Object data[][] = ExcelDataProvider.testData("Oracle_TestData", "BankStatement");
+		return data;
+	}
+	@Test(dataProvider = "BankStatementTest")
+	public void OracleCreate_BankStatement(String stmtId) throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_BankStatement_Page oraBsp = new Oracle_BankStatement_Page();
@@ -57,7 +65,7 @@ public class Create_BankStatement_Test extends TestInitializer {
 		waitTime(driver);
 		oraBsp.selectPeriodEndDate();
 		waitTime(driver);
-		oraBsp.enterStatementId(dataTest.statementId);
+		oraBsp.enterStatementId(stmtId);
 		waitTime(driver);
 		oraBsp.clickStatementLinesTab();
 		waitTime(driver);
@@ -125,7 +133,7 @@ public class Create_BankStatement_Test extends TestInitializer {
 		waitTime(driver);
 		oraBsp.expandBankAccount(dataTest.bankAccount);
 		waitTime(driver);
-		oraBsp.verifyStatementStatus_bankStatus(dataTest.statementId);
+		oraBsp.verifyStatementStatus_bankStatus(stmtId);
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Verify Bank Statement Reconciliation Status", "bankStatement_Reconciliation");
 		waitTime(driver);

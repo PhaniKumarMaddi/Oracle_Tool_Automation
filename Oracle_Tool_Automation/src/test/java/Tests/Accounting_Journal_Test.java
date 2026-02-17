@@ -2,11 +2,13 @@ package Tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Pages.Oracle_AccountingAtGlance;
 import Pages.Oracle_HomePage;
 import Pages.TestInitializer;
+import Utility.ExcelDataProvider;
 import Utility.GenerateReports;
 import Utility.TestDataKeys;
 import Utility.ValidatingAssertions;
@@ -17,8 +19,15 @@ public class Accounting_Journal_Test extends TestInitializer {
 	ValidatingAssertions validAssert = new ValidatingAssertions();
 	TestDataKeys dataTest = new TestDataKeys();
 
-	@Test
-	public void oracle_Accounting_Journal_Test() throws Exception {
+
+	@DataProvider(name = "JournalTest")
+	public Object[][] getData() {
+		// Get Excel Test Data passing Excel File Name and Sheet Name
+		Object data[][] = ExcelDataProvider.testData("Oracle_TestData", "Accounting Journal");
+		return data;
+	}
+	@Test(dataProvider = "JournalTest")
+	public void oracle_Accounting_Journal_Test(String journalName) throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_AccountingAtGlance oraAag = new Oracle_AccountingAtGlance();
@@ -143,13 +152,13 @@ public class Accounting_Journal_Test extends TestInitializer {
 		oraHome.selectFromQuickActions(dataTest.createJournalCatg);
 		waitTime5(driver);
 
-		oraAag.enterJournalBatchName(dataTest.journalName);
+		oraAag.enterJournalBatchName(journalName);
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Inside My journal Page", "MyJournalPage");
 		waitTime(driver);
 		oraAag.clickJournalAccountingPeriod(dataTest.accountPeriod);
 		waitTime(driver);
-		oraAag.enterJournal(dataTest.journalName);
+		oraAag.enterJournal(journalName);
 		waitTime(driver);
 		oraAag.clickJournalCategory(dataTest.journalCategory);
 		waitTime(driver);
@@ -192,11 +201,11 @@ public class Accounting_Journal_Test extends TestInitializer {
 		waitTime(driver);
 		oraHome.selectFromQuickActions(dataTest.manageJournalsCatg);
 		waitTime5(driver);
-		oraAag.enterJournalBatchName(dataTest.journalName);
+		oraAag.enterJournalBatchName(journalName);
 		waitTime(driver);
 		oraAag.clickSearchBtn();
 		waitTime(driver);
-		oraAag.verifyJournalStatus(dataTest.journalName);
+		oraAag.verifyJournalStatus(journalName);
 		waitTime(driver);
 
 		oraHome.clickHomeButton();

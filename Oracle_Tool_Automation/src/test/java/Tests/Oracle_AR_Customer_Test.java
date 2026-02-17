@@ -2,12 +2,14 @@ package Tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Pages.Oracle_Customer_StandardReport_Page;
 import Pages.Oracle_HomePage;
 import Pages.Oracle_Receivables_Page;
 import Pages.TestInitializer;
+import Utility.ExcelDataProvider;
 import Utility.GenerateReports;
 import Utility.TestDataKeys;
 import Utility.ValidatingAssertions;
@@ -19,13 +21,20 @@ public class Oracle_AR_Customer_Test extends TestInitializer {
 	TestDataKeys dataTest = new TestDataKeys();
 	String transactionNum;
 
-	@Test
-	public void oracle_Customer_Test() throws Exception {
-		createCustomerTest();
-		customerVerificationTest();
+	@DataProvider(name = "CustomerTest")
+	public Object[][] getData() {
+		// Get Excel Test Data passing Excel File Name and Sheet Name
+		Object data[][] = ExcelDataProvider.testData("Oracle_TestData", "AR Customer");
+		return data;
 	}
 
-	public void createCustomerTest() throws Exception {
+	@Test(dataProvider = "CustomerTest")
+	public void oracle_Customer_Test(String custNameVal, String accDescVal) throws Exception {
+		createCustomerTest(custNameVal, accDescVal);
+		customerVerificationTest(custNameVal);
+	}
+
+	public void createCustomerTest(String custName, String accDesc) throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_Customer_StandardReport_Page oraCc = new Oracle_Customer_StandardReport_Page();
@@ -53,13 +62,13 @@ public class Oracle_AR_Customer_Test extends TestInitializer {
 		grep.infoTest("Filling Details");
 		logger.info("Filling Details");
 		waitTime(driver);
-		oraCc.enterCustomerName(dataTest.custname);
+		oraCc.enterCustomerName(custName);
 		waitTime(driver);
-		oraCc.enterAccountDescription(dataTest.accDescription);
+		oraCc.enterAccountDescription(accDesc);
 		waitTime(driver);
 		oraCc.clickAccountAddressSet(dataTest.accAddressSet);
 		waitTime(driver);
-		oraCc.enterSiteName(dataTest.custname);
+		oraCc.enterSiteName(custName);
 		waitTime(driver);
 		oraCc.clickState(dataTest.arState);
 		waitTime(driver);
@@ -79,14 +88,14 @@ public class Oracle_AR_Customer_Test extends TestInitializer {
 		waitTime(driver);
 		oraCc.clickSaveAndClose_Customer_Btn();
 		waitTime2(driver);
-		oraCc.verifyCustomerPresent(dataTest.custname);
+		oraCc.verifyCustomerPresent(custName);
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Verify Customer in Manage Customers page", "VerifyCustomer");
 		oraHome.clickHomeFromPutAway();
 
 	}
 
-	public void customerVerificationTest() throws Exception {
+	public void customerVerificationTest(String custName) throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_Receivables_Page oraAr = new Oracle_Receivables_Page();
@@ -101,7 +110,7 @@ public class Oracle_AR_Customer_Test extends TestInitializer {
 		logger.info("Navigating to Billing page from Receivables");
 		waitTime3(driver);
 		oraHome.click_Tasks_InPO();
-		waitTime(driver);
+		waitTime2(driver);
 		oraHome.selectTasks_InTaskPage(dataTest.createTransactionTask);
 		waitTime(driver);
 		grep.infoTest("Inside Create Transactions Page");
@@ -120,11 +129,11 @@ public class Oracle_AR_Customer_Test extends TestInitializer {
 		oraAr.searchAndSelectTransactionType(dataTest.transactionType);
 		waitTime2(driver);
 		oraAr.clickBillToNameSearchBtn();
-		oraAr.enterCustomerName(dataTest.custname);
+		oraAr.enterCustomerName(custName);
 		waitTime2(driver);
 		oraAr.clickSearchBtn();
 		waitTime(driver);
-		oraAr.clickSelectCustomerNameFromList(dataTest.custname);
+		oraAr.clickSelectCustomerNameFromList(custName);
 		grep.infoTest("Verify Newly Created Customer is Visible");
 		logger.info("Verify Newly Created Customer is Visible");
 		grep.captureScreenshot("pass", "Verify Newly Created Customer is Visible", "NewlyCreatedCustomerVisible");

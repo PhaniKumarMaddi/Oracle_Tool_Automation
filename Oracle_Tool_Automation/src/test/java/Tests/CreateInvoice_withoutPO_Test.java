@@ -2,11 +2,13 @@ package Tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Pages.Oracle_HomePage;
 import Pages.Oracle_InvoicePage;
 import Pages.TestInitializer;
+import Utility.ExcelDataProvider;
 import Utility.GenerateReports;
 import Utility.TestDataKeys;
 import Utility.ValidatingAssertions;
@@ -18,8 +20,18 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 	TestDataKeys dataTest = new TestDataKeys();
 	String retrieveDC_id;
 
-	@Test
-	public void oracle_InvoiceCreation_WithoutPO() throws Exception {
+	@DataProvider(name = "InvoiceTest")
+	public Object[][] getData() {
+		// Get Excel Test Data passing Excel File Name and Sheet Name
+		Object data[][] = ExcelDataProvider.testData("Oracle_TestData", "Invoice Without PO");
+		return data;
+	}
+
+//	@Test
+//	public void oracle_InvoiceCreation_WithoutPO() throws Exception {
+	@Test(dataProvider = "InvoiceTest")
+	public void oracle_InvoiceCreation_WithPO(String invoiceNumVal, String amountVal) throws Exception {
+
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_InvoicePage oraInv = new Oracle_InvoicePage();
@@ -65,10 +77,10 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		waitTime2(driver);
 		oraInv.searchAndSelectSupplier(dataTest.selectSupplier);
 		waitTime(driver);
-		oraInv.enterInvoiceNumber(dataTest.invoiceNum_withoutPO);
+		oraInv.enterInvoiceNumber(invoiceNumVal);
 		waitTime2(driver);
 //		oraInv.enterInvoiceAmount("USD", dataTest.invoiceAmt);
-		oraInv.enterInvoiceAmount(dataTest.invoiceAmt);
+		oraInv.enterInvoiceAmount(amountVal);
 		waitTime(driver);
 
 		oraInv.enterInvoiceDescription("Test Supplier Invoices for Expenses");
@@ -84,7 +96,7 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		waitTime(driver);
 		oraInv.expandLinesSection();
 		waitTime2(driver);
-		oraInv.enterAmountInLines(dataTest.invoiceAmt);
+		oraInv.enterAmountInLines(amountVal);
 		waitTime(driver);
 		oraInv.searchAndSelectDistributionCombination(dataTest.company_DC, dataTest.acc_inDC);
 		waitTime2(driver);
@@ -118,7 +130,7 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 			processRevalidationFlow();
 			status = oraInv.getInvoiceValidation(); // Refresh status after fix
 			waitTime2(driver);
-			}
+		}
 
 		// 3. Final verification and logging
 		if (status.equals("Validated")) {
@@ -173,8 +185,8 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 				"AccountinDraftaccountingLinesPopup_without_PO");
 
 		waitTime2(driver);
-		oraInv.validateAccountingLinesHeader(dataTest.invoiceNum_withoutPO);
-		oraInv.verifyAccountingAmounts(dataTest.invoiceAmt);
+		oraInv.validateAccountingLinesHeader(invoiceNumVal);
+		oraInv.verifyAccountingAmounts(amountVal);
 		oraInv.clickDoneAccountingBtn();
 
 		waitTime2(driver);
@@ -197,7 +209,7 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		grep.captureScreenshot("pass", "Validating the Accounting Lines Popup test", "accountingLinesPopup_withPO");
 
 		waitTime5(driver);
-		oraInv.validateAccountingLinesHeader(dataTest.invoiceNum_withoutPO);
+		oraInv.validateAccountingLinesHeader(invoiceNumVal);
 		oraInv.clickDoneAccountingBtn();
 
 		waitTime2(driver);
@@ -248,12 +260,12 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		waitTime2(driver);
 
 		// invoice num
-		oraInv.enterInvoiceNumber_InSelectAndAddPopup(dataTest.invoiceNum_withoutPO);
+		oraInv.enterInvoiceNumber_InSelectAndAddPopup(invoiceNumVal);
 		waitTime2(driver);
 		// ok
 		oraHome.clickSearchBtn();
 		waitTime2(driver);
-		oraInv.searchAndSelectInvoice_inSelectAndAddPopup(dataTest.invoiceNum_withoutPO);
+		oraInv.searchAndSelectInvoice_inSelectAndAddPopup(invoiceNumVal);
 		waitTime2(driver);
 		oraInv.clickOk_InSelectAndUsePopup();
 		waitTime3(driver);

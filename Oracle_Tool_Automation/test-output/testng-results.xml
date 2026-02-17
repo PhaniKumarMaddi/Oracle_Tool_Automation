@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-17T10:40:30 IST" name="Default suite" finished-at="2026-02-17T10:44:55 IST" duration-ms="265084">
+  <suite started-at="2026-02-17T12:21:03 IST" name="Default suite" finished-at="2026-02-17T12:25:19 IST" duration-ms="256926">
     <groups>
     </groups>
-    <test started-at="2026-02-17T10:40:30 IST" name="Default test" finished-at="2026-02-17T10:44:55 IST" duration-ms="265084">
-      <class name="Tests.Oracle_ProcurementWithoutRequisition_Test">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementWithoutRequisition_Test@2072acb2]" started-at="2026-02-17T10:40:30 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-17T10:40:47 IST" duration-ms="17622" status="PASS">
+    <test started-at="2026-02-17T12:21:03 IST" name="Default test" finished-at="2026-02-17T12:25:19 IST" duration-ms="256926">
+      <class name="Tests.Fixed_Assets_Test">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Fixed_Assets_Test@2ceb80a1]" started-at="2026-02-17T12:21:03 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-17T12:21:22 IST" duration-ms="19135" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,47 +18,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="oracle_ProcurementWithout_Requisition_Test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementWithoutRequisition_Test@2072acb2]" started-at="2026-02-17T10:40:48 IST" name="oracle_ProcurementWithout_Requisition_Test" data-provider="ProcurementTest" finished-at="2026-02-17T10:44:54 IST" duration-ms="245993" status="PASS">
+        <test-method signature="oracle_Fixed_Assets_Test(java.lang.String,java.lang.String)[pri:0, instance:Tests.Fixed_Assets_Test@2ceb80a1]" started-at="2026-02-17T12:21:23 IST" name="oracle_Fixed_Assets_Test" data-provider="AssetTest" finished-at="2026-02-17T12:25:19 IST" duration-ms="235491" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CRITICAL RIVER LOCATION]]>
+                <![CDATA[Testing_Asset_001]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[CR1002]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[04]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[01]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[2026]]>
+                <![CDATA[0000]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oracle_ProcurementWithout_Requisition_Test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Oracle_ProcurementWithoutRequisition_Test@2072acb2]" started-at="2026-02-17T10:44:54 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-17T10:44:55 IST" duration-ms="524" status="PASS">
+        </test-method> <!-- oracle_Fixed_Assets_Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Fixed_Assets_Test@2ceb80a1]" started-at="2026-02-17T12:25:19 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-17T12:25:19 IST" duration-ms="703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.Oracle_ProcurementWithoutRequisition_Test -->
+      </class> <!-- Tests.Fixed_Assets_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -19518,3 +19518,538 @@ View requisition
 2026-02-17 10:44:54 [main] INFO : Current status for CRPO500105-2025 is Closed for Receiving
 2026-02-17 10:44:55 [main] INFO : Testing Ended
 2026-02-17 10:44:55 [main] INFO : ***********
+2026-02-17 10:57:37 [main] INFO : Launching Chrome Browser
+2026-02-17 10:57:37 [main] INFO : Report Name :OraclePage.html
+2026-02-17 10:57:42 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 10:58:05 [main] INFO : Launching Chrome Browser
+2026-02-17 10:58:06 [main] INFO : Report Name :OraclePage.html
+2026-02-17 10:58:12 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 10:58:16 [main] INFO : Logged in to Oracle Application
+2026-02-17 10:58:17 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 10:58:17 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 10:58:22 [main] INFO : Clicking on Home icon
+2026-02-17 10:58:26 [main] INFO : Click on Tasks for Create Invoice
+2026-02-17 10:58:31 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-17 10:58:31 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-17 11:00:44 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-17 11:00:44 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-17 11:00:45 [main] INFO : Filling the Invoice Details
+2026-02-17 11:00:47 [main] INFO : Selecting PO: CRPO5000102
+2026-02-17 11:01:23 [main] INFO : Enter Details in Lines Section
+2026-02-17 11:01:30 [main] INFO : Launching Chrome Browser
+2026-02-17 11:01:31 [main] INFO : Report Name :OraclePage.html
+2026-02-17 11:01:36 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 11:01:40 [main] INFO : Logged in to Oracle Application
+2026-02-17 11:01:41 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 11:01:41 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 11:01:47 [main] INFO : Clicking on Home icon
+2026-02-17 11:01:51 [main] INFO : Click on Tasks for Create Invoice
+2026-02-17 11:01:54 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-17 11:01:54 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-17 11:04:56 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-17 11:04:56 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-17 11:04:57 [main] INFO : Filling the Invoice Details
+2026-02-17 11:04:59 [main] INFO : Selecting PO: CRPO500102
+2026-02-17 11:05:05 [main] INFO : Entering Invoice Number: Test_PO_17_1
+2026-02-17 11:05:05 [main] INFO : Entering Invoice Amount: 100
+2026-02-17 11:05:07 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-17 11:05:08 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-17 11:05:26 [main] INFO : Entering Invoice Receive Date: 04-01-2026
+2026-02-17 11:05:27 [main] INFO : Enter Details in Lines Section
+2026-02-17 11:06:48 [main] INFO : Testing Ended
+2026-02-17 11:06:48 [main] INFO : ***********
+2026-02-17 11:12:45 [main] INFO : Launching Chrome Browser
+2026-02-17 11:12:45 [main] INFO : Report Name :OraclePage.html
+2026-02-17 11:12:52 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 11:12:56 [main] INFO : Logged in to Oracle Application
+2026-02-17 11:12:58 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 11:12:58 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 11:13:03 [main] INFO : Clicking on Home icon
+2026-02-17 11:13:07 [main] INFO : Click on Tasks for Create Invoice
+2026-02-17 11:13:09 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-17 11:13:09 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-17 11:14:41 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-17 11:14:41 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-17 11:14:42 [main] INFO : Filling the Invoice Details
+2026-02-17 11:14:43 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-17 11:14:48 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-17 11:14:51 [main] INFO : Entering Invoice Number: Test_WithoutPO_17_1
+2026-02-17 11:14:53 [main] INFO : Entering Invoice Amount: 100
+2026-02-17 11:14:55 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-17 11:14:56 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-17 11:14:59 [main] INFO : Entering Invoice Receive Date: 07-01-2026
+2026-02-17 11:14:59 [main] INFO : Enter Details in Lines Section
+2026-02-17 11:15:06 [main] INFO : Entering Line Amount: 100
+2026-02-17 11:15:12 [main] INFO : Selecting Comapany Value: 101
+2026-02-17 11:15:15 [main] INFO : Selecting Account for Distribution Combinantion: 52110
+2026-02-17 11:15:20 [main] INFO : Retrieving Distibution Combinatio ID: 101-000-52110-000
+2026-02-17 11:15:21 [main] INFO : Saving and Validating Invoice
+2026-02-17 11:16:06 [main] INFO : Invoice validation message: Not validated
+2026-02-17 11:16:06 [main] INFO : Current Invoice Status: Not validated
+2026-02-17 11:16:37 [main] INFO : Invoice validation message: Needs revalidation
+2026-02-17 11:16:38 [main] INFO : Processing revalidation flow...
+2026-02-17 11:16:40 [main] INFO : Warning found! Image source: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/images/qual_warning_16.png
+2026-02-17 11:16:41 [main] INFO : Clicking the hold count link: 1
+2026-02-17 11:16:42 [main] INFO : Successfully selected 'Validated' from the release name dropdown.
+2026-02-17 11:16:47 [main] INFO : Invoice validation message: Validated
+2026-02-17 11:16:49 [main] INFO : Validated
+2026-02-17 11:17:04 [main] INFO : Entering Payment reason in manage installments popup
+2026-02-17 11:17:07 [main] INFO : Entering Payment reason:Supplier Expenses Payment
+2026-02-17 11:17:08 [main] INFO : Selecting Payment Method: CR ELECTRONIC
+2026-02-17 11:17:16 [main] INFO : Clicking on Account in Draft
+2026-02-17 11:17:29 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-17 11:17:29 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-17 11:17:34 [main] INFO : Validating the Accounting Lines
+2026-02-17 11:17:37 [main] INFO : Validation Passed: Header contains invoice number: Test_WithoutPO_17_1
+2026-02-17 11:17:37 [main] INFO : Comparing UI Values: Debit[100.0], Credit[100.0] against Expected[100.0]
+2026-02-17 11:17:37 [main] INFO : Success: Debit, Credit, and Expected amount all match.
+2026-02-17 11:17:39 [main] INFO : Clicking on Post to ledger
+2026-02-17 11:17:51 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-17 11:17:51 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-17 11:17:57 [main] INFO : Validating the Accounting Lines
+2026-02-17 11:18:02 [main] INFO : Validation Passed: Header contains invoice number: Test_WithoutPO_17_1
+2026-02-17 11:18:07 [main] INFO : Navigate to Payment Page
+2026-02-17 11:18:14 [main] INFO : Click Create payment from tasks
+2026-02-17 11:18:26 [main] INFO : Filling the details in Payment Page
+2026-02-17 11:18:27 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-17 11:18:31 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-17 11:19:05 [main] INFO : Testing Ended
+2026-02-17 11:19:05 [main] INFO : ***********
+2026-02-17 11:22:01 [main] INFO : Launching Chrome Browser
+2026-02-17 11:22:01 [main] INFO : Report Name :OraclePage.html
+2026-02-17 11:22:08 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 11:22:13 [main] INFO : Logged in to Oracle Application
+2026-02-17 11:22:14 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 11:22:14 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 11:22:19 [main] INFO : Clicking on Home icon
+2026-02-17 11:22:23 [main] INFO : Click on Tasks for Create Invoice
+2026-02-17 11:22:25 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-17 11:22:25 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-17 11:23:58 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-17 11:23:58 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-17 11:24:00 [main] INFO : Filling the Invoice Details
+2026-02-17 11:24:01 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-17 11:24:05 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-17 11:24:08 [main] INFO : Entering Invoice Number: Test_WithoutPO_17_2
+2026-02-17 11:24:10 [main] INFO : Entering Invoice Amount: 100
+2026-02-17 11:24:12 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-17 11:24:13 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-17 11:24:15 [main] INFO : Entering Invoice Receive Date: 07-01-2026
+2026-02-17 11:24:16 [main] INFO : Enter Details in Lines Section
+2026-02-17 11:24:23 [main] INFO : Entering Line Amount: 100
+2026-02-17 11:24:31 [main] INFO : Selecting Comapany Value: 101
+2026-02-17 11:24:34 [main] INFO : Selecting Account for Distribution Combinantion: 52110
+2026-02-17 11:24:38 [main] INFO : Retrieving Distibution Combinatio ID: 101-000-52110-000
+2026-02-17 11:24:39 [main] INFO : Saving and Validating Invoice
+2026-02-17 11:24:55 [main] INFO : Invoice validation message: Needs revalidation
+2026-02-17 11:24:55 [main] INFO : Current Invoice Status: Needs revalidation
+2026-02-17 11:24:56 [main] INFO : Processing revalidation flow...
+2026-02-17 11:24:57 [main] INFO : Warning found! Image source: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/images/qual_warning_16.png
+2026-02-17 11:24:57 [main] INFO : Clicking the hold count link: 1
+2026-02-17 11:24:59 [main] INFO : Successfully selected 'Validated' from the release name dropdown.
+2026-02-17 11:25:04 [main] INFO : Invoice validation message: Validated
+2026-02-17 11:25:06 [main] INFO : Validated
+2026-02-17 11:25:21 [main] INFO : Entering Payment reason in manage installments popup
+2026-02-17 11:25:24 [main] INFO : Entering Payment reason:Supplier Expenses Payment
+2026-02-17 11:25:25 [main] INFO : Selecting Payment Method: CR ELECTRONIC
+2026-02-17 11:25:33 [main] INFO : Clicking on Account in Draft
+2026-02-17 11:25:42 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-17 11:25:42 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-17 11:25:48 [main] INFO : Validating the Accounting Lines
+2026-02-17 11:26:10 [main] INFO : Validation Passed: Header contains invoice number: Test_WithoutPO_17_2
+2026-02-17 11:26:10 [main] INFO : Comparing UI Values: Debit[100.0], Credit[100.0] against Expected[100.0]
+2026-02-17 11:26:10 [main] INFO : Success: Debit, Credit, and Expected amount all match.
+2026-02-17 11:26:12 [main] INFO : Clicking on Post to ledger
+2026-02-17 11:26:21 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-17 11:26:21 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-17 11:26:27 [main] INFO : Validating the Accounting Lines
+2026-02-17 11:26:33 [main] INFO : Validation Passed: Header contains invoice number: Test_WithoutPO_17_2
+2026-02-17 11:26:38 [main] INFO : Navigate to Payment Page
+2026-02-17 11:26:46 [main] INFO : Click Create payment from tasks
+2026-02-17 11:26:57 [main] INFO : Filling the details in Payment Page
+2026-02-17 11:26:59 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-17 11:27:03 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-17 11:27:38 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-17 11:27:43 [main] INFO : Selecting Payment method: Check
+2026-02-17 11:27:49 [main] INFO : Selecting Payment Profile: WFB CHECK PPP
+2026-02-17 11:27:51 [main] INFO : Click on 'Select and Add' Under Invoices to Pay at the bottom
+2026-02-17 11:38:14 [main] INFO : Launching Chrome Browser
+2026-02-17 11:38:14 [main] INFO : Report Name :OraclePage.html
+2026-02-17 11:38:20 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 11:38:25 [main] INFO : Logged in to Oracle Application
+2026-02-17 11:38:26 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 11:38:26 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 11:38:31 [main] INFO : Clicking on Home icon
+2026-02-17 11:38:35 [main] INFO : Click on Tasks for Create Invoice
+2026-02-17 11:38:39 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-17 11:38:39 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-17 11:41:34 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-17 11:41:34 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-17 11:41:35 [main] INFO : Filling the Invoice Details
+2026-02-17 11:41:36 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-17 11:41:51 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-17 11:41:54 [main] INFO : Entering Invoice Number: Test_Batch_06
+2026-02-17 11:41:56 [main] INFO : Entering Invoice Amount: 190
+2026-02-17 11:41:58 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-17 11:41:59 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-17 11:42:13 [main] INFO : Launching Chrome Browser
+2026-02-17 11:42:13 [main] INFO : Report Name :OraclePage.html
+2026-02-17 11:42:20 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 11:42:25 [main] INFO : Logged in to Oracle Application
+2026-02-17 11:42:26 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 11:42:26 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 11:42:31 [main] INFO : Clicking on Home icon
+2026-02-17 11:43:04 [main] INFO : Testing Ended
+2026-02-17 11:43:04 [main] INFO : ***********
+2026-02-17 11:43:12 [main] INFO : Launching Chrome Browser
+2026-02-17 11:43:12 [main] INFO : Report Name :OraclePage.html
+2026-02-17 11:43:19 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 11:43:23 [main] INFO : Logged in to Oracle Application
+2026-02-17 11:43:24 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 11:43:24 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 11:43:30 [main] INFO : Clicking on Home icon
+2026-02-17 11:43:34 [main] INFO : Click on Tasks for Submit Payment Process Request
+2026-02-17 11:43:43 [main] INFO : Submit Payment Process Request Page Header: Submit Payment Process Request
+2026-02-17 11:43:43 [main] INFO : Expected :Submit Payment Process Request and Actual :Submit Payment Process Request
+2026-02-17 11:43:43 [main] INFO : Expected :Submit Payment Process Request and Actual :Submit Payment Process Request both are same
+2026-02-17 11:43:44 [main] INFO : Entering Batch Number and Batch Template
+2026-02-17 11:43:44 [main] INFO : Entering Payment Process Name: MP_ELE_Payment_12
+2026-02-17 11:43:48 [main] INFO : Selecting Business Unit 'Payment' radio button.
+2026-02-17 11:43:51 [main] INFO : Clicking Add Row button for Business Units.
+2026-02-17 11:43:54 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-17 11:43:59 [main] INFO : Selecting Legal Entities 'Specific' radio button.
+2026-02-17 11:44:02 [main] INFO : Clicking Add Row button for Legal Entities.
+2026-02-17 11:44:05 [main] INFO : Selecting Legal entities: CRITICAL RIVER LE
+2026-02-17 11:44:11 [main] INFO : Selecting Supplier or Party: CR Applied Material
+2026-02-17 11:44:26 [main] INFO : Launching Chrome Browser
+2026-02-17 11:44:26 [main] INFO : Report Name :OraclePage.html
+2026-02-17 11:44:37 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 11:44:41 [main] INFO : Logged in to Oracle Application
+2026-02-17 11:44:43 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 11:44:43 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 11:44:49 [main] INFO : Clicking on Home icon
+2026-02-17 11:44:54 [main] INFO : Testing Ended
+2026-02-17 11:44:54 [main] INFO : ***********
+2026-02-17 11:45:13 [main] INFO : Launching Chrome Browser
+2026-02-17 11:45:14 [main] INFO : Report Name :OraclePage.html
+2026-02-17 11:45:25 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 11:45:29 [main] INFO : Logged in to Oracle Application
+2026-02-17 11:45:30 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 11:45:30 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 11:45:35 [main] INFO : Clicking on Home icon
+2026-02-17 11:45:39 [main] INFO : Navigating Scheduled Processes
+2026-02-17 11:45:41 [main] INFO : Click on Schedule New Process
+2026-02-17 11:45:44 [main] INFO : Click on Name dropdown
+2026-02-17 11:45:45 [main] INFO : Click on search
+2026-02-17 11:45:56 [main] INFO : Launching Chrome Browser
+2026-02-17 11:45:56 [main] INFO : Report Name :OraclePage.html
+2026-02-17 11:46:02 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 11:46:07 [main] INFO : Logged in to Oracle Application
+2026-02-17 11:46:08 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 11:46:08 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 11:46:13 [main] INFO : Clicking on Home icon
+2026-02-17 11:46:17 [main] INFO : Click on Tasks for Create Invoice
+2026-02-17 11:46:19 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-17 11:46:19 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-17 11:46:33 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices
+2026-02-17 11:46:33 [main] INFO : Expected :Manage Invoices and Actual :Manage Invoices both are same
+2026-02-17 11:46:37 [main] INFO : Entering Invoice Number: Test_Inv_01
+2026-02-17 11:46:42 [main] INFO : Clicking on Invoice Number
+2026-02-17 11:46:48 [main] INFO : Clicking on Payments Tab
+2026-02-17 11:46:48 [main] INFO : Testing Ended
+2026-02-17 11:46:48 [main] INFO : ***********
+2026-02-17 11:51:29 [main] INFO : Launching Chrome Browser
+2026-02-17 11:51:30 [main] INFO : Report Name :OraclePage.html
+2026-02-17 11:51:36 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 11:51:41 [main] INFO : Logged in to Oracle Application
+2026-02-17 11:51:41 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 11:51:41 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 11:51:47 [main] INFO : Clicking on Home icon
+2026-02-17 11:51:52 [main] INFO : Selecting Quick Action: Create Transaction
+2026-02-17 11:51:53 [main] INFO : Navigating Create Transaction
+2026-02-17 11:51:54 [main] INFO : Filling Details in Create Transaction Page
+2026-02-17 11:51:57 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-17 11:52:01 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-17 11:52:06 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-17 11:52:11 [main] INFO : Entering Name: CR GE
+2026-02-17 11:52:22 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-17 11:52:25 [main] INFO : Entering Line Description: Testing AR
+2026-02-17 11:52:25 [main] INFO : Entering Line Quantity: 2
+2026-02-17 11:52:26 [main] INFO : Entering Line Unit Price: 70
+2026-02-17 11:52:34 [main] INFO : Extended Amount: 140,00
+2026-02-17 11:52:37 [main] INFO : Selecting Complete and Review Option
+2026-02-17 11:52:43 [main] INFO : Clicking on Post to ledger
+2026-02-17 11:52:51 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-17 11:52:51 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-17 11:53:02 [main] INFO : Validating the Accounting Lines
+2026-02-17 11:53:12 [main] INFO : Transaction Confirmation Message: Transaction 105002 has been saved.
+2026-02-17 11:53:13 [main] INFO : Extracted Transaction Number: 105002
+2026-02-17 11:53:18 [main] INFO : Navigating to Acoount Receivables
+2026-02-17 11:53:21 [main] INFO : Click on Create Receipt
+2026-02-17 11:53:23 [main] INFO : Filling the Details in Receipt Page
+2026-02-17 11:53:24 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-17 11:53:27 [main] INFO : Selecting Receipt Method: CR RECEIPT
+2026-02-17 11:53:30 [main] INFO : Entering Receipt Number: Test_Inv_01
+2026-02-17 11:53:33 [main] INFO : Entering Amount: 70
+2026-02-17 11:53:33 [main] INFO : Selecting Bank Name: Well Forgo Bank
+2026-02-17 11:53:38 [main] INFO : Selecting Bank branch: WFG HOUSTON
+2026-02-17 11:53:43 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-17 11:53:46 [main] INFO : Click on Submit Apply Manually
+2026-02-17 11:53:54 [main] INFO : Click on Application tab under Receipt Details Section
+2026-02-17 11:53:55 [main] INFO : Click on Add open Receivables
+2026-02-17 11:54:00 [main] INFO : Entering Transaction Customer Name: CR GE
+2026-02-17 11:54:03 [main] INFO : Scrolled to the last visible record in the table.
+2026-02-17 11:54:05 [main] INFO : Selecting receipt :105002
+2026-02-17 11:54:10 [main] INFO : Clicking on Post to ledger
+2026-02-17 11:54:24 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-17 11:54:24 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-17 11:54:35 [main] INFO : Validating the Accounting Lines
+2026-02-17 11:54:46 [main] INFO : Navigating to Billing page from Receivables
+2026-02-17 11:54:54 [main] INFO : Inside Manage Transactions Page
+2026-02-17 11:55:04 [main] INFO : Entering Business Unit: CRITICAL RIVER BU
+2026-02-17 11:55:12 [main] INFO : Entering Transaction Source name: CR MANUAL TRANSACTION
+2026-02-17 11:55:23 [main] INFO : Clicking on View Balance Details
+2026-02-17 11:55:40 [main] INFO : Transaction Confirmation Message: Transaction 105002 has been saved.
+2026-02-17 11:55:41 [main] INFO : Extracted Transaction Number: 105002
+2026-02-17 11:55:41 [main] INFO : Expected :105002 and Actual :105002
+2026-02-17 11:55:41 [main] INFO : Expected :105002 and Actual :105002 both are same
+2026-02-17 11:55:43 [main] INFO : Testing Ended
+2026-02-17 11:55:43 [main] INFO : ***********
+2026-02-17 11:59:11 [main] INFO : Launching Chrome Browser
+2026-02-17 11:59:12 [main] INFO : Report Name :OraclePage.html
+2026-02-17 11:59:19 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 11:59:23 [main] INFO : Logged in to Oracle Application
+2026-02-17 11:59:24 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 11:59:24 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 11:59:32 [main] INFO : Navigating to Create Customer page from Billing
+2026-02-17 11:59:39 [main] INFO : Navigating Create Customer
+2026-02-17 11:59:40 [main] INFO : Filling Details
+2026-02-17 11:59:43 [main] INFO : Entering Customer Name: CR_Test_001
+2026-02-17 11:59:45 [main] INFO : Entering Account Description: CR Test
+2026-02-17 11:59:47 [main] INFO : Selecting COMMONSET Option in Account Address 
+2026-02-17 11:59:49 [main] INFO : Entering Site Name: CR_Test_001
+2026-02-17 11:59:52 [main] INFO : Selecting AR Option in State
+2026-02-17 11:59:53 [main] INFO : Clicking Add Row button for Address Purpose.
+2026-02-17 11:59:54 [main] INFO : Select Bill to from the purpose drop down under address Purpose
+2026-02-17 11:59:55 [main] INFO : Clicking Add Row button for Address Purpose.
+2026-02-17 11:59:56 [main] INFO : Select Ship to from the purpose drop down under address Purpose
+2026-02-17 12:00:01 [main] INFO : Selecting AR Option for Bill to Site under Account Address 
+2026-02-17 12:00:02 [main] INFO : Clicking Set Primary button for Address Purpose.
+2026-02-17 12:00:22 [main] INFO : Found 1 organizations in the table. Searching for: CR_Test_001
+2026-02-17 12:00:22 [main] INFO : Record Found: CR_Test_001
+2026-02-17 12:00:28 [main] INFO : Navigating to Billing page from Receivables
+2026-02-17 12:00:36 [main] INFO : Inside Create Transactions Page
+2026-02-17 12:00:38 [main] INFO : Filling Details in Create Transaction Page
+2026-02-17 12:01:08 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-17 12:01:11 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-17 12:01:16 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-17 12:01:22 [main] INFO : Entering Name: CR_Test_001
+2026-02-17 12:01:25 [main] INFO : Verify Newly Created Customer is Visible
+2026-02-17 12:01:34 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-17 12:01:37 [main] INFO : Entering Line Description: Newly Created Customer
+2026-02-17 12:01:37 [main] INFO : Entering Line Quantity: 2
+2026-02-17 12:01:38 [main] INFO : Entering Line Unit Price: 70
+2026-02-17 12:01:46 [main] INFO : Extended Amount: 140,00
+2026-02-17 12:01:46 [main] INFO : Amount :140,00
+2026-02-17 12:01:50 [main] INFO : Selecting Complete and Review Option
+2026-02-17 12:01:56 [main] INFO : Clicking on Post to ledger
+2026-02-17 12:02:15 [main] INFO : Transaction Confirmation Message: Transaction 106000 has been saved.
+2026-02-17 12:02:15 [main] INFO : Extracted Transaction Number: 106000
+2026-02-17 12:02:19 [main] INFO : Testing Ended
+2026-02-17 12:02:19 [main] INFO : ***********
+2026-02-17 12:04:58 [main] INFO : Launching Chrome Browser
+2026-02-17 12:04:58 [main] INFO : Report Name :OraclePage.html
+2026-02-17 12:05:05 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 12:05:09 [main] INFO : Logged in to Oracle Application
+2026-02-17 12:05:10 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 12:05:10 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 12:05:13 [main] INFO : Testing Ended
+2026-02-17 12:05:13 [main] INFO : ***********
+2026-02-17 12:06:22 [main] INFO : Launching Chrome Browser
+2026-02-17 12:06:23 [main] INFO : Report Name :OraclePage.html
+2026-02-17 12:06:29 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 12:06:33 [main] INFO : Logged in to Oracle Application
+2026-02-17 12:06:34 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 12:06:34 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 12:06:44 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-17 12:06:56 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-17 12:06:56 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-17 12:06:56 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-17 12:06:57 [main] INFO : Filling Bank Statement Details
+2026-02-17 12:06:58 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-17 12:06:59 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-17 12:07:00 [main] INFO : Successfully selected the start date.
+2026-02-17 12:07:00 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-17 12:07:00 [main] INFO : Successfully selected the Enddate.
+2026-02-17 12:07:02 [main] INFO : Entering Statement Id: Test_StatementID_017
+2026-02-17 12:07:05 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-17 12:07:05 [main] INFO : Successfully selected the Booking date.
+2026-02-17 12:07:09 [main] INFO : Select Credit from the drop down under Flow Indicator
+2026-02-17 12:07:09 [main] INFO : Entering Statement Amount: 70
+2026-02-17 12:07:21 [main] INFO : Testing Ended
+2026-02-17 12:07:21 [main] INFO : ***********
+2026-02-17 12:07:34 [main] INFO : Launching Chrome Browser
+2026-02-17 12:07:35 [main] INFO : Report Name :OraclePage.html
+2026-02-17 12:07:42 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 12:07:46 [main] INFO : Logged in to Oracle Application
+2026-02-17 12:07:47 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 12:07:47 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 12:07:57 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-17 12:08:07 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-17 12:08:07 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-17 12:08:07 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-17 12:08:07 [main] INFO : Filling Bank Statement Details
+2026-02-17 12:08:08 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-17 12:08:10 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-17 12:08:10 [main] INFO : Successfully selected the start date.
+2026-02-17 12:08:11 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-17 12:08:11 [main] INFO : Successfully selected the Enddate.
+2026-02-17 12:08:12 [main] INFO : Entering Statement Id: Test_StatementID_017_01
+2026-02-17 12:08:16 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-17 12:08:16 [main] INFO : Successfully selected the Booking date.
+2026-02-17 12:08:19 [main] INFO : Select Credit from the drop down under Flow Indicator
+2026-02-17 12:08:19 [main] INFO : Entering Statement Amount: 70
+2026-02-17 12:08:23 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-17 12:08:23 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-17 12:08:27 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-17 12:08:27 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-17 12:08:32 [main] INFO : Selecting Bank Account
+2026-02-17 12:08:44 [main] INFO : Select Week to date from the drop down under Statement End Date
+2026-02-17 12:08:47 [main] INFO : Statement ID: Test_StatementID_017_01 | Actual Reconciliation Status: Incomplete
+2026-02-17 12:08:47 [main] INFO : Verification Passed: Status is Incomplete
+2026-02-17 12:08:49 [main] INFO : Testing Ended
+2026-02-17 12:08:49 [main] INFO : ***********
+2026-02-17 12:09:43 [main] INFO : Launching Chrome Browser
+2026-02-17 12:09:44 [main] INFO : Report Name :OraclePage.html
+2026-02-17 12:09:50 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 12:09:55 [main] INFO : Logged in to Oracle Application
+2026-02-17 12:09:56 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 12:09:56 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 12:10:04 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-17 12:10:14 [main] INFO : Filling Details in Reconcilation Tab
+2026-02-17 12:10:15 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-17 12:10:17 [main] INFO : Clicked on From Date picker icon.
+2026-02-17 12:10:17 [main] INFO : Successfully selected the From date.
+2026-02-17 12:10:18 [main] INFO : Clicked on TO Date picker icon.
+2026-02-17 12:10:18 [main] INFO : Successfully selected the TO date.
+2026-02-17 12:10:22 [main] INFO : Retrieved text for ID Test_StatementID_017_01: 70,00
+2026-02-17 12:10:23 [main] INFO : Checked the box for Statement ID: Test_StatementID_017_01
+2026-02-17 12:10:23 [main] INFO : Retrieved Reference ID 70,00: Test_Inv_01
+2026-02-17 12:10:26 [main] INFO : Selected transaction checkbox for amount: 70,00
+2026-02-17 12:10:32 [main] INFO : Clicking Reconciled Tab
+2026-02-17 12:10:39 [main] INFO : Clicking Search in Reconciled Tab
+2026-02-17 12:10:42 [main] INFO : Receipt found: Test_Inv_01
+2026-02-17 12:10:49 [main] INFO : Testing Ended
+2026-02-17 12:10:49 [main] INFO : ***********
+2026-02-17 12:12:59 [main] INFO : Launching Chrome Browser
+2026-02-17 12:12:59 [main] INFO : Report Name :OraclePage.html
+2026-02-17 12:13:07 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 12:13:11 [main] INFO : Logged in to Oracle Application
+2026-02-17 12:13:12 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 12:13:12 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 12:13:13 [main] INFO : Testing Ended
+2026-02-17 12:13:13 [main] INFO : ***********
+2026-02-17 12:13:44 [main] INFO : Launching Chrome Browser
+2026-02-17 12:13:45 [main] INFO : Report Name :OraclePage.html
+2026-02-17 12:13:51 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 12:13:55 [main] INFO : Logged in to Oracle Application
+2026-02-17 12:13:56 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 12:13:56 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 12:14:05 [main] INFO : Navigating Scheduled Processes
+2026-02-17 12:14:07 [main] INFO : Click on Schedule New Process
+2026-02-17 12:14:09 [main] INFO : Click on Name dropdown
+2026-02-17 12:14:11 [main] INFO : Click on search
+2026-02-17 12:14:12 [main] INFO : Click on name and type the name
+2026-02-17 12:14:13 [main] INFO : Entering Name: Create Accounting
+2026-02-17 12:14:14 [main] INFO : Select the Create Accounting  Name and click ok
+2026-02-17 12:14:19 [main] INFO : Click on Subledger Application and Select Receivables
+2026-02-17 12:14:21 [main] INFO : Select Cash Management from the drop down under Sub ledger application
+2026-02-17 12:14:21 [main] INFO : Click on ledger or ledger Set dropdown and click Search
+2026-02-17 12:14:22 [main] INFO : Search and Select CR PRIMARY LEDGER
+2026-02-17 12:14:31 [main] INFO : Entering Ledger Or Ledger Set: CR PRIMARY LEDGER
+2026-02-17 12:14:39 [main] INFO : Select Detail from the drop down under Report Style
+2026-02-17 12:14:41 [main] INFO : Click on Submit at the top
+2026-02-17 12:14:43 [main] INFO : Check for confirmation and click ok
+2026-02-17 12:14:43 [main] INFO : Popup text received: Process 4833387 was submitted.
+2026-02-17 12:14:43 [main] INFO : Extracted Process ID: 4833387
+2026-02-17 12:14:43 [main] INFO : Retrieved Process Id:4833387
+2026-02-17 12:14:46 [main] INFO : Click on refresh button multiple times beside Change Process Priority
+2026-02-17 12:14:47 [main] INFO : Monitoring status for Process ID: 4833387
+2026-02-17 12:14:48 [main] INFO : Current Status of 4833387: Wait
+2026-02-17 12:14:58 [main] INFO : Current Status of 4833387: Ready
+2026-02-17 12:15:09 [main] INFO : Current Status of 4833387: Succeeded
+2026-02-17 12:15:09 [main] INFO : Process 4833387 completed successfully.
+2026-02-17 12:15:21 [main] INFO : Selecting Quick Action: Create Journal
+2026-02-17 12:15:33 [main] INFO : Entering Journal Name: Test_17_01
+2026-02-17 12:15:38 [main] INFO : Selecting Feb-26 Option in Accounting Period
+2026-02-17 12:15:40 [main] INFO : Entering Journal: Test_17_01
+2026-02-17 12:15:43 [main] INFO : Selecting Manual Option in Journal Category
+2026-02-17 12:15:56 [main] INFO : Selecting Company Value: 101
+2026-02-17 12:15:58 [main] INFO : Selecting Department Value: 000
+2026-02-17 12:16:00 [main] INFO : Selecting Account Value: 11200
+2026-02-17 12:16:03 [main] INFO : Selecting Future Value: 000
+2026-02-17 12:16:10 [main] INFO : Entering Debit Amount: 100
+2026-02-17 12:16:28 [main] INFO : Selecting Company Value: 101
+2026-02-17 12:16:30 [main] INFO : Selecting Department Value: 202
+2026-02-17 12:16:32 [main] INFO : Selecting Account Value: 11300
+2026-02-17 12:16:34 [main] INFO : Selecting Future Value: 000
+2026-02-17 12:16:39 [main] INFO : Entering Credit Amount: 100
+2026-02-17 12:16:50 [main] INFO : Post Journal Confirmation text received: Your process 4833409 has been submitted.
+2026-02-17 12:16:50 [main] INFO : Extracted Journal ID: 4833409
+2026-02-17 12:16:56 [main] INFO : Selecting Quick Action: Manage Journals
+2026-02-17 12:17:01 [main] INFO : Entering Journal Name: Test_17_01
+2026-02-17 12:17:04 [main] INFO : Test_17_01 Journal Status is Posted
+2026-02-17 12:17:08 [main] INFO : Testing Ended
+2026-02-17 12:17:08 [main] INFO : ***********
+2026-02-17 12:21:05 [main] INFO : Launching Chrome Browser
+2026-02-17 12:21:05 [main] INFO : Report Name :OraclePage.html
+2026-02-17 12:21:16 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 12:21:21 [main] INFO : Logged in to Oracle Application
+2026-02-17 12:21:21 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 12:21:21 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 12:21:33 [main] INFO : Navigating to Assets
+2026-02-17 12:21:40 [main] INFO : Selecting Major Category
+2026-02-17 12:21:45 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-17 12:21:47 [main] INFO : Selecting Minor Category
+2026-02-17 12:21:51 [main] INFO : Entering Value for Major: CR PC
+2026-02-17 12:21:59 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-17 12:22:00 [main] INFO : Entering Asset Cost: 500
+2026-02-17 12:22:00 [main] INFO : Selecting Asset Expenses Account
+2026-02-17 12:22:12 [main] INFO : Selecting Company Value: 101
+2026-02-17 12:22:14 [main] INFO : Selecting Department Value: 202
+2026-02-17 12:22:15 [main] INFO : Selecting Future Value: 000
+2026-02-17 12:22:19 [main] INFO : Selecting Asset Location
+2026-02-17 12:22:25 [main] ERROR: Test Failed :stale element reference: stale element not found in the current frame
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2762c9631eed30b4bdec2cdf351af1a5, clickElement {id=f.28A0017C2353D0F05B53E1D50AF8085D.d.A4588EC97FB907C62BED2DB9E072FC0B.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64220}, goog:processID: 4796, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64220/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2762c9631eed30b4bdec2cdf351af1a5)] -> xpath: //div[@title='US']]
+Session ID: 2762c9631eed30b4bdec2cdf351af1a5
+2026-02-17 12:22:28 [main] INFO : Selecting  State Value: CA
+2026-02-17 12:22:31 [main] INFO : Selecting  City Value: San Francisco
+2026-02-17 12:22:34 [main] INFO : Selecting  Building Value: 595 Market St
+2026-02-17 12:22:37 [main] INFO : Selecting Future Value: 88
+2026-02-17 12:22:47 [main] INFO : Entering Asset Number: Testing_Asset_001
+2026-02-17 12:22:56 [main] INFO : Asset Saved Confirmation Message: Your changes were saved.
+2026-02-17 12:22:56 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-17 12:22:56 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-17 12:23:19 [main] INFO : Entering Value for Asset Number: Testing_Asset_001
+2026-02-17 12:23:36 [main] INFO : Selecting Monitor Processes from recent items
+2026-02-17 12:23:38 [main] INFO : Monitoring status for Asset Process
+2026-02-17 12:23:39 [main] INFO : Current Status of Asset process :Wait
+2026-02-17 12:23:50 [main] INFO : Current Status of Asset process :Wait
+2026-02-17 12:24:00 [main] INFO : Current Status of Asset process :Running
+2026-02-17 12:24:11 [main] INFO : Current Status of Asset process :Running
+2026-02-17 12:24:22 [main] INFO : Current Status of Asset process :Running
+2026-02-17 12:24:33 [main] INFO : Current Status of Asset process :Running
+2026-02-17 12:24:43 [main] INFO : Current Status of Asset process :Running
+2026-02-17 12:24:54 [main] INFO : Current Status of Asset process :Running
+2026-02-17 12:25:05 [main] INFO : Current Status of Asset process :Running
+2026-02-17 12:25:15 [main] INFO : Current Status of Asset process :Succeeded
+2026-02-17 12:25:15 [main] INFO : Sub Process completed successfully.
+2026-02-17 12:25:19 [main] INFO : Testing Ended
+2026-02-17 12:25:19 [main] INFO : ***********

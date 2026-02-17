@@ -2,11 +2,13 @@ package Tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Pages.Oracle_Assets_Page;
 import Pages.Oracle_HomePage;
 import Pages.TestInitializer;
+import Utility.ExcelDataProvider;
 import Utility.GenerateReports;
 import Utility.TestDataKeys;
 import Utility.ValidatingAssertions;
@@ -17,8 +19,15 @@ public class Fixed_Assets_Test extends TestInitializer {
 	ValidatingAssertions validAssert = new ValidatingAssertions();
 	TestDataKeys dataTest = new TestDataKeys();
 
-	@Test
-	public void oracle_Fixed_Assets_Test() throws Exception {
+	@DataProvider(name = "AssetTest")
+	public Object[][] getData() {
+		// Get Excel Test Data passing Excel File Name and Sheet Name
+		Object data[][] = ExcelDataProvider.testData("Oracle_TestData", "Assets");
+		return data;
+	}
+
+	@Test(dataProvider = "AssetTest")
+	public void oracle_Fixed_Assets_Test(String assetNumVal, String assetKeyVal) throws Exception {
 		waitTime(driver);
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_Assets_Page oraAp = new Oracle_Assets_Page();
@@ -116,11 +125,11 @@ public class Fixed_Assets_Test extends TestInitializer {
 		waitTime(driver);
 		oraAp.clickNextBtn_inAssetPopup();
 		waitTime(driver);
-		oraAp.enterAssetNumber(dataTest.assetNumber);
+		oraAp.enterAssetNumber(assetNumVal);
 		waitTime(driver);
 		oraAp.clickSearchAssetKeyBtn();
 		waitTime(driver);
-		oraAp.clickFA_AssetKeyDropdownBtn(dataTest.assetKey);
+		oraAp.clickFA_AssetKeyDropdownBtn(assetKeyVal);
 		waitTime(driver);
 		oraAp.clickOk_inCategoryPopup();
 		waitTime(driver);
@@ -132,14 +141,14 @@ public class Fixed_Assets_Test extends TestInitializer {
 		waitTime(driver);
 		oraAp.clickReadyToPostBtn_inAsset();
 		waitTime5(driver);
-		oraAp.selectExistingAsset(dataTest.assetNumber);
+		oraAp.selectExistingAsset(assetNumVal);
 		waitTime2(driver);
 		oraAp.clickPostAllBtn_inAsset();
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Asset Posted Successfully", "postinngAssetSuccesful");
 		waitTime5(driver);
 		oraAp.clickRefreshBtn_inAsset();
-		
+
 //		waitTime(driver);
 //		grep.testCreate("Verify Assert in Inquire Asset Page Test", "Verify Assert in Inquire Asset Page");
 		waitTime2(driver);
@@ -147,7 +156,7 @@ public class Fixed_Assets_Test extends TestInitializer {
 		waitTime(driver);
 		oraHome.selectTasks_InTaskPage(dataTest.inquireAssetTask);
 		waitTime(driver);
-		oraAp.enterAssetNumber_inInquireAsset(dataTest.assetNumber);
+		oraAp.enterAssetNumber_inInquireAsset(assetNumVal);
 		waitTime(driver);
 		oraAp.clickSearchBtn();
 		waitTime3(driver);

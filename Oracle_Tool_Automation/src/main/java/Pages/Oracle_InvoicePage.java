@@ -487,7 +487,7 @@ public class Oracle_InvoicePage extends WaitsManager {
 	public void validateAccountingConfirmationPopup() throws Exception {
 		try {
 //			implWait(driver);
-			waitForElement(text_AccountingConfirmation,30);
+			waitForElement(text_AccountingConfirmation, 30);
 
 			String getMsg = driver.findElement(text_AccountingConfirmation).getText().trim();
 			validAssert.equalsAssert(getMsg, "The accounting has been completed.");
@@ -795,9 +795,20 @@ public class Oracle_InvoicePage extends WaitsManager {
 	}
 
 	public void clickOk_InCreatePaymentPage() {
-		implWait(driver);
+		try {
 
-		driver.findElement(okWarnBtn_inPaymentPage).click();
+			implWait(driver);
+			WebElement okBtn = driver.findElement(okWarnBtn_inPaymentPage);
+			if (okBtn.isDisplayed()) {
+				okBtn.click();
+			} else {
+				grep.infoTest("Ok not available");
+			}
+
+		} catch (Exception e) {
+			grep.infoTest("Ok not available");
+
+		}
 	}
 
 	public void searchAndSelectDisbursementBankAccount(String bankAccVal) {

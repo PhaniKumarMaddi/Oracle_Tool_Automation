@@ -1938,3 +1938,89 @@ Session ID: cc063499ebf215a89a3edd825799826d
 2026-02-17 15:40:33 [main] INFO : Sub Process completed successfully.
 2026-02-17 15:40:39 [main] INFO : Testing Ended
 2026-02-17 15:40:39 [main] INFO : ***********
+2026-02-17 16:16:28 [main] INFO : Launching Chrome Browser
+2026-02-17 16:16:28 [main] INFO : Report Name :OraclePage.html
+2026-02-17 16:16:35 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 16:16:39 [main] INFO : Logged in to Oracle Application
+2026-02-17 16:16:40 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 16:16:40 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 16:16:51 [main] INFO : Navigating to Assets
+2026-02-17 16:16:57 [main] INFO : Selecting Major Category
+2026-02-17 16:17:02 [main] INFO : Entering Value for Major: CR COMPUTER
+2026-02-17 16:17:05 [main] INFO : Selecting Minor Category
+2026-02-17 16:17:09 [main] INFO : Entering Value for Major: CR PC
+2026-02-17 16:17:16 [main] INFO : Entering Asset Description: Testing Asset
+2026-02-17 16:17:17 [main] INFO : Entering Asset Cost: 400
+2026-02-17 16:17:17 [main] INFO : Selecting Asset Expenses Account
+2026-02-17 16:17:31 [main] INFO : Selecting Company Value: 101
+2026-02-17 16:17:33 [main] INFO : Selecting Department Value: 202
+2026-02-17 16:17:34 [main] INFO : Selecting Future Value: 000
+2026-02-17 16:17:38 [main] INFO : Selecting Asset Location
+2026-02-17 16:18:46 [main] ERROR: Test Failed :Expected condition failed: waiting for element to be clickable: By.xpath: //label[text()='State']/preceding-sibling::input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62104}, goog:processID: 3768, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62104/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1764dfe1fda71873fecbc0b897897549
+2026-02-17 16:19:17 [main] ERROR: Test Failed :Expected condition failed: waiting for element to be clickable: By.xpath: //label[text()='City']/preceding-sibling::input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\PHANIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62104}, goog:processID: 3768, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62104/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1764dfe1fda71873fecbc0b897897549
+2026-02-17 17:04:04 [main] INFO : Launching Chrome Browser
+2026-02-17 17:04:04 [main] INFO : Report Name :OraclePage.html
+2026-02-17 17:04:09 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-17 17:04:13 [main] INFO : Logged in to Oracle Application
+2026-02-17 17:04:14 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-17 17:04:14 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-17 17:04:19 [main] INFO : Clicking on Home icon
+2026-02-17 17:04:23 [main] INFO : Selecting Quick Action: Create Transaction
+2026-02-17 17:04:24 [main] INFO : Navigating Create Transaction
+2026-02-17 17:04:26 [main] INFO : Filling Details in Create Transaction Page
+2026-02-17 17:04:27 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-17 17:04:31 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-17 17:04:36 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-17 17:04:41 [main] INFO : Entering Name: CR GE
+2026-02-17 17:04:51 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-17 17:04:54 [main] INFO : Entering Line Description: Testing AR
+2026-02-17 17:04:54 [main] INFO : Entering Line Quantity: 2
+2026-02-17 17:04:55 [main] INFO : Entering Line Unit Price: 70
+2026-02-17 17:05:11 [main] INFO : Selecting Complete and Review Option
+2026-02-17 17:05:17 [main] INFO : Clicking on Post to ledger
+2026-02-17 17:05:25 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-17 17:05:25 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-17 17:05:36 [main] INFO : Validating the Accounting Lines
+2026-02-17 17:05:45 [main] INFO : Transaction Confirmation Message: Transaction 105003 has been saved.
+2026-02-17 17:05:46 [main] INFO : Extracted Transaction Number: 105003
+2026-02-17 17:05:51 [main] INFO : Navigating to Acoount Receivables
+2026-02-17 17:05:54 [main] INFO : Click on Create Receipt
+2026-02-17 17:05:56 [main] INFO : Filling the Details in Receipt Page
+2026-02-17 17:05:56 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-17 17:06:00 [main] INFO : Selecting Receipt Method: CR RECEIPT
+2026-02-17 17:06:03 [main] INFO : Entering Receipt Number: Test_Receipt_07
+2026-02-17 17:06:05 [main] INFO : Entering Amount: 70
+2026-02-17 17:06:06 [main] INFO : Selecting Bank Name: Well Forgo Bank
+2026-02-17 17:06:11 [main] INFO : Selecting Bank branch: WFG HOUSTON
+2026-02-17 17:06:15 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-17 17:06:18 [main] INFO : Click on Submit Apply Manually
+2026-02-17 17:06:25 [main] INFO : Click on Application tab under Receipt Details Section
+2026-02-17 17:06:26 [main] INFO : Click on Add open Receivables
+2026-02-17 17:06:31 [main] INFO : Entering Transaction Customer Name: CR GE
+2026-02-17 17:06:34 [main] INFO : Scrolled to the last visible record in the table.
+2026-02-17 17:06:37 [main] INFO : Selecting receipt :105003
+2026-02-17 17:06:42 [main] INFO : Clicking on Post to ledger
+2026-02-17 17:06:51 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-17 17:06:51 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-17 17:07:02 [main] INFO : Validating the Accounting Lines
+2026-02-17 17:07:11 [main] INFO : Navigating to Billing page from Receivables
+2026-02-17 17:07:19 [main] INFO : Inside Manage Transactions Page
+2026-02-17 17:07:28 [main] INFO : Entering Business Unit: CRITICAL RIVER BU
+2026-02-17 17:07:37 [main] INFO : Entering Transaction Source name: CR MANUAL TRANSACTION
+2026-02-17 17:07:47 [main] INFO : Clicking on View Balance Details
+2026-02-17 17:08:04 [main] INFO : Transaction Confirmation Message: Transaction 105003 has been saved.
+2026-02-17 17:08:04 [main] INFO : Extracted Transaction Number: 105003
+2026-02-17 17:08:05 [main] INFO : Expected :105003 and Actual :105003
+2026-02-17 17:08:05 [main] INFO : Expected :105003 and Actual :105003 both are same
+2026-02-17 17:08:07 [main] INFO : Testing Ended
+2026-02-17 17:08:07 [main] INFO : ***********

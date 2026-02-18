@@ -72,18 +72,42 @@ public class GenerateReports {
 		test.warning(warnDescription);
 	}
 
+//	public void captureScreenshot(String status, String info, String screenshotName) throws Exception {
+//
+//		String screenshotPath = takeScreenShot(driver, screenshotName);
+//		switch (status.toLowerCase()) {
+//		case "pass":
+//			test.pass(info + " Passed", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+//			break;
+//		case "fail":
+//			test.fail(info + " Failed", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+//			break;
+//		case "info":
+//			test.info(info + " Info", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+//			break;
+//		default:
+//			throw new IllegalArgumentException("Invalid status: " + status);
+//		}
+//	}
+
+	public String getBase64Screenshot(WebDriver driver) {
+		// Capture screenshot as Base64 string
+		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
+	}
+
 	public void captureScreenshot(String status, String info, String screenshotName) throws Exception {
 
-		String screenshotPath = takeScreenShot(driver, screenshotName);
+		String base64Code = getBase64Screenshot(driver);
+
 		switch (status.toLowerCase()) {
 		case "pass":
-			test.pass(info + " Passed", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+			test.pass(info + " Passed", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code).build());
 			break;
 		case "fail":
-			test.fail(info + " Failed", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+			test.fail(info + " Failed", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code).build());
 			break;
 		case "info":
-			test.info(info + " Info", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+			test.info(info + " Info", MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code).build());
 			break;
 		default:
 			throw new IllegalArgumentException("Invalid status: " + status);

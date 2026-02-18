@@ -253,7 +253,7 @@ public class Oracle_Assets_Page extends WaitsManager {
 			By selectDeptVal_inExpAccPopup = By.xpath("//div[@title='" + deptVal + "']");
 			By selectFutureValue_inExpAccPopup = By.xpath("//div[@title='" + futureVal + "']");
 
-			waitForElementToBeClickable(enterCompany_inExpAccPopup, 90);
+			waitForElementToBeClickable(enterCompany_inExpAccPopup, 120);
 			waitTime2(driver);
 			driver.findElement(enterCompany_inExpAccPopup).sendKeys(companyVal);
 			waitTime(driver);

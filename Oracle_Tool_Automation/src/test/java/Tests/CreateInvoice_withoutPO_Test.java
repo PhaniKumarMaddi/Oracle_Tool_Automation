@@ -58,7 +58,7 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		waitTime(driver);
 
 		oraHome.click_Tasks_InPO();
-		waitTime1(driver);
+		waitTime2(driver);
 		oraHome.selectTasks_InTaskPage(dataTest.createInvoiceBtn);
 		waitTime2(driver);
 		waitTime60(driver);
@@ -74,7 +74,7 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		waitTime(driver);
 
 		oraInv.searchAndSelectBusinessUnit(dataTest.selectBU);
-		waitTime2(driver);
+		waitTime5(driver);
 		oraInv.searchAndSelectSupplier(dataTest.selectSupplier);
 		waitTime(driver);
 		oraInv.enterInvoiceNumber(invoiceNumVal);
@@ -114,7 +114,7 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		oraInv.clickContinueWarnBtn();
 		waitTime3(driver);
 		oraInv.clickInvoiceActionAndValidateBtn("Validate");
-		waitTime3(driver);
+		waitTime5(driver);
 
 		String status = oraInv.getInvoiceValidation();
 		logger.info("Current Invoice Status: " + status);

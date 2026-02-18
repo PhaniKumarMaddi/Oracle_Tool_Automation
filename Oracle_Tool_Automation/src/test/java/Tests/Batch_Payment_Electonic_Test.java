@@ -38,7 +38,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		Oracle_HomePage oraHome = new Oracle_HomePage();
 		Oracle_BatchPaymentPage oraBpp = new Oracle_BatchPaymentPage();
 
-//		createInvoice(invoiceNumVal);
+		createInvoice(invoiceNumVal);
 		waitTime(driver);
 
 		grep.testCreate("Verify Batch Payment Invoice Test", "Verify Batch Payment Invoice");

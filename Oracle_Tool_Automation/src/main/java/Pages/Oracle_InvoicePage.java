@@ -137,7 +137,7 @@ public class Oracle_InvoicePage extends WaitsManager {
 
 		try {
 //			implWait(driver);
-			waitForElement(createInvoicePageTitle, 180);
+			waitForElement(createInvoicePageTitle, 240);
 			String actualText = driver.findElement(createInvoicePageTitle).getText().trim();
 			waitTime(driver);
 

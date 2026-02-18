@@ -974,7 +974,7 @@ public class Oracle_HomePage extends WaitsManager {
 	public void selectTasks_InTaskPage(String task) throws Exception {
 		try {
 			By selectTask = By.xpath("//a[text()='" + task + "']");
-			implWait(driver);
+			waitForElementToBeClickable(selectTask, 20);
 
 			driver.findElement(selectTask).click();
 			waitTime(driver);

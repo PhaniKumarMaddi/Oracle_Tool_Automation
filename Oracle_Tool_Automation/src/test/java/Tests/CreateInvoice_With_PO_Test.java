@@ -86,7 +86,7 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 
 		oraInv.enterInvoiceDescription("Test Supplier Invoices for Expenses");
 
-		waitTime(driver);
+		waitTime5(driver);
 
 		oraInv.searchAndSelectPaymentTerms(dataTest.paymentTerms);
 		waitTime(driver);
@@ -232,7 +232,7 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 
 		grep.infoTest("Save and Close Invoice");
 		logger.info("Save and Close Invoice");
-		waitTime(driver);
+		waitTime3(driver);
 
 		oraHome.clickHomeButton();
 		waitTime(driver);

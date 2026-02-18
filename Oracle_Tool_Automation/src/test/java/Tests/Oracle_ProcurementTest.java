@@ -226,7 +226,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		grep.infoTest("Click on Create");
 		logger.info("Click on Create");
 		oraHome.clickCreateBtn_inProcessRequsitionPage();
-		waitTime1(driver);
+		waitTime3(driver);
 		String orderConfirmMsg = oraHome.validatePurchaseOrderCreationConfirmation();
 		grep.infoTest("Purchase Order Created Confirmation Message Popup: " + orderConfirmMsg);
 		logger.info("Purchase Order Created Confirmation Message Popup: " + orderConfirmMsg);

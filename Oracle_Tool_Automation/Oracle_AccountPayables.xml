@@ -4,7 +4,7 @@
 	<test thread-count="5" name="Oracle_AccountPayablesTest">
 		<parameter name="FileName" value="OraclePayables_Report.html" />
 		<classes>
-			<!-- <class name="Tests.CreateInvoice_withoutPO_Test" />-->
+			 <class name="Tests.CreateInvoice_withoutPO_Test" />
 			<class name="Tests.CreateInvoice_With_PO_Test" />
 			<class name="Tests.Accounting_At_Glance_Test" />
 			<class name="Tests.Batch_Payment_Electonic_Test" />

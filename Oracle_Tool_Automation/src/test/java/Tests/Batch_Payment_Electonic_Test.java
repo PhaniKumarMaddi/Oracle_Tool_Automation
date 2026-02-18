@@ -169,7 +169,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		oraHome.clickHomeFromPutAway();
 		waitTime2(driver);
 
-		oracle_Query_InvoicePayment(invoiceNumVal);
+//		oracle_Query_InvoicePayment(invoiceNumVal);
 	}
 
 	public void createInvoice(String invNumVal) throws Exception {

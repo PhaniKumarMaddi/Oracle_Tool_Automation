@@ -1,91 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-18T14:57:55 IST" name="Suite" finished-at="2026-02-18T15:17:29 IST" duration-ms="1174500">
+  <suite started-at="2026-02-18T17:15:37 IST" name="Suite" finished-at="2026-02-18T17:24:46 IST" duration-ms="548500">
     <groups>
     </groups>
-    <test started-at="2026-02-18T14:57:55 IST" name="Oracle_AccountPayablesTest" finished-at="2026-02-18T15:17:29 IST" duration-ms="1174500">
-      <class name="Tests.Accounting_At_Glance_Test">
-        <test-method signature="oracle_Accounting_At_Glance()[pri:0, instance:Tests.Accounting_At_Glance_Test@2f17e30d]" started-at="2026-02-18T15:02:52 IST" name="oracle_Accounting_At_Glance" finished-at="2026-02-18T15:06:12 IST" duration-ms="200258" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- oracle_Accounting_At_Glance -->
-      </class> <!-- Tests.Accounting_At_Glance_Test -->
-      <class name="Tests.Query_Invoice_Payment_Test">
-        <test-method signature="oracle_Query_InvoicePayment(java.lang.String)[pri:0, instance:Tests.Query_Invoice_Payment_Test@1d131e1b]" started-at="2026-02-18T15:14:38 IST" name="oracle_Query_InvoicePayment" data-provider="QueryInvoiceTest" finished-at="2026-02-18T15:15:33 IST" duration-ms="55053" status="PASS">
+    <test started-at="2026-02-18T17:15:37 IST" name="OracleProcurementTest" finished-at="2026-02-18T17:24:46 IST" duration-ms="548500">
+      <class name="Tests.Oracle_ProcurementWithoutRequisition_Test">
+        <test-method signature="oracle_ProcurementWithout_Requisition_Test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementWithoutRequisition_Test@2f17e30d]" started-at="2026-02-18T17:21:32 IST" name="oracle_ProcurementWithout_Requisition_Test" data-provider="ProcurementTest" finished-at="2026-02-18T17:24:45 IST" duration-ms="192897" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Test_PO_18_05]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- oracle_Query_InvoicePayment -->
-      </class> <!-- Tests.Query_Invoice_Payment_Test -->
-      <class name="Tests.PayableTrialBalanceReport_Test">
-        <test-method signature="oracle_Payable_Trial_Balance_Report()[pri:0, instance:Tests.PayableTrialBalanceReport_Test@71cf1b07]" started-at="2026-02-18T15:15:33 IST" name="oracle_Payable_Trial_Balance_Report" finished-at="2026-02-18T15:17:29 IST" duration-ms="115644" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- oracle_Payable_Trial_Balance_Report -->
-      </class> <!-- Tests.PayableTrialBalanceReport_Test -->
-      <class name="Tests.Batch_Payment_Electonic_Test">
-        <test-method signature="oracle_Batch_Payment_Electronic(java.lang.String,java.lang.String)[pri:0, instance:Tests.Batch_Payment_Electonic_Test@3e821657]" started-at="2026-02-18T15:06:12 IST" name="oracle_Batch_Payment_Electronic" data-provider="BatchPaymentTest" finished-at="2026-02-18T15:14:38 IST" duration-ms="505849" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test_Batch_18_05]]>
+                <![CDATA[CRITICAL RIVER LOCATION]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[MP_ELE_Payment_18_3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- oracle_Batch_Payment_Electronic -->
-      </class> <!-- Tests.Batch_Payment_Electonic_Test -->
-      <class name="Tests.CreateInvoice_With_PO_Test">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.CreateInvoice_With_PO_Test@23fb172e]" started-at="2026-02-18T14:57:55 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-18T14:58:14 IST" duration-ms="19068" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[OraclePayables_Report.html]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="oracle_InvoiceCreation_WithPO(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.CreateInvoice_With_PO_Test@23fb172e]" started-at="2026-02-18T14:58:16 IST" name="oracle_InvoiceCreation_WithPO" data-provider="InvoiceTest" finished-at="2026-02-18T15:02:52 IST" duration-ms="275951" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CRPO500109]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test_PO_18_05]]>
+                <![CDATA[CR1002]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[100]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[04]]>
+                <![CDATA[14]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[02]]>
+                <![CDATA[01]]>
               </value>
             </param>
             <param index="5">
@@ -93,25 +39,59 @@
                 <![CDATA[2026]]>
               </value>
             </param>
-            <param index="6">
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oracle_ProcurementWithout_Requisition_Test -->
+      </class> <!-- Tests.Oracle_ProcurementWithoutRequisition_Test -->
+      <class name="Tests.Oracle_ProcurementTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementTest@23fb172e]" started-at="2026-02-18T17:15:37 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-18T17:15:56 IST" duration-ms="19206" status="PASS">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[Supplier Expenses Payment]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[CR ELECTRONIC]]>
+                <![CDATA[OracleProcurement_Report.html]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oracle_InvoiceCreation_WithPO -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CreateInvoice_With_PO_Test@23fb172e]" started-at="2026-02-18T15:17:29 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-18T15:17:29 IST" duration-ms="863" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="oracle_Procurement_Test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementTest@23fb172e]" started-at="2026-02-18T17:15:58 IST" name="oracle_Procurement_Test" data-provider="ProcurementTest" finished-at="2026-02-18T17:21:32 IST" duration-ms="333692" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mouse]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CR.MISC]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Each]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oracle_Procurement_Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Oracle_ProcurementTest@23fb172e]" started-at="2026-02-18T17:24:45 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-18T17:24:46 IST" duration-ms="827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.CreateInvoice_With_PO_Test -->
-    </test> <!-- Oracle_AccountPayablesTest -->
+      </class> <!-- Tests.Oracle_ProcurementTest -->
+    </test> <!-- OracleProcurementTest -->
   </suite> <!-- Suite -->
 </testng-results>

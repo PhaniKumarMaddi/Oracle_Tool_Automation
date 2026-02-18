@@ -196,11 +196,11 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 		grep.infoTest("Click on Receive");
 		logger.info("Click on Receive");
 		oraHome.clickReceiveBtn();
-		waitTime2(driver);
+		waitTime3(driver);
 		grep.infoTest("Click on Show Receipt quantity to know quantity details");
 		logger.info("Click on Show Receipt quantity to know quantity details");
 		oraHome.clickShowReceiptBtn();
-		waitTime2(driver);
+		waitTime3(driver);
 		grep.infoTest("Click on 'Create Receipt' from right side menu");
 		logger.info("Click on 'Create Receipt' from right side menu");
 		oraHome.clickCreateReceiptBtn();

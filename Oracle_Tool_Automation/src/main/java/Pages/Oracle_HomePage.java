@@ -362,6 +362,7 @@ public class Oracle_HomePage extends WaitsManager {
 
 	public void clickCreateNonCatalogBtn() {
 		implWait(driver);
+		scrollView(createNonCatalog);
 		driver.findElement(createNonCatalog).click();
 	}
 

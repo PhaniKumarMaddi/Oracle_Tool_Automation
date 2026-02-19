@@ -57,7 +57,7 @@ public class BankStatement_Reconciliation_Test extends TestInitializer {
 		waitTime(driver);
 		grep.infoTest("Filling Details in Reconcilation Tab");
 		logger.info("Filling Details in Reconcilation Tab");
-		waitTime(driver);
+		waitTime3(driver);
 		oraBsp.searchAndSelectBankAccount(dataTest.bankAccount);
 		waitTime(driver);
 		oraBsp.selectFromDate_Reconciled();

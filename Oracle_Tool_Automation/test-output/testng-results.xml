@@ -1,164 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-19T13:18:39 IST" name="Suite" finished-at="2026-02-19T13:37:19 IST" duration-ms="1119632">
+  <suite started-at="2026-02-19T17:33:49 IST" name="Default suite" finished-at="2026-02-19T17:44:48 IST" duration-ms="658846">
     <groups>
     </groups>
-    <test started-at="2026-02-19T13:18:39 IST" name="OracleProcurementTest" finished-at="2026-02-19T13:37:19 IST" duration-ms="1119632">
-      <class name="Tests.Oracle_ProcurementWithoutRequisition_Test">
-        <test-method signature="oracle_ProcurementWithout_Requisition_Test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementWithoutRequisition_Test@2f17e30d]" started-at="2026-02-19T13:31:12 IST" name="oracle_ProcurementWithout_Requisition_Test" data-provider="ProcurementTest" finished-at="2026-02-19T13:34:17 IST" duration-ms="185413" status="PASS">
+    <test started-at="2026-02-19T17:33:49 IST" name="Default test" finished-at="2026-02-19T17:44:48 IST" duration-ms="658846">
+      <class name="Tests.Batch_Payment_Electonic_Test">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Batch_Payment_Electonic_Test@7216fb24]" started-at="2026-02-19T17:33:49 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-19T17:34:01 IST" duration-ms="11818" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CRITICAL RIVER LOCATION]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[CR1002]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[25]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[01]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[2026]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- oracle_ProcurementWithout_Requisition_Test -->
-        <test-method signature="oracle_ProcurementWithout_Requisition_Test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementWithoutRequisition_Test@2f17e30d]" started-at="2026-02-19T13:34:17 IST" name="oracle_ProcurementWithout_Requisition_Test" data-provider="ProcurementTest" finished-at="2026-02-19T13:37:18 IST" duration-ms="180873" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CRITICAL RIVER LOCATION]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[CR1002]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[31]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[01]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[2026]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- oracle_ProcurementWithout_Requisition_Test -->
-      </class> <!-- Tests.Oracle_ProcurementWithoutRequisition_Test -->
-      <class name="Tests.Oracle_ProcurementTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementTest@23fb172e]" started-at="2026-02-19T13:18:39 IST" name="setup" description="Setup and Login To Browser" finished-at="2026-02-19T13:18:55 IST" duration-ms="15404" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[OracleProcurement_Report.html]]>
+                <![CDATA[OraclePage.html]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="oracle_Procurement_Test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementTest@23fb172e]" started-at="2026-02-19T13:18:56 IST" name="oracle_Procurement_Test" data-provider="ProcurementTest" finished-at="2026-02-19T13:25:17 IST" duration-ms="380502" status="PASS">
+        <test-method signature="oracle_Batch_Payment_Electronic(java.lang.String,java.lang.String)[pri:0, instance:Tests.Batch_Payment_Electonic_Test@7216fb24]" started-at="2026-02-19T17:34:02 IST" name="oracle_Batch_Payment_Electronic" data-provider="BatchPaymentTest" finished-at="2026-02-19T17:44:48 IST" duration-ms="645767" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Mouse]]>
+                <![CDATA[Test_Batch_19_01]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[CR.MISC]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Each]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[40]]>
+                <![CDATA[MP_ELE_Payment_19_01]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oracle_Procurement_Test -->
-        <test-method signature="oracle_Procurement_Test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.Oracle_ProcurementTest@23fb172e]" started-at="2026-02-19T13:25:17 IST" name="oracle_Procurement_Test" data-provider="ProcurementTest" finished-at="2026-02-19T13:31:11 IST" duration-ms="354720" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mouse]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[CR.MISC]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Each]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[30]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- oracle_Procurement_Test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Oracle_ProcurementTest@23fb172e]" started-at="2026-02-19T13:37:18 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-19T13:37:19 IST" duration-ms="829" status="PASS">
+        </test-method> <!-- oracle_Batch_Payment_Electronic -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Batch_Payment_Electonic_Test@7216fb24]" started-at="2026-02-19T17:44:48 IST" name="tearDown" description="Quit Browser" finished-at="2026-02-19T17:44:48 IST" duration-ms="227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.Oracle_ProcurementTest -->
-    </test> <!-- OracleProcurementTest -->
-  </suite> <!-- Suite -->
+      </class> <!-- Tests.Batch_Payment_Electonic_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

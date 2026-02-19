@@ -5132,3 +5132,377 @@ View requisition
 2026-02-19 13:37:18 [main] INFO : Current status for CRPO500124-2025 is Closed for Receiving
 2026-02-19 13:37:19 [main] INFO : Testing Ended
 2026-02-19 13:37:19 [main] INFO : ***********
+2026-02-19 14:33:07 [main] INFO : Launching Chrome Browser
+2026-02-19 14:33:07 [main] INFO : Report Name :OraclePage.html
+2026-02-19 14:33:13 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-19 14:33:17 [main] INFO : Logged in to Oracle Application
+2026-02-19 14:33:18 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-19 14:33:18 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-19 14:33:23 [main] INFO : Clicking on Home icon
+2026-02-19 14:33:28 [main] INFO : Selecting Quick Action: Create Transaction
+2026-02-19 14:33:29 [main] INFO : Navigating Create Transaction
+2026-02-19 14:33:30 [main] INFO : Filling Details in Create Transaction Page
+2026-02-19 14:33:33 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-19 14:33:37 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-19 14:33:42 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-19 14:33:48 [main] INFO : Entering Name: CR GE
+2026-02-19 14:33:58 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-19 14:34:00 [main] INFO : Entering Line Description: Testing AR
+2026-02-19 14:34:01 [main] INFO : Entering Line Quantity: 2
+2026-02-19 14:34:02 [main] INFO : Entering Line Unit Price: 70
+2026-02-19 14:34:18 [main] INFO : Selecting Complete and Review Option
+2026-02-19 14:34:23 [main] INFO : Clicking on Post to ledger
+2026-02-19 14:34:35 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-19 14:34:35 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-19 14:34:46 [main] INFO : Validating the Accounting Lines
+2026-02-19 14:34:56 [main] INFO : Transaction Confirmation Message: Transaction 107000 has been saved.
+2026-02-19 14:34:56 [main] INFO : Extracted Transaction Number: 107000
+2026-02-19 14:35:01 [main] INFO : Navigating to Acoount Receivables
+2026-02-19 14:35:05 [main] INFO : Click on Create Receipt
+2026-02-19 14:35:06 [main] INFO : Filling the Details in Receipt Page
+2026-02-19 14:35:07 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-19 14:35:10 [main] INFO : Selecting Receipt Method: CR RECEIPT
+2026-02-19 14:35:13 [main] INFO : Entering Receipt Number: Test_Receipt_19_01
+2026-02-19 14:35:16 [main] INFO : Entering Amount: 70
+2026-02-19 14:35:16 [main] INFO : Selecting Bank Name: Well Forgo Bank
+2026-02-19 14:35:21 [main] INFO : Selecting Bank branch: WFG HOUSTON
+2026-02-19 14:35:26 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-19 14:35:29 [main] INFO : Click on Submit Apply Manually
+2026-02-19 14:35:36 [main] INFO : Click on Application tab under Receipt Details Section
+2026-02-19 14:35:37 [main] INFO : Click on Add open Receivables
+2026-02-19 14:35:42 [main] INFO : Entering Transaction Customer Name: CR GE
+2026-02-19 14:35:45 [main] INFO : Scrolled to the last visible record in the table.
+2026-02-19 14:35:47 [main] INFO : Selecting receipt :107000
+2026-02-19 14:35:52 [main] INFO : Clicking on Post to ledger
+2026-02-19 14:36:00 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-19 14:36:00 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-19 14:36:11 [main] INFO : Validating the Accounting Lines
+2026-02-19 14:36:20 [main] INFO : Navigating to Billing page from Receivables
+2026-02-19 14:36:27 [main] INFO : Inside Manage Transactions Page
+2026-02-19 14:36:36 [main] INFO : Entering Business Unit: CRITICAL RIVER BU
+2026-02-19 14:36:44 [main] INFO : Entering Transaction Source name: CR MANUAL TRANSACTION
+2026-02-19 14:36:55 [main] INFO : Clicking on View Balance Details
+2026-02-19 14:37:11 [main] INFO : Transaction Confirmation Message: Transaction 107000 has been saved.
+2026-02-19 14:37:12 [main] INFO : Extracted Transaction Number: 107000
+2026-02-19 14:37:12 [main] INFO : Expected :107000 and Actual :107000
+2026-02-19 14:37:12 [main] INFO : Expected :107000 and Actual :107000 both are same
+2026-02-19 14:37:17 [main] INFO : Clicking on Home icon
+2026-02-19 14:37:21 [main] INFO : Selecting Quick Action: Create Transaction
+2026-02-19 14:37:22 [main] INFO : Navigating Create Transaction
+2026-02-19 14:37:23 [main] INFO : Filling Details in Create Transaction Page
+2026-02-19 14:37:24 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-19 14:37:27 [main] INFO : Selecting Transaction Source: CR MANUAL TRANSACTION
+2026-02-19 14:37:32 [main] INFO : Selecting Transaction Type: CR INVOICE
+2026-02-19 14:37:38 [main] INFO : Entering Name: CR GE
+2026-02-19 14:37:48 [main] INFO : Selecting Invoice Payment terms: Net 30
+2026-02-19 14:37:51 [main] INFO : Entering Line Description: Testing AR
+2026-02-19 14:37:52 [main] INFO : Entering Line Quantity: 2
+2026-02-19 14:37:52 [main] INFO : Entering Line Unit Price: 70
+2026-02-19 14:38:08 [main] INFO : Selecting Complete and Review Option
+2026-02-19 14:38:14 [main] INFO : Clicking on Post to ledger
+2026-02-19 14:38:22 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-19 14:38:22 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-19 14:38:32 [main] INFO : Validating the Accounting Lines
+2026-02-19 14:38:42 [main] INFO : Transaction Confirmation Message: Transaction 107001 has been saved.
+2026-02-19 14:38:42 [main] INFO : Extracted Transaction Number: 107001
+2026-02-19 14:38:47 [main] INFO : Navigating to Acoount Receivables
+2026-02-19 14:38:50 [main] INFO : Click on Create Receipt
+2026-02-19 14:38:52 [main] INFO : Filling the Details in Receipt Page
+2026-02-19 14:38:52 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-19 14:38:56 [main] INFO : Selecting Receipt Method: CR RECEIPT
+2026-02-19 14:39:06 [main] INFO : Entering Receipt Number: Test_Receipt_19_02
+2026-02-19 14:39:08 [main] INFO : Entering Amount: 70
+2026-02-19 14:39:09 [main] INFO : Selecting Bank Name: Well Forgo Bank
+2026-02-19 14:39:14 [main] INFO : Selecting Bank branch: WFG HOUSTON
+2026-02-19 14:39:19 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-19 14:39:21 [main] INFO : Click on Submit Apply Manually
+2026-02-19 14:39:29 [main] INFO : Click on Application tab under Receipt Details Section
+2026-02-19 14:39:30 [main] INFO : Click on Add open Receivables
+2026-02-19 14:39:34 [main] INFO : Entering Transaction Customer Name: CR GE
+2026-02-19 14:39:37 [main] INFO : Scrolled to the last visible record in the table.
+2026-02-19 14:40:14 [main] INFO : Clicking on Post to ledger
+2026-02-19 14:40:27 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-19 14:40:27 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-19 14:40:37 [main] INFO : Validating the Accounting Lines
+2026-02-19 14:41:18 [main] INFO : Navigating to Billing page from Receivables
+2026-02-19 14:41:25 [main] INFO : Inside Manage Transactions Page
+2026-02-19 14:41:35 [main] INFO : Entering Business Unit: CRITICAL RIVER BU
+2026-02-19 14:41:42 [main] INFO : Entering Transaction Source name: CR MANUAL TRANSACTION
+2026-02-19 14:41:53 [main] INFO : Clicking on View Balance Details
+2026-02-19 14:42:09 [main] INFO : Transaction Confirmation Message: Transaction 107001 has been saved.
+2026-02-19 14:42:10 [main] INFO : Extracted Transaction Number: 107001
+2026-02-19 14:42:10 [main] INFO : Expected :107001 and Actual :107001
+2026-02-19 14:42:10 [main] INFO : Expected :107001 and Actual :107001 both are same
+2026-02-19 14:42:13 [main] INFO : Testing Ended
+2026-02-19 14:42:13 [main] INFO : ***********
+2026-02-19 14:52:24 [main] INFO : Launching Chrome Browser
+2026-02-19 14:52:24 [main] INFO : Report Name :OracleBankStatement_Assets_Report.html
+2026-02-19 14:52:30 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-19 14:52:34 [main] INFO : Logged in to Oracle Application
+2026-02-19 14:52:34 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-19 14:52:34 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-19 14:52:43 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-19 14:52:58 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-19 14:52:58 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-19 14:52:58 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-19 14:52:58 [main] INFO : Filling Bank Statement Details
+2026-02-19 14:52:59 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-19 14:53:01 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-19 14:53:01 [main] INFO : Successfully selected the start date.
+2026-02-19 14:53:01 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-19 14:53:02 [main] INFO : Successfully selected the Enddate.
+2026-02-19 14:53:03 [main] INFO : Entering Statement Id: Test_StatementID_19_01
+2026-02-19 14:53:06 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-19 14:53:06 [main] INFO : Successfully selected the Booking date.
+2026-02-19 14:53:09 [main] INFO : Select Credit from the drop down under Flow Indicator
+2026-02-19 14:53:09 [main] INFO : Entering Statement Amount: 70
+2026-02-19 14:53:14 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-19 14:53:14 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-19 14:53:17 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-19 14:53:17 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-19 14:53:23 [main] INFO : Selecting Bank Account
+2026-02-19 14:53:35 [main] INFO : Select Week to date from the drop down under Statement End Date
+2026-02-19 14:53:37 [main] INFO : Statement ID: Test_StatementID_19_01 | Actual Reconciliation Status: Incomplete
+2026-02-19 14:53:37 [main] INFO : Verification Passed: Status is Incomplete
+2026-02-19 14:53:47 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-19 14:53:59 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-19 14:53:59 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-19 14:53:59 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-19 14:53:59 [main] INFO : Filling Bank Statement Details
+2026-02-19 14:54:00 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-19 14:54:30 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-19 14:54:31 [main] INFO : Successfully selected the start date.
+2026-02-19 14:54:31 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-19 14:54:32 [main] INFO : Successfully selected the Enddate.
+2026-02-19 14:54:33 [main] INFO : Entering Statement Id: Test_StatementID_19_02
+2026-02-19 14:54:36 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-19 14:54:36 [main] INFO : Successfully selected the Booking date.
+2026-02-19 14:54:40 [main] INFO : Select Credit from the drop down under Flow Indicator
+2026-02-19 14:54:40 [main] INFO : Entering Statement Amount: 70
+2026-02-19 14:54:44 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-19 14:54:44 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-19 14:54:48 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-19 14:54:48 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-19 14:54:54 [main] INFO : Selecting Bank Account
+2026-02-19 14:55:07 [main] INFO : Select Week to date from the drop down under Statement End Date
+2026-02-19 14:55:39 [main] INFO : Statement ID: Test_StatementID_19_02 | Actual Reconciliation Status: Incomplete
+2026-02-19 14:55:39 [main] INFO : Verification Passed: Status is Incomplete
+2026-02-19 14:55:49 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-19 14:56:00 [main] INFO : Filling Details in Reconcilation Tab
+2026-02-19 14:56:01 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-19 14:56:03 [main] INFO : Clicked on From Date picker icon.
+2026-02-19 14:56:03 [main] INFO : Successfully selected the From date.
+2026-02-19 14:56:04 [main] INFO : Clicked on TO Date picker icon.
+2026-02-19 14:56:04 [main] INFO : Successfully selected the TO date.
+2026-02-19 14:56:09 [main] INFO : Retrieved text for ID Test_StatementID_19_01: 70,00
+2026-02-19 14:56:09 [main] INFO : Checked the box for Statement ID: Test_StatementID_19_01
+2026-02-19 14:56:10 [main] INFO : Retrieved Reference ID 70,00: Test_Receipt_19_02
+2026-02-19 14:56:12 [main] INFO : Selected transaction checkbox for amount: 70,00
+2026-02-19 14:56:18 [main] INFO : Clicking Reconciled Tab
+2026-02-19 14:56:25 [main] INFO : Clicking Search in Reconciled Tab
+2026-02-19 14:56:28 [main] INFO : Receipt found: Test_Receipt_19_02
+2026-02-19 14:56:41 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-19 14:56:52 [main] INFO : Filling Details in Reconcilation Tab
+2026-02-19 14:56:53 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-19 14:57:24 [main] INFO : Clicked on From Date picker icon.
+2026-02-19 14:57:24 [main] INFO : Successfully selected the From date.
+2026-02-19 14:57:24 [main] INFO : Clicked on TO Date picker icon.
+2026-02-19 14:57:24 [main] INFO : Successfully selected the TO date.
+2026-02-19 16:14:50 [main] INFO : Launching Chrome Browser
+2026-02-19 16:14:51 [main] INFO : Report Name :OracleBankStatement_Assets_Report.html
+2026-02-19 16:14:58 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-19 16:15:02 [main] INFO : Logged in to Oracle Application
+2026-02-19 16:15:03 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-19 16:15:03 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-19 16:15:15 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-19 16:15:28 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-19 16:15:28 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-19 16:15:28 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-19 16:15:28 [main] INFO : Filling Bank Statement Details
+2026-02-19 16:15:29 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-19 16:15:31 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-19 16:15:31 [main] INFO : Successfully selected the start date.
+2026-02-19 16:15:31 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-19 16:15:32 [main] INFO : Successfully selected the Enddate.
+2026-02-19 16:15:33 [main] INFO : Entering Statement Id: Test_StatementID_19_03
+2026-02-19 16:15:37 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-19 16:15:37 [main] INFO : Successfully selected the Booking date.
+2026-02-19 16:15:40 [main] INFO : Select Credit from the drop down under Flow Indicator
+2026-02-19 16:15:40 [main] INFO : Entering Statement Amount: 70
+2026-02-19 16:15:46 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-19 16:15:46 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-19 16:15:49 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-19 16:15:49 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-19 16:15:55 [main] INFO : Selecting Bank Account
+2026-02-19 16:16:08 [main] INFO : Select Week to date from the drop down under Statement End Date
+2026-02-19 16:16:10 [main] INFO : Statement ID: Test_StatementID_19_03 | Actual Reconciliation Status: Incomplete
+2026-02-19 16:16:10 [main] INFO : Verification Passed: Status is Incomplete
+2026-02-19 16:16:21 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-19 16:16:33 [main] INFO : Create Bank Statement Page Header: Create Bank Statement
+2026-02-19 16:16:33 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement
+2026-02-19 16:16:33 [main] INFO : Expected :Create Bank Statement and Actual :Create Bank Statement both are same
+2026-02-19 16:16:34 [main] INFO : Filling Bank Statement Details
+2026-02-19 16:16:34 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-19 16:16:36 [main] INFO : Clicked on Period Start Date picker icon.
+2026-02-19 16:16:36 [main] INFO : Successfully selected the start date.
+2026-02-19 16:16:37 [main] INFO : Clicked on Period End Date picker icon.
+2026-02-19 16:16:37 [main] INFO : Successfully selected the Enddate.
+2026-02-19 16:16:38 [main] INFO : Entering Statement Id: Test_StatementID_19_04
+2026-02-19 16:16:41 [main] INFO : Clicked on Booking Date picker icon.
+2026-02-19 16:16:42 [main] INFO : Successfully selected the Booking date.
+2026-02-19 16:16:45 [main] INFO : Select Credit from the drop down under Flow Indicator
+2026-02-19 16:16:45 [main] INFO : Entering Statement Amount: 70
+2026-02-19 16:16:50 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-19 16:16:50 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-19 16:16:53 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved.
+2026-02-19 16:16:53 [main] INFO : Expected :Your changes were saved. and Actual :Your changes were saved. both are same
+2026-02-19 16:16:59 [main] INFO : Selecting Bank Account
+2026-02-19 16:17:12 [main] INFO : Select Week to date from the drop down under Statement End Date
+2026-02-19 16:17:44 [main] INFO : Statement ID: Test_StatementID_19_04 | Actual Reconciliation Status: Incomplete
+2026-02-19 16:17:44 [main] INFO : Verification Passed: Status is Incomplete
+2026-02-19 16:17:55 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-19 16:18:06 [main] INFO : Filling Details in Reconcilation Tab
+2026-02-19 16:18:07 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-19 16:18:09 [main] INFO : Clicked on From Date picker icon.
+2026-02-19 16:18:09 [main] INFO : Successfully selected the From date.
+2026-02-19 16:18:10 [main] INFO : Clicked on TO Date picker icon.
+2026-02-19 16:18:10 [main] INFO : Successfully selected the TO date.
+2026-02-19 16:18:13 [main] INFO : Retrieved text for ID Test_StatementID_19_03: 70,00
+2026-02-19 16:18:14 [main] INFO : Checked the box for Statement ID: Test_StatementID_19_03
+2026-02-19 16:18:14 [main] INFO : Retrieved Reference ID 70,00: Test_Receipt_19_01
+2026-02-19 16:18:17 [main] INFO : Selected transaction checkbox for amount: 70,00
+2026-02-19 16:18:23 [main] INFO : Clicking Reconciled Tab
+2026-02-19 16:18:30 [main] INFO : Clicking Search in Reconciled Tab
+2026-02-19 16:18:33 [main] INFO : Receipt found: Test_Receipt_19_01
+2026-02-19 16:18:46 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-19 16:18:57 [main] INFO : Filling Details in Reconcilation Tab
+2026-02-19 16:18:59 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-19 16:19:29 [main] INFO : Clicked on From Date picker icon.
+2026-02-19 16:19:30 [main] INFO : Successfully selected the From date.
+2026-02-19 16:19:31 [main] INFO : Clicked on TO Date picker icon.
+2026-02-19 16:19:31 [main] INFO : Successfully selected the TO date.
+2026-02-19 16:20:03 [main] ERROR: Failed to retrieve text for Statement ID: Test_StatementID_19_04 - Expected condition failed: waiting for presence of element located by: By.xpath: //span[contains(text(),'Test_StatementID_19_04')]/ancestor::td[1]/preceding-sibling::td[2] (tried for 30 second(s) with 500 milliseconds interval)
+2026-02-19 16:20:34 [main] ERROR: Failed to click checkbox for Test_StatementID_19_04: Expected condition failed: waiting for presence of element located by: By.xpath: //span[contains(text(),'Test_StatementID_19_04')]/ancestor::td[1]/preceding-sibling::td[5]/descendant::label (tried for 30 second(s) with 500 milliseconds interval)
+2026-02-19 16:22:26 [main] INFO : Launching Chrome Browser
+2026-02-19 16:22:27 [main] INFO : Report Name :OraclePage.html
+2026-02-19 16:22:33 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-19 16:22:38 [main] INFO : Logged in to Oracle Application
+2026-02-19 16:22:39 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-19 16:22:39 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-19 16:22:49 [main] INFO : Click on Bank Statements and Reconciliation
+2026-02-19 16:23:00 [main] INFO : Filling Details in Reconcilation Tab
+2026-02-19 16:23:04 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-19 16:23:06 [main] INFO : Clicked on From Date picker icon.
+2026-02-19 16:23:06 [main] INFO : Successfully selected the From date.
+2026-02-19 16:23:07 [main] INFO : Clicked on TO Date picker icon.
+2026-02-19 16:23:07 [main] INFO : Successfully selected the TO date.
+2026-02-19 16:23:39 [main] ERROR: Failed to retrieve text for Statement ID: Test_StatementID_19_03 - Expected condition failed: waiting for presence of element located by: By.xpath: //span[contains(text(),'Test_StatementID_19_03')]/ancestor::td[1]/preceding-sibling::td[2] (tried for 30 second(s) with 500 milliseconds interval)
+2026-02-19 17:29:45 [main] INFO : Launching Chrome Browser
+2026-02-19 17:29:45 [main] INFO : Report Name :OraclePage.html
+2026-02-19 17:29:51 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-19 17:29:55 [main] INFO : Logged in to Oracle Application
+2026-02-19 17:29:55 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-19 17:29:55 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-19 17:30:00 [main] INFO : Clicking on Home icon
+2026-02-19 17:30:04 [main] INFO : Testing Ended
+2026-02-19 17:30:04 [main] INFO : ***********
+2026-02-19 17:30:33 [main] INFO : Launching Chrome Browser
+2026-02-19 17:30:34 [main] INFO : Report Name :OraclePage.html
+2026-02-19 17:30:41 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-19 17:30:45 [main] INFO : Logged in to Oracle Application
+2026-02-19 17:30:46 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-19 17:30:46 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-19 17:30:50 [main] INFO : Clicking on Home icon
+2026-02-19 17:30:54 [main] INFO : Click on Tasks for Create Invoice
+2026-02-19 17:30:56 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-19 17:30:56 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-19 17:32:45 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-19 17:32:45 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-19 17:32:46 [main] INFO : Filling the Invoice Details
+2026-02-19 17:32:47 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-19 17:32:51 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-19 17:33:24 [main] INFO : Entering Invoice Number: Test_Batch_19_01
+2026-02-19 17:33:26 [main] INFO : Entering Invoice Amount: 190
+2026-02-19 17:33:27 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-19 17:33:29 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-19 17:33:30 [main] INFO : Entering Invoice Receive Date: 07-01-2026
+2026-02-19 17:33:31 [main] INFO : Enter Details in Lines Section
+2026-02-19 17:33:51 [main] INFO : Launching Chrome Browser
+2026-02-19 17:33:51 [main] INFO : Report Name :OraclePage.html
+2026-02-19 17:33:56 [main] INFO : Web Page URL: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/
+2026-02-19 17:34:00 [main] INFO : Logged in to Oracle Application
+2026-02-19 17:34:01 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page!
+2026-02-19 17:34:01 [main] INFO : Expected :You have a new home page! and Actual :You have a new home page! both are same
+2026-02-19 17:34:05 [main] INFO : Clicking on Home icon
+2026-02-19 17:34:09 [main] INFO : Click on Tasks for Create Invoice
+2026-02-19 17:34:11 [main] INFO : Expected :Invoices and Actual :Invoices
+2026-02-19 17:34:11 [main] INFO : Expected :Invoices and Actual :Invoices both are same
+2026-02-19 17:35:49 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice:
+2026-02-19 17:35:49 [main] INFO : Expected :Create Invoice: and Actual :Create Invoice: both are same
+2026-02-19 17:35:51 [main] INFO : Filling the Invoice Details
+2026-02-19 17:35:52 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-19 17:35:56 [main] INFO : Selecting Supplier: CR Applied Material
+2026-02-19 17:35:59 [main] INFO : Entering Invoice Number: Test_Batch_19_01
+2026-02-19 17:36:01 [main] INFO : Entering Invoice Amount: 190
+2026-02-19 17:36:02 [main] INFO : Entering Invoice Description: Test Supplier Invoices for Expenses
+2026-02-19 17:36:04 [main] INFO : Selecting Invoice Payment terms: IMMEDIATE
+2026-02-19 17:36:06 [main] INFO : Entering Invoice Receive Date: 07-01-2026
+2026-02-19 17:36:06 [main] INFO : Enter Details in Lines Section
+2026-02-19 17:36:13 [main] INFO : Entering Line Amount: 190
+2026-02-19 17:36:23 [main] INFO : Selecting Comapany Value: 101
+2026-02-19 17:36:25 [main] INFO : Selecting Account for Distribution Combinantion: 52110
+2026-02-19 17:36:30 [main] INFO : Retrieving Distibution Combinatio ID: 101-000-52110-000
+2026-02-19 17:36:31 [main] INFO : Saving and Validating Invoice
+2026-02-19 17:37:15 [main] INFO : Invoice validation message: Needs revalidation
+2026-02-19 17:37:15 [main] INFO : Current Invoice Status: Needs revalidation
+2026-02-19 17:37:16 [main] INFO : Processing revalidation flow...
+2026-02-19 17:37:18 [main] INFO : Warning found! Image source: https://fa-etlf-dev1-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/images/qual_warning_16.png
+2026-02-19 17:37:18 [main] INFO : Clicking the hold count link: 1
+2026-02-19 17:37:21 [main] INFO : Successfully selected 'Validated' from the release name dropdown.
+2026-02-19 17:37:27 [main] INFO : Invoice validation message: Validated
+2026-02-19 17:37:27 [main] INFO : Validated
+2026-02-19 17:37:36 [main] INFO : Entering Payment reason in manage installments popup
+2026-02-19 17:37:37 [main] INFO : Entering Payment reason:Supplier Expenses Payment
+2026-02-19 17:37:39 [main] INFO : Selecting Payment Method: CR ELECTRONIC
+2026-02-19 17:37:47 [main] INFO : Clicking on Post to ledger
+2026-02-19 17:37:55 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed.
+2026-02-19 17:37:55 [main] INFO : Expected :The accounting has been completed. and Actual :The accounting has been completed. both are same
+2026-02-19 17:38:01 [main] INFO : Validating the Accounting Lines
+2026-02-19 17:38:55 [main] INFO : Validation Passed: Header contains invoice number: Test_Batch_19_01
+2026-02-19 17:39:03 [main] INFO : Clicking on Home icon
+2026-02-19 17:39:07 [main] INFO : Click on Tasks for Submit Payment Process Request
+2026-02-19 17:39:16 [main] INFO : Submit Payment Process Request Page Header: Submit Payment Process Request
+2026-02-19 17:39:16 [main] INFO : Expected :Submit Payment Process Request and Actual :Submit Payment Process Request
+2026-02-19 17:39:16 [main] INFO : Expected :Submit Payment Process Request and Actual :Submit Payment Process Request both are same
+2026-02-19 17:39:17 [main] INFO : Entering Batch Number and Batch Template
+2026-02-19 17:39:18 [main] INFO : Entering Payment Process Name: MP_ELE_Payment_19_01
+2026-02-19 17:39:21 [main] INFO : Selecting Business Unit 'Payment' radio button.
+2026-02-19 17:39:24 [main] INFO : Clicking Add Row button for Business Units.
+2026-02-19 17:39:27 [main] INFO : Selecting Business Unit: CRITICAL RIVER BU
+2026-02-19 17:39:33 [main] INFO : Selecting Legal Entities 'Specific' radio button.
+2026-02-19 17:39:35 [main] INFO : Clicking Add Row button for Legal Entities.
+2026-02-19 17:39:38 [main] INFO : Selecting Legal entities: CRITICAL RIVER LE
+2026-02-19 17:39:44 [main] INFO : Selecting Supplier or Party: CR Applied Material
+2026-02-19 17:39:51 [main] INFO : Clicking on Payment and Processing Options Tab
+2026-02-19 17:39:56 [main] INFO : Selecting Bank Account: WFB CORPOATE ACC
+2026-02-19 17:39:58 [main] INFO : Applied Credits checkbox enabled.
+2026-02-19 17:40:00 [main] INFO : Review Installments checkbox enabled.
+2026-02-19 17:40:02 [main] INFO : Create Payment Files checkbox enabled.
+2026-02-19 17:40:16 [main] INFO : Starting poll for record: MP_ELE_Payment_19_01
+2026-02-19 17:40:46 [main] ERROR: Record not ready. Clicking refresh...
+2026-02-19 17:41:17 [main] INFO : Condition Met! Status: Pending installments review
+2026-02-19 17:41:44 [main] INFO : Starting poll for record: MP_ELE_Payment_19_01
+2026-02-19 17:42:14 [main] ERROR: Record not ready. Clicking refresh...
+2026-02-19 17:42:44 [main] INFO : Condition Met! Status: Pending action to complete information required
+2026-02-19 17:42:51 [main] INFO : Selecting Payment Process Profile: WFB EFT PPP
+2026-02-19 17:42:55 [main] INFO : Clicking on Resume Payment Process Button
+2026-02-19 17:43:18 [main] INFO : Starting poll for record: MP_ELE_Payment_19_01
+2026-02-19 17:43:18 [main] INFO : Condition Met! Status: Pending proposed payment review
+2026-02-19 17:43:22 [main] INFO : Clicking on Resume Payment Process Button
+2026-02-19 17:43:24 [main] INFO : Starting poll for record: MP_ELE_Payment_19_01
+2026-02-19 17:43:54 [main] ERROR: Record not ready. Clicking refresh...
+2026-02-19 17:44:25 [main] INFO : Condition Met! Status: Waiting for payment file processing
+2026-02-19 17:44:28 [main] INFO : Payment receipt Number :547030
+2026-02-19 17:44:36 [main] INFO : Record is Displayed in Recently Completed tab :MP_ELE_Payment_19_01
+2026-02-19 17:44:48 [main] INFO : Testing Ended
+2026-02-19 17:44:48 [main] INFO : ***********

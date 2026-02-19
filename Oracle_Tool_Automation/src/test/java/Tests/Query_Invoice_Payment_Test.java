@@ -95,7 +95,7 @@ public class Query_Invoice_Payment_Test extends TestInitializer {
 		waitTime2(driver);
 		oraHome.clickDoneReceiptBtn();
 		waitTime(driver);
-		oraHome.clickHomeFromPutAway();
+		oraHome.clickHomeFromOtherPages();
 
 	}
 

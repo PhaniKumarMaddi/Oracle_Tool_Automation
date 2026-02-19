@@ -81,7 +81,7 @@ public class Oracle_AR_StandardReportTest extends TestInitializer {
 				"PrepareReceivablesGeneralLedger_MonitorProcess");
 
 		waitTime3(driver);
-		oraHome.clickHomeFromPutAway();
+		oraHome.clickHomeFromOtherPages();
 		waitTime(driver);
 
 	}

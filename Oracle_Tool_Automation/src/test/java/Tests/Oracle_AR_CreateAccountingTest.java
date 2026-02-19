@@ -146,7 +146,7 @@ public class Oracle_AR_CreateAccountingTest extends TestInitializer {
 		grep.captureScreenshot("pass", "Default Document for Create AR Accounting", "DefaultDocument_CreateAccounting");
 		waitTime(driver);
 
-		oraHome.clickHomeFromPutAway();
+		oraHome.clickHomeFromOtherPages();
 		waitTime(driver);
 
 	}

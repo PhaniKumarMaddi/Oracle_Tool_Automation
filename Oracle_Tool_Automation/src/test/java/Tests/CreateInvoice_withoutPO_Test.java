@@ -282,7 +282,7 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		waitTime(driver);
 		oraHome.clickOk_inConfirmPO_popup();
 		waitTime2(driver);
-		oraHome.clickHomeFromPutAway();
+		oraHome.clickHomeFromOtherPages();
 	}
 
 	private void processRevalidationFlow() throws Exception {

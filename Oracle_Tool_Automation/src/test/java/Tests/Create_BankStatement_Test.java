@@ -139,7 +139,7 @@ public class Create_BankStatement_Test extends TestInitializer {
 		waitTime(driver);
 		oraBsp.clickDoneStatementBtn();
 		waitTime(driver);
-		oraHome.clickHomeFromPutAway();
+		oraHome.clickHomeFromOtherPages();
 
 	}
 

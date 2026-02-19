@@ -104,7 +104,7 @@ public class BankStatement_Reconciliation_Test extends TestInitializer {
 		oraBsp.clickDoneReconciliationBtn();
 
 		waitTime3(driver);
-		oraHome.clickHomeFromPutAway();
+		oraHome.clickHomeFromOtherPages();
 		waitTime(driver);
 
 	}

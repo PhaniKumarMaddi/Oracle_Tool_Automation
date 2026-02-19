@@ -312,7 +312,7 @@ public class AccountReceivables_Test extends TestInitializer {
 		oraAr.clickDoneBtn_inOpenReceivables();
 		waitTime(driver);
 
-		oraHome.clickHomeFromPutAway();
+		oraHome.clickHomeFromOtherPages();
 
 	}
 }

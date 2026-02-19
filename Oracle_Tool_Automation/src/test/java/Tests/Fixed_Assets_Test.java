@@ -170,7 +170,7 @@ public class Fixed_Assets_Test extends TestInitializer {
 		waitTime2(driver);
 		grep.captureScreenshot("pass", "Calculated Deprication Test", "calculateDeprication_inAsset");
 		waitTime2(driver);
-		oraHome.clickHomeFromPutAway();
+		oraHome.clickHomeFromOtherPages();
 		waitTime(driver);
 
 		oraHome.clickFavouriteButton();
@@ -185,7 +185,7 @@ public class Fixed_Assets_Test extends TestInitializer {
 		grep.captureScreenshot("pass", "Verify Create Accounting for Assets process Sucess",
 				"AssetsAccounting_ProcessSucess_inAsset");
 		waitTime2(driver);
-		oraHome.clickHomeFromPutAway();
+		oraHome.clickHomeFromOtherPages();
 		waitTime(driver);
 
 	}

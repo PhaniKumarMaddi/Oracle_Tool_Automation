@@ -113,7 +113,7 @@ public class Oracle_HomePage extends WaitsManager {
 	By putAwayBtn = By.xpath("//button[text()='Put Away']");
 	By clickSubInventory = By.xpath("//label[text()='Subinventory']/following-sibling::span");
 	By navigatorFromPutAway = By.xpath("//a[@id='_FOpt1:_UISmmLink']");
-	By homeFromPutAway = By.xpath("//a[@id='_FOpt1:_UIShome']");
+	By homeFromOtherPages = By.xpath("//a[@id='_FOpt1:_UIShome']");
 
 	// create order page
 	By inputDefaultShipLocation = By
@@ -1131,10 +1131,10 @@ public class Oracle_HomePage extends WaitsManager {
 		driver.findElement(navigatorFromPutAway).click();
 	}
 
-	public void clickHomeFromPutAway() {
+	public void clickHomeFromOtherPages() {
 		implWait(driver);
-		scrollView(homeFromPutAway);
-		driver.findElement(homeFromPutAway).click();
+		scrollView(homeFromOtherPages);
+		driver.findElement(homeFromOtherPages).click();
 	}
 
 	public void searchAndSelectPutAwaySubInventory(String subInventoryValue) {

@@ -91,7 +91,7 @@ public class Oracle_AR_Customer_Test extends TestInitializer {
 		oraCc.verifyCustomerPresent(custName);
 		waitTime(driver);
 		grep.captureScreenshot("pass", "Verify Customer in Manage Customers page", "VerifyCustomer");
-		oraHome.clickHomeFromPutAway();
+		oraHome.clickHomeFromOtherPages();
 
 	}
 
@@ -186,7 +186,7 @@ public class Oracle_AR_Customer_Test extends TestInitializer {
 		oraAr.clickOk_InTransactionConfirmation();
 		waitTime(driver);
 
-		oraHome.clickHomeFromPutAway();
+		oraHome.clickHomeFromOtherPages();
 		waitTime(driver);
 
 	}

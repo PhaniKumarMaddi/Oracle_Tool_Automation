@@ -142,7 +142,7 @@ public class Accounting_Journal_Test extends TestInitializer {
 
 		waitTime3(driver);
 
-		oraHome.clickHomeFromPutAway();
+		oraHome.clickHomeFromOtherPages();
 		waitTime2(driver);
 
 		grep.testCreate("Creating a Journal Test", "Creating a Journal");

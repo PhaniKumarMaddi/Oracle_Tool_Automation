@@ -274,7 +274,7 @@ public class Oracle_ProcurementWithoutRequisition_Test extends TestInitializer {
 		waitTime2(driver);
 		oraHome.clickOk_inSubmitConfirmationPopup();
 		waitTime2(driver);
-		oraHome.clickHomeFromPutAway();
+		oraHome.clickHomeFromOtherPages();
 
 		logger.info("Navigating to Procurement Tab in homepage ");
 		grep.infoTest("Navigating to Procurement Tab in homepage ");

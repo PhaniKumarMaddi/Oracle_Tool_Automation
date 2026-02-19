@@ -166,7 +166,7 @@ public class Batch_Payment_Electonic_Test extends TestInitializer {
 		waitTime2(driver);
 
 //		oraHome.clickHomeButton();
-		oraHome.clickHomeFromPutAway();
+		oraHome.clickHomeFromOtherPages();
 		waitTime2(driver);
 
 //		oracle_Query_InvoicePayment(invoiceNumVal);

@@ -114,7 +114,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 		waitTime1(driver);
 		grep.testCreate("Verify Product Details in Cart Page Test", "Verify Product Details in Cart Page");
 		waitTime(driver);
-		oraHome.validateCartPageDetails("Cart", "Mouse", "Each", "30");
+		oraHome.validateCartPageDetails("Cart", "Mouse", "Each", priceVal);
 		waitTime(driver);
 
 		String getSubTitle = oraHome.getSubTitleDetails();
@@ -130,7 +130,7 @@ public class Oracle_ProcurementTest extends TestInitializer {
 
 		logger.info("Raw Price retrieved: " + getPrice);
 		grep.infoTest("Raw Price retrieved: " + getPrice);
-		validAssert.equalsAssert_int(getPrice, 30);
+		validAssert.equalsAssert_int(getPrice,Integer.parseInt(priceVal));
 		waitTime(driver);
 		oraHome.validateRequisitionSummary(getPrice, 3);
 

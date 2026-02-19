@@ -211,11 +211,9 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		waitTime5(driver);
 		oraInv.validateAccountingLinesHeader(invoiceNumVal);
 		oraInv.clickDoneAccountingBtn();
-
 		waitTime2(driver);
 
 		// payment method
-
 		grep.testCreate("Verify the Payment Method from Payments page test",
 				"Verify the Payment Method from Payments page ");
 		waitTime(driver);
@@ -282,7 +280,7 @@ public class CreateInvoice_withoutPO_Test extends TestInitializer {
 		waitTime(driver);
 		oraHome.clickOk_inConfirmPO_popup();
 		waitTime2(driver);
-		oraHome.clickHomeFromOtherPages();
+		oraInv.clickHomeFromInvoicePage();
 	}
 
 	private void processRevalidationFlow() throws Exception {

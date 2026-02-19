@@ -234,7 +234,7 @@ public class CreateInvoice_With_PO_Test extends TestInitializer {
 		logger.info("Save and Close Invoice");
 		waitTime3(driver);
 
-		oraHome.clickHomeButton();
+		oraInv.clickHomeFromInvoicePage();
 		waitTime(driver);
 
 	}

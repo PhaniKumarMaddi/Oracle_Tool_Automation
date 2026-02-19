@@ -304,7 +304,8 @@ public class Oracle_HomePage extends WaitsManager {
 	}
 
 	public void clickNavigator() {
-		implWait(driver);
+//		implWait(driver);
+		waitForElementToBeClickable(navigator, 30);
 		driver.findElement(navigator).click();
 	}
 
@@ -876,7 +877,8 @@ public class Oracle_HomePage extends WaitsManager {
 
 		String getMsg = null;
 		try {
-			implWait(driver);
+//			implWait(driver);
+			waitForElement(confirmPopup_inProcessRequisition, 60);
 
 			getMsg = driver.findElement(confirmPopup_inProcessRequisition).getText().trim();
 
@@ -1083,6 +1085,26 @@ public class Oracle_HomePage extends WaitsManager {
 	public void clickShowReceiptBtn() {
 		implWait(driver);
 		driver.findElement(showReceiptQuantityBtn).click();
+	}
+
+	public void receiptWarningMsg() {
+		try {
+			By warnPopup = By.xpath("//button[contains(@id,'FOd1::msgDlg::cancel') and text()='OK']");
+			implWait(driver);
+			WebElement warnBtn = driver.findElement(warnPopup);
+			if (warnBtn.isDisplayed()) {
+				warnBtn.click();
+				waitTime2(driver);
+				driver.findElement(showReceiptQuantityBtn).click();
+
+			} else {
+				grep.infoTest("Warn button not available");
+			}
+
+		} catch (Exception e) {
+			grep.infoTest("Warn button not available");
+
+		}
 	}
 
 	public void clickCreateReceiptBtn() {
